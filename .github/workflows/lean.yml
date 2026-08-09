@@ -52,6 +52,12 @@ jobs:
       - name: Verify generated report
         run: python3 scripts/render_report.py --check
 
+      - name: Capture Lean axiom receipts
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          lake env lean Audit/AttackRun0001.lean 2>&1 | tee artifacts/axioms.txt
+
       - name: Capture exact environment receipt
         run: bash scripts/capture_environment.sh
 
@@ -83,10 +89,12 @@ jobs:
       - name: Upload audit receipts
         uses: actions/upload-artifact@v4
         with:
-          name: pal-lean-bootstrap-receipts
+          name: pal-lean-attack-0001-receipts
           path: |
             artifacts/environment.txt
             artifacts/checkers.txt
+            artifacts/axioms.txt
+            Audit/attack-run-0001-receipt.json
             lake-manifest.json
             docs/generated/outcomes.svg
             docs/generated/summary.md

@@ -8,5 +8,7 @@ Root module for the complete audit environment. External checkers use the Lake
 package name as their module entry point, so this module deliberately imports
 both the formalization surface and the audit surface.
 
-The bootstrap still makes no substantive PAL claim.
+Attack Run 0001 adds source-accounted bounded realizations, countermodels, and
+dependency receipts. These results have no authority beyond their exact Lean
+statements, declared source routing, and recorded ceilings.
 -/

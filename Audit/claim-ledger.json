@@ -1,20 +1,21 @@
 {
-  "schema_version": "0.1.0",
-  "run_id": "bootstrap-0000",
+  "schema_version": "0.2.0",
+  "run_id": "attack-0001",
   "controlling_release": "PAL v2.0",
   "controlling_doi": "10.5281/zenodo.21754097",
-  "authority_ceiling": "Infrastructure receipt only; no PAL theorem has been attempted.",
+  "run_receipt": "Audit/attack-run-0001-receipt.json",
+  "authority_ceiling": "Lean-checked bounded receipt models, countermodels, and policy fixtures only; no claim that mathematics contains PAL, no object-language Omega, and no closure of O04/O25.",
   "generated_at": null,
   "claims": [
-    {"id": "T05", "title": "Omega identity/firewall", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T06", "title": "A0 cut", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T07", "title": "Omega-star reflection", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T09", "title": "Theta authority and nonimplication", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T10", "title": "Primitive placement", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T11", "title": "A0-A1-A2 separation", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T14", "title": "Predecessor strictness", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T15", "title": "Witness nonmanufacture", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T16", "title": "Trace recovery and immutability", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
-    {"id": "T17", "title": "No authority backflow", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."}
+    {"id": "T05", "title": "Omega identity/firewall", "status": "EXPECTED_REJECTION", "evidence": "Policy fixtures reject both ASCII and symbolic object-language declarations with a stable T05 diagnostic; compiled modules contain no such identifier."},
+    {"id": "T06", "title": "A0 cut", "status": "PROVED", "evidence": "noCutWithoutWitness; CutReceipt is witness-parameterized and distinct from optional ModelEnvelope scaffolding."},
+    {"id": "T07", "title": "Omega-star reflection", "status": "PROVED", "evidence": "reflectionForgetsToIndexedCut and cutAddressNeReflectionAddress; no canonical reflection law is selected."},
+    {"id": "T09", "title": "Theta authority and nonimplication", "status": "COUNTERMODEL", "evidence": "thetaDoesNotProvideReadable: an inhabited Boolean nonidentity turn with an empty readout-witness type."},
+    {"id": "T10", "title": "Primitive placement", "status": "PROVED", "evidence": "primitivePlacement and floorChainReturnsCut enforce the dependent cut-reflection-turn-readable route."},
+    {"id": "T11", "title": "A0-A1-A2 separation", "status": "COUNTERMODEL", "evidence": "thetaDoesNotProvideReadable and readableDoesNotProvideTrace separate turn, readability, and recoverability witnesses."},
+    {"id": "T14", "title": "Predecessor strictness", "status": "COUNTERMODEL", "evidence": "allLayersHaveStrictPredecessor conditionally gives a bounded A1-A15 predecessor family from an externally supplied witness, with forgetful recovery."},
+    {"id": "T15", "title": "Witness nonmanufacture", "status": "PROVED", "evidence": "missingWitnessYieldsNoOutput plus NoWitness theorems cover every explicit-witness-field constructor in this bounded run; O04/O25 remains OPEN."},
+    {"id": "T16", "title": "Trace recovery and immutability", "status": "PROVED", "evidence": "routePreservesProtectedTrace and authorizedCompressionRestores preserve the original protected receipt through the bounded route."},
+    {"id": "T17", "title": "No authority backflow", "status": "PROVED", "evidence": "noAuthorityBackflow preserves the exact earlier authority snapshot for every modeled later-result kind."}
   ]
 }

@@ -1,0 +1,145 @@
+{
+  "schema_version": "0.1.0",
+  "run_id": "attack-0001",
+  "controlling_release": "PAL v2.0",
+  "controlling_doi": "10.5281/zenodo.21754097",
+  "source_manifest": "Audit/source-manifest.yaml",
+  "source_hashes_verified": {
+    "PAL-v2.0-Spine": "4631747f9da65ae353e27902da40294c077fd05eafe12f6d6d781b04d02897be",
+    "PAL-v2.0-M": "237b4f0c74dd601786d5c5559934594b7e6cf89ebeb34c2a794bf2d0e6ff5fe0",
+    "PAL-v2.0-L": "97a5394e97e8e09115d04b073cf8ba2390893d585a602fa68979011d359e92d7",
+    "PAL-v2.0-T": "4fd3b96e037d2568b0f79404fa588cad42af4d4bd6bf8b69f5169308348514e8",
+    "PAL-v2.0-C": "a0e7ff203ada4160e5ab7600b623bb1ebd0ec95c6906642b2a988ceb88953c67"
+  },
+  "authority_ceiling": "The results are bounded Lean realizations, countermodels, and repository-policy fixtures. They do not formalize unresolved possibility, prove PAL as an ontology, exhaust the source cards, create ethical authority, or close the first-occurrence debt.",
+  "open_burdens": [
+    {
+      "address": "D-FIRST-OCCURRENCE",
+      "interfaces": ["O04", "O25"],
+      "status": "OPEN",
+      "reason": "A local supplied witness constructs only a conditional receipt; the certificate grammar does not supply its own ontic witness."
+    }
+  ],
+  "claims": [
+    {
+      "id": "T05",
+      "sources": ["SC-00", "D02", "O01", "M-ΩF"],
+      "result": "EXPECTED_REJECTION",
+      "evidence": ["Audit/fixtures/T05-ascii-omega.fixture", "Audit/fixtures/T05-symbol-omega.fixture", "scripts/check_policy.py"],
+      "bounded_claim": "The compiled audit object language has no identifier representing unresolved possibility; both forbidden declaration fixtures receive the stable T05 policy diagnostic.",
+      "assumptions": ["The policy registry covers every compiled Lean root", "Comments and strings are metalinguistic and excluded from the identifier scan"],
+      "axioms": "not applicable; policy-level fixture",
+      "authority_ceiling": "This is a static object-language firewall, not an internal theorem about unresolved possibility or its contents.",
+      "predecessor_or_countercase": "Each intentional declaration fixture is rejected before it can join the compiled object language.",
+      "reopening_address": "D02 / O01"
+    },
+    {
+      "id": "T06",
+      "sources": ["SC-01", "D03", "O02", "M-M0", "M-A0-CUT"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.noCutWithoutWitness"],
+      "bounded_claim": "The optional model envelope and the supplied cut receipt are separate types, and no cut receipt exists when its witness type is empty.",
+      "assumptions": ["A ModelEnvelope is supplied as optional scaffolding", "CutReceipt construction requires an external CutWitness value"],
+      "axioms": [],
+      "authority_ceiling": "The theorem supplies no readable side, orientation, persistence, cause, canonical carrier, or derivation from unresolved possibility.",
+      "predecessor_or_countercase": "ModelEnvelope with CutWitness = NoWitness is a checked predecessor countercase.",
+      "reopening_address": "D03 / O02"
+    },
+    {
+      "id": "T07",
+      "sources": ["SC-02", "D04", "O02", "O29", "M-ΩSTAR"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.reflectionForgetsToIndexedCut", "PAL.AttackRun0001.cutAddressNeReflectionAddress"],
+      "bounded_claim": "A reflection receipt depends on and forgets to its exact cut, while cut and reflection addresses are distinct; no reflection law is canonicalized.",
+      "assumptions": ["A versioned CutReceipt is supplied", "ReflectionReceipt construction requires an external ReflectionWitness value"],
+      "axioms": [],
+      "authority_ceiling": "No exact involution, side, readout, memory, prompt, output, or representation of unresolved possibility is inferred.",
+      "predecessor_or_countercase": "Forgetting ReflectionReceipt returns the exact indexed CutReceipt.",
+      "reopening_address": "D04 / O02/O29"
+    },
+    {
+      "id": "T09",
+      "sources": ["SC-03", "D06", "O03", "O29", "M-THETA"],
+      "result": "COUNTERMODEL",
+      "declarations": ["PAL.AttackRun0001.turnCountermodelIsInhabited", "PAL.AttackRun0001.thetaDoesNotProvideReadable"],
+      "bounded_claim": "A nonidentity Boolean turn is inhabited while the selected readout-witness type is empty, countering a generic turn-to-A1 implication in this model.",
+      "assumptions": ["Boolean orientation states", "A supplied nonidentity turn witness", "Empty selected readout-witness type"],
+      "axioms": [],
+      "authority_ceiling": "This is the licensed bounded countermodel, not a global impossibility theorem and not a canonical geometry or angle.",
+      "predecessor_or_countercase": "An inhabited TurnReceipt coexists with IsEmpty ReadableReceipt in the selected model.",
+      "reopening_address": "D06 / O03/O29"
+    },
+    {
+      "id": "T10",
+      "sources": ["D04", "D06", "T05", "T06", "T07", "T09"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.primitivePlacement", "PAL.AttackRun0001.turnForgetsToIndexedReflection", "PAL.AttackRun0001.readableForgetsToIndexedTurn", "PAL.AttackRun0001.floorChainReturnsCut"],
+      "bounded_claim": "Dependent indices enforce the cut-reflection-turn-readable order and the complete composed predecessor path recovers the original cut without selecting either turn state.",
+      "assumptions": ["The bounded primitive stage registry has the source-ordered addresses", "Each receipt is constructed only from its indexed predecessor"],
+      "axioms": [],
+      "authority_ceiling": "The order is a bounded dependency realization and makes no claim that a mathematical chain contains or exhausts PAL.",
+      "predecessor_or_countercase": "Each forgetful projection returns the exact indexed predecessor; ResidueReceipt is indexed only by CutReceipt.",
+      "reopening_address": "D04/D06"
+    },
+    {
+      "id": "T11",
+      "sources": ["SC-01", "SC-04", "SC-05", "D03", "D07", "D08", "O05", "O06", "M-A1-APART", "M-A2-STORE"],
+      "result": "COUNTERMODEL",
+      "declarations": ["PAL.AttackRun0001.thetaDoesNotProvideReadable", "PAL.AttackRun0001.readableForgetsToIndexedTurn", "PAL.AttackRun0001.readableDoesNotProvideTrace", "PAL.AttackRun0001.traceForgetsToIndexedReadable"],
+      "bounded_claim": "Turn, readability, and recoverability require separate witnesses; an A2 trace forgets to the exact A1 receipt it extends.",
+      "assumptions": ["ReadableReceipt requires a supplied readout witness and separated sides", "TraceReceipt requires a separate recovery witness and address"],
+      "axioms": [],
+      "authority_ceiling": "The model proves neither duration nor continuous existence and does not derive the first occurrence witness.",
+      "predecessor_or_countercase": "The checked models provide a turn without A1 and an A1 receipt without A2.",
+      "reopening_address": "D03/D07/D08; O05/O06"
+    },
+    {
+      "id": "T14",
+      "sources": ["spine L02", "spine L03", "O20", "T14"],
+      "result": "COUNTERMODEL",
+      "declarations": ["PAL.AttackRun0001.allLayersHaveStrictPredecessor"],
+      "bounded_claim": "For each named A1-A15 capability, a finite capability-view predecessor lacks the new capability and a preserving extension adds it; this does not prove a concrete realization of every card.",
+      "assumptions": ["The finite Capability registry follows the source order A1-A15", "A target-indexed capability witness is externally supplied for the bounded extension"],
+      "axioms": [],
+      "authority_ceiling": "Capability-set inclusion is only a bounded strictness countermodel schema, not the identity, semantics, or exhaustive formalization of any PAL layer.",
+      "predecessor_or_countercase": "For every target and externally supplied witness, predecessorState lacks the target, extendedState adds it, and forget returns predecessorState.",
+      "reopening_address": "target layer / O20"
+    },
+    {
+      "id": "T15",
+      "sources": ["spine L05", "O04", "O05", "O25", "O26", "T15"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.missingWitnessYieldsNoOutput", "PAL.AttackRun0001.noCutWithoutWitness", "PAL.AttackRun0001.noReflectionWithoutWitness", "PAL.AttackRun0001.noTurnWithoutWitness", "PAL.AttackRun0001.noReadableWithoutWitness", "PAL.AttackRun0001.noTraceWithoutWitness", "PAL.AttackRun0001.noLayerExtensionWithoutWitness", "PAL.AttackRun0001.noRelationStageWithoutWitness"],
+      "bounded_claim": "The bounded crossing grammar returns no output when its externally supplied witness is absent, and every constructor with an explicit witness field in this run is empty when that field uses the universe-polymorphic NoWitness type.",
+      "assumptions": ["The crossing rule is represented by Crossing.apply", "Witness availability is supplied as Option Witness", "The listed receipt structures are the complete explicit-witness-field inventory for Attack Run 0001"],
+      "axioms": [],
+      "authority_ceiling": "The result governs only the named Crossing API and enumerated Attack Run 0001 receipt constructors; it does not prove that arbitrary programs or future certificate grammars preserve witness-source honesty.",
+      "predecessor_or_countercase": "The none branch reduces definitionally to no output and NoWitness fields admit no listed receipt; O04/O25 remains OPEN.",
+      "reopening_address": "O04/O05/O25/O26"
+    },
+    {
+      "id": "T16",
+      "sources": ["A2", "spine L04", "O06", "O20", "O40", "O42", "T16"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.routePreservesProtectedTrace", "PAL.AttackRun0001.authorizedCompressionRestores"],
+      "bounded_claim": "A protected trace survives the modeled relation-transport-access-interpretation-closure route unchanged, and declared compression restores its original input.",
+      "assumptions": ["Each admissible route stage wraps its named predecessor", "Authorized compression supplies an explicit left-inverse restoration proof"],
+      "axioms": [],
+      "authority_ceiling": "Value preservation in this route proves no physical permanence, cryptographic durability, access permission, or behavior of arbitrary mutation-capable implementations.",
+      "predecessor_or_countercase": "Projection through every named route stage recovers the original ProtectedTrace exactly.",
+      "reopening_address": "A2 / O06/O20/O40/O42"
+    },
+    {
+      "id": "T17",
+      "sources": ["spine I05", "O27", "O40", "O51", "T17"],
+      "result": "PROVED",
+      "declarations": ["PAL.AttackRun0001.noAuthorityBackflow"],
+      "bounded_claim": "Appending any modeled later result preserves the exact earlier identity, evidence, consent, standing, uncertainty, and authority snapshot.",
+      "assumptions": ["Later results are appended through appendLaterResult", "The earlier AuthoritySnapshot is stored as the prior receipt"],
+      "axioms": [],
+      "authority_ceiling": "The theorem preserves the archived earlier snapshot only; it defines no global authority order, grants no new consent or standing, and does not constrain arbitrary APIs outside this model.",
+      "predecessor_or_countercase": "The prior projection of every modeled proof, prediction, ethical review, or interpretation receipt is definitionally the original snapshot.",
+      "reopening_address": "O27/O40/O51; no-backflow invariant"
+    }
+  ]
+}
