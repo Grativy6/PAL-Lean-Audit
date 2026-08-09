@@ -1,9 +1,22 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.1.1",
   "run_id": "attack-0001",
   "controlling_release": "PAL v2.0",
   "controlling_doi": "10.5281/zenodo.21754097",
   "source_manifest": "Audit/source-manifest.yaml",
+  "post_run_amendment": {
+    "amended_after_execution": true,
+    "formal_results_changed": false,
+    "reason": "Audit-hygiene repair: bound T05 to its lexical implementation, distinguish pull-request source and tested merge identities, and separate selected-test outcomes from open source obligations.",
+    "workflow_run_id": 31295778110,
+    "artifact_id": 9032917279,
+    "original_artifact_digest": "sha256:e3f280accf56b6c2485d77f9581bade6f331ebe0ff8f2546770dd90dee1f1a57",
+    "pr_number": 2,
+    "pr_head_sha": "5b76c76f5584835b812fe48fb7c51a0aed74ca32",
+    "pr_base_sha": "49784682bc6491cdd2e83b9ea300ac0878170867",
+    "tested_merge_sha": "8f2fac15c4b805a387d3d005aa504434210ec3c5",
+    "final_merge_sha": "c123f5f38ce453101a1d4b212d6d954ee00695ab"
+  },
   "source_hashes_verified": {
     "PAL-v2.0-Spine": "4631747f9da65ae353e27902da40294c077fd05eafe12f6d6d781b04d02897be",
     "PAL-v2.0-M": "237b4f0c74dd601786d5c5559934594b7e6cf89ebeb34c2a794bf2d0e6ff5fe0",
@@ -26,11 +39,11 @@
       "sources": ["SC-00", "D02", "O01", "M-ΩF"],
       "result": "EXPECTED_REJECTION",
       "evidence": ["Audit/fixtures/T05-ascii-omega.fixture", "Audit/fixtures/T05-symbol-omega.fixture", "scripts/check_policy.py"],
-      "bounded_claim": "The compiled audit object language has no identifier representing unresolved possibility; both forbidden declaration fixtures receive the stable T05 policy diagnostic.",
-      "assumptions": ["The policy registry covers every compiled Lean root", "Comments and strings are metalinguistic and excluded from the identifier scan"],
+      "bounded_claim": "The literal standalone identifiers `Omega` and `Ω` do not occur outside comments and strings in the scanned Lean roots; both forbidden declaration fixtures receive the stable T05 lexical diagnostic.",
+      "assumptions": ["The policy registry covers every compiled Lean root", "Comments and strings are metalinguistic and excluded from the identifier scan", "The result is lexical and makes no claim about differently named declarations"],
       "axioms": "not applicable; policy-level fixture",
-      "authority_ceiling": "This is a static object-language firewall, not an internal theorem about unresolved possibility or its contents.",
-      "predecessor_or_countercase": "Each intentional declaration fixture is rejected before it can join the compiled object language.",
+      "authority_ceiling": "This is a lexical repository-policy check, not a semantic theorem. It cannot detect aliases or prove that no other identifier represents unresolved possibility.",
+      "predecessor_or_countercase": "Each intentional fixture containing a forbidden literal standalone identifier is rejected before it can join the compiled object language.",
       "reopening_address": "D02 / O01"
     },
     {

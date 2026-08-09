@@ -4,9 +4,11 @@
 - Controlling release: PAL v2.0
 - DOI: [10.5281/zenodo.21754097](https://doi.org/10.5281/zenodo.21754097)
 - Run receipt: [Audit/attack-run-0001-receipt.json](../../Audit/attack-run-0001-receipt.json)
-- Authority ceiling: Lean-checked bounded receipt models, countermodels, and policy fixtures only; no claim that mathematics contains PAL, no object-language Omega, and no closure of O04/O25.
+- Authority ceiling: Lean-checked bounded receipt models, countermodels, and policy fixtures only; no claim that mathematics contains PAL, no semantic proof against differently named surrogates for unresolved possibility, and no closure of O04/O25.
 
-| Status | Count |
+## Selected T-target outcomes
+
+| Outcome status | Count |
 |---|---:|
 | PROVED | 6 |
 | COUNTERMODEL | 3 |
@@ -14,13 +16,21 @@
 | OPEN | 0 |
 | NOT_FORMALIZED | 0 |
 
-_Counts cover the ten selected T-targets only; the separate O04/O25 first-occurrence debt remains OPEN._
+_These counts cover selected test outcomes only._
+
+## Open PAL-source obligations (separate population)
+
+| Obligation | Interfaces | Status | Reason |
+|---|---|---|---|
+| D-FIRST-OCCURRENCE | O04, O25 | **OPEN** | A local supplied witness constructs only a conditional receipt; the certificate grammar does not supply its own ontic witness. |
+
+_Selected-test OPEN outcomes and open PAL-source obligations are distinct metrics and are never summed._
 
 ## Claim ledger
 
 | Test | Target | Status | Evidence |
 |---|---|---|---|
-| T05 | Omega identity/firewall | **EXPECTED_REJECTION** | Policy fixtures reject both ASCII and symbolic object-language declarations with a stable T05 diagnostic; compiled modules contain no such identifier. |
+| T05 | Literal Omega-identifier firewall | **EXPECTED_REJECTION** | The lexical policy rejects standalone `Omega` and `Ω` identifiers in scanned Lean code and both fixtures receive the stable T05 diagnostic. This does not detect differently named semantic surrogates. |
 | T06 | A0 cut | **PROVED** | noCutWithoutWitness; CutReceipt is witness-parameterized and distinct from optional ModelEnvelope scaffolding. |
 | T07 | Omega-star reflection | **PROVED** | reflectionForgetsToIndexedCut and cutAddressNeReflectionAddress; no canonical reflection law is selected. |
 | T09 | Theta authority and nonimplication | **COUNTERMODEL** | thetaDoesNotProvideReadable: an inhabited Boolean nonidentity turn with an empty readout-witness type. |

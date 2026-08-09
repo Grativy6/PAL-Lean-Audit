@@ -19,6 +19,7 @@ PECAN, PEA Core, SEED, and optional PPP govern only their declared integration r
 ## Hard formal boundaries
 
 - Omega names unresolved possibility metalinguistically. Do not define a Lean object, type, constructor, value, set, model envelope, exterior, or residue as Omega.
+- The automated T05 rule is only a lexical check for literal standalone `Omega` and `Ω` identifiers. Semantic surrogates remain a source-review concern; never report the lexical check as proof that none exist.
 - A0 is a supplied cut.
 - Omega-star is the cut-indexed reflection, not Omega and not A0.
 - Theta carries a prior trace-bearing turn or asymmetry. It selects no side and has no generic A1 eliminator.

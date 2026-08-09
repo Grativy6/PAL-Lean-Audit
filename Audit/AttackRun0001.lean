@@ -4,9 +4,10 @@ import PAL.AttackRun0001
 # Attack Run 0001 dependency receipts
 
 Each command below asks Lean to report the axioms used by an adopted bounded
-result. T05 is intentionally outside this list: its firewall is enforced by
-the repository policy scan and deterministic rejected fixtures, not by making
-unresolved possibility an object-language proposition.
+result. T05 is intentionally outside this list: its literal-identifier check
+is enforced by the repository policy scan and deterministic rejected fixtures,
+not by making unresolved possibility an object-language proposition. This
+lexical check cannot detect differently named semantic surrogates.
 -/
 
 #print axioms PAL.AttackRun0001.noCutWithoutWitness

@@ -1,2 +1,2 @@
--- Intentional rejected object-language declaration for the T05 policy gate.
+-- Intentional rejected literal identifier for the T05 lexical policy gate.
 inductive Omega where | unresolved

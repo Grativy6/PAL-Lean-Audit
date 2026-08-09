@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Reject proof placeholders and undeclared axiom declarations in Lean sources."""
+"""Enforce bounded lexical policy checks over the repository's Lean sources.
+
+The T05 check below rejects only the literal standalone identifiers ``Omega``
+and ``Ω`` outside comments and strings. It is intentionally not a semantic
+proof that no differently named declaration could be used as a surrogate.
+"""
 
 from __future__ import annotations
 
@@ -20,9 +25,11 @@ FORBIDDEN = {
     "proof placeholder admit": re.compile(r"\badmit\b"),
     "unlisted axiom declaration": re.compile(r"^\s*axiom\b", re.MULTILINE),
 }
-OMEGA_IDENTIFIER = re.compile(r"(?<![A-Za-z0-9_'])Omega(?![A-Za-z0-9_'])|Ω")
-OMEGA_DIAGNOSTIC = "object-language Omega identifier forbidden by T05"
-EXPECTED_FIREWALL_FIXTURES = (
+OMEGA_LITERAL_IDENTIFIER = re.compile(
+    r"(?<![\w'])Omega(?![\w'])|(?<![\w'])Ω(?![\w'])"
+)
+OMEGA_DIAGNOSTIC = "literal object-language Omega identifier forbidden by T05 lexical check"
+EXPECTED_LEXICAL_FIXTURES = (
     ROOT / "Audit" / "fixtures" / "T05-ascii-omega.fixture",
     ROOT / "Audit" / "fixtures" / "T05-symbol-omega.fixture",
 )
@@ -104,10 +111,11 @@ def strip_lean_comments_and_strings(text: str) -> str:
     return "".join(chars)
 
 
-def omega_diagnostics(path: pathlib.Path, text: str) -> list[str]:
+def omega_literal_diagnostics(path: pathlib.Path, text: str) -> list[str]:
+    """Report literal standalone Omega identifiers; do not infer semantics."""
     code = strip_lean_comments_and_strings(text)
     diagnostics: list[str] = []
-    for match in OMEGA_IDENTIFIER.finditer(code):
+    for match in OMEGA_LITERAL_IDENTIFIER.finditer(code):
         line = code.count("\n", 0, match.start()) + 1
         diagnostics.append(f"{path.relative_to(ROOT)}:{line}: {OMEGA_DIAGNOSTIC}")
     return diagnostics
@@ -121,14 +129,14 @@ def main() -> int:
             for match in pattern.finditer(text):
                 line = text.count("\n", 0, match.start()) + 1
                 failures.append(f"{path.relative_to(ROOT)}:{line}: {label}")
-        failures.extend(omega_diagnostics(path, text))
+        failures.extend(omega_literal_diagnostics(path, text))
 
     expected_rejections: list[str] = []
-    for path in EXPECTED_FIREWALL_FIXTURES:
+    for path in EXPECTED_LEXICAL_FIXTURES:
         if not path.exists():
             failures.append(f"{path.relative_to(ROOT)}: missing expected T05 fixture")
             continue
-        diagnostics = omega_diagnostics(path, path.read_text(encoding="utf-8"))
+        diagnostics = omega_literal_diagnostics(path, path.read_text(encoding="utf-8"))
         if len(diagnostics) != 1:
             failures.append(
                 f"{path.relative_to(ROOT)}: expected one stable T05 diagnostic, "
@@ -141,7 +149,7 @@ def main() -> int:
         print("\n".join(failures), file=sys.stderr)
         return 1
     print(f"Policy check passed for {len(lean_files())} Lean files.")
-    print("Expected T05 rejections:")
+    print("Expected T05 lexical rejections:")
     print("\n".join(expected_rejections))
     return 0
 

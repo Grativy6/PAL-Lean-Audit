@@ -1,23 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 920 390">
-<title id="title">PAL Lean Audit outcomes for attack-0001</title>
-<desc id="desc">Horizontal bars count the ten selected T-targets by audit status; O04/O25 is tracked separately and remains open.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 920 500">
+<title id="title">PAL Lean Audit separated counts for attack-0001</title>
+<desc id="desc">The upper group counts 10 selected T-target outcomes. A separate lower bar counts 1 open PAL-source obligation.</desc>
 <rect width="100%" height="100%" fill="#f7fafc"/>
-<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.label{font:600 14px ui-monospace,monospace;fill:#2d3748}.count{font:700 15px system-ui,sans-serif;fill:#1a202c}</style>
-<text x="28" y="36" class="title">PAL Lean Audit — outcome counts</text>
-<text x="28" y="60" class="sub">attack-0001 · bounded results only; O04/O25 remains OPEN</text>
-<text x="204" y="104" text-anchor="end" class="label">PROVED</text>
-<rect x="220" y="82" width="590" height="30" rx="5" fill="#2f855a"/>
-<text x="822" y="104" class="count">6</text>
-<text x="204" y="156" text-anchor="end" class="label">COUNTERMODEL</text>
-<rect x="220" y="134" width="295" height="30" rx="5" fill="#2b6cb0"/>
-<text x="527" y="156" class="count">3</text>
-<text x="204" y="208" text-anchor="end" class="label">EXPECTED_REJECTION</text>
-<rect x="220" y="186" width="98" height="30" rx="5" fill="#805ad5"/>
-<text x="330" y="208" class="count">1</text>
-<text x="204" y="260" text-anchor="end" class="label">OPEN</text>
-<rect x="220" y="238" width="0" height="30" rx="5" fill="#d69e2e"/>
-<text x="232" y="260" class="count">0</text>
-<text x="204" y="312" text-anchor="end" class="label">NOT_FORMALIZED</text>
-<rect x="220" y="290" width="0" height="30" rx="5" fill="#718096"/>
-<text x="232" y="312" class="count">0</text>
+<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.section{font:700 15px system-ui,sans-serif;fill:#2d3748}.label{font:600 14px ui-monospace,monospace;fill:#2d3748}.count{font:700 15px system-ui,sans-serif;fill:#1a202c}.note{font:13px system-ui,sans-serif;fill:#4a5568}</style>
+<text x="28" y="36" class="title">PAL Lean Audit — separated counts</text>
+<text x="28" y="60" class="sub">attack-0001 · selected-test outcomes and PAL-source obligations are not summed</text>
+<text x="28" y="90" class="section">Selected T-target outcomes (n=10)</text>
+<text x="204" y="128" text-anchor="end" class="label">PROVED</text>
+<rect x="220" y="106" width="590" height="30" rx="5" fill="#2f855a"/>
+<text x="822" y="128" class="count">6</text>
+<text x="204" y="178" text-anchor="end" class="label">COUNTERMODEL</text>
+<rect x="220" y="156" width="295" height="30" rx="5" fill="#2b6cb0"/>
+<text x="527" y="178" class="count">3</text>
+<text x="204" y="228" text-anchor="end" class="label">EXPECTED_REJECTION</text>
+<rect x="220" y="206" width="98" height="30" rx="5" fill="#805ad5"/>
+<text x="330" y="228" class="count">1</text>
+<text x="204" y="278" text-anchor="end" class="label">OPEN</text>
+<rect x="220" y="256" width="0" height="30" rx="5" fill="#d69e2e"/>
+<text x="232" y="278" class="count">0</text>
+<text x="204" y="328" text-anchor="end" class="label">NOT_FORMALIZED</text>
+<rect x="220" y="306" width="0" height="30" rx="5" fill="#718096"/>
+<text x="232" y="328" class="count">0</text>
+<line x1="28" y1="378" x2="892" y2="378" stroke="#cbd5e0" stroke-width="1"/>
+<text x="28" y="404" class="section">Open PAL-source obligations (separate population)</text>
+<text x="204" y="436" text-anchor="end" class="label">OPEN PAL-SOURCE</text>
+<rect x="220" y="414" width="98" height="30" rx="5" fill="#c05621"/>
+<text x="330" y="436" class="count">1</text>
+<text x="220" y="472" class="note">D-FIRST-OCCURRENCE (interfaces O04, O25)</text>
 </svg>
