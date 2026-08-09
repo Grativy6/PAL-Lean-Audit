@@ -10,6 +10,8 @@ The claim ledger is the source of chart data. Generated graphics are explanatory
 - `OPEN` records an attempted but unclosed burden without treating failure as refutation.
 - `NOT_FORMALIZED` records that no adequate Lean statement has been adopted.
 
+Checker or exporter incompatibilities are tooling results, not PAL results. They must be retained in the run receipts and may not be reported as proofs, countermodels, or expected rejections.
+
 ## Benchmark rules
 
 Build duration, memory, cache behavior, and runner identity are measurements of a particular execution environment. They are not evidence that a theorem is stronger, more important, or more ontologically accurate.
