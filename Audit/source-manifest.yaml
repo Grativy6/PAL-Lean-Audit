@@ -1,0 +1,73 @@
+schema_version: 0.1.0
+manifest_role: source identity and authority routing; not a redistribution bundle
+prepared_for: PAL Lean Audit bootstrap-0000
+author: Christopher D. Pang
+
+controlling_release:
+  name: PAL v2.0
+  publication_date: 2026-08-02
+  doi: 10.5281/zenodo.21754097
+  license: CC-BY-4.0
+  authority_surfaces:
+    - id: PAL-v2.0-Spine
+      title: Mechanical Structural Spine
+      role: ordered mechanical claims
+      supplied_filename: PAL_v2.0_Mechanical_Structural_Spine - Copy(6).docx
+      sha256: 4631747f9da65ae353e27902da40294c077fd05eafe12f6d6d781b04d02897be
+      included_in_repository: false
+    - id: PAL-v2.0-M
+      title: Mathematical Realization Atlas
+      role: bounded formal realizations, countermodels, tests, and return handles
+      supplied_filename: PAL_v2.0-M_Mathematical_Realization_Atlas - Copy(5).docx
+      sha256: 237b4f0c74dd601786d5c5559934594b7e6cf89ebeb34c2a794bf2d0e6ff5fe0
+      included_in_repository: false
+    - id: PAL-v2.0-L
+      title: Obligation and Decision Ledger
+      role: adopted decisions, obligations, provenance, and reopening addresses
+      supplied_filename: PAL_v2.0-L_Obligation_and_Decision_Ledger - Copy(5).docx
+      sha256: 97a5394e97e8e09115d04b073cf8ba2390893d585a602fa68979011d359e92d7
+      included_in_repository: false
+    - id: PAL-v2.0-T
+      title: Conformance Tests
+      role: positive and negative fixtures and receipt requirements
+      supplied_filename: PAL_v2.0-T_Conformance_Tests - Copy(5).docx
+      sha256: 4fd3b96e037d2568b0f79404fa588cad42af4d4bd6bf8b69f5169308348514e8
+      included_in_repository: false
+    - id: PAL-v2.0-C
+      title: PAL 1.x Compatibility Note
+      role: receipt-preserving migration and rejected legacy mappings
+      supplied_filename: PAL_v2.0-C_1.x_Compatibility_Note - Copy(5).docx
+      sha256: a0e7ff203ada4160e5ab7600b623bb1ebd0ec95c6906642b2a988ceb88953c67
+      included_in_repository: false
+
+integration_references:
+  - id: PECAN-v1.0.4
+    doi: 10.5281/zenodo.21760884
+    role: consequential-crossing protocol only
+    sha256: d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43
+  - id: PEA-Core-v1.1.2
+    doi: 10.5281/zenodo.21760888
+    role: bounded non-self-executing ethical review only
+    sha256: d358cf0cdc8cb51e06896d85490d3945f07e47992075e1073da5990df9f1e6aa
+  - id: PPP-Kernel-v0.5
+    doi: 10.5281/zenodo.21760888
+    role: optional integration and verification companion only
+    sha256: f06ef4b4d9698e1a05135d4fb532c1355803c489f0418cb80a9107bccc4763a3
+  - id: SEED-v0.3
+    doi: 10.5281/zenodo.21760893
+    role: human-facing release discipline only
+    sha256: 45bb853b7c61997df32f04c45df20b4761bae130b8a0a4d7f583b451174e5985
+
+bounded_scientific_branches:
+  - id: BLA-v0.9.1
+    title: Boundary-Ledger Accounting in Primitive Axiom Layers
+    role: bounded scientific/model-boundary branch; not spine authority
+    sha256: 7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e
+  - id: BRT-AIC-v1.0.1
+    title: Boundary-Readable Trace and Absorber-Informed Closure
+    role: public review paper and bounded physics realization; not spine authority
+    sha256: 33da8dd002102d661976d0258a05fb5e8cffc9b93f1b708a9e86ffd91cc7a0b7
+  - id: CLEF-v1.0
+    title: Cluster-Layer Entropy Focus
+    role: bounded theoretical framework and laboratory; not spine authority
+    sha256: 24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43

@@ -1,0 +1,8 @@
+.lake/
+artifacts/
+__pycache__/
+*.pyc
+
+# Editor-local state
+.vscode/
+.idea/

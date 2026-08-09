@@ -1,0 +1,92 @@
+name: Lean audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Generate the pinned Lake manifest
+        if: ${{ hashFiles('lake-manifest.json') == '' }}
+        run: |
+          curl --proto '=https' --tlsv1.2 -fsSL \
+            https://raw.githubusercontent.com/leanprover/elan/v4.2.3/elan-init.sh \
+            -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path \
+            --default-toolchain "$(cat lean-toolchain)"
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake update
+
+      - name: Build and check the Lean environment
+        uses: leanprover/lean-action@v1.5.0
+        with:
+          build: true
+          leanchecker: true
+          use-mathlib-cache: true
+
+      - name: Attempt experimental nanoda check
+        id: nanoda
+        continue-on-error: true
+        uses: leanprover/lean-action@v1.5.0
+        with:
+          auto-config: false
+          nanoda: true
+          nanoda-allow-sorry: false
+          use-github-cache: false
+          use-mathlib-cache: false
+
+      - name: Enforce formalization policy
+        run: python3 scripts/check_policy.py
+
+      - name: Verify generated report
+        run: python3 scripts/render_report.py --check
+
+      - name: Capture exact environment receipt
+        run: bash scripts/capture_environment.sh
+
+      - name: Record independent checker outcomes
+        env:
+          NANODA_OUTCOME: ${{ steps.nanoda.outcome }}
+        run: |
+          {
+            echo "leanchecker=success"
+            echo "nanoda=$NANODA_OUTCOME"
+            echo "nanoda_policy=experimental-non-blocking"
+          } > artifacts/checkers.txt
+          if [ "$NANODA_OUTCOME" != "success" ]; then
+            echo "::warning::nanoda could not check this Lean environment; the failure is retained as an audit result."
+          fi
+
+      - name: Add report to job summary
+        run: |
+          cat docs/generated/summary.md >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo
+            echo "## Independent checker outcomes"
+            echo
+            echo '```text'
+            cat artifacts/checkers.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload audit receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pal-lean-bootstrap-receipts
+          path: |
+            artifacts/environment.txt
+            artifacts/checkers.txt
+            lake-manifest.json
+            docs/generated/outcomes.svg
+            docs/generated/summary.md

@@ -1,8 +1,16 @@
 # PAL Lean Audit
 
-A source-locked Lean 4 audit bench for the mechanical claims and bounded mathematical realizations of **PAL v2.0**.
+A source-locked Lean 4 audit bench for bounded mechanical claims and mathematical realizations of **PAL v2.0**.
 
-> Lean can verify that a formal statement follows from declared definitions and assumptions, construct countermodels to over-strong statements, and expose axiom dependencies. It cannot establish PAL as a complete ontology or prove that a formalization exhausts the source framework.
+> Lean can verify that a formal statement follows from declared definitions and assumptions, construct countermodels to stronger statements, and expose axiom dependencies. It cannot establish PAL as a complete ontology or prove that a formalization exhausts the source framework.
+
+## Current state
+
+This repository is at **Bootstrap Run 0000**. The audit workflow is being installed; no PAL conformance theorem has yet been claimed.
+
+![Bootstrap outcome counts](docs/generated/outcomes.svg)
+
+See [the generated status receipt](docs/generated/summary.md) and [reporting rules](docs/REPORTING.md).
 
 ## Authority boundary
 
@@ -12,15 +20,17 @@ A source-locked Lean 4 audit bench for the mechanical claims and bounded mathema
 - **Nonclaim:** this repository does not give mathematics, software, or AI authority to redefine PAL
 - **Omega firewall:** unresolved possibility remains metalinguistic; no Lean constructor may consume or identify it
 
+The five coordinated PAL v2.0 authority surfaces are recorded in [`Audit/source-manifest.yaml`](Audit/source-manifest.yaml). Scientific branches and integration specifications may supply bounded cases; they do not redefine the spine.
+
 ## Result vocabulary
 
-- **PROVED** - Lean checked the stated theorem under recorded assumptions.
-- **COUNTERMODEL** - Lean checked a construction showing that a stronger statement fails or that a rule is necessary.
-- **EXPECTED_REJECTION** - an intentionally invalid fixture was rejected for the recorded reason.
-- **OPEN** - the current model does not close the burden.
-- **NOT_FORMALIZED** - no adequate formal statement has yet been adopted.
+- **PROVED** — Lean checked the exact stated theorem under recorded dependencies.
+- **COUNTERMODEL** — Lean checked a construction refuting a stronger statement or showing a rule is necessary.
+- **EXPECTED_REJECTION** — an intentionally invalid fixture was rejected for the recorded reason.
+- **OPEN** — the current model does not close the burden.
+- **NOT_FORMALIZED** — no adequate formal statement has yet been adopted.
 
-A failed proof attempt is not automatically a counterexample. A successful proof is not authority beyond its exact statement and dependencies.
+A failed proof attempt is not automatically a counterexample. A successful proof has no authority beyond its exact statement, dependencies, and declared scope.
 
 ## Audit route
 
@@ -36,21 +46,31 @@ flowchart TD
     O --> R
 ```
 
-## Planned report surfaces
+## Reproducible environment
 
-- outcome-count bar chart
-- PAL conformance coverage by T-number
-- axiom-dependency count and `sorryAx` detection
-- module build-time chart, labeled as runner-dependent
-- source-card to definition to theorem dependency diagram
-- countermodel and ablation ledger
-- exact Lean, Mathlib, runner, operating-system, and commit identity
+- Lean: `leanprover/lean4:v4.32.1`
+- Mathlib: `v4.32.1`
+- CI: `leanprover/lean-action@v1.5.0`
+- blocking independent check: the Lean toolchain's bundled `leanchecker`
+- experimental cross-check: `nanoda`; compatibility failures are retained in the run receipts and do not count as PAL results
+- placeholders: `sorry`, `admit`, and unlisted `axiom` declarations are rejected
+
+Run locally:
+
+```bash
+lake update
+lake build
+python3 scripts/check_policy.py
+python3 scripts/render_report.py --check
+```
 
 ## Initial target
 
-Attack Run 0001 will cover the primitive floor and early trace route: T05-T07, T09-T11, and T14-T17.
+Attack Run 0001 will cover the primitive floor and early trace route: T05–T07, T09–T11, and T14–T17. Its models and claims will arrive in a separate draft pull request after the bootstrap is green.
 
-Scientific branches such as BLA, boundary-readable trace, absorber-informed closure, and CLEF may later supply bounded realization cases. They do not redefine the spine.
+## Licensing
+
+Lean code, scripts, and CI configuration are licensed under Apache-2.0. Documentation, diagrams, and generated explanatory reports are licensed under CC BY 4.0. See [`LICENSE`](LICENSE), [`LICENSE-DOCS.md`](LICENSE-DOCS.md), and [`NOTICE`](NOTICE).
 
 ## AI assistance
 
