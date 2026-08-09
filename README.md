@@ -6,11 +6,21 @@ A source-locked Lean 4 audit bench for bounded mechanical claims and mathematica
 
 ## Current state
 
-This repository contains **Attack Run 0001**, a bounded audit for T05-T07, T09-T11, and T14-T17. The reported proofs, countermodels, and expected rejections apply only to their exact statements and receipts; they do not establish PAL as an ontology or close unresolved possibility.
+This repository contains **Attack Run 0001**, a bounded audit for T05-T07,
+T09-T11, and T14-T17, plus **Attack Run 0002**, a noncanonical audit of the
+PAL v2.1 first-cut receipt candidates. A checked Attack Run 0002 result does not
+adopt C21-01 through C21-08, amend PAL v2.0, or close O04/O25.
 
 ![Attack Run 0001 selected-test outcomes and open PAL-source obligations shown as separate counts](docs/generated/outcomes.svg)
 
 See [the generated status receipt](docs/generated/summary.md), [the detailed run receipt](Audit/attack-run-0001-receipt.json), and [reporting rules](docs/REPORTING.md).
+
+![Attack Run 0002 candidate outcomes, open PAL-source obligations, open manual-review controls, and required negative-guard dispositions shown as separate populations](docs/generated/attack-run-0002-outcomes.svg)
+
+See [the candidate proposal](docs/proposals/PAL-v2.1-first-cut-receipt.md),
+[impact map](Audit/pal-2.1-impact.yaml),
+[generated candidate status receipt](docs/generated/attack-run-0002-summary.md),
+and [detailed candidate run receipt](Audit/attack-run-0002-receipt.json).
 
 ## Authority boundary
 
@@ -67,7 +77,13 @@ Run locally:
 lake update
 lake build
 python3 scripts/check_policy.py
+python3 scripts/check_candidate_inputs.py
 python3 scripts/render_report.py --check
+python3 scripts/render_report.py \
+  --ledger Audit/attack-run-0002-claim-ledger.json \
+  --summary docs/generated/attack-run-0002-summary.md \
+  --chart docs/generated/attack-run-0002-outcomes.svg \
+  --check
 ```
 
 ## Attack Run 0001
@@ -75,6 +91,23 @@ python3 scripts/render_report.py --check
 The run covers the primitive floor and early trace route: T05-T07, T09-T11, and T14-T17. It retains the source rule that unresolved possibility stays outside Lean's object language, lexically rejects the literal standalone identifiers `Omega` and `Ω`, uses supplied-witness dependent receipts for the A0-to-A2 route, checks predecessor and witness-source countercases, preserves protected trace through a bounded route, and prevents modeled later results from rewriting earlier authority.
 
 O04/O25 remains one explicitly open first-occurrence debt. Local witness values construct conditional instances only; they do not settle that debt.
+
+## Attack Run 0002 — CANDIDATE audit
+
+Attack Run 0002 tests the provisional first-cut receipt ideas recorded in
+[planning issue #4](https://github.com/Grativy6/PAL-Lean-Audit/issues/4). It
+uses elementary source-fiber, historical-occurrence, local-first, one-step
+witnessed-inquiry, and immutable-prior-receipt models. It deliberately omits an
+information-theoretic layer, coinduction, coalgebras, and infinite causal
+objects because the smaller countermodels suffice.
+
+The run distinguishes first-in-declared-account order from temporal, ontic, or
+global primacy; keeps canonical receipt fields distinct instead of redefining
+them all as cost; requires supplied witnesses for modeled inquiry events; and
+requires a later witnessed trace before reporting recoverable occurrence. O04
+and O25 remain two interfaces to one `OPEN` `D-FIRST-OCCURRENCE` obligation.
+The semantic-surrogate guard remains a separate `OPEN` manual-review control;
+the lexical T05 check cannot discharge it.
 
 ## Licensing
 

@@ -49,17 +49,35 @@ jobs:
       - name: Enforce formalization policy
         run: python3 scripts/check_policy.py
 
+      - name: Validate PAL v2.1 candidate input locks
+        run: python3 scripts/check_candidate_inputs.py
+
       - name: Verify generated report
-        run: python3 scripts/render_report.py --check
+        run: |
+          python3 scripts/render_report.py --check
+          python3 scripts/render_report.py \
+            --ledger Audit/attack-run-0002-claim-ledger.json \
+            --summary docs/generated/attack-run-0002-summary.md \
+            --chart docs/generated/attack-run-0002-outcomes.svg \
+            --check
 
       - name: Capture Lean axiom receipts
         run: |
           set -o pipefail
           mkdir -p artifacts
-          lake env lean Audit/AttackRun0001.lean 2>&1 | tee artifacts/axioms.txt
+          lake env lean Audit/AttackRun0001.lean 2>&1 | tee artifacts/attack-run-0001-axioms.txt
+          lake env lean Audit/AttackRun0002.lean 2>&1 | tee artifacts/attack-run-0002-axioms.txt
+
+      - name: Verify Attack Run 0002 axiom receipts
+        run: |
+          python3 scripts/check_axiom_receipts.py \
+            --run-id attack-0002 \
+            --artifact artifacts/attack-run-0002-axioms.txt
 
       - name: Capture exact environment receipt
         env:
+          AUDIT_RUN_ID: attack-0002
+          AUDIT_ENVIRONMENT_OUTPUT: artifacts/attack-run-0002-environment.txt
           AUDIT_PR_NUMBER: ${{ github.event.pull_request.number }}
           AUDIT_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           AUDIT_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -83,6 +101,12 @@ jobs:
           cat docs/generated/summary.md >> "$GITHUB_STEP_SUMMARY"
           {
             echo
+            echo "---"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          cat docs/generated/attack-run-0002-summary.md >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo
             echo "## Independent checker outcomes"
             echo
             echo '```text'
@@ -93,12 +117,19 @@ jobs:
       - name: Upload audit receipts
         uses: actions/upload-artifact@v4
         with:
-          name: pal-lean-attack-0001-receipts
+          name: pal-lean-candidate-attack-0002-receipts
           path: |
-            artifacts/environment.txt
+            artifacts/attack-run-0002-environment.txt
             artifacts/checkers.txt
-            artifacts/axioms.txt
+            artifacts/attack-run-0001-axioms.txt
+            artifacts/attack-run-0002-axioms.txt
             Audit/attack-run-0001-receipt.json
+            Audit/attack-run-0002-receipt.json
+            Audit/attack-run-0002-claim-ledger.json
+            Audit/pal-2.1-impact.yaml
             lake-manifest.json
             docs/generated/outcomes.svg
             docs/generated/summary.md
+            docs/generated/attack-run-0002-outcomes.svg
+            docs/generated/attack-run-0002-summary.md
+            docs/proposals/PAL-v2.1-first-cut-receipt.md
