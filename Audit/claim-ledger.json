@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "run_id": "bootstrap-0000",
+  "controlling_release": "PAL v2.0",
+  "controlling_doi": "10.5281/zenodo.21754097",
+  "authority_ceiling": "Infrastructure receipt only; no PAL theorem has been attempted.",
+  "generated_at": null,
+  "claims": [
+    {"id": "T05", "title": "Omega identity/firewall", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T06", "title": "A0 cut", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T07", "title": "Omega-star reflection", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T09", "title": "Theta authority and nonimplication", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T10", "title": "Primitive placement", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T11", "title": "A0-A1-A2 separation", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T14", "title": "Predecessor strictness", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T15", "title": "Witness nonmanufacture", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T16", "title": "Trace recovery and immutability", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."},
+    {"id": "T17", "title": "No authority backflow", "status": "NOT_FORMALIZED", "evidence": "Target registered for Attack Run 0001."}
+  ]
+}
