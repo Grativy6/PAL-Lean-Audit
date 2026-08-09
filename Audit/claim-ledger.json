@@ -1,13 +1,21 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "run_id": "attack-0001",
   "controlling_release": "PAL v2.0",
   "controlling_doi": "10.5281/zenodo.21754097",
   "run_receipt": "Audit/attack-run-0001-receipt.json",
-  "authority_ceiling": "Lean-checked bounded receipt models, countermodels, and policy fixtures only; no claim that mathematics contains PAL, no object-language Omega, and no closure of O04/O25.",
+  "authority_ceiling": "Lean-checked bounded receipt models, countermodels, and policy fixtures only; no claim that mathematics contains PAL, no semantic proof against differently named surrogates for unresolved possibility, and no closure of O04/O25.",
   "generated_at": null,
+  "open_source_obligations": [
+    {
+      "id": "D-FIRST-OCCURRENCE",
+      "interfaces": ["O04", "O25"],
+      "status": "OPEN",
+      "reason": "A local supplied witness constructs only a conditional receipt; the certificate grammar does not supply its own ontic witness."
+    }
+  ],
   "claims": [
-    {"id": "T05", "title": "Omega identity/firewall", "status": "EXPECTED_REJECTION", "evidence": "Policy fixtures reject both ASCII and symbolic object-language declarations with a stable T05 diagnostic; compiled modules contain no such identifier."},
+    {"id": "T05", "title": "Literal Omega-identifier firewall", "status": "EXPECTED_REJECTION", "evidence": "The lexical policy rejects standalone `Omega` and `Ω` identifiers in scanned Lean code and both fixtures receive the stable T05 diagnostic. This does not detect differently named semantic surrogates."},
     {"id": "T06", "title": "A0 cut", "status": "PROVED", "evidence": "noCutWithoutWitness; CutReceipt is witness-parameterized and distinct from optional ModelEnvelope scaffolding."},
     {"id": "T07", "title": "Omega-star reflection", "status": "PROVED", "evidence": "reflectionForgetsToIndexedCut and cutAddressNeReflectionAddress; no canonical reflection law is selected."},
     {"id": "T09", "title": "Theta authority and nonimplication", "status": "COUNTERMODEL", "evidence": "thetaDoesNotProvideReadable: an inhabited Boolean nonidentity turn with an empty readout-witness type."},

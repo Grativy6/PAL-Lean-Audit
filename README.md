@@ -6,9 +6,9 @@ A source-locked Lean 4 audit bench for bounded mechanical claims and mathematica
 
 ## Current state
 
-This repository contains the proposed **Attack Run 0001** bounded audit for T05-T07, T09-T11, and T14-T17. The reported proofs, countermodels, and expected rejections apply only to their exact statements and receipts; they do not establish PAL as an ontology or close unresolved possibility.
+This repository contains **Attack Run 0001**, a bounded audit for T05-T07, T09-T11, and T14-T17. The reported proofs, countermodels, and expected rejections apply only to their exact statements and receipts; they do not establish PAL as an ontology or close unresolved possibility.
 
-![Attack Run 0001 outcome counts](docs/generated/outcomes.svg)
+![Attack Run 0001 selected-test outcomes and open PAL-source obligations shown as separate counts](docs/generated/outcomes.svg)
 
 See [the generated status receipt](docs/generated/summary.md), [the detailed run receipt](Audit/attack-run-0001-receipt.json), and [reporting rules](docs/REPORTING.md).
 
@@ -18,7 +18,7 @@ See [the generated status receipt](docs/generated/summary.md), [the detailed run
 - **Controlling PAL release:** PAL v2.0, DOI [10.5281/zenodo.21754097](https://doi.org/10.5281/zenodo.21754097)
 - **Formal role:** bounded realization and adversarial audit
 - **Nonclaim:** this repository does not give mathematics, software, or AI authority to redefine PAL
-- **Omega firewall:** unresolved possibility remains metalinguistic; no Lean constructor may consume or identify it
+- **Omega boundary:** unresolved possibility remains metalinguistic; source review forbids a Lean constructor from consuming or identifying it. The automated T05 check is narrower: it rejects only the literal standalone identifiers `Omega` and `Ω` in scanned Lean code and cannot detect differently named semantic surrogates.
 
 The five coordinated PAL v2.0 authority surfaces are recorded in [`Audit/source-manifest.yaml`](Audit/source-manifest.yaml). Scientific branches and integration specifications may supply bounded cases; they do not redefine the spine.
 
@@ -37,7 +37,7 @@ A failed proof attempt is not automatically a counterexample. A successful proof
 ```mermaid
 flowchart TD
     S["Hash-locked PAL v2.0 sources"] --> F{"Attack Run 0001 route"}
-    F --> W["T05 object-language firewall"]
+    F --> W["T05 literal-identifier check"]
     F --> M["Bounded Lean model"]
     W --> E["Expected rejection"]
     M --> K{"Lean result"}
@@ -59,6 +59,7 @@ flowchart TD
 - blocking independent check: the Lean toolchain's bundled `leanchecker`
 - experimental cross-check: `nanoda`; compatibility failures are retained in the run receipts and do not count as PAL results
 - placeholders: `sorry`, `admit`, and unlisted `axiom` declarations are rejected
+- pull-request receipts: `pr_head_sha` records the proposed source commit while `tested_merge_sha` records the synthetic merge commit actually checked
 
 Run locally:
 
@@ -71,7 +72,7 @@ python3 scripts/render_report.py --check
 
 ## Attack Run 0001
 
-The run covers the primitive floor and early trace route: T05-T07, T09-T11, and T14-T17. It keeps unresolved possibility outside Lean's object language, uses supplied-witness dependent receipts for the A0-to-A2 route, checks predecessor and witness-source countercases, preserves protected trace through a bounded route, and prevents modeled later results from rewriting earlier authority.
+The run covers the primitive floor and early trace route: T05-T07, T09-T11, and T14-T17. It retains the source rule that unresolved possibility stays outside Lean's object language, lexically rejects the literal standalone identifiers `Omega` and `Ω`, uses supplied-witness dependent receipts for the A0-to-A2 route, checks predecessor and witness-source countercases, preserves protected trace through a bounded route, and prevents modeled later results from rewriting earlier authority.
 
 O04/O25 remains one explicitly open first-occurrence debt. Local witness values construct conditional instances only; they do not settle that debt.
 

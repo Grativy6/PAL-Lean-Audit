@@ -59,6 +59,10 @@ jobs:
           lake env lean Audit/AttackRun0001.lean 2>&1 | tee artifacts/axioms.txt
 
       - name: Capture exact environment receipt
+        env:
+          AUDIT_PR_NUMBER: ${{ github.event.pull_request.number }}
+          AUDIT_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          AUDIT_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: bash scripts/capture_environment.sh
 
       - name: Record independent checker outcomes
