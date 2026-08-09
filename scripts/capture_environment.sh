@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-mkdir -p artifacts
 python_bin="${PYTHON_BIN:-python3}"
+run_id="${AUDIT_RUN_ID:-attack-0001}"
+environment_output="${AUDIT_ENVIRONMENT_OUTPUT:-artifacts/environment.txt}"
+mkdir -p "$(dirname "$environment_output")"
 event_name="${GITHUB_EVENT_NAME:-local}"
 checked_out_sha="$(git rev-parse HEAD 2>/dev/null || echo unavailable)"
 github_event_sha="${GITHUB_SHA:-unavailable}"
@@ -14,7 +16,7 @@ if [[ "$event_name" == "pull_request" || "$event_name" == "pull_request_target" 
   tested_merge_sha="$checked_out_sha"
 fi
 {
-  echo "run_id=attack-0001"
+  echo "run_id=$run_id"
   echo "event_name=$event_name"
   echo "github_ref=${GITHUB_REF:-local}"
   echo "head_ref=${GITHUB_HEAD_REF:-not_applicable}"
@@ -39,6 +41,6 @@ fi
   else
     echo "lake_manifest_sha256=unavailable"
   fi
-} > artifacts/environment.txt
+} > "$environment_output"
 
-cat artifacts/environment.txt
+cat "$environment_output"

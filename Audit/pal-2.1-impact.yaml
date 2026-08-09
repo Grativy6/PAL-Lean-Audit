@@ -1,0 +1,851 @@
+{
+  "schema_version": "0.1.0",
+  "map_id": "PAL-2.1-FIRST-CUT-DEPENDENCY-IMPACT",
+  "title": "PAL v2.1 Candidate Dependency-Impact Map",
+  "status": "CANDIDATE_NONCANONICAL",
+  "prepared_at_utc": "2026-08-09",
+  "prepared_for": "PAL v2.1 first-cut receipt and source-open closure practice cycle",
+  "author_steward": "Christopher D. Pang",
+  "prepared_by": "OpenAI Codex as a drafting and audit tool",
+  "input_provenance": {
+    "supplied_map_sha256": "8505808317462c2bc601dd90f9526c8a43ffffdf10681cf00df5231c26781bde",
+    "accepted_baseline_sha": "5655d1b2d0fd4ecfc114786de0999a4f7fc82659",
+    "repository_normalization": "The repository copy updates filename aliases, the accepted audit baseline, source-review notes, and repo-relative paths without changing any candidate adoption status. It is serialized as JSON-compatible YAML so dependency-free CI can parse and validate the locked bytes."
+  },
+  "authority": {
+    "controlling_release": "PAL v2.0",
+    "controlling_release_doi": "10.5281/zenodo.21754097",
+    "controlling_source_manifest": "Audit/source-manifest.yaml",
+    "candidate_workflow": "PAL_v2.1_Candidate_Workflow.md",
+    "candidate_workflow_sha256": "d952ea510fb82a5ac5f30297c5b82cc6fc120bef87dd7db4fab912ce44ff752c",
+    "adoption_authority": "Christopher D. Pang",
+    "adoption_state": "NOT_ADOPTED",
+    "authority_limit": "This map identifies dependencies and proposed work. It does not amend PAL, close O04 or O25, assign a new canonical decision address, publish PAL v2.1, or authorize a downstream version change."
+  },
+  "coverage": {
+    "complete_for": [
+      "the five hash-verified PAL v2.0 authority surfaces",
+      "the four accessible hash-verified public integration references",
+      "the three accessible hash-verified bounded scientific branches",
+      "the current PAL-Lean-Audit planning and formal-audit surface"
+    ],
+    "partial_for": [
+      "A0 Boundary Kernel: only the v0.8.2 source receipt recorded in PAL v2.0-L was available",
+      "PAL-dependent applications, prompts, AGENTS instructions, and private laboratories: inventory deferred until publication"
+    ],
+    "completeness_claim": "Complete for the accessible hash-verified corpus and named audit repository; not a claim of complete inventory across every PAL-adjacent file or application."
+  },
+  "allowed_impact_statuses": [
+    "CANON_CHANGE",
+    "FORMAL_REALIZATION",
+    "COMPATIBLE_UNCHANGED",
+    "CITATION_UPDATE_LATER",
+    "SEMANTIC_REVIEW_REQUIRED",
+    "NOT_APPLICABLE"
+  ],
+  "nonclaims": [
+    "Omega remains metalinguistic unresolved possibility and is not a source object.",
+    "A0 remains a supplied cut and is not derived from Omega.",
+    "A local first address is not promoted to the first event in reality.",
+    "A cost receipt is not a causal-source receipt or proof of truth.",
+    "A later witness does not manufacture or retroactively pay for an earlier occurrence.",
+    "The act of inquiry does not prove the inquirer's ontology, consciousness, or global primacy.",
+    "No downstream authority, permission, consent, or ethical status changes automatically."
+  ],
+  "candidate_statements": [
+    {
+      "id": "C21-01",
+      "name": "Account-relative primacy",
+      "summary": "A0 is the first addressable supplied cut in a declared account, not a globally first event.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-02",
+      "name": "Cost-bearing cut",
+      "summary": "Every addressable cut carries a cut-indexed cost or obligation without equating cost with cause.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-03",
+      "name": "Occurrence-closed, source-open receipt",
+      "summary": "A receipt may establish local occurrence and carried consequences while leaving ultimate source and global primacy open.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-04",
+      "name": "Retrospective addressability",
+      "summary": "Calling a cut first requires a later account with sufficient orientation, trace, and comparison structure.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-05",
+      "name": "Reflexive witness limit",
+      "summary": "Inquiry witnesses a present distinction-making occurrence, not the ultimate source or ontology of the inquirer.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-06",
+      "name": "Cut-source underdetermination",
+      "summary": "Identical accessible cuts do not identify identical upstream sources without an additional discriminating witness.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-07",
+      "name": "Recursive source inquiry",
+      "summary": "A source inquiry creates a further cut and cost without proving an infinite causal ontology.",
+      "adoption_status": "CANDIDATE"
+    },
+    {
+      "id": "C21-08",
+      "name": "No retroactive payment",
+      "summary": "Later recovery preserves the earlier cost and authority snapshot; it does not create the earlier occurrence or witness.",
+      "adoption_status": "CANDIDATE"
+    }
+  ],
+  "source_review_notes": [
+    {
+      "candidate_ids": [
+        "C21-02"
+      ],
+      "note": "PAL v2.0 keeps cost, witness, carried trace, authority ceiling, residual, and reopening as distinct receipt fields. Reusing M-A4-DEBT for A0 cost would be a new bounded realization, not an existing canonical A0 theorem."
+    },
+    {
+      "candidate_ids": [
+        "C21-03"
+      ],
+      "note": "M-A0-CUT alone establishes no A1 occurrence. Any occurrence-closed model must use a supplied A1 witness and A2 recoverable trace; CLOSED_IN_SCOPE additionally requires a named A15 check while ultimate source remains OPEN."
+    },
+    {
+      "candidate_ids": [
+        "C21-04"
+      ],
+      "note": "A0 is already first in declared account order under SC-01/D03. Later trace or comparison is required only for claims of temporal, ontic, or global primacy; PAL A10 comparison additionally routes through SC-13/M-A10-PARTIAL/O14."
+    },
+    {
+      "candidate_ids": [
+        "C21-05",
+        "C21-07"
+      ],
+      "note": "Inquiry is not self-certifying. A modeled inquiry event or further cut requires its own externally supplied witness, cost, and receipt under L05/T15."
+    },
+    {
+      "candidate_ids": [
+        "C21-08"
+      ],
+      "note": "Later evidence may recover or append the account of an earlier cost receipt; it does not alter the earlier occurrence, witness basis, cost, or authority."
+    }
+  ],
+  "first_occurrence_debt": {
+    "debt_id": "D-FIRST-OCCURRENCE",
+    "controlling_decision": "D14",
+    "current_state": "OPEN",
+    "candidate_disposition": "RETAIN_OPEN_AND_CLARIFY",
+    "o04": {
+      "obligation_name": "First occurrence",
+      "interface": "ontic inhabitance/source interface",
+      "current_state": "OPEN",
+      "current_rule": "A supplied, observed, assumed, or model-specific admissible occurrence witness may support a local account; PAL does not derive the witness or identify an absolute-first source from trace alone.",
+      "reopening_address": "O04"
+    },
+    "o25": {
+      "obligation_name": "Revocation source",
+      "interface": "certificate/revocation interface",
+      "current_state": "OPEN",
+      "current_rule": "Certificate grammar may check, carry, or revoke authority under a supplied witness, but it may not invent, self-certify, or conceal the missing revocation witness.",
+      "reopening_address": "O25"
+    },
+    "relation": "O04 and O25 are separate historical rows and two interfaces to one debt, not two mysteries and not interchangeable names. A valid supplied witness may discharge one M-A0-CUT constructor instance. That local receipt can make A0 the first addressable cut of its declared account and carry its witness-source and cost fields. A separate supplied A1/A2 route is required for recoverable occurrence trace. Neither route closes the framework-level debt, establishes global primacy, or explains the ontic source of the supplied witness.",
+    "answer_to_current_question": {
+      "sounds_right": true,
+      "precision_repair": "O04 is not specifically a claim about cosmology, although the universe's unknown first-occurrence source is a valid example of its ceiling. O25 is not the supplied cut itself; it is the certificate/revocation-side rule preventing a receipt grammar from manufacturing its own witness."
+    },
+    "controlling_source_routes": [
+      "PAL v2.0-L D14",
+      "PAL v2.0-L O04",
+      "PAL v2.0-L O25",
+      "PAL v2.0 Spine SC-01 / A0 required witness, carried trace, residual, and reopening fields",
+      "PAL v2.0-M M-A0-CUT claim class and authority ceiling",
+      "PAL v2.0-T T04 and T15"
+    ]
+  },
+  "source_lock": {
+    "verification": "PASS",
+    "method": "SHA-256 comparison against Audit/source-manifest.yaml",
+    "files": [
+      {
+        "id": "PAL-v2.0-Spine",
+        "supplied_filename": "PAL_v2.0_Mechanical_Structural_Spine - Copy.docx",
+        "sha256": "4631747f9da65ae353e27902da40294c077fd05eafe12f6d6d781b04d02897be",
+        "manifest_match": true
+      },
+      {
+        "id": "PAL-v2.0-M",
+        "supplied_filename": "PAL_v2.0-M_Mathematical_Realization_Atlas - Copy.docx",
+        "sha256": "237b4f0c74dd601786d5c5559934594b7e6cf89ebeb34c2a794bf2d0e6ff5fe0",
+        "manifest_match": true
+      },
+      {
+        "id": "PAL-v2.0-L",
+        "supplied_filename": "PAL_v2.0-L_Obligation_and_Decision_Ledger - Copy.docx",
+        "sha256": "97a5394e97e8e09115d04b073cf8ba2390893d585a602fa68979011d359e92d7",
+        "manifest_match": true
+      },
+      {
+        "id": "PAL-v2.0-T",
+        "supplied_filename": "PAL_v2.0-T_Conformance_Tests - Copy.docx",
+        "sha256": "4fd3b96e037d2568b0f79404fa588cad42af4d4bd6bf8b69f5169308348514e8",
+        "manifest_match": true
+      },
+      {
+        "id": "PAL-v2.0-C",
+        "supplied_filename": "PAL_v2.0-C_1.x_Compatibility_Note - Copy.docx",
+        "sha256": "a0e7ff203ada4160e5ab7600b623bb1ebd0ec95c6906642b2a988ceb88953c67",
+        "manifest_match": true
+      },
+      {
+        "id": "PECAN-v1.0.4",
+        "supplied_filename": "PECAN_v1.0.4_Public_Protocol_Specification(8).docx",
+        "sha256": "d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43",
+        "manifest_match": true
+      },
+      {
+        "id": "PEA-Core-v1.1.2",
+        "supplied_filename": "PEA_Core_v1.1.2_Public_Ethical_Review_Specification(7).docx",
+        "sha256": "d358cf0cdc8cb51e06896d85490d3945f07e47992075e1073da5990df9f1e6aa",
+        "manifest_match": true
+      },
+      {
+        "id": "PPP-Kernel-v0.5",
+        "supplied_filename": "PPP_Kernel_v0.5_Public_Integration_and_Verification_Specification(8).docx",
+        "sha256": "f06ef4b4d9698e1a05135d4fb532c1355803c489f0418cb80a9107bccc4763a3",
+        "manifest_match": true
+      },
+      {
+        "id": "SEED-v0.3",
+        "supplied_filename": "SEED_v0.3_Complete_Release_Discipline(7).docx",
+        "sha256": "45bb853b7c61997df32f04c45df20b4761bae130b8a0a4d7f583b451174e5985",
+        "manifest_match": true
+      },
+      {
+        "id": "BLA-v0.9.1",
+        "supplied_filename": "BLA in PAL(6).pdf",
+        "sha256": "7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e",
+        "manifest_match": true
+      },
+      {
+        "id": "BRT-AIC-v1.0.1",
+        "supplied_filename": "Boundary_Readable_Trace_and_Absorber_Informed_Closure_v1.0.1_publish_ready (1)(4).pdf",
+        "sha256": "33da8dd002102d661976d0258a05fb5e8cffc9b93f1b708a9e86ffd91cc7a0b7",
+        "manifest_match": true
+      },
+      {
+        "id": "CLEF-v1.0",
+        "supplied_filename": "CLEF_cluster_layer_entropy_focus_v1_0(20260809-072631).pdf",
+        "sha256": "24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43",
+        "manifest_match": true
+      }
+    ]
+  },
+  "mathematical_realization_routes": [
+    {
+      "candidate_ids": [
+        "C21-02"
+      ],
+      "route": "Typed cut-cost carrier",
+      "minimal_object": "CutReceipt indexed by a cost value in an ordered commutative monoid",
+      "reuse_before_new_math": [
+        "PAL v2.0-M M-A0-CUT already requires a cost receipt",
+        "PAL v2.0-M M-A4-DEBT already realizes additive ordered debt"
+      ],
+      "source_neighbors": [
+        "F. W. Lawvere (1973), generalized metric/cost enrichment",
+        "T. Fritz (2017), resource convertibility and ordered commutative monoids",
+        "CLEF v1.0 cost family as a bounded physical/proxy realization"
+      ],
+      "ceiling": "No cost value proves truth, cause, physical energy, or ultimate source."
+    },
+    {
+      "candidate_ids": [
+        "C21-03",
+        "C21-06"
+      ],
+      "route": "Source fibers and downstream indistinguishability",
+      "minimal_object": "sigma : Source -> Cut with source fiber sigma^-1(c)",
+      "source_neighbors": [
+        "David Blackwell (1953), comparison of experiments",
+        "Claude E. Shannon (1948), channel information"
+      ],
+      "optional_quantitative_result": "For a Markov route Source -> Cut -> Result, I(Source;Result) <= I(Source;Cut).",
+      "ceiling": "The fiber is an admitted model object, not Omega and not an exhaustive source ontology."
+    },
+    {
+      "candidate_ids": [
+        "C21-03",
+        "C21-04",
+        "C21-08"
+      ],
+      "route": "Persistent occurrence without persistent activity",
+      "minimal_object": "Occurred(d,t) iff there exists tau <= t with Active(d,tau)",
+      "source_neighbors": [
+        "Amir Pnueli (1977), temporal logic of programs",
+        "PAL v2.0-M M-A2-STORE and existing persistent-history sources"
+      ],
+      "ceiling": "Historical recoverability is not continuous existence, immortality, or retrocausation."
+    },
+    {
+      "candidate_ids": [
+        "C21-07"
+      ],
+      "route": "Finite-prefix inquiry receipts",
+      "minimal_object": "Each source query appends a new cut-indexed receipt to a finite trace prefix",
+      "deferred_objects": [
+        "coinduction",
+        "coalgebras",
+        "infinite causal structures"
+      ],
+      "ceiling": "Indefinite reopenability does not prove an actually infinite causal regress."
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "PAL-v2.0-Spine",
+      "artifact": "PAL Mechanical Structural Spine",
+      "current_version": "v2.0",
+      "sha256": "4631747f9da65ae353e27902da40294c077fd05eafe12f6d6d781b04d02897be",
+      "controlling_role": "PAL identity, order, invariants, layer cards, authority ceilings, residuals, and reopening grammar",
+      "exact_pal_dependency": [
+        "SC-00 keeps Omega outside constructor domains and leaves every future admission's source and adequacy unresolved.",
+        "SC-01 defines A0 as a supplied cut with scope, witness source, cost, identity, residual, and O04/O25 ceiling.",
+        "L01 requires paid admission; L04 conserves addressable trace; L05 forbids witness self-manufacture; L08 preserves former receipts on reopening.",
+        "SC-03 through SC-05 separate turn, readability, and recoverable occurrence."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "CANON_CHANGE",
+      "required_action": "If adopted, make the minimum targeted clarification to A0 and the spine-wide nonclaims; do not alter Omega, make cost causal, or claim a globally first event. Route every changed card field through the Ledger and full conformance suite.",
+      "human_adoption_status": "PENDING_AFTER_ATTACK_RUN_0002",
+      "release_or_reopening_address": [
+        "SC-00",
+        "SC-01",
+        "SC-03",
+        "SC-04",
+        "SC-05",
+        "L01",
+        "L04",
+        "L05",
+        "L08",
+        "D02",
+        "D03",
+        "D06",
+        "D07",
+        "D08",
+        "D14",
+        "O04",
+        "O25"
+      ]
+    },
+    {
+      "artifact_id": "PAL-v2.0-M",
+      "artifact": "PAL Mathematical Realization Atlas",
+      "current_version": "v2.0-M",
+      "sha256": "237b4f0c74dd601786d5c5559934594b7e6cf89ebeb34c2a794bf2d0e6ff5fe0",
+      "controlling_role": "Bounded formal realizations, assumptions, countermodels, tests, ceilings, and return handles",
+      "exact_pal_dependency": [
+        "M-A0-CUT is already a conditional constructor whose local instance may be discharged by a supplied witness while O04/O25 remains open.",
+        "M-A2-STORE supports recoverable occurrence trace without continuous-duration claims.",
+        "M-A4-DEBT provides an ordered commutative-monoid realization for typed cost/debt.",
+        "M-A15-CHECK preserves dependency, version, authority, residual, and reopening bounds."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "FORMAL_REALIZATION",
+      "required_action": "Add source-fiber, local cut-cost, historical-occurrence, and finite-prefix inquiry cards only after Lean countermodels confirm the ceilings. Reuse M-A0-CUT, M-A2-STORE, and M-A4-DEBT before adding machinery.",
+      "human_adoption_status": "FORMAL_PROPOSAL_ALLOWED; CANONICAL_PLACEMENT_PENDING",
+      "release_or_reopening_address": [
+        "M-A0-CUT",
+        "M-A2-STORE",
+        "M-A4-DEBT",
+        "M-A15-CHECK",
+        "O04",
+        "O25"
+      ]
+    },
+    {
+      "artifact_id": "PAL-v2.0-L",
+      "artifact": "PAL Obligation and Decision Ledger",
+      "current_version": "v2.0-L",
+      "sha256": "97a5394e97e8e09115d04b073cf8ba2390893d585a602fa68979011d359e92d7",
+      "controlling_role": "Adopted decisions, obligation history, provenance, source account, and reopening addresses",
+      "exact_pal_dependency": [
+        "D14 locks O04 and O25 as two interfaces to one open first-occurrence debt.",
+        "O04 is the ontic inhabitance/source interface and supplies no witness.",
+        "O25 is the certificate/revocation interface and forbids witness invention, self-certification, or concealment."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "CANON_CHANGE",
+      "required_action": "If adopted, record one or more new decisions without rewriting D14, merging O04/O25, or marking either row closed. Record rejected wording, Attack Run 0002 evidence, and exact reopening conditions.",
+      "human_adoption_status": "PENDING_AFTER_ATTACK_RUN_0002",
+      "release_or_reopening_address": [
+        "D14",
+        "O04",
+        "O25",
+        "NEW_DECISION_ADDRESS_TO_BE_ASSIGNED"
+      ]
+    },
+    {
+      "artifact_id": "PAL-v2.0-T",
+      "artifact": "PAL Conformance Tests",
+      "current_version": "v2.0-T",
+      "sha256": "4fd3b96e037d2568b0f79404fa588cad42af4d4bd6bf8b69f5169308348514e8",
+      "controlling_role": "Positive and negative fixtures, conformance procedures, retained evidence, and release-gate receipts",
+      "exact_pal_dependency": [
+        "T04 requires two rows, one D-FIRST-OCCURRENCE debt, and neither row closed.",
+        "T06 checks the supplied A0 cut.",
+        "T11 separates A0, A1, and A2.",
+        "T15 forbids witness manufacture; T16 preserves occurrence trace; T17 forbids authority backflow.",
+        "T25 and T26 govern compatibility and cross-surface consistency."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "FORMAL_REALIZATION",
+      "required_action": "Add candidate positive and negative fixtures corresponding to Attack Run 0002; retain T04/T15 as hard guards and require O04/O25 to remain OPEN unless a separate adopted decision explicitly changes the exact debt.",
+      "human_adoption_status": "TEST_DESIGN_ALLOWED; RELEASE_TESTS_PENDING_ADOPTION",
+      "release_or_reopening_address": [
+        "T04",
+        "T06",
+        "T11",
+        "T15",
+        "T16",
+        "T17",
+        "T25",
+        "T26",
+        "T29",
+        "O04",
+        "O25"
+      ]
+    },
+    {
+      "artifact_id": "PAL-v2.0-C",
+      "artifact": "PAL 1.x Compatibility Note",
+      "current_version": "v2.0-C",
+      "sha256": "a0e7ff203ada4160e5ab7600b623bb1ebd0ec95c6906642b2a988ceb88953c67",
+      "controlling_role": "Receipt-preserving migration claims and rejected legacy mappings",
+      "exact_pal_dependency": [
+        "The migration principles forbid closing O04/O25 by renaming or moving the debt into A0.",
+        "The A0 migration requires CutReceipt plus source/cost and forbids derivation from Omega or M0 alone.",
+        "The O04/O25 card requires two interfaces, one debt, both open."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "CANON_CHANGE",
+      "required_action": "If v2.1 is adopted, add a v2.0-to-v2.1 migration section explaining account-relative firstness, source-open closure, unchanged Omega/A0 identities, and the retained O04/O25 debt. Do not rewrite 1.x history.",
+      "human_adoption_status": "PENDING_AFTER_ATTACK_RUN_0002",
+      "release_or_reopening_address": [
+        "v2.0-C migration principles",
+        "v2.0-C A0 card",
+        "v2.0-C O04/O25 card",
+        "T25"
+      ]
+    },
+    {
+      "artifact_id": "PAL-Lean-Audit",
+      "artifact": "PAL-Lean-Audit repository",
+      "current_version": "Accepted Attack Run 0001 audit-hygiene baseline at main@5655d1b2d0fd4ecfc114786de0999a4f7fc82659",
+      "controlling_role": "Noncanonical formal audit, countermodels, environment receipts, policy checks, and generated reports",
+      "exact_pal_dependency": [
+        "The source manifest pins all five PAL v2.0 authority-surface hashes.",
+        "Attack Run 0001 keeps D-FIRST-OCCURRENCE open and distinguishes local conditional witnesses from ontic settlement.",
+        "Formal results are evidence only and cannot adopt PAL canon."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "FORMAL_REALIZATION",
+      "required_action": "Place this map and the candidate proposal on the candidate branch from the accepted audit-hygiene baseline, then run Attack Run 0002. Preserve all v2.0 receipts under their original source and tested-commit identities.",
+      "human_adoption_status": "PREPARATION_ALLOWED; MERGE_AND_CANON_ADOPTION_RESERVED",
+      "release_or_reopening_address": [
+        "Audit/pal-2.1-impact.yaml",
+        "docs/proposals/PAL-v2.1-first-cut-receipt.md",
+        "Attack Run 0002",
+        "D-FIRST-OCCURRENCE"
+      ]
+    },
+    {
+      "artifact_id": "PAL-v2.1-Candidate-Workflow",
+      "artifact": "PAL v2.1 Candidate Workflow",
+      "current_version": "planning seed",
+      "sha256": "d952ea510fb82a5ac5f30297c5b82cc6fc120bef87dd7db4fab912ce44ff752c",
+      "controlling_role": "Noncanonical development gates and stop conditions",
+      "exact_pal_dependency": [
+        "PAL v2.0 remains controlling throughout candidate development.",
+        "Gate 2 requires this impact map before documents are edited."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-05",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "NOT_APPLICABLE",
+      "required_action": "Use as the development control; do not treat it as a PAL authority surface.",
+      "human_adoption_status": "NOT_APPLICABLE",
+      "release_or_reopening_address": [
+        "Gate 2",
+        "Gate 4",
+        "Stop conditions"
+      ]
+    },
+    {
+      "artifact_id": "PECAN-v1.0.4",
+      "artifact": "PECAN Public Protocol Specification",
+      "current_version": "v1.0.4",
+      "doi": "10.5281/zenodo.21760884",
+      "sha256": "d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43",
+      "controlling_role": "Consequential-crossing detection, protocol routing, authority lineage, refusal, quarantine, and bounded reopening",
+      "exact_pal_dependency": [
+        "Section 13.7 accepts version-bound PALStructuralReceipt evidence and preserves the primitive-floor identities and A15 namespace.",
+        "P2-C1 pins PAL v2.0, its DOI, source receipt, content hash, and governing manifest.",
+        "P2-C2 preserves the primitive floor; P2-C6 forbids later PECAN/PEA/decision results from manufacturing an earlier PAL witness.",
+        "PAL evidence never supplies protocol or normative authority."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-06",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "COMPATIBLE_UNCHANGED_OR_CITATION_UPDATE_LATER",
+      "required_action": "After candidate adoption, verify that PALStructuralReceipt needs no new mandatory field and that account-relative primacy does not change crossing or authority semantics. Keep all historical inputs pinned to v2.0; add a v2.1 adapter profile only in a later substantive PECAN release if needed.",
+      "human_adoption_status": "NO_DOWNSTREAM_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "PECAN 12.13",
+        "PECAN 13.7",
+        "PECAN 16.2 / P2-C1, P2-C2, P2-C6",
+        "PECAN 17.1"
+      ]
+    },
+    {
+      "artifact_id": "PEA-Core-v1.1.2",
+      "artifact": "PEA Core Public Ethical Review Specification",
+      "current_version": "v1.1.2",
+      "doi": "10.5281/zenodo.21760888",
+      "sha256": "d358cf0cdc8cb51e06896d85490d3945f07e47992075e1073da5990df9f1e6aa",
+      "controlling_role": "Bounded, non-self-executing ethical review and authority audit",
+      "exact_pal_dependency": [
+        "PAL evidence is optional, typed structural evidence routed through PECAN or a declared compatible handoff.",
+        "Sections 2.2 and 2.5 forbid later ethical or accountable decisions from rewriting PAL premises or manufacturing occurrence.",
+        "The adapter carries claim, scope, witness references, trace, ceiling, residual, A15 status, reopening, and lineage.",
+        "PEA's normative commitments are independent of PAL."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-03",
+        "C21-05",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "COMPATIBLE_UNCHANGED_OR_CITATION_UPDATE_LATER",
+      "required_action": "Confirm that the optional evidence tuple already carries the needed local witness, source, trace, and reopening references. Do not change judgments, hard floors, evaluator grants, consent, standing, or decision authority.",
+      "human_adoption_status": "NO_DOWNSTREAM_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "PEA 2.2",
+        "PEA 2.3",
+        "PEA 2.5",
+        "PEA 11.1",
+        "PEA 13.1"
+      ]
+    },
+    {
+      "artifact_id": "PPP-Kernel-v0.5",
+      "artifact": "PPP Public Integration, Interface, and Verification Kernel",
+      "current_version": "v0.5",
+      "doi": "10.5281/zenodo.21760888",
+      "sha256": "f06ef4b4d9698e1a05135d4fb532c1355803c489f0418cb80a9107bccc4763a3",
+      "controlling_role": "Optional cross-corpus integration and bounded verification",
+      "exact_pal_dependency": [
+        "The canonical source manifest pins PAL v2.0 and its DOI.",
+        "Shared invariant 3 says a supplied cut or witness cannot be invented by a certificate, checker, route, or later success.",
+        "Part II restates A0 cost/source, first-occurrence openness, A2 trace, and A15 receipt semantics.",
+        "Conformance C23 requires the primitive-floor order and carried first-occurrence debt."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-06",
+        "C21-07",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "CITATION_UPDATE_LATER_UNLESS_ADAPTER_SCHEMA_CHANGES",
+      "required_action": "Review the manifest, Part II summary, and C23 after adoption. Preserve the no-witness-manufacture rule and verify that source-open closure requires no new integration status or coercion. Do not republish solely for a PAL citation.",
+      "human_adoption_status": "NO_DOWNSTREAM_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "PPP 3",
+        "PPP 6",
+        "PPP 8-10",
+        "PPP 15",
+        "PPP C23",
+        "PPP 55"
+      ]
+    },
+    {
+      "artifact_id": "SEED-v0.3",
+      "artifact": "SEED Complete Release Discipline",
+      "current_version": "v0.3",
+      "doi": "10.5281/zenodo.21760893",
+      "sha256": "45bb853b7c61997df32f04c45df20b4761bae130b8a0a4d7f583b451174e5985",
+      "controlling_role": "Human-facing release, disclosure, thinking-space, stopping, and room-left discipline",
+      "exact_pal_dependency": [
+        "Section 6A calls PAL v2.0 a frozen structural dependency and forbids A0 from being free, exhaustive, or self-authorizing.",
+        "Sections 6B and 6C preserve status separation, prior receipts, and no authority backflow.",
+        "SEED's human-facing rules remain independently usable and do not depend on PAL ontology."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-02",
+        "C21-03",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "COMPATIBLE_UNCHANGED_OR_CITATION_UPDATE_LATER",
+      "required_action": "Confirm that the candidate only clarifies the supplied-cut evidence bridge. Do not change SEED's Manifest, release statuses, stopping rules, or human authority. Update the frozen PAL citation only in a later substantive release.",
+      "human_adoption_status": "NO_DOWNSTREAM_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "SEED 5",
+        "SEED 6A",
+        "SEED 6B",
+        "SEED 6C",
+        "SEED 31A",
+        "SEED Appendix A"
+      ]
+    },
+    {
+      "artifact_id": "BLA-v0.9.1",
+      "artifact": "Boundary-Ledger Accounting in Primitive Axiom Layers",
+      "current_version": "v0.9.1 public working draft",
+      "sha256": "7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e",
+      "controlling_role": "Bounded scientific/model-boundary branch; not PAL spine authority",
+      "exact_pal_dependency": [
+        "Uses PAL boundary-residual, trace, ledger, and measurement-cost language without a PAL v2.0 version pin.",
+        "Section 10 states that measurement is not free and distinguishes local readable distinction from wider physical cost.",
+        "Section 15 uses an older PAL-specific theta/readable-trace sequence that must not overwrite the v2.0 primitive floor."
+      ],
+      "affected_candidates": [
+        "C21-02",
+        "C21-03",
+        "C21-04",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "CITATION_UPDATE_LATER_OR_COMPATIBLE_UNCHANGED",
+      "required_action": "Review cost language as a bounded realization, not evidence that every ontic first cut has a physical energy cost. Review the older theta sequence against PAL v2.0 before any future BLA release; do not revise this frozen draft now.",
+      "human_adoption_status": "NO_BRANCH_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "BLA 10",
+        "BLA 15",
+        "PAL branch register / BLA"
+      ]
+    },
+    {
+      "artifact_id": "BRT-AIC-v1.0.1",
+      "artifact": "Boundary-Readable Trace and Absorber-Informed Closure",
+      "current_version": "v1.0.1",
+      "doi": "10.5281/zenodo.21008317",
+      "sha256": "33da8dd002102d661976d0258a05fb5e8cffc9b93f1b708a9e86ffd91cc7a0b7",
+      "controlling_role": "Public review paper and bounded physics realization; not PAL spine authority",
+      "exact_pal_dependency": [
+        "Declares itself a branch application rather than a PAL spine revision.",
+        "Provides boundary-readable trace and local closure mathematics used by PAL v2.0-M.",
+        "Its source map cites an older PAL v1.1.3 working spine and uses an older primitive sequence."
+      ],
+      "affected_candidates": [
+        "C21-03",
+        "C21-04",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "CITATION_UPDATE_LATER_OR_COMPATIBLE_UNCHANGED",
+      "required_action": "Check only the PAL tie-in and primitive-order prose. Preserve Wheeler-Feynman and branch mathematics source-side. Do not let absorber reception become a source witness for A0 or a closure of O04/O25.",
+      "human_adoption_status": "NO_BRANCH_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "BRT structural tie-in",
+        "BRT 12",
+        "BRT source map",
+        "PAL v2.0-M M-A1-BRT and M-A2-BRT"
+      ]
+    },
+    {
+      "artifact_id": "CLEF-v1.0",
+      "artifact": "CLEF: Cluster-Layer Entropy Focus",
+      "current_version": "v1.0",
+      "sha256": "24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43",
+      "controlling_role": "Bounded theoretical boundary-measurement framework and laboratory; not PAL spine authority",
+      "exact_pal_dependency": [
+        "No direct PAL v2.0 dependency was found in the attached source.",
+        "Its cost family distinguishes creation, state, excess, keep, physical, proxy, and diagnostic terms.",
+        "It can serve as an optional realization neighbor for typed local cost, not as proof of ontic source."
+      ],
+      "affected_candidates": [
+        "C21-02"
+      ],
+      "impact_status": "COMPATIBLE_UNCHANGED",
+      "required_action": "No file or version bump. If used in the v2.1 Atlas, cite it only as a bounded cost realization and preserve its physical/proxy/unit distinctions.",
+      "human_adoption_status": "NOT_REQUIRED_FOR_COMPATIBILITY; OPTIONAL_CITATION_PENDING",
+      "release_or_reopening_address": [
+        "CLEF 1",
+        "CLEF 5-7",
+        "CLEF 14.5",
+        "PAL branch register / CLEF"
+      ]
+    },
+    {
+      "artifact_id": "A0-Boundary-Kernel",
+      "artifact": "A0 Boundary Kernel software companion",
+      "current_version": "v0.8.2 source receipt in PAL v2.0-L; current external release not verified",
+      "source_receipt_sha256": "9039e1fa24ab9a726cd3de67c54647c2dca62d14b93d5a8818fdc9e2079bcded",
+      "source_availability": "NOT_IN_CURRENT_ATTACHMENT_SET",
+      "controlling_role": "Software companion for boundary state, trace, recheck, and failure memory; not PAL spine authority",
+      "exact_pal_dependency": [
+        "PAL v2.0-L records it as a source used for boundary status, trace, recheck, and failure memory.",
+        "Legacy A0-equals-Omega mappings are explicitly rejected."
+      ],
+      "affected_candidates": [
+        "C21-01",
+        "C21-03",
+        "C21-06",
+        "C21-08"
+      ],
+      "impact_status": "SEMANTIC_REVIEW_REQUIRED",
+      "anticipated_resolution": "UNKNOWN_UNTIL_CURRENT_SOURCE_IS_ACQUIRED",
+      "required_action": "Acquire and hash the current source before the downstream sweep. Check whether its first-boundary constructor is account-relative and whether certificates preserve source-open status without manufacturing a witness.",
+      "human_adoption_status": "NO_BRANCH_CHANGE_AUTHORIZED",
+      "release_or_reopening_address": [
+        "PAL v2.0-L source account / A0 Boundary Kernel",
+        "PAL branch register / A0 Boundary Kernel",
+        "O04",
+        "O25"
+      ]
+    }
+  ],
+  "impact_summary": {
+    "artifact_count": 15,
+    "counts_by_status": {
+      "CANON_CHANGE": 3,
+      "FORMAL_REALIZATION": 3,
+      "COMPATIBLE_UNCHANGED": 1,
+      "CITATION_UPDATE_LATER": 0,
+      "SEMANTIC_REVIEW_REQUIRED": 7,
+      "NOT_APPLICABLE": 1
+    },
+    "immediate_document_edits_authorized": 0,
+    "immediate_downstream_version_bumps_authorized": 0,
+    "current_recommendation": "Keep O04 and O25 open as two interfaces to D-FIRST-OCCURRENCE. Test the candidate as a clarification of local constructor discharge and account-relative traceability, not as closure of ultimate source."
+  },
+  "decision_queue": [
+    {
+      "id": "DQ-01",
+      "question": "Should 'first addressable supplied cut in a declared account' become canonical A0 wording?",
+      "owner": "Christopher D. Pang",
+      "earliest_gate": "Gate 4"
+    },
+    {
+      "id": "DQ-02",
+      "question": "Is 'cost' canonical shorthand for a typed ledger obligation, with physical energy only a realization?",
+      "owner": "Christopher D. Pang",
+      "earliest_gate": "Gate 4"
+    },
+    {
+      "id": "DQ-03",
+      "question": "Is 'occurrence-closed, source-open' canonical language or explanatory language only?",
+      "owner": "Christopher D. Pang",
+      "earliest_gate": "Gate 4"
+    },
+    {
+      "id": "DQ-04",
+      "question": "Do O04 and O25 remain one debt with two interfaces after Attack Run 0002?",
+      "recommended_candidate_answer": "YES; RETAIN BOTH OPEN",
+      "owner": "Christopher D. Pang",
+      "earliest_gate": "Gate 4"
+    },
+    {
+      "id": "DQ-05",
+      "question": "Which candidates survive Lean countermodels without importing new ontology?",
+      "owner": "Attack Run 0002 plus Christopher D. Pang",
+      "earliest_gate": "Gate 3"
+    },
+    {
+      "id": "DQ-06",
+      "question": "Which downstream semantic reviews resolve to compatible-unchanged versus citation-update-later?",
+      "owner": "Post-adoption compatibility sweep",
+      "earliest_gate": "Gate 7"
+    }
+  ],
+  "next_gate": {
+    "gate": "Gate 3 - Attack Run 0002",
+    "prerequisites": [
+      "Accepted audit-hygiene baseline recorded at main@5655d1b2d0fd4ecfc114786de0999a4f7fc82659.",
+      "Place this map on agent/pal-2-1-first-cut-candidate without editing published PAL source documents.",
+      "Keep every C21 statement marked CANDIDATE."
+    ],
+    "stop_before": [
+      "PAL canon adoption",
+      "O04/O25 closure",
+      "downstream version changes",
+      "Zenodo publication"
+    ]
+  }
+}

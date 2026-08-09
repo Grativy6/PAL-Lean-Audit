@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 920 876">
+<title id="title">PAL Lean Audit separated counts for attack-0002</title>
+<desc id="desc">The upper group counts 8 Attack Run 0002 targets. A separate lower bar counts 1 open PAL-source obligation. A third lower bar counts 1 open manual review control. A fourth section counts 11 required negative-guard dispositions; evidence may overlap the other populations.</desc>
+<rect width="100%" height="100%" fill="#f7fafc"/>
+<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.section{font:700 15px system-ui,sans-serif;fill:#2d3748}.label{font:600 14px ui-monospace,monospace;fill:#2d3748}.count{font:700 15px system-ui,sans-serif;fill:#1a202c}.note{font:13px system-ui,sans-serif;fill:#4a5568}</style>
+<text x="28" y="36" class="title">PAL Lean Audit — separated counts</text>
+<text x="28" y="60" class="sub">attack-0002 · audit populations and overlapping evidence are kept separate</text>
+<text x="28" y="90" class="section">Attack Run 0002 targets (n=8)</text>
+<text x="204" y="128" text-anchor="end" class="label">PROVED</text>
+<rect x="220" y="106" width="221" height="30" rx="5" fill="#2f855a"/>
+<text x="453" y="128" class="count">3</text>
+<text x="204" y="178" text-anchor="end" class="label">COUNTERMODEL</text>
+<rect x="220" y="156" width="369" height="30" rx="5" fill="#2b6cb0"/>
+<text x="601" y="178" class="count">5</text>
+<text x="204" y="228" text-anchor="end" class="label">EXPECTED_REJECTION</text>
+<rect x="220" y="206" width="0" height="30" rx="5" fill="#805ad5"/>
+<text x="232" y="228" class="count">0</text>
+<text x="204" y="278" text-anchor="end" class="label">OPEN</text>
+<rect x="220" y="256" width="0" height="30" rx="5" fill="#d69e2e"/>
+<text x="232" y="278" class="count">0</text>
+<text x="204" y="328" text-anchor="end" class="label">NOT_FORMALIZED</text>
+<rect x="220" y="306" width="0" height="30" rx="5" fill="#718096"/>
+<text x="232" y="328" class="count">0</text>
+<line x1="28" y1="378" x2="892" y2="378" stroke="#cbd5e0" stroke-width="1"/>
+<text x="28" y="404" class="section">Open PAL-source obligations (separate population)</text>
+<text x="204" y="436" text-anchor="end" class="label">OPEN PAL-SOURCE</text>
+<rect x="220" y="414" width="74" height="30" rx="5" fill="#c05621"/>
+<text x="306" y="436" class="count">1</text>
+<text x="220" y="472" class="note">D-FIRST-OCCURRENCE (interfaces O04, O25)</text>
+<line x1="28" y1="492" x2="892" y2="492" stroke="#cbd5e0" stroke-width="1"/>
+<text x="28" y="518" class="section">Open manual review controls (separate population)</text>
+<text x="204" y="550" text-anchor="end" class="label">OPEN MANUAL</text>
+<rect x="220" y="528" width="74" height="30" rx="5" fill="#805ad5"/>
+<text x="306" y="550" class="count">1</text>
+<text x="220" y="586" class="note">AR2-MANUAL-SEMANTIC-SURROGATE</text>
+<line x1="28" y1="606" x2="892" y2="606" stroke="#cbd5e0" stroke-width="1"/>
+<text x="28" y="632" class="section">Required negative-guard dispositions (n=11; separate population)</text>
+<text x="204" y="666" text-anchor="end" class="label">NEG PROVED</text>
+<rect x="220" y="648" width="74" height="24" rx="5" fill="#2f855a"/>
+<text x="306" y="666" class="count">1</text>
+<text x="204" y="704" text-anchor="end" class="label">NEG COUNTERMODEL</text>
+<rect x="220" y="686" width="148" height="24" rx="5" fill="#2b6cb0"/>
+<text x="380" y="704" class="count">2</text>
+<text x="204" y="742" text-anchor="end" class="label">NEG EXPECTED_REJECTION</text>
+<rect x="220" y="724" width="0" height="24" rx="5" fill="#805ad5"/>
+<text x="232" y="742" class="count">0</text>
+<text x="204" y="780" text-anchor="end" class="label">NEG OPEN</text>
+<rect x="220" y="762" width="590" height="24" rx="5" fill="#d69e2e"/>
+<text x="822" y="780" class="count">8</text>
+<text x="204" y="818" text-anchor="end" class="label">NEG NOT_FORMALIZED</text>
+<rect x="220" y="800" width="0" height="24" rx="5" fill="#718096"/>
+<text x="232" y="818" class="count">0</text>
+<text x="220" y="852" class="note">Evidence and manual controls may overlap; dispositions are not summed.</text>
+</svg>
