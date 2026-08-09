@@ -28,8 +28,11 @@ EXPECTED_SOURCE_IDS = {
 }
 
 
-def sha256(path: pathlib.Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def canonical_text_sha256(path: pathlib.Path) -> str:
+    """Hash tracked UTF-8 text with all line endings normalized to LF."""
+    text = path.read_text(encoding="utf-8")
+    canonical = text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def fail(message: str) -> None:
@@ -42,7 +45,7 @@ def locked_repo_file_hash(relative_path: str) -> str:
         fail(f"locked input path escapes the repository: {relative_path}")
     if not path.is_file():
         fail(f"locked input path is missing: {relative_path}")
-    return sha256(path)
+    return canonical_text_sha256(path)
 
 
 def manifest_source_hashes() -> dict[str, str]:
@@ -95,7 +98,7 @@ def main() -> int:
     if impact_sources != manifest_sources:
         fail("impact source hashes do not match Audit/source-manifest.yaml")
 
-    impact_hash = sha256(IMPACT_PATH)
+    impact_hash = canonical_text_sha256(IMPACT_PATH)
     supplied_hash = impact["input_provenance"]["supplied_map_sha256"]
     workflow_hash = impact["authority"]["candidate_workflow_sha256"]
     baseline_sha = impact["input_provenance"]["accepted_baseline_sha"]
@@ -173,7 +176,7 @@ def main() -> int:
         "Candidate input check passed: strict JSON-compatible YAML, five source "
         "locks, eight CANDIDATE statements, and OPEN O04/O25."
     )
-    print(f"Repository impact SHA-256: {impact_hash}")
+    print(f"Repository impact canonical-LF SHA-256: {impact_hash}")
     return 0
 
 

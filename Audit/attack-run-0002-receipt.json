@@ -16,7 +16,7 @@
     "baseline_sha": "5655d1b2d0fd4ecfc114786de0999a4f7fc82659",
     "candidate_workflow_sha256": "d952ea510fb82a5ac5f30297c5b82cc6fc120bef87dd7db4fab912ce44ff752c",
     "supplied_impact_input_sha256": "8505808317462c2bc601dd90f9526c8a43ffffdf10681cf00df5231c26781bde",
-    "repository_normalized_impact_sha256": "1b42cdb9c672e2766321f9043e870bfe9a4bba2940c74f1d681460c6c600eae8",
+    "repository_normalized_impact_sha256": "42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe",
     "supplied_impact_input_note": "This hash identifies the user-supplied pal-2.1-impact.yaml input, not a later repository copy."
   },
   "source_hashes_verified": {
@@ -87,7 +87,7 @@
       "input_hashes": {"candidate_workflow_sha256": "d952ea510fb82a5ac5f30297c5b82cc6fc120bef87dd7db4fab912ce44ff752c", "supplied_impact_input_sha256": "8505808317462c2bc601dd90f9526c8a43ffffdf10681cf00df5231c26781bde"},
       "formal_input_sha256": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
       "axiom_input_sha256": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
-      "lexical_policy_input_hashes": {"scripts/check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad", "Audit/fixtures/T05-ascii-omega.fixture": "41f4dc195e89eacd70d9cd7e2d78d54616864703c872a560e914a80817019e88", "Audit/fixtures/T05-symbol-omega.fixture": "46fca5a00e23998a425bc9b60e593aec8318b79b807eb091655681cddd206190"},
+      "lexical_policy_input_hashes": {"scripts/check_policy.py": "b38d4b493f850f964fa34bb08fb28778a9cd31640e3c956a2f0d51bdd4ac8b82", "Audit/fixtures/T05-ascii-omega.fixture": "bda584c5ff125536c9dd771bc4b7067923598a35ef2fda674ec85d9fadcfac8a", "Audit/fixtures/T05-symbol-omega.fixture": "ab0931bbfe7ed4d37024ee4c15068dd605c4490452e6a28c2d06ca3372b625ed"},
       "evidence_or_diagnostic": "scripts/check_policy.py passes the literal T05 identifier scan for the final Lean roots. AR2-MANUAL-SEMANTIC-SURROGATE remains OPEN because differently named semantic surrogates require manual source review and are not a Lean result.",
       "authority_ceiling": "A lexical pass is not a semantic proof and cannot establish that mathematics contains, represents, or exhausts unresolved possibility.",
       "reopening_address": "D02 / O01 / T05"
