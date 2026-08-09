@@ -51,7 +51,8 @@ flowchart TD
 - Lean: `leanprover/lean4:v4.32.1`
 - Mathlib: `v4.32.1`
 - CI: `leanprover/lean-action@v1.5.0`
-- independent checking: `leanchecker` and `nanoda`
+- blocking independent check: the Lean toolchain's bundled `leanchecker`
+- experimental cross-check: `nanoda`; compatibility failures are retained in the run receipts and do not count as PAL results
 - placeholders: `sorry`, `admit`, and unlisted `axiom` declarations are rejected
 
 Run locally:
