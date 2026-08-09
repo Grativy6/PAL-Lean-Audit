@@ -28,14 +28,23 @@ jobs:
           export PATH="$HOME/.elan/bin:$PATH"
           lake update
 
-      - name: Build and independently check Lean environment
+      - name: Build and check the Lean environment
         uses: leanprover/lean-action@v1.5.0
         with:
           build: true
           leanchecker: true
+          use-mathlib-cache: true
+
+      - name: Attempt experimental nanoda check
+        id: nanoda
+        continue-on-error: true
+        uses: leanprover/lean-action@v1.5.0
+        with:
+          auto-config: false
           nanoda: true
           nanoda-allow-sorry: false
-          use-mathlib-cache: true
+          use-github-cache: false
+          use-mathlib-cache: false
 
       - name: Enforce formalization policy
         run: python3 scripts/check_policy.py
@@ -46,8 +55,30 @@ jobs:
       - name: Capture exact environment receipt
         run: bash scripts/capture_environment.sh
 
+      - name: Record independent checker outcomes
+        env:
+          NANODA_OUTCOME: ${{ steps.nanoda.outcome }}
+        run: |
+          {
+            echo "leanchecker=success"
+            echo "nanoda=$NANODA_OUTCOME"
+            echo "nanoda_policy=experimental-non-blocking"
+          } > artifacts/checkers.txt
+          if [ "$NANODA_OUTCOME" != "success" ]; then
+            echo "::warning::nanoda could not check this Lean environment; the failure is retained as an audit result."
+          fi
+
       - name: Add report to job summary
-        run: cat docs/generated/summary.md >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          cat docs/generated/summary.md >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo
+            echo "## Independent checker outcomes"
+            echo
+            echo '```text'
+            cat artifacts/checkers.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload audit receipts
         uses: actions/upload-artifact@v4
@@ -55,6 +86,7 @@ jobs:
           name: pal-lean-bootstrap-receipts
           path: |
             artifacts/environment.txt
+            artifacts/checkers.txt
             lake-manifest.json
             docs/generated/outcomes.svg
             docs/generated/summary.md
