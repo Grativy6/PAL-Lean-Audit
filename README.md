@@ -6,11 +6,11 @@ A source-locked Lean 4 audit bench for bounded mechanical claims and mathematica
 
 ## Current state
 
-This repository is at **Bootstrap Run 0000**. The audit workflow is being installed; no PAL conformance theorem has yet been claimed.
+This repository contains the proposed **Attack Run 0001** bounded audit for T05-T07, T09-T11, and T14-T17. The reported proofs, countermodels, and expected rejections apply only to their exact statements and receipts; they do not establish PAL as an ontology or close unresolved possibility.
 
-![Bootstrap outcome counts](docs/generated/outcomes.svg)
+![Attack Run 0001 outcome counts](docs/generated/outcomes.svg)
 
-See [the generated status receipt](docs/generated/summary.md) and [reporting rules](docs/REPORTING.md).
+See [the generated status receipt](docs/generated/summary.md), [the detailed run receipt](Audit/attack-run-0001-receipt.json), and [reporting rules](docs/REPORTING.md).
 
 ## Authority boundary
 
@@ -36,14 +36,19 @@ A failed proof attempt is not automatically a counterexample. A successful proof
 
 ```mermaid
 flowchart TD
-    S["PAL source claim"] --> M["Bounded Lean model"]
+    S["Hash-locked PAL v2.0 sources"] --> F{"Attack Run 0001 route"}
+    F --> W["T05 object-language firewall"]
+    F --> M["Bounded Lean model"]
+    W --> E["Expected rejection"]
     M --> K{"Lean result"}
     K -->|Proof| P["Checked theorem"]
     K -->|Construction| C["Countermodel"]
     K -->|No licensed result| O["Open burden"]
-    P --> R["Receipt and charts"]
+    E --> R["Ledger, axiom, and environment receipts"]
+    P --> R
     C --> R
     O --> R
+    R --> D["O04/O25 retained as OPEN"]
 ```
 
 ## Reproducible environment
@@ -64,9 +69,11 @@ python3 scripts/check_policy.py
 python3 scripts/render_report.py --check
 ```
 
-## Initial target
+## Attack Run 0001
 
-Attack Run 0001 will cover the primitive floor and early trace route: T05–T07, T09–T11, and T14–T17. Its models and claims will arrive in a separate draft pull request after the bootstrap is green.
+The run covers the primitive floor and early trace route: T05-T07, T09-T11, and T14-T17. It keeps unresolved possibility outside Lean's object language, uses supplied-witness dependent receipts for the A0-to-A2 route, checks predecessor and witness-source countercases, preserves protected trace through a bounded route, and prevents modeled later results from rewriting earlier authority.
+
+O04/O25 remains one explicitly open first-occurrence debt. Local witness values construct conditional instances only; they do not settle that debt.
 
 ## Licensing
 

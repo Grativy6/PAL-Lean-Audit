@@ -1,6 +1,6 @@
 schema_version: 0.1.0
 manifest_role: source identity and authority routing; not a redistribution bundle
-prepared_for: PAL Lean Audit bootstrap-0000
+prepared_for: PAL Lean Audit attack-0001
 author: Christopher D. Pang
 
 controlling_release:

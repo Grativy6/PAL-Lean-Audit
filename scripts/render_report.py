@@ -40,13 +40,24 @@ def render_summary(data: dict, counts: Counter) -> str:
         f"- Run: {data['run_id']}",
         f"- Controlling release: {data['controlling_release']}",
         f"- DOI: [{data['controlling_doi']}](https://doi.org/{data['controlling_doi']})",
+        f"- Run receipt: [{data['run_receipt']}](../../{data['run_receipt']})",
         f"- Authority ceiling: {data['authority_ceiling']}",
         "",
         "| Status | Count |",
         "|---|---:|",
     ]
     lines.extend(f"| {status} | {counts[status]} |" for status in STATUSES)
-    lines.extend(["", "## Claim ledger", "", "| Test | Target | Status | Evidence |", "|---|---|---|---|"])
+    lines.extend(
+        [
+            "",
+            "_Counts cover the ten selected T-targets only; the separate O04/O25 first-occurrence debt remains OPEN._",
+            "",
+            "## Claim ledger",
+            "",
+            "| Test | Target | Status | Evidence |",
+            "|---|---|---|---|",
+        ]
+    )
     for claim in data["claims"]:
         lines.append(
             f"| {claim['id']} | {claim['title']} | **{claim['status']}** | {claim['evidence']} |"
@@ -74,11 +85,11 @@ def render_svg(data: dict, counts: Counter) -> str:
         [
             f'<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 {width} {height}">',
             f'<title id="title">PAL Lean Audit outcomes for {escape(data["run_id"])}</title>',
-            '<desc id="desc">Horizontal bars count claims by audit status.</desc>',
+            '<desc id="desc">Horizontal bars count the ten selected T-targets by audit status; O04/O25 is tracked separately and remains open.</desc>',
             '<rect width="100%" height="100%" fill="#f7fafc"/>',
             '<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.label{font:600 14px ui-monospace,monospace;fill:#2d3748}.count{font:700 15px system-ui,sans-serif;fill:#1a202c}</style>',
             '<text x="28" y="36" class="title">PAL Lean Audit — outcome counts</text>',
-            f'<text x="28" y="60" class="sub">{escape(data["run_id"])} · infrastructure baseline; no PAL theorem claimed</text>',
+            f'<text x="28" y="60" class="sub">{escape(data["run_id"])} · bounded results only; O04/O25 remains OPEN</text>',
             *rows,
             "</svg>",
             "",
