@@ -8,7 +8,13 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-LEAN_ROOTS = (ROOT / "PAL", ROOT / "Audit", ROOT / "PAL.lean", ROOT / "Audit.lean")
+LEAN_ROOTS = (
+    ROOT / "PAL",
+    ROOT / "Audit",
+    ROOT / "PAL.lean",
+    ROOT / "Audit.lean",
+    ROOT / "PALLeanAudit.lean",
+)
 FORBIDDEN = {
     "proof placeholder sorry": re.compile(r"\bsorry\b"),
     "proof placeholder admit": re.compile(r"\badmit\b"),
