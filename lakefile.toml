@@ -1,6 +1,6 @@
 name = "PALLeanAudit"
 version = "0.1.0"
-defaultTargets = ["PAL", "Audit"]
+defaultTargets = ["PALLeanAudit"]
 
 [[require]]
 name = "mathlib"
@@ -12,3 +12,6 @@ name = "PAL"
 
 [[lean_lib]]
 name = "Audit"
+
+[[lean_lib]]
+name = "PALLeanAudit"
