@@ -15,7 +15,9 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
 
       - name: Generate the pinned Lake manifest
         if: ${{ hashFiles('lake-manifest.json') == '' }}
@@ -29,7 +31,7 @@ jobs:
           lake update
 
       - name: Build and check the Lean environment
-        uses: leanprover/lean-action@v1.5.0
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
         with:
           build: true
           leanchecker: true
@@ -38,7 +40,7 @@ jobs:
       - name: Attempt experimental nanoda check
         id: nanoda
         continue-on-error: true
-        uses: leanprover/lean-action@v1.5.0
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
         with:
           auto-config: false
           nanoda: true
@@ -49,8 +51,24 @@ jobs:
       - name: Enforce formalization policy
         run: python3 scripts/check_policy.py
 
+      - name: Enforce Attack Run 0003 policy and structure
+        run: |
+          python3 scripts/check_attack_run_0003_policy.py
+          python3 scripts/check_attack_run_0003.py
+
       - name: Validate PAL v2.1 candidate input locks
         run: python3 scripts/check_candidate_inputs.py
+
+      - name: Retrieve the published PAL v2.1 source archive
+        run: |
+          curl --proto '=https' --tlsv1.2 -fsSL \
+            'https://zenodo.org/records/21864767/files/PAL_v2.1_Zenodo_Release.zip?download=1' \
+            -o /tmp/PAL_v2.1_Zenodo_Release.zip
+
+      - name: Verify PAL v2.1 source hashes and append-only migration
+        run: |
+          python3 scripts/check_release_migration.py \
+            --published-zip /tmp/PAL_v2.1_Zenodo_Release.zip
 
       - name: Verify generated report
         run: |
@@ -60,6 +78,8 @@ jobs:
             --summary docs/generated/attack-run-0002-summary.md \
             --chart docs/generated/attack-run-0002-outcomes.svg \
             --check
+          python3 scripts/render_migration_report.py --check
+          python3 scripts/render_attack_run_0003.py --check
 
       - name: Capture Lean axiom receipts
         run: |
@@ -67,12 +87,23 @@ jobs:
           mkdir -p artifacts
           lake env lean Audit/AttackRun0001.lean 2>&1 | tee artifacts/attack-run-0001-axioms.txt
           lake env lean Audit/AttackRun0002.lean 2>&1 | tee artifacts/attack-run-0002-axioms.txt
+          lake env lean Audit/AttackRun0003.lean 2>&1 | tee artifacts/attack-run-0003-axioms.txt
 
       - name: Verify Attack Run 0002 axiom receipts
         run: |
           python3 scripts/check_axiom_receipts.py \
             --run-id attack-0002 \
             --artifact artifacts/attack-run-0002-axioms.txt
+
+      - name: Verify Attack Run 0003 dependency receipts
+        run: |
+          python3 scripts/check_attack_run_0003_axioms.py \
+            --artifact artifacts/attack-run-0003-axioms.txt
+
+      - name: Capture blocking leanchecker receipt
+        run: |
+          set -o pipefail
+          lake env leanchecker PALLeanAudit 2>&1 | tee artifacts/attack-run-0003-leanchecker.txt
 
       - name: Capture exact environment receipt
         env:
@@ -82,6 +113,26 @@ jobs:
           AUDIT_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           AUDIT_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: bash scripts/capture_environment.sh
+
+      - name: Capture Attack Run 0003 environment receipt
+        env:
+          AUDIT_RUN_ID: attack-0003
+          AUDIT_ENVIRONMENT_OUTPUT: artifacts/attack-run-0003-environment.txt
+          AUDIT_PR_NUMBER: ${{ github.event.pull_request.number }}
+          AUDIT_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          AUDIT_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: bash scripts/capture_environment.sh
+
+      - name: Measure cached CI build and test populations
+        run: |
+          start_ns=$(date +%s%N)
+          lake build
+          end_ns=$(date +%s%N)
+          elapsed_ns=$((end_ns - start_ns))
+          python3 scripts/emit_attack_run_0003_ci_benchmarks.py \
+            --wall-nanoseconds "$elapsed_ns" \
+            --axiom-artifact artifacts/attack-run-0003-axioms.txt \
+            --output artifacts/attack-run-0003-ci-benchmarks.txt
 
       - name: Record independent checker outcomes
         env:
@@ -107,6 +158,18 @@ jobs:
           cat docs/generated/attack-run-0002-summary.md >> "$GITHUB_STEP_SUMMARY"
           {
             echo
+            echo "---"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          cat docs/generated/pal-v2.0-to-v2.1-migration-summary.md >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo
+            echo "---"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          cat docs/generated/attack-run-0003-summary.md >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo
             echo "## Independent checker outcomes"
             echo
             echo '```text'
@@ -115,7 +178,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload audit receipts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: pal-lean-candidate-attack-0002-receipts
           path: |
@@ -133,3 +196,28 @@ jobs:
             docs/generated/attack-run-0002-outcomes.svg
             docs/generated/attack-run-0002-summary.md
             docs/proposals/PAL-v2.1-first-cut-receipt.md
+
+      - name: Upload PAL v2.1 Gate 5 and Attack Run 0003 receipts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: pal-v2-1-gate5-attack-0003-receipts
+          path: |
+            artifacts/attack-run-0003-environment.txt
+            artifacts/attack-run-0003-axioms.txt
+            artifacts/attack-run-0003-leanchecker.txt
+            artifacts/attack-run-0003-ci-benchmarks.txt
+            artifacts/checkers.txt
+            Audit/releases/pal-v2.1-source-manifest.json
+            Audit/releases/pal-v2.1-adoption-receipt.json
+            Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json
+            Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json
+            Audit/attack-run-0003-receipt.json
+            Audit/attack-run-0003-claim-ledger.json
+            Audit/attack-run-0003-benchmarks.json
+            Audit/evidence/attack-run-0003/
+            docs/generated/pal-v2.0-to-v2.1-migration-summary.md
+            docs/generated/attack-run-0003-summary.md
+            docs/generated/attack-run-0003-classifications.svg
+            docs/generated/attack-run-0003-dependencies.svg
+            docs/generated/attack-run-0003-benchmarks.md
+            lake-manifest.json

@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "PAL-v2.1-PUBLISHED-SOURCE-MANIFEST",
+  "manifest_role": "Published source identity and authority routing; not a redistribution bundle.",
+  "release": {
+    "name": "PAL v2.1",
+    "version": "2.1",
+    "publication_date": "2026-08-09",
+    "publication_state": "PUBLISHED",
+    "doi": "10.5281/zenodo.21864767",
+    "record_url": "https://doi.org/10.5281/zenodo.21864767",
+    "zenodo_record_url": "https://zenodo.org/records/21864767",
+    "author_and_adoption_authority": "Christopher D. Pang",
+    "license": "CC-BY-4.0",
+    "immediate_prior_release": {
+      "name": "PAL v2.0",
+      "doi": "10.5281/zenodo.21754097"
+    }
+  },
+  "authority_surfaces": [
+    {
+      "id": "PAL-v2.1-Spine",
+      "title": "Mechanical Structural Spine",
+      "role": "Controls PAL identity, order, canonical mechanical cards, invariants, and local closure grammar.",
+      "included_in_repository": false,
+      "artifacts": {
+        "docx": {
+          "filename": "PAL_v2.1_Mechanical_Structural_Spine.docx",
+          "sha256": "e008623ed54dbd3f8adca0fee403f5dc21a5d6d95c54b2d9453093c4dd3148f7",
+          "byte_length": 69269,
+          "rendered_pages": 35
+        },
+        "pdf": {
+          "filename": "PAL_v2.1_Mechanical_Structural_Spine.pdf",
+          "sha256": "f389866e150543c1a15856e49213038d4b77c4bcdf7caaf1fc706d71bc63623f",
+          "byte_length": 654485,
+          "pages": 35
+        }
+      }
+    },
+    {
+      "id": "PAL-v2.1-M",
+      "title": "Mathematical Realization Atlas",
+      "role": "Controls only the formal claims, assumptions, countermodels, and return handles stated on individual realization cards.",
+      "included_in_repository": false,
+      "artifacts": {
+        "docx": {
+          "filename": "PAL_v2.1-M_Mathematical_Realization_Atlas.docx",
+          "sha256": "449a01e5af208c0afaf8cba41bf7de3a3c20a3183889e1f4ee12fdbd48ddddc1",
+          "byte_length": 77608,
+          "rendered_pages": 42
+        },
+        "pdf": {
+          "filename": "PAL_v2.1-M_Mathematical_Realization_Atlas.pdf",
+          "sha256": "8a4621496c5eaad703d32027c394c9d801ce1571d2602b4ecb91d4f0e2f41238",
+          "byte_length": 854061,
+          "pages": 42
+        }
+      }
+    },
+    {
+      "id": "PAL-v2.1-L",
+      "title": "Obligation and Decision Ledger",
+      "role": "Controls adopted decision receipts, historical obligation preservation, source account, and reopening addresses.",
+      "included_in_repository": false,
+      "artifacts": {
+        "docx": {
+          "filename": "PAL_v2.1-L_Obligation_and_Decision_Ledger.docx",
+          "sha256": "80a0069aac0d3059c973fc92cabec8c47129c95cef7a0db716fa663a073b486f",
+          "byte_length": 67889,
+          "rendered_pages": 64
+        },
+        "pdf": {
+          "filename": "PAL_v2.1-L_Obligation_and_Decision_Ledger.pdf",
+          "sha256": "c370618fc784d8700ff44fe37e1d0ffd333af0aa7add07db3645b45add5603af",
+          "byte_length": 733393,
+          "pages": 64
+        }
+      }
+    },
+    {
+      "id": "PAL-v2.1-T",
+      "title": "Conformance Tests",
+      "role": "Controls conformance procedures, positive and negative fixtures, receipts, and release-gate evidence.",
+      "included_in_repository": false,
+      "artifacts": {
+        "docx": {
+          "filename": "PAL_v2.1-T_Conformance_Tests.docx",
+          "sha256": "6704bd230970e78cdb20f53f1abaccbf363d40d3be7e7b821c8d406ced4b6d68",
+          "byte_length": 62596,
+          "rendered_pages": 51
+        },
+        "pdf": {
+          "filename": "PAL_v2.1-T_Conformance_Tests.pdf",
+          "sha256": "2585084533c77a09a37c4a6b5ab44046978cd06967409d864a1066f5de384904",
+          "byte_length": 641052,
+          "pages": 51
+        }
+      }
+    },
+    {
+      "id": "PAL-v2.1-C",
+      "title": "PAL 1.x and v2.0 Compatibility Note",
+      "role": "Controls receipt-preserving migration claims from PAL 1.x and PAL v2.0 into PAL v2.1.",
+      "included_in_repository": false,
+      "artifacts": {
+        "docx": {
+          "filename": "PAL_v2.1-C_1.x_and_v2.0_Compatibility_Note.docx",
+          "sha256": "e4014e5a783ce48390b859cbe46666e90232bffe355a1ff8321fe56c3dbecad9",
+          "byte_length": 55889,
+          "rendered_pages": 18
+        },
+        "pdf": {
+          "filename": "PAL_v2.1-C_1.x_and_v2.0_Compatibility_Note.pdf",
+          "sha256": "6394c9479229c7ed4e3293623c0c042eb43205385d8d2f70c2324f2897c6aa93",
+          "byte_length": 453602,
+          "pages": 18
+        }
+      }
+    }
+  ],
+  "supporting_release_files": [
+    {
+      "filename": "LICENSE.txt",
+      "sha256": "8c81efe27d32f15106d90dc24ef2e804975ee90336dda52262df9d87435eba48",
+      "byte_length": 722,
+      "role": "Release license text"
+    },
+    {
+      "filename": "PAL_v2.1_RELEASE_MANIFEST.txt",
+      "sha256": "79aa4a2cdfdda5dc98aa32b476581da1ccebc9c85a8c692613760ff660c58f71",
+      "byte_length": 2870,
+      "role": "Pre-publication packaging receipt; its packaging-state line is historical and does not override the published DOI record."
+    }
+  ],
+  "release_archive": {
+    "filename": "PAL_v2.1_Zenodo_Release.zip",
+    "byte_length": 1906990,
+    "sha256": "a860ab48a0d754e611bdcd8d79a32db3f88f8465246d234c3df28cc5ec70964c",
+    "md5": "7eed643eb48e8f5adbb8dd0d551abd83",
+    "included_in_repository": false,
+    "role": "Exact published Zenodo release archive; member identities are listed above."
+  },
+  "authority_ceiling": "Each source controls only its declared role. The five surfaces are coordinated but nonfungible. Formal audit evidence and repository metadata do not adopt, amend, or replace PAL source decisions."
+}

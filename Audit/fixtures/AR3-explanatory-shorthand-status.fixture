@@ -1,0 +1,2 @@
+inductive OccurrenceClosedSourceOpen where
+  | asserted

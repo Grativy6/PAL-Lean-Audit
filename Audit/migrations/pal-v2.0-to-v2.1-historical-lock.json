@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "lock_id": "PAL-v2.0-to-v2.1-HISTORICAL-LOCK",
+  "lock_role": "Protect the exact Git object bytes of Attack Runs 0001 and 0002 while repository-level PAL v2.1 routing is added append-only.",
+  "baseline": {
+    "repository": "Grativy6/PAL-Lean-Audit",
+    "commit_sha": "144b08973fde16ebeabefc78166691afc861abec",
+    "tree_sha": "9dffacb765366fe944959cbcff3a8bea1cecfe01",
+    "commit_role": "Live main merge of Attack Run 0002; its tree is byte-identical to PR #5 head 5a9afad9243905b88444138486154f534e45ebcc."
+  },
+  "hash_policy": {
+    "identity_authority": "Git blob object",
+    "blob_oid_algorithm": "sha1",
+    "blob_byte_digest_algorithm": "sha256",
+    "working_tree_note": "Git object bytes, not platform-dependent checkout bytes, control exact identity. The checker also requires the current HEAD, index, and filtered worktree to match each locked baseline blob."
+  },
+  "protected_artifacts": [
+    {
+      "run_id": "attack-0001",
+      "role": "formal realization module",
+      "path": "PAL/AttackRun0001.lean",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "23512385ec79c77d8aa8f3c2e8a488ef9bc7b140",
+      "git_blob_sha256": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+      "git_blob_byte_length": 22588
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "axiom receipt module",
+      "path": "Audit/AttackRun0001.lean",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "c11464e335aa36849ba89f14db89317b81d85fec",
+      "git_blob_sha256": "f542601220ea07ddd17d066099dd6785cc8ddb124291297d5d9e491bdf26e3cc",
+      "git_blob_byte_length": 1740
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "run receipt",
+      "path": "Audit/attack-run-0001-receipt.json",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "bf330db0567bd6e9f1a543574823b406a9fa71c4",
+      "git_blob_sha256": "2b662ecc3c370a2e9aec5a09b7b9796123399fcc62a71a1d6531492afafb23c5",
+      "git_blob_byte_length": 12315
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "claim ledger",
+      "path": "Audit/claim-ledger.json",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "8dd09925c5eb7be5d20ed1e40bde41f48a34332f",
+      "git_blob_sha256": "0d9fe2062d71a43d43644ad1cbdfdb594f631660ce455c7ea7a08c5748a8d342",
+      "git_blob_byte_length": 2977
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "negative lexical fixture",
+      "path": "Audit/fixtures/T05-ascii-omega.fixture",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "499e92630c7f19c1a63d0c1a8e13ac570cd83084",
+      "git_blob_sha256": "bda584c5ff125536c9dd771bc4b7067923598a35ef2fda674ec85d9fadcfac8a",
+      "git_blob_byte_length": 111
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "negative lexical fixture",
+      "path": "Audit/fixtures/T05-symbol-omega.fixture",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "ba6772ed6bf5ffa68e92b3dfaa700189bb35198e",
+      "git_blob_sha256": "ab0931bbfe7ed4d37024ee4c15068dd605c4490452e6a28c2d06ca3372b625ed",
+      "git_blob_byte_length": 108
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "generated summary receipt",
+      "path": "docs/generated/summary.md",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "2edffba54a4ad3c4272b12f309cf2acb5d5de5e2",
+      "git_blob_sha256": "2f9281266769359325ab5b63af3e63f440593af5bb828d9e4b7a7027705b5499",
+      "git_blob_byte_length": 3036
+    },
+    {
+      "run_id": "attack-0001",
+      "role": "generated outcome chart",
+      "path": "docs/generated/outcomes.svg",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "9aa97b7d7fac0f916e1ffb3ea59b73b3c1aeb1be",
+      "git_blob_sha256": "6d259c3774afd027bf152532aa87dc9ae3192274949717ccc2b2d9e85255767a",
+      "git_blob_byte_length": 2360
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "formal realization module",
+      "path": "PAL/AttackRun0002.lean",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "53041002120fe549c4704c7e0967a93c4e3ce662",
+      "git_blob_sha256": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
+      "git_blob_byte_length": 17173
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "axiom receipt module",
+      "path": "Audit/AttackRun0002.lean",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "ee2f3b56bb70fe084f9f4cdb2d0b4a13b53dd932",
+      "git_blob_sha256": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
+      "git_blob_byte_length": 848
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "run receipt",
+      "path": "Audit/attack-run-0002-receipt.json",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "753b9523ebc9a82374faeb4dc21818db13a37be5",
+      "git_blob_sha256": "03930f51c9c0c8126dd69b34e8e9b2ad4745f16912351814ed2e2093ab33fdd0",
+      "git_blob_byte_length": 33774
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "claim ledger",
+      "path": "Audit/attack-run-0002-claim-ledger.json",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "1062ef77ffdbc2fddeac3fe0161219f967d1cfdf",
+      "git_blob_sha256": "0c3a171131e48eec001e0a406e9a65e8e7a2d001214b1c2103600439ddcc4f65",
+      "git_blob_byte_length": 34596
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "candidate dependency-impact map",
+      "path": "Audit/pal-2.1-impact.yaml",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "2fbad3caeb5e368efea4ed5daf3967ba33238be9",
+      "git_blob_sha256": "42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe",
+      "git_blob_byte_length": 38352
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "candidate proposal",
+      "path": "docs/proposals/PAL-v2.1-first-cut-receipt.md",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "36d68801bb3da59fccacc400f009379fb69f0355",
+      "git_blob_sha256": "8e2cef8c51bf16b43fabc2e7c59610d8b4a12107a94d7280e83d55094136741a",
+      "git_blob_byte_length": 34928
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "generated candidate summary receipt",
+      "path": "docs/generated/attack-run-0002-summary.md",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "4c98e32a93f3f78a71a3cff2037d120d26db9db1",
+      "git_blob_sha256": "e8a9c475a22ec3ed6d5d8e6153bda7b064ba3a1ae3b0fe0a003fc51832ba907f",
+      "git_blob_byte_length": 7928
+    },
+    {
+      "run_id": "attack-0002",
+      "role": "generated candidate outcome chart",
+      "path": "docs/generated/attack-run-0002-outcomes.svg",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "9bd8038af4ae231f2d21781749066cf97dce01b0",
+      "git_blob_sha256": "4eac0f22de5c24dc104ec32e72c2175afa4537c95da0f5af35a1a404a3063662",
+      "git_blob_byte_length": 4194
+    },
+    {
+      "run_id": "attack-0001-and-0002",
+      "role": "historical PAL v2.0 source identity and authority routing manifest",
+      "path": "Audit/source-manifest.yaml",
+      "mode": "100644",
+      "git_type": "blob",
+      "git_blob_oid": "30b3a6b0023009c575bb89228143b1ed08386fd6",
+      "git_blob_sha256": "89036f22fb57f5e6cde37c8880e41eda54c55dff3ba799333a0f8f9afe45f672",
+      "git_blob_byte_length": 3409
+    }
+  ],
+  "excluded_mutable_repository_surfaces": [
+    "scripts/check_policy.py",
+    "scripts/check_candidate_inputs.py",
+    "scripts/check_axiom_receipts.py",
+    "scripts/render_report.py",
+    "scripts/capture_environment.sh",
+    "PAL.lean",
+    "Audit.lean",
+    "PALLeanAudit.lean",
+    ".github/workflows/lean.yml",
+    "README.md",
+    "AGENTS.md",
+    "docs/REPORTING.md",
+    "lakefile.lean"
+  ],
+  "required_regression_checks": [
+    "python3 scripts/check_candidate_inputs.py",
+    "python3 scripts/render_report.py --check",
+    "python3 scripts/render_report.py --ledger Audit/attack-run-0002-claim-ledger.json --summary docs/generated/attack-run-0002-summary.md --chart docs/generated/attack-run-0002-outcomes.svg --check"
+  ],
+  "authority_ceiling": "This lock preserves historical repository evidence only. It neither adopts PAL v2.1 nor gives Git, CI, Lean, or formal audit evidence authority over PAL decisions."
+}

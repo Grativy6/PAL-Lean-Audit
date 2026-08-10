@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "PAL-v2.0-to-v2.1-REPOSITORY-MIGRATION",
+  "migration_status": "IMPLEMENTED_LOCAL_VALIDATION_PASSED_CI_PENDING",
+  "human_adoption_status": "ADOPTED",
+  "from_release": {
+    "name": "PAL v2.0",
+    "doi": "10.5281/zenodo.21754097",
+    "historical_source_manifest": "Audit/source-manifest.yaml",
+    "identity_rule": "Attack Runs 0001 and 0002 retain PAL v2.0 as their controlling release and retain their original result identities."
+  },
+  "to_release": {
+    "name": "PAL v2.1",
+    "doi": "10.5281/zenodo.21864767",
+    "publication_date": "2026-08-09",
+    "source_manifest_path": "Audit/releases/pal-v2.1-source-manifest.json",
+    "source_manifest_canonical_lf_sha256": "0dbcd31460ff66ecb75612a37a2282974f7e36f6d1595e01e706652bbbd0cb84",
+    "adoption_receipt_path": "Audit/releases/pal-v2.1-adoption-receipt.json",
+    "adoption_receipt_canonical_lf_sha256": "0e80ad9732455df072b12d7de7ed27c6a530c5e52438aa6e4559884290387ce7"
+  },
+  "repository_baseline": {
+    "repository": "Grativy6/PAL-Lean-Audit",
+    "main_sha": "144b08973fde16ebeabefc78166691afc861abec",
+    "tree_sha": "9dffacb765366fe944959cbcff3a8bea1cecfe01",
+    "historical_lock_path": "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json",
+    "historical_lock_canonical_lf_sha256": "ee2854dee435f2bab842b44f5ca6f28deb27354dd23e5a9117af6d5d06d67606"
+  },
+  "version_control_identity": {
+    "branch": "agent/attack-run-0003-pal-led",
+    "base_sha": "144b08973fde16ebeabefc78166691afc861abec",
+    "migration_pr_number": null,
+    "migration_pr_base_sha": null,
+    "migration_pr_head_sha": null,
+    "tested_merge_sha": null,
+    "final_merge_sha": null,
+    "identity_status": "NOT_YET_AVAILABLE",
+    "identity_rule": "These technical identities do not control adoption. Populate them only through a later linked environment or finalization receipt; do not guess or retroactively substitute one identity for another."
+  },
+  "decision_mappings": [
+    {
+      "historical_candidate_id": "C21-01",
+      "adopted_decision_id": "D16",
+      "adopted_title": "Account-relative primacy",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.1", "M-A0-SCOPED-FIRST", "D16", "T33", "PAL-v2.1-C Table 028 A0"],
+      "historical_audit_evidence": ["AR2-06"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-02",
+      "adopted_decision_id": "D17",
+      "adopted_title": "Typed cost-bearing admission",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.2", "M-A0-CUT", "D17", "T34", "PAL-v2.1-C Table 028 Cost"],
+      "historical_audit_evidence": ["AR2-04"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-03",
+      "adopted_decision_id": "D18",
+      "adopted_title": "Occurrence evidence and source ceiling",
+      "adoption_disposition": "REVISED_AND_ADOPTED_EXPLANATORY_LABEL_NOT_ADOPTED_AS_STATUS",
+      "canonical_routes": ["SC-19.3", "M-SOURCE-FIBER", "M-A2-HISTORY", "D18", "T35", "PAL-v2.1-C Table 028 A1/A2/A15 and D-FIRST-OCCURRENCE"],
+      "historical_audit_evidence": ["AR2-03", "AR2-05"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-04",
+      "adopted_decision_id": "D19",
+      "adopted_title": "Account order versus primacy evidence",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.4", "M-A0-SCOPED-FIRST", "D19", "T36", "PAL-v2.1-C Table 028 A0"],
+      "historical_audit_evidence": ["AR2-05", "AR2-06"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-05",
+      "adopted_decision_id": "D20",
+      "adopted_title": "Supplied inquiry-event witness",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.5", "M-INQUIRY-APPEND", "D20", "T37", "PAL-v2.1-C Table 028 Inquiry"],
+      "historical_audit_evidence": ["AR2-03", "AR2-07"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-06",
+      "adopted_decision_id": "D21",
+      "adopted_title": "Cut-only source underdetermination",
+      "adoption_disposition": "TIGHTENED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.6", "M-SOURCE-FIBER", "D21", "T38", "PAL-v2.1-C Table 028 Source inference"],
+      "historical_audit_evidence": ["AR2-01", "AR2-02", "AR2-03"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-07",
+      "adopted_decision_id": "D22",
+      "adopted_title": "Witnessed further inquiry",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.7", "M-INQUIRY-APPEND", "D22", "T39", "PAL-v2.1-C Table 028 Inquiry"],
+      "historical_audit_evidence": ["AR2-07"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    },
+    {
+      "historical_candidate_id": "C21-08",
+      "adopted_decision_id": "D23",
+      "adopted_title": "Append without backflow",
+      "adoption_disposition": "REVISED_AND_ADOPTED",
+      "canonical_routes": ["SC-19.8", "M-INQUIRY-APPEND", "D23", "T40", "PAL-v2.1-C Table 028 Recovery/reopening"],
+      "historical_audit_evidence": ["AR2-05", "AR2-08"],
+      "evidence_authority": "NONAUTHORITATIVE"
+    }
+  ],
+  "open_burden_carry_forward": [
+    {
+      "address": "D-FIRST-OCCURRENCE",
+      "from_state": "OPEN",
+      "to_state": "OPEN",
+      "migration_disposition": "OPEN_CLARIFIED",
+      "interfaces": ["O04", "O25"]
+    },
+    {
+      "address": "O04",
+      "from_state": "OPEN",
+      "to_state": "OPEN",
+      "migration_disposition": "RETAIN_SEPARATE_ONTIC_SOURCE_INTERFACE"
+    },
+    {
+      "address": "O25",
+      "from_state": "OPEN",
+      "to_state": "OPEN",
+      "migration_disposition": "RETAIN_SEPARATE_CERTIFICATE_REVOCATION_INTERFACE"
+    }
+  ],
+  "explanatory_language": {
+    "phrase": "occurrence-closed, source-open",
+    "status": "EXPLANATORY_ONLY",
+    "migration_rule": "Do not add the phrase to the PAL claim-status vocabulary or use it in place of distinct A1/A2/A15 and OPEN-debt receipts."
+  },
+  "historical_audit_routing": [
+    {
+      "run_id": "attack-0001",
+      "controlling_release": "PAL v2.0",
+      "migration_disposition": "PRESERVE_EXACT_BYTES_AND_RESULT_IDENTITIES"
+    },
+    {
+      "run_id": "attack-0002",
+      "controlling_release": "PAL v2.0",
+      "migration_disposition": "PRESERVE_EXACT_BYTES_CANDIDATE_STATUS_AND_RESULT_IDENTITIES",
+      "current_role": "Historical bounded evidence informing review; not adoption authority."
+    }
+  ],
+  "historical_noncanonical_material": [
+    {
+      "id": "github-issue-4",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "github-pr-5",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Workflow",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Impact-Map",
+      "path": "Audit/pal-2.1-impact.yaml",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Proposal",
+      "path": "docs/proposals/PAL-v2.1-first-cut-receipt.md",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    }
+  ],
+  "surface_actions": [
+    {
+      "path": "Audit/releases/pal-v2.1-source-manifest.json",
+      "action": "ADD_VERSIONED_PUBLISHED_SOURCE_IDENTITY",
+      "status": "PRESENT"
+    },
+    {
+      "path": "Audit/releases/pal-v2.1-adoption-receipt.json",
+      "action": "ADD_HUMAN_ADOPTION_RECEIPT",
+      "status": "PRESENT"
+    },
+    {
+      "path": "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json",
+      "action": "ADD_GIT_OBJECT_HISTORY_LOCK",
+      "status": "PRESENT"
+    },
+    {
+      "path": "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json",
+      "action": "ADD_REPOSITORY_MIGRATION_RECEIPT",
+      "status": "PRESENT"
+    },
+    {
+      "path": "scripts/check_release_migration.py",
+      "action": "ADD_FAIL_CLOSED_MIGRATION_VALIDATOR",
+      "status": "PRESENT"
+    },
+    {
+      "surface": "Shared repository instructions, reporting, CI, imports, and human-facing metadata",
+      "action": "UPDATE_WITH_VERSION_ROUTING_WITHOUT_REWRITING_HISTORICAL_ARTIFACTS",
+      "status": "IMPLEMENTED_LOCAL_VALIDATION_PASSED_CI_PENDING"
+    }
+  ],
+  "published_package_verification": {
+    "checker": "scripts/check_release_migration.py",
+    "optional_zip_argument": "--published-zip",
+    "verification": "Stream every required DOCX, PDF, and supporting-file member from the supplied ZIP and compare its byte length and SHA-256 to the published source manifest. No extraction or mutation is permitted."
+  },
+  "authority_ceiling": "PAL v2.1 adoption comes from Christopher D. Pang's explicit decision and the published D16-D23 ledger, not from Attack Run 0002, issue #4, PR #5, the candidate workflow/map/proposal, Lean, CI, or this repository migration. Formal audit evidence remains bounded evidence only."
+}

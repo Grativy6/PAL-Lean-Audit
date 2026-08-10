@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1540 1030">
+<title id="title">Attack Run 0003 dependency diagram</title>
+<desc id="desc">Eight PAL v2.1 decision routes control declared Lean realizations, which produce bounded result receipts.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#4a5568"/></marker></defs>
+<rect width="100%" height="100%" fill="#f7fafc"/>
+<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.decision{font:700 15px system-ui,sans-serif;fill:#1a202c}.small{font:12px ui-monospace,monospace;fill:#2d3748}.source{fill:#ebf8ff;stroke:#3182ce}.lean{fill:#f0fff4;stroke:#38a169}.result{fill:#faf5ff;stroke:#805ad5}.arrow{stroke:#4a5568;stroke-width:2;fill:none}</style>
+<text x="24" y="36" class="title">Attack Run 0003 — declared dependency route</text>
+<text x="24" y="62" class="sub">PAL v2.1 controls meaning and ceilings; Lean checks only the displayed realizations and dependencies.</text>
+<rect x="24" y="100" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="125" class="decision">D16</text>
+<text x="40" y="150" class="small">D16 · SC-19.1 · M-A0-SCOPED-FIRST · T33</text>
+<path d="M454 144 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="100" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="125" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="149">scopedAccountFirstRealization · localFirstGlobalFirstCountermodel</tspan></text>
+<path d="M1140 144 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="100" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="125" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="149">AR3-01 · AR3-02</tspan></text>
+<rect x="24" y="212" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="237" class="decision">D17</text>
+<text x="40" y="262" class="small">D17 · SC-19.2 · M-A0-CUT · T34</text>
+<path d="M454 256 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="212" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="237" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="261">typedCostBearingAdmission · costCannotSupplyClaimReceipts</tspan></text>
+<path d="M1140 256 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="212" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="237" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="261">AR3-04 · AR3-05</tspan></text>
+<rect x="24" y="324" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="349" class="decision">D18</text>
+<text x="40" y="374" class="small">D18 · SC-19.3 · M-SOURCE-FIBER · M-A2-HISTORY · T35</text>
+<path d="M454 368 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="324" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="349" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="373">occurrenceRecordFromSuppliedA1A2 · occurrenceRequiresA1A2Witnesses ·</tspan><tspan x="546" y="387">a15RequiredSeparatelyForScopedClosure · a0OnlyCountermodel ·</tspan><tspan x="546" y="401">occurrenceHistoryMonotone · historyOutlastsActivityCountermodel</tspan></text>
+<path d="M1140 368 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="324" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="349" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="373">AR3-06 · AR3-07 · AR3-08 ·</tspan><tspan x="1232" y="387">AR3-09 · AR3-10 · AR3-11 ·</tspan><tspan x="1232" y="401">AR3-23</tspan></text>
+<rect x="24" y="436" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="461" class="decision">D19</text>
+<text x="40" y="486" class="small">D19 · SC-19.4 · M-A0-SCOPED-FIRST · T36</text>
+<path d="M454 480 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="436" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="461" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="485">strongerPrimacyAssumptionBound</tspan></text>
+<path d="M1140 480 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="436" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="461" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="485">AR3-03</tspan></text>
+<rect x="24" y="548" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="573" class="decision">D20</text>
+<text x="40" y="598" class="small">D20 · SC-19.5 · M-INQUIRY-APPEND · T37</text>
+<path d="M454 592 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="548" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="573" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="597">inquiryReceiptFromSuppliedWitness · questionDoesNotSelfCertify ·</tspan><tspan x="546" y="611">questionCannotSupplyInquirerClaims</tspan></text>
+<path d="M1140 592 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="548" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="573" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="597">AR3-12 · AR3-13 · AR3-14</tspan></text>
+<rect x="24" y="660" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="685" class="decision">D21</text>
+<text x="40" y="710" class="small">D21 · SC-19.6 · M-SOURCE-FIBER · T38</text>
+<path d="M454 704 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="660" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="685" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="709">cutOnlyCongruence · noninjectiveSourceFiberCountermodel ·</tspan><tspan x="546" y="723">injectiveSourceIdentificationAssumptionBound</tspan></text>
+<path d="M1140 704 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="660" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="685" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="709">AR3-15 · AR3-16 · AR3-17</tspan></text>
+<rect x="24" y="772" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="797" class="decision">D22</text>
+<text x="40" y="822" class="small">D22 · SC-19.7 · M-INQUIRY-APPEND · T39</text>
+<path d="M454 816 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="772" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="797" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="821">questionDoesNotSelfCertify · witnessedInquiryAppendPreservesPrefix ·</tspan><tspan x="546" y="835">finiteTerminalCountermodel</tspan></text>
+<path d="M1140 816 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="772" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="797" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="821">AR3-13 · AR3-18 · AR3-19</tspan></text>
+<rect x="24" y="884" width="430" height="88" rx="7" class="source"/>
+<text x="40" y="909" class="decision">D23</text>
+<text x="40" y="934" class="small">D23 · SC-19.8 · M-INQUIRY-APPEND · T40</text>
+<path d="M454 928 H520" class="arrow" marker-end="url(#arrow)"/>
+<rect x="530" y="884" width="610" height="88" rx="7" class="lean"/>
+<text x="546" y="909" class="decision">Declared Lean realization</text>
+<text class="small"><tspan x="546" y="933">laterEvidenceAppendPreservesPrior · overwriteIsNotAppendCountermodel</tspan></text>
+<path d="M1140 928 H1206" class="arrow" marker-end="url(#arrow)"/>
+<rect x="1216" y="884" width="300" height="88" rx="7" class="result"/>
+<text x="1232" y="909" class="decision">Result receipt</text>
+<text class="small"><tspan x="1232" y="933">AR3-20 · AR3-21</tspan></text>
+</svg>

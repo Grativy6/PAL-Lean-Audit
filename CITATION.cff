@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite PAL v2.0 as the controlling framework and this repository only for the bounded Lean audit implementation."
+message: "Please cite PAL v2.1 for new PAL-led realization audits, PAL v2.0 for historical Attack Runs 0001 and 0002, and this repository only for the bounded Lean audit implementation."
 title: "PAL Lean Audit"
 type: software
 version: 0.1.0
@@ -10,6 +10,12 @@ authors:
 repository-code: "https://github.com/Grativy6/PAL-Lean-Audit"
 license: Apache-2.0
 references:
+  - type: generic
+    title: "PAL v2.1"
+    authors:
+      - family-names: Pang
+        given-names: Christopher D.
+    doi: 10.5281/zenodo.21864767
   - type: generic
     title: "PAL v2.0"
     authors:

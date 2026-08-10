@@ -1,0 +1,786 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "attack-0003",
+  "run_receipt": "Audit/attack-run-0003-receipt.json",
+  "audit_direction": "PAL_AUDITS_DECLARED_LEAN_REALIZATIONS",
+  "controlling_release": "PAL v2.1",
+  "controlling_doi": "10.5281/zenodo.21864767",
+  "authority_ceiling": "PAL v2.1 controls the distinctions, invariants, and conformance conditions. Lean checks only the declared objects and dependencies; it does not redefine, adopt, uniquely validate, or prove PAL and cannot close a PAL obligation.",
+  "claims": [
+    {
+      "id": "AR3-01",
+      "title": "Scoped account-first realization",
+      "classification": "CONSISTENT_REALIZATION",
+      "pal_addresses": [
+        "D16",
+        "SC-19.1",
+        "M-A0-SCOPED-FIRST",
+        "T33"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.scopedAccountFirstRealization"
+      ],
+      "explicit_hypotheses": [
+        "the declared finite account scope",
+        "the displayed precedence relation"
+      ],
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "positive_claim_established": "The admitted event is first in the declared account scope.",
+      "overclaim_not_established": "No temporal, ontic, causal, or global primacy follows.",
+      "authority_ceiling": "Only the displayed finite account comparison is realized.",
+      "retained_evidence": "Scope membership and predecessor decisions remain inspectable.",
+      "reopening_or_unresolved_burden": "Reopen on a wider comparison scope or conflicting predecessor."
+    },
+    {
+      "id": "AR3-02",
+      "title": "Local first is not global first",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D16",
+        "SC-19.1",
+        "M-A0-SCOPED-FIRST",
+        "T33"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.localFirstGlobalFirstCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "the local and expanded finite scopes",
+        "one supplied predecessor edge"
+      ],
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "positive_claim_established": "Local firstness coexists with failure of firstness in an expanded scope.",
+      "overclaim_not_established": "A0 is not established as globally or causally first.",
+      "authority_ceiling": "The construction refutes only an unqualified local-to-global promotion.",
+      "retained_evidence": "Both scopes and the predecessor edge are retained.",
+      "reopening_or_unresolved_burden": "Reopen with evidence that the declared scope is globally or causally exhaustive."
+    },
+    {
+      "id": "AR3-03",
+      "title": "Stronger primacy remains assumption-bound",
+      "classification": "ASSUMPTION_BOUND",
+      "pal_addresses": [
+        "D19",
+        "SC-19.4",
+        "M-A0-SCOPED-FIRST",
+        "T36"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.strongerPrimacyAssumptionBound"
+      ],
+      "explicit_hypotheses": [
+        "a supplied comparison scope",
+        "a comparison witness",
+        "the conclusion-shaped firstness evidence",
+        "an authority ceiling"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Supplied comparison evidence constructs a primacy receipt in its declared scope.",
+      "overclaim_not_established": "The cut or trace does not manufacture stronger primacy evidence.",
+      "authority_ceiling": "The conclusion is bounded by the supplied evidence and comparison scope.",
+      "retained_evidence": "The witness, scope, proof, candidate, and ceiling remain in the receipt.",
+      "reopening_or_unresolved_burden": "Challenge the supplied evidence or provide a wider comparison scope."
+    },
+    {
+      "id": "AR3-04",
+      "title": "Typed cost-bearing admission",
+      "classification": "CONSISTENT_REALIZATION",
+      "pal_addresses": [
+        "D17",
+        "SC-19.2",
+        "M-A0-CUT",
+        "T34"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.typedCostBearingAdmission"
+      ],
+      "explicit_hypotheses": [
+        "separately supplied account, cut, scope, boundary, witness, cost, trace, ceiling, authority, residual, and reopening fields"
+      ],
+      "axioms": [
+        "propext"
+      ],
+      "positive_claim_established": "Admission preserves the typed cost beside distinct trace and authority fields.",
+      "overclaim_not_established": "Cost is not thereby source, truth, energy, permission, consent, standing, or authority.",
+      "authority_ceiling": "This realizes one typed ledger admission only.",
+      "retained_evidence": "All separately typed receipt fields are retained.",
+      "reopening_or_unresolved_burden": "Reopen by disputing a supplied field or the account-relative admission rule."
+    },
+    {
+      "id": "AR3-05",
+      "title": "Cost cannot supply promoted claim receipts",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D17",
+        "SC-19.2",
+        "M-A0-CUT",
+        "T34"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.costCannotSupplyClaimReceipts"
+      ],
+      "explicit_hypotheses": [
+        "the inhabited positive-cost cut",
+        "an empty independent claim-witness type"
+      ],
+      "axioms": [],
+      "positive_claim_established": "A positive typed cost coexists with absence of all seven promoted claim receipts.",
+      "overclaim_not_established": "Recorded cost does not prove causal source, truth, energy, permission, consent, standing, or authority.",
+      "authority_ceiling": "The countermodel separates the named claim kinds; it does not make them universally impossible.",
+      "retained_evidence": "The positive cost and exhaustive finite claim-kind index remain explicit.",
+      "reopening_or_unresolved_burden": "Supply an independent witness for the particular promoted claim."
+    },
+    {
+      "id": "AR3-06",
+      "title": "Occurrence record from supplied A1 and A2",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.occurrenceRecordFromSuppliedA1A2"
+      ],
+      "explicit_hypotheses": [
+        "an admitted cut",
+        "a supplied A1 witness with a declared readability predicate and proof",
+        "a supplied A2 witness with a declared A2-to-A1 recovery predicate and proof",
+        "linked and ordered A1/A2 receipt identifiers",
+        "a declared occurrence scope equal to the cut scope",
+        "a prior history and recoverable history with prefix and membership proofs"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The earned A1-to-A2 lineage constructs a scoped occurrence record with protected recoverable history.",
+      "overclaim_not_established": "The result does not identify ultimate source, global primacy, or scoped closure.",
+      "authority_ceiling": "It proves only the supplied account-relative lineage, scope, and protected-history realization.",
+      "retained_evidence": "The cut, A1 readability proof, A2 recovery proof and target, ordered ids, scope equality, prior prefix, and stored A1/A2/occurrence ids remain explicit.",
+      "reopening_or_unresolved_burden": "Reopen by challenging either stage criterion, lineage link, order, account scope, or protected history."
+    },
+    {
+      "id": "AR3-07",
+      "title": "Occurrence requires both A1 and A2 witnesses",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.occurrenceRequiresA1A2Witnesses"
+      ],
+      "explicit_hypotheses": [
+        "an empty A1 type in one control",
+        "an empty A2 type in the other control"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Either missing stage makes the staged occurrence record uninhabited.",
+      "overclaim_not_established": "The theorem does not deny that valid A1 and A2 witnesses may be supplied.",
+      "authority_ceiling": "This is a dependency result, not closure of first-occurrence debt.",
+      "retained_evidence": "A0, A1, and A2 remain structurally distinct.",
+      "reopening_or_unresolved_burden": "Reopen by supplying both independently sourced witnesses."
+    },
+    {
+      "id": "AR3-08",
+      "title": "A15 is separately required for scoped closure",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35",
+        "M-A15-CHECK"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.a15RequiredSeparatelyForScopedClosure"
+      ],
+      "explicit_hypotheses": [
+        "an occurrence record",
+        "an empty A15 closure-witness type"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Occurrence alone cannot inhabit the separately typed scoped-closure receipt.",
+      "overclaim_not_established": "Occurrence evidence does not by itself yield CLOSED_IN_SCOPE or global closure.",
+      "authority_ceiling": "The result concerns the declared closure type only.",
+      "retained_evidence": "The occurrence history and reopening data remain unchanged.",
+      "reopening_or_unresolved_burden": "Supply a distinct A15 witness and declared scope; O04/O25 remain open."
+    },
+    {
+      "id": "AR3-09",
+      "title": "A0-only occurrence countermodel",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.a0OnlyCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "the inhabited A0 cut receipt",
+        "empty A1 and A2 witness types"
+      ],
+      "axioms": [],
+      "positive_claim_established": "An A0 receipt can exist while no occurrence record is constructible.",
+      "overclaim_not_established": "An A0 receipt alone does not prove occurrence closure.",
+      "authority_ceiling": "The model does not decide ultimate source or first occurrence.",
+      "retained_evidence": "The complete typed cut receipt remains available.",
+      "reopening_or_unresolved_burden": "Append separately witnessed A1 and A2 stages; D-FIRST-OCCURRENCE stays open."
+    },
+    {
+      "id": "AR3-10",
+      "title": "Recoverable occurrence history is monotone",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.occurrenceHistoryMonotone"
+      ],
+      "explicit_hypotheses": [
+        "a recoverable earlier occurrence",
+        "an explicit order from observation time to a later time"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The same recoverable history witness establishes the bounded predicate later.",
+      "overclaim_not_established": "History persistence does not imply continuing activity, source identity, or primacy.",
+      "authority_ceiling": "The theorem concerns only the declared existential history predicate.",
+      "retained_evidence": "The same earlier time, activity fact, and recoverability fact are reused.",
+      "reopening_or_unresolved_burden": "Challenge recoverability or the supplied time order."
+    },
+    {
+      "id": "AR3-11",
+      "title": "History can outlast activity",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.historyOutlastsActivityCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "the explicit two-time pulse model"
+      ],
+      "axioms": [
+        "propext"
+      ],
+      "positive_claim_established": "Recoverable occurrence history is true at time one while current activity is false.",
+      "overclaim_not_established": "Historical occurrence is not identical to ongoing activity or an infinite persistence claim.",
+      "authority_ceiling": "This is a bounded two-time countermodel.",
+      "retained_evidence": "The time-zero trace remains the recovery basis.",
+      "reopening_or_unresolved_burden": "Reopen under a different declared activity/history semantics."
+    },
+    {
+      "id": "AR3-12",
+      "title": "Inquiry receipt from supplied witness",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D20",
+        "SC-19.5",
+        "M-INQUIRY-APPEND",
+        "T37"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.inquiryReceiptFromSuppliedWitness"
+      ],
+      "explicit_hypotheses": [
+        "a question",
+        "an externally supplied inquiry-event witness",
+        "an independently supplied cost witness and typed cost",
+        "provenance, trace, authority snapshot and ceiling, residual, and reopening data"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The supplied event and cost witnesses plus protected metadata construct one typed present inquiry receipt.",
+      "overclaim_not_established": "Asking does not manufacture the witness or establish truth, permission, or authority.",
+      "authority_ceiling": "The receipt records the admitted inquiry event only.",
+      "retained_evidence": "Question, event witness, cost witness and value, provenance, trace, authority snapshot and ceiling, residual, and reopening data are retained.",
+      "reopening_or_unresolved_burden": "Challenge the witness basis or append a separately witnessed later inquiry."
+    },
+    {
+      "id": "AR3-13",
+      "title": "Question does not self-certify an inquiry event",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D20",
+        "SC-19.5",
+        "D22",
+        "SC-19.7",
+        "M-INQUIRY-APPEND",
+        "T37",
+        "T39"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.questionDoesNotSelfCertify"
+      ],
+      "explicit_hypotheses": [
+        "an ordinary question",
+        "an empty inquiry-event witness type"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The question remains available while an inquiry receipt with an empty event-witness type is uninhabited, including for a further inquiry append.",
+      "overclaim_not_established": "Asking alone does not manufacture the event witness required by a present or further inquiry receipt.",
+      "authority_ceiling": "The countermodel blocks event-witness self-certification only.",
+      "retained_evidence": "The question remains distinct from receipt witness, provenance, and append history.",
+      "reopening_or_unresolved_burden": "Supply an independent event witness for the particular inquiry receipt."
+    },
+    {
+      "id": "AR3-14",
+      "title": "Admitted inquiry receipt cannot supply promoted claims",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D20",
+        "SC-19.5",
+        "M-INQUIRY-APPEND",
+        "T37"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.questionCannotSupplyInquirerClaims"
+      ],
+      "explicit_hypotheses": [
+        "an admitted inquiry receipt with independent event and cost witnesses",
+        "empty independent witnesses for six promoted claim kinds"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The admitted inquiry receipt coexists with absence of ontology, consciousness, standing, ultimate-source, global-priority, and original-cut causal-source claim receipts.",
+      "overclaim_not_established": "Neither asking nor receipt production proves the inquirer claims or witnesses the original cut’s causal source.",
+      "authority_ceiling": "The finite six-kind model does not settle whether any such evidence could exist independently.",
+      "retained_evidence": "The admitted receipt and six separately typed promoted-claim addresses remain distinct.",
+      "reopening_or_unresolved_burden": "Supply independent evidence and authority for the particular promoted claim."
+    },
+    {
+      "id": "AR3-15",
+      "title": "Cut-only congruence",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D21",
+        "SC-19.6",
+        "M-SOURCE-FIBER",
+        "T38"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.cutOnlyCongruence"
+      ],
+      "explicit_hypotheses": [
+        "two source-indexed receipts",
+        "equality of their cut fields"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Equal cut fields yield equal cut-only projections.",
+      "overclaim_not_established": "Projection equality does not identify upstream sources.",
+      "authority_ceiling": "The theorem is restricted to the cut-only interface.",
+      "retained_evidence": "Both source fields remain outside the projection.",
+      "reopening_or_unresolved_burden": "Supply a discriminating witness or justified injectivity."
+    },
+    {
+      "id": "AR3-16",
+      "title": "Noninjective source-fiber countermodel",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D21",
+        "SC-19.6",
+        "M-SOURCE-FIBER",
+        "T38"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.noninjectiveSourceFiberCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "the explicit two-source, one-cut finite map"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Distinct sources have the same accessible cut value.",
+      "overclaim_not_established": "A cut-only interface does not uniquely identify its source.",
+      "authority_ceiling": "The countermodel does not claim every source map is noninjective.",
+      "retained_evidence": "Both source constructors and the shared image remain explicit.",
+      "reopening_or_unresolved_burden": "Add discriminating evidence or a justified injectivity premise."
+    },
+    {
+      "id": "AR3-17",
+      "title": "Injective source identification is assumption-bound",
+      "classification": "ASSUMPTION_BOUND",
+      "pal_addresses": [
+        "D21",
+        "SC-19.6",
+        "M-SOURCE-FIBER",
+        "T38"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.injectiveSourceIdentificationAssumptionBound"
+      ],
+      "explicit_hypotheses": [
+        "a supplied source map",
+        "an explicit injectivity proof",
+        "equality of two cut images"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Source identity follows under the supplied injectivity premise.",
+      "overclaim_not_established": "Injectivity is not derived from PAL or from cut equality.",
+      "authority_ceiling": "Identification is conditional on the disclosed premise.",
+      "retained_evidence": "The map, injectivity proof, and equality witness remain required.",
+      "reopening_or_unresolved_burden": "Challenge injectivity or exhibit a nontrivial source fiber."
+    },
+    {
+      "id": "AR3-18",
+      "title": "Witnessed inquiry append preserves prefix",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D22",
+        "SC-19.7",
+        "M-INQUIRY-APPEND",
+        "T39"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.witnessedInquiryAppendPreservesPrefix"
+      ],
+      "explicit_hypotheses": [
+        "an existing finite inquiry ledger",
+        "one independently event- and cost-witnessed inquiry receipt",
+        "a link to an existing parent",
+        "exact retention of prior event ids",
+        "a fresh appended event id"
+      ],
+      "axioms": [
+        "propext"
+      ],
+      "positive_claim_established": "The proof-gated append preserves every prior entry as a prefix, includes the fresh linked receipt, retains all prior ids, and separately blocks a missing cost witness.",
+      "overclaim_not_established": "One witnessed append does not imply another or an infinite causal ontology.",
+      "authority_ceiling": "The theorem concerns finite list extension only.",
+      "retained_evidence": "All prior entries and ids plus the new event witness, cost witness and value, provenance, parent link, and fresh id remain.",
+      "reopening_or_unresolved_burden": "Every further inquiry requires independent event and cost witnesses, an existing parent link, retained ids, freshness, and an append proof."
+    },
+    {
+      "id": "AR3-19",
+      "title": "Reopened inquiry can terminate",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D22",
+        "SC-19.7",
+        "M-INQUIRY-APPEND",
+        "T39"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.finiteTerminalCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "an explicit one-entry parent ledger",
+        "an independently event- and cost-witnessed linked child with retained prior ids and a fresh id",
+        "the resulting two-entry state marked reopened and then terminal"
+      ],
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "positive_claim_established": "A genuine linked parent-to-child append preserves the parent prefix and then terminates with no further step or unbounded support.",
+      "overclaim_not_established": "Reopenability does not prove an actually infinite causal ontology.",
+      "authority_ceiling": "The construction is a finite countermodel, not an ontology theorem.",
+      "retained_evidence": "The exact parent prefix, child link, event and cost witnesses, retained ids, fresh id, and two-entry finite ledger remain intact.",
+      "reopening_or_unresolved_burden": "Append a new independently event- and cost-witnessed, linked, fresh receipt to reopen this terminal state."
+    },
+    {
+      "id": "AR3-20",
+      "title": "Later evidence append preserves the prior snapshot",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "pal_addresses": [
+        "D23",
+        "SC-19.8",
+        "M-INQUIRY-APPEND",
+        "T40"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.laterEvidenceAppendPreservesPrior"
+      ],
+      "explicit_hypotheses": [
+        "a prior inquiry ledger and an existing parent membership proof",
+        "a fresh later record linked to the parent and retaining all prior ids",
+        "a separately supplied later recovery witness and evidence id"
+      ],
+      "axioms": [
+        "propext"
+      ],
+      "positive_claim_established": "The linked recovery record is appended to account history while the earlier receipt’s witness, cost, trace, and authority snapshot are recovered fieldwise unchanged.",
+      "overclaim_not_established": "A later witness cannot retroactively create earlier witness, payment, consent, standing, or authority.",
+      "authority_ceiling": "The theorem governs only the displayed parent-membership, linkage, retained-id, freshness, and append constructor.",
+      "retained_evidence": "The exact prior history, parent fields, membership proof, link, retained ids, fresh later record, and recovery witness are retained.",
+      "reopening_or_unresolved_burden": "Contest parent membership, linkage, retained ids, freshness, or append another independently sourced recovery record."
+    },
+    {
+      "id": "AR3-21",
+      "title": "Overwrite is not append",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "pal_addresses": [
+        "D23",
+        "SC-19.8",
+        "M-INQUIRY-APPEND",
+        "T40"
+      ],
+      "lean_declarations": [
+        "PAL.AttackRun0003.overwriteIsNotAppendCountermodel"
+      ],
+      "explicit_hypotheses": [
+        "the concrete one-entry ledger",
+        "a replacement receipt with rewritten cost"
+      ],
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "positive_claim_established": "Destructive head replacement erases the original and fails prefix preservation.",
+      "overclaim_not_established": "Appending evidence does not permit alteration of the earlier receipt or authority snapshot.",
+      "authority_ceiling": "The countermodel distinguishes the displayed overwrite operation from licensed append.",
+      "retained_evidence": "Original and mutated receipts remain separately inspectable.",
+      "reopening_or_unresolved_burden": "Use a linked append and prove preservation of the prior receipt."
+    },
+    {
+      "id": "AR3-22",
+      "title": "Literal object-language unresolved-possibility identifiers",
+      "classification": "EXPECTED_REJECTION",
+      "pal_addresses": [
+        "PAL-v2.1-Spine L05",
+        "PAL-v2.1-T T05"
+      ],
+      "lean_declarations": [],
+      "explicit_hypotheses": [
+        "the two unchanged T05 lexical fixtures",
+        "the bounded standalone-identifier scanner"
+      ],
+      "axioms": [],
+      "positive_claim_established": "Both literal standalone identifier fixtures receive the stable lexical rejection.",
+      "overclaim_not_established": "The lexical rule does not prove that differently named semantic surrogates are absent.",
+      "authority_ceiling": "This is a bounded naming firewall; unresolved possibility remains metalinguistic by source review.",
+      "retained_evidence": "The exact ASCII and symbol fixtures and diagnostics are retained.",
+      "reopening_or_unresolved_burden": "Semantic-surrogate review remains OPEN_MANUAL."
+    },
+    {
+      "id": "AR3-23",
+      "title": "Explanatory shorthand cannot become a primitive status",
+      "classification": "EXPECTED_REJECTION",
+      "pal_addresses": [
+        "D18",
+        "SC-19.3",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "lean_declarations": [],
+      "explicit_hypotheses": [
+        "the AR3 explanatory-shorthand fixture",
+        "the bounded selected-spelling declaration guard"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The attempted object-language shorthand status receives the expected policy rejection.",
+      "overclaim_not_established": "The naming guard is not a complete semantic proof against every surrogate.",
+      "authority_ceiling": "The source, not the fixture scanner, establishes that the phrase is explanatory only.",
+      "retained_evidence": "The fixture and exact stable diagnostic are retained.",
+      "reopening_or_unresolved_burden": "Differently named semantic promotion remains OPEN_MANUAL review."
+    },
+    {
+      "id": "AR3-24",
+      "title": "Formal proof cannot close first-occurrence debt",
+      "classification": "EXPECTED_REJECTION",
+      "pal_addresses": [
+        "D-FIRST-OCCURRENCE",
+        "O04",
+        "O25",
+        "PAL-v2.1-T T35"
+      ],
+      "lean_declarations": [],
+      "explicit_hypotheses": [
+        "the AR3 first-occurrence-closure fixture",
+        "the bounded selected-spelling debt-closure guard"
+      ],
+      "axioms": [],
+      "positive_claim_established": "The attempted formal closure declaration receives the expected policy rejection.",
+      "overclaim_not_established": "The fixture does not turn a naming rule into PAL adoption authority.",
+      "authority_ceiling": "Lean and repository policy cannot close O04, O25, or D-FIRST-OCCURRENCE.",
+      "retained_evidence": "The fixture, diagnostic, and separate OPEN burden receipt are retained.",
+      "reopening_or_unresolved_burden": "D-FIRST-OCCURRENCE remains OPEN through O04 and O25."
+    },
+    {
+      "id": "AR3-25",
+      "title": "Semantic-surrogate and authority review",
+      "classification": "OPEN_MANUAL",
+      "pal_addresses": [
+        "PAL-v2.1-Spine L05",
+        "PAL-v2.1-T T05",
+        "PAL-v2.1-L O04/O25"
+      ],
+      "lean_declarations": [],
+      "explicit_hypotheses": [
+        "manual review of names, types, constructors, comments, receipts, and authority claims"
+      ],
+      "axioms": [],
+      "positive_claim_established": "No literal forbidden identifier occurs in scanned Lean object language, and the declared namespace was manually reviewed.",
+      "overclaim_not_established": "Automation does not establish semantic completeness or discharge source/authority burdens.",
+      "authority_ceiling": "Manual review is a control, not a formal theorem or adoption decision.",
+      "retained_evidence": "Policy output, source review notes, and the complete declaration inventory are retained.",
+      "reopening_or_unresolved_burden": "Review reopens on any new declaration, semantic surrogate, or authority claim."
+    }
+  ],
+  "dependency_groups": [
+    {
+      "decision": "D16",
+      "source_routes": [
+        "D16",
+        "SC-19.1",
+        "M-A0-SCOPED-FIRST",
+        "T33"
+      ],
+      "result_ids": [
+        "AR3-01",
+        "AR3-02"
+      ],
+      "declarations": [
+        "scopedAccountFirstRealization",
+        "localFirstGlobalFirstCountermodel"
+      ]
+    },
+    {
+      "decision": "D17",
+      "source_routes": [
+        "D17",
+        "SC-19.2",
+        "M-A0-CUT",
+        "T34"
+      ],
+      "result_ids": [
+        "AR3-04",
+        "AR3-05"
+      ],
+      "declarations": [
+        "typedCostBearingAdmission",
+        "costCannotSupplyClaimReceipts"
+      ]
+    },
+    {
+      "decision": "D18",
+      "source_routes": [
+        "D18",
+        "SC-19.3",
+        "M-SOURCE-FIBER",
+        "M-A2-HISTORY",
+        "T35"
+      ],
+      "result_ids": [
+        "AR3-06",
+        "AR3-07",
+        "AR3-08",
+        "AR3-09",
+        "AR3-10",
+        "AR3-11",
+        "AR3-23"
+      ],
+      "declarations": [
+        "occurrenceRecordFromSuppliedA1A2",
+        "occurrenceRequiresA1A2Witnesses",
+        "a15RequiredSeparatelyForScopedClosure",
+        "a0OnlyCountermodel",
+        "occurrenceHistoryMonotone",
+        "historyOutlastsActivityCountermodel"
+      ]
+    },
+    {
+      "decision": "D19",
+      "source_routes": [
+        "D19",
+        "SC-19.4",
+        "M-A0-SCOPED-FIRST",
+        "T36"
+      ],
+      "result_ids": [
+        "AR3-03"
+      ],
+      "declarations": [
+        "strongerPrimacyAssumptionBound"
+      ]
+    },
+    {
+      "decision": "D20",
+      "source_routes": [
+        "D20",
+        "SC-19.5",
+        "M-INQUIRY-APPEND",
+        "T37"
+      ],
+      "result_ids": [
+        "AR3-12",
+        "AR3-13",
+        "AR3-14"
+      ],
+      "declarations": [
+        "inquiryReceiptFromSuppliedWitness",
+        "questionDoesNotSelfCertify",
+        "questionCannotSupplyInquirerClaims"
+      ]
+    },
+    {
+      "decision": "D21",
+      "source_routes": [
+        "D21",
+        "SC-19.6",
+        "M-SOURCE-FIBER",
+        "T38"
+      ],
+      "result_ids": [
+        "AR3-15",
+        "AR3-16",
+        "AR3-17"
+      ],
+      "declarations": [
+        "cutOnlyCongruence",
+        "noninjectiveSourceFiberCountermodel",
+        "injectiveSourceIdentificationAssumptionBound"
+      ]
+    },
+    {
+      "decision": "D22",
+      "source_routes": [
+        "D22",
+        "SC-19.7",
+        "M-INQUIRY-APPEND",
+        "T39"
+      ],
+      "result_ids": [
+        "AR3-13",
+        "AR3-18",
+        "AR3-19"
+      ],
+      "declarations": [
+        "questionDoesNotSelfCertify",
+        "witnessedInquiryAppendPreservesPrefix",
+        "finiteTerminalCountermodel"
+      ]
+    },
+    {
+      "decision": "D23",
+      "source_routes": [
+        "D23",
+        "SC-19.8",
+        "M-INQUIRY-APPEND",
+        "T40"
+      ],
+      "result_ids": [
+        "AR3-20",
+        "AR3-21"
+      ],
+      "declarations": [
+        "laterEvidenceAppendPreservesPrior",
+        "overwriteIsNotAppendCountermodel"
+      ]
+    }
+  ]
+}
