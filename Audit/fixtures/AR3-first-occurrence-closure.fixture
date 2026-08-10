@@ -1,0 +1,2 @@
+theorem closeFirstOccurrenceDebt : True := by
+  trivial

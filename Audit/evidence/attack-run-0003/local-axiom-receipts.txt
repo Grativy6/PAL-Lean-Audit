@@ -1,0 +1,73 @@
+'PAL.AttackRun0003.AccountId' does not depend on any axioms
+'PAL.AttackRun0003.CutIdentity' does not depend on any axioms
+'PAL.AttackRun0003.ScopeId' does not depend on any axioms
+'PAL.AttackRun0003.BoundaryId' does not depend on any axioms
+'PAL.AttackRun0003.WitnessProvenance' does not depend on any axioms
+'PAL.AttackRun0003.CutCost' does not depend on any axioms
+'PAL.AttackRun0003.AdmissionTrace' does not depend on any axioms
+'PAL.AttackRun0003.AuthorityCeiling' does not depend on any axioms
+'PAL.AttackRun0003.ResidualRecord' does not depend on any axioms
+'PAL.AttackRun0003.ReopeningCondition' does not depend on any axioms
+'PAL.AttackRun0003.AccountCutReceipt' does not depend on any axioms
+'PAL.AttackRun0003.admitCut' does not depend on any axioms
+'PAL.AttackRun0003.baseAuthority' does not depend on any axioms
+'PAL.AttackRun0003.baseCost' does not depend on any axioms
+'PAL.AttackRun0003.baseCutReceipt' does not depend on any axioms
+'PAL.AttackRun0003.ScopedComparison' does not depend on any axioms
+'PAL.AttackRun0003.IsFirstIn' does not depend on any axioms
+'PAL.AttackRun0003.ScopedEvent' does not depend on any axioms
+'PAL.AttackRun0003.scopedPrecedes' depends on axioms: [propext]
+'PAL.AttackRun0003.accountScope' depends on axioms: [propext]
+'PAL.AttackRun0003.expandedScope' depends on axioms: [propext]
+'PAL.AttackRun0003.PrimacyReceipt' does not depend on any axioms
+'PAL.AttackRun0003.scopedAccountFirstRealization' depends on axioms: [propext, Quot.sound]
+'PAL.AttackRun0003.localFirstGlobalFirstCountermodel' depends on axioms: [propext, Quot.sound]
+'PAL.AttackRun0003.strongerPrimacyAssumptionBound' does not depend on any axioms
+'PAL.AttackRun0003.typedCostBearingAdmission' depends on axioms: [propext]
+'PAL.AttackRun0003.ClaimKind' does not depend on any axioms
+'PAL.AttackRun0003.ClaimReceipt' does not depend on any axioms
+'PAL.AttackRun0003.costCannotSupplyClaimReceipts' does not depend on any axioms
+'PAL.AttackRun0003.OccurrenceRecord' does not depend on any axioms
+'PAL.AttackRun0003.buildOccurrence' does not depend on any axioms
+'PAL.AttackRun0003.occurrenceRecordFromSuppliedA1A2' does not depend on any axioms
+'PAL.AttackRun0003.ScopedClosureReceipt' does not depend on any axioms
+'PAL.AttackRun0003.occurrenceRequiresA1A2Witnesses' does not depend on any axioms
+'PAL.AttackRun0003.a15RequiredSeparatelyForScopedClosure' does not depend on any axioms
+'PAL.AttackRun0003.a0OnlyCountermodel' does not depend on any axioms
+'PAL.AttackRun0003.Occurred' does not depend on any axioms
+'PAL.AttackRun0003.occurrenceHistoryMonotone' does not depend on any axioms
+'PAL.AttackRun0003.pulseActive' does not depend on any axioms
+'PAL.AttackRun0003.pulseRecoverable' does not depend on any axioms
+'PAL.AttackRun0003.historyOutlastsActivityCountermodel' depends on axioms: [propext]
+'PAL.AttackRun0003.Question' does not depend on any axioms
+'PAL.AttackRun0003.InquiryEventReceipt' does not depend on any axioms
+'PAL.AttackRun0003.admitInquiry' does not depend on any axioms
+'PAL.AttackRun0003.inquiryReceiptFromSuppliedWitness' does not depend on any axioms
+'PAL.AttackRun0003.questionDoesNotSelfCertify' does not depend on any axioms
+'PAL.AttackRun0003.InquirerClaimKind' does not depend on any axioms
+'PAL.AttackRun0003.InquirerClaimReceipt' does not depend on any axioms
+'PAL.AttackRun0003.questionCannotSupplyInquirerClaims' does not depend on any axioms
+'PAL.AttackRun0003.SourceIndexedCut' does not depend on any axioms
+'PAL.AttackRun0003.cutOnlyView' does not depend on any axioms
+'PAL.AttackRun0003.cutOnlyCongruence' does not depend on any axioms
+'PAL.AttackRun0003.FiberSource' does not depend on any axioms
+'PAL.AttackRun0003.FiberCut' does not depend on any axioms
+'PAL.AttackRun0003.boundedSourceMap' does not depend on any axioms
+'PAL.AttackRun0003.noninjectiveSourceFiberCountermodel' does not depend on any axioms
+'PAL.AttackRun0003.injectiveSourceIdentificationAssumptionBound' does not depend on any axioms
+'PAL.AttackRun0003.InquiryLedger' does not depend on any axioms
+'PAL.AttackRun0003.appendReceipt' does not depend on any axioms
+'PAL.AttackRun0003.witnessedInquiryAppendPreservesPrefix' depends on axioms: [propext]
+'PAL.AttackRun0003.InquiryState' does not depend on any axioms
+'PAL.AttackRun0003.terminalQuestion' does not depend on any axioms
+'PAL.AttackRun0003.terminalInquiryReceipt' does not depend on any axioms
+'PAL.AttackRun0003.terminalInquiryLedger' does not depend on any axioms
+'PAL.AttackRun0003.terminalInquiryState' depends on axioms: [propext, Quot.sound]
+'PAL.AttackRun0003.SupportsUnboundedInquiry' does not depend on any axioms
+'PAL.AttackRun0003.finiteTerminalCountermodel' depends on axioms: [propext, Quot.sound]
+'PAL.AttackRun0003.LaterEvidenceReceipt' does not depend on any axioms
+'PAL.AttackRun0003.appendLaterEvidence' does not depend on any axioms
+'PAL.AttackRun0003.laterEvidenceAppendPreservesPrior' depends on axioms: [propext]
+'PAL.AttackRun0003.mutatedBaseCutReceipt' does not depend on any axioms
+'PAL.AttackRun0003.overwriteHead' does not depend on any axioms
+'PAL.AttackRun0003.overwriteIsNotAppendCountermodel' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1120 580">
+<title id="title">Attack Run 0003 result classifications</title>
+<desc id="desc">Actual counts for 24 formal or control classifications and 1 separate manual or translation dispositions. No correctness score is calculated.</desc>
+<rect width="100%" height="100%" fill="#f7fafc"/>
+<style>.title{font:700 24px system-ui,sans-serif;fill:#1a202c}.sub{font:14px system-ui,sans-serif;fill:#4a5568}.label{font:600 13px ui-monospace,monospace;fill:#2d3748}.count{font:700 15px system-ui,sans-serif;fill:#1a202c}</style>
+<text x="28" y="36" class="title">Attack Run 0003 — classification counts</text>
+<text x="28" y="61" class="sub">Formal/control n=24 · review dispositions n=1 · zero values are displayed</text>
+<text x="339" y="115" text-anchor="end" class="label">PROVED_FROM_DECLARED_RULES</text>
+<rect x="355" y="92" width="604" height="31" rx="5" fill="#2f855a"/>
+<text x="971" y="115" class="count">8</text>
+<text x="339" y="168" text-anchor="end" class="label">CONSISTENT_REALIZATION</text>
+<rect x="355" y="145" width="151" height="31" rx="5" fill="#2b6cb0"/>
+<text x="518" y="168" class="count">2</text>
+<text x="339" y="221" text-anchor="end" class="label">ASSUMPTION_BOUND</text>
+<rect x="355" y="198" width="151" height="31" rx="5" fill="#6b46c1"/>
+<text x="518" y="221" class="count">2</text>
+<text x="339" y="274" text-anchor="end" class="label">COUNTERMODEL_TO_OVERCLAIM</text>
+<rect x="355" y="251" width="680" height="31" rx="5" fill="#c05621"/>
+<text x="1047" y="274" class="count">9</text>
+<text x="339" y="327" text-anchor="end" class="label">EXPECTED_REJECTION</text>
+<rect x="355" y="304" width="227" height="31" rx="5" fill="#805ad5"/>
+<text x="594" y="327" class="count">3</text>
+<line x1="28" y1="362" x2="1092" y2="362" stroke="#cbd5e0" stroke-width="1"/>
+<text x="28" y="390" class="sub">Manual and translation dispositions — separate population</text>
+<text x="339" y="429" text-anchor="end" class="label">OPEN_MANUAL</text>
+<rect x="355" y="406" width="76" height="31" rx="5" fill="#d69e2e"/>
+<text x="443" y="429" class="count">1</text>
+<text x="339" y="482" text-anchor="end" class="label">TRANSLATION_AMBIGUITY</text>
+<rect x="355" y="459" width="0" height="31" rx="5" fill="#718096"/>
+<text x="367" y="482" class="count">0</text>
+</svg>

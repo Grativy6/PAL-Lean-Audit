@@ -1,0 +1,748 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "attack-0003",
+  "run_title": "Attack Run 0003: PAL-led realization audit",
+  "run_status": "LOCAL_VALIDATION_PASSED_CI_PENDING",
+  "audit_direction": "PAL_AUDITS_DECLARED_LEAN_REALIZATIONS",
+  "controlling_release": "PAL v2.1",
+  "controlling_doi": "10.5281/zenodo.21864767",
+  "source_manifest": "Audit/releases/pal-v2.1-source-manifest.json",
+  "source_manifest_canonical_lf_sha256": "0dbcd31460ff66ecb75612a37a2282974f7e36f6d1595e01e706652bbbd0cb84",
+  "published_archive": {
+    "filename": "PAL_v2.1_Zenodo_Release.zip",
+    "byte_length": 1906990,
+    "sha256": "a860ab48a0d754e611bdcd8d79a32db3f88f8465246d234c3df28cc5ec70964c",
+    "md5": "7eed643eb48e8f5adbb8dd0d551abd83"
+  },
+  "adoption_receipt": "Audit/releases/pal-v2.1-adoption-receipt.json",
+  "migration_receipt": "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json",
+  "formal_target_source_identity": {
+    "path": "PAL/AttackRun0003.lean",
+    "canonical_lf_sha256": "0225fe8a13702e020ae368697937cfe373761888cbcdc257a19399f5a6e0c34f",
+    "claim_ids": [
+      "AR3-01",
+      "AR3-02",
+      "AR3-03",
+      "AR3-04",
+      "AR3-05",
+      "AR3-06",
+      "AR3-07",
+      "AR3-08",
+      "AR3-09",
+      "AR3-10",
+      "AR3-11",
+      "AR3-12",
+      "AR3-13",
+      "AR3-14",
+      "AR3-15",
+      "AR3-16",
+      "AR3-17",
+      "AR3-18",
+      "AR3-19",
+      "AR3-20",
+      "AR3-21"
+    ],
+    "identity_rule": "Each formal claim names its declaration inside these exact canonical-LF source bytes; changing any theorem statement, proof gate, or retained declaration text changes this hash."
+  },
+  "fixture_target_identities": [
+    {
+      "claim_id": "AR3-22",
+      "path": "Audit/fixtures/T05-ascii-omega.fixture",
+      "canonical_lf_sha256": "bda584c5ff125536c9dd771bc4b7067923598a35ef2fda674ec85d9fadcfac8a",
+      "expected_diagnostic": "literal object-language Omega identifier forbidden by T05 lexical check"
+    },
+    {
+      "claim_id": "AR3-22",
+      "path": "Audit/fixtures/T05-symbol-omega.fixture",
+      "canonical_lf_sha256": "ab0931bbfe7ed4d37024ee4c15068dd605c4490452e6a28c2d06ca3372b625ed",
+      "expected_diagnostic": "literal object-language Omega identifier forbidden by T05 lexical check"
+    },
+    {
+      "claim_id": "AR3-23",
+      "path": "Audit/fixtures/AR3-explanatory-shorthand-status.fixture",
+      "canonical_lf_sha256": "1e3d1d2680f8a920a91784543e030268f7b5eac74b625e75ae688e4bc52b56a9",
+      "expected_diagnostic": "selected declaration spelling would promote explanatory shorthand to an object-language primitive or status"
+    },
+    {
+      "claim_id": "AR3-24",
+      "path": "Audit/fixtures/AR3-first-occurrence-closure.fixture",
+      "canonical_lf_sha256": "edb1a28dd9418d76c6e9bff80d9dd5668149a90b3cba84e2b486f82fa4c3e6be",
+      "expected_diagnostic": "selected declaration spelling would purport to close an OPEN first-occurrence burden"
+    }
+  ],
+  "manual_target_identity": {
+    "claim_id": "AR3-25",
+    "status": "OPEN_MANUAL",
+    "target": "Semantic-surrogate and authority review for differently named unresolved-possibility objects, explanatory-status promotion, and formal obligation-closure claims."
+  },
+  "adoption_authority": "Christopher D. Pang",
+  "formal_evidence_is_adoption_authority": false,
+  "occurrence_closed_source_open": {
+    "phrase": "occurrence-closed, source-open",
+    "role": "EXPLANATORY_SHORTHAND",
+    "primitive": false,
+    "status": false
+  },
+  "open_burdens": [
+    {
+      "address": "D-FIRST-OCCURRENCE",
+      "status": "OPEN",
+      "interfaces": [
+        "O04",
+        "O25"
+      ],
+      "interface_states": {
+        "O04": "OPEN",
+        "O25": "OPEN"
+      },
+      "reason": "The adopted clarification preserves two interfaces to one source/first-occurrence debt; no formal result in this run closes it."
+    }
+  ],
+  "results": [
+    {
+      "id": "AR3-01",
+      "classification": "CONSISTENT_REALIZATION"
+    },
+    {
+      "id": "AR3-02",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-03",
+      "classification": "ASSUMPTION_BOUND"
+    },
+    {
+      "id": "AR3-04",
+      "classification": "CONSISTENT_REALIZATION"
+    },
+    {
+      "id": "AR3-05",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-06",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-07",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-08",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-09",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-10",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-11",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-12",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-13",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-14",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-15",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-16",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-17",
+      "classification": "ASSUMPTION_BOUND"
+    },
+    {
+      "id": "AR3-18",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-19",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-20",
+      "classification": "PROVED_FROM_DECLARED_RULES"
+    },
+    {
+      "id": "AR3-21",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM"
+    },
+    {
+      "id": "AR3-22",
+      "classification": "EXPECTED_REJECTION"
+    },
+    {
+      "id": "AR3-23",
+      "classification": "EXPECTED_REJECTION"
+    },
+    {
+      "id": "AR3-24",
+      "classification": "EXPECTED_REJECTION"
+    },
+    {
+      "id": "AR3-25",
+      "classification": "OPEN_MANUAL"
+    }
+  ],
+  "dependency_receipts": [
+    {
+      "declaration": "PAL.AttackRun0003.AccountId",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.CutIdentity",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ScopeId",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.BoundaryId",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.WitnessProvenance",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.CutCost",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.AdmissionTrace",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.AuthorityCeiling",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ResidualRecord",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ReopeningCondition",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.AccountCutReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.admitCut",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.baseAuthority",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.baseCost",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.baseCutReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ScopedComparison",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.IsFirstIn",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ScopedEvent",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.scopedPrecedes",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.accountScope",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.expandedScope",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.PrimacyReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.scopedAccountFirstRealization",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.localFirstGlobalFirstCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.strongerPrimacyAssumptionBound",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.typedCostBearingAdmission",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ClaimKind",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ClaimReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.costCannotSupplyClaimReceipts",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.OccurrenceRecord",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.buildOccurrence",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.occurrenceRecordFromSuppliedA1A2",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.ScopedClosureReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.occurrenceRequiresA1A2Witnesses",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.a15RequiredSeparatelyForScopedClosure",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.a0OnlyCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.Occurred",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.occurrenceHistoryMonotone",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.pulseActive",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.pulseRecoverable",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.historyOutlastsActivityCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.Question",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.InquiryEventReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.admitInquiry",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.inquiryReceiptFromSuppliedWitness",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.questionDoesNotSelfCertify",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.InquirerClaimKind",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.InquirerClaimReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.questionCannotSupplyInquirerClaims",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.SourceIndexedCut",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.cutOnlyView",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.cutOnlyCongruence",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.FiberSource",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.FiberCut",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.boundedSourceMap",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.noninjectiveSourceFiberCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.injectiveSourceIdentificationAssumptionBound",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.InquiryLedger",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.appendReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.witnessedInquiryAppendPreservesPrefix",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.InquiryState",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.terminalQuestion",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.terminalInquiryReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.terminalInquiryLedger",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.terminalInquiryState",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.SupportsUnboundedInquiry",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.finiteTerminalCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.LaterEvidenceReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.appendLaterEvidence",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.laterEvidenceAppendPreservesPrior",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "PAL.AttackRun0003.mutatedBaseCutReceipt",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.overwriteHead",
+      "role": "SUPPORT_DECLARATION",
+      "axioms": []
+    },
+    {
+      "declaration": "PAL.AttackRun0003.overwriteIsNotAppendCountermodel",
+      "role": "CLASSIFIED_RESULT",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "negative_controls": [
+    {
+      "id": "AR3-N01",
+      "attempted_overclaim": "A0 is globally or causally first.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-02"
+      ]
+    },
+    {
+      "id": "AR3-N02",
+      "attempted_overclaim": "A recorded cost proves source, truth, energy, permission, consent, standing, or authority.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-05"
+      ]
+    },
+    {
+      "id": "AR3-N03",
+      "attempted_overclaim": "An A0 receipt alone proves occurrence closure.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-09"
+      ]
+    },
+    {
+      "id": "AR3-N04",
+      "attempted_overclaim": "A later witness retroactively creates an earlier witness or payment.",
+      "disposition": "PROVED_FROM_DECLARED_RULES",
+      "evidence": [
+        "AR3-20"
+      ]
+    },
+    {
+      "id": "AR3-N05",
+      "attempted_overclaim": "A cut-only interface uniquely identifies its source without injectivity or discriminating evidence.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-16",
+        "AR3-17"
+      ]
+    },
+    {
+      "id": "AR3-N06",
+      "attempted_overclaim": "Asking or producing its receipt proves the inquirer’s ontology, consciousness, standing, ultimate source, or global priority, or witnesses the original cut’s causal source.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-13",
+        "AR3-14"
+      ]
+    },
+    {
+      "id": "AR3-N07",
+      "attempted_overclaim": "Reopenable inquiry proves an actually infinite causal ontology.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-19"
+      ]
+    },
+    {
+      "id": "AR3-N08",
+      "attempted_overclaim": "Appending evidence permits alteration of the earlier receipt or authority snapshot.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": [
+        "AR3-20",
+        "AR3-21"
+      ]
+    },
+    {
+      "id": "AR3-N09",
+      "attempted_overclaim": "Occurrence-closed, source-open functions as a primitive PAL status.",
+      "disposition": "EXPECTED_REJECTION",
+      "evidence": [
+        "AR3-23",
+        "AR3-25"
+      ]
+    },
+    {
+      "id": "AR3-N10",
+      "attempted_overclaim": "A formal proof closes O04, O25, or D-FIRST-OCCURRENCE.",
+      "disposition": "EXPECTED_REJECTION",
+      "evidence": [
+        "AR3-24"
+      ]
+    }
+  ],
+  "additional_conformance_controls": [
+    {
+      "id": "AR3-T39-MISSING-WITNESS",
+      "pal_route": ["D22", "SC-19.7", "M-INQUIRY-APPEND", "T39"],
+      "attempted_nonconformance": "A further inquiry receipt is admitted without its own independent event witness.",
+      "disposition": "COUNTERMODEL_TO_OVERCLAIM",
+      "evidence": ["AR3-13"]
+    },
+    {
+      "id": "AR3-T39-MISSING-COST",
+      "pal_route": ["D22", "SC-19.7", "M-INQUIRY-APPEND", "T39"],
+      "attempted_nonconformance": "A further inquiry receipt is admitted without its own independent cost witness.",
+      "disposition": "PROVED_FROM_DECLARED_RULES",
+      "evidence": ["AR3-18"]
+    }
+  ],
+  "object_language_firewall": {
+    "status": "PASS_WITH_OPEN_MANUAL_SEMANTIC_REVIEW",
+    "literal_identifier_check": "The unchanged ASCII and symbol fixtures receive expected rejection; no scanned Lean source contains a literal standalone identifier.",
+    "semantic_surrogate_review": "OPEN_MANUAL",
+    "metalinguistic_rule": "No Lean object purports to consume, enumerate, derive from, or exhaust unresolved possibility."
+  },
+  "prior_run_integrity": {
+    "baseline_commit": "144b08973fde16ebeabefc78166691afc861abec",
+    "historical_lock": "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json",
+    "attack_0001": "PAL v2.0 identity and protected blobs unchanged",
+    "attack_0002": "PAL v2.0 candidate identity and protected blobs unchanged"
+  },
+  "toolchain": {
+    "lean": "4.32.1",
+    "mathlib_tag": "v4.32.1",
+    "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "leanchecker": "REQUIRED_BLOCKING",
+    "nanoda": "EXPERIMENTAL_NONBLOCKING"
+  },
+  "local_validation": {
+    "status": "PASS",
+    "lake_build": "PASS",
+    "leanchecker": "PASS",
+    "source_hash_verification": "PASS",
+    "repository_policy_checks": "PASS",
+    "negative_controls": "PASS",
+    "historical_integrity": "PASS",
+    "dependency_receipts": {
+      "checked_declarations": 73,
+      "empty": 61,
+      "propext": 7,
+      "propext_and_Quot_sound": 5,
+      "custom_axioms": 0
+    },
+    "benchmark_receipt": "Audit/attack-run-0003-benchmarks.json",
+    "evidence_directory": "Audit/evidence/attack-run-0003"
+  },
+  "version_control_identity": {
+    "branch": "agent/attack-run-0003-pal-led",
+    "base_sha": "144b08973fde16ebeabefc78166691afc861abec",
+    "pr_number": null,
+    "pr_head_sha": null,
+    "tested_merge_sha": null,
+    "final_merge_sha": null,
+    "identity_route": "Exact PR head and synthetic merge identities are captured by GitHub Actions environment artifacts; no future SHA is guessed in this receipt."
+  },
+  "authority_ceiling": "PAL v2.1 controls the distinctions, invariants, and conformance conditions. Lean checks only the declared objects and dependencies; it does not redefine, adopt, uniquely validate, or prove PAL and cannot close a PAL obligation."
+}

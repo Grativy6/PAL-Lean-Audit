@@ -1,0 +1,75 @@
+measured_at_utc=2026-08-10T02:29:31+00:00
+published_zip=PAL_v2.1_Zenodo_Release.zip
+
+## historical_policy
+command=python scripts/check_policy.py
+exit_code=0
+wall_seconds=0.122908
+Policy check passed for 11 Lean files.
+Expected T05 lexical rejections:
+Audit\fixtures\T05-ascii-omega.fixture:2: literal object-language Omega identifier forbidden by T05 lexical check
+Audit\fixtures\T05-symbol-omega.fixture:2: literal object-language Omega identifier forbidden by T05 lexical check
+
+## gate5_policy
+command=python scripts/check_attack_run_0003_policy.py
+exit_code=0
+wall_seconds=0.152138
+Attack Run 0003 policy passed for 11 Lean files.
+Expected Gate 5 rejections:
+Audit\fixtures\AR3-explanatory-shorthand-status.fixture:1: selected declaration spelling would promote explanatory shorthand to an object-language primitive or status
+Audit\fixtures\AR3-first-occurrence-closure.fixture:1: selected declaration spelling would purport to close an OPEN first-occurrence burden
+These are bounded naming guards, not semantic completeness checks; differently named surrogates remain OPEN_MANUAL source review.
+
+## candidate_input_regression
+command=python scripts/check_candidate_inputs.py
+exit_code=0
+wall_seconds=0.087349
+Candidate input check passed: strict JSON-compatible YAML, five source locks, eight CANDIDATE statements, and OPEN O04/O25.
+Repository impact canonical-LF SHA-256: 42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe
+
+## published_source_and_migration
+command=python scripts/check_release_migration.py --published-zip <published-zip>
+exit_code=0
+wall_seconds=5.729328
+Candidate input check passed: strict JSON-compatible YAML, five source locks, eight CANDIDATE statements, and OPEN O04/O25.
+Repository impact canonical-LF SHA-256: 42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe
+Verified docs\generated\summary.md and docs\generated\outcomes.svg
+Verified docs\generated\attack-run-0002-summary.md and docs\generated\attack-run-0002-outcomes.svg
+Verified 12 published PAL v2.1 ZIP members: <published-zip>
+Release migration check passed: PAL v2.1 published identities and D16-D23 adoption verified; 17 historical AR1/AR2 Git blobs preserved; D-FIRST-OCCURRENCE, O04, and O25 remain OPEN.
+
+## attack_run_0001_report
+command=python scripts/render_report.py --check
+exit_code=0
+wall_seconds=0.164723
+Verified docs\generated\summary.md and docs\generated\outcomes.svg
+
+## attack_run_0002_report
+command=python scripts/render_report.py --ledger Audit/attack-run-0002-claim-ledger.json --summary docs/generated/attack-run-0002-summary.md --chart docs/generated/attack-run-0002-outcomes.svg --check
+exit_code=0
+wall_seconds=0.162285
+Verified docs\generated\attack-run-0002-summary.md and docs\generated\attack-run-0002-outcomes.svg
+
+## migration_report
+command=python scripts/render_migration_report.py --check
+exit_code=0
+wall_seconds=0.085587
+Verified docs\generated\pal-v2.0-to-v2.1-migration-summary.md
+
+## attack_run_0003_structure
+command=python scripts/check_attack_run_0003.py
+exit_code=0
+wall_seconds=0.142919
+Attack Run 0003 check passed: 21 classified theorems, 73 dependency receipts, 10 required overclaim controls, two additional T39 controls, eight D16-D23 routes, one OPEN debt, and no literal object-language unresolved-possibility identifier.
+
+## attack_run_0003_dependencies
+command=python scripts/check_attack_run_0003_axioms.py --artifact <repository>\Audit\evidence\attack-run-0003\local-axiom-receipts.txt
+exit_code=0
+wall_seconds=0.094197
+Verified 73 Attack Run 0003 dependency receipts: empty=61, nonempty=12.
+This empty/nonempty population describes this declared realization only; it is not a universal PAL-conformance rule.
+
+## leanchecker
+command=lake env leanchecker PALLeanAudit
+exit_code=0
+wall_seconds=35.425378

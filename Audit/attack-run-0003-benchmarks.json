@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "attack-0003",
+  "measured": true,
+  "measured_at_utc": "2026-08-10T02:29:31+00:00",
+  "environment": "Lean (version 4.32.1, x86_64-w64-windows-gnu, commit f054605aea4b840552cca2e725580bffd1e1b704, Release); Mathlib revision 520045ab14e26149ee970e2e617ca04b09bde5d6; Windows-10-10.0.19045-SP0",
+  "baseline_commit": "144b08973fde16ebeabefc78166691afc861abec",
+  "commit_under_test": null,
+  "worktree_state": "UNCOMMITTED_GATE5_WORKTREE; exact PR head and synthetic merge commits are captured separately by CI because a tracked receipt cannot self-identify its own future commit.",
+  "measurement_method": "One wall-clock observation using Python perf_counter after an earlier successful build; local Lake and Mathlib caches were warm.",
+  "repetitions": 1,
+  "cache_state": "WARM_LOCAL_CACHE",
+  "missing_data": [
+    "Peak memory was not collected locally; CI retains its own runner evidence separately."
+  ],
+  "privacy_redactions": [
+    "Machine-local repository and published-ZIP paths are replaced by role labels in the committed validation log."
+  ],
+  "build_measurement": {
+    "command": "lake build",
+    "exit_code": 0,
+    "wall_seconds": 3.060529,
+    "output_log": "Audit/evidence/attack-run-0003/local-lake-build.txt",
+    "output_canonical_lf_sha256": "e6fd3e4c4e91d0c9fb9816799fd95405c5e10494064cef69d261cc2f939880d4"
+  },
+  "axiom_evidence": {
+    "command": "lake env lean Audit/AttackRun0003.lean",
+    "exit_code": 0,
+    "output_log": "Audit/evidence/attack-run-0003/local-axiom-receipts.txt",
+    "output_canonical_lf_sha256": "8c389877e7dc1dece542c2cd2cd6d0110f485b872d4e04a391e7f488586926af"
+  },
+  "repository_checks": [
+    {
+      "name": "historical_policy",
+      "command": "python scripts/check_policy.py",
+      "exit_code": 0,
+      "wall_seconds": 0.122908
+    },
+    {
+      "name": "gate5_policy",
+      "command": "python scripts/check_attack_run_0003_policy.py",
+      "exit_code": 0,
+      "wall_seconds": 0.152138
+    },
+    {
+      "name": "candidate_input_regression",
+      "command": "python scripts/check_candidate_inputs.py",
+      "exit_code": 0,
+      "wall_seconds": 0.087349
+    },
+    {
+      "name": "published_source_and_migration",
+      "command": "python scripts/check_release_migration.py --published-zip <published-zip>",
+      "exit_code": 0,
+      "wall_seconds": 5.729328
+    },
+    {
+      "name": "attack_run_0001_report",
+      "command": "python scripts/render_report.py --check",
+      "exit_code": 0,
+      "wall_seconds": 0.164723
+    },
+    {
+      "name": "attack_run_0002_report",
+      "command": "python scripts/render_report.py --ledger Audit/attack-run-0002-claim-ledger.json --summary docs/generated/attack-run-0002-summary.md --chart docs/generated/attack-run-0002-outcomes.svg --check",
+      "exit_code": 0,
+      "wall_seconds": 0.162285
+    },
+    {
+      "name": "migration_report",
+      "command": "python scripts/render_migration_report.py --check",
+      "exit_code": 0,
+      "wall_seconds": 0.085587
+    },
+    {
+      "name": "attack_run_0003_structure",
+      "command": "python scripts/check_attack_run_0003.py",
+      "exit_code": 0,
+      "wall_seconds": 0.142919
+    },
+    {
+      "name": "attack_run_0003_dependencies",
+      "command": "python scripts/check_attack_run_0003_axioms.py --artifact <repository>\\Audit\\evidence\\attack-run-0003\\local-axiom-receipts.txt",
+      "exit_code": 0,
+      "wall_seconds": 0.094197
+    },
+    {
+      "name": "leanchecker",
+      "command": "lake env leanchecker PALLeanAudit",
+      "exit_code": 0,
+      "wall_seconds": 35.425378
+    }
+  ],
+  "validation_log": {
+    "path": "Audit/evidence/attack-run-0003/local-validation.txt",
+    "canonical_lf_sha256": "7f08c2efd407c7255db17a8a236e43313e1a6970c98e1ad3a0c4d1bbe1eac10c"
+  },
+  "measurements": {
+    "build_wall_seconds": 3.060529,
+    "checked_declarations": 73,
+    "empty_axiom_receipts": 61,
+    "nonempty_axiom_receipts": 12,
+    "propext_only_receipts": 7,
+    "propext_and_quot_sound_receipts": 5,
+    "formal_result_count": 21,
+    "negative_control_count": 10,
+    "policy_fixture_count": 4,
+    "repository_check_count": 10
+  },
+  "authority_ceiling": "Timing and population counts describe this measured run only. They are not theorem strength, adoption authority, or a PAL correctness score."
+}

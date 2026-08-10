@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "PAL-v2.1-ADOPTION-2026-08-09",
+  "receipt_status": "ADOPTED",
+  "adopted_release": {
+    "name": "PAL v2.1",
+    "doi": "10.5281/zenodo.21864767",
+    "publication_date": "2026-08-09",
+    "source_manifest_path": "Audit/releases/pal-v2.1-source-manifest.json",
+    "source_manifest_canonical_lf_sha256": "0dbcd31460ff66ecb75612a37a2282974f7e36f6d1595e01e706652bbbd0cb84"
+  },
+  "immediate_prior_release": {
+    "name": "PAL v2.0",
+    "doi": "10.5281/zenodo.21754097"
+  },
+  "adoption_authority": {
+    "name": "Christopher D. Pang",
+    "role": "Author and steward of PAL; sole final adoption authority",
+    "decision_status": "ADOPTED",
+    "decision_date": "2026-08-09",
+    "decision_bases": [
+      {
+        "kind": "EXPLICIT_INTERACTIVE_STEWARD_DECISION",
+        "locator": "Gate 5 instruction in the PAL v2.1 repository-migration task",
+        "effect": "Treat the explicit Gate 5 decision and the published D16-D23 decision layer as controlling; adoption is not pending."
+      },
+      {
+        "kind": "PUBLISHED_CANONICAL_LEDGER",
+        "source_id": "PAL-v2.1-L",
+        "filename": "PAL_v2.1-L_Obligation_and_Decision_Ledger.docx",
+        "sha256": "80a0069aac0d3059c973fc92cabec8c47129c95cef7a0db716fa663a073b486f",
+        "source_route": "PAL v2.1-L, decision layer D16-D23 and Gate 4 adoption account",
+        "effect": "The exact revised C21-01 through C21-08 wordings are adopted as D16 through D23."
+      }
+    ]
+  },
+  "adopted_decisions": [
+    {
+      "decision_id": "D16",
+      "title": "Account-relative primacy",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-01",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "Within a declared PAL account, A0 is the first admitted supplied cut. This account order does not establish temporal, ontic, causal, or global primacy.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.1",
+        "PAL-v2.1-M M-A0-SCOPED-FIRST",
+        "PAL-v2.1-L D16",
+        "PAL-v2.1-T T33",
+        "PAL-v2.1-C Table 028 A0"
+      ]
+    },
+    {
+      "decision_id": "D17",
+      "title": "Typed cost-bearing admission",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-02",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "Every cut admitted into a PAL account records a cut-indexed cost or obligation alongside distinct fields for scope, witness, boundary, carried trace, authority ceiling, residual, and reopening. Cost warrants ledger admission; it is not thereby causal source, truth, physical energy, permission, consent, standing, or authority.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.2",
+        "PAL-v2.1-M M-A0-CUT",
+        "PAL-v2.1-L D17",
+        "PAL-v2.1-T T34",
+        "PAL-v2.1-C Table 028 Cost"
+      ]
+    },
+    {
+      "decision_id": "D18",
+      "title": "Occurrence evidence and source ceiling",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-03",
+      "candidate_disposition": "REVISED_AND_ADOPTED_EXPLANATORY_LABEL_NOT_ADOPTED_AS_STATUS",
+      "statement": "After the distinct A1/A2 witness-and-trace route has been earned, a later account may establish that the cut occurred and preserve its recoverable occurrence trace within a declared scope. Any CLOSED_IN_SCOPE claim additionally requires an A15 receipt. Ultimate causal source and global primacy remain OPEN. An A0 cut receipt alone is not an occurrence receipt.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.3",
+        "PAL-v2.1-M M-SOURCE-FIBER and M-A2-HISTORY",
+        "PAL-v2.1-L D18",
+        "PAL-v2.1-T T35",
+        "PAL-v2.1-C Table 028 A1/A2/A15 and D-FIRST-OCCURRENCE"
+      ]
+    },
+    {
+      "decision_id": "D19",
+      "title": "Account order versus primacy evidence",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-04",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "Account order and temporal, ontic, causal, or global primacy are distinct. A0 may be called first in its declared PAL account at admission. A stronger primacy claim requires later supplied evidence and a declared comparison scope; the cut or trace alone cannot establish that claim.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.4",
+        "PAL-v2.1-M M-A0-SCOPED-FIRST",
+        "PAL-v2.1-L D19",
+        "PAL-v2.1-T T36",
+        "PAL-v2.1-C Table 028 A0"
+      ]
+    },
+    {
+      "decision_id": "D20",
+      "title": "Supplied inquiry-event witness",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-05",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "When an inquiry event is admitted under a supplied inquiry-event witness, PAL may record a new present inquiry receipt. That receipt does not establish the inquirer’s ontology, consciousness, standing, ultimate source, or global priority, and it does not witness the original cut’s causal source.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.5",
+        "PAL-v2.1-M M-INQUIRY-APPEND",
+        "PAL-v2.1-L D20",
+        "PAL-v2.1-T T37",
+        "PAL-v2.1-C Table 028 Inquiry"
+      ]
+    },
+    {
+      "decision_id": "D21",
+      "title": "Cut-only source underdetermination",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-06",
+      "candidate_disposition": "TIGHTENED_AND_ADOPTED",
+      "statement": "At an interface whose accessible input is only the cut, equal cut values do not warrant identification of their upstream sources. A unique-source claim requires an explicit injectivity assumption or a supplied discriminating witness.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.6",
+        "PAL-v2.1-M M-SOURCE-FIBER",
+        "PAL-v2.1-L D21",
+        "PAL-v2.1-T T38",
+        "PAL-v2.1-C Table 028 Source inference"
+      ]
+    },
+    {
+      "decision_id": "D22",
+      "title": "Witnessed further inquiry",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-07",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "When a source inquiry is admitted as a further cut, it requires its own supplied witness, cost, and receipt and preserves the prior receipt. Repeated or reopenable inquiry does not by itself prove an infinite causal ontology.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.7",
+        "PAL-v2.1-M M-INQUIRY-APPEND",
+        "PAL-v2.1-L D22",
+        "PAL-v2.1-T T39",
+        "PAL-v2.1-C Table 028 Inquiry"
+      ]
+    },
+    {
+      "decision_id": "D23",
+      "title": "Append without backflow",
+      "state": "LOCKED",
+      "historical_candidate_id": "C21-08",
+      "candidate_disposition": "REVISED_AND_ADOPTED",
+      "statement": "A later witness may append recovery evidence to an earlier receipt. Within PAL’s account it must not alter the earlier receipt, cost, witness basis, or authority snapshot, and it cannot retroactively supply warrant, consent, standing, or authority that was absent.",
+      "source_routes": [
+        "PAL-v2.1-Spine SC-19.8",
+        "PAL-v2.1-M M-INQUIRY-APPEND",
+        "PAL-v2.1-L D23",
+        "PAL-v2.1-T T40",
+        "PAL-v2.1-C Table 028 Recovery/reopening"
+      ]
+    }
+  ],
+  "open_burden_dispositions": [
+    {
+      "address": "D-FIRST-OCCURRENCE",
+      "state": "OPEN",
+      "disposition": "OPEN_CLARIFIED",
+      "interfaces": ["O04", "O25"],
+      "source_route": "PAL-v2.1-L D-FIRST-OCCURRENCE delta; PAL-v2.1-C Table 028"
+    },
+    {
+      "address": "O04",
+      "state": "OPEN",
+      "interface_role": "Ontic inhabitance/source interface",
+      "relation": "Separate historical row and one interface to D-FIRST-OCCURRENCE; neither merged, split, nor closed."
+    },
+    {
+      "address": "O25",
+      "state": "OPEN",
+      "interface_role": "Certificate/revocation and witness-nonmanufacture interface",
+      "relation": "Separate historical row and one interface to D-FIRST-OCCURRENCE; neither merged, split, nor closed."
+    }
+  ],
+  "explanatory_language": {
+    "phrase": "occurrence-closed, source-open",
+    "status": "EXPLANATORY_ONLY",
+    "nonclaim": "The phrase is not a primitive, layer, claim-status value, or substitute for separate scoped receipts."
+  },
+  "historical_noncanonical_provenance": [
+    {
+      "id": "github-issue-4",
+      "kind": "planning_issue",
+      "locator": "https://github.com/Grativy6/PAL-Lean-Audit/issues/4",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "github-pr-5",
+      "kind": "merged_candidate_audit_pull_request",
+      "locator": "https://github.com/Grativy6/PAL-Lean-Audit/pull/5",
+      "head_sha": "5a9afad9243905b88444138486154f534e45ebcc",
+      "merge_sha": "144b08973fde16ebeabefc78166691afc861abec",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY",
+      "merge_effect": "Repository inclusion and audit provenance only; not PAL adoption authority."
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Workflow",
+      "kind": "candidate_workflow",
+      "sha256": "d952ea510fb82a5ac5f30297c5b82cc6fc120bef87dd7db4fab912ce44ff752c",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Impact-Map",
+      "kind": "candidate_dependency_map",
+      "path": "Audit/pal-2.1-impact.yaml",
+      "baseline_git_blob_oid": "2fbad3caeb5e368efea4ed5daf3967ba33238be9",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    },
+    {
+      "id": "PAL-v2.1-Candidate-Proposal",
+      "kind": "candidate_proposal",
+      "path": "docs/proposals/PAL-v2.1-first-cut-receipt.md",
+      "baseline_git_blob_oid": "36d68801bb3da59fccacc400f009379fb69f0355",
+      "authority_role": "HISTORICAL_NONCANONICAL_ONLY"
+    }
+  ],
+  "formal_audit_evidence": {
+    "attack_run": "attack-0002",
+    "receipt": "Audit/attack-run-0002-receipt.json",
+    "claim_ledger": "Audit/attack-run-0002-claim-ledger.json",
+    "evidence_role": "NONAUTHORITATIVE_BOUNDED_FORMAL_AUDIT_EVIDENCE",
+    "adoption_authority": false,
+    "nonclaim": "Formal success, countermodels, CI, and repository merge are evidence about exact bounded statements. They are not the authority by which D16-D23 were adopted."
+  },
+  "authority_ceiling": "This receipt records Christopher D. Pang's adoption of the exact published D16-D23 decision layer. It does not give candidate files, formal audit results, AI systems, Lean, Git, CI, or repository merge events adoption authority."
+}

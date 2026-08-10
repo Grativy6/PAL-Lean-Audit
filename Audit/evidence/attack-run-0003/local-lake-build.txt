@@ -1,0 +1,114 @@
+measured_at_utc=2026-08-10T02:29:31+00:00
+command=lake build
+exit_code=0
+wall_seconds=3.060529
+
+ℹ [480/486] Replayed Audit.Bootstrap
+info: Audit/Bootstrap.lean:8:0: 'PAL.bootstrapCompiles' does not depend on any axioms
+ℹ [481/486] Replayed Audit.AttackRun0001
+info: Audit/AttackRun0001.lean:13:0: 'PAL.AttackRun0001.noCutWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:14:0: 'PAL.AttackRun0001.noReflectionWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:15:0: 'PAL.AttackRun0001.noTurnWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:16:0: 'PAL.AttackRun0001.noReadableWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:17:0: 'PAL.AttackRun0001.noTraceWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:18:0: 'PAL.AttackRun0001.reflectionForgetsToIndexedCut' does not depend on any axioms
+info: Audit/AttackRun0001.lean:19:0: 'PAL.AttackRun0001.cutAddressNeReflectionAddress' does not depend on any axioms
+info: Audit/AttackRun0001.lean:20:0: 'PAL.AttackRun0001.turnForgetsToIndexedReflection' does not depend on any axioms
+info: Audit/AttackRun0001.lean:21:0: 'PAL.AttackRun0001.turnCountermodelIsInhabited' does not depend on any axioms
+info: Audit/AttackRun0001.lean:22:0: 'PAL.AttackRun0001.thetaDoesNotProvideReadable' does not depend on any axioms
+info: Audit/AttackRun0001.lean:23:0: 'PAL.AttackRun0001.primitivePlacement' does not depend on any axioms
+info: Audit/AttackRun0001.lean:24:0: 'PAL.AttackRun0001.floorChainReturnsCut' does not depend on any axioms
+info: Audit/AttackRun0001.lean:25:0: 'PAL.AttackRun0001.readableForgetsToIndexedTurn' does not depend on any axioms
+info: Audit/AttackRun0001.lean:26:0: 'PAL.AttackRun0001.traceForgetsToIndexedReadable' does not depend on any axioms
+info: Audit/AttackRun0001.lean:27:0: 'PAL.AttackRun0001.readableDoesNotProvideTrace' does not depend on any axioms
+info: Audit/AttackRun0001.lean:28:0: 'PAL.AttackRun0001.allLayersHaveStrictPredecessor' does not depend on any axioms
+info: Audit/AttackRun0001.lean:29:0: 'PAL.AttackRun0001.noLayerExtensionWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:30:0: 'PAL.AttackRun0001.missingWitnessYieldsNoOutput' does not depend on any axioms
+info: Audit/AttackRun0001.lean:31:0: 'PAL.AttackRun0001.noRelationStageWithoutWitness' does not depend on any axioms
+info: Audit/AttackRun0001.lean:32:0: 'PAL.AttackRun0001.routePreservesProtectedTrace' does not depend on any axioms
+info: Audit/AttackRun0001.lean:33:0: 'PAL.AttackRun0001.authorizedCompressionRestores' does not depend on any axioms
+info: Audit/AttackRun0001.lean:34:0: 'PAL.AttackRun0001.noAuthorityBackflow' does not depend on any axioms
+ℹ [482/486] Replayed Audit.AttackRun0002
+info: Audit/AttackRun0002.lean:12:0: 'PAL.AttackRun0002.sourceFiberCountermodel' does not depend on any axioms
+info: Audit/AttackRun0002.lean:13:0: 'PAL.AttackRun0002.downstreamCannotDistinguishSameCut' does not depend on any axioms
+info: Audit/AttackRun0002.lean:14:0: 'PAL.AttackRun0002.occurrenceDoesNotIdentifySource' does not depend on any axioms
+info: Audit/AttackRun0002.lean:15:0: 'PAL.AttackRun0002.costDoesNotImplyCause' does not depend on any axioms
+info: Audit/AttackRun0002.lean:16:0: 'PAL.AttackRun0002.historicalPersistence' does not depend on any axioms
+info: Audit/AttackRun0002.lean:17:0: 'PAL.AttackRun0002.noGlobalFirstFromLocalFirst' does not depend on any axioms
+info: Audit/AttackRun0002.lean:18:0: 'PAL.AttackRun0002.inquiryCreatesNewReceipt' does not depend on any axioms
+info: Audit/AttackRun0002.lean:19:0: 'PAL.AttackRun0002.noRetroactivePayment' does not depend on any axioms
+ℹ [483/486] Replayed Audit.AttackRun0003
+info: Audit/AttackRun0003.lean:12:0: 'PAL.AttackRun0003.AccountId' does not depend on any axioms
+info: Audit/AttackRun0003.lean:13:0: 'PAL.AttackRun0003.CutIdentity' does not depend on any axioms
+info: Audit/AttackRun0003.lean:14:0: 'PAL.AttackRun0003.ScopeId' does not depend on any axioms
+info: Audit/AttackRun0003.lean:15:0: 'PAL.AttackRun0003.BoundaryId' does not depend on any axioms
+info: Audit/AttackRun0003.lean:16:0: 'PAL.AttackRun0003.WitnessProvenance' does not depend on any axioms
+info: Audit/AttackRun0003.lean:17:0: 'PAL.AttackRun0003.CutCost' does not depend on any axioms
+info: Audit/AttackRun0003.lean:18:0: 'PAL.AttackRun0003.AdmissionTrace' does not depend on any axioms
+info: Audit/AttackRun0003.lean:19:0: 'PAL.AttackRun0003.AuthorityCeiling' does not depend on any axioms
+info: Audit/AttackRun0003.lean:20:0: 'PAL.AttackRun0003.ResidualRecord' does not depend on any axioms
+info: Audit/AttackRun0003.lean:21:0: 'PAL.AttackRun0003.ReopeningCondition' does not depend on any axioms
+info: Audit/AttackRun0003.lean:22:0: 'PAL.AttackRun0003.AccountCutReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:23:0: 'PAL.AttackRun0003.admitCut' does not depend on any axioms
+info: Audit/AttackRun0003.lean:24:0: 'PAL.AttackRun0003.baseAuthority' does not depend on any axioms
+info: Audit/AttackRun0003.lean:25:0: 'PAL.AttackRun0003.baseCost' does not depend on any axioms
+info: Audit/AttackRun0003.lean:26:0: 'PAL.AttackRun0003.baseCutReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:27:0: 'PAL.AttackRun0003.ScopedComparison' does not depend on any axioms
+info: Audit/AttackRun0003.lean:28:0: 'PAL.AttackRun0003.IsFirstIn' does not depend on any axioms
+info: Audit/AttackRun0003.lean:29:0: 'PAL.AttackRun0003.ScopedEvent' does not depend on any axioms
+info: Audit/AttackRun0003.lean:30:0: 'PAL.AttackRun0003.scopedPrecedes' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:31:0: 'PAL.AttackRun0003.accountScope' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:32:0: 'PAL.AttackRun0003.expandedScope' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:33:0: 'PAL.AttackRun0003.PrimacyReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:34:0: 'PAL.AttackRun0003.scopedAccountFirstRealization' depends on axioms: [propext, Quot.sound]
+info: Audit/AttackRun0003.lean:35:0: 'PAL.AttackRun0003.localFirstGlobalFirstCountermodel' depends on axioms: [propext, Quot.sound]
+info: Audit/AttackRun0003.lean:36:0: 'PAL.AttackRun0003.strongerPrimacyAssumptionBound' does not depend on any axioms
+info: Audit/AttackRun0003.lean:37:0: 'PAL.AttackRun0003.typedCostBearingAdmission' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:38:0: 'PAL.AttackRun0003.ClaimKind' does not depend on any axioms
+info: Audit/AttackRun0003.lean:39:0: 'PAL.AttackRun0003.ClaimReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:40:0: 'PAL.AttackRun0003.costCannotSupplyClaimReceipts' does not depend on any axioms
+info: Audit/AttackRun0003.lean:41:0: 'PAL.AttackRun0003.OccurrenceRecord' does not depend on any axioms
+info: Audit/AttackRun0003.lean:42:0: 'PAL.AttackRun0003.buildOccurrence' does not depend on any axioms
+info: Audit/AttackRun0003.lean:43:0: 'PAL.AttackRun0003.occurrenceRecordFromSuppliedA1A2' does not depend on any axioms
+info: Audit/AttackRun0003.lean:44:0: 'PAL.AttackRun0003.ScopedClosureReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:45:0: 'PAL.AttackRun0003.occurrenceRequiresA1A2Witnesses' does not depend on any axioms
+info: Audit/AttackRun0003.lean:46:0: 'PAL.AttackRun0003.a15RequiredSeparatelyForScopedClosure' does not depend on any axioms
+info: Audit/AttackRun0003.lean:47:0: 'PAL.AttackRun0003.a0OnlyCountermodel' does not depend on any axioms
+info: Audit/AttackRun0003.lean:48:0: 'PAL.AttackRun0003.Occurred' does not depend on any axioms
+info: Audit/AttackRun0003.lean:49:0: 'PAL.AttackRun0003.occurrenceHistoryMonotone' does not depend on any axioms
+info: Audit/AttackRun0003.lean:50:0: 'PAL.AttackRun0003.pulseActive' does not depend on any axioms
+info: Audit/AttackRun0003.lean:51:0: 'PAL.AttackRun0003.pulseRecoverable' does not depend on any axioms
+info: Audit/AttackRun0003.lean:52:0: 'PAL.AttackRun0003.historyOutlastsActivityCountermodel' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:53:0: 'PAL.AttackRun0003.Question' does not depend on any axioms
+info: Audit/AttackRun0003.lean:54:0: 'PAL.AttackRun0003.InquiryEventReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:55:0: 'PAL.AttackRun0003.admitInquiry' does not depend on any axioms
+info: Audit/AttackRun0003.lean:56:0: 'PAL.AttackRun0003.inquiryReceiptFromSuppliedWitness' does not depend on any axioms
+info: Audit/AttackRun0003.lean:57:0: 'PAL.AttackRun0003.questionDoesNotSelfCertify' does not depend on any axioms
+info: Audit/AttackRun0003.lean:58:0: 'PAL.AttackRun0003.InquirerClaimKind' does not depend on any axioms
+info: Audit/AttackRun0003.lean:59:0: 'PAL.AttackRun0003.InquirerClaimReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:60:0: 'PAL.AttackRun0003.questionCannotSupplyInquirerClaims' does not depend on any axioms
+info: Audit/AttackRun0003.lean:61:0: 'PAL.AttackRun0003.SourceIndexedCut' does not depend on any axioms
+info: Audit/AttackRun0003.lean:62:0: 'PAL.AttackRun0003.cutOnlyView' does not depend on any axioms
+info: Audit/AttackRun0003.lean:63:0: 'PAL.AttackRun0003.cutOnlyCongruence' does not depend on any axioms
+info: Audit/AttackRun0003.lean:64:0: 'PAL.AttackRun0003.FiberSource' does not depend on any axioms
+info: Audit/AttackRun0003.lean:65:0: 'PAL.AttackRun0003.FiberCut' does not depend on any axioms
+info: Audit/AttackRun0003.lean:66:0: 'PAL.AttackRun0003.boundedSourceMap' does not depend on any axioms
+info: Audit/AttackRun0003.lean:67:0: 'PAL.AttackRun0003.noninjectiveSourceFiberCountermodel' does not depend on any axioms
+info: Audit/AttackRun0003.lean:68:0: 'PAL.AttackRun0003.injectiveSourceIdentificationAssumptionBound' does not depend on any axioms
+info: Audit/AttackRun0003.lean:69:0: 'PAL.AttackRun0003.InquiryLedger' does not depend on any axioms
+info: Audit/AttackRun0003.lean:70:0: 'PAL.AttackRun0003.appendReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:71:0: 'PAL.AttackRun0003.witnessedInquiryAppendPreservesPrefix' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:72:0: 'PAL.AttackRun0003.InquiryState' does not depend on any axioms
+info: Audit/AttackRun0003.lean:73:0: 'PAL.AttackRun0003.terminalQuestion' does not depend on any axioms
+info: Audit/AttackRun0003.lean:74:0: 'PAL.AttackRun0003.terminalInquiryReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:75:0: 'PAL.AttackRun0003.terminalInquiryLedger' does not depend on any axioms
+info: Audit/AttackRun0003.lean:76:0: 'PAL.AttackRun0003.terminalInquiryState' depends on axioms: [propext, Quot.sound]
+info: Audit/AttackRun0003.lean:77:0: 'PAL.AttackRun0003.SupportsUnboundedInquiry' does not depend on any axioms
+info: Audit/AttackRun0003.lean:78:0: 'PAL.AttackRun0003.finiteTerminalCountermodel' depends on axioms: [propext, Quot.sound]
+info: Audit/AttackRun0003.lean:79:0: 'PAL.AttackRun0003.LaterEvidenceReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:80:0: 'PAL.AttackRun0003.appendLaterEvidence' does not depend on any axioms
+info: Audit/AttackRun0003.lean:81:0: 'PAL.AttackRun0003.laterEvidenceAppendPreservesPrior' depends on axioms: [propext]
+info: Audit/AttackRun0003.lean:82:0: 'PAL.AttackRun0003.mutatedBaseCutReceipt' does not depend on any axioms
+info: Audit/AttackRun0003.lean:83:0: 'PAL.AttackRun0003.overwriteHead' does not depend on any axioms
+info: Audit/AttackRun0003.lean:84:0: 'PAL.AttackRun0003.overwriteIsNotAppendCountermodel' depends on axioms: [propext, Quot.sound]
+Build completed successfully (486 jobs).
