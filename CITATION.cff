@@ -1,6 +1,17 @@
 cff-version: 1.2.0
 message: "Please cite PAL v2.1 for new PAL-led realization audits, PAL v2.0 for historical Attack Runs 0001 and 0002, and this repository only for the bounded Lean audit implementation."
-title: "PAL Lean Audit"
+title: "PAL Lean Audit — Primitive Axiom Layers"
+abstract: "An adversarial Lean 4 audit of Primitive Axiom Layers (PAL). The repository tests bounded mathematical realizations and countermodels against source-locked PAL releases while preserving PAL's declared authority boundaries."
+keywords:
+  - "Primitive Axiom Layers"
+  - PAL
+  - "Lean 4"
+  - "formal methods"
+  - "formal verification"
+  - "theorem proving"
+  - "proof assistant"
+  - "adversarial audit"
+  - "reproducible research"
 type: software
 version: 0.1.0
 date-released: 2026-08-09
