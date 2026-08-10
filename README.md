@@ -1,6 +1,10 @@
-# PAL Lean Audit
+# PAL Lean Audit — Primitive Axiom Layers
 
-A source-locked Lean 4 audit bench for bounded mechanical claims and declared mathematical realizations of PAL. Attack Runs 0001 and 0002 retain their original **PAL v2.0** scope; **PAL v2.1** controls every new run.
+An adversarial Lean 4 audit of Primitive Axiom Layers (PAL).
+
+> **Disambiguation:** In this repository, **PAL** means **Primitive Axiom Layers**, authored and stewarded by Christopher D. Pang. PAL Lean Audit is not affiliated with other projects, packages, or frameworks that also use the acronym “PAL.”
+
+This source-locked audit bench tests bounded mechanical claims and declared mathematical realizations. Attack Runs 0001 and 0002 retain their original **PAL v2.0** scope; **PAL v2.1** controls every new run.
 
 > Lean can verify that a formal statement follows from declared definitions and assumptions, construct countermodels to stronger statements, and expose axiom dependencies. It cannot establish PAL as a complete ontology or prove that a formalization exhausts the source framework.
 

@@ -1,6 +1,6 @@
 # Codex working instructions
 
-This repository is a PAL-led adversarial Lean audit of bounded claims and declared mathematical realizations. It is not a venue for silently rewriting PAL into whatever is easiest to formalize, and Lean does not prove or contain PAL.
+This repository is **PAL Lean Audit — Primitive Axiom Layers**, an adversarial Lean 4 audit of Primitive Axiom Layers (PAL) focused on bounded claims and declared mathematical realizations. It is not a venue for silently rewriting PAL into whatever is easiest to formalize, and Lean does not prove or contain PAL.
 
 ## Controlling sources
 
@@ -78,6 +78,7 @@ The Attack Run 0003 identity and reporting files are:
 
 ## Repository workflow
 
+- Preserve the public title `PAL Lean Audit — Primitive Axiom Layers`, expand PAL as `Primitive Axiom Layers` on first public use, and keep the repository description `An adversarial Lean 4 audit of Primitive Axiom Layers (PAL).`
 - Work on `agent/*` branches.
 - Open draft pull requests first.
 - Keep one attack run or infrastructure change per PR.
