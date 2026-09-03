@@ -15,6 +15,7 @@ on:
       - 'Audit/PrimeShellsBasisTransport.lean'
       - 'Audit/PrimeShellsConditionNumber.lean'
       - 'Audit.lean'
+      - 'scripts/check_prime_shells_axioms.py'
       - '.github/workflows/prime-shells.yml'
   workflow_dispatch:
 
@@ -83,6 +84,10 @@ jobs:
           lake env lean Audit/PrimeShellsConditioning.lean 2>&1 | tee artifacts/prime-shells-conditioning-axioms.txt
           lake env lean Audit/PrimeShellsBasisTransport.lean 2>&1 | tee artifacts/prime-shells-basis-transport-axioms.txt
           lake env lean Audit/PrimeShellsConditionNumber.lean 2>&1 | tee artifacts/prime-shells-condition-number-axioms.txt
+
+      - name: Fail closed on unexpected theorem axioms
+        if: steps.compile.outcome == 'success'
+        run: python3 scripts/check_prime_shells_axioms.py artifacts
 
       - name: Enforce repository formalization policy
         if: steps.compile.outcome == 'success'
