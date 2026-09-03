@@ -5,9 +5,11 @@ on:
     paths:
       - 'PAL/PrimeShells.lean'
       - 'PAL/PrimeShellsConditioning.lean'
+      - 'PAL/PrimeShellsBasisTransport.lean'
       - 'PAL.lean'
       - 'Audit/PrimeShells.lean'
       - 'Audit/PrimeShellsConditioning.lean'
+      - 'Audit/PrimeShellsBasisTransport.lean'
       - 'Audit.lean'
       - '.github/workflows/prime-shells.yml'
   workflow_dispatch:
@@ -43,7 +45,7 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p artifacts
-          lake build PAL.PrimeShellsConditioning 2>&1 | tee artifacts/prime-shells-build.txt
+          lake build PAL.PrimeShellsBasisTransport 2>&1 | tee artifacts/prime-shells-build.txt
 
       - name: Publish bounded diagnostics to the draft PR
         if: steps.compile.outcome != 'success' && github.event_name == 'pull_request'
@@ -73,6 +75,7 @@ jobs:
           set -o pipefail
           lake env lean Audit/PrimeShells.lean 2>&1 | tee artifacts/prime-shells-axioms.txt
           lake env lean Audit/PrimeShellsConditioning.lean 2>&1 | tee artifacts/prime-shells-conditioning-axioms.txt
+          lake env lean Audit/PrimeShellsBasisTransport.lean 2>&1 | tee artifacts/prime-shells-basis-transport-axioms.txt
 
       - name: Enforce repository formalization policy
         if: steps.compile.outcome == 'success'
