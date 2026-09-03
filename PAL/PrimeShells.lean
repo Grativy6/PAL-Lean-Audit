@@ -392,12 +392,10 @@ def minusCoefficient (x v : Point ℝ) : ℝ :=
 theorem two_references_reconstruct (x v : Point ℝ) (hx : FrameReady x) :
     combine (plusCoefficient x v) (minusCoefficient x v)
       (scaledEmbed x) (scaledEmbed (conj x)) = v := by
-  rcases x with ⟨a, b⟩
-  rcases v with ⟨r, s⟩
-  rcases hx with ⟨hx, hb⟩
+  rw [scaledEmbed_conj]
   ext <;>
-    simp [combine, plusCoefficient, minusCoefficient, scaledEmbed, xCoord, yCoord, conj] <;>
-    field_simp [hx, hb] <;>
+    simp [combine, plusCoefficient, minusCoefficient, scaledEmbed] <;>
+    field_simp [hx.1, hx.2] <;>
     ring
 
 /-- Diagonal shell-to-shell transport in the conjugation eigen-coordinates. -/
@@ -407,47 +405,26 @@ def transport (x y v : Point ℝ) : Point ℝ :=
 /-- Transport sends the selected reference of one frame to that of another. -/
 theorem transport_selected (x y : Point ℝ) (hx : FrameReady x) :
     transport x y (scaledEmbed x) = scaledEmbed y := by
-  rcases x with ⟨a, b⟩
-  rcases y with ⟨c, d⟩
-  rcases hx with ⟨hx, hb⟩
-  ext <;>
-    simp [transport, scaledEmbed, xCoord, yCoord] <;>
-    field_simp [hx, hb]
+  ext <;> simp [transport, scaledEmbed, hx.1, hx.2]
 
 /-- Transport also sends the reflected reference to the reflected reference. -/
 theorem transport_reflected (x y : Point ℝ) (hx : FrameReady x) :
     transport x y (scaledEmbed (conj x)) = scaledEmbed (conj y) := by
-  rcases x with ⟨a, b⟩
-  rcases y with ⟨c, d⟩
-  rcases hx with ⟨hx, hb⟩
-  ext <;>
-    simp [transport, scaledEmbed, xCoord, yCoord, conj] <;>
-    field_simp [hx, hb] <;>
-    ring
+  rw [scaledEmbed_conj, scaledEmbed_conj]
+  ext <;> simp [transport, hx.1, hx.2]
 
 /-- Identity transport. -/
 theorem transport_self (x v : Point ℝ) (hx : FrameReady x) :
     transport x x v = v := by
-  rcases x with ⟨a, b⟩
-  rcases v with ⟨r, s⟩
-  rcases hx with ⟨hx, hb⟩
-  ext <;>
-    simp [transport, xCoord, yCoord] <;>
-    field_simp [hx, hb]
+  ext <;> simp [transport, hx.1, hx.2]
 
 /-- Composition is exact: shell transport forms a cocycle/groupoid law on ready frames. -/
 theorem transport_compose (x y z v : Point ℝ)
     (hx : FrameReady x) (hy : FrameReady y) :
     transport y z (transport x y v) = transport x z v := by
-  rcases x with ⟨a, b⟩
-  rcases y with ⟨c, d⟩
-  rcases z with ⟨e, f⟩
-  rcases v with ⟨r, s⟩
-  rcases hx with ⟨hx, hb⟩
-  rcases hy with ⟨hy, hd⟩
   ext <;>
-    simp [transport, xCoord, yCoord] <;>
-    field_simp [hx, hb, hy, hd] <;>
+    simp [transport] <;>
+    field_simp [hx.1, hx.2, hy.1, hy.2] <;>
     ring
 
 /-- Reversing the shell transport recovers the starting vector. -/
@@ -474,5 +451,7 @@ example : eNorm (Point.mk 3 1 : Point ℤ) = 13 := by norm_num [eNorm]
 example : eNorm (Point.mk 3 2 : Point ℤ) = 19 := by norm_num [eNorm]
 
 end Fixtures
+
+end
 
 end PAL.PrimeShells
