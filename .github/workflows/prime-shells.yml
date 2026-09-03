@@ -1,0 +1,83 @@
+name: Prime Shells Lean
+
+on:
+  pull_request:
+    paths:
+      - 'PAL/PrimeShells.lean'
+      - 'Audit/PrimeShells.lean'
+      - 'Audit.lean'
+      - '.github/workflows/prime-shells.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  prime-shells:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Install the pinned Lean toolchain
+        run: |
+          curl --proto '=https' --tlsv1.2 -fsSL \
+            https://raw.githubusercontent.com/leanprover/elan/v4.2.3/elan-init.sh \
+            -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path \
+            --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Restore Mathlib cache
+        run: lake exe cache get
+
+      - name: Compile the Prime Shells formal core
+        id: compile
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          lake env lean PAL/PrimeShells.lean 2>&1 | tee artifacts/prime-shells-build.txt
+
+      - name: Publish bounded diagnostics to the draft PR
+        if: steps.compile.outcome != 'success' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          {
+            echo '<!-- prime-shells-lean-diagnostics -->'
+            echo '### Prime Shells Lean diagnostics'
+            echo
+            echo 'The theorem source did not compile in the pinned Lean/Mathlib environment. The exact tail of the compiler record follows; no mathematical result is promoted by this failed pass.'
+            echo
+            echo '```text'
+            tail -c 50000 artifacts/prime-shells-build.txt
+            echo '```'
+          } > /tmp/prime-shells-comment.md
+          gh pr comment "$PR_NUMBER" --body-file /tmp/prime-shells-comment.md
+
+      - name: Fail after preserving diagnostics
+        if: steps.compile.outcome != 'success'
+        run: exit 1
+
+      - name: Capture theorem dependency receipts
+        if: steps.compile.outcome == 'success'
+        run: |
+          set -o pipefail
+          lake env lean Audit/PrimeShells.lean 2>&1 | tee artifacts/prime-shells-axioms.txt
+
+      - name: Enforce repository formalization policy
+        if: steps.compile.outcome == 'success'
+        run: python3 scripts/check_policy.py
+
+      - name: Upload Prime Shells receipts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: prime-shells-lean-receipts
+          path: artifacts/
+          if-no-files-found: warn
