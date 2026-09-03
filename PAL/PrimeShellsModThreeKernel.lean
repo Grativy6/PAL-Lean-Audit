@@ -5,10 +5,10 @@ import PAL.PrimeShells
 
 `PAL.PrimeShells.norm_mod_three` was first discharged with `native_decide`,
 which is an appropriate finite certificate but appears explicitly in Lean's
-axiom receipt.  This file supplies an equivalent kernel-reduced finite proof
-using ordinary `decide`, together with downstream shell-exclusion theorems.
-The manuscript should cite these declarations when it wants the narrower
-logical dependency receipt.
+dependency receipt. This file supplies an equivalent kernel-reduced finite
+proof using ordinary `decide`, together with downstream shell-exclusion
+theorems. The manuscript should cite these declarations when it wants the
+narrower logical dependency record.
 -/
 
 namespace PAL.PrimeShells
