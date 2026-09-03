@@ -6,3 +6,4 @@ import Audit.PrimeShells
 import Audit.PrimeShellsModThreeKernel
 import Audit.PrimeShellsConditioning
 import Audit.PrimeShellsBasisTransport
+import Audit.PrimeShellsConditionNumber
