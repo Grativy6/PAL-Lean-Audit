@@ -1,15 +1,20 @@
 import PAL.PrimeShells
 
 /-!
-# Prime-shell formalization dependency receipts
+# Framed Prime Shells formalization dependency receipts
 
 These commands expose the dependency sets of the theorem-bearing declarations
-for the proposed manuscript *Prime Shells and Conjugate Frames*.
+for the proposed manuscript *Framed Prime Shells*.
 
 The receipts certify only the exact Lean statements under the pinned
 Lean/Mathlib environment. They do not formalize the complete classical
 representation-count theorem, establish novelty, amend PAL, or authorize
 publication/adoption.
+
+The original fast finite-decision versions of the modulo-three lemmas remain in
+`PAL.PrimeShells` as historical development trace. Publication-facing receipts
+for that seam live in `Audit.PrimeShellsModThreeKernel` and use the separately
+proved kernel-reduced declarations.
 -/
 
 #print axioms PAL.PrimeShells.conj_involutive
@@ -23,9 +28,6 @@ publication/adoption.
 #print axioms PAL.PrimeShells.conjugate_frame_det
 #print axioms PAL.PrimeShells.rotate_fixed_iff_origin
 #print axioms PAL.PrimeShells.no_positive_shell_rotation_fixed
-#print axioms PAL.PrimeShells.norm_mod_three
-#print axioms PAL.PrimeShells.no_integer_shell_of_mod_three_two
-#print axioms PAL.PrimeShells.shell_seventeen_empty
 #print axioms PAL.PrimeShells.eNorm_choosePoint
 #print axioms PAL.PrimeShells.area_base
 #print axioms PAL.PrimeShells.area_turn
