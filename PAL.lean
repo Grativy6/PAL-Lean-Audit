@@ -6,3 +6,4 @@ import PAL.PrimeShells
 import PAL.PrimeShellsModThreeKernel
 import PAL.PrimeShellsConditioning
 import PAL.PrimeShellsBasisTransport
+import PAL.PrimeShellsConditionNumber
