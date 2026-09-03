@@ -7,11 +7,13 @@ on:
       - 'PAL/PrimeShellsModThreeKernel.lean'
       - 'PAL/PrimeShellsConditioning.lean'
       - 'PAL/PrimeShellsBasisTransport.lean'
+      - 'PAL/PrimeShellsConditionNumber.lean'
       - 'PAL.lean'
       - 'Audit/PrimeShells.lean'
       - 'Audit/PrimeShellsModThreeKernel.lean'
       - 'Audit/PrimeShellsConditioning.lean'
       - 'Audit/PrimeShellsBasisTransport.lean'
+      - 'Audit/PrimeShellsConditionNumber.lean'
       - 'Audit.lean'
       - '.github/workflows/prime-shells.yml'
   workflow_dispatch:
@@ -47,7 +49,7 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p artifacts
-          lake build PAL.PrimeShellsModThreeKernel PAL.PrimeShellsBasisTransport \
+          lake build PAL.PrimeShellsModThreeKernel PAL.PrimeShellsConditionNumber \
             2>&1 | tee artifacts/prime-shells-build.txt
 
       - name: Publish bounded diagnostics to the draft PR
@@ -80,6 +82,7 @@ jobs:
           lake env lean Audit/PrimeShellsModThreeKernel.lean 2>&1 | tee artifacts/prime-shells-mod-three-kernel-axioms.txt
           lake env lean Audit/PrimeShellsConditioning.lean 2>&1 | tee artifacts/prime-shells-conditioning-axioms.txt
           lake env lean Audit/PrimeShellsBasisTransport.lean 2>&1 | tee artifacts/prime-shells-basis-transport-axioms.txt
+          lake env lean Audit/PrimeShellsConditionNumber.lean 2>&1 | tee artifacts/prime-shells-condition-number-axioms.txt
 
       - name: Enforce repository formalization policy
         if: steps.compile.outcome == 'success'
