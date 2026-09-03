@@ -18,11 +18,20 @@ No theorem here makes PAL canon, physics, or an RH claim.
 
 namespace PAL.PrimeShells
 
+noncomputable section
+
 /-- Coordinates for `a + bη`, where the intended generator satisfies `η² = η - 1`. -/
 structure Point (R : Type*) where
   a : R
   b : R
   deriving DecidableEq, Repr
+
+@[ext]
+theorem Point.extensionality {R : Type*} {x y : Point R}
+    (ha : x.a = y.a) (hb : x.b = y.b) : x = y := by
+  cases x
+  cases y
+  simp_all
 
 section CoordinateAlgebra
 
@@ -122,10 +131,18 @@ def combine (c d : R) (u v : Point R) : Point R :=
   constructor
   · intro h
     rcases x with ⟨a, b⟩
-    simp [rotate, origin] at h ⊢
-    constructor <;> linarith
+    have hfirst : -b = a := congrArg Point.a h
+    have hsecond : a + b = b := congrArg Point.b h
+    have ha : a = 0 := by
+      calc
+        a = (a + b) - b := by ring
+        _ = b - b := by rw [hsecond]
+        _ = 0 := sub_self b
+    have hneg : -b = 0 := hfirst.trans ha
+    have hb : b = 0 := neg_eq_zero.mp hneg
+    ext <;> simp [origin, ha, hb]
   · rintro rfl
-    rfl
+    simp [rotate, origin]
 
 /-- A positive shell cannot carry a point fixed by the full sixty-degree rotation. -/
 theorem no_positive_shell_rotation_fixed (x : Point ℝ) (hx : 0 < eNorm x) : rotate x ≠ x := by
@@ -157,18 +174,19 @@ theorem no_integer_shell_of_mod_three_two {n : ℤ} (hn : (n : ZMod 3) = 2) :
         (x.a : ZMod 3) ^ 2 + (x.a : ZMod 3) * (x.b : ZMod 3) + (x.b : ZMod 3) ^ 2 := by
     simp [eNorm]
   have htwo : ((eNorm x : ℤ) : ZMod 3) = 2 := by
-    rw [hx, hn]
+    rw [hx]
+    exact hn
   rw [hcast] at htwo
   rcases hmod with hzero | hone
   · rw [hzero] at htwo
-    norm_num at htwo
+    exact (by decide : (0 : ZMod 3) ≠ 2) htwo
   · rw [hone] at htwo
-    norm_num at htwo
+    exact (by decide : (1 : ZMod 3) ≠ 2) htwo
 
 /-- The norm-17 shell is empty. -/
 theorem shell_seventeen_empty : ¬ ∃ x : Point ℤ, eNorm x = 17 := by
   apply no_integer_shell_of_mod_three_two
-  norm_num
+  native_decide
 
 end ModThree
 
@@ -259,6 +277,7 @@ theorem exists_robust_frame_choice (x : Point ℝ) :
     mul_pos (mul_pos h0' h1') h2'
   rw [frame_gap_product] at hproduct
   have hnonneg : 0 ≤ frameObstruction x := by
+    unfold frameObstruction
     positivity
   linarith
 
@@ -300,7 +319,8 @@ theorem robust_strength_lower_bound {x : Point ℝ}
     (hRobust : eNorm x ^ 2 ≤ areaCoordinate x ^ 2) :
     (3 : ℝ) / 4 ≤ frameStrengthSq x := by
   have hden : 0 < 4 * eNorm x ^ 2 := by
-    positivity
+    have hsquare : 0 < eNorm x ^ 2 := sq_pos_of_ne_zero hNorm
+    nlinarith
   rw [frameStrengthSq]
   apply (le_div_iff₀ hden).2
   nlinarith
@@ -309,7 +329,8 @@ theorem robust_strength_lower_bound {x : Point ℝ}
 theorem frameStrengthSq_le_one {x : Point ℝ} (hNorm : eNorm x ≠ 0) :
     frameStrengthSq x ≤ 1 := by
   have hden : 0 < 4 * eNorm x ^ 2 := by
-    positivity
+    have hsquare : 0 < eNorm x ^ 2 := sq_pos_of_ne_zero hNorm
+    nlinarith
   rw [frameStrengthSq]
   apply (div_le_iff₀ hden).2
   nlinarith [area_upper_bound x]
@@ -355,7 +376,7 @@ theorem one_reference_is_insufficient (u : Point ℝ) :
     have hfirst := congrArg Point.a h
     have hsecond := congrArg Point.b h
     simp [scale] at hfirst hsecond
-    have hc : c = 0 := (mul_eq_zero.mp hfirst).resolve_right hu
+    have hc : c = 0 := hfirst.resolve_right hu
     rw [hc] at hsecond
     norm_num at hsecond
 
