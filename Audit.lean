@@ -7,3 +7,5 @@ import Audit.PrimeShellsModThreeKernel
 import Audit.PrimeShellsConditioning
 import Audit.PrimeShellsBasisTransport
 import Audit.PrimeShellsConditionNumber
+import Audit.PrimeShellsThreeCharts
+import Audit.PrimeShellsRibbons

@@ -1,0 +1,108 @@
+{
+  "schema": "framed-prime-shells-formal-manifest-v0.2",
+  "status": "VERIFIED_WORKING_SUCCESSOR_NOT_ADOPTED",
+  "title": "Framed Prime Shells: Local Frames, Shell Atlases, and Trace-Bearing Ribbons in the Eisenstein Lattice",
+  "version": "0.2-working",
+  "author_and_steward": "Christopher D. Pang",
+  "reserved_doi": "10.5281/zenodo.22288471",
+  "repository": "Grativy6/PAL-Lean-Audit",
+  "v0_1_branch": "agent/prime-shells-conjugate-frames",
+  "v0_1_pull_request": 9,
+  "v0_2_branch": "agent/framed-prime-shells-v0.2-atlas-ribbons",
+  "v0_2_pull_request": 10,
+  "v0_2_base_commit": "9ba69179174752469f095a56cbd3f5632cfa064d",
+  "v0_2_theorem_source_freeze": "450e808325743b130c2f6cb3cf7496a7bb3a7556",
+  "environment": {
+    "lean": "4.32.1",
+    "mathlib_release": "v4.32.1",
+    "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "runner": "ubuntu-24.04"
+  },
+  "v0_2_source_modules": [
+    "PAL/PrimeShellsThreeCharts.lean",
+    "PAL/PrimeShellsRibbons.lean"
+  ],
+  "v0_2_audit_modules": [
+    "Audit/PrimeShellsThreeCharts.lean",
+    "Audit/PrimeShellsRibbons.lean"
+  ],
+  "v0_1_modules_preserved": [
+    "PAL/PrimeShells.lean",
+    "PAL/PrimeShellsModThreeKernel.lean",
+    "PAL/PrimeShellsConditioning.lean",
+    "PAL/PrimeShellsBasisTransport.lean",
+    "PAL/PrimeShellsConditionNumber.lean"
+  ],
+  "verification": {
+    "workflow": "Framed Prime Shells v0.2 Lean",
+    "run_id": 33837570265,
+    "job_id": 100913108737,
+    "conclusion": "SUCCESS",
+    "module_chain_jobs": 8660,
+    "new_publication_facing_declarations": 26,
+    "new_required_receipt_files": 2,
+    "stacked_publication_facing_declarations": 88,
+    "allowed_logical_dependencies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "proof_hole_and_lexical_policy": "PASSED_FOR_25_LEAN_FILES",
+    "artifact_id": 9923832727,
+    "artifact_sha256": "6d90e1b47924c2bd1356eb7956ebd81cc36c1983377ad42bc8e2a5ff76672191"
+  },
+  "verified_v0_2_theorem_families": [
+    "derived-axis fiber invariance",
+    "joint-axis fiber intersection",
+    "strict interface refinement from a separating side-information witness",
+    "stereographic Smith-sphere unit-radius identity and exact image inverse",
+    "independent-condition Smith shell-atlas fiber identity",
+    "radial shell-radius identity",
+    "certified atlas occupancy from a supplied represented prime shell",
+    "ordered nonempty ribbon structure",
+    "flat finite ribbon transport reduction to direct endpoint transport",
+    "same-endpoint different-route prime-shell fixture"
+  ],
+  "classical_imports_not_formalized_end_to_end": [
+    "representation of every rational prime p congruent to 1 modulo 3 by a^2 + ab + b^2",
+    "six-point ramified and twelve-point split-prime shell counts",
+    "two conjugate six-point unit-orbit decomposition for split prime shells",
+    "general occupied-shell representation-count formula"
+  ],
+  "source_roles": [
+    {
+      "source": "Framed Prime Shells v0.1 formal package",
+      "role": "local frame, sharp area and condition-number bounds, and characterized transport"
+    },
+    {
+      "source": "Abstract Loops v1.0 and Compactification Costs v0.2",
+      "role": "same-lineage exact joint-fiber and side-information refinement substrate"
+    },
+    {
+      "source": "GPPR v0.1 and GOLD v0.1",
+      "role": "same-lineage endpoint-versus-route and trace-bearing path precedents"
+    },
+    {
+      "source": "Smith chart, spherical Smith chart, and 3D multi-parameter Smith-chart literature",
+      "role": "external engineering realization of the sphere, indexed family, and realized route distinction"
+    }
+  ],
+  "open_burdens": [
+    "Christopher D. Pang's intuitive geometry and final figures",
+    "systematic literature and priority review",
+    "independent mathematical review",
+    "final publication editing and exact release-byte manifest",
+    "optional end-to-end Lean formalization of the classical arbitrary-prime shell classification",
+    "optional empirical study of engineering or computational utility"
+  ],
+  "nonclaims": [
+    "No proof or new route to the Riemann Hypothesis, twin primes, or a prime-gap bound",
+    "No new classification theorem for Eisenstein primes",
+    "No invention claim for ordinary, spherical, generalized, or 3D Smith charts",
+    "No claim that a visual third axis necessarily adds information",
+    "No nontrivial holonomy under the current flat shell transport",
+    "No physical prime-shell or RF-prime coupling model",
+    "No claim that formal verification establishes novelty, authorship, adoption, peer review, or publication authority"
+  ],
+  "authorship_and_authority": "Christopher D. Pang is the sole author, steward, and adoption/publication authority. AI systems assisted as tools for retrieval, mathematical exploration, Lean formalization, proof repair, figure preparation, review, and document production; they are not authors, co-authors, witnesses, owners, or mathematical authorities."
+}

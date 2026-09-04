@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="470" viewBox="0 0 1350 470">
+  <rect width="1350" height="470" fill="white"/>
+  <style>
+    .title{font:700 28px sans-serif;fill:#183b66}.head{font:700 22px sans-serif;fill:#183b66}.sub{font:17px sans-serif;fill:#444}.wire{fill:none;stroke:#77a9d6;stroke-width:2;opacity:.75}.ribbon{fill:none;stroke:#e67e22;stroke-width:10;stroke-linecap:round}.ribbon2{fill:none;stroke:#2ca02c;stroke-width:5;stroke-linecap:round}.sep{stroke:#ccc;stroke-width:2}
+  </style>
+  <text x="675" y="38" text-anchor="middle" class="title">Three chart roles</text>
+  <line x1="450" y1="70" x2="450" y2="430" class="sep"/><line x1="900" y1="70" x2="900" y2="430" class="sep"/>
+
+  <text x="225" y="88" text-anchor="middle" class="head">1. Sphere</text><text x="225" y="115" text-anchor="middle" class="sub">derived state chart</text>
+  <circle cx="225" cy="265" r="120" class="wire"/><ellipse cx="225" cy="265" rx="120" ry="42" class="wire"/><ellipse cx="225" cy="265" rx="42" ry="120" class="wire"/><path d="M120 210 Q225 120 330 210" class="wire"/>
+
+  <text x="675" y="88" text-anchor="middle" class="head">2. Shell atlas</text><text x="675" y="115" text-anchor="middle" class="sub">independently indexed family</text>
+  <circle cx="675" cy="270" r="72" class="wire"/><circle cx="675" cy="270" r="112" class="wire"/><circle cx="675" cy="270" r="150" class="wire"/><ellipse cx="675" cy="270" rx="150" ry="52" class="wire"/><ellipse cx="675" cy="270" rx="52" ry="150" class="wire"/>
+
+  <text x="1125" y="88" text-anchor="middle" class="head">3. Ribbon</text><text x="1125" y="115" text-anchor="middle" class="sub">realized ordered route</text>
+  <circle cx="1125" cy="270" r="150" class="wire"/><ellipse cx="1125" cy="270" rx="150" ry="52" class="wire"/><ellipse cx="1125" cy="270" rx="52" ry="150" class="wire"/>
+  <path d="M1010 325 C1040 185 1105 165 1140 245 C1170 315 1210 355 1245 225" class="ribbon"/>
+  <path d="M1010 325 C1040 185 1105 165 1140 245 C1170 315 1210 355 1245 225" class="ribbon2"/>
+  <circle cx="1010" cy="325" r="8" fill="#183b66"/><circle cx="1245" cy="225" r="8" fill="#183b66"/>
+
+  <text x="675" y="455" text-anchor="middle" class="sub">Sphere = state · Shell atlas = indexed family · Ribbon = retained route</text>
+</svg>

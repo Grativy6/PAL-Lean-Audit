@@ -1,0 +1,96 @@
+name: Framed Prime Shells v0.2 Lean
+
+on:
+  pull_request:
+    paths:
+      - 'PAL/PrimeShellsThreeCharts.lean'
+      - 'PAL/PrimeShellsRibbons.lean'
+      - 'PAL.lean'
+      - 'Audit/PrimeShellsThreeCharts.lean'
+      - 'Audit/PrimeShellsRibbons.lean'
+      - 'Audit.lean'
+      - 'scripts/check_prime_shells_v02_axioms.py'
+      - 'docs/prime-shells-v0.2/**'
+      - '.github/workflows/prime-shells-v02.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  prime-shells-v02:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Install the pinned Lean toolchain
+        run: |
+          curl --proto '=https' --tlsv1.2 -fsSL \
+            https://raw.githubusercontent.com/leanprover/elan/v4.2.3/elan-init.sh \
+            -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path \
+            --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Restore Mathlib cache
+        run: lake exe cache get
+
+      - name: Compile the v0.2 theorem surface
+        id: compile
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          lake build PAL.PrimeShellsRibbons \
+            2>&1 | tee artifacts/prime-shells-v02-build.txt
+
+      - name: Publish bounded diagnostics to the draft PR
+        if: steps.compile.outcome != 'success' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          {
+            echo '<!-- prime-shells-v02-lean-diagnostics -->'
+            echo '### Framed Prime Shells v0.2 Lean diagnostics'
+            echo
+            echo 'The v0.2 theorem surface did not compile in the pinned Lean/Mathlib environment. The exact tail of the compiler record follows; no new v0.2 claim is promoted by this failed pass.'
+            echo
+            echo '```text'
+            tail -c 50000 artifacts/prime-shells-v02-build.txt
+            echo '```'
+          } > /tmp/prime-shells-v02-comment.md
+          gh pr comment "$PR_NUMBER" --body-file /tmp/prime-shells-v02-comment.md
+
+      - name: Fail after preserving diagnostics
+        if: steps.compile.outcome != 'success'
+        run: exit 1
+
+      - name: Capture v0.2 dependency receipts
+        if: steps.compile.outcome == 'success'
+        run: |
+          set -o pipefail
+          lake env lean Audit/PrimeShellsThreeCharts.lean \
+            2>&1 | tee artifacts/prime-shells-v02-three-charts-axioms.txt
+          lake env lean Audit/PrimeShellsRibbons.lean \
+            2>&1 | tee artifacts/prime-shells-v02-ribbons-axioms.txt
+
+      - name: Fail closed on unexpected v0.2 dependencies
+        if: steps.compile.outcome == 'success'
+        run: python3 scripts/check_prime_shells_v02_axioms.py artifacts
+
+      - name: Enforce repository formalization policy
+        if: steps.compile.outcome == 'success'
+        run: python3 scripts/check_policy.py
+
+      - name: Upload v0.2 receipts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: framed-prime-shells-v02-lean-receipts
+          path: artifacts/
+          if-no-files-found: warn
