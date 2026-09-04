@@ -2,3 +2,8 @@ import Audit.Bootstrap
 import Audit.AttackRun0001
 import Audit.AttackRun0002
 import Audit.AttackRun0003
+import Audit.PrimeShells
+import Audit.PrimeShellsModThreeKernel
+import Audit.PrimeShellsConditioning
+import Audit.PrimeShellsBasisTransport
+import Audit.PrimeShellsConditionNumber

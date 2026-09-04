@@ -1,0 +1,126 @@
+{
+  "schema": "framed-prime-shells-formal-manifest-v0.1",
+  "status": "WORKING_FORMAL_PACKAGE_NOT_ADOPTED",
+  "title": "Framed Prime Shells: Minimal Reference Data, Sharp Conditioning, and Composable Transport in the Eisenstein Lattice",
+  "author_and_steward": "Christopher D. Pang",
+  "reserved_doi": "10.5281/zenodo.22288471",
+  "repository": "Grativy6/PAL-Lean-Audit",
+  "branch": "agent/prime-shells-conjugate-frames",
+  "draft_pull_request": 9,
+  "formal_source_freeze": {
+    "commit": "56574e76c111204c8e33b468e48ea0e6af8ff4de",
+    "receipt_gate_commit": "2d830794ac34b38bf9a541293afecccaaf93486c",
+    "note": "Later commits through this manifest edit change documentation or workflow routing, not the theorem statements recorded at the formal source freeze."
+  },
+  "environment": {
+    "lean": "4.32.1",
+    "mathlib_release": "v4.32.1",
+    "mathlib_manifest_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "runner": "ubuntu-24.04"
+  },
+  "source_modules": [
+    {
+      "path": "PAL/PrimeShells.lean",
+      "git_blob_sha1": "b7e037b84216aad5a1e078e398b642582ab37d7b"
+    },
+    {
+      "path": "PAL/PrimeShellsModThreeKernel.lean",
+      "git_blob_sha1": "b7cf13a796b109ff8d2c0b6075f95ca55b1520d8"
+    },
+    {
+      "path": "PAL/PrimeShellsConditioning.lean",
+      "git_blob_sha1": "01d039be908718ddc841f24a4d8da319400ef588"
+    },
+    {
+      "path": "PAL/PrimeShellsBasisTransport.lean",
+      "git_blob_sha1": "761efe084a0404e8c60b3a58a3255aa8831fe194"
+    },
+    {
+      "path": "PAL/PrimeShellsConditionNumber.lean",
+      "git_blob_sha1": "38e3beffeca19657400635c2a2f42e78c16a0148"
+    }
+  ],
+  "audit_modules": [
+    {
+      "path": "Audit/PrimeShells.lean",
+      "git_blob_sha1": "5f0211862065f41e7f0913034603f0b9ee1311e1"
+    },
+    {
+      "path": "Audit/PrimeShellsModThreeKernel.lean",
+      "git_blob_sha1": "ee03ef411f18a3fb56772c7fb5d0354d891e5c93"
+    },
+    {
+      "path": "Audit/PrimeShellsConditioning.lean",
+      "git_blob_sha1": "8903d9ecc5fc60d4163a1be07ea460c91f307f34"
+    },
+    {
+      "path": "Audit/PrimeShellsBasisTransport.lean",
+      "git_blob_sha1": "cf1148245eac85841dccb58768d471dde208be3e"
+    },
+    {
+      "path": "Audit/PrimeShellsConditionNumber.lean",
+      "git_blob_sha1": "8ae0f04505a8fcb19eac13b9ef4c06d8a81d948c"
+    }
+  ],
+  "verification": {
+    "workflow": "Prime Shells Lean",
+    "run_id": 33820043692,
+    "conclusion": "SUCCESS",
+    "publication_facing_declaration_count": 62,
+    "required_receipt_file_count": 5,
+    "allowed_logical_dependencies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "proof_hole_policy": "PASSED_FOR_21_LEAN_FILES",
+    "artifact_id": 9917985202,
+    "artifact_sha256": "a7aa5c917d59b6e0a1d7397aa2644b4b5d612ccef33f1af8bf5888ebb7365ce5"
+  },
+  "verified_new_theorem_families": [
+    "minimal one-reference insufficiency and unique two-reference reconstruction",
+    "three-choice determinant identities and robust conjugate-pair selection",
+    "sharp squared normalized-area lower bound 3/4",
+    "sharp squared Euclidean condition-number upper bound 3",
+    "unique linear-combination-preserving shell-to-shell transport",
+    "identity, inverse, and composition laws for ready-frame transport"
+  ],
+  "classical_imports_not_yet_formalized_end_to_end": [
+    "representation of every rational prime p congruent to 1 modulo 3 by a^2 + ab + b^2",
+    "six-point ramified and twelve-point split-prime shell counts",
+    "two conjugate six-point unit-orbit decomposition for split prime shells",
+    "general occupied-shell representation-count formula"
+  ],
+  "source_roles": [
+    {
+      "source": "Oscar Marmon, Hexagonal Lattice Points on Circles, arXiv:math/0508201",
+      "role": "classical Eisenstein shell counts, split/ramified/inert classification, and angular structure"
+    },
+    {
+      "source": "Umesh P. Nair, Elementary results on the binary quadratic form a^2+ab+b^2, arXiv:math/0408107",
+      "role": "elementary representability background; not sole authority for the full count formula"
+    },
+    {
+      "source": "PAL v2.3-M / RAINBOW, DOI 10.5281/zenodo.22240134",
+      "role": "author-lineage research address and shell/frame vocabulary; not independent corroboration"
+    }
+  ],
+  "open_burdens": [
+    "Christopher D. Pang's intuitive geometry and figures",
+    "systematic literature and priority review",
+    "independent mathematical review",
+    "final manuscript editing and publication manifest",
+    "optional end-to-end Lean formalization of the classical arbitrary-prime shell classification"
+  ],
+  "nonclaims": [
+    "No proof or new route to the Riemann Hypothesis",
+    "No new classification theorem for Eisenstein primes",
+    "No physical shell, particle, wavefunction, force, or cosmological model",
+    "No claim that formal verification establishes novelty, authorship, adoption, peer review, or publication authority"
+  ],
+  "licenses": {
+    "lean_code": "Apache-2.0 under the repository license",
+    "manuscript_and_diagrams_target": "CC BY 4.0"
+  },
+  "authorship_and_authority": "Christopher D. Pang is the sole author, steward, and adoption/publication authority. AI systems assisted as tools and are not authors, co-authors, witnesses, owners, or mathematical authorities."
+}
