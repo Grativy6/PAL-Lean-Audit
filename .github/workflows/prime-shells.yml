@@ -16,6 +16,7 @@ on:
       - 'Audit/PrimeShellsConditionNumber.lean'
       - 'Audit.lean'
       - 'scripts/check_prime_shells_axioms.py'
+      - 'docs/prime-shells/**'
       - '.github/workflows/prime-shells.yml'
   workflow_dispatch:
 
