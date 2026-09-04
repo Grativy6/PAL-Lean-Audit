@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+  <rect width="1200" height="430" fill="white"/>
+  <style>
+    .title{font:700 28px sans-serif;fill:#183b66}.label{font:600 20px sans-serif;fill:#183b66}.small{font:16px sans-serif;fill:#333}.fiber{fill:none;stroke:#444;stroke-width:3}.trace{fill:#1f77b4}.axis{fill:#e67e22}.arrow{stroke:#777;stroke-width:3;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#777"/></marker></defs>
+  <text x="600" y="38" text-anchor="middle" class="title">Interface effect of adding an axis</text>
+  <text x="300" y="78" text-anchor="middle" class="label">Derived axis</text>
+  <text x="900" y="78" text-anchor="middle" class="label">Independent axis</text>
+
+  <ellipse cx="175" cy="225" rx="115" ry="120" class="fiber"/>
+  <circle cx="140" cy="190" r="8" class="trace"/><circle cx="210" cy="260" r="8" class="trace"/>
+  <text x="175" y="375" text-anchor="middle" class="small">old trace fiber</text>
+  <line x1="300" y1="225" x2="420" y2="225" class="arrow"/>
+  <ellipse cx="535" cy="225" rx="115" ry="120" class="fiber"/>
+  <circle cx="500" cy="190" r="8" class="trace"/><circle cx="570" cy="260" r="8" class="trace"/>
+  <circle cx="500" cy="190" r="18" fill="none" stroke="#1f77b4" stroke-width="3"/><circle cx="570" cy="260" r="18" fill="none" stroke="#1f77b4" stroke-width="3"/>
+  <text x="535" y="375" text-anchor="middle" class="small">same fiber; new geometry, no new distinction</text>
+
+  <ellipse cx="785" cy="225" rx="120" ry="125" class="fiber"/>
+  <circle cx="750" cy="190" r="8" class="trace"/><circle cx="820" cy="260" r="8" class="trace"/>
+  <line x1="910" y1="225" x2="1010" y2="225" class="arrow"/>
+  <ellipse cx="1080" cy="190" rx="80" ry="85" class="fiber"/>
+  <ellipse cx="1080" cy="280" rx="80" ry="85" class="fiber"/>
+  <circle cx="1050" cy="170" r="8" class="axis"/><circle cx="1110" cy="300" r="8" class="axis"/>
+  <text x="900" y="405" text-anchor="middle" class="small">joint fibers intersect old fibers with the new axis and may split a collision</text>
+</svg>
