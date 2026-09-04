@@ -7,3 +7,5 @@ import PAL.PrimeShellsModThreeKernel
 import PAL.PrimeShellsConditioning
 import PAL.PrimeShellsBasisTransport
 import PAL.PrimeShellsConditionNumber
+import PAL.PrimeShellsThreeCharts
+import PAL.PrimeShellsRibbons
