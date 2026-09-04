@@ -171,8 +171,12 @@ theorem smithSphereBack_smithSphere (p : Point ℝ) :
     ring
 
 /-- The derived spherical state chart is injective. -/
-theorem smithSphere_injective : Function.Injective smithSphere :=
-  (fun p => smithSphereBack_smithSphere p).injective
+theorem smithSphere_injective : Function.Injective smithSphere := by
+  intro p q h
+  calc
+    p = smithSphereBack (smithSphere p) := (smithSphereBack_smithSphere p).symm
+    _ = smithSphereBack (smithSphere q) := congrArg smithSphereBack h
+    _ = q := smithSphereBack_smithSphere q
 
 /-- Equality on the spherical chart is exactly equality on the planar chart. -/
 theorem smithSphere_sameFiber (p q : Point ℝ) :
