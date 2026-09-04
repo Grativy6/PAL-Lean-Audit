@@ -182,7 +182,8 @@ theorem smithSphere_injective : Function.Injective smithSphere := by
 theorem smithSphere_sameFiber (p q : Point ℝ) :
     smithSphere p = smithSphere q ↔ p = q := by
   constructor
-  · exact smithSphere_injective
+  · intro h
+    exact smithSphere_injective h
   · intro h
     exact congrArg smithSphere h
 
