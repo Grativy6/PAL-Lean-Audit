@@ -3,50 +3,49 @@
 ## Minimal reference data, sharp conditioning, and composable transport in the Eisenstein lattice
 
 **Author and steward:** Christopher D. Pang  
-**Version:** working manuscript skeleton, not adopted for publication  
+**Version:** working manuscript core, not adopted for publication  
 **Reserved record:** `10.5281/zenodo.22288471`  
 **Formal branch:** `agent/prime-shells-conjugate-frames`  
 **License target:** manuscript and diagrams CC BY 4.0; Lean code Apache-2.0 under the repository license
 
-> **Status.** The classical prime-shell classification is source-side mathematics. The two-reference, sharp-conditioning, and characterized-transport results are manuscript-side deductions checked in Lean. Global novelty remains open pending a systematic literature review. The DOI is a publication handle, not mathematical evidence.
+> **Claim status.** The classical arithmetic of Eisenstein norm shells is source-side mathematics. The two-reference reconstruction, three-choice sharp frame selector, exact condition bound, and characterized shell transport are manuscript-side deductions checked in Lean 4.32.1 with Mathlib 4.32.1. Global novelty remains open pending systematic literature and expert review. The reserved DOI is a publication handle, not mathematical evidence.
 
 ## Abstract draft
 
 Let
 
 \[
-\eta=e^{i\pi/3},\qquad
-Q(a,b)=N(a+b\eta)=a^2+ab+b^2,
+\eta=e^{i\pi/3},\qquad Q(a,b)=N(a+b\eta)=a^2+ab+b^2,
 \]
 
-and let
+and define the Eisenstein norm shell
 
 \[
-S_n=\{(a,b)\in\mathbb Z^2:Q(a,b)=n\}
+S_n=\{(a,b)\in\mathbb Z^2:Q(a,b)=n\}.
 \]
 
-be the norm shell of level \(n\) in the Eisenstein lattice. Classical arithmetic gives six points for the ramified prime \(3\), twelve points arranged in two conjugate unit orbits for each split rational prime \(p\equiv1\pmod3\), and an empty norm-\(p\) shell for each inert prime \(p\equiv2\pmod3\).
+Classical arithmetic gives six points for the ramified prime \(3\), twelve points arranged in two conjugate six-point unit orbits for every split rational prime \(p\equiv1\pmod3\), and an empty norm-\(p\) shell for every inert prime \(p\equiv2\pmod3\). This paper asks a different question: what additional data turns an occupied arithmetic shell into a stable planar frame?
 
-This paper asks a different question: what additional data turns an arithmetic shell into a stable planar frame? One marked vector cannot span the plane. A noncollinear vector and its arithmetic conjugate do, and every planar vector then has unique coefficients in that pair. More strongly, among the three antipodally distinct unit rotations of every nonzero Eisenstein-lattice vector, one conjugate pair has squared normalized area at least \(3/4\) and symmetric/antisymmetric axis-energy ratio at most \(3\). Both constants are sharp at the norm-\(3\) shell. For any two ready conjugate-pair frames, the unique linear-combination-preserving transport sending the selected and reflected source references to the corresponding target references has a diagonal form in conjugation eigen-coordinates and obeys exact identity, inverse, and composition laws.
+One marked vector cannot span the plane. A suitable vector and its arithmetic conjugate do, and every planar vector then has unique coordinates in that pair. More strongly, among the three antipodally distinct unit rotations of every nonzero Eisenstein-lattice vector, one conjugate pair has squared normalized area at least \(3/4\). In conjugation eigen-coordinates, the same choice has symmetric and antisymmetric axis energies within a factor of \(3\), so its squared Euclidean frame condition number is at most \(3\). Both constants are sharp at the norm-\(3\) shell. For any two ready shell frames, the unique map preserving real linear combinations and sending the selected and reflected source references to their target counterparts has a diagonal form and obeys exact identity, inverse, and composition laws.
 
-The coordinate algebra, mod-three obstruction, minimal-reference theorem, sharp frame-selection theorem, coefficient uniqueness, and transport characterization are formalized in Lean 4.32.1 with Mathlib 4.32.1. The full classical arbitrary-prime representation and orbit-count theorem is cited rather than claimed as newly formalized in the present branch.
+The coordinate algebra, kernel-reduced modulo-three obstruction, minimal-reference theorem, sharp selector, coefficient uniqueness, condition-number result, and transport characterization are formalized in Lean. The full arbitrary-prime representation and orbit-count theorem is cited as classical input rather than claimed as newly formalized here.
 
 ---
 
 ## 1. Orientation and claim boundary
 
-The phrase **prime shell** refers here to an exact norm level set in the Eisenstein lattice. It does not mean a physical shell, an electron shell, a probability distribution, a zeta-zero packet, or an RH mechanism.
+A **prime shell** in this paper is an exact norm level set in the Eisenstein lattice. It is not a physical shell, an electron shell, a probability distribution, a zeta-zero packet, or an RH mechanism.
 
-The paper has three separately typed ingredients:
+The paper keeps three roles separate:
 
-1. **Classical arithmetic.** Eisenstein factorization and the representation theory of \(a^2+ab+b^2\) determine which rational primes occupy a shell and how many lattice points occur.
-2. **New manuscript construction.** A selected point, its arithmetic conjugate, a unit-rotation choice, a conditioning functional, and a shell-to-shell transport law turn occupied shells into framed objects.
-3. **Geometric exposition.** The visual and intuitive account explains why two references stop a shell from floating, why three unit choices suffice, how a frame approaches collapse, and what transport between shells means.
+1. **Classical arithmetic.** Eisenstein factorization and representation theory determine shell occupancy, point counts, and unit-orbit structure.
+2. **Framed-shell construction.** A selected point, its arithmetic conjugate, a unit-rotation choice, a conditioning functional, and a shell-to-shell comparison law turn an occupied shell into a framed object.
+3. **Geometric exposition.** The author supplies the intuitive account of why two references stop a shell from floating, why three unit choices suffice, how a frame approaches collapse, and what shell transport means.
 
-The third layer is reserved for the author’s intuitive geometry. It may motivate the equations, but it does not replace them.
+The geometric account may orient the mathematics; it does not replace a theorem or strengthen its scope.
 
-> **Author geometry insert 1 — What a shell is.**  
-> Explain the distinction between a circle as a continuum and the finite lattice points that occupy one exact arithmetic norm level.
+> **Author geometry insert 1 - What a shell is.**  
+> Explain the difference between the continuum circle \(Q(x)=n\) and the finite lattice points \(S_n\) occupying that level. The norm fixes the unmarked shell; framing asks for additional carried relation.
 
 ## 2. Eisenstein coordinate algebra
 
@@ -56,13 +55,13 @@ Use the sixth root
 \eta=e^{i\pi/3},\qquad \eta^2=\eta-1,
 \]
 
-and write an Eisenstein integer as
+and write
 
 \[
 x=a+b\eta,\qquad a,b\in\mathbb Z.
 \]
 
-In the \((1,\eta)\) basis:
+In the \((1,\eta)\) basis,
 
 \[
 (a,b)(c,d)=(ac-bd,\ ad+bc+bd),
@@ -84,23 +83,21 @@ The norm is
 N(a,b)=a^2+ab+b^2,
 \]
 
-with
+and the formal core proves
 
 \[
 N(xy)=N(x)N(y),\qquad N(\bar x)=N(x),\qquad N(Rx)=N(x),
 \]
 
-and
-
 \[
-x\bar x=N(x).
+x\bar x=N(x),\qquad R^6x=x.
 \]
 
-The Lean formalization proves these identities directly in `PAL/PrimeShells.lean`.
+The only fixed point of \(R\) is the origin, so no positive shell contains a point fixed by a full sixty-degree rotation.
 
-### 2.1 Scaled Cartesian coordinates
+### 2.1 Conjugation eigen-coordinates
 
-Define
+Define the scaled coordinates
 
 \[
 X(x)=2a+b,\qquad Y(x)=b.
@@ -118,18 +115,36 @@ The ordinary Euclidean embedding is
 E(x)=\frac12\bigl(X(x),\sqrt3\,Y(x)\bigr),
 \]
 
-while conjugation acts by reflection:
+and conjugation becomes reflection:
 
 \[
 E(\bar x)=\frac12\bigl(X(x),-\sqrt3\,Y(x)\bigr).
 \]
 
-Thus the symmetric coordinate is radial along the reflection axis and the antisymmetric coordinate measures displacement across it.
+The symmetric coordinate \(X\) is fixed by conjugation; the antisymmetric coordinate \(Y\) changes sign. In the integer-scaled carrier
 
-> **Author geometry insert 2 — The two references.**  
-> Describe the selected shell point and its reflected partner as two separately readable directions from a supplied center. Mark clearly that the center is supplied; without it the corresponding affine statement would require three noncollinear points.
+\[
+B_x^+=(X,Y),\qquad B_x^-=(X,-Y),
+\]
 
-## 3. Classical prime-shell classification
+one has
+
+\[
+\det(B_x^+,B_x^-)=-2XY.
+\]
+
+Thus the selected and reflected references are nonparallel exactly when
+
+\[
+X\ne0\quad\text{and}\quad Y\ne0.
+\]
+
+The formalization calls this predicate `FrameReady`.
+
+> **Author geometry insert 2 - The reflected pair.**  
+> Describe \(x\) and \(\bar x\) as two distinct rays from a supplied center. Their common component fixes the reflection-axis direction; their opposed component fixes the across-axis orientation. The center is supplied. Without a supplied center, the analogous affine frame needs three noncollinear points.
+
+## 3. Classical prime-shell arithmetic
 
 Let
 
@@ -137,7 +152,7 @@ Let
 U=\{\eta^j:0\le j<6\}
 \]
 
-be the unit group. The classical classification is:
+be the unit group. The classical prime classification is
 
 \[
 |S_p|=
@@ -148,7 +163,7 @@ be the unit group. The classical classification is:
 \end{cases}
 \]
 
-For a split prime \(p\equiv1\pmod3\), choose one factor \(\pi_p\) with
+For a split prime \(p\equiv1\pmod3\), choose \(\pi_p\) with
 
 \[
 p=\pi_p\overline{\pi_p}.
@@ -160,62 +175,73 @@ Then
 S_p=U\pi_p\;\sqcup\;U\overline{\pi_p}.
 \]
 
-After quotienting by the six unit rotations, precisely two conjugate arithmetic classes remain.
+After quotienting by the six unit rotations, exactly two conjugate arithmetic classes remain.
 
-The present Lean branch proves the elementary obstruction
+The current Lean branch proves the elementary modular obstruction
 
 \[
 Q(a,b)\not\equiv2\pmod3,
 \]
 
-hence every level \(n\equiv2\pmod3\) has an empty integer shell. It also checks concrete occupied fixtures. The arbitrary split-prime existence theorem and the general twelve-point/two-orbit count remain imported classical results and must be cited as such.
+and therefore
+
+\[
+n\equiv2\pmod3\Longrightarrow S_n=\varnothing.
+\]
+
+The publication-facing proof uses ordinary kernel-reduced finite decision rather than the earlier native-decision certificate. Concrete occupied fixtures at norms \(3,7,13,19\) are also checked. The arbitrary split-prime existence theorem and the general six/twelve-point orbit count remain cited classical inputs.
+
+Formal declarations:
+
+```text
+PAL.PrimeShells.norm_mod_three_kernel
+PAL.PrimeShells.no_integer_shell_of_mod_three_two_kernel
+PAL.PrimeShells.shell_seventeen_empty_kernel
+```
 
 ## 4. Minimal reference data
 
-A shell as an unmarked set is already determined by its norm. A framed shell asks for more: an internally carried basis capable of expressing planar comparison without borrowing an undeclared outside direction.
+The norm already identifies an unmarked shell as a set. A **framed shell** asks for enough internal relation to express arbitrary planar comparison without importing an undeclared second direction.
 
-### Theorem 4.1 — One reference is insufficient
+### Theorem 4.1 - One reference is insufficient
 
-For every \(u\in\mathbb R^2\), there exists \(v\in\mathbb R^2\) that is not a scalar multiple of \(u\). Therefore one marked shell vector cannot span the plane.
-
-Lean declaration:
+For every \(u\in\mathbb R^2\), there exists \(v\in\mathbb R^2\) that is not a scalar multiple of \(u\). Therefore one marked vector cannot span a two-dimensional real carrier.
 
 ```text
 PAL.PrimeShells.one_reference_is_insufficient
 ```
 
-### Theorem 4.2 — Two conjugate references reconstruct
+### Theorem 4.2 - Two conjugate references reconstruct uniquely
 
-Let \(x\) satisfy
-
-\[
-X(x)\ne0,\qquad Y(x)\ne0.
-\]
-
-Then the vectors
-
-\[
-B_x^+=\bigl(X(x),Y(x)\bigr),\qquad
-B_x^-=\bigl(X(x),-Y(x)\bigr)
-\]
-
-form a basis of \(\mathbb R^2\). For \(v=(r,s)\), the unique coefficients are
+Assume \(x\) is ready, so \(X(x)Y(x)\ne0\). For \(v=(r,s)\), define
 
 \[
 c_x(v)=\frac{r}{2X(x)}+\frac{s}{2Y(x)},
 \]
 
 \[
-d_x(v)=\frac{r}{2X(x)}-\frac{s}{2Y(x)},
+d_x(v)=\frac{r}{2X(x)}-\frac{s}{2Y(x)}.
 \]
 
-and
+Then
 
 \[
 v=c_x(v)B_x^++d_x(v)B_x^-.
 \]
 
-Lean declarations:
+Moreover, if
+
+\[
+v=cB_x^++dB_x^-,
+\]
+
+then
+
+\[
+c=c_x(v),\qquad d=d_x(v).
+\]
+
+Thus a ready selected/conjugate pair is a basis and its coordinates are unique.
 
 ```text
 PAL.PrimeShells.two_references_reconstruct
@@ -223,20 +249,20 @@ PAL.PrimeShells.conjugate_references_independent
 PAL.PrimeShells.conjugate_reference_coefficients_unique
 ```
 
-This is the exact seam behind the informal statement that a shell needs two references to become stable as its own two-dimensional frame.
+This is the exact version of the intuition that two references are required for a shell to carry its own two-dimensional frame.
 
-> **Author geometry insert 3 — What “stable” means.**  
-> Separate set identity, orientation relative to an imported ambient axis, and the stronger claim that the shell carries its own local rank-two frame.
+> **Author geometry insert 3 - What “stable” means.**  
+> Separate three claims: the shell is stable as an unmarked norm level; one point may orient it relative to a supplied outside axis; two nonparallel internal references let it carry a complete local planar frame.
 
-## 5. Three unit choices and a sharp frame theorem
+## 5. Three unit choices and the sharp selector
 
-The six unit rotations contain three antipodal pairs. It is therefore enough to examine
+The six unit rotations contain three antipodal pairs. It is therefore enough to inspect
 
 \[
 x,\qquad Rx,\qquad R^2x.
 \]
 
-Define the three determinant coordinates
+For \(x=(a,b)\), define their determinant coordinates
 
 \[
 A_0=b(2a+b),
@@ -250,7 +276,7 @@ A_1=a^2-b^2,
 A_2=-a(a+2b).
 \]
 
-Each \(A_k\) is the product \(X(R^kx)Y(R^kx)\), up to the displayed sign convention. Direct algebra gives two exact identities:
+Each \(A_k\) is \(X(R^kx)Y(R^kx)\), with the displayed sign convention. Direct algebra gives
 
 \[
 A_0^2+A_1^2+A_2^2=2N(x)^2,
@@ -263,41 +289,43 @@ and
 =-a^2b^2(a-b)^2(a+b)^2(a+2b)^2(2a+b)^2.
 \]
 
-The right side is nonpositive. If every \(A_k^2\) were strictly below \(N(x)^2\), all three factors on the left would be positive, a contradiction. Therefore:
+The right side is nonpositive. If every \(A_k^2\) were strictly below \(N(x)^2\), the left side would be positive. Hence:
 
-### Theorem 5.1 — Robust conjugate-pair selection
+### Theorem 5.1 - Robust conjugate-pair selection
 
-For every nonzero Eisenstein-lattice vector \(x\), one of the three antipodally distinct unit choices satisfies
+For every Eisenstein-lattice vector \(x\), one of the three antipodally distinct unit choices satisfies
 
 \[
 N(x)^2\le A_k^2.
 \]
 
-Lean declaration:
+For nonzero \(x\), the selected pair is ready.
 
 ```text
+PAL.PrimeShells.three_area_square_sum
+PAL.PrimeShells.frame_gap_product
 PAL.PrimeShells.exists_robust_frame_choice
+PAL.PrimeShells.frameReady_of_robust
 ```
 
-### 5.1 Normalized area
+### 5.1 Sharp normalized-area bound
 
 The squared normalized Euclidean area of the conjugate pair is
 
 \[
 \mathcal A(x)^2
-=\frac{|\det(E(x),E(\bar x))|^2}{\|E(x)\|^2\|E(\bar x)\|^2}
+=\frac{|\det(E(x),E(\bar x))|^2}
+{\|E(x)\|^2\|E(\bar x)\|^2}
 =\frac{3X(x)^2Y(x)^2}{4N(x)^2}.
 \]
 
-This equals the squared sine of the angle between the references. The robust choice therefore obeys
+Equivalently, \(\mathcal A^2\) is the squared sine of the angle between the two references. The robust choice obeys
 
 \[
-\mathcal A(R^kx)^2\ge\frac34.
+\frac34\le\mathcal A(R^kx)^2\le1.
 \]
 
-Equivalently, its two references meet at an angle between \(60^\circ\) and \(120^\circ\).
-
-Lean declarations:
+So the chosen pair meets at an angle between \(60^\circ\) and \(120^\circ\).
 
 ```text
 PAL.PrimeShells.robust_strength_lower_bound
@@ -305,9 +333,9 @@ PAL.PrimeShells.frameStrengthSq_le_one
 PAL.PrimeShells.strength_three_quarters_is_sharp
 ```
 
-### 5.2 Axis balance and conditioning
+### 5.2 Sharp condition-number bound
 
-Set
+Define the conjugation-eigenmode energies
 
 \[
 H(x)=X(x)^2,
@@ -315,66 +343,69 @@ H(x)=X(x)^2,
 V(x)=3Y(x)^2.
 \]
 
-For the robust choice, the determinant inequality is equivalent to
+The robust determinant inequality implies
 
 \[
 Y(x)^2\le X(x)^2\le9Y(x)^2,
 \]
 
-which in turn gives
+hence
 
 \[
 H(x)\le3V(x),\qquad V(x)\le3H(x).
 \]
 
-For the associated Euclidean frame matrix
+For the Euclidean frame matrix
 
 \[
-F_x=rac12
+F_x=\frac12
 \begin{pmatrix}
 X(x)&X(x)\\
 \sqrt3Y(x)&-\sqrt3Y(x)
 \end{pmatrix},
 \]
 
-one has
+its two rows are orthogonal, with squared row lengths proportional to \(H\) and \(V\). Therefore
 
 \[
-F_xF_x^{\mathsf T}
-=\frac12
-\begin{pmatrix}
-X(x)^2&0\\
-0&3Y(x)^2
-\end{pmatrix}.
+\kappa_2(F_x)^2
+=\frac{\max\{H(x),V(x)\}}{\min\{H(x),V(x)\}}
+\le3,
 \]
 
-Thus the squared spectral condition number is the larger of \(H,V\) divided by the smaller, and the robust choice satisfies
+or
 
 \[
-\kappa_2(F_x)^2\le3,
-\qquad
 \kappa_2(F_x)\le\sqrt3.
 \]
 
-The Lean core formalizes the division-free energy inequalities. The displayed matrix interpretation is an exact rewriting of those inequalities and is scheduled for its own matrix-level declaration before release.
-
-Lean declarations:
+The Lean formalization proves the row orthogonality, row-energy identities, exact max/min ratio, and bound.
 
 ```text
+PAL.PrimeShells.conjugate_frame_rows_orthogonal
+PAL.PrimeShells.symmetric_row_energy
+PAL.PrimeShells.antisymmetric_row_energy
 PAL.PrimeShells.robust_axis_balance
 PAL.PrimeShells.robust_condition_bound_three
-PAL.PrimeShells.exists_sharply_conditioned_frame_choice
+PAL.PrimeShells.frameConditionNumberSq_le_of_conditionBound
+PAL.PrimeShells.exists_frameConditionNumberSq_le_three
 ```
 
-### Theorem 5.2 — Sharpness
+### Theorem 5.2 - Sharpness at the ramified shell
 
-At the ramified norm-\(3\) point
+At
 
 \[
 x=1+\eta,
 \]
 
-one has \(X=3\), \(Y=1\), so
+one has
+
+\[
+N(x)=3,\qquad X(x)=3,\qquad Y(x)=1,
+\]
+
+and therefore
 
 \[
 \mathcal A(x)^2=\frac34,
@@ -382,23 +413,23 @@ one has \(X=3\), \(Y=1\), so
 \kappa_2(F_x)^2=3.
 \]
 
-No choice among the three unit-rotation classes admits a universal squared conditioning constant smaller than \(3\). Hence both \(3/4\) and \(3\) are sharp for the stated selector problem.
-
-Lean declarations:
+No universal area lower bound larger than \(3/4\) and no universal squared conditioning constant smaller than \(3\) works for the stated three-choice ready-frame selector. Both constants are exact.
 
 ```text
 PAL.PrimeShells.ramified_strength_upper
 PAL.PrimeShells.ramified_strength_attained
 PAL.PrimeShells.ramified_no_condition_bound_below_three
 PAL.PrimeShells.universal_condition_constant_three_is_sharp
+PAL.PrimeShells.ramified_frameConditionNumberSq
+PAL.PrimeShells.frameConditionNumberSq_three_is_sharp
 ```
 
-> **Author geometry insert 4 — Three chances around the shell.**  
-> Give the visual argument: the three conjugate-pair angles are the same reflected opening viewed after sixty-degree unit rotations; one choice must stay at least sixty degrees open. Use the algebraic identity as the certificate, not as a replacement for the picture.
+> **Author geometry insert 4 - Three chances around the shell.**  
+> Show the three antipodal candidate pairs as the same reflected opening after successive sixty-degree unit turns. One of the three openings must remain at least sixty degrees wide. Let the product identity carry the proof burden.
 
 ## 6. Shell-to-shell transport
 
-Let \(x\) and \(y\) be ready frames. In the scaled conjugation eigen-coordinates, define
+Let \(x\) and \(y\) be ready frames. In conjugation eigen-coordinates, define
 
 \[
 T_{x\to y}(r,s)
@@ -409,7 +440,7 @@ T_{x\to y}(r,s)
 \right).
 \]
 
-Then
+It sends the source references to their target counterparts:
 
 \[
 T_{x\to y}(B_x^+)=B_y^+,
@@ -417,25 +448,23 @@ T_{x\to y}(B_x^+)=B_y^+,
 T_{x\to y}(B_x^-)=B_y^-.
 \]
 
-It is the unique map preserving arbitrary real linear combinations with those two endpoint conditions.
+### Theorem 6.1 - Characterized transport
 
-### Theorem 6.1 — Characterized transport
-
-If \(f:\mathbb R^2\to\mathbb R^2\) preserves linear combinations and
+Suppose \(f:\mathbb R^2\to\mathbb R^2\) preserves all real linear combinations and
 
 \[
 f(B_x^+)=B_y^+,
 \qquad
-f(B_x^-)=B_y^-,
+f(B_x^-)=B_y^-.
 \]
 
-then
+Then
 
 \[
 f=T_{x\to y}.
 \]
 
-Lean declarations:
+Two corresponding references therefore determine the transport uniquely.
 
 ```text
 PAL.PrimeShells.transport_combine
@@ -443,9 +472,9 @@ PAL.PrimeShells.transport_preservesCombinations
 PAL.PrimeShells.transport_unique
 ```
 
-### Theorem 6.2 — Groupoid laws
+### Theorem 6.2 - Exact composition laws
 
-For ready source and intermediate frames:
+For ready source and intermediate frames,
 
 \[
 T_{x\to x}=\operatorname{id},
@@ -459,82 +488,103 @@ T_{y\to z}\circ T_{x\to y}=T_{x\to z},
 T_{y\to x}=T_{x\to y}^{-1}.
 \]
 
-Lean declarations:
-
 ```text
+PAL.PrimeShells.transport_selected
+PAL.PrimeShells.transport_reflected
 PAL.PrimeShells.transport_self
 PAL.PrimeShells.transport_compose
 PAL.PrimeShells.transport_inverse
 ```
 
-The shell labels select the endpoints of transport; they do not create a physical motion, causal history, or privileged global coordinate system.
+The map is a coordinate comparison between framed shells. It does not by itself describe a physical trajectory, time evolution, causal process, or canonical global atlas.
 
-> **Author geometry insert 5 — Transport without teleportation.**  
-> Explain transport as the unique comparison rule fixed by two corresponding references. Distinguish the mathematical map from a path traversed through physical space or time.
+> **Author geometry insert 5 - Transport without teleportation.**  
+> Explain transport as the unique comparison rule fixed by the two reference correspondences. Distinguish a map between frames from an object physically moving between radii.
 
 ## 7. Prime-shell specialization
 
-Every supplied exact representation
+Every exact supplied representation
 
 \[
 p=a^2+ab+b^2
 \]
 
-of a rational prime gives a nonzero shell vector. The sharp frame selector therefore applies immediately:
+of a rational prime gives a nonzero shell vector. The sharp selector therefore yields a ready conjugate pair with
 
-### Corollary 7.1 — Prime shell with a sharp local frame
-
-For every represented rational prime \(p\), there is a unit-rotation choice whose conjugate pair is ready, has squared normalized area at least \(3/4\), and satisfies the squared conditioning bound \(3\).
-
-Lean declaration:
+\[
+\mathcal A^2\ge\frac34,
+\qquad
+\kappa_2^2\le3.
+\]
 
 ```text
+PAL.PrimeShells.prime_shell_has_robust_conjugate_frame
 PAL.PrimeShells.prime_shell_has_sharply_conditioned_frame
+PAL.PrimeShells.prime_shell_has_conditionNumberSq_le_three
 ```
 
-For split primes, the classical two-orbit theorem supplies the two conjugate arithmetic classes from which the references are selected. For the ramified prime \(3\), the same finite selector remains valid while the orbit structure is exceptional.
+This corollary consumes a certified representation; it does not discover or factor the prime. For split primes, the classical two-orbit theorem supplies the two conjugate arithmetic classes. The ramified prime \(3\) is exceptional in orbit structure and simultaneously certifies sharpness of the frame constants.
 
 ## 8. Formal verification account
 
-The current Lean modules are:
+The theorem surface is divided into five Lean modules:
 
 ```text
 PAL/PrimeShells.lean
+PAL/PrimeShellsModThreeKernel.lean
 PAL/PrimeShellsConditioning.lean
 PAL/PrimeShellsBasisTransport.lean
-Audit/PrimeShells.lean
-Audit/PrimeShellsConditioning.lean
-Audit/PrimeShellsBasisTransport.lean
+PAL/PrimeShellsConditionNumber.lean
 ```
 
-The dedicated workflow pins Lean 4.32.1 and Mathlib 4.32.1, compiles the modules, records `#print axioms` output, enforces the repository proof-hole policy, and uploads its build and dependency receipts.
+Dependency receipts are generated from:
 
-No `sorry`, `admit`, or manuscript-specific axiom is permitted. Standard Lean logical dependencies remain visible in the receipts. Any finite native-decision certificate, if retained, must remain separately identified rather than described as a handwritten kernel proof.
+```text
+Audit/PrimeShells.lean
+Audit/PrimeShellsModThreeKernel.lean
+Audit/PrimeShellsConditioning.lean
+Audit/PrimeShellsBasisTransport.lean
+Audit/PrimeShellsConditionNumber.lean
+```
+
+The dedicated workflow pins Lean 4.32.1 and Mathlib 4.32.1, compiles the complete module chain, records each `#print axioms` result, requires all five receipt files, rejects any dependency outside `propext`, `Classical.choice`, and `Quot.sound`, runs the repository proof-hole policy, and uploads the build record.
+
+The current theorem inventory contains 62 publication-facing declarations. No `sorry`, `admit`, manuscript-specific postulate, or native-decision dependency is admitted by the publication receipt gate.
+
+A green formal receipt proves only the exact Lean statements under the pinned environment. It does not prove that the cited classical sources are complete, that the paper is novel, that the geometric interpretation is canonical, or that the author has adopted the manuscript for publication.
 
 ## 9. Literature and priority boundary
 
-The following source roles must remain separate:
+Source roles must remain separate:
 
-- U. P. Nair, *Elementary results on the binary quadratic form* \(a^2+ab+b^2\): classical representability background.
-- O. Marmon, *Hexagonal Lattice Points on Circles*: Eisenstein/hexagonal representation counts and angular distribution.
-- Standard linear algebra: basis, determinant, singular values, condition number, and uniqueness of a linear map from basis images.
-- This manuscript: the selected conjugate-pair frame package, the three-choice product certificate, the sharp \(3/4\) area and \(3\) squared-conditioning constants, and the characterized shell-transport organization—subject to systematic priority review.
-- PAL v2.3-M / RAINBOW: the author’s prior research address and provenance for shell/frame language, not independent corroboration.
+- U. P. Nair supplies elementary representability background for \(a^2+ab+b^2\).
+- O. Marmon supplies the Eisenstein/hexagonal shell count, split/ramified/inert classification, and angular structure.
+- Standard linear algebra supplies familiar basis, determinant, orthogonality, and condition-number concepts.
+- PAL v2.3-M / RAINBOW supplies the author’s prior research address for shell and local-frame language; it is provenance, not independent corroboration.
+- This manuscript contributes the selected conjugate-pair construction, the exact three-choice product certificate, the sharp \(3/4\) area and \(3\) squared-conditioning constants, and the characterized composable transport - subject to systematic priority review.
 
-Initial searching has not yet located the complete theorem package in this exact form. That is not an exhaustive novelty result.
+The initial targeted search found nearby literature on lattice shells, angular distribution, reduced bases, and frame conditioning, but not the exact theorem package above. That is not an exhaustive novelty result.
 
-## 10. Nonclaims
+## 10. Nonclaims and open burdens
 
-This paper does not claim:
+This manuscript does not claim:
 
 - a proof or new route to the Riemann Hypothesis;
 - a new classification of Eisenstein primes;
-- that every use of the phrase “prime shell” is new;
+- that every phrase “prime shell” is new;
 - a physical shell, particle model, wavefunction, force law, or cosmology;
-- that one marked point is insufficient when an ambient orientation operator has already been supplied;
-- that the selected frame is canonical without a declared tie-break rule;
-- that exact real-number conditioning automatically yields stable floating-point decoding at every scale;
-- that a formal proof establishes global novelty, publication quality, or author adoption.
+- that one marked point is insufficient when a complete ambient orientation has already been supplied;
+- that the selected unit choice is canonical without a tie-break rule;
+- that exact real-number conditioning automatically guarantees every finite-precision implementation;
+- that Lean compilation establishes global novelty, peer review, author adoption, or publication authority.
+
+Open work before publication:
+
+1. Christopher’s intuitive geometry and figures.
+2. Systematic literature and priority review.
+3. Independent mathematical review of the new sharp selector and transport package.
+4. Final citation metadata and exact release manifest.
+5. Optional future end-to-end Lean reconstruction of the classical arbitrary-prime representation and orbit-count theorem.
 
 ## 11. Proposed closing sentence
 
