@@ -1,0 +1,278 @@
+{
+  "lane": "pal23",
+  "resume_receipts": [
+    "PAL-RESUME-20260907-01"
+  ],
+  "claims": [
+    {
+      "id": "PAL23-IF-01",
+      "run_id": "local-pal23-projection",
+      "title": "reachable decoder iff trace fibers preserve the requested answer",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23.reachable_decoder_iff",
+      "statement": "A decoder on Set.range trace exists exactly when equal trace values have equal answers; uniqueness is not checked here.",
+      "source_refs": [
+        "PAL v2.3-M P1384-P1399 M-INTERFACE-FIBER",
+        "PAL v2.3-T P1201-P1204 T54@2.3",
+        "PAL v2.3-L P1023 D33/O54"
+      ],
+      "assumptions": [
+        "Lean types W, T, Q",
+        "total functions trace and answer",
+        "classical choice for a representative of each reachable trace value"
+      ],
+      "countercase": "PAL23-IF-02 proves a conditional obstruction from supplied conflicting inputs; it does not construct those inputs.",
+      "authority_ceiling": "Conditional set-theoretic factorization only; no totalization, computability, source existence, authority, or PAL adoption.",
+      "residual": "Decoder uniqueness, unreachable ambient values, decoder class, and question adequacy are not modeled.",
+      "reopening": "Change W, T, Q, trace, answer, reachable decoder domain, or requested decoder class."
+    },
+    {
+      "id": "PAL23-IF-02",
+      "run_id": "local-pal23-projection",
+      "title": "trace collision prevents a reachable decoder when answers differ",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23.collision_prevents_reachable_decoder",
+      "statement": "A pair with equal trace and unequal answer refutes existence of a reachable decoder.",
+      "source_refs": [
+        "PAL v2.3-M P1387-P1389 M-INTERFACE-FIBER",
+        "PAL v2.3-T P1201-P1204 T54@2.3"
+      ],
+      "assumptions": [
+        "Two supplied source points",
+        "an equality of their trace values",
+        "an inequality of their requested answers"
+      ],
+      "countercase": "Conditional obstruction only: the collision witnesses are hypotheses, not an instantiated finite countermodel.",
+      "authority_ceiling": "Logical obstruction only; no claim about empirical detectability or source identity.",
+      "residual": "No finite enumeration or auxiliary-label repair is checked.",
+      "reopening": "Change the trace, answer, collision witnesses, or decoder domain."
+    },
+    {
+      "id": "PAL23-IF-03",
+      "run_id": "local-pal23-projection",
+      "title": "unqualified totalization fails with empty source and nonempty ambient interface",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23.no_total_decoder_empty_source_nonempty_ambient",
+      "statement": "For an explicit Empty source trace into nonempty Bool ambient space and Empty answer space, no ambient total decoder exists.",
+      "source_refs": [
+        "PAL v2.3-M P1387, P1398 M-INTERFACE-FIBER",
+        "PAL v2.3-T P1205-P1208 T55@2.3"
+      ],
+      "assumptions": [
+        "source domain Empty",
+        "ambient type Bool is nonempty",
+        "answer codomain Empty"
+      ],
+      "countercase": "Empty source with Bool ambient and Empty answer codomain blocks total extension.",
+      "authority_ceiling": "Refutes only an unqualified total-decoder generalization; it does not classify separately supplied totalizations.",
+      "residual": "The empty source is encoded in the fixture explanation rather than a source-map parameter.",
+      "reopening": "Change source, ambient codomain, answer codomain, or totalization requirements."
+    },
+    {
+      "id": "PAL23-CAP-01",
+      "run_id": "local-pal23-reentry",
+      "title": "freeze is injective under a thaw left inverse",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23.freeze_injective",
+      "statement": "If thaw (freeze work) equals work for every declared work state, freeze is injective.",
+      "source_refs": [
+        "PAL v2.3-M P1480-P1485 M-A12-CAPSULE",
+        "PAL v2.3-T P1237-P1240 T63@2.3",
+        "PAL v2.3-L P1056-P1068 D36/O57"
+      ],
+      "assumptions": [
+        "declared Work and Capsule types",
+        "freeze/thaw functions",
+        "universal work-state left-inverse law"
+      ],
+      "countercase": "Without the left-inverse assumption, a constant freeze map need not be injective.",
+      "authority_ceiling": "Work-state algebra only; no token authority, transport validity, or non-work recovery.",
+      "residual": "Serialization, environment, suffix determinism, and lineage authority remain external assumptions.",
+      "reopening": "Change capsule fields, maps, work-state scope, or the left-inverse law."
+    },
+    {
+      "id": "PAL23-CAP-02",
+      "run_id": "local-pal23-reentry",
+      "title": "same suffix function respects the exact freeze/thaw equality",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23.suffix_preserved",
+      "statement": "Any supplied suffix applied after thaw-freeze equals that suffix on the original work state.",
+      "source_refs": [
+        "PAL v2.3-M P1480-P1485 M-A12-CAPSULE",
+        "PAL v2.3-T P1237-P1240 T63@2.3 (algebraic component only)"
+      ],
+      "assumptions": [
+        "the freeze/thaw left-inverse law",
+        "one supplied deterministic suffix function"
+      ],
+      "countercase": "A changed suffix function is outside the theorem and does not support terminal equality.",
+      "authority_ceiling": "Terminal work equality under the named suffix only; no equality of audit, grant, resource, authority, or external effect.",
+      "residual": "No serialization, resumed execution, environmental determinism, or complete FX64 re-entry fixture is verified.",
+      "reopening": "Change suffix, capsule map, work scope, or serialization law."
+    },
+    {
+      "id": "PAL23-CAP-03",
+      "run_id": "local-pal23-reentry",
+      "title": "Boolean identity round-trip fixture",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23.bool_capsule_roundtrip",
+      "statement": "For every Boolean work value, id (id work) = work; the two identity functions instantiate the mathematical round-trip law only.",
+      "source_refs": [
+        "PAL v2.3-M P1491-P1493 M-A12-CAPSULE",
+        "PAL v2.3-T P1237-P1240 T63@2.3"
+      ],
+      "assumptions": [
+        "identity functions on Bool"
+      ],
+      "countercase": "This finite identity fixture does not establish general serialization.",
+      "authority_ceiling": "A finite fixture only; no A12 token authority or production checkpoint claim.",
+      "residual": "No capsule fields, serialization, stored bytes, environment identity, grant token, or implemented freeze/thaw mechanism is modeled.",
+      "reopening": "Replace the Boolean identity fixture or its maps."
+    },
+    {
+      "id": "PAL23-STUT-01",
+      "run_id": "local-pal23-projection",
+      "title": "heartbeat preserves the declared work coordinate",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23.heartbeat_work_stutter",
+      "statement": "The finite heartbeat fixture leaves idle.work unchanged.",
+      "source_refs": [
+        "PAL v2.3-M P1415-P1427 M-RETURN-PROJ",
+        "PAL v2.3-T P1233-P1236 T62@2.3"
+      ],
+      "assumptions": [
+        "the declared HeartbeatState and heartbeat transition"
+      ],
+      "countercase": "PAL23-STUT-02 shows this projected equality is not total-state equality.",
+      "authority_ceiling": "One work projection equality only; no progress, liveness, success, or closure.",
+      "residual": "No external export or observation coverage is modeled.",
+      "reopening": "Change state coordinates, work projection, idle state, or heartbeat transition."
+    },
+    {
+      "id": "PAL23-STUT-02",
+      "run_id": "local-pal23-projection",
+      "title": "heartbeat has hidden total-state motion",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23.heartbeat_hidden_motion",
+      "statement": "The heartbeat fixture changes total state while preserving work.",
+      "source_refs": [
+        "PAL v2.3-M P1425-P1433 M-RETURN-PROJ",
+        "PAL v2.3-T P1233-P1236 T62@2.3"
+      ],
+      "assumptions": [
+        "the declared audit increment, spent-resource increment, and grant transition"
+      ],
+      "countercase": "Fixed work with changed audit/resource/grant coordinates is the predecessor counterfixture.",
+      "authority_ceiling": "A finite product-state countermodel; no statement about all heartbeats or systems.",
+      "residual": "Resource semantics and authority meaning are represented only as coordinates.",
+      "reopening": "Change heartbeat fields or total-state equality."
+    },
+    {
+      "id": "PAL23-STUT-03",
+      "run_id": "local-pal23-projection",
+      "title": "one heartbeat does not change the declared progress coordinate",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23.heartbeat_not_progress",
+      "statement": "The fixture's Boolean-work progress coordinate is unchanged by heartbeat.",
+      "source_refs": [
+        "PAL v2.3-M P1508-P1516 M-A13-STUTTER",
+        "PAL v2.3-T P1245-P1248 T65@2.3"
+      ],
+      "assumptions": [
+        "the declared progress projection",
+        "the heartbeat transition classification"
+      ],
+      "countercase": "Boundary example supporting this exact theorem and opposing the broader claim that administrative heartbeat recurrence certifies progress. No productive-transition model is supplied.",
+      "authority_ceiling": "Fixture-local classification only; no fairness or liveness conclusion.",
+      "residual": "Rank, acceptance, schedule, and observation horizon are not represented.",
+      "reopening": "Change progress projection or transition classification.",
+      "countercase_kind": "BOUNDARY_EXAMPLE",
+      "source_scope": "Partial negative/boundary example motivating the A13 card; no full administrative/productive relation, cadence, rank, or fairness realization."
+    },
+    {
+      "id": "PAL23-STUT-04",
+      "run_id": "local-pal23-projection",
+      "title": "finite heartbeat loop has no declared progress",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23.heartbeat_loop_no_progress",
+      "statement": "For every natural iterate count n, heartbeat iteration starting at the specific idle fixture preserves its declared progress projection.",
+      "source_refs": [
+        "PAL v2.3-M P1510-P1514 M-A13-STUTTER",
+        "PAL v2.3-T P1245-P1248 T65@2.3"
+      ],
+      "assumptions": [
+        "finite natural iteration",
+        "administrative heartbeat transition",
+        "fixture progress projection"
+      ],
+      "countercase": "Boundary example supporting this exact theorem and opposing the broader claim that administrative heartbeat recurrence certifies progress. No productive-transition model is supplied.",
+      "authority_ceiling": "Finite recurrence result only; no infinite liveness, fairness, or termination claim.",
+      "residual": "Scheduler and productive relation are not modeled beyond this transition.",
+      "reopening": "Change iteration semantics, transition class, or progress projection.",
+      "countercase_kind": "BOUNDARY_EXAMPLE",
+      "source_scope": "Partial negative/boundary example motivating the A13 card; no full administrative/productive relation, cadence, rank, or fairness realization."
+    },
+    {
+      "id": "PAL23-STUT-05",
+      "run_id": "local-pal23-reentry",
+      "title": "work restoration leaves the changed spent/grant fields in the fixture",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23.restore_work_not_restore_budget_or_grant",
+      "statement": "A work-coordinate restoration after heartbeat retains changed spent and grant fields.",
+      "source_refs": [
+        "PAL v2.3-M P1480-P1497 M-A12-CAPSULE",
+        "PAL v2.3-L P1064, P1222 D36/O57/O58",
+        "PAL v2.3-T P1237-P1240 T63@2.3",
+        "PAL v2.3-M P1415-P1427 M-RETURN-PROJ (work/total-state separation only)"
+      ],
+      "assumptions": [
+        "declared product state with Bool and Nat coordinates",
+        "restoreWork replaces only work",
+        "heartbeat consumes one fixture unit and changes grantLive"
+      ],
+      "countercase": "Same work with altered resource and grant coordinates refutes total-state recovery from work restoration.",
+      "authority_ceiling": "One concrete counterexample using modeled spent/grant fields; no claim about actual resource accounts, authorization, or every re-entry.",
+      "residual": "Nat spent and Bool grantLive are modeled coordinates; no budget-minus-consumption slack equation, grant epochs, top-up ledger, or real authorization record is checked.",
+      "reopening": "Change restore policy, resource/grant coordinate, or heartbeat transition."
+    },
+    {
+      "id": "PAL23-STUT-06",
+      "run_id": "local-pal23-reentry",
+      "title": "work restoration is not total-state recovery",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23.restore_work_is_not_total_state_recovery",
+      "statement": "The restored fixture state remains unequal to the pre-heartbeat state.",
+      "source_refs": [
+        "PAL v2.3-M P1419-P1427 M-RETURN-PROJ",
+        "PAL v2.3-M P1493-P1497 M-A12-CAPSULE",
+        "PAL v2.3-T P1233-P1240 T62@2.3/T63@2.3"
+      ],
+      "assumptions": [
+        "the declared finite product-state equality",
+        "work-only restore policy"
+      ],
+      "countercase": "The audit/resource/grant deltas witness nonidentity.",
+      "authority_ceiling": "Finite equality counterfixture only; no broader transport judgment.",
+      "residual": "No audit receipt, token lineage, or external terminal effect is encoded.",
+      "reopening": "Change state equality, restore policy, or non-work transition fields."
+    }
+  ],
+  "root_semantic_review": {
+    "receipt": "ROOT-PAL-REVIEW-20260907-01",
+    "formation_timing": "NO_NEW_STEERING",
+    "classification_correction": "IF02 is conditional, not an instantiated countermodel.",
+    "scope_corrections": [
+      "CAP02 is composition algebra, not execution.",
+      "STUT04 starts from idle only.",
+      "Heartbeat examples are boundary examples.",
+      "STUT05 represents fields, not a full slack or authorization system."
+    ],
+    "selection_scope": "Report metadata only; no theorem or source adoption change.",
+    "additional_corrections": [
+      "CAP03 explicitly identity functions only.",
+      "STUT03/04 are partial A13 boundary examples.",
+      "STUT05 routes to checkpoint/projection separation, not cadence."
+    ]
+  },
+  "source_reference_scope": "Source routes identify partial mathematical components or boundary examples; none certifies execution of a complete versioned T fixture."
+}

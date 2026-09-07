@@ -1,0 +1,7 @@
+/lakefile.lean text eol=lf
+/Experiments.lean text eol=lf
+/Experiments/*.lean text eol=lf
+/Audit/pal-v23-charter/** text eol=lf
+/docs/generated/pal-v23-charter-local-checks.md text eol=lf
+/scripts/run_pal23_charter.py text eol=lf
+/scripts/extract_pal23_charter_sources.py text eol=lf
