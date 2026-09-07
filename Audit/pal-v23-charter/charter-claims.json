@@ -1,0 +1,311 @@
+{
+  "lane": "charter",
+  "run_id": "local-charter-banks",
+  "tether": {
+    "cycle_id": "PAL23-CHARTER-20260907-C1",
+    "commissioning_receipt": "CHAR-COMMISSION-20260907-01",
+    "predecessor_receipt": "ROOT-READONLY-PREFLIGHT-20260907",
+    "resume_receipt": {
+      "event": "resumed_after_tether_amendment",
+      "prior_observation": "WORKER_BLOCKED before execution: cycle identifier and predecessor receipt absent",
+      "amendment": "CHAR-COMMISSION-20260907-01 supplied cycle_id and predecessor_receipt",
+      "result": "pre-execution tether validation only; not a theorem result",
+      "cache_resume_receipt": "CHAR-RESUME-20260907-01",
+      "cache_resume_event": "controller terminated verified stale Charter compiler and preserved Lake config before fresh compilation"
+      ,
+      "metadata_correction_resume_receipt": "CHAR-RESUME-20260907-02",
+      "metadata_correction_event": "TaskKeeper requested source-scope wording correction without theorem changes"
+    }
+  },
+  "source": {
+    "id": "CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells",
+    "sha256": "3f813ecadfcea957bdccb157d83792612a85c78e318a4ec22da62efc3d8bcabf",
+    "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.txt"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "run_id": "local-charter-banks",
+      "title": "Integer norm decomposition",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.four_Q_identity",
+      "statement": "∀ a b : Int, 4 * Q a b = 3 * (a + b)^2 + (a - b)^2",
+      "source_refs": [
+        "P0612-P0618"
+      ],
+      "assumptions": [
+        "integer coordinate adapter",
+        "source BPS interpretation requires m >= 1; not used in this integer identity"
+      ],
+      "countercase": "Nat subtraction truncates for unordered inputs, so the identity is checked over Int.",
+      "authority_ceiling": "Polynomial identity only.",
+      "residual": "No shell occupancy result.",
+      "reopening": "Use an exact lattice representation theorem."
+    },
+    {
+      "id": "C02",
+      "run_id": "local-charter-banks",
+      "title": "Adjacent index polynomial",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.adjacent_index_formula",
+      "statement": "∀ m : Nat, primeShellIndex m = 3*m^2 + 3*m + 1",
+      "source_refs": [
+        "P0612-P0618"
+      ],
+      "assumptions": [
+        "Nat bank adapter",
+        "source BPS interpretation requires m >= 1; arithmetic formula also admits m = 0"
+      ],
+      "countercase": "No primality follows from the polynomial.",
+      "authority_ceiling": "Arithmetic evaluation only.",
+      "residual": "Representation is not a primality witness.",
+      "reopening": "Supply a separately checked primality witness."
+    },
+    {
+      "id": "C03",
+      "run_id": "local-charter-banks",
+      "title": "Odd-total index identity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.four_adjacent_index_formula",
+      "statement": "∀ m : Nat, 4*primeShellIndex m = 3*bankTotal m^2 + 1",
+      "source_refs": [
+        "P0612-P0618"
+      ],
+      "assumptions": [
+        "Nat bank adapter",
+        "source BPS interpretation requires m >= 1; arithmetic formula also admits m = 0"
+      ],
+      "countercase": "Does not establish an occupied prime shell.",
+      "authority_ceiling": "Arithmetic identity only.",
+      "residual": "No BPS adapter, complete prime-shell occupancy theorem, or systems result.",
+      "reopening": "Supply a BPS adapter or complete occupancy theorem separately."
+    },
+    {
+      "id": "C04",
+      "run_id": "local-charter-banks",
+      "title": "Adjacent bank total",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.adjacent_banks_total",
+      "statement": "∀ m : Nat, (m+1)+m = bankTotal m",
+      "source_refs": [
+        "P0607-P0611"
+      ],
+      "assumptions": [
+        "declared odd-total definition",
+        "source BPS subclass requires m >= 1; theorem is arithmetic extension"
+      ],
+      "countercase": "No task-carrier semantics are modeled.",
+      "authority_ceiling": "Nat arithmetic only.",
+      "residual": "Bank labels are uninterpreted.",
+      "reopening": "Supply a TTC model separately."
+    },
+    {
+      "id": "C05",
+      "run_id": "local-charter-banks",
+      "title": "Adjacent banks are distinct",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.adjacent_banks_ordered_distinct",
+      "statement": "∀ m : Nat, m < m+1",
+      "source_refs": [
+        "P0600-P0605"
+      ],
+      "assumptions": [
+        "Nat order",
+        "source BPS subclass requires m >= 1; theorem is arithmetic extension"
+      ],
+      "countercase": "Order supplies no authority or voting claim.",
+      "authority_ceiling": "Order fact only.",
+      "residual": "No semantic orientation conclusion.",
+      "reopening": "Use a declared orientation adapter."
+    },
+    {
+      "id": "C06",
+      "run_id": "local-charter-banks",
+      "title": "Closest gap-one split is unique",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.closest_ordered_distinct_split_unique",
+      "statement": "gap one, order, and total 2m+1 imply a=m+1 and b=m",
+      "source_refs": [
+        "P0600-P0605"
+      ],
+      "assumptions": [
+        "Nat subtraction",
+        "gap-one closest condition",
+        "Nat nonnegative ordered split",
+        "source positive-bank BPS application requires m >= 1; the theorem itself permits m = 0 with a = 1 and b = 0"
+      ],
+      "countercase": "Ordered distinct splits with larger gaps exist.",
+      "authority_ceiling": "Conditional uniqueness only.",
+      "residual": "Minimality criterion is encoded as gap one.",
+      "reopening": "Formalize an alternative distance metric if desired."
+    },
+    {
+      "id": "C07",
+      "run_id": "local-charter-banks",
+      "title": "Ordered split gap is positive",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.ordered_distinct_gap_positive",
+      "statement": "b<a implies 0<a-b",
+      "source_refs": [
+        "P0600-P0605"
+      ],
+      "assumptions": [
+        "Nat order",
+        "positive ordered split setting"
+      ],
+      "countercase": "Equality has zero gap and is excluded by the hypothesis.",
+      "authority_ceiling": "Order arithmetic only.",
+      "residual": "No minimality conclusion alone.",
+      "reopening": "Combine with a declared objective."
+    },
+    {
+      "id": "C08",
+      "run_id": "local-charter-banks",
+      "title": "Derived arithmetic: adjacent banks minimize Nat Q",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Charter.adjacent_banks_minimize_Q",
+      "statement": "ordered distinct Nat splits of bankTotal m have primeShellIndex m ≤ natQ a b",
+      "source_refs": [
+        "P0600-P0605",
+        "P0612-P0618"
+      ],
+      "assumptions": [
+        "Nat coordinate adapter",
+        "fixed total",
+        "ordered distinct inputs",
+        "source BPS subclass requires m >= 1; theorem is arithmetic extension",
+        "derived consequence of the declared fixed-total Nat adapter, not a verbatim CHARTER minimization proposition"
+      ],
+      "countercase": "Without fixed total, no such minimization follows.",
+      "authority_ceiling": "Declared finite arithmetic objective only.",
+      "residual": "No performance or prime conclusion.",
+      "reopening": "Specify another domain or objective explicitly."
+    },
+    {
+      "id": "C09",
+      "run_id": "local-charter-banks",
+      "title": "Concrete composite index",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.index_five_is_ninety_one",
+      "statement": "primeShellIndex 5 = 91",
+      "source_refs": [
+        "P0619-P0621"
+      ],
+      "assumptions": [
+        "Nat adapter"
+      ],
+      "countercase": "A sequence can have both prime and composite members.",
+      "authority_ceiling": "Single exact calculation.",
+      "residual": "No sequence-wide conclusion.",
+      "reopening": "Check another stated index."
+    },
+    {
+      "id": "C10",
+      "run_id": "local-charter-banks",
+      "title": "Ninety-one factorization",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.ninety_one_factorization",
+      "statement": "91 = 7*13",
+      "source_refs": [
+        "P0621"
+      ],
+      "assumptions": [],
+      "countercase": "Does not factor other indices.",
+      "authority_ceiling": "Single exact calculation.",
+      "residual": "No density claim.",
+      "reopening": "Provide a separate factorization target."
+    },
+    {
+      "id": "C11",
+      "run_id": "local-charter-banks",
+      "title": "Derived composite subfamily factorization",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.composite_subfamily_factorization",
+      "statement": "∀ k, primeShellIndex (7k+5)=7*(21k^2+33k+13)",
+      "source_refs": [
+        "P0616",
+        "P0621"
+      ],
+      "assumptions": [
+        "new derived algebraic consequence, not quoted as a CHARTER theorem"
+      ],
+      "countercase": "Does not classify indices outside 7k+5.",
+      "authority_ceiling": "Derived arithmetic factorization only.",
+      "residual": "No universal compositeness or prime-distribution claim.",
+      "reopening": "Study other residue classes separately."
+    },
+    {
+      "id": "C12",
+      "run_id": "local-charter-banks",
+      "title": "Derived composite subfamily",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Charter.composite_subfamily",
+      "statement": "∀ k, ¬ Nat.Prime (primeShellIndex (7k+5))",
+      "source_refs": [
+        "P0619-P0621"
+      ],
+      "assumptions": [
+        "C11 factorization"
+      ],
+      "countercase": "The infinite indexed subfamily refutes universal primality.",
+      "authority_ceiling": "Refutes only universal primality of this Nat sequence.",
+      "residual": "Does not decide primes at other indices.",
+      "reopening": "Supply explicit prime witnesses case by case."
+    },
+    {
+      "id": "C13",
+      "run_id": "local-charter-banks",
+      "title": "Index one prime",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.index_one_prime",
+      "statement": "Nat.Prime (primeShellIndex 1)",
+      "source_refs": [
+        "P0619-P0621"
+      ],
+      "assumptions": [
+        "finite computation"
+      ],
+      "countercase": "Finite primality is not universal primality.",
+      "authority_ceiling": "One exact index.",
+      "residual": "No infinite family claim.",
+      "reopening": "Check a named additional index."
+    },
+    {
+      "id": "C14",
+      "run_id": "local-charter-banks",
+      "title": "Index two prime",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.index_two_prime",
+      "statement": "Nat.Prime (primeShellIndex 2)",
+      "source_refs": [
+        "P0619-P0621"
+      ],
+      "assumptions": [
+        "finite computation"
+      ],
+      "countercase": "Finite primality is not universal primality.",
+      "authority_ceiling": "One exact index.",
+      "residual": "No infinite family claim.",
+      "reopening": "Check a named additional index."
+    },
+    {
+      "id": "C15",
+      "run_id": "local-charter-banks",
+      "title": "Index three prime",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Charter.index_three_prime",
+      "statement": "Nat.Prime (primeShellIndex 3)",
+      "source_refs": [
+        "P0619-P0621",
+        "P0634"
+      ],
+      "assumptions": [
+        "finite computation"
+      ],
+      "countercase": "Finite primality is not universal primality.",
+      "authority_ceiling": "One exact index.",
+      "residual": "No infinite family claim.",
+      "reopening": "Check a named additional index."
+    }
+  ]
+}

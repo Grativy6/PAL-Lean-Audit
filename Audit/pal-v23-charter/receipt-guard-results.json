@@ -1,0 +1,22 @@
+{
+  "population": "TOOLING_MUTATION_CHECKS_NOT_THEOREM_RESULTS",
+  "baseline": "Audit/pal-v23-charter/evidence/attempt-20260907T211422367829Z/pal23-axioms.txt",
+  "valid_baseline": "ACCEPTED",
+  "probes": [
+    {
+      "probe": "missing_axiom_free_row",
+      "status": "EXPECTED_REJECTION",
+      "diagnostic": "Exact executed axiom inventory mismatch: C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\artifacts\\pal-v23-charter-2026-09-07\\receipt-parser-probes\\missing_axiom_free_row.txt"
+    },
+    {
+      "probe": "duplicated_row",
+      "status": "EXPECTED_REJECTION",
+      "diagnostic": "Exact executed axiom inventory mismatch: C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\artifacts\\pal-v23-charter-2026-09-07\\receipt-parser-probes\\duplicated_row.txt"
+    },
+    {
+      "probe": "unlisted_dependency",
+      "status": "EXPECTED_REJECTION",
+      "diagnostic": "Unapproved dependency: Experiments.Pal23.reachable_decoder_iff: ['Unexpected.customAxiom']"
+    }
+  ]
+}

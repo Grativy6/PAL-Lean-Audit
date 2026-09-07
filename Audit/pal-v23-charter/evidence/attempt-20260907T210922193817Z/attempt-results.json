@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "pal-v23-charter-20260907",
+  "status": "FAILED_LOCAL_CHECK",
+  "started_utc": "2026-09-07T21:09:22.332817+00:00",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "base_commit": "0c084fd467c17f29329d06a58b6426a82be833fa",
+  "source_checks": [
+    {
+      "id": "PAL-v2.3-Spine",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-C",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-L",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-M",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-T",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "status": "MATCH"
+    },
+    {
+      "id": "CHARTER-v1.0",
+      "sha256": "3f813ecadfcea957bdccb157d83792612a85c78e318a4ec22da62efc3d8bcabf",
+      "status": "MATCH"
+    }
+  ],
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/lean-version.txt",
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d"
+    },
+    {
+      "label": "lake-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/lake-build.txt",
+      "sha256": "a2c65975f15da20e011e812953755b6f81c1bcdc03b5fedcdb040fd5f694468c"
+    },
+    {
+      "label": "pal23-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/Pal23Axioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/pal23-axioms.txt",
+      "sha256": "604cad45e8096a3d148c76afe32f8c21ea547e7f7915d3d6f69ac3fdcf1fbd12"
+    },
+    {
+      "label": "charter-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/CharterAxioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/charter-axioms.txt",
+      "sha256": "f1ce7fed61d4f882e09e89d19f00c61c0c00bd6e1976aff21ec3ec91c46028c7"
+    },
+    {
+      "label": "leanchecker-experiments",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/leanchecker-experiments.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "leanchecker-historical",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "PALLeanAudit"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/leanchecker-historical.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "historical-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-policy.txt",
+      "sha256": "54ad87c30ed563bce3cdcd2265e22c7e79b6bb9a1bf69db93032305808003b52"
+    },
+    {
+      "label": "historical-ar3-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003_policy.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-ar3-policy.txt",
+      "sha256": "4e61462247cd6e8294d88f78b109e8886b303e9090f49f4da8b14743cfc92265"
+    },
+    {
+      "label": "historical-ar3-structure",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-ar3-structure.txt",
+      "sha256": "4c4916f3c2f25d0f9127c5e74ef818e0ec6d6ecc8bc2fa1c7b2365f86f5178b9"
+    },
+    {
+      "label": "historical-migration-metadata",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_release_migration.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-migration-metadata.txt",
+      "sha256": "04fcceb20fac4386f708dbc309c06fa5317da2ef0577e2f194df9b37f57f82e1"
+    },
+    {
+      "label": "historical-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-report.txt",
+      "sha256": "5e8d6d686a695dff1d83745ee1b8ea63bd5e9d452f725fc39c73e60de46e483a"
+    },
+    {
+      "label": "historical-ar2-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--ledger",
+        "Audit/attack-run-0002-claim-ledger.json",
+        "--summary",
+        "docs/generated/attack-run-0002-summary.md",
+        "--chart",
+        "docs/generated/attack-run-0002-outcomes.svg",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-ar2-report.txt",
+      "sha256": "bf64c60743462ce3df190ca1d2b4f95b108223be0cab8fa742e01a807ff96b55"
+    },
+    {
+      "label": "historical-migration-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_migration_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-migration-report.txt",
+      "sha256": "322ce136b6258b8fcc266bca56ff7f8d7d9737602082f043a3bf8f156aa5013e"
+    },
+    {
+      "label": "historical-ar3-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/historical-ar3-report.txt",
+      "sha256": "b99dc1f849d03be82fa213d9803dbe68bdbbfce0324d4a77859dbf5e5f021176"
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/pal-v23-charter/evidence/attempt-20260907T210922193817Z/diff-check.txt",
+      "sha256": "c4611aed4b0784aa53bdcff6f31e8400985724d91a5d850b668b0efcb71bcdfd"
+    }
+  ],
+  "declaration_axioms": {
+    "Experiments.Pal23.reachable_decoder_iff": [
+      "Classical.choice"
+    ],
+    "Experiments.Pal23.collision_prevents_reachable_decoder": [
+      "Classical.choice"
+    ],
+    "Experiments.Pal23.no_total_decoder_empty_source_nonempty_ambient": [],
+    "Experiments.Pal23.freeze_injective": [],
+    "Experiments.Pal23.suffix_preserved": [],
+    "Experiments.Pal23.bool_capsule_roundtrip": [],
+    "Experiments.Pal23.heartbeat_work_stutter": [],
+    "Experiments.Pal23.heartbeat_hidden_motion": [],
+    "Experiments.Pal23.heartbeat_not_progress": [],
+    "Experiments.Pal23.heartbeat_loop_no_progress": [],
+    "Experiments.Pal23.restore_work_not_restore_budget_or_grant": [],
+    "Experiments.Pal23.restore_work_is_not_total_state_recovery": [],
+    "Experiments.Charter.four_Q_identity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.adjacent_index_formula": [
+      "propext"
+    ],
+    "Experiments.Charter.four_adjacent_index_formula": [
+      "propext"
+    ],
+    "Experiments.Charter.adjacent_banks_total": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.adjacent_banks_ordered_distinct": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.closest_ordered_distinct_split_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.ordered_distinct_gap_positive": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.adjacent_banks_minimize_Q": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.index_five_is_ninety_one": [
+      "propext"
+    ],
+    "Experiments.Charter.ninety_one_factorization": [
+      "propext"
+    ],
+    "Experiments.Charter.composite_subfamily_factorization": [
+      "propext"
+    ],
+    "Experiments.Charter.composite_subfamily": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.index_one_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.index_two_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Charter.index_three_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "input_sha256": {
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "73d1aa6673f1491993df92f91fc47e74821e064f68c75b3ae12e88f0a0abecf6",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "scripts/run_pal23_charter.py": "188d0979e1e4548a9cb795a484a7db936c5f8234709a7820188c5612f97e0437",
+    "Audit/pal-v23-charter/source-manifest.json": "69b10db0cd78a1ae7469235d531ad70c07f229cd5124f3e5a7e1a34ab66e7b9d",
+    "Audit/pal-v23-charter/pal-claims.json": "060b7ec97cba9b2e943f93585e6f969ac88cfc4cb5fc294acc065d0041365330",
+    "Audit/pal-v23-charter/charter-claims.json": "d56cb3a9d94aaeea44b468eadec5a63a7cf1716830f05a68c587c1dd2cd8199e",
+    "scripts/extract_pal23_charter_sources.py": "86d530d8b5e6f8b8c94b7afbbc8f00540b9d4edc0f4b613e82da8ed7ad02f740",
+    ".gitattributes": "66381f7274c9a55afd20dd150ec2b30094e6786c00a2ec0877b5c12440563976",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/Pal23.lean": "30377d4d3871308cb627c4a5b68d494e93526d4626e3d7592676ce82a560df3c",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000"
+  },
+  "scope": "Three local bounded run groups, partial source coverage only.",
+  "ci_status": "NOT_RUN",
+  "publication_status": "LOCAL_ONLY",
+  "source_obligations": {
+    "D-FIRST-OCCURRENCE": "OPEN",
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "multi_parent_lineage_boundary": "OPEN"
+  },
+  "manual_status": "Source-to-model correspondence remains subject to human review.",
+  "historical_source_archive": "NOT_REVERIFIED; retained metadata and Git history checked only.",
+  "error": "Experiment inputs changed during execution",
+  "finished_utc": "2026-09-07T21:12:48.371779+00:00"
+}

@@ -4,11 +4,22 @@ An adversarial Lean 4 audit of Primitive Axiom Layers (PAL).
 
 > **Disambiguation:** In this repository, **PAL** means **Primitive Axiom Layers**, authored and stewarded by Christopher D. Pang. PAL Lean Audit is not affiliated with other projects, packages, or frameworks that also use the acronym “PAL.”
 
-This source-locked audit bench tests bounded mechanical claims and declared mathematical realizations. Attack Runs 0001 and 0002 retain their original **PAL v2.0** scope; **PAL v2.1** controls every new run.
+This source-locked audit bench tests bounded mechanical claims and declared mathematical realizations. Attack Runs 0001 and 0002 retain their original **PAL v2.0** scope; **PAL v2.1** controls Attack Run 0003. The separately scoped PAL v2.3 and CHARTER experiment below does not migrate those historical records.
 
 > Lean can verify that a formal statement follows from declared definitions and assumptions, construct countermodels to stronger statements, and expose axiom dependencies. It cannot establish PAL as a complete ontology or prove that a formalization exhausts the source framework.
 
 ## Current state
+
+**PAL v2.3 and CHARTER bounded checks** contain 27 Lean theorem targets across
+three local run groups: 18 proved from declared rules, 4 assumption-bound, and
+5 countermodels to stronger inferences. A countermodel rejects an overclaim in
+the stated model; it is not a claim stronger than Lean or a contradiction of PAL
+or CHARTER. Several targets share constructions. See the
+[plain-language report](docs/generated/pal-v23-charter-local-checks.md),
+[exact local receipts](Audit/pal-v23-charter/results.json), and
+[publication/reproduction account](Audit/pal-v23-charter/PUBLICATION.md).
+These are partial mathematical checks, not a full conformance suite or source
+adoption. O04 and O25 remain OPEN.
 
 This repository contains **Attack Run 0001**, a bounded audit for T05-T07,
 T09-T11, and T14-T17, plus **Attack Run 0002**, a noncanonical audit of the

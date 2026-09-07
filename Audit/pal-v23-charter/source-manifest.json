@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "pal-v23-charter-20260907",
+  "identity_basis": "Exact user-supplied local DOCX bytes; publication or release-package identity not independently verified.",
+  "historical_audit_release_unchanged": true,
+  "authority_ceiling": "Local bounded Lean evidence only; no source adoption, full conformance, authority grant, or PAL obligation closure.",
+  "base_commit": "0c084fd467c17f29329d06a58b6426a82be833fa",
+  "sources": [
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3_Mechanical_Structural_Spine.docx",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "bytes": 55325,
+      "paragraphs": 1199,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3_Mechanical_Structural_Spine.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 0,
+      "id": "PAL-v2.3-Spine",
+      "filename": "PAL_v2.3_Mechanical_Structural_Spine.docx",
+      "source_in_repository": false
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-C_Compatibility_Note.docx",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "bytes": 37100,
+      "paragraphs": 710,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3-C_Compatibility_Note.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 0,
+      "id": "PAL-v2.3-C",
+      "filename": "PAL_v2.3-C_Compatibility_Note.docx",
+      "source_in_repository": false
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "bytes": 56780,
+      "paragraphs": 1483,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3-L_Obligation_and_Decision_Ledger.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 0,
+      "id": "PAL-v2.3-L",
+      "filename": "PAL_v2.3-L_Obligation_and_Decision_Ledger.docx",
+      "source_in_repository": false
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "bytes": 980340,
+      "paragraphs": 1957,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3-M_Mathematical_Realization_Atlas.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 0,
+      "id": "PAL-v2.3-M",
+      "filename": "PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "source_in_repository": false
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-T_Conformance_Tests.docx",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "bytes": 75493,
+      "paragraphs": 1610,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3-T_Conformance_Tests.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 0,
+      "id": "PAL-v2.3-T",
+      "filename": "PAL_v2.3-T_Conformance_Tests.docx",
+      "source_in_repository": false
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Math Stack\\CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.docx",
+      "sha256": "3f813ecadfcea957bdccb157d83792612a85c78e318a4ec22da62efc3d8bcabf",
+      "bytes": 1673357,
+      "paragraphs": 829,
+      "extraction": "artifacts/pal-v23-charter-2026-09-07/sources/CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.txt",
+      "tracked_insertions": 0,
+      "tracked_deletions": 0,
+      "math_objects": 352,
+      "id": "CHARTER-v1.0",
+      "filename": "CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.docx",
+      "source_in_repository": false
+    }
+  ]
+}

@@ -12,4 +12,7 @@ lean_lib PAL
 lean_lib Audit
 
 @[default_target]
+lean_lib Experiments
+
+@[default_target]
 lean_lib PALLeanAudit
