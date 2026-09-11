@@ -120,37 +120,6 @@ variable {𝕜 T : Type*}
 variable [Field 𝕜] [AddCommGroup T] [Module 𝕜 T]
 variable [FiniteDimensional 𝕜 T]
 
-/-- Dimension of the generated-invisible collision sector. -/
-def collisionDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T)
-
-/-- Dimension of the generated-visible sector. -/
-def generatedVisibleDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 B - collisionDim B K
-
-/-- Dimension of the ungenerated-invisible sector. -/
-def hiddenDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 K - collisionDim B K
-
-/-- Dimension of the ungenerated-visible residual sector. -/
-def ungeneratedVisibleDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 T - finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T)
-
-/-- The four BRIDGE sector dimensions account for the full finite target. -/
-theorem fourSector_finrank (B K : Submodule 𝕜 T) :
-    finrank 𝕜 T =
-      collisionDim B K + generatedVisibleDim B K +
-        hiddenDim B K + ungeneratedVisibleDim B K := by
-  unfold collisionDim generatedVisibleDim hiddenDim ungeneratedVisibleDim
-  have hBI : finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) ≤ finrank 𝕜 B :=
-    Submodule.finrank_mono inf_le_left
-  have hKI : finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) ≤ finrank 𝕜 K :=
-    Submodule.finrank_mono inf_le_right
-  have hST : finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T) ≤ finrank 𝕜 T :=
-    Submodule.finrank_le _
-  have hSI := Submodule.finrank_sup_add_finrank_inf_eq B K
-  omega
-
 /--
 The four actual quotient sectors, rather than only their subtraction-defined
 dimensions, account for the finite target.
@@ -209,5 +178,4 @@ end Bridge
 #print axioms Bridge.deterministicTranslator_unique
 #print axioms Bridge.oneScalarProbe_separatesHiddenLine
 #print axioms Bridge.zeroProbe_notInjectiveOnHiddenLine
-#print axioms Bridge.fourSector_finrank
 #print axioms Bridge.fourSector_quotient_finrank
