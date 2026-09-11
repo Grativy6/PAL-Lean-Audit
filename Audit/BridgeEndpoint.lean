@@ -36,6 +36,18 @@ theorem dualCollisionSpace (e : G →ₗ[𝕜] T) :
     LinearMap.ker e.dualMap = (LinearMap.range e).dualAnnihilator :=
   LinearMap.ker_dualMap_eq_dualAnnihilator_range e
 
+/--
+The quotient defect dual is linearly equivalent to the collision space of
+pulled-back probes. This is the exact BRIDGE identity
+`(T / range e)∗ ≃ ker (e∗)`.
+-/
+noncomputable def quotientDualEquivDualCollision (e : G →ₗ[𝕜] T) :
+    Module.Dual 𝕜 (T ⧸ LinearMap.range e) ≃ₗ[𝕜]
+      LinearMap.ker e.dualMap :=
+  (LinearMap.range e).dualQuotEquivDualAnnihilator.trans
+    (LinearEquiv.ofEq _ _
+      (LinearMap.ker_dualMap_eq_dualAnnihilator_range e).symm)
+
 /-- A generator misses part of its target exactly when pullback on dual probes collides. -/
 theorem generativeDefect_iff_dualCollision (e : G →ₗ[𝕜] T) :
     ¬ Function.Surjective e ↔ ¬ Function.Injective e.dualMap :=
@@ -136,11 +148,36 @@ theorem fourSector_finrank (B K : Submodule 𝕜 T) :
   have hSI := Submodule.finrank_sup_add_finrank_inf_eq B K
   omega
 
+/--
+The four actual quotient sectors, rather than only their subtraction-defined
+dimensions, account for the finite target.
+-/
+theorem fourSector_quotient_finrank (B K : Submodule 𝕜 T) :
+    finrank 𝕜 T =
+      finrank 𝕜 (B ⊓ K) +
+      finrank 𝕜 (B ⧸ (B ⊓ K).comap B.subtype) +
+      finrank 𝕜 (K ⧸ (B ⊓ K).comap K.subtype) +
+      finrank 𝕜 (T ⧸ (B ⊔ K)) := by
+  have hCB : finrank 𝕜 ((B ⊓ K).comap B.subtype) = finrank 𝕜 (B ⊓ K) :=
+    (Submodule.comapSubtypeEquivOfLe
+      (show B ⊓ K ≤ B from inf_le_left)).finrank_eq
+  have hCK : finrank 𝕜 ((B ⊓ K).comap K.subtype) = finrank 𝕜 (B ⊓ K) :=
+    (Submodule.comapSubtypeEquivOfLe
+      (show B ⊓ K ≤ K from inf_le_right)).finrank_eq
+  have hB := Submodule.finrank_quotient_add_finrank
+    ((B ⊓ K).comap B.subtype)
+  have hK := Submodule.finrank_quotient_add_finrank
+    ((B ⊓ K).comap K.subtype)
+  have hT := Submodule.finrank_quotient_add_finrank (B ⊔ K)
+  have hSI := Submodule.finrank_sup_add_finrank_inf_eq B K
+  omega
+
 end FourSectorAccount
 
 end Bridge
 
 #print axioms Bridge.dualCollisionSpace
+#print axioms Bridge.quotientDualEquivDualCollision
 #print axioms Bridge.generativeDefect_iff_dualCollision
 #print axioms Bridge.readoutCollision_iff_differenceInKernel
 #print axioms Bridge.appendedTrace_determines_iff
@@ -148,3 +185,4 @@ end Bridge
 #print axioms Bridge.oneScalarProbe_separatesHiddenLine
 #print axioms Bridge.zeroProbe_notInjectiveOnHiddenLine
 #print axioms Bridge.fourSector_finrank
+#print axioms Bridge.fourSector_quotient_finrank
