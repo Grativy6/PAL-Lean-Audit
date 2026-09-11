@@ -19,6 +19,7 @@ kernel-checked Lean statements. Its affirmative content is:
 | BR-LA-07 | `Bridge.oneScalarProbe_separatesHiddenLine` | One scalar probe exists for every nonzero hidden line. |
 | BR-LA-08 | `Bridge.zeroProbe_notInjectiveOnHiddenLine` | The predecessor countercase: a probe vanishing on the direction cannot separate its line. |
 | BR-LA-09 | `Bridge.fourSector_quotient_finrank` | The four actual quotient-sector dimensions sum to the target dimension. |
+| BR-HD-01 | `Bridge.conditionalWeilDetector_iff` | Under the explicitly parameterized geometric/algebraicity hypotheses, full target algebraicity is equivalent to one algebraic input with nonzero detector output. |
 
 ## Assumption and dependency account
 
@@ -28,6 +29,9 @@ kernel-checked Lean statements. Its affirmative content is:
   supplies its choice-dependent witness.
 - BR-LA-09 additionally assumes the target is finite-dimensional and uses the
   Grassmann dimension formula.
+- BR-HD-01 is assumption-bound: its horizontal, preservation, pure-image,
+  nonzero-detector, field-action, and cyclicity hypotheses are arguments to the
+  theorem rather than hidden axioms.
 - Every declaration has a `#print axioms` command in
   `Audit/BridgeEndpoint.lean`, and the repository's build, policy check, and
   `leanchecker` workflow are the verification gate.
