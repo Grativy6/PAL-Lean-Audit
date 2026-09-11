@@ -18,8 +18,7 @@ kernel-checked Lean statements. Its affirmative content is:
 | BR-LA-06 | `Bridge.deterministicTranslator_unique` | A surjective bridge fixes any downstream deterministic translator uniquely. |
 | BR-LA-07 | `Bridge.oneScalarProbe_separatesHiddenLine` | One scalar probe exists for every nonzero hidden line. |
 | BR-LA-08 | `Bridge.zeroProbe_notInjectiveOnHiddenLine` | The predecessor countercase: a probe vanishing on the direction cannot separate its line. |
-| BR-LA-09 | `Bridge.fourSector_finrank` | The collision, generated-visible, hidden, and ungenerated-visible dimensions sum to the target dimension. |
-| BR-LA-10 | `Bridge.fourSector_quotient_finrank` | The four actual quotient-sector dimensions sum to the target dimension. |
+| BR-LA-09 | `Bridge.fourSector_quotient_finrank` | The four actual quotient-sector dimensions sum to the target dimension. |
 
 ## Assumption and dependency account
 
@@ -27,7 +26,7 @@ kernel-checked Lean statements. Its affirmative content is:
 - BR-LA-07 uses Mathlib's algebraic dual-separation theorem
   `Module.Projective.exists_dual_eq_one`; the vector-space projectivity instance
   supplies its choice-dependent witness.
-- BR-LA-09 and BR-LA-10 additionally assume the target is finite-dimensional and uses the
+- BR-LA-09 additionally assumes the target is finite-dimensional and uses the
   Grassmann dimension formula.
 - Every declaration has a `#print axioms` command in
   `Audit/BridgeEndpoint.lean`, and the repository's build, policy check, and
