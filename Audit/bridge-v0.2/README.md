@@ -11,21 +11,23 @@ kernel-checked Lean statements. Its affirmative content is:
 | ID | Lean declaration | Checked content |
 |---|---|---|
 | BR-LA-01 | `Bridge.dualCollisionSpace` | Dual collisions are exactly annihilators of the generated range. |
-| BR-LA-02 | `Bridge.generativeDefect_iff_dualCollision` | Failure of generation is equivalent to a collision under pullback of dual probes. |
-| BR-LA-03 | `Bridge.readoutCollision_iff_differenceInKernel` | Equal readout is equivalent to an invisible difference. |
-| BR-LA-04 | `Bridge.appendedTrace_determines_iff` | A base readout plus appended trace determines an authority map exactly under the common-kernel criterion. |
-| BR-LA-05 | `Bridge.deterministicTranslator_unique` | A surjective bridge fixes any downstream deterministic translator uniquely. |
-| BR-LA-06 | `Bridge.oneScalarProbe_separatesHiddenLine` | One scalar probe exists for every nonzero hidden line. |
-| BR-LA-07 | `Bridge.zeroProbe_notInjectiveOnHiddenLine` | The predecessor countercase: a probe vanishing on the direction cannot separate its line. |
-| BR-LA-08 | `Bridge.fourSector_finrank` | The collision, generated-visible, hidden, and ungenerated-visible dimensions sum to the target dimension. |
+| BR-LA-02 | `Bridge.quotientDualEquivDualCollision` | The exact defect dual `(T / range e)∗` is linearly equivalent to the dual-collision kernel. |
+| BR-LA-03 | `Bridge.generativeDefect_iff_dualCollision` | Failure of generation is equivalent to a collision under pullback of dual probes. |
+| BR-LA-04 | `Bridge.readoutCollision_iff_differenceInKernel` | Equal readout is equivalent to an invisible difference. |
+| BR-LA-05 | `Bridge.appendedTrace_determines_iff` | A base readout plus appended trace determines an authority map exactly under the common-kernel criterion. |
+| BR-LA-06 | `Bridge.deterministicTranslator_unique` | A surjective bridge fixes any downstream deterministic translator uniquely. |
+| BR-LA-07 | `Bridge.oneScalarProbe_separatesHiddenLine` | One scalar probe exists for every nonzero hidden line. |
+| BR-LA-08 | `Bridge.zeroProbe_notInjectiveOnHiddenLine` | The predecessor countercase: a probe vanishing on the direction cannot separate its line. |
+| BR-LA-09 | `Bridge.fourSector_finrank` | The collision, generated-visible, hidden, and ungenerated-visible dimensions sum to the target dimension. |
+| BR-LA-10 | `Bridge.fourSector_quotient_finrank` | The four actual quotient-sector dimensions sum to the target dimension. |
 
 ## Assumption and dependency account
 
-- BR-LA-01 through BR-LA-07 are stated over a field and modules.
-- BR-LA-06 uses Mathlib's algebraic dual-separation theorem
+- BR-LA-01 through BR-LA-08 are stated over a field and modules.
+- BR-LA-07 uses Mathlib's algebraic dual-separation theorem
   `Module.Projective.exists_dual_eq_one`; the vector-space projectivity instance
   supplies its choice-dependent witness.
-- BR-LA-08 additionally assumes the target is finite-dimensional and uses the
+- BR-LA-09 and BR-LA-10 additionally assume the target is finite-dimensional and uses the
   Grassmann dimension formula.
 - Every declaration has a `#print axioms` command in
   `Audit/BridgeEndpoint.lean`, and the repository's build, policy check, and
