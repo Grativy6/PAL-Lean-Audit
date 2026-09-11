@@ -168,6 +168,75 @@ theorem fourSector_quotient_finrank (B K : Submodule 𝕜 T) :
 
 end FourSectorAccount
 
+section ConditionalWeilDetector
+
+variable {𝕜 H W : Type*}
+variable [Field 𝕜]
+variable [AddCommGroup H] [Module 𝕜 H]
+variable [AddCommGroup W] [Module 𝕜 W]
+
+/--
+Abstract form of the conditional Weil-detector equivalence. The hypotheses
+isolate the geometric inputs: the known horizontal class, algebraicity
+preservation by the detector and field action, pure exceptional image, a
+nonzero detector, and cyclic generation of the exceptional plane.
+-/
+theorem conditionalWeilDetector_iff
+    (alg : Submodule 𝕜 (H × W))
+    (D : (H × W) →ₗ[𝕜] (H × W))
+    (J : W →ₗ[𝕜] W)
+    (horizontal : ∀ h : H, (h, 0) ∈ alg)
+    (hD : ∀ x : H × W, x ∈ alg → D x ∈ alg)
+    (hDpure : ∀ x : H × W, (D x).1 = 0)
+    (hDne : D ≠ 0)
+    (hJ : ∀ w : W, (0, w) ∈ alg → (0, J w) ∈ alg)
+    (cyclic : ∀ seed : W, seed ≠ 0 → ∀ w : W,
+      ∃ a b : 𝕜, w = a • seed + b • J seed) :
+    alg = ⊤ ↔ ∃ c : H × W, c ∈ alg ∧ D c ≠ 0 := by
+  constructor
+  · intro halg
+    have hex : ∃ c : H × W, D c ≠ 0 := by
+      by_contra hnone
+      apply hDne
+      apply LinearMap.ext
+      intro c
+      have hc0 : D c = 0 := by
+        by_contra hc0
+        exact hnone ⟨c, hc0⟩
+      simpa using hc0
+    obtain ⟨c, hc⟩ := hex
+    refine ⟨c, ?_, hc⟩
+    rw [halg]
+    exact Submodule.mem_top
+  · rintro ⟨c, hc, hDc⟩
+    have hDc_alg : D c ∈ alg := hD c hc
+    let seed : W := (D c).2
+    have hDcpair : D c = (0, seed) := by
+      apply Prod.ext
+      · simpa using hDpure c
+      · rfl
+    have hseed : seed ≠ 0 := by
+      intro hs
+      apply hDc
+      rw [hDcpair, hs]
+    have hseed_alg : (0, seed) ∈ alg := by
+      rw [← hDcpair]
+      exact hDc_alg
+    have hJseed_alg : (0, J seed) ∈ alg :=
+      hJ seed hseed_alg
+    apply eq_top_iff.mpr
+    rintro ⟨h, w⟩
+    obtain ⟨a, b, hw⟩ := cyclic seed hseed w
+    have hpure : (0, w) ∈ alg := by
+      rw [hw]
+      simpa using
+        alg.add_mem
+          (alg.smul_mem a hseed_alg)
+          (alg.smul_mem b hJseed_alg)
+    simpa using alg.add_mem (horizontal h) hpure
+
+end ConditionalWeilDetector
+
 end Bridge
 
 #print axioms Bridge.dualCollisionSpace
@@ -179,3 +248,4 @@ end Bridge
 #print axioms Bridge.oneScalarProbe_separatesHiddenLine
 #print axioms Bridge.zeroProbe_notInjectiveOnHiddenLine
 #print axioms Bridge.fourSector_quotient_finrank
+#print axioms Bridge.conditionalWeilDetector_iff
