@@ -1,5 +1,8 @@
 import Mathlib.LinearAlgebra.Dual.Lemmas
+import Mathlib.LinearAlgebra.Basis.VectorSpace
 import Mathlib.Tactic
+
+noncomputable section
 
 /-!
 # BRIDGE endpoint calculus — bounded Lean realization
@@ -99,7 +102,7 @@ theorem oneScalarProbe_separatesHiddenLine (w : T) (hw : w ≠ 0) :
   obtain ⟨σ, hσ⟩ := Module.Projective.exists_dual_eq_one 𝕜 hw
   refine ⟨σ, hσ, ?_⟩
   intro c d hcd
-  simpa [hσ] using hcd
+  simpa only [map_smul, hσ, smul_eq_mul, mul_one] using hcd
 
 /-- A scalar probe vanishing on a nonzero direction cannot separate that line. -/
 theorem zeroProbe_notInjectiveOnHiddenLine
@@ -119,7 +122,7 @@ variable [FiniteDimensional 𝕜 T]
 
 /-- Dimension of the generated-invisible collision sector. -/
 def collisionDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 (B ⊓ K)
+  finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T)
 
 /-- Dimension of the generated-visible sector. -/
 def generatedVisibleDim (B K : Submodule 𝕜 T) : ℕ :=
@@ -131,7 +134,7 @@ def hiddenDim (B K : Submodule 𝕜 T) : ℕ :=
 
 /-- Dimension of the ungenerated-visible residual sector. -/
 def ungeneratedVisibleDim (B K : Submodule 𝕜 T) : ℕ :=
-  finrank 𝕜 T - finrank 𝕜 (B ⊔ K)
+  finrank 𝕜 T - finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T)
 
 /-- The four BRIDGE sector dimensions account for the full finite target. -/
 theorem fourSector_finrank (B K : Submodule 𝕜 T) :
@@ -139,11 +142,11 @@ theorem fourSector_finrank (B K : Submodule 𝕜 T) :
       collisionDim B K + generatedVisibleDim B K +
         hiddenDim B K + ungeneratedVisibleDim B K := by
   unfold collisionDim generatedVisibleDim hiddenDim ungeneratedVisibleDim
-  have hBI : finrank 𝕜 (B ⊓ K) ≤ finrank 𝕜 B :=
+  have hBI : finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) ≤ finrank 𝕜 B :=
     Submodule.finrank_mono inf_le_left
-  have hKI : finrank 𝕜 (B ⊓ K) ≤ finrank 𝕜 K :=
+  have hKI : finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) ≤ finrank 𝕜 K :=
     Submodule.finrank_mono inf_le_right
-  have hST : finrank 𝕜 (B ⊔ K) ≤ finrank 𝕜 T :=
+  have hST : finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T) ≤ finrank 𝕜 T :=
     Submodule.finrank_le _
   have hSI := Submodule.finrank_sup_add_finrank_inf_eq B K
   omega
@@ -153,23 +156,45 @@ The four actual quotient sectors, rather than only their subtraction-defined
 dimensions, account for the finite target.
 -/
 theorem fourSector_quotient_finrank (B K : Submodule 𝕜 T) :
-    finrank 𝕜 T =
-      finrank 𝕜 (B ⊓ K) +
-      finrank 𝕜 (B ⧸ (B ⊓ K).comap B.subtype) +
-      finrank 𝕜 (K ⧸ (B ⊓ K).comap K.subtype) +
-      finrank 𝕜 (T ⧸ (B ⊔ K)) := by
-  have hCB : finrank 𝕜 ((B ⊓ K).comap B.subtype) = finrank 𝕜 (B ⊓ K) :=
+    finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) +
+        finrank 𝕜 (B ⧸ (B ⊓ K : Submodule 𝕜 T).comap B.subtype) +
+        finrank 𝕜 (K ⧸ (B ⊓ K : Submodule 𝕜 T).comap K.subtype) +
+        finrank 𝕜 (T ⧸ (B ⊔ K : Submodule 𝕜 T)) =
+      finrank 𝕜 T := by
+  have hCB :
+      finrank 𝕜 ((B ⊓ K : Submodule 𝕜 T).comap B.subtype) =
+        finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) :=
     (Submodule.comapSubtypeEquivOfLe
-      (show B ⊓ K ≤ B from inf_le_left)).finrank_eq
-  have hCK : finrank 𝕜 ((B ⊓ K).comap K.subtype) = finrank 𝕜 (B ⊓ K) :=
+      (p := B ⊓ K) (q := B) inf_le_left).finrank_eq
+  have hCK :
+      finrank 𝕜 ((B ⊓ K : Submodule 𝕜 T).comap K.subtype) =
+        finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) :=
     (Submodule.comapSubtypeEquivOfLe
-      (show B ⊓ K ≤ K from inf_le_right)).finrank_eq
-  have hB := Submodule.finrank_quotient_add_finrank
-    ((B ⊓ K).comap B.subtype)
-  have hK := Submodule.finrank_quotient_add_finrank
-    ((B ⊓ K).comap K.subtype)
-  have hT := Submodule.finrank_quotient_add_finrank (B ⊔ K)
-  have hSI := Submodule.finrank_sup_add_finrank_inf_eq B K
+      (p := B ⊓ K) (q := K) inf_le_right).finrank_eq
+  have hB :
+      finrank 𝕜 (B ⧸ (B ⊓ K : Submodule 𝕜 T).comap B.subtype) +
+          finrank 𝕜 ((B ⊓ K : Submodule 𝕜 T).comap B.subtype) =
+        finrank 𝕜 B :=
+    Submodule.finrank_quotient_add_finrank
+      ((B ⊓ K : Submodule 𝕜 T).comap B.subtype)
+  have hK :
+      finrank 𝕜 (K ⧸ (B ⊓ K : Submodule 𝕜 T).comap K.subtype) +
+          finrank 𝕜 ((B ⊓ K : Submodule 𝕜 T).comap K.subtype) =
+        finrank 𝕜 K :=
+    Submodule.finrank_quotient_add_finrank
+      ((B ⊓ K : Submodule 𝕜 T).comap K.subtype)
+  have hT :
+      finrank 𝕜 (T ⧸ (B ⊔ K : Submodule 𝕜 T)) +
+          finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T) =
+        finrank 𝕜 T :=
+    Submodule.finrank_quotient_add_finrank (B ⊔ K)
+  have hSup :
+      finrank 𝕜 ↥(B ⊔ K : Submodule 𝕜 T) +
+          finrank 𝕜 ↥(B ⊓ K : Submodule 𝕜 T) =
+        finrank 𝕜 B + finrank 𝕜 K :=
+    Submodule.finrank_sup_add_finrank_inf_eq B K
+  rw [hCB] at hB
+  rw [hCK] at hK
   omega
 
 end FourSectorAccount
