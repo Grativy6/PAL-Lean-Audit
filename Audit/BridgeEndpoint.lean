@@ -218,7 +218,7 @@ theorem conditionalWeilDetector_iff
     have hseed : seed ≠ 0 := by
       intro hs
       apply hDc
-      rw [hDcpair, hs]
+      simpa [hDcpair, hs]
     have hseed_alg : (0, seed) ∈ alg := by
       rw [← hDcpair]
       exact hDc_alg
