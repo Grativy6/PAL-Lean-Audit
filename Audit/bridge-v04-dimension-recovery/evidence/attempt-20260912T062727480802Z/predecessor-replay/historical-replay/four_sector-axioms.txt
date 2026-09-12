@@ -1,0 +1,16 @@
+'Experiments.BridgeFourSector.ker_hiddenRawToDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.hiddenToDefect_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.defectToVisible_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.generated_row_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.kernel_row_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.defect_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.left_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.upper_left_square_commutes' depends on axioms: [propext, Quot.sound]
+'Experiments.BridgeFourSector.lower_left_square_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.residual_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.right_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.ker_readoutOnGenerated' depends on axioms: [propext, Quot.sound]
+'Experiments.BridgeFourSector.generatedVisibleEquivRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeFourSector.no_direct_complement_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,1 @@
+Verified docs\generated\summary.md and docs\generated\outcomes.svg

@@ -1,0 +1,17 @@
+import Experiments.BridgeRecovery
+
+namespace Experiments.BridgeRecovery
+
+#print axioms Experiments.BridgeRecovery.residualReadout_surjective
+#print axioms Experiments.BridgeRecovery.ker_residualReadout
+#print axioms Experiments.BridgeRecovery.residualQuotientEquiv
+#print axioms Experiments.BridgeRecovery.answerDecoder
+#print axioms Experiments.BridgeRecovery.answerDecoder_comp_residualReadout
+#print axioms Experiments.BridgeRecovery.answer_decodable_iff
+#print axioms Experiments.BridgeRecovery.residual_identity_decoder_iff_injective
+#print axioms Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton
+#print axioms Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le
+#print axioms Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le
+#print axioms Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase
+
+end Experiments.BridgeRecovery

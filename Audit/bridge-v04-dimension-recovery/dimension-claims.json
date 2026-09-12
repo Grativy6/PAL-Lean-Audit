@@ -1,0 +1,107 @@
+{
+  "lane": "dimension",
+  "identity_basis": "BRIDGE-v0.4 supplied local DOCX sha256 a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470; selected original OOXML paragraphs P0193-P0194",
+  "claims": [
+    {
+      "id": "FS-M04-01",
+      "title": "Generated collision has intersection dimension",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.generatedCollision_finrank",
+      "statement": "finrank (generatedCollision B K) = finrank (B ∩ K).",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "Thus the total generative defect has a hidden part H and a visible part V. In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T is a finite-dimensional k-vector space", "B and K are supplied submodules of T"],
+      "dependencies": ["Submodule.comapSubtypeEquivOfLe"],
+      "countercase": "Without finite dimension, finrank is not a faithful dimension measure; FS-M04-07 gives a checked residual quotient countercase.",
+      "authority_ceiling": "The existing subtype encoding of C inside B only.",
+      "residual": "No direct complement or geometric interpretation follows.",
+      "reopening": "Audit another sector encoding only under a separately source-mapped lane."
+    },
+    {
+      "id": "FS-M04-02",
+      "title": "Hidden collision has intersection dimension",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.hiddenCollision_finrank",
+      "statement": "finrank (hiddenCollision B K) = finrank (B ∩ K).",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "Thus the total generative defect has a hidden part H and a visible part V. In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T is a finite-dimensional k-vector space", "B and K are supplied submodules of T"],
+      "dependencies": ["Submodule.comapSubtypeEquivOfLe"],
+      "countercase": "The equality identifies dimensions, not the two collision subtype presentations as identical types.",
+      "authority_ceiling": "The existing subtype encoding of C inside K only.",
+      "residual": "No embedding of H into D is inferred here.",
+      "reopening": "Use the named hiddenToDefect map for claims involving D."
+    },
+    {
+      "id": "FS-M04-03",
+      "title": "Generated-visible quotient rank-nullity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.generatedVisible_finrank_add_collision",
+      "statement": "dim Gv + dim C = dim B.",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T finite-dimensional", "B and K supplied"],
+      "dependencies": ["Submodule.finrank_quotient_add_finrank", "FS-M04-01"],
+      "countercase": "Rank-nullity requires the stated finite-dimensional setting.",
+      "authority_ceiling": "One quotient factor in the declared linear realization only.",
+      "residual": "No recovery criterion is included.",
+      "reopening": "Combine only with separately checked sector equations."
+    },
+    {
+      "id": "FS-M04-04",
+      "title": "Hidden quotient rank-nullity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.hidden_finrank_add_collision",
+      "statement": "dim H + dim C = dim K.",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T finite-dimensional", "B and K supplied"],
+      "dependencies": ["Submodule.finrank_quotient_add_finrank", "FS-M04-02"],
+      "countercase": "The quotient H is not treated as a literal submodule of D.",
+      "authority_ceiling": "One quotient factor in the declared linear realization only.",
+      "residual": "No chosen representative or splitting follows.",
+      "reopening": "Use hiddenToDefect when a map into D is required."
+    },
+    {
+      "id": "FS-M04-05",
+      "title": "Visible quotient rank-nullity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.visible_finrank_add_sup",
+      "statement": "dim V + dim (B + K) = dim T.",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T finite-dimensional", "B and K supplied"],
+      "dependencies": ["Submodule.finrank_quotient_add_finrank"],
+      "countercase": "A quotient dimension gives no canonical complement of B + K.",
+      "authority_ceiling": "The displayed visible quotient only.",
+      "residual": "No source adoption or additional geometry follows.",
+      "reopening": "Check any direct-sum reading independently."
+    },
+    {
+      "id": "FS-M04-06",
+      "title": "Finite four-sector dimension account",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeDimension.bridge_four_sector_finrank",
+      "statement": "dim C + dim Gv + dim H + dim V = dim T.",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "Thus the total generative defect has a hidden part H and a visible part V. In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["Field k", "T is finite-dimensional", "C, Gv, H, V use the existing BridgeFourSector quotient definitions"],
+      "dependencies": ["FS-M04-01", "FS-M04-02", "FS-M04-03", "FS-M04-04", "FS-M04-05", "Submodule.finrank_sup_add_finrank_inf_eq"],
+      "countercase": "FS-M04-07 checks that an infinite residual quotient remains possible when the finite-dimensional hypothesis is removed.",
+      "authority_ceiling": "The P0194 equality in the declared finite linear realization only; no decomposition or source adoption.",
+      "residual": "P0195-P0199 recovery claims are outside this dimension lane.",
+      "reopening": "Use the separately commissioned recovery lane for answer-factorization and H=0 claims."
+    },
+    {
+      "id": "FS-M04-07",
+      "title": "Finite-dimensional hypothesis is required",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase",
+      "statement": "For T=ℚ × (ℕ →₀ ℚ), B=range(inl), and K=⊥, the four-sector finrank sum is 1 while finrank T is 0, so the equality is false.",
+      "source_refs": [{"source_id": "BRIDGE-v0.4", "paragraphs": "P0193-P0194", "excerpt": "In finite dimension, dimT=dimC+dimGv+dimH+dimV."}],
+      "assumptions": ["The displayed rational Finsupp countermodel"],
+      "dependencies": ["Submodule.finrank_quotient_add_finrank", "LinearMap.quotKerEquivRange", "Finsupp.basisSingleOne"],
+      "countercase": "This checked construction defeats the four-sector finrank equality when its finite-dimensional hypothesis is omitted.",
+      "authority_ceiling": "Countermodel to dropping the finiteness premise only; it does not refute the finite-dimensional source claim.",
+      "residual": "It makes no numerical statement about the source's intended applications.",
+      "reopening": "A different non-finite convention requires a separately stated audit."
+    }
+  ],
+  "manual_dispositions": [
+    {"id": "FS-M04-R1", "classification": "OPEN_MANUAL", "subject": "P0195-P0199 residual recovery and answer-factorization", "source_refs": ["P0195-P0199"], "reason": "This lane confines itself to the P0193-P0194 finite dimension account.", "reopening": "Use the separately scoped recovery lane and its named maps."}
+  ]
+}
