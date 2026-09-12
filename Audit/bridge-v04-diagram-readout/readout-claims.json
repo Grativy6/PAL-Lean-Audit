@@ -1,0 +1,214 @@
+{
+  "lane": "readout",
+  "identity_basis": "BRIDGE-v0.4 supplied local DOCX sha256 a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470; selected OOXML excerpts P0108-P0192",
+  "claims": [
+    {
+      "id": "FS-M03-01",
+      "title": "Actual induced visible readout is surjective",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeReadout.rawReadoutToVisible_surjective",
+      "statement": "Function.Surjective (rawReadoutToVisible B r), where rawReadoutToVisible t = [r(t)] in range(r)/generatedReadout B r",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "V T/B+K≅rT/rB"
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "T and R are k-modules",
+        "B is a supplied submodule of T",
+        "r : T →ₗ[k] R is supplied",
+        "generatedReadout B r is the range of r restricted to B inside range(r)"
+      ],
+      "dependencies": [
+        "Submodule.mkQ_surjective",
+        "LinearMap.rangeRestrict"
+      ],
+      "countercase": "Surjectivity supplies no canonical section or chosen representative.",
+      "authority_ceiling": "A quotient-map fact in the declared linear realization only.",
+      "residual": "The source presentation rB is implemented as a submodule of range(r), not as an ambient submodule of R.",
+      "reopening": "Audit additional source-mapped structure only under a new bounded lane."
+    },
+    {
+      "id": "FS-M03-02",
+      "title": "Kernel of the actual induced visible readout",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeReadout.ker_rawReadoutToVisible",
+      "statement": "ker (t ↦ [r(t)]) = B ⊔ ker r",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "T/B+K≅rT/rB"
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0190-P0192",
+          "excerpt": "All arrows are induced by inclusion or quotient."
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "T and R are k-modules",
+        "B and r are supplied",
+        "generatedReadout B r is the restricted-readout range inside range(r)"
+      ],
+      "dependencies": [
+        "Submodule.ker_mkQ",
+        "Submodule.mem_sup",
+        "LinearMap.map_sub"
+      ],
+      "countercase": "For T=ℚ×ℚ, r=Prod.fst, and B=⊥, the vector (0,1) lies in ker r; dropping ker r from the kernel formula would falsely exclude it.",
+      "authority_ceiling": "Exact kernel calculation for this map and these supplied submodules only.",
+      "residual": "No conclusion about direct complements, finite dimensions, or recovery is made.",
+      "reopening": "A separately commissioned lane may compare alternative range presentations."
+    },
+    {
+      "id": "FS-M03-03",
+      "title": "Canonical visible-sector quotient equivalence",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.BridgeReadout.visibleEquivReadout",
+      "statement": "T/(B ⊔ ker r) ≃ₗ[k] range(r)/generatedReadout B r",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "V T/B+K≅rT/rB"
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "T and R are k-modules",
+        "B and linear r are supplied",
+        "rB is represented by generatedReadout B r within range(r)"
+      ],
+      "dependencies": [
+        "FS-M03-01",
+        "FS-M03-02",
+        "LinearMap.quotKerEquivRange",
+        "LinearEquiv.ofTop"
+      ],
+      "countercase": "The equivalence identifies quotient spaces but selects no lift from range(r)/r(B) back to T.",
+      "authority_ceiling": "A source-bounded Lean realization of the displayed comparison, not adoption of the source or a geometric claim.",
+      "residual": "Translation from the source notation rB to this subtype-range encoding remains explicitly declared.",
+      "reopening": "Review the source-to-encoding translation or add separately licensed extra structure."
+    },
+    {
+      "id": "FS-M03-04A",
+      "title": "Visible comparison action on representatives",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeReadout.visibleEquivReadout_apply_mk",
+      "statement": "visibleEquivReadout B r [t] = [r(t)]",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "V T/B+K≅rT/rB"
+        }
+      ],
+      "assumptions": [
+        "The assumptions of FS-M03-03"
+      ],
+      "dependencies": [
+        "FS-M03-03"
+      ],
+      "countercase": "This representative equation provides no chosen inverse representative.",
+      "authority_ceiling": "The action of the audited quotient equivalence only.",
+      "residual": "The complete 3x3 diagram and finite-dimensional/recovery claims remain outside this lane.",
+      "reopening": "Name additional source arrows only in a separately bounded diagram lane."
+    },
+    {
+      "id": "FS-M03-04B",
+      "title": "Residual readout compatibility",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeReadout.residualReadout_compatibility",
+      "statement": "residualReadout B r = visibleEquivReadout B r ∘ defectToVisible B r.ker",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "T/B+K≅rT/rB"
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0190-P0192",
+          "excerpt": "All arrows are induced by inclusion or quotient."
+        }
+      ],
+      "assumptions": [
+        "The assumptions of FS-M03-03",
+        "The existing defectToVisible B r.ker definition"
+      ],
+      "dependencies": [
+        "FS-M03-03",
+        "Experiments.BridgeFourSector.defectToVisible"
+      ],
+      "countercase": "Equality of maps does not provide a recovery procedure.",
+      "authority_ceiling": "Compatibility of the audited quotient maps only.",
+      "residual": "The complete 3x3 diagram and finite-dimensional/recovery claims remain outside this lane.",
+      "reopening": "Name additional source arrows only in a separately bounded diagram lane."
+    },
+    {
+      "id": "FS-M03-05A",
+      "title": "Kernel-readout component is required",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeReadout.generated_directions_required_countercase",
+      "statement": "With B=⊥ and r=Prod.fst, (0,1) lies in ker(rawReadoutToVisible B r) but not in B.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "T/B+K≅rT/rB"
+        }
+      ],
+      "assumptions": [
+        "The displayed rational modules and supplied linear maps"
+      ],
+      "dependencies": [
+        "FS-M03-02"
+      ],
+      "countercase": "This checked construction defeats the stronger claim ker(rawReadoutToVisible)=B.",
+      "authority_ceiling": "Countermodel to one unlicensed simplification of the kernel formula only.",
+      "residual": "They do not establish a geometric, finite-dimensional, or recovery reading.",
+      "reopening": "Compare other proposed kernel simplifications only with a separately stated checked construction."
+    },
+    {
+      "id": "FS-M03-05B",
+      "title": "Generated component is required",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeReadout.generated_component_required_countercase",
+      "statement": "With B=⊤ and r=id on ℚ, 1 lies in ker(rawReadoutToVisible B r) but not in ker r.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0123-P0124",
+          "excerpt": "T/B+K≅rT/rB"
+        }
+      ],
+      "assumptions": [
+        "The displayed rational module and supplied identity map"
+      ],
+      "dependencies": [
+        "FS-M03-02"
+      ],
+      "countercase": "This checked construction defeats the stronger claim ker(rawReadoutToVisible)=ker r.",
+      "authority_ceiling": "Countermodel to one unlicensed simplification of the kernel formula only.",
+      "residual": "It does not establish a geometric, finite-dimensional, or recovery reading.",
+      "reopening": "Compare other proposed kernel simplifications only with a separately stated checked construction."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "FS-M04",
+      "classification": "OPEN_MANUAL",
+      "subject": "Finite-dimensional account and residual recovery criterion",
+      "source_refs": [
+        "P0193-P0199"
+      ],
+      "reason": "Outside this readout lane; no finiteness, recovery, geometry, or Hodge claim was added.",
+      "reopening": "Commission a distinct finite-dimensional and recovery audit."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# BRIDGE v0.4 four-sector audit
+
+Cycle BRIDGE-V04-20260912-01. Source: supplied BRIDGE v0.4 DOCX, SHA256 a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470, original OOXML paragraphs P0108-P0199. User authorized this next bounded audit after publication of the preceding checkpoint.
+
+Plan: inspect the exact quotient-sector definitions and prior v0.2 evidence; implement and check the induced quotient maps and their exactness; test degenerate/hidden-sector boundaries; map every admitted declaration to the source and capture axioms, kernel checks and source review. Keep the new batch separate from the checkpoint PR.
+
+Frozen scope: field-valued modules, B a generated subspace and K a readout kernel (or arbitrary submodules for the pure quotient theorem); C=B∩K, Gv=B/C, H=K/C, D=T/B, V=T/(B+K). Audit H→D→V through its actual maps, and account explicitly for any remaining 3x3 diagram and readout-comparison coverage. Finite-dimensional sector accounting already exists in the v0.2 module; it remains prior evidence. Full diagram claims require checked rows, columns and commuting squares, not dimension counting alone.
+
+Limits: no Hodge, Weil, cycle construction, frame morphisms, source adoption, merge or broader PAL obligation closure. Missing implications remain explicit; a failure to compile is not a counterexample. Worker owns one Lean/claim lane, Keeper evaluates its frozen completion boundary, controller checks and selects local evidence.
+
+Prospective action (REVISED_AFTER_NEW_STEERING, same 2026-09-12 authorization): execute the frozen fourteen-declaration implementation, source correspondence checks, axiom inventory, kernel checker, and historical regression checks on the separate agent/bridge-v04-four-sector-20260912 branch. Preconditions: source identity and mapped quotations checked; the transport from T/(K+B) to T/(B+K) is explicit; all prior receipts remain unchanged; the preceding checkpoint is draft PR 13 with CI pending. Status: ready for the controller's complete local execution. Remaining full-diagram and readout-equivalence coverage is recorded separately in claims.json and SOURCE-REVIEW.md.
+
+Completion record: the controller execution and subsequent --check passed with all eleven commands and eight rejection guards. The Task-Keeper's final review is SATISFIED within this lane. Next consequential action (REVISED_AFTER_NEW_STEERING): preserve the checked batch in a local commit, after staging only this directory and its two dedicated Lean modules and checking the staged diff. Status: ready. No further mathematical lane or publication is initiated by this record.

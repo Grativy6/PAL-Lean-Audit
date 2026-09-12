@@ -1,0 +1,14 @@
+import Experiments.BridgeDiagram
+
+#print axioms Experiments.BridgeDiagram.collisionToKernel_injective
+#print axioms Experiments.BridgeDiagram.hiddenCollision_mkQ_surjective
+#print axioms Experiments.BridgeDiagram.B_subtype_injective
+#print axioms Experiments.BridgeDiagram.B_mkQ_surjective
+#print axioms Experiments.BridgeDiagram.generatedVisibleToKernelQuotient_injective
+#print axioms Experiments.BridgeDiagram.rightColumnToVisible_surjective
+#print axioms Experiments.BridgeDiagram.generatedVisible_right_column_exact
+#print axioms Experiments.BridgeDiagram.upper_right_square_commutes
+#print axioms Experiments.BridgeDiagram.lower_right_square_commutes
+#print axioms Experiments.BridgeDiagram.commuting_square_not_exact_countercase
+#print axioms Experiments.BridgeDiagram.diagram_endpoint_maps
+#print axioms Experiments.BridgeDiagram.complete_diagram_certified

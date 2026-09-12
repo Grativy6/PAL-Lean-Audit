@@ -1,0 +1,11 @@
+{
+  "source_id": "BRIDGE-v0.4",
+  "filename": "BRIDGE_v0.4.docx",
+  "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "bytes": 74384,
+  "identity_basis": "Exact supplied local DOCX bytes; published release identity not independently verified.",
+  "source_excerpts": "Audit/bridge-v04-four-sector/source-excerpts.json",
+  "source_excerpts_sha256": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+  "prior_v02_commit": "06ad391cd362c80d986d879fe5d7346b207a7dfd",
+  "source_scope": "P0108-P0199 Four Sector Endpoint Theorem"
+}

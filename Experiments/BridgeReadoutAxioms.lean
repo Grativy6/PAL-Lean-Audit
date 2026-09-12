@@ -1,0 +1,13 @@
+import Experiments.BridgeReadout
+
+namespace Experiments.BridgeReadout
+
+#print axioms Experiments.BridgeReadout.rawReadoutToVisible_surjective
+#print axioms Experiments.BridgeReadout.ker_rawReadoutToVisible
+#print axioms Experiments.BridgeReadout.visibleEquivReadout
+#print axioms Experiments.BridgeReadout.visibleEquivReadout_apply_mk
+#print axioms Experiments.BridgeReadout.residualReadout_compatibility
+#print axioms Experiments.BridgeReadout.generated_directions_required_countercase
+#print axioms Experiments.BridgeReadout.generated_component_required_countercase
+
+end Experiments.BridgeReadout

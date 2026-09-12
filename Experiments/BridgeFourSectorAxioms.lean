@@ -1,0 +1,20 @@
+import Experiments.BridgeFourSector
+
+namespace Experiments.BridgeFourSector
+
+#print axioms Experiments.BridgeFourSector.ker_hiddenRawToDefect
+#print axioms Experiments.BridgeFourSector.hiddenToDefect_injective
+#print axioms Experiments.BridgeFourSector.defectToVisible_surjective
+#print axioms Experiments.BridgeFourSector.generated_row_exact
+#print axioms Experiments.BridgeFourSector.kernel_row_exact
+#print axioms Experiments.BridgeFourSector.defect_column_exact
+#print axioms Experiments.BridgeFourSector.left_column_exact
+#print axioms Experiments.BridgeFourSector.upper_left_square_commutes
+#print axioms Experiments.BridgeFourSector.lower_left_square_commutes
+#print axioms Experiments.BridgeFourSector.residual_exact
+#print axioms Experiments.BridgeFourSector.right_column_exact
+#print axioms Experiments.BridgeFourSector.ker_readoutOnGenerated
+#print axioms Experiments.BridgeFourSector.generatedVisibleEquivRange
+#print axioms Experiments.BridgeFourSector.no_direct_complement_countercase
+
+end Experiments.BridgeFourSector

@@ -1,0 +1,16 @@
+{
+  "source_id": "BRIDGE-v0.4",
+  "filename": "BRIDGE_v0.4.docx",
+  "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "bytes": 74384,
+  "identity_basis": "Exact supplied local DOCX; no independently verified published v0.4 identity is claimed.",
+  "source_excerpts": "Audit/bridge-v04-four-sector/source-excerpts.json",
+  "source_excerpts_sha256": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+  "source_context": "Audit/bridge-v04-diagram-readout/source-context.json",
+  "source_context_sha256": "d0363ef8853578cee5eec692694989ac30734c4de676cc6526aadc97205f0cdf",
+  "source_scope": "P0108-P0192, full displayed exact diagram and visible-sector readout comparison",
+  "prerequisite_commit": "33a5354bc2e87ad2045fc603dc08658723f7be29",
+  "merged_checkpoint": "6f764e6054f7613d6d95e78a8fef131329f72ed9",
+  "reopened_interfaces": ["FS-M01", "FS-M03"],
+  "retained_open": ["FS-M04"]
+}
