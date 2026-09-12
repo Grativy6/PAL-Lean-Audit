@@ -1,0 +1,467 @@
+{
+  "source_id": "BRIDGE-v0.4",
+  "source_sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "coverage": "Selected original OOXML paragraphs P0108-P0199 only; not a copy of the complete DOCX.",
+  "paragraphs": [
+    {
+      "paragraph": "P0108",
+      "text": "Four Sector Endpoint Theorem",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading1\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">Four Sector Endpoint Theorem</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0109",
+      "text": "Geometric reading. Once the frame is fixed, generation and endpoint visibility are two distinct questions. Their interaction is recorded by four canonical subquotients, even though choosing representatives inside them requires an additional frame.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"FirstParagraph\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:bCs /><ns0:b /></ns0:rPr><ns0:t xml:space=\"preserve\">Geometric reading.</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">Once the frame is fixed, generation and endpoint visibility are two distinct questions. Their interaction is recorded by four canonical subquotients, even though choosing representatives inside them requires an additional frame.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0110",
+      "text": "Define the four canonical sectors:",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">Define the four canonical sectors:</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0111",
+      "text": "Sector",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b /><ns0:color ns0:val=\"FFFFFF\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">Sector</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0112",
+      "text": "Canonical subquotient",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b /><ns0:color ns0:val=\"FFFFFF\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">Canonical subquotient</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0113",
+      "text": "Interpretation",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b /><ns0:color ns0:val=\"FFFFFF\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">Interpretation</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0114",
+      "text": "C",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>C</ns1:t></ns1:r></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0115",
+      "text": "B∩K",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0116",
+      "text": "generated and invisible",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b ns0:val=\"0\" /><ns0:color ns0:val=\"000000\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">generated and invisible</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0117",
+      "text": "Gv",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:sSub><ns1:e><ns1:r><ns1:t>G</ns1:t></ns1:r></ns1:e><ns1:sub><ns1:r><ns1:t>v</ns1:t></ns1:r></ns1:sub></ns1:sSub></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0118",
+      "text": "B/B∩K≅rB",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>≅</ns1:t></ns1:r><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:e></ns1:d></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0119",
+      "text": "generated and visible",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b ns0:val=\"0\" /><ns0:color ns0:val=\"000000\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">generated and visible</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0120",
+      "text": "H",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>H</ns1:t></ns1:r></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0121",
+      "text": "K/B∩K",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>K</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0122",
+      "text": "ungenerated and invisible",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b ns0:val=\"0\" /><ns0:color ns0:val=\"000000\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">ungenerated and invisible</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0123",
+      "text": "V",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>V</ns1:t></ns1:r></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0124",
+      "text": "T/B+K≅rT/rB",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns1:oMath><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>≅</ns1:t></ns1:r><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>T</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:e></ns1:d></ns1:oMath></ns0:p>"
+    },
+    {
+      "paragraph": "P0125",
+      "text": "ungenerated and visible",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Compact\" /><ns0:spacing ns0:after=\"30\" ns0:line=\"247\" ns0:lineRule=\"auto\" /><ns0:jc ns0:val=\"left\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria\" ns0:hAnsi=\"Cambria\" /><ns0:b ns0:val=\"0\" /><ns0:color ns0:val=\"000000\" /><ns0:sz ns0:val=\"18\" /></ns0:rPr><ns0:t xml:space=\"preserve\">ungenerated and visible</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0126",
+      "text": "These are not four chosen complementary subspaces. They are canonical subquotients in the exact diagram",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">These are not four chosen complementary subspaces. They are canonical subquotients in the exact diagram</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0127",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0128",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0129",
+      "text": "C",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>C</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0130",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0131",
+      "text": "B",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>B</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0132",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0133",
+      "text": "Gᵥ",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>Gᵥ</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0134",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0135",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0136",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0137",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0138",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0139",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0140",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0141",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0142",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0143",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0144",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0145",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0146",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0147",
+      "text": "K",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>K</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0148",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0149",
+      "text": "T",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>T</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0150",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0151",
+      "text": "T/K",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>T/K</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0152",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0153",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0154",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0155",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0156",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0157",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0158",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0159",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0160",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0161",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0162",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0163",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0164",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0165",
+      "text": "H",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>H</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0166",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0167",
+      "text": "D",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>D</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0168",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0169",
+      "text": "V",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>V</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0170",
+      "text": "→",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>→</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0171",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0172",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0173",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0174",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0175",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0176",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0177",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0178",
+      "text": "↓",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>↓</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0179",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0180",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0181",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0182",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0183",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0184",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0185",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0186",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0187",
+      "text": "0",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr><ns0:t>0</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0188",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0189",
+      "text": "",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:keepNext /><ns0:spacing ns0:before=\"0\" ns0:after=\"0\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:rFonts ns0:ascii=\"Cambria Math\" ns0:hAnsi=\"Cambria Math\" /><ns0:sz ns0:val=\"25\" /></ns0:rPr></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0190",
+      "text": "Every row and column is exact. In particular,",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">Every row and column is exact. In particular,</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0191",
+      "text": "0→KB∩K→TB→rTrB→0.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:keepLines /><ns0:spacing ns0:before=\"60\" ns0:after=\"140\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns1:oMathPara><ns1:oMathParaPr><ns1:jc ns1:val=\"center\" /></ns1:oMathParaPr><ns1:oMath><ns1:r><ns1:t>0</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:f><ns1:fPr><ns1:type ns1:val=\"bar\" /></ns1:fPr><ns1:num><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:num><ns1:den><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:den></ns1:f><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:f><ns1:fPr><ns1:type ns1:val=\"bar\" /></ns1:fPr><ns1:num><ns1:r><ns1:t>T</ns1:t></ns1:r></ns1:num><ns1:den><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:den></ns1:f><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:f><ns1:fPr><ns1:type ns1:val=\"bar\" /></ns1:fPr><ns1:num><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>T</ns1:t></ns1:r></ns1:e></ns1:d></ns1:num><ns1:den><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:e></ns1:d></ns1:den></ns1:f><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:r><ns1:t>0</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>.</ns1:t></ns1:r></ns1:oMath></ns1:oMathPara></ns0:p>"
+    },
+    {
+      "paragraph": "P0192",
+      "text": "Proof. All arrows are induced by inclusion or quotient. The kernel of B→T/K is B∩K=C, and its image is B+K/K≅B/B∩K=Gv. The kernel of T/B→T/B+K is B+K/B≅K/B∩K=H. The remaining rows and columns are the defining quotient sequences. This proves the diagram and the displayed residual sequence.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"FirstParagraph\" /></ns0:pPr><ns0:r><ns0:rPr><ns0:bCs /><ns0:b /></ns0:rPr><ns0:t xml:space=\"preserve\">Proof.</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">All arrows are induced by inclusion or quotient. The kernel of</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">is</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>=</ns1:t></ns1:r><ns1:r><ns1:t>C</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">, and its image is</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>≅</ns1:t></ns1:r><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>=</ns1:t></ns1:r><ns1:sSub><ns1:e><ns1:r><ns1:t>G</ns1:t></ns1:r></ns1:e><ns1:sub><ns1:r><ns1:t>v</ns1:t></ns1:r></ns1:sub></ns1:sSub></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">. The kernel of</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">is</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>≅</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>∩</ns1:t></ns1:r><ns1:r><ns1:t>K</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>=</ns1:t></ns1:r><ns1:r><ns1:t>H</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">. The remaining rows and columns are the defining quotient sequences. This proves the diagram and the displayed residual sequence.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0193",
+      "text": "Thus the total generative defect has a hidden part H and a visible part V. In finite dimension,",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:keepNext /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">Thus the total generative defect has a hidden part</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>H</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">and a visible part</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>V</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">. In finite dimension,</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0194",
+      "text": "dimT=dimC+dimGv+dimH+dimV.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:keepLines /><ns0:spacing ns0:before=\"60\" ns0:after=\"140\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns1:oMathPara><ns1:oMathParaPr><ns1:jc ns1:val=\"center\" /></ns1:oMathParaPr><ns1:oMath><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>dim</ns1:t></ns1:r><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>=</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>dim</ns1:t></ns1:r><ns1:r><ns1:t>C</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>dim</ns1:t></ns1:r><ns1:sSub><ns1:e><ns1:r><ns1:t>G</ns1:t></ns1:r></ns1:e><ns1:sub><ns1:r><ns1:t>v</ns1:t></ns1:r></ns1:sub></ns1:sSub><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>dim</ns1:t></ns1:r><ns1:r><ns1:t>H</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>+</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>dim</ns1:t></ns1:r><ns1:r><ns1:t>V</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>.</ns1:t></ns1:r></ns1:oMath></ns1:oMathPara></ns0:p>"
+    },
+    {
+      "paragraph": "P0195",
+      "text": "For APCI applied to the generated span with trace r|B, C is the collision space for full identity recovery; for a coarser answer it is an obstruction only where that answer varies. For APCI applied to the residual target D with induced trace",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"FirstParagraph\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">For APCI applied to the generated span with trace</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:sSub><ns1:e><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>|</ns1:t></ns1:r></ns1:e><ns1:sub><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:sub></ns1:sSub></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">,</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>C</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">is the collision space for full identity recovery; for a coarser answer it is an obstruction only where that answer varies. For APCI applied to the residual target</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>D</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">with induced trace</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0196",
+      "text": "r:T/B→rT/rB,",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:keepLines /><ns0:spacing ns0:before=\"60\" ns0:after=\"140\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns1:oMathPara><ns1:oMathParaPr><ns1:jc ns1:val=\"center\" /></ns1:oMathParaPr><ns1:oMath><ns1:bar><ns1:barPr><ns1:pos ns1:val=\"top\" /></ns1:barPr><ns1:e><ns1:r><ns1:t>r</ns1:t></ns1:r></ns1:e></ns1:bar><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>:</ns1:t></ns1:r><ns1:r><ns1:t>T</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>B</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>T</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>/</ns1:t></ns1:r><ns1:r><ns1:t>r</ns1:t></ns1:r><ns1:d><ns1:dPr><ns1:begChr ns1:val=\"(\" /><ns1:endChr ns1:val=\")\" /><ns1:sepChr ns1:val=\"\" /><ns1:grow /></ns1:dPr><ns1:e><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:e></ns1:d><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>,</ns1:t></ns1:r></ns1:oMath></ns1:oMathPara></ns0:p>"
+    },
+    {
+      "paragraph": "P0197",
+      "text": "the collision space is H. A requested linear answer a:D→Aans is endpoint-decodable precisely when",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"FirstParagraph\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">the collision space is</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>H</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">. A requested linear answer</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>a</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>:</ns1:t></ns1:r><ns1:r><ns1:t>D</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>→</ns1:t></ns1:r><ns1:sSub><ns1:e><ns1:r><ns1:t>A</ns1:t></ns1:r></ns1:e><ns1:sub><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>a</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>n</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>s</ns1:t></ns1:r></ns1:sub></ns1:sSub></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\">is endpoint-decodable precisely when</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P0198",
+      "text": "H⊆kera.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:keepLines /><ns0:spacing ns0:before=\"60\" ns0:after=\"140\" /><ns0:jc ns0:val=\"center\" /></ns0:pPr><ns1:oMathPara><ns1:oMathParaPr><ns1:jc ns1:val=\"center\" /></ns1:oMathParaPr><ns1:oMath><ns1:r><ns1:t>H</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>⊆</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:nor /><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>ker</ns1:t></ns1:r><ns1:r><ns1:t>a</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>.</ns1:t></ns1:r></ns1:oMath></ns1:oMathPara></ns0:p>"
+    },
+    {
+      "paragraph": "P0199",
+      "text": "Full residual identity is recoverable precisely when H=0, equivalently K⊆B.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:ns1=\"http://schemas.openxmlformats.org/officeDocument/2006/math\"><ns0:pPr><ns0:pStyle ns0:val=\"FirstParagraph\" /></ns0:pPr><ns0:r><ns0:t xml:space=\"preserve\">Full residual identity is recoverable precisely when</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>H</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>=</ns1:t></ns1:r><ns1:r><ns1:t>0</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">, equivalently</ns0:t></ns0:r><ns0:r><ns0:t xml:space=\"preserve\"> </ns0:t></ns0:r><ns1:oMath><ns1:r><ns1:t>K</ns1:t></ns1:r><ns1:r><ns1:rPr><ns1:sty ns1:val=\"p\" /></ns1:rPr><ns1:t>⊆</ns1:t></ns1:r><ns1:r><ns1:t>B</ns1:t></ns1:r></ns1:oMath><ns0:r><ns0:t xml:space=\"preserve\">.</ns0:t></ns0:r></ns0:p>"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS_BOUNDED_FOUR_SECTOR",
+  "started_utc": "2026-09-12T04:42:26.536298+00:00",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "lake": "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+  "git_checkout_sha": "06ad391cd362c80d986d879fe5d7346b207a7dfd",
+  "git_branch": "agent/bridge-v04-four-sector-20260912",
+  "worktree_status": "?? Audit/bridge-v04-four-sector/\n?? Experiments/BridgeFourSector.lean\n?? Experiments/BridgeFourSectorAxioms.lean",
+  "pr_head_sha": null,
+  "tested_merge_sha": null,
+  "ci_status": "NOT_RUN",
+  "publication_status": "LOCAL_ONLY",
+  "source_sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "source_docx_bytes_verified": true,
+  "source_excerpt_verified": true,
+  "pal_obligations": {
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "D-FIRST-OCCURRENCE": "OPEN"
+  },
+  "authority_ceiling": "Bounded formal evidence only; no source adoption or Hodge result.",
+  "input_canonical_lf_sha256": {
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "AGENTS.md": "c3ab892557153c95e9af798707b59be15bb1c3b08b2ec7ee6ba331afecc7ff21",
+    "docs/REPORTING.md": "6b37c7cbbda7447f38d57879a5866bb03d635b3b6a227cf64618c2d07ee25e87",
+    "Audit/BridgeEndpoint.lean": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "scripts/check_policy.py": "b38d4b493f850f964fa34bb08fb28778a9cd31640e3c956a2f0d51bdd4ac8b82",
+    "scripts/run_pal23_charter.py": "188d0979e1e4548a9cb795a484a7db936c5f8234709a7820188c5612f97e0437",
+    "Audit/bridge-v04-four-sector/run.py": "11e1529bd632d778f6d4ceae458723fdabc9789cd1ede570caf22a5d694655dc",
+    "Audit/bridge-v04-four-sector/claims.json": "0c24daf60db54413e605409097359f69d2cb132a34287a9dde8eb70046a5d93f",
+    "Audit/bridge-v04-four-sector/SOURCE-REVIEW.md": "115c72a7e91c131bf2e6a125a91a94baa0fd20a4fabdc498461b25f12fe5dd40",
+    "Audit/bridge-v04-four-sector/source-manifest.json": "f4f4c269fac526b7a1526ca3fe860b21e6aa5c90b760a2567ec0ad7da97460d0",
+    "Audit/bridge-v04-four-sector/source-excerpts.json": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+    "Audit/bridge-v04-four-sector/.gitattributes": "a2c87ff1a09a72bbe6c848b183bc064efc327fe42519549922c8d6cf3215588a"
+  },
+  "declarations": [
+    "Experiments.BridgeFourSector.ker_hiddenRawToDefect",
+    "Experiments.BridgeFourSector.hiddenToDefect_injective",
+    "Experiments.BridgeFourSector.defectToVisible_surjective",
+    "Experiments.BridgeFourSector.generated_row_exact",
+    "Experiments.BridgeFourSector.kernel_row_exact",
+    "Experiments.BridgeFourSector.defect_column_exact",
+    "Experiments.BridgeFourSector.residual_exact",
+    "Experiments.BridgeFourSector.right_column_exact",
+    "Experiments.BridgeFourSector.generatedVisibleEquivRange",
+    "Experiments.BridgeFourSector.ker_readoutOnGenerated",
+    "Experiments.BridgeFourSector.left_column_exact",
+    "Experiments.BridgeFourSector.upper_left_square_commutes",
+    "Experiments.BridgeFourSector.lower_left_square_commutes",
+    "Experiments.BridgeFourSector.no_direct_complement_countercase"
+  ],
+  "classifications": {
+    "FS-01": "PROVED_FROM_DECLARED_RULES",
+    "FS-02": "PROVED_FROM_DECLARED_RULES",
+    "FS-03": "PROVED_FROM_DECLARED_RULES",
+    "FS-04": "PROVED_FROM_DECLARED_RULES",
+    "FS-05": "PROVED_FROM_DECLARED_RULES",
+    "FS-06": "PROVED_FROM_DECLARED_RULES",
+    "FS-07": "PROVED_FROM_DECLARED_RULES",
+    "FS-08": "PROVED_FROM_DECLARED_RULES",
+    "FS-09": "CONSISTENT_REALIZATION",
+    "FS-09K": "PROVED_FROM_DECLARED_RULES",
+    "FS-10": "PROVED_FROM_DECLARED_RULES",
+    "FS-11": "PROVED_FROM_DECLARED_RULES",
+    "FS-12": "PROVED_FROM_DECLARED_RULES",
+    "FS-13": "COUNTERMODEL_TO_OVERCLAIM"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/lean-version.txt",
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "elapsed_seconds": 2.547
+    },
+    {
+      "label": "build-four-sector",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.BridgeFourSector"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/build-four-sector.txt",
+      "sha256": "edb3a51084a64ac003eac7cc500ce3bc7885c9ae4ecf70b65f8fadd23e35cb45",
+      "elapsed_seconds": 3.515
+    },
+    {
+      "label": "four-sector-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/BridgeFourSectorAxioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/four-sector-axioms.txt",
+      "sha256": "a48c3eaf252c6f3d05f3269857cfbc843c447059cb5a6e720f9056a710f0c6a8",
+      "elapsed_seconds": 9.657
+    },
+    {
+      "label": "four-sector-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeFourSector"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/four-sector-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 49.687
+    },
+    {
+      "label": "historical-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-build.txt",
+      "sha256": "cc38eb60e40b6785d3121dd801e3ea01eb0cef8ec4d108938e93091b8b326910",
+      "elapsed_seconds": 49.688
+    },
+    {
+      "label": "historical-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-policy.txt",
+      "sha256": "26bdc438a787b7500be87bcb1ba56c56029d63b00c46a76f3356f73d88c84242",
+      "elapsed_seconds": 0.156
+    },
+    {
+      "label": "historical-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-report.txt",
+      "sha256": "5e8d6d686a695dff1d83745ee1b8ea63bd5e9d452f725fc39c73e60de46e483a",
+      "elapsed_seconds": 0.172
+    },
+    {
+      "label": "historical-migration",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_release_migration.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-migration.txt",
+      "sha256": "04fcceb20fac4386f708dbc309c06fa5317da2ef0577e2f194df9b37f57f82e1",
+      "elapsed_seconds": 4.656
+    },
+    {
+      "label": "historical-ar3",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-ar3.txt",
+      "sha256": "4c4916f3c2f25d0f9127c5e74ef818e0ec6d6ecc8bc2fa1c7b2365f86f5178b9",
+      "elapsed_seconds": 0.156
+    },
+    {
+      "label": "historical-ar3-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/historical-ar3-report.txt",
+      "sha256": "b99dc1f849d03be82fa213d9803dbe68bdbbfce0324d4a77859dbf5e5f021176",
+      "elapsed_seconds": 0.172
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z/diff-check.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 0.063
+    }
+  ],
+  "axioms": {
+    "Experiments.BridgeFourSector.ker_hiddenRawToDefect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hiddenToDefect_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defectToVisible_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.generated_row_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.kernel_row_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defect_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.left_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.upper_left_square_commutes": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.lower_left_square_commutes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.residual_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.right_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.ker_readoutOnGenerated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.generatedVisibleEquivRange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.no_direct_complement_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "evidence_directory": "Audit/bridge-v04-four-sector/evidence/attempt-20260912T044226535298Z",
+  "receipt_guards": [
+    "missing-command",
+    "failed-kernel",
+    "changed-log",
+    "changed-source",
+    "missing-axiom-inventory",
+    "closed-obligation",
+    "invented-ci",
+    "missing-declaration"
+  ],
+  "finished_utc": "2026-09-12T04:44:27.264723+00:00"
+}
