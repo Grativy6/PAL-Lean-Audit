@@ -55,19 +55,29 @@ def replay(lake: str, output: Path) -> dict:
     with tempfile.TemporaryDirectory(prefix='bridge-pr14-') as temporary:
         worktree = Path(temporary) / 'checkout'
         linked_lake = worktree / '.lake'
+        cache_links = []
         assert worktree.resolve().parent == Path(temporary).resolve()
         try:
             subprocess.run(['git', 'worktree', 'add', '--detach', str(worktree), PINNED_HEAD], cwd=ROOT, check=True,
                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding='utf-8')
             actual = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=worktree, text=True).strip()
             assert actual == PINNED_HEAD
-            # The checkout is immutable. A link merely exposes the prepared cache.
-            try:
-                os.symlink(ROOT / '.lake', linked_lake, target_is_directory=True)
-            except OSError:
-                if os.name != 'nt': raise
-                subprocess.run(['cmd', '/c', 'mklink', '/J', str(linked_lake), str(ROOT / '.lake')], check=True,
-                               stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding='utf-8')
+            # .gitignore contains .lake/: it ignores a directory, not a Unix symlink.
+            # Keep that directory real and expose prepared cache entries inside it.
+            linked_lake.mkdir()
+            for cache_entry in (ROOT / '.lake').iterdir():
+                target = linked_lake / cache_entry.name
+                if cache_entry.is_dir():
+                    try:
+                        os.symlink(cache_entry, target, target_is_directory=True)
+                    except OSError:
+                        if os.name != 'nt': raise
+                        subprocess.run(['cmd', '/c', 'mklink', '/J', str(target), str(cache_entry)], check=True,
+                                       stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding='utf-8')
+                    cache_links.append(target)
+                else:
+                    shutil.copy2(cache_entry, target)
+            assert not subprocess.check_output(['git', 'status', '--porcelain'], cwd=worktree, text=True).strip()
             child_env = os.environ.copy()
             child_env.pop('GITHUB_RUN_ID', None)
             child_env.pop('BRIDGE_DIAGRAM_PR_HEAD_SHA', None)
@@ -98,12 +108,12 @@ def replay(lake: str, output: Path) -> dict:
         finally:
             record['finished_utc'] = datetime.now(timezone.utc).isoformat()
             write(output / 'execution.json', record)
-            if linked_lake.exists() or linked_lake.is_symlink():
-                assert linked_lake.parent == worktree and linked_lake.name == '.lake'
-                if linked_lake.is_symlink(): linked_lake.unlink()
+            for cache_link in cache_links:
+                assert cache_link.parent == linked_lake and linked_lake.parent == worktree
+                if cache_link.is_symlink(): cache_link.unlink()
                 else:
-                    assert os.name == 'nt' and linked_lake.lstat().st_file_attributes & stat.FILE_ATTRIBUTE_REPARSE_POINT
-                    os.rmdir(linked_lake)
+                    assert os.name == 'nt' and cache_link.lstat().st_file_attributes & stat.FILE_ATTRIBUTE_REPARSE_POINT
+                    os.rmdir(cache_link)
             assert worktree.resolve().parent == Path(temporary).resolve()
             subprocess.run(['git', 'worktree', 'remove', '--force', str(worktree)], cwd=ROOT, check=False,
                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT)

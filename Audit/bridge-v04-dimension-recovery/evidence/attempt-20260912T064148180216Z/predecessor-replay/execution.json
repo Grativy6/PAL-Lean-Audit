@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS_HISTORICAL_PR14_REPLAY",
+  "mode": "HISTORICAL_REPLAY",
+  "historical_checkout": "1babbcd19b51bba46dc9a51365dcadbe31bf1763",
+  "historical_runner": "Audit/bridge-v04-diagram-readout/run.py",
+  "started_utc": "2026-09-12T06:44:08.844148+00:00",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/bridge-v04-diagram-readout/run.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "historical-check.txt",
+      "sha256": "a5eea8d7a9d743e0b387950915b124714be3a75ea98c277a3c56efa412dee17a",
+      "label": "historical-check"
+    },
+    {
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/bridge-v04-diagram-readout/run.py",
+        "--replay",
+        "--lake",
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "--output-dir",
+        "C:\\Users\\cdpan\\AppData\\Local\\Temp\\bridge-pr14-_9j_601i\\checkout\\artifacts\\bridge-pr14-historical-replay"
+      ],
+      "exit_code": 0,
+      "log": "historical-replay.txt",
+      "sha256": "d275ca262337ab890d9c04c36831b50177f01f96a05fb34e5e759dfae74f19e0",
+      "label": "historical-replay"
+    }
+  ],
+  "parent_github_run_id": null,
+  "parent_pr_head_sha": null,
+  "parent_checkout_sha": "9a061b96247491d7004554756db4e834f9d78619",
+  "coverage": "PINNED_HISTORICAL_TREE_ONLY_NOT_CURRENT_CANDIDATE",
+  "historical_replay_execution_sha256": "d6c1091811c41c3d1a06541027ea1356c79fcd77668cc19ac59393370fa88a7b",
+  "finished_utc": "2026-09-12T06:47:31.764315+00:00"
+}

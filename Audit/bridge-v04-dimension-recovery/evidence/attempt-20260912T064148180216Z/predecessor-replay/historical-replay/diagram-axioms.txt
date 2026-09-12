@@ -1,0 +1,18 @@
+'Experiments.BridgeDiagram.collisionToKernel_injective' depends on axioms: [propext, Quot.sound]
+'Experiments.BridgeDiagram.hiddenCollision_mkQ_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.B_subtype_injective' depends on axioms: [propext, Quot.sound]
+'Experiments.BridgeDiagram.B_mkQ_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.generatedVisibleToKernelQuotient_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeDiagram.rightColumnToVisible_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.generatedVisible_right_column_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeDiagram.upper_right_square_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.lower_right_square_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.commuting_square_not_exact_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeDiagram.diagram_endpoint_maps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDiagram.complete_diagram_certified' depends on axioms: [propext, Classical.choice, Quot.sound]
