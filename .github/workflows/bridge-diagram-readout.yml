@@ -1,0 +1,26 @@
+name: BRIDGE diagram and readout bounded checks
+on:
+  pull_request:
+    paths: ['Experiments/**', 'Audit/**', 'PALLeanAudit/**', 'scripts/**', 'docs/REPORTING.md', 'AGENTS.md', 'Audit.lean', 'PALLeanAudit.lean', 'lean-toolchain', 'lake-manifest.json', 'lakefile.lean', '.gitattributes', '.github/workflows/**']
+permissions: {contents: read}
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with: {fetch-depth: 0}
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
+        with: {build: true, leanchecker: false, use-mathlib-cache: true}
+      - run: python3 Audit/bridge-v04-diagram-readout/run.py --check
+      - run: python3 Audit/bridge-v04-diagram-readout/failure_probes.py --output-dir artifacts/bridge-diagram-failure-probes
+      - run: python3 Audit/bridge-v04-diagram-readout/run.py --replay --lake lake --output-dir artifacts/bridge-diagram-readout-replay
+        env: {BRIDGE_DIAGRAM_PR_HEAD_SHA: '${{ github.event.pull_request.head.sha }}'}
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: bridge-diagram-readout-receipts
+          if-no-files-found: error
+          path: |
+            artifacts/bridge-diagram-readout-replay/
+            artifacts/bridge-diagram-failure-probes/

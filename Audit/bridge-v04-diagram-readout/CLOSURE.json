@@ -1,0 +1,28 @@
+{
+  "cycle": "BRIDGE-COMPLETE-20260912-01",
+  "evidence": "Audit/bridge-v04-diagram-readout/results.json",
+  "scope": "Supplied BRIDGE v0.4 field-valued linear realization, P0108-P0192",
+  "source_interfaces": [
+    {
+      "predecessor": "Audit/bridge-v04-four-sector/claims.json#FS-M01",
+      "historical_status_preserved": "OPEN_MANUAL",
+      "new_disposition": "DISCHARGED_IN_DECLARED_LINEAR_REALIZATION",
+      "declaration": "Experiments.BridgeDiagram.complete_diagram_certified",
+      "content": "Six short-exact sequences, twelve endpoint properties, four commuting squares"
+    },
+    {
+      "predecessor": "Audit/bridge-v04-four-sector/claims.json#FS-M03",
+      "historical_status_preserved": "OPEN_MANUAL",
+      "new_disposition": "DISCHARGED_IN_DECLARED_LINEAR_REALIZATION",
+      "declarations": [
+        "Experiments.BridgeReadout.visibleEquivReadout",
+        "Experiments.BridgeReadout.visibleEquivReadout_apply_mk",
+        "Experiments.BridgeReadout.residualReadout_compatibility"
+      ],
+      "content": "Canonical V equivalence with range(r)/r(B), representative action and residual compatibility"
+    }
+  ],
+  "remaining_interface": "FS-M04: finite-dimensional accounting and residual recovery remain outside this batch",
+  "pal_obligations": {"O04": "OPEN", "O25": "OPEN", "D-FIRST-OCCURRENCE": "OPEN"},
+  "authority_ceiling": "Bounded formal evidence only; no manuscript adoption, Hodge result, or merge authority"
+}
