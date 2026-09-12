@@ -1,0 +1,11 @@
+import Experiments.Bridge
+
+namespace Experiments.Bridge
+
+#print axioms Experiments.Bridge.zero_residue_iff_kernel
+#print axioms Experiments.Bridge.zero_residue_implies_observable_equality
+#print axioms Experiments.Bridge.uniform_equality_iff_kernel_trivial_on_admitted_differences
+#print axioms Experiments.Bridge.reachable_decoder_iff_fiber_constant
+#print axioms Experiments.Bridge.hidden_difference_countermodel
+
+end Experiments.Bridge

@@ -1,0 +1,10 @@
+Preserved local evidence, canonical-LF inputs, and all 27 declarations verified.
+Source DOCX bytes: NOT_RECHECKED
+Running lean-version
+Running lake-build-experiments
+Running pal23-axioms
+Running charter-axioms
+Running leanchecker-experiments
+Preserved local evidence, canonical-LF inputs, and all 27 declarations verified.
+Source DOCX bytes: NOT_RECHECKED
+PASS_DECLARED_LEAN_REPLAY: 27 exact declarations and dependencies; bundled kernel passed.

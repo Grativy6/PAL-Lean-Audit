@@ -1,0 +1,53 @@
+name: PAL CHARTER and BRIDGE bounded checks
+
+on:
+  pull_request:
+    paths:
+      - 'Experiments/**'
+      - 'Audit/recent-work-20260911/**'
+      - 'Audit.lean'
+      - 'Audit/BridgeEndpoint.lean'
+      - 'lean-toolchain'
+      - 'lake-manifest.json'
+      - 'lakefile.lean'
+      - '.gitattributes'
+      - '.github/workflows/recent-work.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recent-work-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - name: Set up pinned Lean and build
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
+        with:
+          build: true
+          leanchecker: false
+          use-mathlib-cache: true
+      - name: Verify frozen receipt and rejection guards
+        run: |
+          python3 Audit/recent-work-20260911/check_publication.py --check
+          python3 Audit/recent-work-20260911/check_publication_guards.py --output artifacts/recent-work-20260911-guards/publication-guard-results.json
+      - name: Replay 13 declared modules and kernel checks
+        env:
+          RECENT_WORK_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          python3 Audit/recent-work-20260911/check_publication.py --replay --lake lake --output-dir artifacts/recent-work-20260911-replay
+      - name: Upload replay receipts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: recent-work-declared-lean-replay
+          if-no-files-found: error
+          path: |
+            artifacts/recent-work-20260911-replay/
+            artifacts/recent-work-20260911-guards/
+            Audit/recent-work-20260911/publication-inputs.json
+            Audit/recent-work-20260911/source-excerpts.json

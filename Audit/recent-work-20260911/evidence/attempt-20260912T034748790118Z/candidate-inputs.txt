@@ -1,0 +1,2 @@
+Candidate input check passed: strict JSON-compatible YAML, five source locks, eight CANDIDATE statements, and OPEN O04/O25.
+Repository impact canonical-LF SHA-256: 42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe

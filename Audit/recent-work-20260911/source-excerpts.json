@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Selected source paragraph quotations used by the 13 declared mappings. These excerpts are not full DOCX extractions and do not establish full source conformance.",
+  "excerpts": [
+    {"id":"PAL-v2.3-M:P1448-P1458","sha256":"51e4d8498e1366b2cfd7fa233224cf72a361832f14200733e15de7140ba47dfa","text":"U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."},
+    {"id":"PAL-v2.3-T:P1401","sha256":"9449e1df5280bdea72a57c3c684855e3c22ac1244cd4abd2f8f2b48b556455b4","text":"For declared compare-exchange Uᵢⱼ and cᵢⱼ(x)=1[xᵢ<xⱼ], enumerate the two-point collision"},
+    {"id":"PAL-v2.3-M:P1450-P1471","sha256":"20caa7af6c0b7d9d4a493e730a111fce7b992d539fb8eb74d0dcf84518757fb1","text":"The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."},
+    {"id":"PAL-v2.3-M:P1450-P1464","sha256":"20caa7af6c0b7d9d4a493e730a111fce7b992d539fb8eb74d0dcf84518757fb1","text":"The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."},
+    {"id":"PAL-v2.3-T:P1226","sha256":"b5c37cd1414656e79c8daa91a2fef66e79ba95f19bf06b238cba287c847ca935","text":"exhibit an update collision, prove the action-bit lift injective by explicit left inverse"},
+    {"id":"PAL-v2.3-M:P1385-P1405","sha256":"6138899db20317d2833a911e9d827979025f36821d04b7365c7e3e94d141d996","text":"Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q. Extension of d_R to all T is a separate totalization claim."},
+    {"id":"PAL-v2.3-T:P1393","sha256":"9daaaf4a8fe741a8878557730121ead60098802428f5037662f03be0cc6048c2","text":"L(τ,q)=∅ exactly when a unique d_R:R→Q satisfies q=d_R∘τ on W."},
+    {"id":"CHARTER-v1.0:P0059-P0060","sha256":"a34950bf04990db8e1ef33cc1a4c8e5506ccecb9821d7abe03b9252d60eef829","text":"In the 1,η basis, multiplication is"},
+    {"id":"CHARTER-v1.0:P0066-P0070","sha256":"4b7dca679b2d6ee4550e7428b2280d6a4d0964fc8ec0adf66710778fdb1689dc","text":"Nx=Nx,  NRx=Nx,"},
+    {"id":"CHARTER-v1.0:P0066-P0070:Nxy","sha256":"e2ca9f2de48b442a7442f9b8b2d186e74e658c825cbc19c6d93f195e5480a8b7","text":"Nxy=NxNy"},
+    {"id":"CHARTER-v1.0:P0061-P0062","sha256":"61e9597032f0b8bc0e86aeb329ab06ea9c594bef59b7bc7c3c90bbb937b2d36f","text":"Arithmetic conjugation and multiplication by the unit η are"},
+    {"id":"CHARTER-v1.0:P0061-P0063","sha256":"4020ff984773ee687c4cdd578debaa46afd8ae106063b39946669367b7112168","text":"Ra,b=−b,a+b."},
+    {"id":"CHARTER-v1.0:P0071-P0072","sha256":"979849f2d2d9d1ddf3217d7792202d7279b056c8db474af09088d2aec854dbf3","text":"The fixed-point equation Rx=x gives −b=a and a+b=b, hence a=b=0."},
+    {"id":"BRIDGE-v0.4:P0053-P0066","sha256":"f972ade4134bc339fa9e6214e23aed694d0757b36cf4bcf39f3a0cd3a1494aac","text":"Consequently, for every x∈XFadm, DetF​ρFx;Φ,Φ0=0 ⇔ ρFx;Φ,Φ0=0 ⇔ Φ−Φ0x∈kerrF."},
+    {"id":"BRIDGE-v0.4:P0067-P0071","sha256":"b04edd25929db4176603bd311adf6e670cad200dab60d98f45daac0e97595375","text":"A zero exact residue therefore establishes equality of the two observable classes."},
+    {"id":"BRIDGE-v0.4:P0071-P0073","sha256":"f1a5f5ea261b51fdead5279bc08f29a3ff676932f8c65aeb62c5afcfde3d30ac","text":"Uniformly on the admitted domain, zero residue establishes Φx=Φ0x exactly when SF∩kerrF⊆{0}."},
+    {"id":"BRIDGE-v0.4:P0105-P0107","sha256":"209e63709b0514d5cd8fd36308b5a6260b5b835b3d93dd865ba4d72eacb39109","text":"A requested answer q:W→Q is decodable exactly when it is constant on these fibers, subject to APCI’s stated reachable-versus-total codomain boundary."}
+  ]
+}

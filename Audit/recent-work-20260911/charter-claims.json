@@ -1,0 +1,116 @@
+{
+  "lane": "charter",
+  "claims": [
+    {
+      "id": "CHARTER-SUPPLEMENT-C01",
+      "title": "Declared coordinate norm is multiplicative",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.CharterFollowup.coordNorm_mul",
+      "statement": "∀ x y : ℤ × ℤ, coordNorm (coordMul x y) = coordNorm x * coordNorm y",
+      "source_refs": [
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0059-P0060",
+          "excerpt": "In the 1,η basis, multiplication is"
+        },
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0066-P0070",
+          "excerpt": "Nxy=NxNy"
+        }
+      ],
+      "assumptions": [
+        "Integer coordinate domain Z x Z; multiplication, conjugation, rotation and norm are the displayed coordinate operations. This does not establish a comparison map into the complex Eisenstein lattice."
+      ],
+      "countercase": "The result is only for coordMul and coordNorm as defined here; arbitrary pair operations need not preserve this identity.",
+      "authority_ceiling": "Integer-coordinate algebra only; it does not establish shell occupancy, prime status, or a CHARTER systems claim.",
+      "residual": "The source's identification with Eisenstein integers is represented by declared coordinates rather than a library isomorphism.",
+      "reopening": "Replace the coordinate realization with an audited Eisenstein-integer interface if that representation is needed."
+    },
+    {
+      "id": "CHARTER-SUPPLEMENT-C02",
+      "title": "Declared conjugation preserves coordinate norm",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.CharterFollowup.coordNorm_conj",
+      "statement": "∀ x : ℤ × ℤ, coordNorm (coordConj x) = coordNorm x",
+      "source_refs": [
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0061-P0062",
+          "excerpt": "Arithmetic conjugation and multiplication by the unit η are"
+        },
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0066-P0070",
+          "excerpt": "Nx=Nx,  NRx=Nx,"
+        }
+      ],
+      "assumptions": [
+        "Integer coordinate domain Z x Z; multiplication, conjugation, rotation and norm are the displayed coordinate operations. This does not establish a comparison map into the complex Eisenstein lattice."
+      ],
+      "countercase": "Norm preservation does not imply that every coordinate operation is a conjugation or preserves frame witnesses.",
+      "authority_ceiling": "Integer-coordinate algebra only; no geometric or evidentiary interpretation follows.",
+      "residual": "No connection to the manuscript's Euclidean embedding is formalized.",
+      "reopening": "Add the embedding and its separately scoped reflection theorem if required."
+    },
+    {
+      "id": "CHARTER-SUPPLEMENT-C03",
+      "title": "Declared unit rotation preserves coordinate norm",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.CharterFollowup.coordNorm_rotate",
+      "statement": "∀ x : ℤ × ℤ, coordNorm (coordRotate x) = coordNorm x",
+      "source_refs": [
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0061-P0063",
+          "excerpt": "Ra,b=−b,a+b."
+        },
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0066-P0070",
+          "excerpt": "Nx=Nx,  NRx=Nx,"
+        }
+      ],
+      "assumptions": [
+        "Integer coordinate domain Z x Z; multiplication, conjugation, rotation and norm are the displayed coordinate operations. This does not establish a comparison map into the complex Eisenstein lattice."
+      ],
+      "countercase": "Preservation of one quadratic form does not prove the six-element unit-orbit classification.",
+      "authority_ceiling": "Integer-coordinate algebra only; no shell point count or prime classification is concluded.",
+      "residual": "The sixth-power rotation law is not included in this supplementary lane.",
+      "reopening": "Formalize repeated rotation and unit-orbit claims under their cited classical assumptions."
+    },
+    {
+      "id": "CHARTER-SUPPLEMENT-C04",
+      "title": "Full coordinate rotation has only the origin as a fixed point",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.CharterFollowup.coordRotate_fixed_iff",
+      "statement": "∀ x : ℤ × ℤ, coordRotate x = x ↔ x = (0,0)",
+      "source_refs": [
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0061-P0063",
+          "excerpt": "Ra,b=−b,a+b."
+        },
+        {
+          "source_id": "CHARTER-v1.0",
+          "paragraphs": "P0071-P0072",
+          "excerpt": "The fixed-point equation Rx=x gives −b=a and a+b=b, hence a=b=0."
+        }
+      ],
+      "assumptions": [
+        "Integer coordinate domain Z x Z; multiplication, conjugation, rotation and norm are the displayed coordinate operations. This does not establish a comparison map into the complex Eisenstein lattice."
+      ],
+      "countercase": "At the origin the fixed-point conclusion is attained; a positive-shell exclusion additionally needs a positive norm premise.",
+      "authority_ceiling": "This proves the coordinate fixed-point equation only; it does not independently establish the manuscript's positive-shell terminology.",
+      "residual": "No norm-positivity bridge from nonzero coordinates is included.",
+      "reopening": "Add a separately checked positivity lemma if the positive-shell corollary is needed."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "CHARTER-SUPPLEMENT-M01",
+      "classification": "OPEN_MANUAL",
+      "disposition": "The manuscript's notation identifies coordinates with Eisenstein integers; this lane uses an explicit integer-pair realization and does not claim a library-level identity with a canonical Eisenstein type."
+    }
+  ]
+}

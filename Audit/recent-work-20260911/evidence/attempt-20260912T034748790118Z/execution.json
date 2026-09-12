@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0",
+  "run_id": "recent-work-20260911",
+  "status": "PASS_LOCAL_BOUNDED_CHECKS",
+  "started_utc": "2026-09-12T03:47:48.791116+00:00",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "lake": "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+  "git_base_commit": "e00ffc6c506e9801c745856c0090688336e61850",
+  "git_branch": "agent/pal-charter-bridge-audit-20260911",
+  "worktree_status": "?? Audit/recent-work-20260911/\n?? Experiments/Bridge.lean\n?? Experiments/BridgeAxioms.lean\n?? Experiments/CharterFollowup.lean\n?? Experiments/CharterFollowupAxioms.lean\n?? Experiments/Pal23Followup.lean\n?? Experiments/Pal23FollowupAxioms.lean\n",
+  "source_checks": [
+    {
+      "id": "PAL-v2.3-Spine",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-C",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-L",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-M",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "status": "MATCH"
+    },
+    {
+      "id": "PAL-v2.3-T",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "status": "MATCH"
+    },
+    {
+      "id": "CHARTER-v1.0",
+      "sha256": "3f813ecadfcea957bdccb157d83792612a85c78e318a4ec22da62efc3d8bcabf",
+      "status": "MATCH"
+    },
+    {
+      "id": "BRIDGE-v0.4",
+      "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+      "status": "MATCH"
+    }
+  ],
+  "input_canonical_lf_sha256": {
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "AGENTS.md": "c3ab892557153c95e9af798707b59be15bb1c3b08b2ec7ee6ba331afecc7ff21",
+    "docs/REPORTING.md": "6b37c7cbbda7447f38d57879a5866bb03d635b3b6a227cf64618c2d07ee25e87",
+    ".gitattributes": "66381f7274c9a55afd20dd150ec2b30094e6786c00a2ec0877b5c12440563976",
+    "scripts/check_policy.py": "b38d4b493f850f964fa34bb08fb28778a9cd31640e3c956a2f0d51bdd4ac8b82",
+    "scripts/run_pal23_charter.py": "188d0979e1e4548a9cb795a484a7db936c5f8234709a7820188c5612f97e0437",
+    "Audit/pal-v23-charter/check_publication.py": "b4254875a2334641e9c2d19d3cb67e70569fa6739972a4d1c4b17b306f23f413",
+    "Audit/recent-work-20260911/.gitattributes": "429249d8655b787376107e7a6ddc4da6aa47f31109c4940c3af5727c451c0ae6",
+    "Audit/recent-work-20260911/source-manifest.json": "43732b576fb52b5ddfe603a298ede1174008681d829100bbe716b0ecba9411c4",
+    "Audit/recent-work-20260911/extract_sources.py": "c75f4db93d46b2a9c43358f9eeb665b234f79de1ecd9a1d416037f715641ee97",
+    "Audit/recent-work-20260911/run.py": "322e7eb17206d8be690692d86035515af49050091f5dbfce830d5282a9d3f90b",
+    "Audit/recent-work-20260911/REVIEW.md": "52f91bf37592478d51d5d0ded739a04c852ef62c34066174c035aac4cc44d1b5",
+    "Audit/recent-work-20260911/pal-claims.json": "89d25224a9444b25ea1e939283d62af1e8d5f2f9223bfb016f2ab99121b4c3d1",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "Audit/recent-work-20260911/charter-claims.json": "60878b3f894794a1417b580986fe1e610c521132d2065dc6591d65362a74adbf",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Audit/recent-work-20260911/bridge-claims.json": "5672aacb334c4068352d89a4c6c53022b43cb6784b43ba73c8edffef7f2f0731",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
+    "PAL/AttackRun0003.lean": "0225fe8a13702e020ae368697937cfe373761888cbcdc257a19399f5a6e0c34f",
+    "PAL/Bootstrap.lean": "477df5fdcdde64854eeddb803269b467bc54474cbb87f13d4c20e55259b5c317",
+    "Audit/AttackRun0001.lean": "f542601220ea07ddd17d066099dd6785cc8ddb124291297d5d9e491bdf26e3cc",
+    "Audit/AttackRun0002.lean": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
+    "Audit/AttackRun0003.lean": "2f0a94acb3eb7fdc55fd8dd31d09dffc40ac763bdd615f690f30ef466577b22c",
+    "Audit/Bootstrap.lean": "554e0248382656502b4e289892b41d5070d034741c90f6c82cd93a77cec119f8",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "PAL.lean": "2d569e583bfd27a46edde7477606aef5538dc73638b7da554e67a663168be78d",
+    "Audit.lean": "307bc24b4b77d59d1bfc6768ed252273051363005154835a42e0bcdf8da83770",
+    "PALLeanAudit.lean": "5186b1f7840cd736c457abfca4c2b534737d8dd09fb632fe3a78d4d9e187fd5c"
+  },
+  "source_obligations": {
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "D-FIRST-OCCURRENCE": "OPEN",
+    "multi_parent_lineage_boundary": "OPEN"
+  },
+  "ci_status": "NOT_RUN",
+  "publication_status": "LOCAL_ONLY",
+  "declaration_inventory": {
+    "pal": [
+      "Experiments.Pal23Followup.exchange_has_two_point_collision",
+      "Experiments.Pal23Followup.restore_repairedExchange",
+      "Experiments.Pal23Followup.repairedExchange_injective",
+      "Experiments.Pal23Followup.reachable_decoder_unique"
+    ],
+    "charter": [
+      "Experiments.CharterFollowup.coordNorm_mul",
+      "Experiments.CharterFollowup.coordNorm_conj",
+      "Experiments.CharterFollowup.coordNorm_rotate",
+      "Experiments.CharterFollowup.coordRotate_fixed_iff"
+    ],
+    "bridge": [
+      "Experiments.Bridge.zero_residue_iff_kernel",
+      "Experiments.Bridge.zero_residue_implies_observable_equality",
+      "Experiments.Bridge.uniform_equality_iff_kernel_trivial_on_admitted_differences",
+      "Experiments.Bridge.reachable_decoder_iff_fiber_constant",
+      "Experiments.Bridge.hidden_difference_countermodel"
+    ]
+  },
+  "declaration_axioms": {
+    "Experiments.Pal23Followup.exchange_has_two_point_collision": [],
+    "Experiments.Pal23Followup.restore_repairedExchange": [
+      "propext"
+    ],
+    "Experiments.Pal23Followup.repairedExchange_injective": [
+      "propext"
+    ],
+    "Experiments.Pal23Followup.reachable_decoder_unique": [
+      "Quot.sound"
+    ],
+    "Experiments.CharterFollowup.coordNorm_mul": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CharterFollowup.coordNorm_conj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CharterFollowup.coordNorm_rotate": [
+      "propext"
+    ],
+    "Experiments.CharterFollowup.coordRotate_fixed_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Bridge.zero_residue_iff_kernel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Bridge.zero_residue_implies_observable_equality": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Bridge.uniform_equality_iff_kernel_trivial_on_admitted_differences": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Bridge.reachable_decoder_iff_fiber_constant": [
+      "Classical.choice"
+    ],
+    "Experiments.Bridge.hidden_difference_countermodel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "classifications": {
+    "pal": {
+      "PAL23-SUP-01": "COUNTERMODEL_TO_OVERCLAIM",
+      "PAL23-SUP-02": "PROVED_FROM_DECLARED_RULES",
+      "PAL23-SUP-03": "PROVED_FROM_DECLARED_RULES",
+      "PAL23-SUP-04": "PROVED_FROM_DECLARED_RULES"
+    },
+    "charter": {
+      "CHARTER-SUPPLEMENT-C01": "PROVED_FROM_DECLARED_RULES",
+      "CHARTER-SUPPLEMENT-C02": "PROVED_FROM_DECLARED_RULES",
+      "CHARTER-SUPPLEMENT-C03": "PROVED_FROM_DECLARED_RULES",
+      "CHARTER-SUPPLEMENT-C04": "PROVED_FROM_DECLARED_RULES"
+    },
+    "bridge": {
+      "BRIDGE-L01": "PROVED_FROM_DECLARED_RULES",
+      "BRIDGE-L02": "PROVED_FROM_DECLARED_RULES",
+      "BRIDGE-L03": "PROVED_FROM_DECLARED_RULES",
+      "BRIDGE-L04": "PROVED_FROM_DECLARED_RULES",
+      "BRIDGE-L05": "COUNTERMODEL_TO_OVERCLAIM"
+    }
+  },
+  "evidence_directory": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/lean-version.txt",
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "elapsed_seconds": 2.688
+    },
+    {
+      "label": "lake-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/lake-build.txt",
+      "sha256": "85b08170040325a31a3bd48c2a74f9f017d0fb3b37fdb9c79e0e746558dc6af0",
+      "elapsed_seconds": 3.469
+    },
+    {
+      "label": "build-supplement",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.Pal23Followup",
+        "Experiments.CharterFollowup",
+        "Experiments.Bridge"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/build-supplement.txt",
+      "sha256": "05f24d1f9c5beaa76730ef94e9059f8d27ee59eeeda1cafc9aa9fcf924c6fa8d",
+      "elapsed_seconds": 3.547
+    },
+    {
+      "label": "pal-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/Pal23FollowupAxioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/pal-axioms.txt",
+      "sha256": "24a47319a7e3fc78e41e8e2cbcc4d1d131810bd105e467731ff4e691f99443ff",
+      "elapsed_seconds": 7.046
+    },
+    {
+      "label": "pal-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.Pal23Followup"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/pal-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 50.282
+    },
+    {
+      "label": "charter-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/CharterFollowupAxioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/charter-axioms.txt",
+      "sha256": "af7fc38217fb39a47f7d184a964976ddb6d2b30f77bc1c35d5060e149ed93101",
+      "elapsed_seconds": 8.875
+    },
+    {
+      "label": "charter-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.CharterFollowup"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/charter-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 50.203
+    },
+    {
+      "label": "bridge-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/BridgeAxioms.lean"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/bridge-axioms.txt",
+      "sha256": "dd41dd6885bf44707dfda3c6033f9c0487ffeeae1294a794a963d2c49b478f48",
+      "elapsed_seconds": 9.328
+    },
+    {
+      "label": "bridge-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.Bridge"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/bridge-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 49.5
+    },
+    {
+      "label": "historical-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "PALLeanAudit"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/historical-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 47.484
+    },
+    {
+      "label": "preserved-replay",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/pal-v23-charter/check_publication.py",
+        "--replay",
+        "--lake",
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "--output-dir",
+        "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Audit\\recent-work-20260911\\evidence\\attempt-20260912T034748790118Z\\preserved-replay"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/preserved-replay.txt",
+      "sha256": "1a28746b7378d7751e4cafe33ac81e1a851fb83bbc3a85e83d74ea4e0d135c9d",
+      "elapsed_seconds": 80.125
+    },
+    {
+      "label": "policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/policy.txt",
+      "sha256": "54ad87c30ed563bce3cdcd2265e22c7e79b6bb9a1bf69db93032305808003b52",
+      "elapsed_seconds": 0.157
+    },
+    {
+      "label": "candidate-inputs",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_candidate_inputs.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/candidate-inputs.txt",
+      "sha256": "b39dcd76b30d4e96a114a2755f2a1ee8db5c156c03bbdc32177ba46af49487f7",
+      "elapsed_seconds": 0.156
+    },
+    {
+      "label": "ar3-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003_policy.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/ar3-policy.txt",
+      "sha256": "4e61462247cd6e8294d88f78b109e8886b303e9090f49f4da8b14743cfc92265",
+      "elapsed_seconds": 0.187
+    },
+    {
+      "label": "ar3-structure",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/ar3-structure.txt",
+      "sha256": "4c4916f3c2f25d0f9127c5e74ef818e0ec6d6ecc8bc2fa1c7b2365f86f5178b9",
+      "elapsed_seconds": 0.203
+    },
+    {
+      "label": "migration-metadata",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_release_migration.py"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/migration-metadata.txt",
+      "sha256": "04fcceb20fac4386f708dbc309c06fa5317da2ef0577e2f194df9b37f57f82e1",
+      "elapsed_seconds": 5.157
+    },
+    {
+      "label": "historical-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/historical-report.txt",
+      "sha256": "5e8d6d686a695dff1d83745ee1b8ea63bd5e9d452f725fc39c73e60de46e483a",
+      "elapsed_seconds": 0.172
+    },
+    {
+      "label": "migration-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_migration_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/migration-report.txt",
+      "sha256": "322ce136b6258b8fcc266bca56ff7f8d7d9737602082f043a3bf8f156aa5013e",
+      "elapsed_seconds": 0.109
+    },
+    {
+      "label": "ar3-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/ar3-report.txt",
+      "sha256": "b99dc1f849d03be82fa213d9803dbe68bdbbfce0324d4a77859dbf5e5f021176",
+      "elapsed_seconds": 0.266
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Audit/recent-work-20260911/evidence/attempt-20260912T034748790118Z/diff-check.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 0.046
+    }
+  ],
+  "preserved_replay_sha256": "e9dd4c1f696b296e7017dc01fb652848b5371c1eb509625b08166fd94acdb2d3",
+  "receipt_guards": [
+    "missing-command",
+    "failed-command",
+    "changed-source",
+    "closed-obligation",
+    "missing-dependency",
+    "changed-input",
+    "changed-log-hash",
+    "invented-ci",
+    "duplicate-command"
+  ],
+  "finished_utc": "2026-09-12T03:53:08.457806+00:00"
+}

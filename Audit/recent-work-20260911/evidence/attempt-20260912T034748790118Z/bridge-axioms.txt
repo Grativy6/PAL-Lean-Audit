@@ -1,0 +1,6 @@
+'Experiments.Bridge.zero_residue_iff_kernel' depends on axioms: [propext, Quot.sound]
+'Experiments.Bridge.zero_residue_implies_observable_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.Bridge.uniform_equality_iff_kernel_trivial_on_admitted_differences' depends on axioms: [propext,
+ Quot.sound]
+'Experiments.Bridge.reachable_decoder_iff_fiber_constant' depends on axioms: [Classical.choice]
+'Experiments.Bridge.hidden_difference_countermodel' depends on axioms: [propext, Classical.choice, Quot.sound]

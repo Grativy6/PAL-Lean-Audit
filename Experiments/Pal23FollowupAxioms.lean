@@ -1,0 +1,10 @@
+import Experiments.Pal23Followup
+
+namespace Experiments.Pal23Followup
+
+#print axioms Experiments.Pal23Followup.exchange_has_two_point_collision
+#print axioms Experiments.Pal23Followup.restore_repairedExchange
+#print axioms Experiments.Pal23Followup.repairedExchange_injective
+#print axioms Experiments.Pal23Followup.reachable_decoder_unique
+
+end Experiments.Pal23Followup

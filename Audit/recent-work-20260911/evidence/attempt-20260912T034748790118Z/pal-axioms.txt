@@ -1,0 +1,4 @@
+'Experiments.Pal23Followup.exchange_has_two_point_collision' does not depend on any axioms
+'Experiments.Pal23Followup.restore_repairedExchange' depends on axioms: [propext]
+'Experiments.Pal23Followup.repairedExchange_injective' depends on axioms: [propext]
+'Experiments.Pal23Followup.reachable_decoder_unique' depends on axioms: [Quot.sound]

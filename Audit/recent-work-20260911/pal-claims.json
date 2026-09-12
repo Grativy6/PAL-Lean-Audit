@@ -1,0 +1,127 @@
+{
+  "lane": "pal",
+  "commissioning": {
+    "cycle_id": "RECENT-WORK-20260911-CYCLE-01",
+    "tether_identity": "PAL-SUPPLEMENT",
+    "predecessor_receipt": "NONE_INITIAL_COMMISSION",
+    "home": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+    "return": "/root",
+    "resume_receipts": [
+      {
+        "id": "PAL-SUPPLEMENT-RESUME-01",
+        "first_attempt": "No files changed because commissioning metadata was incomplete.",
+        "amendment": "cycle_id, predecessor receipt, Home, and return were supplied by controller.",
+        "scope_change": "none"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "PAL23-SUP-01",
+      "title": "Concrete compare-exchange collision",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Followup.exchange_has_two_point_collision",
+      "statement": "exchange (0, 1) = exchange (1, 0) ∧ (0, 1) ≠ (1, 0)",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448-P1458",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-T",
+          "paragraphs": "P1401",
+          "excerpt": "For declared compare-exchange Uᵢⱼ and cᵢⱼ(x)=1[xᵢ<xⱼ], enumerate the two-point collision"
+        }
+      ],
+      "assumptions": [
+        "One-step Nat-pair compare-exchange using the strict less-than branch, with its Boolean action bit and the specified swap-back decoder."
+      ],
+      "countercase": "The finite Nat fixture (0,1) and (1,0) collides under this declared exchange.",
+      "authority_ceiling": "Finite countermodel to injectivity of this declared map only; no claim about sorting, persistence, or PAL adoption.",
+      "residual": "Comparator and coordinate semantics are fixed to this Lean definition.",
+      "reopening": "Change the exchange rule, pair domain, or requested property."
+    },
+    {
+      "id": "PAL23-SUP-02",
+      "title": "Action-bit left inverse",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Followup.restore_repairedExchange",
+      "statement": "∀ pair : Nat × Nat, restoreExchange (repairedExchange pair) = pair",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450-P1471",
+          "excerpt": "The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        }
+      ],
+      "assumptions": [
+        "One-step Nat-pair compare-exchange using the strict less-than branch, with its Boolean action bit and the specified swap-back decoder."
+      ],
+      "countercase": "SUP-01 is the predecessor showing that the exchange output without the action bit is insufficient.",
+      "authority_ceiling": "Exact one-step finite/set-theoretic reconstruction only; no retained A2 receipt or totalization.",
+      "residual": "No storage, binding, schedule, or recovery evidence is modeled.",
+      "reopening": "Change the comparator, action-bit convention, coordinate order, or restoration rule."
+    },
+    {
+      "id": "PAL23-SUP-03",
+      "title": "Repaired compare-exchange injectivity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Followup.repairedExchange_injective",
+      "statement": "Function.Injective repairedExchange",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450-P1464",
+          "excerpt": "The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-T",
+          "paragraphs": "P1226",
+          "excerpt": "exhibit an update collision, prove the action-bit lift injective by explicit left inverse"
+        }
+      ],
+      "assumptions": [
+        "One-step Nat-pair compare-exchange using the strict less-than branch, with its Boolean action bit and the specified swap-back decoder."
+      ],
+      "countercase": "SUP-01 supplies the predecessor collision for the unlabeled map.",
+      "authority_ceiling": "Injectivity of this Lean function only; it proves neither local-bit optimality beyond the declared fiber nor physical reversibility.",
+      "residual": "The proof does not establish retention, storage integrity, or multi-step replay.",
+      "reopening": "Change the declared update, label, or reconstruction function."
+    },
+    {
+      "id": "PAL23-SUP-04",
+      "title": "Uniqueness of a reachable decoder",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Followup.reachable_decoder_unique",
+      "statement": "∀ {W T Q} (trace : W → T) (answer : W → Q) (decode₁ decode₂ : Set.range trace → Q), (∀ w, decode₁ ⟨trace w, ⟨w, rfl⟩⟩ = answer w) → (∀ w, decode₂ ⟨trace w, ⟨w, rfl⟩⟩ = answer w) → decode₁ = decode₂",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1385-P1405",
+          "excerpt": "Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q. Extension of d_R to all T is a separate totalization claim."
+        },
+        {
+          "source_id": "PAL-v2.3-T",
+          "paragraphs": "P1393",
+          "excerpt": "L(τ,q)=∅ exactly when a unique d_R:R→Q satisfies q=d_R∘τ on W."
+        }
+      ],
+      "assumptions": [
+        "Lean types W, T, Q and supplied total functions trace and answer.",
+        "Both decoders are defined on Set.range trace and satisfy the same answer equation for every source element."
+      ],
+      "countercase": "A conflicting trace collision prevents any decoder satisfying the same answer equation; this theorem assumes two such decoders exist.",
+      "authority_ceiling": "Set-theoretic uniqueness on Set.range trace only; no extension to all T and no regularity, implementation, permission, or authority claim.",
+      "residual": "Existence, totalization, and decoder classes remain separately scoped.",
+      "reopening": "Change W, T, Q, trace, answer, or decoder domain/class."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "PAL-SUP-M01",
+      "classification": "OPEN_MANUAL",
+      "disposition": "Source-to-model review remains local and provisional. Multi-step schedule storage, A2 persistence, ambient decoder totalization, and multi-parent lineage are outside this batch; O04/O25 and D-FIRST-OCCURRENCE remain OPEN."
+    }
+  ]
+}
