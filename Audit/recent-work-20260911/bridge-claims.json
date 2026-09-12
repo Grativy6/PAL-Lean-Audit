@@ -1,0 +1,139 @@
+{
+  "lane": "bridge",
+  "identity_basis": "BRIDGE-v0.4 local DOCX hash a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470 from source-manifest.json",
+  "scope": "Bounded exact algebraic endpoint calculus only; no Hodge, geometric, external-theorem, or adoption result.",
+  "claims": [
+    {
+      "id": "BRIDGE-L01",
+      "title": "Zero residue iff readout-kernel membership",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Bridge.zero_residue_iff_kernel",
+      "statement": "residue readout actual comparison x = 0 ↔ actual x - comparison x ∈ readout.ker",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0053-P0066",
+          "excerpt": "Consequently, for every x∈XFadm, DetF​ρFx;Φ,Φ0=0 ⇔ ρFx;Φ,Φ0=0 ⇔ Φ−Φ0x∈kerrF."
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "X, Y, and R are k-modules",
+        "The stated linear maps are supplied"
+      ],
+      "countercase": "BRIDGE-L05 shows that this kernel membership alone need not establish equality in Y.",
+      "authority_ceiling": "A compiling bounded linear realization of the displayed endpoint algebra; not a result about all BRIDGE instances.",
+      "residual": "No quotient construction or measurement-uncertainty policy is formalized.",
+      "reopening": "Formalize quotient-level observable equality and any declared measurement model separately."
+    },
+    {
+      "id": "BRIDGE-L02",
+      "title": "Zero residue yields equality of readout values",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Bridge.zero_residue_implies_observable_equality",
+      "statement": "residue readout actual comparison x = 0 → readout (actual x) = readout (comparison x)",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0067-P0071",
+          "excerpt": "A zero exact residue therefore establishes equality of the two observable classes."
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "X, Y, and R are k-modules",
+        "The stated linear maps are supplied"
+      ],
+      "countercase": "The theorem concludes readout equality only; BRIDGE-L05 refutes unqualified equality of underlying states.",
+      "authority_ceiling": "Derived linear-algebra consequence of the formal residue definition, not an interpretation or binding license.",
+      "residual": "The source's quotient-class presentation is represented here by equal readout values.",
+      "reopening": "Add an explicit quotient-space equivalence if that presentation needs audit coverage."
+    },
+    {
+      "id": "BRIDGE-L03",
+      "title": "Uniform equality iff the admitted-difference kernel is trivial",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Bridge.uniform_equality_iff_kernel_trivial_on_admitted_differences",
+      "statement": "(∀ x ∈ admitted, residue readout actual comparison x = 0 → actual x = comparison x) ↔ (∀ y ∈ (fun x => actual x - comparison x) '' admitted, y ∈ readout.ker → y = 0)",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0071-P0073",
+          "excerpt": "Uniformly on the admitted domain, zero residue establishes Φx=Φ0x exactly when SF∩kerrF⊆{0}."
+        }
+      ],
+      "assumptions": [
+        "Field k",
+        "X, Y, and R are k-modules",
+        "The admitted set and linear maps are supplied"
+      ],
+      "countercase": "BRIDGE-L05 witnesses the nontrivial-kernel side of this equivalence in a concrete instance.",
+      "authority_ceiling": "An exact equivalence in the supplied linear realization; it does not establish any instance's kernel condition or transfer it to geometry.",
+      "residual": "The stated injectivity reformulation is not separately represented.",
+      "reopening": "Add submodule-valued admitted differences to audit the stated intersection and injectivity forms."
+    },
+    {
+      "id": "BRIDGE-L04",
+      "title": "Reachable decoder iff fiber-constant answer",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Bridge.reachable_decoder_iff_fiber_constant",
+      "statement": "(∃ decode : Set.range interface → Q, ∀ w, decode ⟨interface w, ⟨w, rfl⟩⟩ = answer w) ↔ ∀ w w', interface w = interface w' → answer w = answer w'",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0105-P0107",
+          "excerpt": "A requested answer q:W→Q is decodable exactly when it is constant on these fibers, subject to APCI’s stated reachable-versus-total codomain boundary."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary source, interface, and answer types",
+        "Classical choice is used to select preimages in the reachable range"
+      ],
+      "countercase": "If two source points share an interface value but have unequal answers, the reverse implication rules out such a reachable decoder.",
+      "authority_ceiling": "A theorem about the reachable range only; it makes no total-codomain decoder claim, does not import APCI authority, and overlaps a prior PAL local theorem rather than independently corroborating it.",
+      "residual": "No linear-sector or finite-capacity result is formalized here.",
+      "reopening": "Formalize a separately stated total-codomain extension criterion only if supplied as a BRIDGE target."
+    },
+    {
+      "id": "BRIDGE-L05",
+      "title": "Explicit hidden-difference countermodel",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Bridge.hidden_difference_countermodel",
+      "statement": "For readout (a,b) ↦ a over ℚ×ℚ, actual=(0,1), and comparison=(0,0), the residue is zero while actual ≠ comparison.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0071-P0073",
+          "excerpt": "Uniformly on the admitted domain, zero residue establishes Φx=Φ0x exactly when SF∩kerrF⊆{0}."
+        }
+      ],
+      "assumptions": [
+        "The supplied rational product model and first-coordinate readout"
+      ],
+      "countercase": "This construction itself defeats the stronger claim that zero residue always yields equality of underlying states.",
+      "authority_ceiling": "A countermodel to an unlicensed strengthening of the endpoint algebra; it does not refute BRIDGE or any geometric application.",
+      "residual": "It is a minimal algebraic example, not a model of the document's Hodge setting.",
+      "reopening": "Compare with any later declared geometric realization under its own assumptions."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "BRIDGE-M01",
+      "classification": "OPEN_MANUAL",
+      "subject": "Hodge, Weil-type, cycle-class, and boundary-lifting claims",
+      "reason": "Excluded by this lane's grant; no external theorem verification or geometry formalization was performed.",
+      "source_refs": [
+        "P0005-P0010"
+      ]
+    },
+    {
+      "id": "BRIDGE-M02",
+      "classification": "OPEN_MANUAL",
+      "subject": "P0073 quotient/intersection/injectivity equivalence",
+      "reason": "The admitted-image criterion is formalized elementwise. The quotient isomorphism and the subspace injectivity extension are not formalized in this batch.",
+      "source_refs": [
+        "P0071-P0073"
+      ]
+    }
+  ]
+}

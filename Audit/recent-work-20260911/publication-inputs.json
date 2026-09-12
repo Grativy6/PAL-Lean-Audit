@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Portable publication lock for the preserved 13-declaration local receipt. This lock does not replace the original receipt or claim source-document conformance.",
+  "historical_checkout": "e00ffc6c506e9801c745856c0090688336e61850",
+  "inherited_checkout": "06ad391cd362c80d986d879fe5d7346b207a7dfd",
+  "historical_results_canonical_lf_sha256": "d37a08024a7711df804adb62d449b8d28ef077871d31cca19462659bdfae1c5f",
+  "historical_summary_canonical_lf_sha256": "be3426d619e0d895e0eaa3ab9ca849066a3a3e3031c061180d4289fa208249ef",
+  "selected_excerpts_canonical_lf_sha256": "e77f64814ffbff4d75b50ff22ba704e998406d1378d2811946094ceec8d5227e",
+  "historical_audit_lean_sha256": "307bc24b4b77d59d1bfc6768ed252273051363005154835a42e0bcdf8da83770",
+  "inherited_audit_lean_sha256": "f330e273d2c8d953e0f8b87c614f78f0b22f144a6680a0d305deb57fe3517345",
+  "inherited_bridge_endpoint_sha256": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+  "audit_lean_change_account": "Audit.lean is the sole historical receipt input changed by inherited checkout 06ad391; historical bytes are verified through git show at e00ffc6, while current inherited bytes and Audit/BridgeEndpoint.lean are pinned to 06ad391.",
+  "original_raw_input_hashes_remain_in": "Audit/recent-work-20260911/results.json",
+  "original_log_hashes_remain_in": "Audit/recent-work-20260911/results.json",
+  "normalization": "Only text-file CRLF to LF normalization is used for publication-lock files. Original DOCX and original execution-log SHA-256 values remain byte exact."
+}
