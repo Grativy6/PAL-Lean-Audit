@@ -1,0 +1,22 @@
+{
+  "source_id": "BRIDGE-v0.4",
+  "filename": "BRIDGE_v0.4.docx",
+  "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "bytes": 74384,
+  "identity_basis": "Exact supplied local DOCX; no independently verified published v0.4 identity is claimed.",
+  "source_excerpts": "Audit/bridge-v04-four-sector/source-excerpts.json",
+  "source_excerpts_sha256": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+  "source_context": "Audit/bridge-v04-diagram-readout/source-context.json",
+  "source_context_sha256": "d0363ef8853578cee5eec692694989ac30734c4de676cc6526aadc97205f0cdf",
+  "source_scope": "P0193-P0199: finite-dimensional four-sector accounting and endpoint recovery; definitions/context P0036, P0087, P0107-P0192",
+  "merged_checkpoint": "8139ed6bc7b7b8c16258c2d27154602fef31cd21",
+  "predecessor_head": "1babbcd19b51bba46dc9a51365dcadbe31bf1763",
+  "reopened_interfaces": [
+    "FS-M04"
+  ],
+  "retained_open": [
+    "frame-morphism naturality",
+    "geometric and Hodge applications",
+    "PAL obligations"
+  ]
+}

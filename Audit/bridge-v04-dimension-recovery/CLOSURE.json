@@ -1,0 +1,28 @@
+{
+  "cycle": "BRIDGE-RECOVERY-20260912-01",
+  "source_scope": "Selected finite accounting and residual recovery, P0193-P0199; generated-span clause in P0195 excluded",
+  "evidence": "Audit/bridge-v04-dimension-recovery/results.json",
+  "source_interface": {
+    "predecessor": "Audit/bridge-v04-four-sector/claims.json#FS-M04",
+    "historical_status_preserved": "OPEN_MANUAL",
+    "new_disposition": "DISCHARGED_IN_DECLARED_LINEAR_REALIZATION_FOR_FINITE_ACCOUNTING_AND_RESIDUAL_RECOVERY",
+    "declarations": [
+      "Experiments.BridgeDimension.bridge_four_sector_finrank",
+      "Experiments.BridgeRecovery.answer_decodable_iff",
+      "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton",
+      "Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le"
+    ]
+  },
+  "remaining_open": [
+    "P0195 direct generated-span answer factorization",
+    "frame-morphism naturality",
+    "return dynamics",
+    "geometric/Hodge applications"
+  ],
+  "pal_obligations": {
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "D-FIRST-OCCURRENCE": "OPEN"
+  },
+  "authority_ceiling": "Bounded formal evidence only; no source adoption or merge"
+}

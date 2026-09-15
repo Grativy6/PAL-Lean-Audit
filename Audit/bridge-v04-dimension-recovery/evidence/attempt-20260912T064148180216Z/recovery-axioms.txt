@@ -1,0 +1,23 @@
+'Experiments.BridgeRecovery.residualReadout_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeRecovery.ker_residualReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeRecovery.residualQuotientEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeRecovery.answerDecoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeRecovery.answerDecoder_comp_residualReadout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeRecovery.answer_decodable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeRecovery.residual_identity_decoder_iff_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

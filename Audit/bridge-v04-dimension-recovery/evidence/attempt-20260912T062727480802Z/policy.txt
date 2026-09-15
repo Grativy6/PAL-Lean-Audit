@@ -1,0 +1,4 @@
+Policy check passed for 12 Lean files.
+Expected T05 lexical rejections:
+Audit\fixtures\T05-ascii-omega.fixture:2: literal object-language Omega identifier forbidden by T05 lexical check
+Audit\fixtures\T05-symbol-omega.fixture:2: literal object-language Omega identifier forbidden by T05 lexical check

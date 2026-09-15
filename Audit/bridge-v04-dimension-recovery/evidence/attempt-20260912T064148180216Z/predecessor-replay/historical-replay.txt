@@ -1,0 +1,19 @@
+Running lean-version
+Running build-modules
+Running diagram-axioms
+Running diagram-kernel
+Running readout-axioms
+Running readout-kernel
+Running four_sector-axioms
+Running four_sector-kernel
+Running historical-build
+Running policy
+Running migration
+Running ar3-policy
+Running ar3
+Running report
+Running migration-report
+Running ar3-report
+Running old13-portable
+Running diff-check
+PASS_BRIDGE_DIAGRAM_READOUT

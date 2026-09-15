@@ -1,0 +1,701 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS_BRIDGE_DIAGRAM_READOUT",
+  "mode": "replay",
+  "lake": "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+  "python_executable": "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "started_utc": "2026-09-12T06:44:13.072203+00:00",
+  "tested_checkout_sha": "1babbcd19b51bba46dc9a51365dcadbe31bf1763",
+  "tested_merge_sha": null,
+  "pr_head_sha": null,
+  "github_run_id": null,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "inputs": {
+    ".gitattributes": "66381f7274c9a55afd20dd150ec2b30094e6786c00a2ec0877b5c12440563976",
+    ".github/workflows/bridge-diagram-readout.yml": "0303dcc8bb6be564bb1a9bac123b117721d41075c29344a7b9b67d70e9d9d772",
+    ".github/workflows/lean.yml": "8555141920d060bda26f15c0e69a436c24faff70ca9c3b7629c0f4dee9459def",
+    ".github/workflows/pal23-charter.yml": "9b395c61212f6b1df6dc2df1a62b039c140e56270ac95059b137a428f2eb1ba0",
+    ".github/workflows/recent-work.yml": "2ff0279cfc3baa76722a66495ca390857106e8e33b71961cc5f675d176ab255d",
+    "AGENTS.md": "c3ab892557153c95e9af798707b59be15bb1c3b08b2ec7ee6ba331afecc7ff21",
+    "Audit.lean": "f330e273d2c8d953e0f8b87c614f78f0b22f144a6680a0d305deb57fe3517345",
+    "Audit/AttackRun0001.lean": "f542601220ea07ddd17d066099dd6785cc8ddb124291297d5d9e491bdf26e3cc",
+    "Audit/AttackRun0002.lean": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
+    "Audit/AttackRun0003.lean": "2f0a94acb3eb7fdc55fd8dd31d09dffc40ac763bdd615f690f30ef466577b22c",
+    "Audit/Bootstrap.lean": "554e0248382656502b4e289892b41d5070d034741c90f6c82cd93a77cec119f8",
+    "Audit/BridgeEndpoint.lean": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+    "Audit/bridge-v04-diagram-readout/.gitattributes": "a2c87ff1a09a72bbe6c848b183bc064efc327fe42519549922c8d6cf3215588a",
+    "Audit/bridge-v04-diagram-readout/DIAGRAM-REVIEW.md": "992591b33438632f17a835bc1930b18f0a5e246e92ec92ffff577ce0e056f924",
+    "Audit/bridge-v04-diagram-readout/README.md": "59fc4f3197aaaa5e46ad6482068c4358116cb4ffab3fa2dec9e9d30412d5bb32",
+    "Audit/bridge-v04-diagram-readout/READOUT-REVIEW.md": "082d6c7ab815925c9282d8ae40f75e27d858ff5ae5beda44626f1bfe1aae6f0d",
+    "Audit/bridge-v04-diagram-readout/RECEIPTS.md": "061a0d6b5430d867f437801b62f0584a5b29384b39baa3e2fa0080715b238a53",
+    "Audit/bridge-v04-diagram-readout/SOURCE-CORRESPONDENCE.md": "6c55c5fbe26410add961b5459cba3cefc8727cd63f71c3f77ef81cbb9a3c49f4",
+    "Audit/bridge-v04-diagram-readout/diagram-claims.json": "a911474224e33694f5c2492ace5022509d42e935462ac38b7100ba0453316bce",
+    "Audit/bridge-v04-diagram-readout/failure_probes.py": "06172f095725a35647bc76796e05bc44fb6c844d7eaac1809f6ed6b7965bbe44",
+    "Audit/bridge-v04-diagram-readout/input-lock.json": "fccb27a87a5eccb98b6fd9f3873577e68ffe1dbbb6c0dd69748cc3fcaf3167f7",
+    "Audit/bridge-v04-diagram-readout/readout-claims.json": "0a5cf5fdc1fdb49554d05c94af676efd911797d82d2d5be72e9e25430abb724e",
+    "Audit/bridge-v04-diagram-readout/run.py": "295c5a944a6902ad4eee206cbaebfed30760cd9dbb4b252cfad5da87403f528e",
+    "Audit/bridge-v04-diagram-readout/source-context.json": "d0363ef8853578cee5eec692694989ac30734c4de676cc6526aadc97205f0cdf",
+    "Audit/bridge-v04-diagram-readout/source-manifest.json": "26b6a8d8f81f2a86734617afe5471d05271bfec0470df4e6ca2b5da15b4039f3",
+    "Audit/bridge-v04-four-sector/.gitattributes": "a2c87ff1a09a72bbe6c848b183bc064efc327fe42519549922c8d6cf3215588a",
+    "Audit/bridge-v04-four-sector/PLAN.md": "c698f66ea5c1790ed83ec1f227a471436461a285d430c46fff6cecd34c48a3b5",
+    "Audit/bridge-v04-four-sector/REVIEW.md": "f9f1274dfe5a99d9aaabb074e819e19b5712d97ede983c362fe4fbcfcac1a9b5",
+    "Audit/bridge-v04-four-sector/SOURCE-REVIEW.md": "115c72a7e91c131bf2e6a125a91a94baa0fd20a4fabdc498461b25f12fe5dd40",
+    "Audit/bridge-v04-four-sector/SUMMARY.md": "0158d222591d6c1cd66136f66f098ad1319514aeebda2c8cec50e200c3e7f8eb",
+    "Audit/bridge-v04-four-sector/claims.json": "0c24daf60db54413e605409097359f69d2cb132a34287a9dde8eb70046a5d93f",
+    "Audit/bridge-v04-four-sector/results.json": "d07dfae97adf133c99d1cdb6a4fddd87c2f93c6df423a2bfe7a04355e965ab63",
+    "Audit/bridge-v04-four-sector/run.py": "11e1529bd632d778f6d4ceae458723fdabc9789cd1ede570caf22a5d694655dc",
+    "Audit/bridge-v04-four-sector/source-excerpts.json": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+    "Audit/bridge-v04-four-sector/source-manifest.json": "f4f4c269fac526b7a1526ca3fe860b21e6aa5c90b760a2567ec0ad7da97460d0",
+    "Audit/pal-v23-charter/check_publication.py": "b4254875a2334641e9c2d19d3cb67e70569fa6739972a4d1c4b17b306f23f413",
+    "Audit/recent-work-20260911/.gitattributes": "429249d8655b787376107e7a6ddc4da6aa47f31109c4940c3af5727c451c0ae6",
+    "Audit/recent-work-20260911/PLAN.md": "0955a7213f1c30371128a2d063085bde3fc09e58751d4fdfa5e57744e2da578e",
+    "Audit/recent-work-20260911/PUBLICATION-PLAN.md": "cf90f75dfbc2060813cfd865c8f21f533bef6c3a3b8b0349f56b6263daf90a04",
+    "Audit/recent-work-20260911/PUBLICATION-REVIEW.md": "2f11880563e8a884e075d65c86516a2a34b10fcbd58c8341ceb9133b44e4490e",
+    "Audit/recent-work-20260911/PUBLICATION.md": "88bc0a4c9ff6501322fac8a6dbc48d4a442ce2e25bd7a68a9b20016563c8257b",
+    "Audit/recent-work-20260911/REVIEW.md": "52f91bf37592478d51d5d0ded739a04c852ef62c34066174c035aac4cc44d1b5",
+    "Audit/recent-work-20260911/SUMMARY.md": "be3426d619e0d895e0eaa3ab9ca849066a3a3e3031c061180d4289fa208249ef",
+    "Audit/recent-work-20260911/bridge-claims.json": "5672aacb334c4068352d89a4c6c53022b43cb6784b43ba73c8edffef7f2f0731",
+    "Audit/recent-work-20260911/charter-claims.json": "60878b3f894794a1417b580986fe1e610c521132d2065dc6591d65362a74adbf",
+    "Audit/recent-work-20260911/check_publication.py": "b5ad2827e2156eba593b45117ca2126db3c98619a30ebac55c6bce5a7e6760d1",
+    "Audit/recent-work-20260911/check_publication_guards.py": "adb94ad7aa3cbdb58a0c4d90f0f8cde3db9435a47e10d2a82adb23644718c170",
+    "Audit/recent-work-20260911/extract_sources.py": "c75f4db93d46b2a9c43358f9eeb665b234f79de1ecd9a1d416037f715641ee97",
+    "Audit/recent-work-20260911/pal-claims.json": "89d25224a9444b25ea1e939283d62af1e8d5f2f9223bfb016f2ab99121b4c3d1",
+    "Audit/recent-work-20260911/publication-inputs.json": "bd2cd1c3b593b795fc8ac5754d24c075372c8f401361b8b3217d72a080c8fa61",
+    "Audit/recent-work-20260911/results.json": "d37a08024a7711df804adb62d449b8d28ef077871d31cca19462659bdfae1c5f",
+    "Audit/recent-work-20260911/run.py": "322e7eb17206d8be690692d86035515af49050091f5dbfce830d5282a9d3f90b",
+    "Audit/recent-work-20260911/source-excerpts.json": "e77f64814ffbff4d75b50ff22ba704e998406d1378d2811946094ceec8d5227e",
+    "Audit/recent-work-20260911/source-manifest.json": "43732b576fb52b5ddfe603a298ede1174008681d829100bbe716b0ecba9411c4",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "PAL.lean": "2d569e583bfd27a46edde7477606aef5538dc73638b7da554e67a663168be78d",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
+    "PAL/AttackRun0003.lean": "0225fe8a13702e020ae368697937cfe373761888cbcdc257a19399f5a6e0c34f",
+    "PAL/Bootstrap.lean": "477df5fdcdde64854eeddb803269b467bc54474cbb87f13d4c20e55259b5c317",
+    "PALLeanAudit.lean": "5186b1f7840cd736c457abfca4c2b534737d8dd09fb632fe3a78d4d9e187fd5c",
+    "docs/REPORTING.md": "6b37c7cbbda7447f38d57879a5866bb03d635b3b6a227cf64618c2d07ee25e87",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "scripts/check_attack_run_0003.py": "259d54413a7848ede3aae5c7bd498d8f41766227861bf347cd613632c7006310",
+    "scripts/check_attack_run_0003_axioms.py": "f572c25c47b027ae3369121418427f755e6384219204627c288b868a7aa36ffe",
+    "scripts/check_attack_run_0003_policy.py": "4fc479c872b06d5cdf31b0e110a2638effaea440b42cc9c232ea50f8cbd1d1be",
+    "scripts/check_axiom_receipts.py": "fbb3064591f1440e7da6b07c622589101017445afe90cdf95a44736bbaa31e4f",
+    "scripts/check_candidate_inputs.py": "eda967b79071f3f5f4a3d4e2755a44d8af05eff4439f62246d333f9257a99ef0",
+    "scripts/check_policy.py": "b38d4b493f850f964fa34bb08fb28778a9cd31640e3c956a2f0d51bdd4ac8b82",
+    "scripts/check_release_migration.py": "9c605c93990e7f3c18c3434348f2e7c78c6cccc922767d14362ce798cd44b388",
+    "scripts/collect_attack_run_0003_benchmarks.py": "da0aa9f19edaec732cb011f70a8c9da9ea0af7a0526e18f974e3d6f1e2fe5aae",
+    "scripts/emit_attack_run_0003_ci_benchmarks.py": "893569b784a5a49f919e2223b09a02d455b5d1a3e68b91dd846e43168ce50db4",
+    "scripts/extract_pal23_charter_sources.py": "86d530d8b5e6f8b8c94b7afbbc8f00540b9d4edc0f4b613e82da8ed7ad02f740",
+    "scripts/render_attack_run_0003.py": "34bb47008ab86a2333b6b26df0b9bb80ed8970bacfaee3f29f801d1039aff36f",
+    "scripts/render_migration_report.py": "3f84b42fa5db4b4edc4841a2412fa97d819e188a21bf4f8841a49bf3c630efe5",
+    "scripts/render_report.py": "77896d0de5d368d296e6d1c06d1f8ee03c6f3afc0885bdce37d04ac834a2e9c9",
+    "scripts/run_pal23_charter.py": "188d0979e1e4548a9cb795a484a7db936c5f8234709a7820188c5612f97e0437"
+  },
+  "declarations": {
+    "diagram": [
+      "Experiments.BridgeDiagram.collisionToKernel_injective",
+      "Experiments.BridgeDiagram.hiddenCollision_mkQ_surjective",
+      "Experiments.BridgeDiagram.B_subtype_injective",
+      "Experiments.BridgeDiagram.B_mkQ_surjective",
+      "Experiments.BridgeDiagram.generatedVisibleToKernelQuotient_injective",
+      "Experiments.BridgeDiagram.rightColumnToVisible_surjective",
+      "Experiments.BridgeDiagram.generatedVisible_right_column_exact",
+      "Experiments.BridgeDiagram.upper_right_square_commutes",
+      "Experiments.BridgeDiagram.lower_right_square_commutes",
+      "Experiments.BridgeDiagram.commuting_square_not_exact_countercase",
+      "Experiments.BridgeDiagram.diagram_endpoint_maps",
+      "Experiments.BridgeDiagram.complete_diagram_certified"
+    ],
+    "readout": [
+      "Experiments.BridgeReadout.rawReadoutToVisible_surjective",
+      "Experiments.BridgeReadout.ker_rawReadoutToVisible",
+      "Experiments.BridgeReadout.visibleEquivReadout",
+      "Experiments.BridgeReadout.visibleEquivReadout_apply_mk",
+      "Experiments.BridgeReadout.residualReadout_compatibility",
+      "Experiments.BridgeReadout.generated_directions_required_countercase",
+      "Experiments.BridgeReadout.generated_component_required_countercase"
+    ],
+    "four_sector": [
+      "Experiments.BridgeFourSector.ker_hiddenRawToDefect",
+      "Experiments.BridgeFourSector.hiddenToDefect_injective",
+      "Experiments.BridgeFourSector.defectToVisible_surjective",
+      "Experiments.BridgeFourSector.generated_row_exact",
+      "Experiments.BridgeFourSector.kernel_row_exact",
+      "Experiments.BridgeFourSector.defect_column_exact",
+      "Experiments.BridgeFourSector.residual_exact",
+      "Experiments.BridgeFourSector.right_column_exact",
+      "Experiments.BridgeFourSector.generatedVisibleEquivRange",
+      "Experiments.BridgeFourSector.ker_readoutOnGenerated",
+      "Experiments.BridgeFourSector.left_column_exact",
+      "Experiments.BridgeFourSector.upper_left_square_commutes",
+      "Experiments.BridgeFourSector.lower_left_square_commutes",
+      "Experiments.BridgeFourSector.no_direct_complement_countercase"
+    ]
+  },
+  "classifications": {
+    "diagram": {
+      "BD-01": "PROVED_FROM_DECLARED_RULES",
+      "BD-02": "PROVED_FROM_DECLARED_RULES",
+      "BD-03": "PROVED_FROM_DECLARED_RULES",
+      "BD-03Q": "PROVED_FROM_DECLARED_RULES",
+      "BD-04": "PROVED_FROM_DECLARED_RULES",
+      "BD-05": "PROVED_FROM_DECLARED_RULES",
+      "BD-06": "PROVED_FROM_DECLARED_RULES",
+      "BD-07": "PROVED_FROM_DECLARED_RULES",
+      "BD-08": "PROVED_FROM_DECLARED_RULES",
+      "BD-09": "COUNTERMODEL_TO_OVERCLAIM",
+      "BD-10": "PROVED_FROM_DECLARED_RULES",
+      "BD-11": "PROVED_FROM_DECLARED_RULES"
+    },
+    "readout": {
+      "FS-M03-01": "PROVED_FROM_DECLARED_RULES",
+      "FS-M03-02": "PROVED_FROM_DECLARED_RULES",
+      "FS-M03-03": "CONSISTENT_REALIZATION",
+      "FS-M03-04A": "PROVED_FROM_DECLARED_RULES",
+      "FS-M03-04B": "PROVED_FROM_DECLARED_RULES",
+      "FS-M03-05A": "COUNTERMODEL_TO_OVERCLAIM",
+      "FS-M03-05B": "COUNTERMODEL_TO_OVERCLAIM"
+    }
+  },
+  "obligations": {
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "D-FIRST-OCCURRENCE": "OPEN"
+  },
+  "remaining_interface": "FS-M04",
+  "source_sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+  "source_check": {
+    "performed": false,
+    "docx_sha256": null,
+    "original_ooxml_paragraphs": 0
+  },
+  "source_snapshot_verified": true,
+  "evidence_directory": "artifacts/bridge-pr14-historical-replay",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/lean-version.txt",
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "elapsed_seconds": 2.438
+    },
+    {
+      "label": "build-modules",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.BridgeDiagram",
+        "Experiments.BridgeReadout",
+        "Experiments.BridgeFourSector"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/build-modules.txt",
+      "sha256": "51d54502d0cb4007357e2bf1b48abdff51c05e272d74280a2d0c999605b32883",
+      "elapsed_seconds": 3.234
+    },
+    {
+      "label": "diagram-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/BridgeDiagramAxioms.lean"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/diagram-axioms.txt",
+      "sha256": "b0634002c1e34a65e0fdaf269a8fa0473f266c900df9ad28588cea541ce98ccd",
+      "elapsed_seconds": 9.578
+    },
+    {
+      "label": "diagram-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeDiagram"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/diagram-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 49.938
+    },
+    {
+      "label": "readout-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/BridgeReadoutAxioms.lean"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/readout-axioms.txt",
+      "sha256": "e62bbc57184ec7663b723cd579a0a1f9619ee3257cb2f99ca2e8f18343edb219",
+      "elapsed_seconds": 9.562
+    },
+    {
+      "label": "readout-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeReadout"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/readout-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 49.672
+    },
+    {
+      "label": "four_sector-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Experiments/BridgeFourSectorAxioms.lean"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/four_sector-axioms.txt",
+      "sha256": "a48c3eaf252c6f3d05f3269857cfbc843c447059cb5a6e720f9056a710f0c6a8",
+      "elapsed_seconds": 9.641
+    },
+    {
+      "label": "four_sector-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeFourSector"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/four_sector-kernel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 51.453
+    },
+    {
+      "label": "historical-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/historical-build.txt",
+      "sha256": "a5fe9c5cf8da0d4202e2b00d37a418c8c1b4165399060f4e27a7363edcd1d73b",
+      "elapsed_seconds": 4.938
+    },
+    {
+      "label": "policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/policy.txt",
+      "sha256": "26bdc438a787b7500be87bcb1ba56c56029d63b00c46a76f3356f73d88c84242",
+      "elapsed_seconds": 0.171
+    },
+    {
+      "label": "migration",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_release_migration.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/migration.txt",
+      "sha256": "04fcceb20fac4386f708dbc309c06fa5317da2ef0577e2f194df9b37f57f82e1",
+      "elapsed_seconds": 4.657
+    },
+    {
+      "label": "ar3-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003_policy.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/ar3-policy.txt",
+      "sha256": "7a6bfea6a76cce867308bc74034f356ba5dce57219997d7f2aafd8320e8275c6",
+      "elapsed_seconds": 0.172
+    },
+    {
+      "label": "ar3",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_attack_run_0003.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/ar3.txt",
+      "sha256": "4c4916f3c2f25d0f9127c5e74ef818e0ec6d6ecc8bc2fa1c7b2365f86f5178b9",
+      "elapsed_seconds": 0.187
+    },
+    {
+      "label": "report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/report.txt",
+      "sha256": "5e8d6d686a695dff1d83745ee1b8ea63bd5e9d452f725fc39c73e60de46e483a",
+      "elapsed_seconds": 0.313
+    },
+    {
+      "label": "migration-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_migration_report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/migration-report.txt",
+      "sha256": "322ce136b6258b8fcc266bca56ff7f8d7d9737602082f043a3bf8f156aa5013e",
+      "elapsed_seconds": 0.109
+    },
+    {
+      "label": "ar3-report",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/ar3-report.txt",
+      "sha256": "b99dc1f849d03be82fa213d9803dbe68bdbbfce0324d4a77859dbf5e5f021176",
+      "elapsed_seconds": 0.203
+    },
+    {
+      "label": "old13-portable",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/recent-work-20260911/check_publication.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/old13-portable.txt",
+      "sha256": "4efb2eb8fadb71cee4947a35c5b96180d6d1a459966e57bc807d53f0ef05c86b",
+      "elapsed_seconds": 0.844
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/bridge-pr14-historical-replay/diff-check.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 0.047
+    }
+  ],
+  "axioms": {
+    "diagram": {
+      "Experiments.BridgeDiagram.collisionToKernel_injective": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.hiddenCollision_mkQ_surjective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.B_subtype_injective": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.B_mkQ_surjective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.generatedVisibleToKernelQuotient_injective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.rightColumnToVisible_surjective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.generatedVisible_right_column_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.upper_right_square_commutes": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.lower_right_square_commutes": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.commuting_square_not_exact_countercase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.diagram_endpoint_maps": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeDiagram.complete_diagram_certified": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "readout": {
+      "Experiments.BridgeReadout.rawReadoutToVisible_surjective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.ker_rawReadoutToVisible": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.visibleEquivReadout": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.visibleEquivReadout_apply_mk": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.residualReadout_compatibility": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.generated_directions_required_countercase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeReadout.generated_component_required_countercase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "four_sector": {
+      "Experiments.BridgeFourSector.ker_hiddenRawToDefect": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.hiddenToDefect_injective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.defectToVisible_surjective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.generated_row_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.kernel_row_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.defect_column_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.left_column_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.upper_left_square_commutes": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.lower_left_square_commutes": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.residual_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.right_column_exact": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.ker_readoutOnGenerated": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.generatedVisibleEquivRange": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Experiments.BridgeFourSector.no_direct_complement_countercase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "ci_status": "LOCAL_REPLAY",
+  "input_after": {
+    ".gitattributes": "66381f7274c9a55afd20dd150ec2b30094e6786c00a2ec0877b5c12440563976",
+    ".github/workflows/bridge-diagram-readout.yml": "0303dcc8bb6be564bb1a9bac123b117721d41075c29344a7b9b67d70e9d9d772",
+    ".github/workflows/lean.yml": "8555141920d060bda26f15c0e69a436c24faff70ca9c3b7629c0f4dee9459def",
+    ".github/workflows/pal23-charter.yml": "9b395c61212f6b1df6dc2df1a62b039c140e56270ac95059b137a428f2eb1ba0",
+    ".github/workflows/recent-work.yml": "2ff0279cfc3baa76722a66495ca390857106e8e33b71961cc5f675d176ab255d",
+    "AGENTS.md": "c3ab892557153c95e9af798707b59be15bb1c3b08b2ec7ee6ba331afecc7ff21",
+    "Audit.lean": "f330e273d2c8d953e0f8b87c614f78f0b22f144a6680a0d305deb57fe3517345",
+    "Audit/AttackRun0001.lean": "f542601220ea07ddd17d066099dd6785cc8ddb124291297d5d9e491bdf26e3cc",
+    "Audit/AttackRun0002.lean": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
+    "Audit/AttackRun0003.lean": "2f0a94acb3eb7fdc55fd8dd31d09dffc40ac763bdd615f690f30ef466577b22c",
+    "Audit/Bootstrap.lean": "554e0248382656502b4e289892b41d5070d034741c90f6c82cd93a77cec119f8",
+    "Audit/BridgeEndpoint.lean": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+    "Audit/bridge-v04-diagram-readout/.gitattributes": "a2c87ff1a09a72bbe6c848b183bc064efc327fe42519549922c8d6cf3215588a",
+    "Audit/bridge-v04-diagram-readout/DIAGRAM-REVIEW.md": "992591b33438632f17a835bc1930b18f0a5e246e92ec92ffff577ce0e056f924",
+    "Audit/bridge-v04-diagram-readout/README.md": "59fc4f3197aaaa5e46ad6482068c4358116cb4ffab3fa2dec9e9d30412d5bb32",
+    "Audit/bridge-v04-diagram-readout/READOUT-REVIEW.md": "082d6c7ab815925c9282d8ae40f75e27d858ff5ae5beda44626f1bfe1aae6f0d",
+    "Audit/bridge-v04-diagram-readout/RECEIPTS.md": "061a0d6b5430d867f437801b62f0584a5b29384b39baa3e2fa0080715b238a53",
+    "Audit/bridge-v04-diagram-readout/SOURCE-CORRESPONDENCE.md": "6c55c5fbe26410add961b5459cba3cefc8727cd63f71c3f77ef81cbb9a3c49f4",
+    "Audit/bridge-v04-diagram-readout/diagram-claims.json": "a911474224e33694f5c2492ace5022509d42e935462ac38b7100ba0453316bce",
+    "Audit/bridge-v04-diagram-readout/failure_probes.py": "06172f095725a35647bc76796e05bc44fb6c844d7eaac1809f6ed6b7965bbe44",
+    "Audit/bridge-v04-diagram-readout/input-lock.json": "fccb27a87a5eccb98b6fd9f3873577e68ffe1dbbb6c0dd69748cc3fcaf3167f7",
+    "Audit/bridge-v04-diagram-readout/readout-claims.json": "0a5cf5fdc1fdb49554d05c94af676efd911797d82d2d5be72e9e25430abb724e",
+    "Audit/bridge-v04-diagram-readout/run.py": "295c5a944a6902ad4eee206cbaebfed30760cd9dbb4b252cfad5da87403f528e",
+    "Audit/bridge-v04-diagram-readout/source-context.json": "d0363ef8853578cee5eec692694989ac30734c4de676cc6526aadc97205f0cdf",
+    "Audit/bridge-v04-diagram-readout/source-manifest.json": "26b6a8d8f81f2a86734617afe5471d05271bfec0470df4e6ca2b5da15b4039f3",
+    "Audit/bridge-v04-four-sector/.gitattributes": "a2c87ff1a09a72bbe6c848b183bc064efc327fe42519549922c8d6cf3215588a",
+    "Audit/bridge-v04-four-sector/PLAN.md": "c698f66ea5c1790ed83ec1f227a471436461a285d430c46fff6cecd34c48a3b5",
+    "Audit/bridge-v04-four-sector/REVIEW.md": "f9f1274dfe5a99d9aaabb074e819e19b5712d97ede983c362fe4fbcfcac1a9b5",
+    "Audit/bridge-v04-four-sector/SOURCE-REVIEW.md": "115c72a7e91c131bf2e6a125a91a94baa0fd20a4fabdc498461b25f12fe5dd40",
+    "Audit/bridge-v04-four-sector/SUMMARY.md": "0158d222591d6c1cd66136f66f098ad1319514aeebda2c8cec50e200c3e7f8eb",
+    "Audit/bridge-v04-four-sector/claims.json": "0c24daf60db54413e605409097359f69d2cb132a34287a9dde8eb70046a5d93f",
+    "Audit/bridge-v04-four-sector/results.json": "d07dfae97adf133c99d1cdb6a4fddd87c2f93c6df423a2bfe7a04355e965ab63",
+    "Audit/bridge-v04-four-sector/run.py": "11e1529bd632d778f6d4ceae458723fdabc9789cd1ede570caf22a5d694655dc",
+    "Audit/bridge-v04-four-sector/source-excerpts.json": "5bf238f51f417a418080a031c32c58017da22bc8132b2aeb55c2031f452398b1",
+    "Audit/bridge-v04-four-sector/source-manifest.json": "f4f4c269fac526b7a1526ca3fe860b21e6aa5c90b760a2567ec0ad7da97460d0",
+    "Audit/pal-v23-charter/check_publication.py": "b4254875a2334641e9c2d19d3cb67e70569fa6739972a4d1c4b17b306f23f413",
+    "Audit/recent-work-20260911/.gitattributes": "429249d8655b787376107e7a6ddc4da6aa47f31109c4940c3af5727c451c0ae6",
+    "Audit/recent-work-20260911/PLAN.md": "0955a7213f1c30371128a2d063085bde3fc09e58751d4fdfa5e57744e2da578e",
+    "Audit/recent-work-20260911/PUBLICATION-PLAN.md": "cf90f75dfbc2060813cfd865c8f21f533bef6c3a3b8b0349f56b6263daf90a04",
+    "Audit/recent-work-20260911/PUBLICATION-REVIEW.md": "2f11880563e8a884e075d65c86516a2a34b10fcbd58c8341ceb9133b44e4490e",
+    "Audit/recent-work-20260911/PUBLICATION.md": "88bc0a4c9ff6501322fac8a6dbc48d4a442ce2e25bd7a68a9b20016563c8257b",
+    "Audit/recent-work-20260911/REVIEW.md": "52f91bf37592478d51d5d0ded739a04c852ef62c34066174c035aac4cc44d1b5",
+    "Audit/recent-work-20260911/SUMMARY.md": "be3426d619e0d895e0eaa3ab9ca849066a3a3e3031c061180d4289fa208249ef",
+    "Audit/recent-work-20260911/bridge-claims.json": "5672aacb334c4068352d89a4c6c53022b43cb6784b43ba73c8edffef7f2f0731",
+    "Audit/recent-work-20260911/charter-claims.json": "60878b3f894794a1417b580986fe1e610c521132d2065dc6591d65362a74adbf",
+    "Audit/recent-work-20260911/check_publication.py": "b5ad2827e2156eba593b45117ca2126db3c98619a30ebac55c6bce5a7e6760d1",
+    "Audit/recent-work-20260911/check_publication_guards.py": "adb94ad7aa3cbdb58a0c4d90f0f8cde3db9435a47e10d2a82adb23644718c170",
+    "Audit/recent-work-20260911/extract_sources.py": "c75f4db93d46b2a9c43358f9eeb665b234f79de1ecd9a1d416037f715641ee97",
+    "Audit/recent-work-20260911/pal-claims.json": "89d25224a9444b25ea1e939283d62af1e8d5f2f9223bfb016f2ab99121b4c3d1",
+    "Audit/recent-work-20260911/publication-inputs.json": "bd2cd1c3b593b795fc8ac5754d24c075372c8f401361b8b3217d72a080c8fa61",
+    "Audit/recent-work-20260911/results.json": "d37a08024a7711df804adb62d449b8d28ef077871d31cca19462659bdfae1c5f",
+    "Audit/recent-work-20260911/run.py": "322e7eb17206d8be690692d86035515af49050091f5dbfce830d5282a9d3f90b",
+    "Audit/recent-work-20260911/source-excerpts.json": "e77f64814ffbff4d75b50ff22ba704e998406d1378d2811946094ceec8d5227e",
+    "Audit/recent-work-20260911/source-manifest.json": "43732b576fb52b5ddfe603a298ede1174008681d829100bbe716b0ecba9411c4",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "PAL.lean": "2d569e583bfd27a46edde7477606aef5538dc73638b7da554e67a663168be78d",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
+    "PAL/AttackRun0003.lean": "0225fe8a13702e020ae368697937cfe373761888cbcdc257a19399f5a6e0c34f",
+    "PAL/Bootstrap.lean": "477df5fdcdde64854eeddb803269b467bc54474cbb87f13d4c20e55259b5c317",
+    "PALLeanAudit.lean": "5186b1f7840cd736c457abfca4c2b534737d8dd09fb632fe3a78d4d9e187fd5c",
+    "docs/REPORTING.md": "6b37c7cbbda7447f38d57879a5866bb03d635b3b6a227cf64618c2d07ee25e87",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "scripts/check_attack_run_0003.py": "259d54413a7848ede3aae5c7bd498d8f41766227861bf347cd613632c7006310",
+    "scripts/check_attack_run_0003_axioms.py": "f572c25c47b027ae3369121418427f755e6384219204627c288b868a7aa36ffe",
+    "scripts/check_attack_run_0003_policy.py": "4fc479c872b06d5cdf31b0e110a2638effaea440b42cc9c232ea50f8cbd1d1be",
+    "scripts/check_axiom_receipts.py": "fbb3064591f1440e7da6b07c622589101017445afe90cdf95a44736bbaa31e4f",
+    "scripts/check_candidate_inputs.py": "eda967b79071f3f5f4a3d4e2755a44d8af05eff4439f62246d333f9257a99ef0",
+    "scripts/check_policy.py": "b38d4b493f850f964fa34bb08fb28778a9cd31640e3c956a2f0d51bdd4ac8b82",
+    "scripts/check_release_migration.py": "9c605c93990e7f3c18c3434348f2e7c78c6cccc922767d14362ce798cd44b388",
+    "scripts/collect_attack_run_0003_benchmarks.py": "da0aa9f19edaec732cb011f70a8c9da9ea0af7a0526e18f974e3d6f1e2fe5aae",
+    "scripts/emit_attack_run_0003_ci_benchmarks.py": "893569b784a5a49f919e2223b09a02d455b5d1a3e68b91dd846e43168ce50db4",
+    "scripts/extract_pal23_charter_sources.py": "86d530d8b5e6f8b8c94b7afbbc8f00540b9d4edc0f4b613e82da8ed7ad02f740",
+    "scripts/render_attack_run_0003.py": "34bb47008ab86a2333b6b26df0b9bb80ed8970bacfaee3f29f801d1039aff36f",
+    "scripts/render_migration_report.py": "3f84b42fa5db4b4edc4841a2412fa97d819e188a21bf4f8841a49bf3c630efe5",
+    "scripts/render_report.py": "77896d0de5d368d296e6d1c06d1f8ee03c6f3afc0885bdce37d04ac834a2e9c9",
+    "scripts/run_pal23_charter.py": "188d0979e1e4548a9cb795a484a7db936c5f8234709a7820188c5612f97e0437"
+  },
+  "worktree_status": "",
+  "clean_worktree": true,
+  "receipt_guards": [
+    "altered-after-input",
+    "altered-argv",
+    "altered-axiom",
+    "altered-input",
+    "altered-log",
+    "altered-source",
+    "closed-obligation",
+    "closed-out-of-scope-interface",
+    "duplicate-command",
+    "duplicate-declaration",
+    "failed-kernel",
+    "falsified-docx",
+    "invented-ci",
+    "missing-command",
+    "missing-diagram",
+    "missing-readout"
+  ],
+  "finished_utc": "2026-09-12T06:47:31.602310+00:00"
+}

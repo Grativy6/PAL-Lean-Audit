@@ -1,0 +1,17 @@
+# BRIDGE finite-dimensional accounting and residual recovery
+
+Cycle BRIDGE-RECOVERY-20260912-01. Formation timing AFTER_NEW_STEERING: Chris said, "thank you. i merged it. if you got more batches lets keep going". PR14 is verified merged at 8139ed6bc7b7b8c16258c2d27154602fef31cd21. Home is this checkout; return is the current task. Branch agent/bridge-v04-dimension-recovery-20260912 starts at that exact merge.
+
+Frozen scope: BRIDGE v0.4 P0193-P0199, using the existing hash-locked supplied DOCX and its quotient definitions. Audit dim T = dim C + dim Gv + dim H + dim V under finite-dimensional hypotheses; identify the actual residual readout kernel with the embedded hidden sector; prove the requested linear answer factors through that readout exactly when it annihilates the hidden sector; prove full residual identity recovery iff the hidden quotient is zero iff ker r is contained in B. Include checked boundary countercases. Do not equate the abstract quotient H with a submodule of D without its named injection.
+
+Plan: (1) review source and freeze statements; (2) commission disjoint dimension and recovery implementation lanes with read-only completion checks; (3) collect source, declaration, axiom, kernel and preservation receipts; (4) publish one draft PR and verify its exact CI artifact. Historical OPEN dispositions are preserved; new dispositions are appended in this batch. Counts of old declarations, new declarations, tooling probes, and open source obligations remain separate.
+
+Grant: continue the established bounded audit and draft-PR workflow. Limits: no source amendment, PAL canon adoption, obligation closure, geometric/Hodge application, frame-morphism audit, or merge. Christopher D. Pang remains author and steward; AI output is assistance and evidence only.
+
+The initial disjoint dispatch is complete. Source bytes and 95 original OOXML paragraphs were verified; predecessor inputs and receipts were checked against their exact Git contents. Root corrected a nonliteral source quotation and requested missing recovery ledger rows; the ledger now names all eleven compiled recovery declarations. P0195's separate generated-span answer factorization remains OPEN_MANUAL and is not included in the residual criterion.
+
+Local execution is complete: eighteen new declarations, sixteen successful controller commands, eighteen successful nested historical commands, eighteen receipt guards, three tooling-failure probes, and source verification passed. Both mathematical lanes received semantic reviews; final receipt review follows.
+
+Local execution is complete: eighteen new declarations, sixteen successful controller commands, eighteen successful nested historical commands, eighteen receipt guards, three tooling-failure probes, and source verification passed. Both mathematical lanes received semantic reviews; final receipt review follows.
+
+Prospective action REVISED_AFTER_NEW_STEERING (same currentuser-keepgoing-20260912 trace): commit this bounded batch, push its review branch, open a draft PR, and verify exact current-head/tested-merge CI artifacts. Preconditions satisfied: frozen mathematical implementation, exact source and inventory checks, successful kernels and historical replay, preserved predecessor bytes, explicit open boundaries. Status: ready for draft-PR publication. This record grants no authority, merge permission or source adoption.

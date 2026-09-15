@@ -1,0 +1,1 @@
+PASS_BRIDGE_RECEIPTS {'diagram': 12, 'readout': 7, 'four_sector': 14}

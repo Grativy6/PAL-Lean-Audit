@@ -1,0 +1,11 @@
+'Experiments.BridgeReadout.rawReadoutToVisible_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeReadout.ker_rawReadoutToVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeReadout.visibleEquivReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeReadout.visibleEquivReadout_apply_mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeReadout.residualReadout_compatibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeReadout.generated_directions_required_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeReadout.generated_component_required_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

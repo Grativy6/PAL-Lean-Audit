@@ -1,0 +1,11 @@
+'Experiments.BridgeDimension.generatedCollision_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDimension.hiddenCollision_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDimension.generatedVisible_finrank_add_collision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeDimension.hidden_finrank_add_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDimension.visible_finrank_add_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDimension.bridge_four_sector_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

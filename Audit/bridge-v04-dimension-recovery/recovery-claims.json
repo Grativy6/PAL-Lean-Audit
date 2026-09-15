@@ -1,0 +1,330 @@
+{
+  "lane": "recovery",
+  "identity_basis": "BRIDGE-v0.4 supplied local DOCX sha256 a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470; selected original OOXML paragraphs P0195-P0199",
+  "claims": [
+    {
+      "id": "FS-M04-R01",
+      "title": "Residual readout is surjective",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.residualReadout_surjective",
+      "statement": "residualReadout B r is surjective onto range(r)/generatedReadout B r.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0196",
+          "excerpt": "r:T/B→rT/rB,"
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Field k",
+        "supplied k-modules T and R",
+        "supplied B and linear r"
+      ],
+      "dependencies": [
+        "BridgeReadout.residualReadout_compatibility",
+        "BridgeFourSector.defectToVisible_surjective"
+      ],
+      "countercase": "Surjectivity supplies no chosen section.",
+      "authority_ceiling": "Declared linear realization only.",
+      "residual": "No finite-dimensional claim is made here.",
+      "reopening": "Audit dimension accounting in its separate lane."
+    },
+    {
+      "id": "FS-M04-R02",
+      "title": "Named hidden-sector range is the residual kernel",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.ker_residualReadout",
+      "statement": "ker(residualReadout B r)=range(hiddenToDefect B (ker r)).",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0197",
+          "excerpt": "the collision space is H."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "The existing typed hidden quotient H=ker(r)/(B∩ker(r))",
+        "The named map hiddenToDefect"
+      ],
+      "dependencies": [
+        "BridgeFourSector.residual_exact",
+        "BridgeReadout.residualReadout_compatibility"
+      ],
+      "countercase": "H is not identified with an ambient submodule of D; its range under the named injection is used.",
+      "authority_ceiling": "Exactness fact for the declared quotient maps only.",
+      "residual": "This does not choose representatives or complements.",
+      "reopening": "Add geometric structure only under a new lane."
+    },
+    {
+      "id": "FS-M04-R03",
+      "title": "Residual quotient equivalence",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.BridgeRecovery.residualQuotientEquiv",
+      "statement": "defect B/ker(residualReadout B r) is linearly equivalent to range(r)/generatedReadout B r.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0196",
+          "excerpt": "r:T/B→rT/rB,"
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied B and linear r",
+        "The checked residualReadout surjectivity"
+      ],
+      "dependencies": [
+        "FS-M04-R01",
+        "LinearMap.quotKerEquivRange",
+        "LinearEquiv.ofTop"
+      ],
+      "countercase": "The equivalence supplies no preferred representative in the defect quotient.",
+      "authority_ceiling": "A linear quotient realization only.",
+      "residual": "The target represents rB as generatedReadout inside range(r).",
+      "reopening": "Compare other source-to-subtype encodings only in a new lane."
+    },
+    {
+      "id": "FS-M04-R04",
+      "title": "Constructed answer decoder",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.BridgeRecovery.answerDecoder",
+      "statement": "answerDecoder descends a:D→A through the residual quotient equivalence when ker(residualReadout)≤ker(a).",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0197",
+          "excerpt": "A requested linear answer a:D→Aans is endpoint-decodable precisely when"
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0198",
+          "excerpt": "H⊆kera."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied k-linear answer a:D→Aans",
+        "The stated kernel containment"
+      ],
+      "dependencies": [
+        "FS-M04-R03",
+        "Submodule.liftQ"
+      ],
+      "countercase": "This noncomputable quotient construction does not choose an endpoint representative.",
+      "authority_ceiling": "A declared linear factorization construction only.",
+      "residual": "No non-linear answer language is covered.",
+      "reopening": "Audit alternative answer categories separately."
+    },
+    {
+      "id": "FS-M04-R05",
+      "title": "Answer decoder construction",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.answerDecoder_comp_residualReadout",
+      "statement": "If ker(residualReadout)≤ker(a), the constructed decoder d satisfies d∘residualReadout=a.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0197",
+          "excerpt": "A requested linear answer a:D→Aans is endpoint-decodable precisely when"
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0198",
+          "excerpt": "H⊆kera."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied linear answer a",
+        "The displayed kernel containment"
+      ],
+      "dependencies": [
+        "residualQuotientEquiv",
+        "Submodule.liftQ"
+      ],
+      "countercase": "The construction is noncomputable and does not provide a chosen physical representative.",
+      "authority_ceiling": "Linear factorization only.",
+      "residual": "No claim about non-linear answers.",
+      "reopening": "Audit other answer languages separately."
+    },
+    {
+      "id": "FS-M04-R06",
+      "title": "Endpoint decodability criterion",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.answer_decodable_iff",
+      "statement": "∃d, d∘residualReadout=a iff range(hiddenToDefect B (ker r))≤ker(a).",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0197",
+          "excerpt": "A requested linear answer a:D→Aans is endpoint-decodable precisely when"
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0198",
+          "excerpt": "H⊆kera."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied k-linear answer a:D→Aans",
+        "H is represented by its named injection range"
+      ],
+      "dependencies": [
+        "FS-M04-R02",
+        "FS-M04-R03"
+      ],
+      "countercase": "A factorization condition does not imply identity recovery.",
+      "authority_ceiling": "Bounded linear realization of the source criterion.",
+      "residual": "Source notation H⊆ker(a) is translated through hiddenToDefect.",
+      "reopening": "Review alternative quotient encodings separately."
+    },
+    {
+      "id": "FS-M04-R07",
+      "title": "Identity decoder is equivalent to residual injectivity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.residual_identity_decoder_iff_injective",
+      "statement": "There exists d with d∘residualReadout=id on defect B iff residualReadout is injective.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0199",
+          "excerpt": "Full residual identity is recoverable precisely when H=0, equivalently K⊆B."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied B and linear r",
+        "Identity is the identity of the typed defect quotient T/B"
+      ],
+      "dependencies": [
+        "FS-M04-R05",
+        "FS-M04-R01"
+      ],
+      "countercase": "Injectivity alone does not claim a chosen inverse outside this constructed quotient decoder.",
+      "authority_ceiling": "Linear left-inverse criterion only.",
+      "residual": "No finite-dimensional hypothesis is used.",
+      "reopening": "Audit stronger inverse structure only under a new grant."
+    },
+    {
+      "id": "FS-M04-R08",
+      "title": "Explicit full-identity decoder criterion",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le",
+      "statement": "∃d, d∘residualReadout=id iff ker(r)≤B.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0199",
+          "excerpt": "Full residual identity is recoverable precisely when H=0, equivalently K⊆B."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied B and r",
+        "Identity means identity of the typed defect quotient T/B"
+      ],
+      "dependencies": [
+        "residual_identity_decoder_iff_injective",
+        "full_residual_identity_recovery_iff_kernel_le"
+      ],
+      "countercase": "No inverse is asserted when ker(r) is not contained in B.",
+      "authority_ceiling": "Explicit linear left-inverse criterion only.",
+      "residual": "No finite-dimensional hypothesis is required for this endpoint statement.",
+      "reopening": "Dimension accounting remains separately scoped."
+    },
+    {
+      "id": "FS-M04-R09",
+      "title": "Hidden quotient and full recovery",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton",
+      "statement": "residualReadout is injective iff the hidden quotient is subsingleton.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0199",
+          "excerpt": "H=0, equivalently K⊆B."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "The named hiddenToDefect injection",
+        "Typed hidden quotient"
+      ],
+      "dependencies": [
+        "FS-M04-R02",
+        "BridgeFourSector.hiddenToDefect_injective"
+      ],
+      "countercase": "Subsingleton here is a quotient-space condition, not a claim that H is an ambient submodule of D.",
+      "authority_ceiling": "Declared linear realization only.",
+      "residual": "No source adoption or ontology claim follows.",
+      "reopening": "Revisit only with added declared structure."
+    },
+    {
+      "id": "FS-M04-R10",
+      "title": "Full recovery is equivalent to supplied-kernel containment",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le",
+      "statement": "residualReadout is injective iff ker(r)≤B.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0199",
+          "excerpt": "Full residual identity is recoverable precisely when H=0, equivalently K⊆B."
+        }
+      ],
+      "assumptions": [
+        "Field k; T and R are k-vector spaces; the answer target A is a k-vector space when present",
+        "Supplied B and linear r",
+        "The typed hidden quotient and named hiddenToDefect injection"
+      ],
+      "dependencies": [
+        "FS-M04-R09",
+        "Submodule.Quotient.subsingleton_iff"
+      ],
+      "countercase": "The statement does not identify ker(r) with B; it tests their containment.",
+      "authority_ceiling": "Declared linear realization only.",
+      "residual": "No source adoption, geometric claim, or dimension count follows.",
+      "reopening": "Add additional structure only in a separately scoped audit."
+    },
+    {
+      "id": "FS-M04-R11",
+      "title": "Coarser answer can decode without identity recovery",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase",
+      "statement": "For T=ℚ×ℚ, B=⊥, r=fst, the induced first-coordinate answer decodes, while residualReadout is not injective.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195-P0199",
+          "excerpt": "for a coarser answer it is an obstruction only where that answer varies."
+        }
+      ],
+      "assumptions": [
+        "Displayed rational modules and first projection"
+      ],
+      "dependencies": [
+        "FS-M04-R04",
+        "FS-M04-R05"
+      ],
+      "countercase": "This defeats the unlicensed claim that every decodable answer entails full identity recovery.",
+      "authority_ceiling": "One finite rational countermodel only.",
+      "residual": "The source's generated-span formulation r|B is not separately formalized in this recovery file.",
+      "reopening": "Commission a generated-span factorization lane if that first P0195 clause needs a direct receipt."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "FS-M04-P0195-GENERATED-SPAN",
+      "classification": "OPEN_MANUAL",
+      "subject": "Direct factorization theorem for a supplied coarser answer on B through r restricted to B",
+      "source_refs": [
+        "P0195"
+      ],
+      "reason": "This lane proves the residual-target criterion and a nontrivial coarser-answer countercase; it does not add a separate generated-span decoder implementation.",
+      "reopening": "Commission a distinct source-mapped generated-span lane."
+    }
+  ]
+}

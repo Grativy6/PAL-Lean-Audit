@@ -1,0 +1,9 @@
+import Experiments.BridgeDimension
+
+#print axioms Experiments.BridgeDimension.generatedCollision_finrank
+#print axioms Experiments.BridgeDimension.hiddenCollision_finrank
+#print axioms Experiments.BridgeDimension.generatedVisible_finrank_add_collision
+#print axioms Experiments.BridgeDimension.hidden_finrank_add_collision
+#print axioms Experiments.BridgeDimension.visible_finrank_add_sup
+#print axioms Experiments.BridgeDimension.bridge_four_sector_finrank
+#print axioms Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase
