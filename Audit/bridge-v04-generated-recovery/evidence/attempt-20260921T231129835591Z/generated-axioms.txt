@@ -1,0 +1,46 @@
+@Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  {A : Type u_4} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]
+  [inst_4 : Module k R] [inst_5 : AddCommGroup A] [Module k A] (B : Submodule k T) (r : T →ₗ[k] R) (a : ↥B → A),
+  (∃ d, d ∘ ⇑(Experiments.BridgeGeneratedRecovery.generatedRangeReadout B r) = a) ↔
+    ∀ (x y : ↥B),
+      (Experiments.BridgeGeneratedRecovery.generatedRangeReadout B r) x =
+          (Experiments.BridgeGeneratedRecovery.generatedRangeReadout B r) y →
+        a x = a y
+@Experiments.BridgeGeneratedRecovery.generated_decoder_unique : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  {A : Type u_4} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]
+  [inst_4 : Module k R] [inst_5 : AddCommGroup A] [Module k A] (B : Submodule k T) (r : T →ₗ[k] R) (a : ↥B → A)
+  (d₁ d₂ : ↥(r ∘ₗ B.subtype).range → A),
+  d₁ ∘ ⇑(Experiments.BridgeGeneratedRecovery.generatedRangeReadout B r) = a →
+    d₂ ∘ ⇑(Experiments.BridgeGeneratedRecovery.generatedRangeReadout B r) = a → d₁ = d₂
+'Experiments.BridgeGeneratedRecovery.generatedRangeReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_decoder_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generatedAmbientReadout' depends on axioms: [propext, Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_linear_answer_decodable_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_identity_decoder_iff_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_full_identity_iff_collision_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_identity_answer_decodable_iff_collision_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_coarser_answer_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_nonlinear_kernel_overclaim_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Experiments.BridgeGeneratedRecovery.generated_ambient_decoder_nonunique_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

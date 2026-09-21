@@ -1,0 +1,8 @@
+{
+  "status": "SUPERSEDED_SOURCE_CORRESPONDENCE",
+  "execution_status_preserved": "PASS_BRIDGE_GENERATED_RECOVERY",
+  "reason": "Exact printed signatures retained AddCommGroup A and Module k A on three intended arbitrary-answer declarations. Mechanical checks passed for the narrower Lean statements, but source correspondence required arbitrary answer types. The succeeding attempt removes the answer-space assumptions.",
+  "original_module_sha256": "449dc6c051416734d890a781dfff7efe36472afb6146b0aeabef0a8f380c51c5",
+  "kernel_failure": false,
+  "source_counterexample": false
+}
