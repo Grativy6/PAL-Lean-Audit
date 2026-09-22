@@ -1,0 +1,96 @@
+{
+  "source_id": "MIND-v0.4-Draft",
+  "source_sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad",
+  "excerpts": [
+    {
+      "id": "MIND-ACCOUNT",
+      "page": 9,
+      "section": "5.1",
+      "text": "Kt records the current comparison context, including source versions, protected questions, and resolution."
+    },
+    {
+      "id": "MIND-UPDATE",
+      "page": 10,
+      "section": "5.2",
+      "text": "The update returns both the revised account and a transition receipt"
+    },
+    {
+      "id": "MIND-NOCHANGE",
+      "page": 10,
+      "section": "5.2",
+      "text": "An update can leave the substantive matrix unchanged while recording that the current evidence warranted no new distinction."
+    },
+    {
+      "id": "MIND-RETENTION",
+      "page": 10,
+      "section": "5.2",
+      "text": "The history of material claims and revisions is what must remain attributable within the retention policy."
+    },
+    {
+      "id": "MIND-CONDITIONS",
+      "page": 12,
+      "section": "6.4",
+      "text": "The resulting design rule is: preserve the reason; recheck the conditions."
+    },
+    {
+      "id": "MIND-BUDGET",
+      "page": 12,
+      "section": "6.5",
+      "text": "A bounded study should register a stopping rule, a resource budget, an interruption condition, and a permitted fallback."
+    },
+    {
+      "id": "MIND-CONFIG",
+      "page": 14,
+      "section": "7.3",
+      "text": "some changes how the retrieval or update operation behaves through"
+    },
+    {
+      "id": "MIND-ADMISSION",
+      "page": 14,
+      "section": "7.3",
+      "text": "Here Dt is candidate material, not an automatically admitted conclusion."
+    },
+    {
+      "id": "MIND-ATTRIBUTION",
+      "page": 14,
+      "section": "8.1",
+      "text": "Merely filling three fields does not establish their attribution: the retained relation still needs the source basis and comparison rule appropriate to its use."
+    },
+    {
+      "id": "MIND-RECOVERY",
+      "page": 15,
+      "section": "8.3",
+      "text": "Equivalently, histories sharing a compressed representation must agree on the protected answer."
+    },
+    {
+      "id": "MIND-CONTINUITY",
+      "page": 15,
+      "section": "8.4",
+      "text": "For MIND’s functional purposes, continuity means that a later account inherits the relevant orientation, dependencies, and unresolved needs from a predecessor under a declared recovery rule."
+    },
+    {
+      "id": "MIND-CARRY",
+      "page": 17,
+      "section": "8.7.1",
+      "text": "It separately names the dependencies and conditions needed for use at the destination."
+    },
+    {
+      "id": "MIND-SERVICE",
+      "page": 18,
+      "section": "8.7.3",
+      "text": "Where an external retrieval path is required, its availability and cost remain part of the transfer contract."
+    },
+    {
+      "id": "MIND-SNAPSHOT",
+      "page": 19,
+      "section": "9",
+      "text": "The current snapshot does not distinguish those rules, although the next encounter does."
+    },
+    {
+      "id": "MIND-OPEN",
+      "page": 27,
+      "section": "12",
+      "text": "A clarified definition does not close its empirical or implementation burden."
+    }
+  ]
+}
