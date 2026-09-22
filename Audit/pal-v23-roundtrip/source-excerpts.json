@@ -1,0 +1,762 @@
+{
+  "source_id": "PAL-v2.3-M",
+  "source_sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "indexing": "One-based enumeration of every w:p in word/document.xml, including empty and table paragraphs.",
+  "paragraphs": [
+    {
+      "paragraph": "P1384",
+      "text": "Domain and signature",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Domain and signature</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1385",
+      "text": "Sets/types W,T,Q; trace map τ:W→T; requested answer q:W→Q; reachable image R=τ(W); optional auxiliary label s:W→S; and declared decoder class.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sets/types W,T,Q; trace map τ:W→T; requested answer q:W→Q; reachable image R=τ(W); optional auxiliary label s:W→S; and declared decoder class.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1386",
+      "text": "Formal object",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Formal object</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1387",
+      "text": "L(τ,q)={(w,w′) : τ(w)=τ(w′) and q(w)≠q(w′)}. Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q. Extension of d_R to all T is a separate totalization claim.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>L(τ,q)={(w,w′) : τ(w)=τ(w′) and q(w)≠q(w′)}. Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q. Extension of d_R to all T is a separate totalization claim.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1388",
+      "text": "Constructor or predicate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Constructor or predicate</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1389",
+      "text": "Compute or prove the lost-distinction relation and issue a reachable-image factorization or obstruction receipt. Postprocessing cannot repair an existing collision. With K(s)={(w,w′):s(w)=s(w′)}, L((τ,s),q)=L(τ,q)∩K(s).",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Compute or prove the lost-distinction relation and issue a reachable-image factorization or obstruction receipt. Postprocessing cannot repair an existing collision. With K(s)={(w,w′):s(w)=s(w′)}, L((τ,s),q)=L(τ,q)∩K(s).</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1390",
+      "text": "Assumptions and cost",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Assumptions and cost</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1391",
+      "text": "Equality and map laws; explicit W,T,Q,τ,q; finite enumeration only where claimed; any topology, measure, computation, privacy, permission, or authority structure separately supplied.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Equality and map laws; explicit W,T,Q,τ,q; finite enumeration only where claimed; any topology, measure, computation, privacy, permission, or authority structure separately supplied.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1392",
+      "text": "Preservation account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Preservation account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1393",
+      "text": "Original witnesses, collisions, reachable image, detector/question, auxiliary labels, lost distinctions, decoder domain/class, totalization status, and provenance.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Original witnesses, collisions, reachable image, detector/question, auxiliary labels, lost distinctions, decoder domain/class, totalization status, and provenance.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1394",
+      "text": "Predecessor and strictness",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Predecessor and strictness</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1395",
+      "text": "A deterministic restatement s=h∘τ removes no collision. For q′=g∘q, L(τ,q′)⊆L(τ,q). Under finite hypotheses, any s making (τ,s) sufficient needs at least max_{t∈R} card(q(τ⁻¹(t))) distinguishable labels.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>A deterministic restatement s=h∘τ removes no collision. For q′=g∘q, L(τ,q′)⊆L(τ,q). Under finite hypotheses, any s making (τ,s) sufficient needs at least max_{t∈R} card(q(τ⁻¹(t))) distinguishable labels.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1396",
+      "text": "Claim class and status",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Claim class and status</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1397",
+      "text": "Set-theoretic factorization theorem with refinement and coarsening lemmas; stronger decoder classes are separate claims.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Set-theoretic factorization theorem with refinement and coarsening lemmas; stronger decoder classes are separate claims.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1398",
+      "text": "Tests and falsifier",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Tests and falsifier</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1399",
+      "text": "Collision/no-collision; deterministic restatement; strict refinement; question coarsening; finite label bound; empty W, empty R, nonempty T and empty Q totalization controls; joint-trace XOR fixture; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Collision/no-collision; deterministic restatement; strict refinement; question coarsening; finite label bound; empty W, empty R, nonempty T and empty Q totalization controls; joint-trace XOR fixture; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1400",
+      "text": "Authority ceiling",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Authority ceiling</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1401",
+      "text": "At most deterministic set-theoretic factorization unless strengthened. No automatic continuity, measurability, smoothness, computability, efficient inversion, causal recovery, source existence, identity, privacy, permission, consent, standing, jurisdiction, or authority.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>At most deterministic set-theoretic factorization unless strengthened. No automatic continuity, measurability, smoothness, computability, efficient inversion, causal recovery, source existence, identity, privacy, permission, consent, standing, jurisdiction, or authority.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1402",
+      "text": "Residual",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Residual</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1403",
+      "text": "Unreachable T, decoder extension, non-set-theoretic regularity, actual source existence, implementation cost, hidden collisions, and question adequacy.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Unreachable T, decoder extension, non-set-theoretic regularity, actual source existence, implementation cost, hidden collisions, and question adequacy.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1404",
+      "text": "Return-to-PAL handle",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Return-to-PAL handle</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1405",
+      "text": "Any change to W,T,Q,τ,q,s, reachable image, detector, decoder class, or authority reopens only the dependent receipt.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Any change to W,T,Q,τ,q,s, reachable image, detector, decoder class, or authority reopens only the dependent receipt.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1406",
+      "text": "Sources",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sources</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1407",
+      "text": "APCI v1.0.0 [V5] for reachable factorization; Compactification Costs v0.2 [V8] for boundary/refinement/coarsening seams; Abstract Loops v1.0 [V6] for joint traces.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>APCI v1.0.0 [V5] for reachable factorization; Compactification Costs v0.2 [V8] for boundary/refinement/coarsening seams; Abstract Loops v1.0 [V6] for joint traces.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1408",
+      "text": "For joint traces, K(⟨τ_A,τ_B⟩)=K(τ_A)∩K(τ_B). XOR supplies a strict joint-sufficiency fixture: either single coordinate is insufficient while their pair is sufficient. This proves neither causal interaction nor generation.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr /><ns0:t>For joint traces, K(⟨τ_A,τ_B⟩)=K(τ_A)∩K(τ_B). XOR supplies a strict joint-sufficiency fixture: either single coordinate is insufficient while their pair is sufficient. This proves neither causal interaction nor generation.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1409",
+      "text": "Conditional extension profile. Carrier/model envelope: W with interface codomain T and requested-answer codomain Q. Scale, resolution, admissible differences, and tolerance: reasoned N/A for the set-theoretic theorem; any metric, approximate equality, or tolerance used by an implementation must be supplied separately. Boundary role/domain/scope: INTERFACE from W into T under the declared τ, never silently CUT, and only on the stated W. Orientation/coefficient system: N/A absent separately supplied structure. Quantifiers: exact over all w,w′∈W; executable fixtures are explicitly finite. Map/projector/fibers/reachable image: τ, q, K(τ), L(τ,q), and R=τ(W) are explicit. Detector/requested answer: τ is the detector/interface trace and q is exactly the answer being preserved. Reachable decoder/totalization: d_R:R→Q is distinguished from any extension d_T:T→Q. Decoder class: set-theoretic by default; continuous, measurable, smooth, computable, efficient, causal, privacy-preserving, permitted, and authorized classes require their own witnesses. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, source existence, and authority remain distinct. Claim labels: reachable factorization is a prior exact theorem; finite collision/refinement tables are fixtures; loss language is interpretation; boundary routing and class registry are v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes to any map, domain, fiber, label, decoder, witness, or ceiling.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"BodyText\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Conditional extension profile.</ns0:t></ns0:r><ns0:r><ns0:rPr /><ns0:t xml:space=\"preserve\"> Carrier/model envelope: W with interface codomain T and requested-answer codomain Q. Scale, resolution, admissible differences, and tolerance: reasoned N/A for the set-theoretic theorem; any metric, approximate equality, or tolerance used by an implementation must be supplied separately. Boundary role/domain/scope: INTERFACE from W into T under the declared τ, never silently CUT, and only on the stated W. Orientation/coefficient system: N/A absent separately supplied structure. Quantifiers: exact over all w,w′∈W; executable fixtures are explicitly finite. Map/projector/fibers/reachable image: τ, q, K(τ), L(τ,q), and R=τ(W) are explicit. Detector/requested answer: τ is the detector/interface trace and q is exactly the answer being preserved. Reachable decoder/totalization: d_R:R→Q is distinguished from any extension d_T:T→Q. Decoder class: set-theoretic by default; continuous, measurable, smooth, computable, efficient, causal, privacy-preserving, permitted, and authorized classes require their own witnesses. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, source existence, and authority remain distinct. Claim labels: reachable factorization is a prior exact theorem; finite collision/refinement tables are fixtures; loss language is interpretation; boundary routing and class registry are v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes to any map, domain, fiber, label, decoder, witness, or ceiling.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1410",
+      "text": "M-RETURN-PROJ — Return, projection, hidden motion, and export",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading2\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr /></ns0:pPr><ns0:bookmarkStart ns0:id=\"55\" ns0:name=\"m-return-proj-return-projection-hidden-m\" /><ns0:r><ns0:rPr /><ns0:t>M-RETURN-PROJ — Return, projection, hidden motion, and export</ns0:t></ns0:r><ns0:bookmarkEnd ns0:id=\"55\" /></ns0:p>"
+    },
+    {
+      "paragraph": "P1411",
+      "text": "Typed return/export realization across A5/A12/A13/A15 as declared",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Typed return/export realization across A5/A12/A13/A15 as declared</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1412",
+      "text": "Field",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Field</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1413",
+      "text": "Canonical account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Canonical account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1414",
+      "text": "Target and role",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Target and role</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1415",
+      "text": "Distinguish exact return, projected work stutter, hidden motion, direct residual, and exported receipt.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Distinguish exact return, projected work stutter, hidden motion, direct residual, and exported receipt.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1416",
+      "text": "Domain and signature",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Domain and signature</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1417",
+      "text": "State space X; transition/return H:X→X; work projection π:X→W; export E:X→C⊥, equivalently Ĥ(x)=(H(x),E(x)); and, when input/output readouts differ, both codomains plus a comparison adapter.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>State space X; transition/return H:X→X; work projection π:X→W; export E:X→C⊥, equivalently Ĥ(x)=(H(x),E(x)); and, when input/output readouts differ, both codomains plus a comparison adapter.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1418",
+      "text": "Formal object",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Formal object</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1419",
+      "text": "Separately typed predicates for H(x)=x; π(Hx)=π(x); H(x)≠x with projected equality; direct readable residual; collapse under π; H^k(x)=x; and E(x)≠⊥.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Separately typed predicates for H(x)=x; π(Hx)=π(x); H(x)≠x with projected equality; direct readable residual; collapse under π; H^k(x)=x; and E(x)≠⊥.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1420",
+      "text": "Constructor or predicate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Constructor or predicate</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1421",
+      "text": "Issue only the return/stutter/export receipt actually witnessed. A quiet heartbeat may preserve work while appending audit state; it records its own observation only.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Issue only the return/stutter/export receipt actually witnessed. A quiet heartbeat may preserve work while appending audit state; it records its own observation only.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1422",
+      "text": "Assumptions and cost",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Assumptions and cost</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1423",
+      "text": "Declared state coordinates, projector/comparison law, export semantics, observation time, and mutation coverage. Exact interval claims require protected state or complete intervening receipts.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Declared state coordinates, projector/comparison law, export semantics, observation time, and mutation coverage. Exact interval claims require protected state or complete intervening receipts.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1424",
+      "text": "Preservation account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Preservation account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1425",
+      "text": "Carrier state, work projection, audit entry, hidden coordinates, direct residual, exported receipt, resource delta, grant/authority state, external terminal result, and route history.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Carrier state, work projection, audit entry, hidden coordinates, direct residual, exported receipt, resource delta, grant/authority state, external terminal result, and route history.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1426",
+      "text": "Predecessor and strictness",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Predecessor and strictness</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1427",
+      "text": "Projected equality is weaker than total equality. A model with fixed work and changed audit/resource state is a strict predecessor counterfixture to total-state stutter.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Projected equality is weaker than total equality. A model with fixed work and changed audit/resource state is a strict predecessor counterfixture to total-state stutter.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1428",
+      "text": "Claim class and status",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Claim class and status</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1429",
+      "text": "Typed predicate family. Abstract Loops supplies the return/export axes; the heartbeat application is new PAL v2.3 synthesis.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Typed predicate family. Abstract Loops supplies the return/export axes; the heartbeat application is new PAL v2.3 synthesis.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1430",
+      "text": "Tests and falsifier",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Tests and falsifier</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1431",
+      "text": "Exact fixed point; projected stutter with hidden motion; direct residual; collapse; periodic return; exported residual; heartbeat with audit/resource delta; sparse-observation mutation; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Exact fixed point; projected stutter with hidden motion; direct residual; collapse; periodic return; exported residual; heartbeat with audit/resource delta; sparse-observation mutation; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1432",
+      "text": "Authority ceiling",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Authority ceiling</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1433",
+      "text": "No liveness, progress, success, identity through time, consciousness, physical recurrence, permission, authority, or A15 closure from equality or return alone.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>No liveness, progress, success, identity through time, consciousness, physical recurrence, permission, authority, or A15 closure from equality or return alone.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1434",
+      "text": "Residual",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Residual</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1435",
+      "text": "Unobserved intervals, hidden state, resource use, external effects, projector adequacy, and export semantics.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Unobserved intervals, hidden state, resource use, external effects, projector adequacy, and export semantics.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1436",
+      "text": "Return-to-PAL handle",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Return-to-PAL handle</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1437",
+      "text": "Any state-space, map, projection, comparison, export, interval, resource, grant, or authority change reopens the corresponding typed claim.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Any state-space, map, projection, comparison, export, interval, resource, grant, or authority change reopens the corresponding typed claim.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1438",
+      "text": "Sources",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sources</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1439",
+      "text": "Abstract Loops v1.0 [V6]; SCT v0.2 [V9] for the work-stutter heartbeat application; PAL v2.3 projection discipline.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Abstract Loops v1.0 [V6]; SCT v0.2 [V9] for the work-stutter heartbeat application; PAL v2.3 projection discipline.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1440",
+      "text": "Conditional extension profile. Carrier/model envelope: X with work codomain W and export codomain C⊥. Scale, resolution, admissible differences, and tolerance: N/A for exact equality; any approximate return/readout must supply them. Boundary role/domain/scope: N/A for return alone; an exported readout uses INTERFACE on the declared domain and does not become CUT. Orientation/coefficient system: N/A unless separately supplied. Quantifiers: one supplied state, one transition, or a declared finite period unless separately strengthened. Map/projector/fibers/reachable image: H, π, E, the fibers of π, and the relevant images H(X), π(X), and E(X) are declared where used. Detector/requested answer: equality is tested in the named total or projected state space; export asks only for its typed receipt. Reachable decoder/totalization: N/A unless inverse recovery is separately claimed. Decoder class: exact set-theoretic equality is the base case; computable or approximate comparison requires a supplied implementation and tolerance. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: fixed-point and projected-stutter implications are exact; examples are finite fixtures; recurrence language is interpretation; heartbeat/export routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in state, projection, export, comparison, heartbeat, evidence, or ceiling.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Conditional extension profile.</ns0:t></ns0:r><ns0:r><ns0:rPr /><ns0:t xml:space=\"preserve\"> Carrier/model envelope: X with work codomain W and export codomain C⊥. Scale, resolution, admissible differences, and tolerance: N/A for exact equality; any approximate return/readout must supply them. Boundary role/domain/scope: N/A for return alone; an exported readout uses INTERFACE on the declared domain and does not become CUT. Orientation/coefficient system: N/A unless separately supplied. Quantifiers: one supplied state, one transition, or a declared finite period unless separately strengthened. Map/projector/fibers/reachable image: H, π, E, the fibers of π, and the relevant images H(X), π(X), and E(X) are declared where used. Detector/requested answer: equality is tested in the named total or projected state space; export asks only for its typed receipt. Reachable decoder/totalization: N/A unless inverse recovery is separately claimed. Decoder class: exact set-theoretic equality is the base case; computable or approximate comparison requires a supplied implementation and tolerance. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: fixed-point and projected-stutter implications are exact; examples are finite fixtures; recurrence language is interpretation; heartbeat/export routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in state, projection, export, comparison, heartbeat, evidence, or ceiling.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1441",
+      "text": "M-A2-TRACE-LIFT — Action-bit lift and recoverable trace",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading2\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr /></ns0:pPr><ns0:bookmarkStart ns0:id=\"56\" ns0:name=\"m-a2-trace-lift-action-bit-lift-and-reco\" /><ns0:r><ns0:rPr /><ns0:t>M-A2-TRACE-LIFT — Action-bit lift and recoverable trace</ns0:t></ns0:r><ns0:bookmarkEnd ns0:id=\"56\" /></ns0:p>"
+    },
+    {
+      "paragraph": "P1442",
+      "text": "A2 trace realization",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>A2 trace realization</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1443",
+      "text": "Field",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Field</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1444",
+      "text": "Canonical account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Canonical account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1445",
+      "text": "Target and role",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Target and role</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1446",
+      "text": "A2 recoverable consequence from a locally sufficient action receipt.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>A2 recoverable consequence from a locally sufficient action receipt.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1447",
+      "text": "Domain and signature",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Domain and signature</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1448",
+      "text": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i&lt;x_j, action bit c_ij(x)=1[x_i&lt;x_j], known finite schedule where used, and an A2 store.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1449",
+      "text": "Formal object",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Formal object</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1450",
+      "text": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1451",
+      "text": "Constructor or predicate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Constructor or predicate</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1452",
+      "text": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1453",
+      "text": "Assumptions and cost",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Assumptions and cost</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1454",
+      "text": "Exact comparator and swap semantics, coordinate identity, known schedule for run reversal, immutable binding, addressability, storage, and successful recovery.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Exact comparator and swap semantics, coordinate identity, known schedule for run reversal, immutable binding, addressability, storage, and successful recovery.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1455",
+      "text": "Preservation account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Preservation account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1456",
+      "text": "Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1457",
+      "text": "Predecessor and strictness",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Predecessor and strictness</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1458",
+      "text": "Without the bit, strict pairs (a,b) and (b,a) can share one sorted output. The one-bit lower bound is local to this declared two-point fiber, not a whole-run optimum.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Without the bit, strict pairs (a,b) and (b,a) can share one sorted output. The one-bit lower bound is local to this declared two-point fiber, not a whole-run optimum.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1459",
+      "text": "Claim class and status",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Claim class and status</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1460",
+      "text": "Algebraic injective lift plus conditional A2 constructor. A transient bit proves no persistence.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Algebraic injective lift plus conditional A2 constructor. A transient bit proves no persistence.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1461",
+      "text": "Tests and falsifier",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Tests and falsifier</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1462",
+      "text": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1463",
+      "text": "Authority ceiling",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Authority ceiling</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1464",
+      "text": "No global logarithmic minimality, practical sorting superiority, schedule independence, physical reversibility, or A2 persistence without actual storage and recovery.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>No global logarithmic minimality, practical sorting superiority, schedule independence, physical reversibility, or A2 persistence without actual storage and recovery.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1465",
+      "text": "Residual",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Residual</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1466",
+      "text": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1467",
+      "text": "Return-to-PAL handle",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Return-to-PAL handle</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1468",
+      "text": "A binding, schedule, comparator, store, address, or recovery failure reopens the trace lift while retaining all valid earlier receipts.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>A binding, schedule, comparator, store, address, or recovery failure reopens the trace lift while retaining all valid earlier receipts.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1469",
+      "text": "Sources",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sources</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1470",
+      "text": "SCT v0.2 [V9]; M-A2-STORE.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>SCT v0.2 [V9]; M-A2-STORE.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1471",
+      "text": "Conditional extension profile. Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Conditional extension profile.</ns0:t></ns0:r><ns0:r><ns0:rPr /><ns0:t xml:space=\"preserve\"> Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1472",
+      "text": "M-A12-CAPSULE — Exact checkpoint capsule and re-entry",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading2\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr /></ns0:pPr><ns0:bookmarkStart ns0:id=\"57\" ns0:name=\"m-a12-capsule-exact-checkpoint-capsule-a\" /><ns0:r><ns0:rPr /><ns0:t>M-A12-CAPSULE — Exact checkpoint capsule and re-entry</ns0:t></ns0:r><ns0:bookmarkEnd ns0:id=\"57\" /></ns0:p>"
+    },
+    {
+      "paragraph": "P1473",
+      "text": "A12 transport realization",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>A12 transport realization</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1474",
+      "text": "Field",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Field</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1475",
+      "text": "Canonical account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Canonical account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1476",
+      "text": "Target and role",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Target and role</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1477",
+      "text": "Exact work-state checkpoint and safe re-entry under existing A12 lineage authority.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Exact work-state checkpoint and safe re-entry under existing A12 lineage authority.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1478",
+      "text": "Domain and signature",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Domain and signature</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1479",
+      "text": "Work state S_work; capsule C_work; freeze f:S_work→C_work; thaw r:C_work→S_work; cursor, comparator, schedule, code/dependency/environment identities; invariant; grant; resource ledger; authority boundary; audit state; residual; trace anchor; and deterministic suffix.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Work state S_work; capsule C_work; freeze f:S_work→C_work; thaw r:C_work→S_work; cursor, comparator, schedule, code/dependency/environment identities; invariant; grant; resource ledger; authority boundary; audit state; residual; trace anchor; and deterministic suffix.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1480",
+      "text": "Formal object",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Formal object</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1481",
+      "text": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1482",
+      "text": "Constructor or predicate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Constructor or predicate</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1483",
+      "text": "Freeze with complete bindings, protect work state or receipt every material intervening mutation, revalidate all non-work coordinates, then thaw under one inherited live token.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Freeze with complete bindings, protect work state or receipt every material intervening mutation, revalidate all non-work coordinates, then thaw under one inherited live token.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1484",
+      "text": "Assumptions and cost",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Assumptions and cost</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1485",
+      "text": "Exact serialization semantics, bound versions/environment, deterministic suffix, protected state or complete mutation receipts, and separately valid A12 token authority.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Exact serialization semantics, bound versions/environment, deterministic suffix, protected state or complete mutation receipts, and separately valid A12 token authority.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1486",
+      "text": "Preservation account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Preservation account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1487",
+      "text": "Work state, cursor, schedule, comparator, code/dependencies/environment, invariant, grant epoch, resource consumption, authority ceiling, audit, residual, trace chain, and external-effect boundary.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Work state, cursor, schedule, comparator, code/dependencies/environment, invariant, grant epoch, resource consumption, authority ceiling, audit, residual, trace chain, and external-effect boundary.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1488",
+      "text": "Predecessor and strictness",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Predecessor and strictness</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1489",
+      "text": "A bare formula, digest, or work snapshot is not a thawable capsule. M-A12-CAPSULE inherits live_count+terminal_count≤1; it does not prove or manufacture token authority.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>A bare formula, digest, or work snapshot is not a thawable capsule. M-A12-CAPSULE inherits live_count+terminal_count≤1; it does not prove or manufacture token authority.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1490",
+      "text": "Claim class and status",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Claim class and status</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1491",
+      "text": "Conditional retraction theorem on work state plus transport constructor under A12.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Conditional retraction theorem on work state plus transport constructor under A12.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1492",
+      "text": "Tests and falsifier",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Tests and falsifier</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1493",
+      "text": "Round trip; protected/unprotected interval; complete/incomplete mutation receipts; cursor/comparator/schedule/code/dependency/environment mismatch; grant expiry; resource delta; missing token; deterministic suffix; external-effect inequality; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Round trip; protected/unprotected interval; complete/incomplete mutation receipts; cursor/comparator/schedule/code/dependency/environment mismatch; grant expiry; resource delta; missing token; deterministic suffix; external-effect inequality; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1494",
+      "text": "Authority ceiling",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Authority ceiling</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1495",
+      "text": "No recovery of spent resources, expired grants, erased authority, missing evidence, audit identity, external effects, or external success.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>No recovery of spent resources, expired grants, erased authority, missing evidence, audit identity, external effects, or external success.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1496",
+      "text": "Residual",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Residual</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1497",
+      "text": "Uncaptured environment, nondeterminism, concurrent mutation, stale dependencies, external effects, durability, and reauthorization.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Uncaptured environment, nondeterminism, concurrent mutation, stale dependencies, external effects, durability, and reauthorization.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1498",
+      "text": "Return-to-PAL handle",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Return-to-PAL handle</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1499",
+      "text": "Any material mismatch rejects continuity, appends a TRANSPORT_VALIDITY break receipt, preserves history, and routes the claim to A15 review.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Any material mismatch rejects continuity, appends a TRANSPORT_VALIDITY break receipt, preserves history, and routes the claim to A15 review.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1500",
+      "text": "Sources",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sources</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1501",
+      "text": "SCT v0.2 [V9]; M-A12-LINEAR; PAL v2.3 CHECKPOINT_FREEZE, CHECKPOINT_THAW, and REENTRY profiles.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>SCT v0.2 [V9]; M-A12-LINEAR; PAL v2.3 CHECKPOINT_FREEZE, CHECKPOINT_THAW, and REENTRY profiles.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1502",
+      "text": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Conditional extension profile.</ns0:t></ns0:r><ns0:r><ns0:rPr /><ns0:t xml:space=\"preserve\"> Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1503",
+      "text": "M-A13-STUTTER — Stutter-refined certified cadence",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading2\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr /></ns0:pPr><ns0:bookmarkStart ns0:id=\"58\" ns0:name=\"m-a13-stutter-stutter-refined-certified-\" /><ns0:r><ns0:rPr /><ns0:t>M-A13-STUTTER — Stutter-refined certified cadence</ns0:t></ns0:r><ns0:bookmarkEnd ns0:id=\"58\" /></ns0:p>"
+    },
+    {
+      "paragraph": "P1504",
+      "text": "A13 cadence realization",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>A13 cadence realization</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1505",
+      "text": "Field",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Field</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1506",
+      "text": "Canonical account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:color ns0:val=\"1F4D78\" /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Canonical account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1507",
+      "text": "Target and role",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Target and role</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1508",
+      "text": "Refine certified cadence by separating administrative recurrence from productive recurrence.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Refine certified cadence by separating administrative recurrence from productive recurrence.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1509",
+      "text": "Domain and signature",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Domain and signature</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1510",
+      "text": "States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1511",
+      "text": "Formal object",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Formal object</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1512",
+      "text": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1513",
+      "text": "Constructor or predicate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Constructor or predicate</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1514",
+      "text": "Classify each transition before cadence credit. Controller-side suspension heartbeats are distinct from source-declared exogenous pulse alignment in The Context Sets a Rhythm.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Classify each transition before cadence credit. Controller-side suspension heartbeats are distinct from source-declared exogenous pulse alignment in The Context Sets a Rhythm.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1515",
+      "text": "Assumptions and cost",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Assumptions and cost</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1516",
+      "text": "Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1517",
+      "text": "Preservation account",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Preservation account</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1518",
+      "text": "Work state, progress coordinate, administrative and productive steps, wake/suspend receipts, scheduler assumptions, resource deltas, failures, and terminal or branch outcome.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Work state, progress coordinate, administrative and productive steps, wake/suspend receipts, scheduler assumptions, resource deltas, failures, and terminal or branch outcome.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1519",
+      "text": "Predecessor and strictness",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Predecessor and strictness</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1520",
+      "text": "A heartbeat-only loop is a predecessor countermodel. Sparse observation neither proves worker liveness nor excludes hidden mutation between observations.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>A heartbeat-only loop is a predecessor countermodel. Sparse observation neither proves worker liveness nor excludes hidden mutation between observations.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1521",
+      "text": "Claim class and status",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Claim class and status</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1522",
+      "text": "Conditional cadence refinement; STAGNATED and QUIESCENT_UNDER_COMPARATOR remain branch outcomes, not PAL statuses.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Conditional cadence refinement; STAGNATED and QUIESCENT_UNDER_COMPARATOR remain branch outcomes, not PAL statuses.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1523",
+      "text": "Tests and falsifier",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Tests and falsifier</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1524",
+      "text": "Administrative-only loop; one productive macrostep; rank descent only on →₁; fair/unfair acceptance; sparse hidden mutation; namespace collision; resource-consuming stutter; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Administrative-only loop; one productive macrostep; rank descent only on →₁; fair/unfair acceptance; sparse hidden mutation; namespace collision; resource-consuming stutter; delete, swap, predecessor, witness, finite-check, ceiling, and return tests.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1525",
+      "text": "Authority ceiling",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Authority ceiling</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1526",
+      "text": "Elapsed time, heartbeat count, receipt count, wakeups, or administrative recurrence does not prove progress, termination, correctness, success, liveness, consciousness, or permission.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Elapsed time, heartbeat count, receipt count, wakeups, or administrative recurrence does not prove progress, termination, correctness, success, liveness, consciousness, or permission.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1527",
+      "text": "Residual",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Residual</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1528",
+      "text": "Hidden work, scheduler reality, finite observation, rank adequacy, resource cost, and external terminal state.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Hidden work, scheduler reality, finite observation, rank adequacy, resource cost, and external terminal state.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1529",
+      "text": "Return-to-PAL handle",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Return-to-PAL handle</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1530",
+      "text": "Projection, classifier, schedule, rank, fairness, acceptance, namespace, resource, or hidden-mutation change reopens cadence without deleting earlier receipts.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Projection, classifier, schedule, rank, fairness, acceptance, namespace, resource, or hidden-mutation change reopens cadence without deleting earlier receipts.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1531",
+      "text": "Sources",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:spacing ns0:before=\"0\" ns0:after=\"40\" ns0:line=\"240\" ns0:lineRule=\"auto\" /><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>Sources</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1532",
+      "text": "SCT v0.2 [V9]; Lamport [S43] for neighboring stutter terminology; The Context Sets a Rhythm v0.1 [V7] only at its source-declared exogenous-pulse role.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:widowControl /><ns0:bidi ns0:val=\"0\" /><ns0:spacing ns0:lineRule=\"auto\" ns0:line=\"240\" ns0:before=\"0\" ns0:after=\"40\" /><ns0:jc ns0:val=\"start\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:sz ns0:val=\"19\" /></ns0:rPr><ns0:t>SCT v0.2 [V9]; Lamport [S43] for neighboring stutter terminology; The Context Sets a Rhythm v0.1 [V7] only at its source-declared exogenous-pulse role.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1533",
+      "text": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling.",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Normal\" /><ns0:rPr /></ns0:pPr><ns0:r><ns0:rPr><ns0:b /><ns0:bCs /></ns0:rPr><ns0:t>Conditional extension profile.</ns0:t></ns0:r><ns0:r><ns0:rPr /><ns0:t xml:space=\"preserve\"> Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling.</ns0:t></ns0:r></ns0:p>"
+    },
+    {
+      "paragraph": "P1534",
+      "text": "PF-GOLD-LENS — Composite primitive-floor realization plate",
+      "ooxml": "<ns0:p xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><ns0:pPr><ns0:pStyle ns0:val=\"Heading2\" /><ns0:keepNext /><ns0:keepLines /><ns0:rPr /></ns0:pPr><ns0:bookmarkStart ns0:id=\"59\" ns0:name=\"pf-gold-lens-composite-primitive-floor-r\" /><ns0:r><ns0:rPr /><ns0:t>PF-GOLD-LENS — Composite primitive-floor realization plate</ns0:t></ns0:r><ns0:bookmarkEnd ns0:id=\"59\" /></ns0:p>"
+    }
+  ]
+}

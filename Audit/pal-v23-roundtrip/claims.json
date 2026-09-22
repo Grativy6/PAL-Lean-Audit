@@ -1,0 +1,449 @@
+{
+  "module": "Experiments.Pal23Roundtrip",
+  "run_id": "local-pal23-roundtrip",
+  "source_id": "PAL-v2.3-M",
+  "source_sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "claims": [
+    {
+      "id": "PAL23-RT-01",
+      "title": "Replay is thaw after freeze, with arbitrary types and maps",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Roundtrip.replayWork",
+      "statement": "Replay is thaw after freeze, with arbitrary types and maps.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state."
+        }
+      ],
+      "assumptions": [
+        "Freeze and thaw functions only."
+      ],
+      "dependencies": [],
+      "countercase": "Definition, not a proposition or a PAL primitive: its first checked limitation is PAL23-RT-11 (stable replay without original recovery).",
+      "authority_ceiling": "Definition only; no identity law is asserted.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-02",
+      "title": "If freeze after thaw is identity on every capsule, work replay is idempotent",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Roundtrip.capsule_cycle_idempotent",
+      "statement": "If freeze after thaw is identity on every capsule, work replay is idempotent.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1491",
+          "excerpt": "Conditional retraction theorem on work state plus transport constructor under A12."
+        }
+      ],
+      "assumptions": [
+        "Additional capsule-cycle law on all capsules."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork"
+      ],
+      "countercase": "PAL23-RT-11 satisfies the capsule-cycle premise but refutes the stronger conclusion that stable replay recovers original work.",
+      "authority_ceiling": "Conditional equality only; does not establish recovery of original work.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-03",
+      "title": "Under the additional all-capsules cycle, replay fixes every work state iff freeze is injective",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Roundtrip.work_roundtrip_iff_freeze_injective",
+      "statement": "Under the additional all-capsules cycle, replay fixes every work state iff freeze is injective.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1491",
+          "excerpt": "Conditional retraction theorem on work state plus transport constructor under A12."
+        }
+      ],
+      "assumptions": [
+        "Additional capsule-cycle law on all capsules."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork"
+      ],
+      "countercase": "PAL23-RT-17 has injective identity freeze but faulty thaw; without reachable capsule consistency, injectivity alone does not validate this thaw.",
+      "authority_ceiling": "Conditional result; ambient cycle is distinct from the source work law.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-04",
+      "title": "If thaw after freeze returns every declared work state, freeze is injective",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Roundtrip.source_roundtrip_freeze_injective",
+      "statement": "If thaw after freeze returns every declared work state, freeze is injective.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        }
+      ],
+      "assumptions": [
+        "Source work round-trip on declared work states."
+      ],
+      "dependencies": [],
+      "countercase": "PAL23-RT-12 supplies two colliding originals for a projection lacking the work-roundtrip premise; PAL23-RT-16 rejects an extra ambient-capsule requirement.",
+      "authority_ceiling": "Only r(f(w)) is required; no law on unreachable capsules.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-05",
+      "title": "Exact work re-entry preserves any chosen answer function on work",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Roundtrip.source_roundtrip_preserves_answer",
+      "statement": "Exact work re-entry preserves any chosen answer function on work.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured answer codomain Q.",
+        "Source work round-trip."
+      ],
+      "dependencies": [],
+      "countercase": "PAL23-RT-14 shows a lost Boolean answer when exact work recovery is absent; the answer type alone supplies no recovery.",
+      "authority_ceiling": "Does not establish answer adequacy or implementation compliance.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-06",
+      "title": "If replay fixes every work state, every fixed suffix function has the same output after replay",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Roundtrip.same_suffix_under_work_roundtrip",
+      "statement": "If replay fixes every work state, every fixed suffix function has the same output after replay.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured suffix codomain Q.",
+        "Exact work round-trip."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork"
+      ],
+      "countercase": "PAL23-RT-15 has one preserved suffix and another changed suffix when the exact work-roundtrip premise is absent.",
+      "authority_ceiling": "Mathematical suffix equality only; no runtime suffix is executed.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-07",
+      "title": "Chosen-thaw answer preservation iff fiber constancy under reachable capsule consistency",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Roundtrip.chosen_answer_preserved_iff_fiber_constant",
+      "statement": "For arbitrary types W, C, Q, freeze:W→C, thaw:C→W and answer:W→Q, assuming freeze(thaw(freeze w))=freeze w for every w, the chosen thaw preserves the answer for every w iff equal freeze values imply equal answers.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1502",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1387",
+          "excerpt": "Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured Q.",
+        "Reachable-image capsule consistency: freeze (thaw (freeze w)) = freeze w for all work states."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork"
+      ],
+      "countercase": "PAL23-RT-17 shows that fiber constancy alone does not validate a faulty thaw.",
+      "authority_ceiling": "Conditional preservation by the chosen thaw on reachable freeze values only; distinct from abstract decoder existence and actual storage or serialization validation.",
+      "residual": "No condition is imposed on unreachable capsules; fiber constancy describes only the chosen answer and does not certify thaw correctness.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-08",
+      "title": "The model freeze records Nat and drops Bool",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Roundtrip.natBoolFreeze",
+      "statement": "The model freeze records Nat and drops Bool.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [],
+      "countercase": "Audit fixture definition, not a PAL primitive or theorem: PAL23-RT-12 exhibits its colliding inputs and blocks full decoding.",
+      "authority_ceiling": "Nat × Bool is an explicit model, not a finite type.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-09",
+      "title": "The model thaw restores Nat with Bool set to false",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Roundtrip.natBoolThaw",
+      "statement": "The model thaw restores Nat with Bool set to false.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [],
+      "countercase": "Audit fixture definition, not a PAL primitive or theorem: PAL23-RT-11 and PAL23-RT-14 show this chosen reconstruction changes original work.",
+      "authority_ceiling": "A chosen reconstruction, not a serializer implementation.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-10",
+      "title": "Freeze after thaw is exact for every Nat capsule",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_capsule_roundtrip",
+      "statement": "Freeze after thaw is exact for every Nat capsule.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1491",
+          "excerpt": "Conditional retraction theorem on work state plus transport constructor under A12."
+        }
+      ],
+      "assumptions": [
+        "Explicit fixture maps."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.natBoolFreeze",
+        "Experiments.Pal23Roundtrip.natBoolThaw"
+      ],
+      "countercase": "The companion Nat×Bool fixture in PAL23-RT-11 and PAL23-RT-14 shows that the selected thaw can still lose original work or another answer.",
+      "authority_ceiling": "Positive capsule-cycle lemma for this fixture only; PAL23-RT-11 supplies the separate failure of original recovery.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-11",
+      "title": "The replay is idempotent and changes explicit input (0,true)",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_stable_but_not_recovered",
+      "statement": "The replay is idempotent and changes explicit input (0,true).",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork",
+        "Experiments.Pal23Roundtrip.natBoolFreeze",
+        "Experiments.Pal23Roundtrip.natBoolThaw"
+      ],
+      "countercase": "A checked counterexample to inferring original recovery from stability.",
+      "authority_ceiling": "A checked counterexample to inferring original recovery from stability.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-12",
+      "title": "No Nat→Nat×Bool function reconstructs every work state from this freeze",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_no_full_work_decoder",
+      "statement": "No Nat→Nat×Bool function reconstructs every work state from this freeze.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1502",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change."
+        }
+      ],
+      "assumptions": [
+        "Two work states collide under freeze."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.natBoolFreeze"
+      ],
+      "countercase": "The inputs (0,false) and (0,true) share capsule 0 but differ; a full decoder would assign both distinct work states to the same input.",
+      "authority_ceiling": "Only this projection fixture.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-13",
+      "title": "The Nat-coordinate answer is preserved for every fixture input",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_first_answer_preserved",
+      "statement": "The Nat-coordinate answer is preserved for every fixture input.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork",
+        "Experiments.Pal23Roundtrip.natBoolFreeze",
+        "Experiments.Pal23Roundtrip.natBoolThaw"
+      ],
+      "countercase": "The companion Nat×Bool fixture in PAL23-RT-11 and PAL23-RT-14 shows that the selected thaw can still lose original work or another answer.",
+      "authority_ceiling": "One selected answer only.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-14",
+      "title": "At (0,true), replay changes the Bool-coordinate answer",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_second_answer_not_preserved",
+      "statement": "At (0,true), replay changes the Bool-coordinate answer.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1502",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork",
+        "Experiments.Pal23Roundtrip.natBoolFreeze",
+        "Experiments.Pal23Roundtrip.natBoolThaw"
+      ],
+      "countercase": "Counterexample to universal answer preservation under capsule cycle alone.",
+      "authority_ceiling": "Counterexample to universal answer preservation under capsule cycle alone.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-15",
+      "title": "At (0,true), the Nat suffix agrees and the Bool suffix disagrees",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.natBool_chosen_suffix_vs_other_suffix",
+      "statement": "At (0,true), the Nat suffix agrees and the Bool suffix disagrees.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1481",
+          "excerpt": "r∘f=id on declared work state. Under the same deterministic suffix, exact thaw yields the same terminal work state as uninterrupted execution. No equality of non-work coordinates follows."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1502",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat × Bool fixture."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork",
+        "Experiments.Pal23Roundtrip.natBoolFreeze",
+        "Experiments.Pal23Roundtrip.natBoolThaw"
+      ],
+      "countercase": "Distinguishes a chosen answer from arbitrary suffix preservation.",
+      "authority_ceiling": "Distinguishes a chosen answer from arbitrary suffix preservation.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-16",
+      "title": "With freeze n=n+1 and thaw=pred, work round-trip holds but ambient capsule zero fails the cycle",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.exact_work_roundtrip_not_ambient_capsule_roundtrip",
+      "statement": "With freeze n=n+1 and thaw=pred, work round-trip holds but ambient capsule zero fails the cycle.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1502",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: declared work-state space S_work, capsule space C_work, and separately typed non-work coordinates. Scale, resolution, admissible differences, and tolerance: exact thaw uses equality with zero tolerance under the frozen serialization/digest profile; any approximate migration requires a new adapter. Boundary role/domain/scope: TRANSPORT_VALIDITY for the named capsule, environment, and suffix only. Orientation/coefficient system: reasoned N/A. Quantifiers: r∘f=id for all declared work states in scope; artifact and suffix executions remain finite. Map/projector/fibers/reachable image: freeze f, thaw r, work projection, fibers of f, and reachable image f(S_work) are explicit. Detector/requested answer: field/digest comparison asks whether exact work-state re-entry is licensed. Reachable decoder/totalization: r is required on f(S_work); decoding arbitrary capsules is not claimed. Decoder class: exact set-theoretic or computable serialization only where the implementation is supplied and verified. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal effect, and authority remain distinct; thaw equality covers work only. Claim labels: the left-inverse/suffix statement is exact conditional mathematics; capsule runs are finite fixtures; continuity language is interpretation; PAL re-entry routing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control every field, identity, mismatch, suffix, grant, resource, witness, or ceiling change."
+        }
+      ],
+      "assumptions": [
+        "Nat work and capsule domains.",
+        "Capsule zero is unreachable."
+      ],
+      "dependencies": [],
+      "countercase": "Freeze n=n+1 has thaw=pred as a work left inverse, but capsule 0 is unreachable and freeze(thaw 0)=1 rather than 0.",
+      "authority_ceiling": "Confirms reachable-image boundary; arbitrary capsule totalization is not claimed.",
+      "residual": "No actual serialization, environment, persistence, authority, external effect, or source adoption is certified.",
+      "reopening": "Reopen if domains, maps, scope, requested answer/suffix, or source interpretation changes.",
+      "run_id": "local-pal23-roundtrip"
+    },
+    {
+      "id": "PAL23-RT-17",
+      "title": "fiber constancy does not validate a faulty thaw",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Roundtrip.fiber_constant_does_not_validate_faulty_thaw",
+      "statement": "With freeze and answer both identity on Nat, answer fibers are constant, but the faulty constant-zero thaw changes answer 1.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1387",
+          "excerpt": "L(τ,q)={(w,w′) : τ(w)=τ(w′) and q(w)≠q(w′)}. Exactly when L(τ,q)=∅, q factors uniquely as d_R∘τ through a decoder d_R:R→Q. Extension of d_R to all T is a separate totalization claim."
+        }
+      ],
+      "assumptions": [
+        "Nat work and capsule spaces.",
+        "Freeze and answer are identity.",
+        "Faulty thaw maps every capsule to zero."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Roundtrip.replayWork"
+      ],
+      "countercase": "Freeze is injective and answer is fiber-constant, while the supplied thaw fails to preserve answer 1 and fails reachable capsule consistency.",
+      "authority_ceiling": "Counterexample to treating fiber constancy as a substitute for the selected thaw satisfying reachable capsule consistency.",
+      "residual": "The fixture diagnoses a faulty map; it is not an implementation or persistence test.",
+      "reopening": "Change the freeze, thaw, chosen answer, or their domains.",
+      "run_id": "local-pal23-roundtrip"
+    }
+  ],
+  "lane": "pal23",
+  "axiom_receipt": "results.json:axioms, keyed by every declaration; full elaborated signatures in signature_outputs and the hashed roundtrip-axioms-signatures log.",
+  "counting_note": "17 named declarations: 3 definitions and 14 theorems, including shared fixtures and equivalent formulations; one anonymous unstructured-answer type-checking fixture is separate."
+}
