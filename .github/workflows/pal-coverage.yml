@@ -1,0 +1,44 @@
+name: PAL v2.3 formal coverage bounded checks
+on:
+  pull_request:
+    paths:
+      - 'Experiments/**'
+      - 'Audit/**'
+      - 'PAL/**'
+      - 'PALLeanAudit.lean'
+      - 'PAL.lean'
+      - 'Experiments.lean'
+      - 'Audit.lean'
+      - 'scripts/**'
+      - 'docs/REPORTING.md'
+      - 'AGENTS.md'
+      - 'lean-toolchain'
+      - 'lake-manifest.json'
+      - 'lakefile.lean'
+      - '.gitattributes'
+      - '.github/workflows/**'
+permissions:
+  contents: read
+jobs:
+  formal-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
+        with:
+          build: true
+          leanchecker: false
+          use-mathlib-cache: true
+      - run: python3 Audit/pal-v23-coverage/run.py --check
+      - run: python3 Audit/pal-v23-coverage/run.py --replay --lake lake --output-dir artifacts/pal-coverage-replay
+        env:
+          PAL_COVERAGE_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: pal-coverage-receipts
+          if-no-files-found: error
+          path: artifacts/pal-coverage-replay/

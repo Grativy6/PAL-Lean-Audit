@@ -1,0 +1,51 @@
+@Experiments.Pal23Interface.lostDistinctions : {W : Type u_1} →
+  {T : Type u_2} → {Q : Type u_3} → (W → T) → (W → Q) → Set (W × W)
+@Experiments.Pal23Interface.labelKernel : {W : Type u_1} → {S : Type u_2} → (W → S) → Set (W × W)
+@Experiments.Pal23Interface.joint_label_lost_eq_intersection : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {S : Type u_4} (trace : W → T) (label : W → S) (answer : W → Q),
+  Experiments.Pal23Interface.lostDistinctions (fun w => (trace w, label w)) answer =
+    Experiments.Pal23Interface.lostDistinctions trace answer ∩ Experiments.Pal23Interface.labelKernel label
+@Experiments.Pal23Interface.trace_postprocess_lost_subset : ∀ {W : Type u_1} {T : Type u_2} {U : Type u_4}
+  {Q : Type u_3} (trace : W → T) (postprocess : T → U) (answer : W → Q),
+  Experiments.Pal23Interface.lostDistinctions trace answer ⊆
+    Experiments.Pal23Interface.lostDistinctions (postprocess ∘ trace) answer
+@Experiments.Pal23Interface.redundant_trace_restatement_lost_eq : ∀ {W : Type u_1} {T : Type u_2} {U : Type u_4}
+  {Q : Type u_3} (trace : W → T) (restate : T → U) (answer : W → Q),
+  Experiments.Pal23Interface.lostDistinctions (fun w => (trace w, restate (trace w))) answer =
+    Experiments.Pal23Interface.lostDistinctions trace answer
+@Experiments.Pal23Interface.question_coarsening_lost_subset : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {R : Type u_4} (trace : W → T) (answer : W → Q) (coarsen : Q → R),
+  Experiments.Pal23Interface.lostDistinctions trace (coarsen ∘ answer) ⊆
+    Experiments.Pal23Interface.lostDistinctions trace answer
+Experiments.Pal23Interface.question_coarsening_strict_countercase : have trace := fun x => ();
+have answer := id;
+have coarsen := fun x => false;
+(false, true) ∈ Experiments.Pal23Interface.lostDistinctions trace answer ∧
+  Experiments.Pal23Interface.lostDistinctions trace (coarsen ∘ answer) = ∅
+Experiments.Pal23Interface.xor_joint_trace_strict_sufficiency_fixture : have answer := fun p =>
+  if p.1 = true then !p.2 else p.2;
+have first := Prod.fst;
+have second := Prod.snd;
+have joint := fun p => (p.1, p.2);
+have decode := fun p => if p.1 = true then !p.2 else p.2;
+((false, false), false, true) ∈ Experiments.Pal23Interface.lostDistinctions first answer ∧
+  ((false, false), true, false) ∈ Experiments.Pal23Interface.lostDistinctions second answer ∧
+    ∀ (p : Bool × Bool), decode (joint p) = answer p
+@Experiments.Pal23Interface.finite_label_lower_bound : ∀ {A : Type u_5} {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {S : Type u_4} [inst : Fintype A] [inst_1 : Fintype S] (states : A → W) (trace : W → T) (answer : W → Q)
+  (label : W → S),
+  (∀ (a b : A), trace (states a) = trace (states b)) →
+    (∀ {a b : A}, answer (states a) = answer (states b) → a = b) →
+      (∀ {a b : A},
+          trace (states a) = trace (states b) →
+            label (states a) = label (states b) → answer (states a) = answer (states b)) →
+        Fintype.card A ≤ Fintype.card S
+'Experiments.Pal23Interface.lostDistinctions' does not depend on any axioms
+'Experiments.Pal23Interface.labelKernel' does not depend on any axioms
+'Experiments.Pal23Interface.joint_label_lost_eq_intersection' depends on axioms: [propext, Quot.sound]
+'Experiments.Pal23Interface.trace_postprocess_lost_subset' does not depend on any axioms
+'Experiments.Pal23Interface.redundant_trace_restatement_lost_eq' depends on axioms: [propext, Quot.sound]
+'Experiments.Pal23Interface.question_coarsening_lost_subset' does not depend on any axioms
+'Experiments.Pal23Interface.question_coarsening_strict_countercase' depends on axioms: [propext, Quot.sound]
+'Experiments.Pal23Interface.xor_joint_trace_strict_sufficiency_fixture' depends on axioms: [propext, Quot.sound]
+'Experiments.Pal23Interface.finite_label_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

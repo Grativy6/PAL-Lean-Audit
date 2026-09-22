@@ -1,0 +1,666 @@
+{
+  "module": "Experiments.Pal23TraceReplay",
+  "run_id": "local-pal23-trace-replay",
+  "source_id": "PAL-v2.3-M",
+  "source_sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "claims": [
+    {
+      "id": "PAL23-TRACE-01",
+      "title": "Generic finite schedule runner retains chronological tagged actions",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23TraceReplay.runFinite",
+      "statement": "Defines a generic list runner that emits the final state and one (site, action) receipt per scheduled step in chronological order.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1456",
+          "excerpt": "Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence."
+        }
+      ],
+      "assumptions": [
+        "A supplied deterministic step function and finite schedule."
+      ],
+      "dependencies": [],
+      "countercase": "The definition by itself supplies no binding integrity, persistence, addressability, or recovery.",
+      "authority_ceiling": "Definition of a mathematical finite-list realization only; not an A2 admission result.",
+      "residual": "Physical storage, durability, full input/output binding, and authority remain OPEN.",
+      "reopening": "Reopen if step semantics, schedule indexing, receipt representation, retention, or PAL source interpretation changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-02",
+      "title": "Generic finite receipt restoration processes entries in reverse order",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23TraceReplay.undoFinite",
+      "statement": "Defines finite restoration by applying each earlier-tagged inverse after the inverses of later receipts.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1456",
+          "excerpt": "Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        }
+      ],
+      "assumptions": [
+        "A supplied inverse action and an intact ordered receipt list."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite"
+      ],
+      "countercase": "An absent, reordered, or altered receipt is not repaired by this definition.",
+      "authority_ceiling": "Mathematical list fold only; no claim about external storage or recovery.",
+      "residual": "Receipt integrity and physical recovery remain OPEN.",
+      "reopening": "Reopen if reverse-order semantics or receipt integrity requirements change.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-03",
+      "title": "One-step left inverse implies finite known-schedule roundtrip",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23TraceReplay.undoFinite_runFinite",
+      "statement": "For every finite schedule, applying retained inverse actions in reverse order restores the initial state, assuming the one-step left-inverse equation for every site and state.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1471",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes."
+        }
+      ],
+      "assumptions": [
+        "Universal one-step left-inverse equation; deterministic step/undo functions; finite known schedule.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite",
+        "Experiments.Pal23TraceReplay.undoFinite"
+      ],
+      "countercase": "A false one-step inverse premise or a receipt not generated by the specified step can fail to restore the input.",
+      "authority_ceiling": "Conditional theorem about the declared finite state model; not a persistence or operational A2 theorem.",
+      "residual": "Actual trace retention, input/output/site binding, and successful recovery remain OPEN.",
+      "reopening": "Reopen if the inverse law, step function, schedule, or state model changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-04",
+      "title": "Runner preserves the supplied schedule in receipt tags",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23TraceReplay.runFinite_tags",
+      "statement": "The chronological receipt tags produced by the runner equal the supplied finite schedule.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1456",
+          "excerpt": "Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence."
+        }
+      ],
+      "assumptions": [
+        "No additional assumptions beyond the function definition.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite"
+      ],
+      "countercase": "Tag equality does not validate action-bit contents, store address/version, or source/output binding.",
+      "authority_ceiling": "Exact schedule-tag conservation for this Lean list definition only.",
+      "residual": "Bit integrity, complete input/output binding, physical retention, and recovery remain OPEN.",
+      "reopening": "Reopen if schedule representation or receipt ordering changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-05",
+      "title": "Schedule-checked restoration rejects missing or differently tagged traces",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23TraceReplay.checkedUndo",
+      "statement": "Returns no recovered state when the supplied receipt tags do not exactly equal the expected schedule.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "The caller supplies an expected schedule and the receipt list to check."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.undoFinite"
+      ],
+      "countercase": "Equal tags and length accept corrupted action-bit values.",
+      "authority_ceiling": "Shape/tag check only; explicitly not operational A2 admission.",
+      "residual": "Action-bit integrity, physical storage, and full transition binding remain OPEN.",
+      "reopening": "Reopen if additional receipt fields or integrity checks are introduced.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-06",
+      "title": "Generated finite receipt passes schedule check and restores input conditionally",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23TraceReplay.checkedUndo_generated",
+      "statement": "A runner-generated receipt is accepted by the schedule check and restored to its initial state under the one-step left-inverse law.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1471",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes."
+        }
+      ],
+      "assumptions": [
+        "Universal one-step left-inverse equation and use of the same supplied schedule to generate and check the receipt.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite",
+        "Experiments.Pal23TraceReplay.runFinite_tags",
+        "Experiments.Pal23TraceReplay.undoFinite_runFinite",
+        "Experiments.Pal23TraceReplay.checkedUndo"
+      ],
+      "countercase": "Manually altered bits may retain exact tags while returning a wrong state; the theorem applies only to generated receipt values.",
+      "authority_ceiling": "Conditional finite mathematical replay; no retention durability or A2 admission established.",
+      "residual": "Storage, action-bit authenticity, full binding, and actual recovery remain OPEN.",
+      "reopening": "Reopen if generation/check schedule identity, inverse law, or retention mechanism changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-07",
+      "title": "Concrete three-coordinate step uses source compare-exchange at named pair site",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23TraceReplay.tripleStep",
+      "statement": "Uses the PAL23Followup repaired compare-exchange on coordinates 01 when false and 12 when true, returning the corresponding source action bit.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        }
+      ],
+      "assumptions": [
+        "Uses the declared Nat comparator and the source Pal23Followup exchange/actionBit definitions."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Followup.repairedExchange"
+      ],
+      "countercase": "A different comparator or pair-site mapping changes this fixture.",
+      "authority_ceiling": "Concrete three-coordinate finite fixture; no general sorting performance or source adoption claim.",
+      "residual": "External implementation conformance and physical retention remain OPEN.",
+      "reopening": "Reopen if comparator, pair-site encoding, or source operation changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-08",
+      "title": "Concrete three-coordinate undo delegates to source pair left inverse",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23TraceReplay.tripleUndo",
+      "statement": "Restores the named pair using Pal23Followup.restoreExchange while preserving the third coordinate.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        }
+      ],
+      "assumptions": [
+        "Bit and pair site are the ones produced by tripleStep."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Followup.restoreExchange",
+        "Experiments.Pal23TraceReplay.tripleStep"
+      ],
+      "countercase": "A mismatched/corrupt bit or pair label can restore a different state.",
+      "authority_ceiling": "Definition only for a declared three-coordinate state and pair-site bit.",
+      "residual": "Bit integrity and durable retention remain OPEN.",
+      "reopening": "Reopen if source inverse, pair site, or action-bit binding changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-09",
+      "title": "Two-step concrete schedule produces the specified state and receipt",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23TraceReplay.triple_fixture_receipt",
+      "statement": "The schedule [false,true] sends (0,1,2) to (1,2,0), retaining chronological tags [(false,true),(true,true)].",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1471",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes."
+        }
+      ],
+      "assumptions": [
+        "Exact Nat compare-exchange definitions at pair sites 01 and 12."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite",
+        "Experiments.Pal23TraceReplay.tripleStep",
+        "Experiments.Pal23Followup.repairedExchange"
+      ],
+      "countercase": "Different input, schedule, or comparator can yield a different receipt.",
+      "authority_ceiling": "One checked fixture only; no global schedule or sorting claim.",
+      "residual": "Actual storage, independent replay, and operational A2 admission remain OPEN.",
+      "reopening": "Reopen if fixture data or source operation changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-10",
+      "title": "Concrete fixture reverses using source action-bit inverse",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23TraceReplay.triple_fixture_replay",
+      "statement": "The retained two-step fixture receipt restores (1,2,0) to (0,1,2) under the exact source pair inverse.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        }
+      ],
+      "assumptions": [
+        "The stored receipt is exactly [(false,true),(true,true)] and matches the stated schedule.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.triple_finite_replay",
+        "Experiments.Pal23TraceReplay.triple_left_inverse",
+        "Experiments.Pal23TraceReplay.tripleStep",
+        "Experiments.Pal23TraceReplay.tripleUndo",
+        "Experiments.Pal23Followup.restoreExchange"
+      ],
+      "countercase": "Corrupt action bits can pass tag checking and recover the wrong state, as shown by PAL23-TRACE-14.",
+      "authority_ceiling": "Exact finite fixture calculation only; not a physical recovery test.",
+      "residual": "Durable retention, binding, and operational admission remain OPEN.",
+      "reopening": "Reopen if fixture schedule/state or inverse semantics change.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-11",
+      "title": "Reversed pair-site tags fail exact schedule check",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23TraceReplay.triple_wrong_order_rejected",
+      "statement": "The wrapper rejects a same-length receipt with the site tags reversed against [false,true].",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "Exact tag equality check is executed on the supplied receipt.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.checkedUndo"
+      ],
+      "countercase": "The example does not detect a wrong bit when tags remain intact.",
+      "authority_ceiling": "Demonstrates rejection of one schedule-tag mismatch only.",
+      "residual": "Other receipt corruption, external storage, and binding remain OPEN.",
+      "reopening": "Reopen if the checked receipt changes or if a stronger integrity protocol is claimed.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-12",
+      "title": "Missing schedule entry fails exact tag check",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23TraceReplay.triple_missing_receipt_rejected",
+      "statement": "The wrapper rejects a receipt list missing the second site entry.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "Expected schedule is [false,true].",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.checkedUndo"
+      ],
+      "countercase": "This finite malformed-list case does not model storage deletion or loss mechanics.",
+      "authority_ceiling": "Rejects this missing-entry fixture only.",
+      "residual": "Actual retention/deletion detection and recovery remain OPEN.",
+      "reopening": "Reopen if list completeness or physical retention is represented.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-13",
+      "title": "Corrupt action bit retains valid schedule tags",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23TraceReplay.triple_corrupt_bit_shape_accepted",
+      "statement": "Changing the first action bit leaves the tag projection equal to [false,true].",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "Corrupted value is explicitly supplied while site tags remain unchanged."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.checkedUndo"
+      ],
+      "countercase": "None for the shown equality; this is a counterexample to treating tag/shape equality as bit-integrity validation.",
+      "authority_ceiling": "Structural acceptance counterexample; it does not establish a PAL operational failure.",
+      "residual": "Action-bit authenticity and full state/transition binding remain OPEN.",
+      "reopening": "Reopen if the wrapper adds and verifies a binding for each bit.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-14",
+      "title": "Shape-accepted corrupted bit returns a non-original state",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23TraceReplay.triple_corrupt_bit_wrong_recovery",
+      "statement": "For the specified fixture, the wrapper accepts the receipt tags but the corrupted action bit returns (1,0,2), not (0,1,2).",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1464",
+          "excerpt": "No global logarithmic minimality, practical sorting superiority, schedule independence, physical reversibility, or A2 persistence without actual storage and recovery."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "Concrete source compare-exchange fixture and one altered bit."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.checkedUndo",
+        "Experiments.Pal23TraceReplay.tripleUndo",
+        "Experiments.Pal23TraceReplay.tripleStep"
+      ],
+      "countercase": "This falsifies only the overclaim that schedule-tag/shape checking alone validates action-bit integrity.",
+      "authority_ceiling": "A finite counterexample to shape-only recovery; no generalized operational A2 conclusion.",
+      "residual": "Physical storage, complete transition binding, integrity, and successful recovery remain OPEN.",
+      "reopening": "Reopen if action bits gain a verified integrity/binding mechanism or the source comparator changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-15",
+      "title": "Entirely absent trace fails nonempty schedule check",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23TraceReplay.triple_lost_trace_rejected",
+      "statement": "An empty receipt list is rejected against the nonempty two-step fixture schedule.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1466",
+          "excerpt": "Storage cost, corrupted bits, unknown schedule, comparator mismatch, concurrent actions, and external side effects."
+        }
+      ],
+      "assumptions": [
+        "The expected schedule is supplied and nonempty.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.checkedUndo"
+      ],
+      "countercase": "A bounded missing-list example does not establish a storage or recovery mechanism.",
+      "authority_ceiling": "Finite shape rejection only.",
+      "residual": "Storage, trace availability, and recovery remain OPEN.",
+      "reopening": "Reopen if trace storage or recovery evidence is later modeled.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-16",
+      "title": "Receipt length is conserved exactly for each finite schedule",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23TraceReplay.runFinite_length",
+      "statement": "The number of retained receipt entries equals the supplied finite schedule length.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1456",
+          "excerpt": "Output state, action bit, compared pair, schedule cursor, predecessor link, store address/version, and recovery evidence."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        }
+      ],
+      "assumptions": [
+        "No additional assumptions beyond the runner definition.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.runFinite_tags"
+      ],
+      "countercase": "Length conservation alone cannot show that any action bit or state binding is correct.",
+      "authority_ceiling": "Exact list-length theorem only.",
+      "residual": "Bit integrity, complete input/output binding, physical retention, and recovery remain OPEN.",
+      "reopening": "Reopen if receipt representation or schedule correspondence changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-17",
+      "title": "The concrete source pair lift has a one-step left inverse at both sites",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23TraceReplay.triple_left_inverse",
+      "statement": "For either named pair site and every Nat triple, tripleUndo applied to the tripleStep output and its source action bit restores the input triple.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1448",
+          "excerpt": "Finite coordinate state x, known pair (i,j), compare-exchange U_ij that swaps exactly when x_i<x_j, action bit c_ij(x)=1[x_i<x_j], known finite schedule where used, and an A2 store."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1452",
+          "excerpt": "Bind each action bit to its input step, pair, schedule position, and output; retain and recover the sequence before admitting an A2 realization."
+        }
+      ],
+      "assumptions": [
+        "Exact source compare-exchange/actionBit and restoreExchange definitions.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.tripleStep",
+        "Experiments.Pal23TraceReplay.tripleUndo",
+        "Experiments.Pal23Followup.restoreExchange",
+        "Experiments.Pal23Followup.repairedExchange"
+      ],
+      "countercase": "A wrong or corrupted bit is outside the theorem’s generated step output and can produce a false restore.",
+      "authority_ceiling": "Exact inverse law for the named finite triple operation only.",
+      "residual": "Retention, bit authenticity, full event binding, and operational admission remain OPEN.",
+      "reopening": "Reopen if comparator, source operation, or pair-site representation changes.",
+      "run_id": "local-pal23-trace-replay"
+    },
+    {
+      "id": "PAL23-TRACE-18",
+      "title": "Every supplied finite schedule over the concrete source operation reverses",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23TraceReplay.triple_finite_replay",
+      "statement": "Every finite Bool schedule over tripleStep reverses from its generated retained receipt using tripleUndo.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1450",
+          "excerpt": "U_ij alone is noninjective. The lift x↦(U_ij(x),c_ij(x)) is injective: its left inverse leaves the output unchanged when c=0 and swaps coordinates i,j back when c=1."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1462",
+          "excerpt": "Two-point collision; explicit left inverse; equality case; multi-step reverse replay under known schedule; missing/wrong bit; wrong pair/cursor; retention and recovery failure; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1471",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared finite coordinate state and one named compare-exchange site. Scale, resolution, admissible differences, and tolerance: metric scale is N/A; action alphabet {0,1}, exact comparator, and zero equality tolerance are supplied. Boundary role/domain/scope: N/A because no boundary is used. Orientation/coefficient system: the ordered comparator and site orientation are declared; numeric coefficients are N/A. Quantifiers: exact for one update on all pairs in the declared two-point fiber; multi-step reversal is only for a supplied finite schedule. Map/projector/fibers/reachable image: U_ij, the lifted map (U_ij,c_ij), their collision fibers, and lifted reachable image are explicit. Detector/requested answer: c_ij records which preimage branch occurred, and the requested answer is the prior coordinate pair. Reachable decoder/totalization: the left inverse is defined on the lifted reachable image; no arbitrary-log or schedule-independent totalization follows. Decoder class: exact finite set-theoretic, and executable only for the checked fixture/implementation. Separations: endpoint, path, relation, bound action receipt, work, audit, grant, resource, external-terminal result, store, and authority remain distinct. Claim labels: injectivity and one-bit local necessity are exact; reverse runs are finite fixtures; “trace” is interpretation until retained; PAL A2 placement is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control rule, site, alphabet, store, schedule, inverse, witness, and ceiling changes."
+        }
+      ],
+      "assumptions": [
+        "The named source-backed one-step inverse theorem triple_left_inverse.",
+        "The finite schedule and same generated receipt are available.",
+        "Lean axiom inventory reports propext for this proof; no other non-kernel axioms were reported."
+      ],
+      "dependencies": [
+        "Experiments.Pal23TraceReplay.undoFinite_runFinite",
+        "Experiments.Pal23TraceReplay.triple_left_inverse",
+        "Experiments.Pal23TraceReplay.runFinite",
+        "Experiments.Pal23TraceReplay.undoFinite"
+      ],
+      "countercase": "Corrupted receipt bits and an unverified physical trace are not covered by the generated-receipt premise.",
+      "authority_ceiling": "Finite mathematical replay for the declared concrete triple operation; no persistence or operational A2 admission.",
+      "residual": "Physical storage/durability, full input-output binding, and authority remain OPEN.",
+      "reopening": "Reopen if schedule knowledge, action semantics, inverse law, or retention assumptions change.",
+      "run_id": "local-pal23-trace-replay"
+    }
+  ]
+}

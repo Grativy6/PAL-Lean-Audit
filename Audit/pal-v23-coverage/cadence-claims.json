@@ -1,0 +1,476 @@
+{
+  "module": "Experiments.Pal23Cadence",
+  "run_id": "local-pal23-cadence",
+  "source_id": "PAL-v2.3-M",
+  "source_sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "claims": [
+    {
+      "id": "PAL23-CAD-01",
+      "title": "administrative closure",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.AdminClosure",
+      "statement": "The inductive closure records zero or finitely many administrative transitions.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        }
+      ],
+      "assumptions": [
+        "A supplied binary administrative relation."
+      ],
+      "dependencies": [],
+      "countercase": "This is a mathematical closure of a supplied relation; it does not classify real scheduler events.",
+      "authority_ceiling": "This is a mathematical closure of a supplied relation; it does not classify real scheduler events.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-02",
+      "title": "zero-step administrative constructor",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.AdminClosure.refl",
+      "statement": "Every state is related to itself by zero administrative steps.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        }
+      ],
+      "assumptions": [
+        "A state and administrative relation."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure"
+      ],
+      "countercase": "The reflexive case gives no productivity or elapsed-time evidence.",
+      "authority_ceiling": "The reflexive case gives no productivity or elapsed-time evidence.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-03",
+      "title": "administrative-step closure constructor",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.AdminClosure.step",
+      "statement": "An administrative edge followed by a finite administrative path forms a finite administrative path.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        }
+      ],
+      "assumptions": [
+        "A supplied administrative edge and closure tail."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure"
+      ],
+      "countercase": "The supplied edge must be correctly classified; the formalization does not validate a classifier.",
+      "authority_ceiling": "The supplied edge must be correctly classified; the formalization does not validate a classifier.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-04",
+      "title": "productive macrostep definition",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.Macrostep",
+      "statement": "A macrostep is administrative closure, one productive edge, then administrative closure.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        }
+      ],
+      "assumptions": [
+        "Administrative and productive relations."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure"
+      ],
+      "countercase": "Macrostep definition only; no fairness, scheduling, or liveness premise.",
+      "authority_ceiling": "Macrostep definition only; no fairness, scheduling, or liveness premise.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-05",
+      "title": "administrative closure preserves projection",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Cadence.admin_closure_preserves_projection",
+      "statement": "If each administrative edge preserves a supplied projection, every finite administrative closure preserves it.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1510",
+          "excerpt": "States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1516",
+          "excerpt": "Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed."
+        }
+      ],
+      "assumptions": [
+        "A state-to-P projection with no structure required.",
+        "Every admin edge preserves that projection."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure"
+      ],
+      "countercase": "Conditional finite-trace result; does not certify that the chosen projection/classifier is adequate.",
+      "authority_ceiling": "Conditional finite-trace result; does not certify that the chosen projection/classifier is adequate.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-06",
+      "title": "macrostep preserves work when productive edge does",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Cadence.macrostep_preserves_work_projection",
+      "statement": "A macrostep preserves work if both admin and productive edges preserve the supplied work projection.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1510",
+          "excerpt": "States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        }
+      ],
+      "assumptions": [
+        "Admin and productive edges preserve work projection."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure",
+        "Experiments.Pal23Cadence.Macrostep",
+        "Experiments.Pal23Cadence.admin_closure_preserves_projection"
+      ],
+      "countercase": "Productive edges are not generally assumed to preserve work by the source.",
+      "authority_ceiling": "Productive edges are not generally assumed to preserve work by the source.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-07",
+      "title": "macrostep strictly lowers rank",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Cadence.macrostep_strict_rank_descent",
+      "statement": "If admin edges preserve a Nat rank and productive edges strictly lower it, each macrostep strictly lowers rank.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1516",
+          "excerpt": "Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed."
+        }
+      ],
+      "assumptions": [
+        "Admin edges preserve the rank.",
+        "Every productive edge strictly lowers the rank."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure",
+        "Experiments.Pal23Cadence.Macrostep",
+        "Experiments.Pal23Cadence.admin_closure_preserves_projection"
+      ],
+      "countercase": "Conditional rank theorem; the adequacy of an application rank remains open.",
+      "authority_ceiling": "Conditional rank theorem; the adequacy of an application rank remains open.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-08",
+      "title": "finite macro-run definition",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.MacroRun",
+      "statement": "A finite macro-run records its exact number of macrosteps.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1533",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling."
+        }
+      ],
+      "assumptions": [
+        "A supplied macrostep relation."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.Macrostep"
+      ],
+      "countercase": "Finite sequence only; not an infinite recurrence or a fairness model.",
+      "authority_ceiling": "Finite sequence only; not an infinite recurrence or a fairness model.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-09",
+      "title": "zero-length macro-run constructor",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.MacroRun.nil",
+      "statement": "A state has a zero-length macro-run to itself.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1533",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling."
+        }
+      ],
+      "assumptions": [
+        "A state."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.MacroRun"
+      ],
+      "countercase": "Zero productive steps establish no progress.",
+      "authority_ceiling": "Zero productive steps establish no progress.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-10",
+      "title": "macrostep macro-run constructor",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Cadence.MacroRun.cons",
+      "statement": "One macrostep followed by a finite macro-run forms a run whose length increases by one.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1533",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling."
+        }
+      ],
+      "assumptions": [
+        "A macrostep and finite continuation."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.MacroRun",
+        "Experiments.Pal23Cadence.Macrostep"
+      ],
+      "countercase": "The run is finite and indexed; no run is constructed from heartbeat count.",
+      "authority_ceiling": "The run is finite and indexed; no run is constructed from heartbeat count.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-11",
+      "title": "finite productive count bounded by initial rank",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Cadence.macro_run_length_le_initial_rank",
+      "statement": "A finite macro-run with strict Nat-rank descent has length at most its initial rank.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1533",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling."
+        }
+      ],
+      "assumptions": [
+        "Every macrostep strictly lowers the supplied Nat rank."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.MacroRun",
+        "Experiments.Pal23Cadence.macrostep_strict_rank_descent"
+      ],
+      "countercase": "Finite termination bound only for traces satisfying the rank premise; no fairness or general liveness is shown.",
+      "authority_ceiling": "Finite termination bound only for traces satisfying the rank premise; no fairness or general liveness is shown.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-12",
+      "title": "admin can preserve work while changing rank",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Cadence.admin_projection_need_not_preserve_rank",
+      "statement": "A concrete Nat×Nat admin edge preserves the first projection while increasing the second coordinate used as rank.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1510",
+          "excerpt": "States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1524",
+          "excerpt": "Administrative-only loop; one productive macrostep; rank descent only on →₁; fair/unfair acceptance; sparse hidden mutation; namespace collision; resource-consuming stutter; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        }
+      ],
+      "assumptions": [
+        "Explicit Nat×Nat witness and relation."
+      ],
+      "dependencies": [],
+      "countercase": "Countercase to inferring rank preservation from work-projection preservation.",
+      "authority_ceiling": "Countercase to inferring rank preservation from work-projection preservation.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-13",
+      "title": "arbitrary finite administrative recurrence need not contain a productive step",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Cadence.admin_recurrence_does_not_force_productive_step",
+      "statement": "For every natural number n and state x, the identity administrative relation has an AdminClosure loop and an exact n-step MacroRun from x back to x, while the empty productive relation admits no macrostep from x.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1520",
+          "excerpt": "A heartbeat-only loop is a predecessor countermodel. Sparse observation neither proves worker liveness nor excludes hidden mutation between observations."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1526",
+          "excerpt": "Elapsed time, heartbeat count, receipt count, wakeups, or administrative recurrence does not prove progress, termination, correctness, success, liveness, consciousness, or permission."
+        }
+      ],
+      "assumptions": [
+        "Identity administrative relation.",
+        "Productive relation is empty.",
+        "n is an arbitrary finite natural number."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure",
+        "Experiments.Pal23Cadence.MacroRun",
+        "Experiments.Pal23Cadence.Macrostep"
+      ],
+      "countercase": "Countermodel to interpreting any finite count of admin identity activity or heartbeat-like stutter as evidence of a productive step.",
+      "authority_ceiling": "Finite relational countermodel only; it makes no claim about an actual scheduler, infinite recurrence, liveness, or progress.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-14",
+      "title": "equal endpoints can hide intermediate work changes",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Cadence.endpoint_equality_can_hide_two_work_changes",
+      "statement": "A finite Bool witness has unequal consecutive states but equal observed endpoints.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1520",
+          "excerpt": "A heartbeat-only loop is a predecessor countermodel. Sparse observation neither proves worker liveness nor excludes hidden mutation between observations."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1524",
+          "excerpt": "Administrative-only loop; one productive macrostep; rank descent only on →₁; fair/unfair acceptance; sparse hidden mutation; namespace collision; resource-consuming stutter; delete, swap, predecessor, witness, finite-check, ceiling, and return tests."
+        }
+      ],
+      "assumptions": [
+        "Explicit finite endpoint/intermediate values."
+      ],
+      "dependencies": [],
+      "countercase": "Illustrates sparse observation ambiguity only; no scheduler, hidden worker, or actual mutation is modeled.",
+      "authority_ceiling": "Illustrates sparse observation ambiguity only; no scheduler, hidden worker, or actual mutation is modeled.",
+      "residual": "Scheduler reality, sound classification, observation horizon, rank adequacy, fairness/acceptance, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if projection, transition classifier, rank, schedule, observation gap, fairness/acceptance, resource accounting, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-15",
+      "title": "productive progress change survives administrative stuttering",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Cadence.macrostep_changes_progress_coordinate",
+      "statement": "If admin edges preserve the supplied progress projection and productive edges change it, every macrostep changes the endpoint progress value.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1510",
+          "excerpt": "States S; work projection π; progress coordinate g; administrative relation →₀ preserving π; productive relation →₁ changing the declared progress coordinate; rank or fairness/liveness evidence; and heartbeat namespace."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1516",
+          "excerpt": "Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1533",
+          "excerpt": "Conditional extension profile. Carrier/model envelope: the declared transition state with work, progress, audit, grant, resource, and terminal coordinates. Scale, resolution, admissible differences, and tolerance: the work-stutter and progress classifiers supply their coordinate domains, admissible changes, resolution, and tolerance; absent quantitative coordinates these are exact predicates. Boundary role/domain/scope: N/A for cadence alone; checkpoint/re-entry, if invoked, uses its separate TRANSPORT_VALIDITY reference. Orientation/coefficient system: N/A unless a separately typed alignment readout is imported. Quantifiers: one macrostep or a finite trace; infinite recurrence requires named fairness/liveness semantics. Map/projector/fibers/reachable image: →₀, →₁, ⇒, work/progress projectors, their fibers, and the reachable transition relation are explicit. Detector/requested answer: the controller heartbeat observes its named predicate; the requested answers “work changed?” and “progress changed?” remain separate. Reachable decoder/totalization: N/A because heartbeat is not a recovery decoder. Decoder class: N/A absent a separately supplied state-reconstruction claim. Separations: endpoint, path, relation, receipt, work, audit, grant, resource, external-terminal result, and authority are noncoercive. Claim labels: macrostep algebra is exact; scheduler traces are finite fixtures; cadence/progress wording is interpretation; heartbeat namespacing is v2.3 synthesis. Residual/reopening: the Residual and Return-to-PAL rows control changes in transition class, projection, observation gap, fairness, witness, or ceiling."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary progress codomain P with equality only.",
+        "Every admin edge preserves progress.",
+        "Every productive edge changes progress."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure",
+        "Experiments.Pal23Cadence.Macrostep",
+        "Experiments.Pal23Cadence.admin_closure_preserves_projection"
+      ],
+      "countercase": "Conditional macrostep lift only; if the productive edge does not change the requested projection, this conclusion does not apply.",
+      "authority_ceiling": "Exact finite relational result; no classifier, scheduler, liveness, fairness, or source adoption is certified.",
+      "residual": "Progress adequacy and sound transition classification remain open; work-change and progress-change remain separate answers.",
+      "reopening": "Reopen on a change to either projection, transition class, codomain equality, macrostep shape, or source scope.",
+      "run_id": "local-pal23-cadence"
+    },
+    {
+      "id": "PAL23-CAD-16",
+      "title": "administrative rank replenishment can cancel productive descent",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Cadence.admin_rank_replenishment_cancels_net_descent",
+      "statement": "A constant work projection is preserved by administration and every productive edge strictly lowers the identity Nat rank, yet an administrative edge 0→1 followed by a productive edge 1→0 forms a macrostep 0→0 with no net strict descent.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1512",
+          "excerpt": "Macrostep ⇒ = →₀* ; →₁ ; →₀*. Existing A13 rank descent or declared fairness/acceptance is checked over productive recurrence, not heartbeat count."
+        },
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1516",
+          "excerpt": "Sound transition classification, stable work/progress projections, declared schedule and rank/fairness semantics, observation horizon, and complete receipts where interval mutation-freedom is claimed."
+        }
+      ],
+      "assumptions": [
+        "Nat state with identity rank and constant unit-valued work projection.",
+        "Administrative edges satisfy y = x + 1.",
+        "Productive edges satisfy x = y + 1."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Cadence.AdminClosure",
+        "Experiments.Pal23Cadence.Macrostep"
+      ],
+      "countercase": "The checked finite relational witness shows that productive-edge descent alone does not imply net macrostep descent when administration may replenish rank.",
+      "authority_ceiling": "Concrete mathematical countermodel to an unconditional macrostep-descent overclaim; no scheduler, fairness, liveness, or PAL adoption is certified.",
+      "residual": "Administrative rank preservation, application rank adequacy, sound transition classification, scheduler reality, fairness/acceptance, observation horizon, resource cost, hidden work, and external terminal state remain OPEN.",
+      "reopening": "Reopen if the transition relations, work projection, rank semantics, macrostep shape, fairness/acceptance, or source scope changes.",
+      "run_id": "local-pal23-cadence"
+    }
+  ]
+}

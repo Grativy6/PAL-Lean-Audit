@@ -1,0 +1,63 @@
+@Experiments.Pal23Cadence.AdminClosure : {S : Type u_1} → (S → S → Prop) → S → S → Prop
+@Experiments.Pal23Cadence.AdminClosure.refl : ∀ {S : Type u_1} {admin : S → S → Prop} (x : S),
+  Experiments.Pal23Cadence.AdminClosure admin x x
+@Experiments.Pal23Cadence.AdminClosure.step : ∀ {S : Type u_1} {admin : S → S → Prop} {x y z : S},
+  admin x y → Experiments.Pal23Cadence.AdminClosure admin y z → Experiments.Pal23Cadence.AdminClosure admin x z
+@Experiments.Pal23Cadence.Macrostep : {S : Type u_1} → (S → S → Prop) → (S → S → Prop) → S → S → Prop
+@Experiments.Pal23Cadence.admin_closure_preserves_projection : ∀ {S : Type u_1} {P : Type u_2} (admin : S → S → Prop)
+  (project : S → P),
+  (∀ (x y : S), admin x y → project x = project y) →
+    ∀ {x y : S}, Experiments.Pal23Cadence.AdminClosure admin x y → project x = project y
+@Experiments.Pal23Cadence.macrostep_preserves_work_projection : ∀ {S : Type u_1} {P : Type u_2}
+  (admin productive : S → S → Prop) (work : S → P),
+  (∀ (x y : S), admin x y → work x = work y) →
+    (∀ (x y : S), productive x y → work x = work y) →
+      ∀ {x y : S}, Experiments.Pal23Cadence.Macrostep admin productive x y → work x = work y
+@Experiments.Pal23Cadence.macrostep_strict_rank_descent : ∀ {S : Type u_1} (admin productive : S → S → Prop)
+  (rank : S → Nat),
+  (∀ (x y : S), admin x y → rank x = rank y) →
+    (∀ (x y : S), productive x y → rank y < rank x) →
+      ∀ {x y : S}, Experiments.Pal23Cadence.Macrostep admin productive x y → rank y < rank x
+@Experiments.Pal23Cadence.MacroRun : {S : Type u_1} → (S → S → Prop) → Nat → S → S → Prop
+@Experiments.Pal23Cadence.MacroRun.nil : ∀ {S : Type u_1} {macrostep : S → S → Prop} (x : S),
+  Experiments.Pal23Cadence.MacroRun macrostep 0 x x
+@Experiments.Pal23Cadence.MacroRun.cons : ∀ {S : Type u_1} {macrostep : S → S → Prop} {n : Nat} {x y z : S},
+  macrostep x y →
+    Experiments.Pal23Cadence.MacroRun macrostep n y z → Experiments.Pal23Cadence.MacroRun macrostep (n + 1) x z
+@Experiments.Pal23Cadence.macro_run_length_le_initial_rank : ∀ {S : Type u_1} (macrostep : S → S → Prop)
+  (rank : S → Nat),
+  (∀ (x y : S), macrostep x y → rank y < rank x) →
+    ∀ {n : Nat} {x y : S}, Experiments.Pal23Cadence.MacroRun macrostep n x y → n ≤ rank x
+Experiments.Pal23Cadence.admin_projection_need_not_preserve_rank : ∃ x y,
+  x.fst = y.fst ∧ x.snd ≠ y.snd ∧ x.fst = y.fst ∧ y.snd = x.snd + 1
+@Experiments.Pal23Cadence.admin_recurrence_does_not_force_productive_step : ∀ {S : Type u_1} (x : S) (n : Nat),
+  Experiments.Pal23Cadence.AdminClosure (fun a b => a = b) x x ∧
+    Experiments.Pal23Cadence.MacroRun (fun a b => a = b) n x x ∧
+      ¬∃ y, Experiments.Pal23Cadence.Macrostep (fun a b => a = b) (fun x x_1 => False) x y
+Experiments.Pal23Cadence.endpoint_equality_can_hide_two_work_changes : ∃ x middle finish,
+  x ≠ middle ∧ middle ≠ finish ∧ x = finish
+@Experiments.Pal23Cadence.macrostep_changes_progress_coordinate : ∀ {S : Type u_1} {P : Type u_2}
+  (admin productive : S → S → Prop) (progress : S → P),
+  (∀ (x y : S), admin x y → progress x = progress y) →
+    (∀ (x y : S), productive x y → progress x ≠ progress y) →
+      ∀ {x y : S}, Experiments.Pal23Cadence.Macrostep admin productive x y → progress x ≠ progress y
+Experiments.Pal23Cadence.admin_rank_replenishment_cancels_net_descent : have admin := fun x y => y = x + 1;
+have productive := fun x y => x = y + 1;
+(∀ (x y : Nat), admin x y → (fun x => ()) x = (fun x => ()) y) ∧
+  (∀ (x y : Nat), productive x y → y < x) ∧ Experiments.Pal23Cadence.Macrostep admin productive 0 0 ∧ ¬0 < 0
+'Experiments.Pal23Cadence.AdminClosure' does not depend on any axioms
+'Experiments.Pal23Cadence.AdminClosure.refl' does not depend on any axioms
+'Experiments.Pal23Cadence.AdminClosure.step' does not depend on any axioms
+'Experiments.Pal23Cadence.Macrostep' does not depend on any axioms
+'Experiments.Pal23Cadence.admin_closure_preserves_projection' does not depend on any axioms
+'Experiments.Pal23Cadence.macrostep_preserves_work_projection' does not depend on any axioms
+'Experiments.Pal23Cadence.macrostep_strict_rank_descent' does not depend on any axioms
+'Experiments.Pal23Cadence.MacroRun' does not depend on any axioms
+'Experiments.Pal23Cadence.MacroRun.nil' does not depend on any axioms
+'Experiments.Pal23Cadence.MacroRun.cons' does not depend on any axioms
+'Experiments.Pal23Cadence.macro_run_length_le_initial_rank' does not depend on any axioms
+'Experiments.Pal23Cadence.admin_projection_need_not_preserve_rank' does not depend on any axioms
+'Experiments.Pal23Cadence.admin_recurrence_does_not_force_productive_step' does not depend on any axioms
+'Experiments.Pal23Cadence.endpoint_equality_can_hide_two_work_changes' does not depend on any axioms
+'Experiments.Pal23Cadence.macrostep_changes_progress_coordinate' does not depend on any axioms
+'Experiments.Pal23Cadence.admin_rank_replenishment_cancels_net_descent' does not depend on any axioms

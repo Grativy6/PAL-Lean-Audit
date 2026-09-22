@@ -1,0 +1,229 @@
+{
+  "module": "Experiments.Pal23Interface",
+  "run_id": "local-pal23-interface",
+  "source_id": "PAL-v2.3-M",
+  "source_sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "claims": [
+    {
+      "id": "PAL23-IF2-01",
+      "title": "Lost distinctions are trace collisions with unequal requested answers",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Interface.lostDistinctions",
+      "statement": "The relation contains exactly the source pairs with equal trace values and unequal requested-answer values.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1387",
+          "excerpt": "L(τ,q)={(w,w′) : τ(w)=τ(w′) and q(w)≠q(w′)}."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary types W, T, and Q; total trace and answer maps."
+      ],
+      "dependencies": [],
+      "countercase": "Definition only; no finite enumeration or concrete collision is claimed.",
+      "authority_ceiling": "Set-theoretic relation definition only; no source existence, decoder class, or authority.",
+      "residual": "No topology, measure, privacy, permission, or computational structure is modeled.",
+      "reopening": "Reopen if W, T, Q, trace, answer, or decoder class changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-02",
+      "title": "The label kernel records source pairs indistinguishable by an auxiliary label",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Interface.labelKernel",
+      "statement": "The relation contains exactly the source pairs assigned the same auxiliary-label value.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1389",
+          "excerpt": "With K(s)={(w,w′):s(w)=s(w′)}, L((τ,s),q)=L(τ,q)∩K(s)."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary types W and S; total label map."
+      ],
+      "dependencies": [],
+      "countercase": "Definition only; no finite enumeration or sufficiency claim is made.",
+      "authority_ceiling": "Set-theoretic relation definition only; no source existence, decoder class, or authority.",
+      "residual": "No finite cardinality or implementation property is inferred.",
+      "reopening": "Reopen if W, S, label, or the requested combined trace changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-03",
+      "title": "A joint trace loses exactly the distinctions lost by both its trace and label",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Interface.joint_label_lost_eq_intersection",
+      "statement": "For arbitrary trace, label, and answer maps, the lost-distinction set of the paired trace equals the intersection of the trace lost set and the label equality kernel.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1389",
+          "excerpt": "With K(s)={(w,w′):s(w)=s(w′)}, L((τ,s),q)=L(τ,q)∩K(s)."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured types and equality."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions",
+        "Experiments.Pal23Interface.labelKernel"
+      ],
+      "countercase": "The XOR fixture (PAL23-IF2-08) shows the paired trace can remove losses present in each single-coordinate trace.",
+      "authority_ceiling": "Exact set identity for declared maps only; no causal interaction or generation is inferred.",
+      "residual": "The theorem does not establish that an auxiliary label exists or is obtainable in a system.",
+      "reopening": "Reopen if map types, pair construction, or relation convention changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-04",
+      "title": "Deterministic trace postprocessing cannot repair an existing lost distinction",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Interface.trace_postprocess_lost_subset",
+      "statement": "For any postprocessing map h, every pair lost under trace τ remains lost under h∘τ; additional collisions may enlarge the lost set.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1389",
+          "excerpt": "Postprocessing cannot repair an existing collision."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured types and equality."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions"
+      ],
+      "countercase": "A non-injective postprocessing can merge further trace values; the theorem asserts inclusion, not equality.",
+      "authority_ceiling": "Exact implication for total functions only.",
+      "residual": "No injectivity, computational cost, or decoder regularity is assumed.",
+      "reopening": "Reopen if postprocessing direction, domains, or lost-distinction definition changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-05",
+      "title": "Appending a deterministic restatement leaves the lost-distinction set unchanged",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Interface.redundant_trace_restatement_lost_eq",
+      "statement": "For s=h∘τ, the paired trace (τ,s) has exactly the lost distinctions of τ alone.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1395",
+          "excerpt": "A deterministic restatement s=h∘τ removes no collision."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured types and equality."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions"
+      ],
+      "countercase": "PAL23-IF2-08 is a strict joint-sufficiency fixture with an independent second coordinate; a restatement is not such a coordinate.",
+      "authority_ceiling": "Exact equality for the stated composition only.",
+      "residual": "This does not show that every auxiliary label is redundant.",
+      "reopening": "Reopen if the label is not a deterministic function of the trace.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-06",
+      "title": "Coarsening a requested answer can only remove lost distinctions",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.Pal23Interface.question_coarsening_lost_subset",
+      "statement": "For any answer postprocessing g, L(τ,g∘q) is a subset of L(τ,q).",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1395",
+          "excerpt": "For q′=g∘q, L(τ,q′)⊆L(τ,q)."
+        }
+      ],
+      "assumptions": [
+        "Arbitrary unstructured types and equality."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions"
+      ],
+      "countercase": "PAL23-IF2-07 gives a strict finite example where coarsening removes a lost pair.",
+      "authority_ceiling": "Exact implication about the changed question only; it does not recover distinctions for the original answer.",
+      "residual": "Question adequacy and the acceptability of coarsening are not assessed.",
+      "reopening": "Reopen if the requested question or coarsening map changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-07",
+      "title": "A Boolean constant-trace fixture has strict loss reduction under question coarsening",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.Pal23Interface.question_coarsening_strict_countercase",
+      "statement": "On Bool with a constant trace, the identity question loses the false/true pair, while the constant-false question has no lost pairs.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1395",
+          "excerpt": "For q′=g∘q, L(τ,q′)⊆L(τ,q)."
+        }
+      ],
+      "assumptions": [
+        "Concrete Bool source, Unit trace, identity answer, and constant answer map."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions",
+        "Experiments.Pal23Interface.question_coarsening_lost_subset"
+      ],
+      "countercase": "Counters the hypothetical overclaim that coarsening always preserves the same lost-distinction set. The explicit pair (false,true) witnesses loss for the identity question; the coarsened lost set is empty. This supports the source's subset statement rather than contradicting it.",
+      "authority_ceiling": "A finite countercase to the hypothetical equality claim only; not a counterexample to PAL's stated subset rule.",
+      "residual": "No general finite enumeration or deployment behavior is inferred.",
+      "reopening": "Reopen if the fixture maps or the meaning of answer coarsening changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-08",
+      "title": "The XOR fixture is insufficient on either coordinate alone and sufficient jointly",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.Pal23Interface.xor_joint_trace_strict_sufficiency_fixture",
+      "statement": "For XOR on Bool×Bool, each coordinate projection has an explicit colliding pair with different answers, while the paired trace admits the XOR decoder.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1408",
+          "excerpt": "For joint traces, K(⟨τ_A,τ_B⟩)=K(τ_A)∩K(τ_B). XOR supplies a strict joint-sufficiency fixture: either single coordinate is insufficient while their pair is sufficient. This proves neither causal interaction nor generation."
+        }
+      ],
+      "assumptions": [
+        "Concrete Bool×Bool work type and declared XOR answer."
+      ],
+      "dependencies": [
+        "Experiments.Pal23Interface.lostDistinctions"
+      ],
+      "countercase": "The two projection collisions are explicit; the joint decoder equation holds for every pair.",
+      "authority_ceiling": "Finite set-theoretic fixture only; source text itself disclaims causal interaction and generation.",
+      "residual": "No physical, causal, or implementation interpretation is inferred.",
+      "reopening": "Reopen if the answer, projections, joint trace, or domain changes.",
+      "run_id": "local-pal23-interface"
+    },
+    {
+      "id": "PAL23-IF2-09",
+      "title": "A sufficient finite label has at least as many values as pairwise answer-distinct states in one trace fiber",
+      "classification": "ASSUMPTION_BOUND",
+      "declaration": "Experiments.Pal23Interface.finite_label_lower_bound",
+      "statement": "For a finite indexed family in one trace fiber whose requested answers are pairwise distinct, if the joint trace and label preserve the answer, then the label codomain cardinality is at least the family cardinality.",
+      "source_refs": [
+        {
+          "source_id": "PAL-v2.3-M",
+          "paragraphs": "P1395",
+          "excerpt": "Under finite hypotheses, any s making (τ,s) sufficient needs at least max_{t∈R} card(q(τ⁻¹(t))) distinguishable labels."
+        }
+      ],
+      "assumptions": [
+        "The indexed family A and label codomain S both have supplied Fintype instances; all indexed states have the same trace; answers separate indices; joint trace plus label is sufficient on the family."
+      ],
+      "dependencies": [],
+      "countercase": "The proof makes the label map injective on A and applies Fintype.card_le_of_injective; it does not claim the maximum-fiber bound over all R without separately enumerating or otherwise bounding the fibers.",
+      "authority_ceiling": "Conditional finite cardinal theorem for the declared family only.",
+      "residual": "No exhaustive computation of all trace fibers is supplied.",
+      "reopening": "Reopen if the finite family, trace fiber, answer separation, sufficiency condition, or label codomain changes.",
+      "run_id": "local-pal23-interface"
+    }
+  ]
+}
