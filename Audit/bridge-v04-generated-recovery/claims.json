@@ -1,0 +1,325 @@
+{
+  "lane": "generated-recovery",
+  "identity_basis": "BRIDGE-v0.4 supplied local DOCX sha256 a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470; P0195 with P0107 source context",
+  "claims": [
+    {
+      "id": "GR-D01",
+      "title": "Restricted readout with reachable codomain",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generatedRangeReadout",
+      "statement": "Corestriction of r.comp B.subtype to its linear range.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "For APCI applied to the generated span with trace r|B"
+        }
+      ],
+      "assumptions": [
+        "Field k, vector spaces T and R, submodule B and linear map r"
+      ],
+      "dependencies": [
+        "LinearMap.rangeRestrict",
+        "Submodule.subtype"
+      ],
+      "countercase": "The ambient codomain and its reachable subspace are distinct types; see FS-M04-G09.",
+      "authority_ceiling": "Named map in the supplied linear realization only.",
+      "residual": "No executable reconstruction or source adoption.",
+      "reopening": "Change the readout or codomain only with an explicit comparison."
+    },
+    {
+      "id": "FS-M04-G07",
+      "title": "Reachable decoder is unique",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_decoder_unique",
+      "statement": "Derived consequence of corestricting to the reachable range: any two function decoders realizing the same answer are equal. P0195 does not independently assert a uniqueness theorem.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "for a coarser answer it is an obstruction only where that answer varies."
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0107",
+          "excerpt": "A requested answer q:W→Q is decodable exactly when it is constant on these fibers, subject to APCI’s stated reachable-versus-total codomain boundary."
+        }
+      ],
+      "assumptions": [
+        "Field k and vector spaces T and R",
+        "Supplied submodule B and linear readout r",
+        "Arbitrary answer type A; no additive or linear structure on A"
+      ],
+      "dependencies": [
+        "generatedRangeReadout",
+        "Every element of LinearMap.range has a preimage"
+      ],
+      "countercase": "This uniqueness is only on the reachable range; ambient codomain extensions may differ.",
+      "authority_ceiling": "Mathematical uniqueness on the named reachable type.",
+      "residual": "No canonical representative selection is supplied.",
+      "reopening": "Audit total-codomain decoder policies separately."
+    },
+    {
+      "id": "GR-D02",
+      "title": "Restricted readout with ambient codomain",
+      "classification": "CONSISTENT_REALIZATION",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generatedAmbientReadout",
+      "statement": "The actual r.comp B.subtype with codomain R.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "For APCI applied to the generated span with trace r|B"
+        }
+      ],
+      "assumptions": [
+        "Field k, vector spaces T and R, submodule B and linear map r"
+      ],
+      "dependencies": [
+        "LinearMap.comp",
+        "Submodule.subtype"
+      ],
+      "countercase": "The ambient codomain and its reachable subspace are distinct types; see FS-M04-G09.",
+      "authority_ceiling": "Named map in the supplied linear realization only.",
+      "residual": "No executable reconstruction or source adoption.",
+      "reopening": "Change the readout or codomain only with an explicit comparison."
+    },
+    {
+      "id": "FS-M04-G01",
+      "title": "Arbitrary generated-span answers factor exactly on readout fibers",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff",
+      "statement": "An arbitrary answer on B factors through the reachable range of r restricted to B iff it is constant on every fiber of that restricted readout.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "For APCI applied to the generated span with trace r|B, C is the collision space for full identity recovery; for a coarser answer it is an obstruction only where that answer varies."
+        },
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0107",
+          "excerpt": "A requested answer q:W→Q is decodable exactly when it is constant on these fibers, subject to APCI’s stated reachable-versus-total codomain boundary."
+        }
+      ],
+      "assumptions": [
+        "Field k and vector spaces T and R",
+        "Supplied submodule B and linear readout r",
+        "Arbitrary answer type A; no additive or linear structure on A"
+      ],
+      "dependencies": [
+        "Classical.choose for a factorization witness",
+        "generatedRangeReadout"
+      ],
+      "countercase": "A factorization witness is not an algorithm or canonical representative selection.",
+      "authority_ceiling": "Mathematical factorization through the reachable readout range only.",
+      "residual": "The ambient codomain outside the reachable range is not used.",
+      "reopening": "Specify an executable or total-codomain decoder only in a separately scoped lane."
+    },
+    {
+      "id": "FS-M04-G02",
+      "title": "Fiber criterion can be stated directly with endpoint values",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff_fiber",
+      "statement": "The arbitrary factorization criterion is equivalent to constancy whenever r x = r y for x,y in B.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0107",
+          "excerpt": "A requested answer q:W→Q is decodable exactly when it is constant on these fibers, subject to APCI’s stated reachable-versus-total codomain boundary."
+        }
+      ],
+      "assumptions": [
+        "Field k and vector spaces T and R",
+        "Supplied submodule B and linear readout r",
+        "Arbitrary answer type A; no additive or linear structure on A"
+      ],
+      "dependencies": [
+        "FS-M04-G01"
+      ],
+      "countercase": "Fiber equality is the relevant relation; kernel notation is reserved for the linear specialization.",
+      "authority_ceiling": "Typed fiber criterion only.",
+      "residual": "No claim about a particular APCI implementation is made.",
+      "reopening": "A new corpus adapter still needs its own source-to-type correspondence."
+    },
+    {
+      "id": "FS-M04-G03",
+      "title": "Linear generated-span answers use the collision kernel",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_linear_answer_decodable_iff",
+      "statement": "A linear answer on B factors through the reachable restricted readout iff generatedCollision B (ker r) is contained in its kernel.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "For APCI applied to the generated span with trace r|B, C is the collision space for full identity recovery; for a coarser answer it is an obstruction only where that answer varies."
+        }
+      ],
+      "assumptions": [
+        "Field k; supplied vector spaces",
+        "Supplied linear r and B",
+        "Answer is k-linear"
+      ],
+      "dependencies": [
+        "BridgeFourSector.ker_readoutOnGenerated",
+        "LinearMap.quotKerEquivRange",
+        "Submodule.liftQ"
+      ],
+      "countercase": "Kernel containment characterizes the linear lane; it is not a general replacement for fiber constancy of arbitrary answers.",
+      "authority_ceiling": "Declared linear realization only.",
+      "residual": "No complement, representative, or algorithm is selected.",
+      "reopening": "Compare other declared linear readout codomains only in a new lane."
+    },
+    {
+      "id": "FS-M04-G04",
+      "title": "Generated identity recovery is equivalent to restricted-readout injectivity",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_identity_decoder_iff_injective",
+      "statement": "A linear left decoder for the identity on B exists iff the reachable restricted readout is injective.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "C is the collision space for full identity recovery"
+        }
+      ],
+      "assumptions": [
+        "Declared linear generated-span realization"
+      ],
+      "dependencies": [
+        "FS-M04-G03"
+      ],
+      "countercase": "Injectivity does not imply a chosen inverse beyond the reachable range.",
+      "authority_ceiling": "Linear left-inverse criterion only.",
+      "residual": "No recovery of an upstream generative source G is asserted.",
+      "reopening": "Add an explicit export e:G→T only under a source-mapped lane."
+    },
+    {
+      "id": "FS-M04-G05",
+      "title": "Full generated identity recovery is equivalent to collision vanishing",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_full_identity_iff_collision_bot",
+      "statement": "Restricted-readout injectivity is equivalent to generatedCollision B (ker r) = bottom.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "C is the collision space for full identity recovery"
+        }
+      ],
+      "assumptions": [
+        "Declared linear generated-span realization"
+      ],
+      "dependencies": [
+        "BridgeFourSector.ker_readoutOnGenerated",
+        "LinearMap.ker_eq_bot"
+      ],
+      "countercase": "A nonzero collision may leave a coarser answer recoverable; see FS-M04-G06.",
+      "authority_ceiling": "Bounded generated-span realization only.",
+      "residual": "No source adoption or geometric direct-sum claim follows.",
+      "reopening": "Recovery on an original generator domain requires a separately declared export map."
+    },
+    {
+      "id": "FS-M04-G10",
+      "title": "Arbitrary identity decoder exists exactly when collisions vanish",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_identity_answer_decodable_iff_collision_bot",
+      "statement": "A function decoder on the reachable range recovers identity on B iff generatedCollision B (ker r) is bottom.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "C is the collision space for full identity recovery"
+        }
+      ],
+      "assumptions": [
+        "Field k, vector spaces T and R, submodule B and linear map r",
+        "The identity decoder is an arbitrary function; no linearity assumption on it"
+      ],
+      "dependencies": [
+        "FS-M04-G01",
+        "FS-M04-G05"
+      ],
+      "countercase": "Injectivity does not imply a chosen inverse beyond the reachable range.",
+      "authority_ceiling": "Identity on B only, for the supplied readout; mathematical existence rather than an algorithm.",
+      "residual": "No recovery of an upstream generative source G is asserted.",
+      "reopening": "Add an explicit export e:G→T only under a source-mapped lane."
+    },
+    {
+      "id": "FS-M04-G06",
+      "title": "A coarser answer can decode while generated identity fails",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_coarser_answer_countercase",
+      "statement": "For B=top in Q×Q, first-coordinate readout and answer, the answer factors while the restricted readout is not injective.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0195",
+          "excerpt": "for a coarser answer it is an obstruction only where that answer varies."
+        }
+      ],
+      "assumptions": [
+        "Displayed rational vector spaces and first projection"
+      ],
+      "dependencies": [
+        "FS-M04-G02",
+        "Concrete equal readouts at (0,0) and (0,1)"
+      ],
+      "countercase": "This defeats the overclaim that any decodable coarser answer entails full generated identity recovery.",
+      "authority_ceiling": "One checked finite-dimensional rational countermodel only.",
+      "residual": "It does not refute the bounded P0195 distinction.",
+      "reopening": "Add richer answer classes only under an explicit new target."
+    },
+    {
+      "id": "FS-M04-G08",
+      "title": "Kernel vanishing on a nonlinear collision is insufficient",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_nonlinear_kernel_overclaim_countercase",
+      "statement": "For a(x,y)=xy and first-coordinate readout, the answer is constant on the collision subspace but does not factor through readout fibers.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0107",
+          "excerpt": "A requested answer q:W→Q is decodable exactly when it is constant on these fibers"
+        }
+      ],
+      "assumptions": [
+        "Displayed rational product and first projection"
+      ],
+      "dependencies": [
+        "FS-M04-G02"
+      ],
+      "countercase": "This defeats the nonlinear shortcut that checking a(c)=a(0) on the kernel or collision subspace suffices.",
+      "authority_ceiling": "One checked finite-dimensional rational countermodel only.",
+      "residual": "The linear kernel criterion remains valid for linear answers.",
+      "reopening": "Keep fiber constancy as the general answer rule."
+    },
+    {
+      "id": "FS-M04-G09",
+      "title": "Ambient decoder extensions need not be unique",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "declaration": "Experiments.BridgeGeneratedRecovery.generated_ambient_decoder_nonunique_countercase",
+      "statement": "For readout (x,y)↦(x,0), decoders z↦z₁ and z↦z₁+z₂ agree on the reachable image but differ off it.",
+      "source_refs": [
+        {
+          "source_id": "BRIDGE-v0.4",
+          "paragraphs": "P0107",
+          "excerpt": "subject to APCI’s stated reachable-versus-total codomain boundary."
+        }
+      ],
+      "assumptions": [
+        "Displayed rational product and ambient readout"
+      ],
+      "dependencies": [
+        "generatedAmbientReadout",
+        "Concrete disagreement at (0,1)"
+      ],
+      "countercase": "This demonstrates why reachable decoder uniqueness must not be reported as uniqueness of an arbitrary ambient extension.",
+      "authority_ceiling": "One checked finite-dimensional rational countermodel only.",
+      "residual": "No total-codomain extension policy is selected.",
+      "reopening": "Specify an ambient decoder convention only with a new source-mapped requirement."
+    }
+  ],
+  "manual_dispositions": [],
+  "module": "BridgeGeneratedRecovery"
+}

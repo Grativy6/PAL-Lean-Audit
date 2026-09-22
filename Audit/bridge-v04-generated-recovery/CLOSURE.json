@@ -1,0 +1,25 @@
+{
+  "cycle": "BRIDGE-GENERATED-20260921",
+  "source_scope": "P0195 first clause: generated-span factorization, with P0107 adapter boundary",
+  "evidence": "Audit/bridge-v04-generated-recovery/results.json",
+  "predecessor": "Audit/bridge-v04-dimension-recovery/CLOSURE.json",
+  "historical_open_status_preserved": true,
+  "new_disposition": "P0195_GENERATED_SPAN_FORMALIZATION_DISCHARGED_IN_DECLARED_REALIZATION",
+  "controlling_declarations": [
+    "Experiments.BridgeGeneratedRecovery.generated_answer_decodable_iff_fiber",
+    "Experiments.BridgeGeneratedRecovery.generated_linear_answer_decodable_iff",
+    "Experiments.BridgeGeneratedRecovery.generated_identity_answer_decodable_iff_collision_bot",
+    "Experiments.BridgeGeneratedRecovery.generated_decoder_unique"
+  ],
+  "remaining_open": [
+    "frame-morphism naturality",
+    "return dynamics",
+    "geometric and Hodge applications"
+  ],
+  "pal_obligations": {
+    "O04": "OPEN",
+    "O25": "OPEN",
+    "D-FIRST-OCCURRENCE": "OPEN"
+  },
+  "authority_ceiling": "This disposition requires the passing referenced receipt and applies to the local formalization only; no canon adoption, source amendment or merge."
+}
