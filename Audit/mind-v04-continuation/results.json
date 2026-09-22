@@ -5,9 +5,9 @@
   "lake": "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
   "python_executable": "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
   "base_commit": "93d9c7811e833b57367d1939c862b08fd8d187bb",
-  "tested_commit": "93d9c7811e833b57367d1939c862b08fd8d187bb",
+  "tested_commit": "4e2e0ed1f6be541649bb910ecdda7bc3bfa714ff",
   "dirty_before": true,
-  "worktree_status_before": "A  .github/workflows/mind-continuation.yml\nA  Audit/mind-v04-continuation/.gitattributes\nA  Audit/mind-v04-continuation/README.md\nA  Audit/mind-v04-continuation/REVIEW.md\nA  Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md\nA  Audit/mind-v04-continuation/claims.json\nA  Audit/mind-v04-continuation/run.py\nA  Audit/mind-v04-continuation/source-excerpts.json\nA  Audit/mind-v04-continuation/source-manifest.json\nA  Experiments/MindContinuation.lean\nA  Experiments/MindContinuationAxioms.lean",
+  "worktree_status_before": "M  Audit/mind-v04-continuation/README.md",
   "source_id": "MIND-v0.4-Draft",
   "source_sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad",
   "source_check": {
@@ -298,7 +298,7 @@
     "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json": "ea4f5c4395ff86e7422ed21929d43897a31df154279463007117f3741dc295fa",
     "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json": "822e7743154711b731a75b94c4f5bf6395af41c6111a953e097c5695153af909",
     "Audit/mind-v04-continuation/.gitattributes": "85e81ac8041d72059cbcfe9603086886be0df7a9c76ea9f30c18b4e6234ddc70",
-    "Audit/mind-v04-continuation/README.md": "e8055e10f0123b22e4f52792e486654471f902fb6709580568429afff3e3e4fe",
+    "Audit/mind-v04-continuation/README.md": "252453a62a058d0316560e4a911f0873ee2af2d991662d74ee6e952d64c000f1",
     "Audit/mind-v04-continuation/REVIEW.md": "abb0527e6a0389cd57243c6b805b5dd173d4d1e48328d53eca911d93207e4fce",
     "Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md": "cb58a0e3f194e3163408bfc00a273702643e69df8e398890fd86df2e7929bc66",
     "Audit/mind-v04-continuation/claims.json": "4f3d47c53282754d17ed5e5fdb8da5ae4451e40c554a9b77e8416f569c7a06c4",
@@ -821,7 +821,7 @@
     "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json": "ea4f5c4395ff86e7422ed21929d43897a31df154279463007117f3741dc295fa",
     "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json": "822e7743154711b731a75b94c4f5bf6395af41c6111a953e097c5695153af909",
     "Audit/mind-v04-continuation/.gitattributes": "85e81ac8041d72059cbcfe9603086886be0df7a9c76ea9f30c18b4e6234ddc70",
-    "Audit/mind-v04-continuation/README.md": "e8055e10f0123b22e4f52792e486654471f902fb6709580568429afff3e3e4fe",
+    "Audit/mind-v04-continuation/README.md": "252453a62a058d0316560e4a911f0873ee2af2d991662d74ee6e952d64c000f1",
     "Audit/mind-v04-continuation/REVIEW.md": "abb0527e6a0389cd57243c6b805b5dd173d4d1e48328d53eca911d93207e4fce",
     "Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md": "cb58a0e3f194e3163408bfc00a273702643e69df8e398890fd86df2e7929bc66",
     "Audit/mind-v04-continuation/claims.json": "4f3d47c53282754d17ed5e5fdb8da5ae4451e40c554a9b77e8416f569c7a06c4",
@@ -1344,7 +1344,7 @@
     "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json": "ee2854dee435f2bab842b44f5ca6f28deb27354dd23e5a9117af6d5d06d67606",
     "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json": "5889837c52893352a874e9aa475f689b3917a26ef2d6a0660269c6ef883529d6",
     "Audit/mind-v04-continuation/.gitattributes": "85e81ac8041d72059cbcfe9603086886be0df7a9c76ea9f30c18b4e6234ddc70",
-    "Audit/mind-v04-continuation/README.md": "e8055e10f0123b22e4f52792e486654471f902fb6709580568429afff3e3e4fe",
+    "Audit/mind-v04-continuation/README.md": "252453a62a058d0316560e4a911f0873ee2af2d991662d74ee6e952d64c000f1",
     "Audit/mind-v04-continuation/REVIEW.md": "abb0527e6a0389cd57243c6b805b5dd173d4d1e48328d53eca911d93207e4fce",
     "Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md": "cb58a0e3f194e3163408bfc00a273702643e69df8e398890fd86df2e7929bc66",
     "Audit/mind-v04-continuation/claims.json": "4f3d47c53282754d17ed5e5fdb8da5ae4451e40c554a9b77e8416f569c7a06c4",
@@ -1867,7 +1867,7 @@
     "Audit/migrations/pal-v2.0-to-v2.1-historical-lock.json": "ee2854dee435f2bab842b44f5ca6f28deb27354dd23e5a9117af6d5d06d67606",
     "Audit/migrations/pal-v2.0-to-v2.1-migration-receipt.json": "5889837c52893352a874e9aa475f689b3917a26ef2d6a0660269c6ef883529d6",
     "Audit/mind-v04-continuation/.gitattributes": "85e81ac8041d72059cbcfe9603086886be0df7a9c76ea9f30c18b4e6234ddc70",
-    "Audit/mind-v04-continuation/README.md": "e8055e10f0123b22e4f52792e486654471f902fb6709580568429afff3e3e4fe",
+    "Audit/mind-v04-continuation/README.md": "252453a62a058d0316560e4a911f0873ee2af2d991662d74ee6e952d64c000f1",
     "Audit/mind-v04-continuation/REVIEW.md": "abb0527e6a0389cd57243c6b805b5dd173d4d1e48328d53eca911d93207e4fce",
     "Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md": "cb58a0e3f194e3163408bfc00a273702643e69df8e398890fd86df2e7929bc66",
     "Audit/mind-v04-continuation/claims.json": "4f3d47c53282754d17ed5e5fdb8da5ae4451e40c554a9b77e8416f569c7a06c4",
@@ -2249,7 +2249,7 @@
   "authority_ceiling": "Reduced local MIND-inspired Lean experiment only; no PAL amendment, source adoption, full conformance, authority grant, empirical result, or closure of PAL obligations.",
   "scope_status": "BOUNDED_MIND_V04_CONTINUATION",
   "tested_scope": "One reduced source-bound finite Lean realization in Experiments.MindContinuation.",
-  "started_at": "2026-09-22T04:08:22.404717+00:00",
+  "started_at": "2026-09-22T04:15:19.403809+00:00",
   "environment": {
     "software": [
       {
@@ -2290,9 +2290,9 @@
         "--version"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/lean-version.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/lean-version.txt",
       "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
-      "elapsed_seconds": 2.813
+      "elapsed_seconds": 2.704
     },
     {
       "label": "lake-version",
@@ -2301,7 +2301,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/lake-version.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/lake-version.txt",
       "sha256": "b882b8f41a2e07585a3396b73d6e91fed2ce786f91d226471ce39102e6c60a2e",
       "elapsed_seconds": 0.109
     },
@@ -2313,9 +2313,9 @@
         "Experiments.MindContinuation"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/target-build.txt",
-      "sha256": "22a78932266fc5b2593055a06dd8c4ca71cd05ff3d281530f9b3fc8d91d8b37a",
-      "elapsed_seconds": 9.657
+      "log": "artifacts/mind-continuation-publication-20260922/target-build.txt",
+      "sha256": "8f696ca44adbdeec951cd913f2c0f77f3344ce2e36c05282a71ff4ee3fb931aa",
+      "elapsed_seconds": 2.922
     },
     {
       "label": "whole-project-build",
@@ -2324,9 +2324,9 @@
         "build"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/whole-project-build.txt",
-      "sha256": "8bf75d98aafeea298bd4560079d7f3e907ca655a26336f0c684ec1c22a9d09a2",
-      "elapsed_seconds": 5.547
+      "log": "artifacts/mind-continuation-publication-20260922/whole-project-build.txt",
+      "sha256": "aa1c8f755fbef5a6fed81373a2009847de82a163e4f1a62c8524b8d6a6477119",
+      "elapsed_seconds": 5.14
     },
     {
       "label": "axioms-signatures",
@@ -2337,9 +2337,9 @@
         "Experiments/MindContinuationAxioms.lean"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/axioms-signatures.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/axioms-signatures.txt",
       "sha256": "4fcd82d1edb2b6ce705210debac49021d4515d620b79939efc2a721991616893",
-      "elapsed_seconds": 8.453
+      "elapsed_seconds": 8.235
     },
     {
       "label": "continuation-kernel",
@@ -2350,9 +2350,9 @@
         "Experiments.MindContinuation"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/continuation-kernel.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/continuation-kernel.txt",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "elapsed_seconds": 46.812
+      "elapsed_seconds": 45.969
     },
     {
       "label": "pal-kernel",
@@ -2363,9 +2363,9 @@
         "PALLeanAudit"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/pal-kernel.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/pal-kernel.txt",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "elapsed_seconds": 54.422
+      "elapsed_seconds": 51.266
     },
     {
       "label": "policy",
@@ -2374,9 +2374,9 @@
         "scripts/check_policy.py"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/policy.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/policy.txt",
       "sha256": "26bdc438a787b7500be87bcb1ba56c56029d63b00c46a76f3356f73d88c84242",
-      "elapsed_seconds": 0.188
+      "elapsed_seconds": 0.187
     },
     {
       "label": "migration-policy",
@@ -2385,9 +2385,9 @@
         "scripts/check_release_migration.py"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/migration-policy.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/migration-policy.txt",
       "sha256": "04fcceb20fac4386f708dbc309c06fa5317da2ef0577e2f194df9b37f57f82e1",
-      "elapsed_seconds": 4.937
+      "elapsed_seconds": 4.782
     },
     {
       "label": "attack-run-policy",
@@ -2396,9 +2396,9 @@
         "scripts/check_attack_run_0003_policy.py"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/attack-run-policy.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/attack-run-policy.txt",
       "sha256": "7a6bfea6a76cce867308bc74034f356ba5dce57219997d7f2aafd8320e8275c6",
-      "elapsed_seconds": 0.203
+      "elapsed_seconds": 0.218
     },
     {
       "label": "attack-run",
@@ -2407,9 +2407,9 @@
         "scripts/check_attack_run_0003.py"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/attack-run.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/attack-run.txt",
       "sha256": "4c4916f3c2f25d0f9127c5e74ef818e0ec6d6ecc8bc2fa1c7b2365f86f5178b9",
-      "elapsed_seconds": 0.172
+      "elapsed_seconds": 0.157
     },
     {
       "label": "generated-report",
@@ -2419,9 +2419,9 @@
         "--check"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/generated-report.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/generated-report.txt",
       "sha256": "5e8d6d686a695dff1d83745ee1b8ea63bd5e9d452f725fc39c73e60de46e483a",
-      "elapsed_seconds": 0.172
+      "elapsed_seconds": 0.171
     },
     {
       "label": "migration-report",
@@ -2431,9 +2431,9 @@
         "--check"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/migration-report.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/migration-report.txt",
       "sha256": "322ce136b6258b8fcc266bca56ff7f8d7d9737602082f043a3bf8f156aa5013e",
-      "elapsed_seconds": 0.094
+      "elapsed_seconds": 0.11
     },
     {
       "label": "attack-run-report",
@@ -2443,9 +2443,9 @@
         "--check"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/attack-run-report.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/attack-run-report.txt",
       "sha256": "b99dc1f849d03be82fa213d9803dbe68bdbbfce0324d4a77859dbf5e5f021176",
-      "elapsed_seconds": 0.188
+      "elapsed_seconds": 0.172
     },
     {
       "label": "diff-check",
@@ -2456,9 +2456,9 @@
         "HEAD"
       ],
       "exit_code": 0,
-      "log": "artifacts/mind-continuation-20260922-verified/diff-check.txt",
+      "log": "artifacts/mind-continuation-publication-20260922/diff-check.txt",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "elapsed_seconds": 0.109
+      "elapsed_seconds": 0.078
     }
   ],
   "axioms": {
@@ -2568,13 +2568,13 @@
     "Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture": "Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture : have start :=\n  {\n    work :=\n      { account := 0, pending := [{ id := 1, value := true }, { id := 2, value := true }], rule := true,\n        receipts := [] },\n    fuel := 1, context := 2, adminCount := 0 };\n(Experiments.MindContinuation.runProductive 2 start).work.pending = [{ id := 2, value := true }] ∧\n  (Experiments.MindContinuation.runProductive 2 start).work.account = 1"
   },
   "axiom_inspection_stdout": "Experiments.MindContinuation.Evidence : Type\n'Experiments.MindContinuation.Evidence' does not depend on any axioms\nExperiments.MindContinuation.Receipt : Type\n'Experiments.MindContinuation.Receipt' does not depend on any axioms\nExperiments.MindContinuation.receiptConsistent : Experiments.MindContinuation.Receipt → Prop\n'Experiments.MindContinuation.receiptConsistent' does not depend on any axioms\nExperiments.MindContinuation.Work : Type\n'Experiments.MindContinuation.Work' does not depend on any axioms\nExperiments.MindContinuation.OperationalState : Type\n'Experiments.MindContinuation.OperationalState' does not depend on any axioms\nExperiments.MindContinuation.Capsule : Type\n'Experiments.MindContinuation.Capsule' does not depend on any axioms\nExperiments.MindContinuation.queueProgress : Experiments.MindContinuation.OperationalState → ℕ\n'Experiments.MindContinuation.queueProgress' does not depend on any axioms\nExperiments.MindContinuation.checkpoint : Experiments.MindContinuation.OperationalState →\n  Experiments.MindContinuation.Capsule\n'Experiments.MindContinuation.checkpoint' does not depend on any axioms\nExperiments.MindContinuation.restore : Experiments.MindContinuation.Capsule →\n  ℕ → ℕ → ℕ → Option Experiments.MindContinuation.OperationalState\n'Experiments.MindContinuation.restore' does not depend on any axioms\nExperiments.MindContinuation.productiveStep : Experiments.MindContinuation.OperationalState →\n  Option Experiments.MindContinuation.OperationalState\n'Experiments.MindContinuation.productiveStep' does not depend on any axioms\nExperiments.MindContinuation.adminStep : Experiments.MindContinuation.OperationalState →\n  Option Experiments.MindContinuation.OperationalState\n'Experiments.MindContinuation.adminStep' does not depend on any axioms\nExperiments.MindContinuation.runProductive : ℕ →\n  Experiments.MindContinuation.OperationalState → Experiments.MindContinuation.OperationalState\n'Experiments.MindContinuation.runProductive' does not depend on any axioms\nExperiments.MindContinuation.runProductive_stable : ∀ (s : Experiments.MindContinuation.OperationalState) (n : ℕ),\n  Experiments.MindContinuation.productiveStep s = none → Experiments.MindContinuation.runProductive n s = s\n'Experiments.MindContinuation.runProductive_stable' depends on axioms: [propext]\nExperiments.MindContinuation.runProductive_add : ∀ (k n : ℕ) (s : Experiments.MindContinuation.OperationalState),\n  Experiments.MindContinuation.runProductive (k + n) s =\n    Experiments.MindContinuation.runProductive n (Experiments.MindContinuation.runProductive k s)\n'Experiments.MindContinuation.runProductive_add' depends on axioms: [propext]\n@Experiments.MindContinuation.adminStep_preserves_work : ∀ {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.adminStep s = some next → next.work = s.work\n'Experiments.MindContinuation.adminStep_preserves_work' depends on axioms: [propext]\n@Experiments.MindContinuation.adminStep_preserves_queueProgress : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.adminStep s = some next →\n    Experiments.MindContinuation.queueProgress next = Experiments.MindContinuation.queueProgress s\n'Experiments.MindContinuation.adminStep_preserves_queueProgress' depends on axioms: [propext]\n@Experiments.MindContinuation.productiveStep_consumes_fuel : ∀ {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next → next.fuel + 1 = s.fuel\n'Experiments.MindContinuation.productiveStep_consumes_fuel' depends on axioms: [propext]\n@Experiments.MindContinuation.productiveStep_decreases_queueProgress : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next →\n    Experiments.MindContinuation.queueProgress next + 1 = Experiments.MindContinuation.queueProgress s\n'Experiments.MindContinuation.productiveStep_decreases_queueProgress' depends on axioms: [propext]\n@Experiments.MindContinuation.productiveStep_retains_receipt : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next →\n    ∃ event remaining receipt,\n      s.work.pending = event :: remaining ∧\n        next.work.pending = remaining ∧\n          next.work.receipts = s.work.receipts ++ [receipt] ∧\n            receipt.before = s.work.account ∧\n              receipt.event = event ∧\n                receipt.rule = s.work.rule ∧\n                  receipt.after = next.work.account ∧ Experiments.MindContinuation.receiptConsistent receipt\n'Experiments.MindContinuation.productiveStep_retains_receipt' depends on axioms: [propext]\nExperiments.MindContinuation.runProductive_completes_aux : ∀ (n : ℕ)\n  (s : Experiments.MindContinuation.OperationalState),\n  s.work.pending.length ≤ n →\n    s.fuel ≥ s.work.pending.length → (Experiments.MindContinuation.runProductive n s).work.pending = []\n'Experiments.MindContinuation.runProductive_completes_aux' depends on axioms: [propext]\nExperiments.MindContinuation.runProductive_work_independent_aux : ∀ (n : ℕ)\n  (s t : Experiments.MindContinuation.OperationalState),\n  s.work = t.work →\n    s.work.pending.length ≤ n →\n      s.fuel ≥ s.work.pending.length →\n        t.fuel ≥ t.work.pending.length →\n          (Experiments.MindContinuation.runProductive n s).work = (Experiments.MindContinuation.runProductive n t).work\n'Experiments.MindContinuation.runProductive_work_independent_aux' depends on axioms: [propext]\nExperiments.MindContinuation.runProductive_preserves_sufficient_fuel : ∀ (k : ℕ)\n  (s : Experiments.MindContinuation.OperationalState),\n  s.fuel ≥ s.work.pending.length →\n    (Experiments.MindContinuation.runProductive k s).fuel ≥\n      (Experiments.MindContinuation.runProductive k s).work.pending.length\n'Experiments.MindContinuation.runProductive_preserves_sufficient_fuel' depends on axioms: [propext]\nExperiments.MindContinuation.runProductive_completes : ∀ (s : Experiments.MindContinuation.OperationalState),\n  s.fuel ≥ s.work.pending.length →\n    (Experiments.MindContinuation.runProductive s.work.pending.length s).work.pending = []\n'Experiments.MindContinuation.runProductive_completes' depends on axioms: [propext]\nExperiments.MindContinuation.checkpoint_restore_matching_context : ∀ (s : Experiments.MindContinuation.OperationalState)\n  (freshFuel freshAdmin : ℕ),\n  Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) s.context freshFuel freshAdmin =\n    some { work := s.work, fuel := freshFuel, context := s.context, adminCount := freshAdmin }\n'Experiments.MindContinuation.checkpoint_restore_matching_context' depends on axioms: [propext]\nExperiments.MindContinuation.checkpoint_restore_rejects_context_mismatch : ∀\n  (s : Experiments.MindContinuation.OperationalState) (currentContext freshFuel freshAdmin : ℕ),\n  s.context ≠ currentContext →\n    Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) currentContext freshFuel\n        freshAdmin =\n      none\n'Experiments.MindContinuation.checkpoint_restore_rejects_context_mismatch' depends on axioms: [propext]\nExperiments.MindContinuation.checkpoint_resume_preserves_continuation : ∀\n  (s : Experiments.MindContinuation.OperationalState) (freshFuel freshAdmin : ℕ),\n  s.fuel ≥ s.work.pending.length →\n    freshFuel ≥ s.work.pending.length →\n      (Experiments.MindContinuation.runProductive s.work.pending.length s).work.pending = [] ∧\n        Option.map (fun resumed => (Experiments.MindContinuation.runProductive s.work.pending.length resumed).work)\n            (Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) s.context freshFuel\n              freshAdmin) =\n          some (Experiments.MindContinuation.runProductive s.work.pending.length s).work\n'Experiments.MindContinuation.checkpoint_resume_preserves_continuation' depends on axioms: [propext]\nExperiments.MindContinuation.prefix_checkpoint_resume : ∀ (k : ℕ) (s : Experiments.MindContinuation.OperationalState)\n  (freshFuel freshAdmin : ℕ),\n  s.fuel ≥ s.work.pending.length →\n    freshFuel ≥ (Experiments.MindContinuation.runProductive k s).work.pending.length →\n      have mid := Experiments.MindContinuation.runProductive k s;\n      have n := mid.work.pending.length;\n      (Experiments.MindContinuation.runProductive (k + n) s).work.pending = [] ∧\n        Option.map (fun resumed => (Experiments.MindContinuation.runProductive n resumed).work)\n            (Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint mid) mid.context freshFuel\n              freshAdmin) =\n          some (Experiments.MindContinuation.runProductive (k + n) s).work\n'Experiments.MindContinuation.prefix_checkpoint_resume' depends on axioms: [propext]\nExperiments.MindContinuation.nonmatching_evidence_fixture : have start :=\n  { work := { account := 4, pending := [{ id := 7, value := false }], rule := true, receipts := [] }, fuel := 1,\n    context := 3, adminCount := 0 };\nExperiments.MindContinuation.productiveStep start =\n  some\n    {\n      work :=\n        { account := 4, pending := [], rule := true,\n          receipts := [{ before := 4, event := { id := 7, value := false }, rule := true, after := 4 }] },\n      fuel := 0, context := 3, adminCount := 0 }\n'Experiments.MindContinuation.nonmatching_evidence_fixture' does not depend on any axioms\nExperiments.MindContinuation.inconsistent_receipt_delta_fixture : have impossible :=\n  { before := 4, event := { id := 7, value := true }, rule := true, after := 4 };\n¬Experiments.MindContinuation.receiptConsistent impossible\n'Experiments.MindContinuation.inconsistent_receipt_delta_fixture' depends on axioms: [propext]\nExperiments.MindContinuation.dropping_rule_changes_continuation_fixture : have matching :=\n  { work := { account := 0, pending := [{ id := 1, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 5, adminCount := 0 };\nhave nonmatching :=\n  { work := { account := 0, pending := [{ id := 1, value := true }], rule := false, receipts := [] }, fuel := 1,\n    context := 5, adminCount := 0 };\nmatching.work.account = nonmatching.work.account ∧\n  matching.work.pending = nonmatching.work.pending ∧\n    (Experiments.MindContinuation.runProductive 1 matching).work.account = 1 ∧\n      (Experiments.MindContinuation.runProductive 1 nonmatching).work.account = 0\n'Experiments.MindContinuation.dropping_rule_changes_continuation_fixture' does not depend on any axioms\nExperiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture : have pending :=\n  { work := { account := 0, pending := [{ id := 2, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 4, adminCount := 0 };\nhave empty :=\n  { work := { account := 0, pending := [], rule := true, receipts := [] }, fuel := 1, context := 4, adminCount := 0 };\npending.work.account = empty.work.account ∧\n  (Experiments.MindContinuation.runProductive 1 pending).work.account = 1 ∧\n    (Experiments.MindContinuation.runProductive 1 empty).work.account = 0\n'Experiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture' does not depend on any axioms\nExperiments.MindContinuation.capsule_omits_operational_state_fixture : have work :=\n  { account := 2, pending := [{ id := 3, value := true }], rule := true, receipts := [] };\nhave first := { work := work, fuel := 1, context := 10, adminCount := 0 };\nhave second := { work := work, fuel := 8, context := 10, adminCount := 5 };\nExperiments.MindContinuation.checkpoint first = Experiments.MindContinuation.checkpoint second ∧ first ≠ second\n'Experiments.MindContinuation.capsule_omits_operational_state_fixture' does not depend on any axioms\nExperiments.MindContinuation.stale_context_rejected_fixture : have start :=\n  { work := { account := 2, pending := [], rule := true, receipts := [] }, fuel := 6, context := 10, adminCount := 3 };\nExperiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint start) 11 6 3 = none\n'Experiments.MindContinuation.stale_context_rejected_fixture' does not depend on any axioms\nExperiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture : have start :=\n  { work := { account := 0, pending := [{ id := 3, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 8, adminCount := 0 };\n∃ afterAdmin,\n  Experiments.MindContinuation.adminStep start = some afterAdmin ∧\n    afterAdmin.work = start.work ∧ afterAdmin.fuel = 0 ∧ Experiments.MindContinuation.productiveStep afterAdmin = none\n'Experiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture' does not depend on any axioms\nExperiments.MindContinuation.insufficient_fuel_leaves_pending_fixture : have start :=\n  {\n    work :=\n      { account := 0, pending := [{ id := 1, value := true }, { id := 2, value := true }], rule := true,\n        receipts := [] },\n    fuel := 1, context := 2, adminCount := 0 };\n(Experiments.MindContinuation.runProductive 2 start).work.pending = [{ id := 2, value := true }] ∧\n  (Experiments.MindContinuation.runProductive 2 start).work.account = 1\n'Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture' does not depend on any axioms\n",
-  "evidence_directory": "artifacts/mind-continuation-20260922-verified",
+  "evidence_directory": "artifacts/mind-continuation-publication-20260922",
   "recorded": true,
-  "elapsed_seconds": 133.922,
-  "finished_at": "2026-09-22T04:10:36.454292+00:00",
+  "elapsed_seconds": 122.266,
+  "finished_at": "2026-09-22T04:17:21.798388+00:00",
   "exit_status": 0,
   "dirty_after": true,
-  "worktree_status_after": "A  .github/workflows/mind-continuation.yml\nA  Audit/mind-v04-continuation/.gitattributes\nA  Audit/mind-v04-continuation/README.md\nA  Audit/mind-v04-continuation/REVIEW.md\nA  Audit/mind-v04-continuation/SOURCE-CORRESPONDENCE.md\nA  Audit/mind-v04-continuation/claims.json\nA  Audit/mind-v04-continuation/run.py\nA  Audit/mind-v04-continuation/source-excerpts.json\nA  Audit/mind-v04-continuation/source-manifest.json\nA  Experiments/MindContinuation.lean\nA  Experiments/MindContinuationAxioms.lean",
+  "worktree_status_after": "M  Audit/mind-v04-continuation/README.md",
   "receipt_guards": [
     "removed-declaration",
     "forbidden-axiom",
@@ -2584,6 +2584,6 @@
     "changed-signature",
     "added-allowed-axiom"
   ],
-  "execution_manifest_path": "artifacts/mind-continuation-20260922-verified/computation-manifest.json",
-  "computation_manifest_sha256": "59bcc99cca2f6fd515291f6bd7f2e0a7c594d58ccc2ec517dbe18ae244e66775"
+  "execution_manifest_path": "artifacts/mind-continuation-publication-20260922/computation-manifest.json",
+  "computation_manifest_sha256": "8795792d8c069aef2813256a81ad44eb6c7d78819306bbb8d8ecb44f946e1dc4"
 }

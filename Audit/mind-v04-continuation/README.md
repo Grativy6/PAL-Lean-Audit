@@ -58,7 +58,7 @@ Each declaration's exact printed signature and imported-axiom list are frozen in
 
 ## Scope, grant, and reopening
 
-This local proposal starts from `93d9c7811e833b57367d1939c862b08fd8d187bb`, the head of still-open PR #18 when work began. It does not modify that PR or treat it as merged. Christopher requested the next Lean experiment using MIND's pieces. The working grant is local source analysis, bounded implementation, verification, and review. No publication, release amendment, external action, or deployment follows from this experiment.
+This proposal starts from `93d9c7811e833b57367d1939c862b08fd8d187bb`, the head of still-open PR #18 when work began. It does not modify that PR or treat it as merged. Christopher first requested the next Lean experiment using MIND's pieces, then explicitly authorized repository publication and CI on 22 September 2026. The publication is a draft pull request based on PR #18's branch, keeping the two batches separately reviewable. This publishes the bounded audit and its evidence; publication of the MIND manuscript, merging, release amendments, and adoption remain separate decisions.
 
 Finish means checked model/proofs, source correspondence, reviewed countercases, and reproducible local receipts. Remaining implementation needs include a chosen byte format, actual storage/recovery, source authentication, external dependency checks, interruption/crash behavior, and a scheduler contract. MIND's wider account, empirical benefits, and CHARTER adapter remain outside the checked model. PAL's O04, O25, and D-FIRST-OCCURRENCE remain OPEN; unresolved possibility is not encoded as an object.
 
