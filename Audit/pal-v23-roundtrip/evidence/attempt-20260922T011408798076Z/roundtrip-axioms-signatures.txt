@@ -1,0 +1,81 @@
+@Experiments.Pal23Roundtrip.replayWork : {W : Type u_1} → {C : Type u_2} → (W → C) → (C → W) → W → W
+@Experiments.Pal23Roundtrip.capsule_cycle_idempotent : ∀ {W : Type u_1} {C : Type u_2} (freeze : W → C) (thaw : C → W),
+  (∀ (c : C), freeze (thaw c) = c) →
+    ∀ (w : W),
+      Experiments.Pal23Roundtrip.replayWork freeze thaw (Experiments.Pal23Roundtrip.replayWork freeze thaw w) =
+        Experiments.Pal23Roundtrip.replayWork freeze thaw w
+@Experiments.Pal23Roundtrip.work_roundtrip_iff_freeze_injective : ∀ {W : Type u_1} {C : Type u_2} (freeze : W → C)
+  (thaw : C → W),
+  (∀ (c : C), freeze (thaw c) = c) →
+    ((∀ (w : W), Experiments.Pal23Roundtrip.replayWork freeze thaw w = w) ↔ Function.Injective freeze)
+@Experiments.Pal23Roundtrip.source_roundtrip_freeze_injective : ∀ {W : Type u_1} {C : Type u_2} (freeze : W → C)
+  (thaw : C → W), (∀ (w : W), thaw (freeze w) = w) → Function.Injective freeze
+@Experiments.Pal23Roundtrip.source_roundtrip_preserves_answer : ∀ {W : Type u_1} {C : Type u_2} {Q : Type u_3}
+  (freeze : W → C) (thaw : C → W),
+  (∀ (w : W), thaw (freeze w) = w) →
+    ∀ (answer : W → Q) (w : W), answer (Experiments.Pal23Roundtrip.replayWork freeze thaw w) = answer w
+@Experiments.Pal23Roundtrip.same_suffix_under_work_roundtrip : ∀ {W : Type u_1} {C : Type u_2} {Q : Type u_3}
+  (freeze : W → C) (thaw : C → W),
+  (∀ (w : W), Experiments.Pal23Roundtrip.replayWork freeze thaw w = w) →
+    ∀ (suffix : W → Q) (w : W), suffix (Experiments.Pal23Roundtrip.replayWork freeze thaw w) = suffix w
+@Experiments.Pal23Roundtrip.chosen_answer_preserved_iff_fiber_constant : ∀ {W : Type u_1} {C : Type u_2} {Q : Type u_3}
+  (freeze : W → C) (thaw : C → W),
+  (∀ (w : W), freeze (thaw (freeze w)) = freeze w) →
+    ∀ (answer : W → Q),
+      (∀ (w : W), answer (Experiments.Pal23Roundtrip.replayWork freeze thaw w) = answer w) ↔
+        ∀ ⦃w w' : W⦄, freeze w = freeze w' → answer w = answer w'
+Experiments.Pal23Roundtrip.natBoolFreeze : Nat × Bool → Nat
+Experiments.Pal23Roundtrip.natBoolThaw : Nat → Nat × Bool
+Experiments.Pal23Roundtrip.natBool_capsule_roundtrip : ∀ (n : Nat),
+  Experiments.Pal23Roundtrip.natBoolFreeze (Experiments.Pal23Roundtrip.natBoolThaw n) = n
+Experiments.Pal23Roundtrip.natBool_stable_but_not_recovered : (∀ (w : Nat × Bool),
+    Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze
+        Experiments.Pal23Roundtrip.natBoolThaw
+        (Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze
+          Experiments.Pal23Roundtrip.natBoolThaw w) =
+      Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze
+        Experiments.Pal23Roundtrip.natBoolThaw w) ∧
+  Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze Experiments.Pal23Roundtrip.natBoolThaw
+      (0, true) ≠
+    (0, true)
+Experiments.Pal23Roundtrip.natBool_no_full_work_decoder : ¬∃ decode,
+    ∀ (w : Nat × Bool), decode (Experiments.Pal23Roundtrip.natBoolFreeze w) = w
+Experiments.Pal23Roundtrip.natBool_first_answer_preserved : ∀ (w : Nat × Bool),
+  (Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze Experiments.Pal23Roundtrip.natBoolThaw
+        w).fst =
+    w.fst
+Experiments.Pal23Roundtrip.natBool_second_answer_not_preserved : (Experiments.Pal23Roundtrip.replayWork
+      Experiments.Pal23Roundtrip.natBoolFreeze Experiments.Pal23Roundtrip.natBoolThaw (0, true)).snd ≠
+  true
+Experiments.Pal23Roundtrip.natBool_chosen_suffix_vs_other_suffix : (fun w => w.fst)
+      (Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze
+        Experiments.Pal23Roundtrip.natBoolThaw (0, true)) =
+    (fun w => w.fst) (0, true) ∧
+  (fun w => w.snd)
+      (Experiments.Pal23Roundtrip.replayWork Experiments.Pal23Roundtrip.natBoolFreeze
+        Experiments.Pal23Roundtrip.natBoolThaw (0, true)) ≠
+    (fun w => w.snd) (0, true)
+Experiments.Pal23Roundtrip.exact_work_roundtrip_not_ambient_capsule_roundtrip : (∀ (n : Nat), (n + 1).pred = n) ∧
+  (Nat.pred 0).succ ≠ 0
+'Experiments.Pal23Roundtrip.replayWork' does not depend on any axioms
+'Experiments.Pal23Roundtrip.capsule_cycle_idempotent' does not depend on any axioms
+'Experiments.Pal23Roundtrip.work_roundtrip_iff_freeze_injective' does not depend on any axioms
+'Experiments.Pal23Roundtrip.source_roundtrip_freeze_injective' does not depend on any axioms
+'Experiments.Pal23Roundtrip.source_roundtrip_preserves_answer' does not depend on any axioms
+'Experiments.Pal23Roundtrip.same_suffix_under_work_roundtrip' does not depend on any axioms
+'Experiments.Pal23Roundtrip.chosen_answer_preserved_iff_fiber_constant' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBoolFreeze' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBoolThaw' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_capsule_roundtrip' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_stable_but_not_recovered' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_no_full_work_decoder' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_first_answer_preserved' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_second_answer_not_preserved' does not depend on any axioms
+'Experiments.Pal23Roundtrip.natBool_chosen_suffix_vs_other_suffix' does not depend on any axioms
+'Experiments.Pal23Roundtrip.exact_work_roundtrip_not_ambient_capsule_roundtrip' depends on axioms: [propext]
+Experiments.Pal23Roundtrip.fiber_constant_does_not_validate_faulty_thaw : have freeze := id;
+have thaw := fun x => 0;
+have answer := id;
+(∀ ⦃n m : Nat⦄, freeze n = freeze m → answer n = answer m) ∧
+  answer (Experiments.Pal23Roundtrip.replayWork freeze thaw 1) ≠ answer 1
+'Experiments.Pal23Roundtrip.fiber_constant_does_not_validate_faulty_thaw' does not depend on any axioms
