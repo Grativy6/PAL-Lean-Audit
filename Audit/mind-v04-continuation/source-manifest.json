@@ -1,0 +1,18 @@
+{
+  "source_id": "MIND-v0.4-Draft",
+  "filename": "MIND_v0.4_Draft.pdf",
+  "sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad",
+  "bytes": 642032,
+  "pages": 36,
+  "identity_basis": "Exact user-supplied local PDF bytes; publication-candidate draft. Its intended DOI is not evidence of deposit or release identity.",
+  "source_in_repository": false,
+  "base_commit": "93d9c7811e833b57367d1939c862b08fd8d187bb",
+  "authority_ceiling": "Reduced local MIND-inspired Lean experiment only; no PAL amendment, source adoption, full conformance, authority grant, empirical result, or closure of PAL obligations.",
+  "extraction": {
+    "library": "pypdf",
+    "version": "6.10.0",
+    "comparison": "Unicode whitespace collapsed to single spaces; no other text normalization"
+  },
+  "intended_doi_as_printed": "10.5281/zenodo.22882309",
+  "publication_verified": false
+}

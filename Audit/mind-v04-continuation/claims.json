@@ -1,0 +1,1000 @@
+{
+  "module": "Experiments.MindContinuation",
+  "source_id": "MIND-v0.4-Draft",
+  "source_sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad",
+  "run_id": "local-mind-v04-continuation",
+  "inventory_scope": "All explicit top-level declarations; compiler-generated declarations are module-checked but not independently counted.",
+  "dependency_scope": "Named direct syntactic dependencies among inventoried declarations; imported Lean axioms are frozen separately and checked exactly. Library/toolchain identity is pinned by Lake.",
+  "claims": [
+    {
+      "id": "MIND-CONT-001",
+      "title": "Evidence",
+      "declaration": "Experiments.MindContinuation.Evidence",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "A supplied admitted item has an identifier and Boolean content.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-ADMISSION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.Evidence : Type",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Identifiers are labels, not authenticated or necessarily unique origins.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-002",
+      "title": "Receipt",
+      "declaration": "Experiments.MindContinuation.Receipt",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "A minimal processing record contains before-account, evidence, rule, and after-account.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Evidence"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.Receipt : Type",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Full MIND wake fields, source authentication, and inherited-history validity are not modeled.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-003",
+      "title": "receiptConsistent",
+      "declaration": "Experiments.MindContinuation.receiptConsistent",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "Internal consistency requires the after-account to equal the rule-selected count update from the before-account and recorded evidence.",
+      "source_refs": [
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Receipt"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.receiptConsistent : Experiments.MindContinuation.Receipt → Prop",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Internal arithmetic consistency does not establish source authenticity or warrant.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-004",
+      "title": "Work",
+      "declaration": "Experiments.MindContinuation.Work",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "Protected continuation state contains account, pending evidence, fixed rule, and retained receipts.",
+      "source_refs": [
+        "MIND-ACCOUNT",
+        "MIND-CONFIG",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Evidence",
+        "Experiments.MindContinuation.Receipt"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.Work : Type",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This record is a chosen reduced task state, not the complete relational MIND account.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-005",
+      "title": "OperationalState",
+      "declaration": "Experiments.MindContinuation.OperationalState",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "Working state combines protected Work with a current fuel budget, context version, and administration counter.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Work"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.OperationalState : Type",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Fuel is a stipulated natural-number budget, not measured energy or time; context is one supplied version.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-006",
+      "title": "Capsule",
+      "declaration": "Experiments.MindContinuation.Capsule",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "The capsule stores protected Work and its source context version.",
+      "source_refs": [
+        "MIND-RECOVERY",
+        "MIND-CARRY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Work"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.Capsule : Type",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The capsule is a mathematical record with no serialization, storage, or physical recovery guarantee.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-007",
+      "title": "queueProgress",
+      "declaration": "Experiments.MindContinuation.queueProgress",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "The remaining queue length is the declared task progress coordinate.",
+      "source_refs": [
+        "MIND-NOCHANGE",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.queueProgress : Experiments.MindContinuation.OperationalState → ℕ",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "A smaller queue does not imply greater understanding, warrant, or source quality.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-008",
+      "title": "checkpoint",
+      "declaration": "Experiments.MindContinuation.checkpoint",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "Checkpoint copies protected Work and the current context version into a capsule.",
+      "source_refs": [
+        "MIND-RECOVERY",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.Capsule"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.checkpoint : Experiments.MindContinuation.OperationalState →\n  Experiments.MindContinuation.Capsule",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The checkpoint operation has no modeled cost, storage failure, or crash behavior.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-009",
+      "title": "restore",
+      "declaration": "Experiments.MindContinuation.restore",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "Restoration returns the carried Work only when saved and supplied current versions agree, using separately supplied fuel and admin count.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-CARRY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "The context check compares saved and supplied current versions; it is not complete applicability or authority."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.Capsule"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.restore : Experiments.MindContinuation.Capsule →\n  ℕ → ℕ → ℕ → Option Experiments.MindContinuation.OperationalState",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Version equality checks one dependency only; resources and current authority are not authenticated.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-010",
+      "title": "productiveStep",
+      "declaration": "Experiments.MindContinuation.productiveStep",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "With positive fuel and a nonempty queue, one processing step removes the head, applies the fixed Boolean rule, appends a computed receipt, and spends one fuel unit.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-NOCHANGE",
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Receipt",
+        "Experiments.MindContinuation.OperationalState"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.productiveStep : Experiments.MindContinuation.OperationalState →\n  Option Experiments.MindContinuation.OperationalState",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Evidence is already admitted; no retrieval, source authentication, selection, or justified inference is implemented.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-011",
+      "title": "adminStep",
+      "declaration": "Experiments.MindContinuation.adminStep",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "With positive fuel, one administrative step spends one unit and increments the administration count while preserving Work and context.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.adminStep : Experiments.MindContinuation.OperationalState →\n  Option Experiments.MindContinuation.OperationalState",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This stipulated administrative operation is not a model of every possible administrative action.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-012",
+      "title": "runProductive",
+      "declaration": "Experiments.MindContinuation.runProductive",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "statement": "A bounded deterministic runner attempts at most its natural-number step bound, stopping when a productive step is unavailable.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.runProductive : ℕ →\n  Experiments.MindContinuation.OperationalState → Experiments.MindContinuation.OperationalState",
+      "countercase": "Definition only; missing-rule/pending, operating-state loss, invalid-delta, and starvation fixtures delimit what these choices support.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "No admin interleaving, new arrivals, changes of rule, or environmental changes occur inside this runner.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-013",
+      "title": "runProductive stable",
+      "declaration": "Experiments.MindContinuation.runProductive_stable",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "If no processing step is available, every bounded run returns the state unchanged.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_stable : ∀ (s : Experiments.MindContinuation.OperationalState) (n : ℕ),\n  Experiments.MindContinuation.productiveStep s = none → Experiments.MindContinuation.runProductive n s = s",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "No external changes or new resources occur inside the runner.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-014",
+      "title": "runProductive add",
+      "declaration": "Experiments.MindContinuation.runProductive_add",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "For all states and natural bounds k and n, running k+n attempts equals running k followed by n attempts, including early stopping.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.runProductive",
+        "Experiments.MindContinuation.runProductive_stable"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_add : ∀ (k n : ℕ) (s : Experiments.MindContinuation.OperationalState),\n  Experiments.MindContinuation.runProductive (k + n) s =\n    Experiments.MindContinuation.runProductive n (Experiments.MindContinuation.runProductive k s)",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Composition uses the same deterministic transition without outside interleaving.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-015",
+      "title": "adminStep preserves work",
+      "declaration": "Experiments.MindContinuation.adminStep_preserves_work",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Every successful modeled administrative step preserves the entire protected Work record.",
+      "source_refs": [
+        "MIND-CONDITIONS"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "A successful named modeled step is a hypothesis; availability is not inferred without its conditions."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.adminStep"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "@Experiments.MindContinuation.adminStep_preserves_work : ∀ {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.adminStep s = some next → next.work = s.work",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Equal protected work does not imply equal resources, equal operational history, or executable continuation.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-016",
+      "title": "adminStep preserves queueProgress",
+      "declaration": "Experiments.MindContinuation.adminStep_preserves_queueProgress",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Every successful modeled administrative step preserves remaining queue length.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "A successful named modeled step is a hypothesis; availability is not inferred without its conditions."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.queueProgress",
+        "Experiments.MindContinuation.adminStep",
+        "Experiments.MindContinuation.adminStep_preserves_work"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "@Experiments.MindContinuation.adminStep_preserves_queueProgress : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.adminStep s = some next →\n    Experiments.MindContinuation.queueProgress next = Experiments.MindContinuation.queueProgress s",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Progress preservation supplies no scheduler fairness or guarantee of future productive steps.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-017",
+      "title": "productiveStep consumes fuel",
+      "declaration": "Experiments.MindContinuation.productiveStep_consumes_fuel",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Every successful processing step leaves fuel exactly one below its input budget.",
+      "source_refs": [
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "A successful named modeled step is a hypothesis; availability is not inferred without its conditions."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "@Experiments.MindContinuation.productiveStep_consumes_fuel : ∀ {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next → next.fuel + 1 = s.fuel",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The unit cost is stipulated; it is not an empirical resource measurement.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-018",
+      "title": "productiveStep decreases queueProgress",
+      "declaration": "Experiments.MindContinuation.productiveStep_decreases_queueProgress",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Every successful processing step leaves exactly one fewer pending evidence item.",
+      "source_refs": [
+        "MIND-NOCHANGE",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "A successful named modeled step is a hypothesis; availability is not inferred without its conditions."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.queueProgress",
+        "Experiments.MindContinuation.productiveStep"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "@Experiments.MindContinuation.productiveStep_decreases_queueProgress : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next →\n    Experiments.MindContinuation.queueProgress next + 1 = Experiments.MindContinuation.queueProgress s",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This is finite queue progress, not evidence of a new distinction or improved understanding.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-019",
+      "title": "productiveStep retains receipt",
+      "declaration": "Experiments.MindContinuation.productiveStep_retains_receipt",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Every successful processing step appends a receipt tied to the actual head event, before-account, fixed rule, and after-account; its delta is internally consistent.",
+      "source_refs": [
+        "MIND-UPDATE",
+        "MIND-RETENTION",
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "A successful named modeled step is a hypothesis; availability is not inferred without its conditions."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.receiptConsistent",
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "@Experiments.MindContinuation.productiveStep_retains_receipt : ∀\n  {s next : Experiments.MindContinuation.OperationalState},\n  Experiments.MindContinuation.productiveStep s = some next →\n    ∃ event remaining receipt,\n      s.work.pending = event :: remaining ∧\n        next.work.pending = remaining ∧\n          next.work.receipts = s.work.receipts ++ [receipt] ∧\n            receipt.before = s.work.account ∧\n              receipt.event = event ∧\n                receipt.rule = s.work.rule ∧\n                  receipt.after = next.work.account ∧ Experiments.MindContinuation.receiptConsistent receipt",
+      "countercase": "inconsistent_receipt_delta_fixture rejects a delta unsupported by its recorded event/rule; consistency cannot authenticate a source.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The theorem checks the newly appended record, not the truth of evidence or consistency/authenticity of arbitrary prior history.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-020",
+      "title": "runProductive completes aux",
+      "declaration": "Experiments.MindContinuation.runProductive_completes_aux",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "For any finite queue, if both the step-attempt bound and fuel cover its length, the runner ends with an empty pending queue.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Receipt",
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_completes_aux : ∀ (n : ℕ)\n  (s : Experiments.MindContinuation.OperationalState),\n  s.work.pending.length ≤ n →\n    s.fuel ≥ s.work.pending.length → (Experiments.MindContinuation.runProductive n s).work.pending = []",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Completion assumes no interleaving, added evidence, or changed processing rule; empty queue means only this task is finished.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-021",
+      "title": "runProductive work independent aux",
+      "declaration": "Experiments.MindContinuation.runProductive_work_independent_aux",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "Two runs with equal initial Work, the same attempt bound covering the queue, and individually sufficient fuel end with equal Work, even when operational fields differ.",
+      "source_refs": [
+        "MIND-CONFIG",
+        "MIND-CONTINUITY",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Receipt",
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_work_independent_aux : ∀ (n : ℕ)\n  (s t : Experiments.MindContinuation.OperationalState),\n  s.work = t.work →\n    s.work.pending.length ≤ n →\n      s.fuel ≥ s.work.pending.length →\n        t.fuel ≥ t.work.pending.length →\n          (Experiments.MindContinuation.runProductive n s).work = (Experiments.MindContinuation.runProductive n t).work",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The deterministic runner does not consult context/admin count; contextual applicability still needs the separate restore guard.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-022",
+      "title": "runProductive preserves sufficient fuel",
+      "declaration": "Experiments.MindContinuation.runProductive_preserves_sufficient_fuel",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "If initial fuel covers the pending queue, the same inequality holds after every bounded productive prefix.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.queueProgress",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.runProductive",
+        "Experiments.MindContinuation.productiveStep_consumes_fuel",
+        "Experiments.MindContinuation.productiveStep_decreases_queueProgress"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_preserves_sufficient_fuel : ∀ (k : ℕ)\n  (s : Experiments.MindContinuation.OperationalState),\n  s.fuel ≥ s.work.pending.length →\n    (Experiments.MindContinuation.runProductive k s).fuel ≥\n      (Experiments.MindContinuation.runProductive k s).work.pending.length",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Each successful step costs one fuel unit and removes one event; administration or different costs need another proof.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-023",
+      "title": "runProductive completes",
+      "declaration": "Experiments.MindContinuation.runProductive_completes",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "A run bound equal to the initial queue length completes it whenever fuel covers that length.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.runProductive",
+        "Experiments.MindContinuation.runProductive_completes_aux"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.runProductive_completes : ∀ (s : Experiments.MindContinuation.OperationalState),\n  s.fuel ≥ s.work.pending.length →\n    (Experiments.MindContinuation.runProductive s.work.pending.length s).work.pending = []",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "No availability of the required fuel or real-time termination is proved for an external system.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-024",
+      "title": "checkpoint restore matching context",
+      "declaration": "Experiments.MindContinuation.checkpoint_restore_matching_context",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "For any state, checkpoint then restoration under its matching context returns exactly its Work with the caller-supplied fuel and admin count.",
+      "source_refs": [
+        "MIND-RECOVERY",
+        "MIND-CARRY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "The context check compares saved and supplied current versions; it is not complete applicability or authority."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint",
+        "Experiments.MindContinuation.restore"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.checkpoint_restore_matching_context : ∀ (s : Experiments.MindContinuation.OperationalState)\n  (freshFuel freshAdmin : ℕ),\n  Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) s.context freshFuel freshAdmin =\n    some { work := s.work, fuel := freshFuel, context := s.context, adminCount := freshAdmin }",
+      "countercase": "stale_context_rejected_fixture rejects saved version 10 at supplied version 11; equality alone is not an applicability certificate.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Protected-work preservation does not restore excluded operating state or validate general semantic serviceability.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-025",
+      "title": "checkpoint restore rejects context mismatch",
+      "declaration": "Experiments.MindContinuation.checkpoint_restore_rejects_context_mismatch",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "Checkpoint restoration returns none when saved and supplied current context versions differ.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-CARRY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "The context check compares saved and supplied current versions; it is not complete applicability or authority."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint",
+        "Experiments.MindContinuation.restore"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.checkpoint_restore_rejects_context_mismatch : ∀\n  (s : Experiments.MindContinuation.OperationalState) (currentContext freshFuel freshAdmin : ℕ),\n  s.context ≠ currentContext →\n    Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) currentContext freshFuel\n        freshAdmin =\n      none",
+      "countercase": "stale_context_rejected_fixture rejects saved version 10 at supplied version 11; equality alone is not an applicability certificate.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "A supplied version mismatch is rejected; correctness, freshness, and completeness of the supplied version are not proved.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-026",
+      "title": "checkpoint resume preserves continuation",
+      "declaration": "Experiments.MindContinuation.checkpoint_resume_preserves_continuation",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "Restoring unfinished protected work under its matching context and then running with sufficient fresh fuel yields the same final Work as uninterrupted processing with sufficient original fuel; the finite queue completes.",
+      "source_refs": [
+        "MIND-CONFIG",
+        "MIND-CONTINUITY",
+        "MIND-CONDITIONS",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint",
+        "Experiments.MindContinuation.restore",
+        "Experiments.MindContinuation.runProductive",
+        "Experiments.MindContinuation.runProductive_work_independent_aux",
+        "Experiments.MindContinuation.runProductive_completes",
+        "Experiments.MindContinuation.checkpoint_restore_matching_context"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.checkpoint_resume_preserves_continuation : ∀\n  (s : Experiments.MindContinuation.OperationalState) (freshFuel freshAdmin : ℕ),\n  s.fuel ≥ s.work.pending.length →\n    freshFuel ≥ s.work.pending.length →\n      (Experiments.MindContinuation.runProductive s.work.pending.length s).work.pending = [] ∧\n        Option.map (fun resumed => (Experiments.MindContinuation.runProductive s.work.pending.length resumed).work)\n            (Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint s) s.context freshFuel\n              freshAdmin) =\n          some (Experiments.MindContinuation.runProductive s.work.pending.length s).work",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This is in-memory deterministic continuation equality; actual serialization, storage, process restart, interrupts, and other current dependencies remain unverified.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-027",
+      "title": "prefix checkpoint resume",
+      "declaration": "Experiments.MindContinuation.prefix_checkpoint_resume",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "statement": "After any bounded prefix k, checkpointing its resulting state and restoring under its matching version with enough fresh fuel yields the same final Work as uninterrupted execution for k plus the remaining queue length from the original state; both queues complete.",
+      "source_refs": [
+        "MIND-CONTINUITY",
+        "MIND-CONDITIONS",
+        "MIND-CONFIG",
+        "MIND-BUDGET"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied.",
+        "No administrative interleaving, new evidence, changed rule, or environmental changes inside the runner; exact fuel and attempt hypotheses are in expected_signature.",
+        "The context check compares saved and supplied current versions; it is not complete applicability or authority."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint",
+        "Experiments.MindContinuation.restore",
+        "Experiments.MindContinuation.runProductive",
+        "Experiments.MindContinuation.runProductive_work_independent_aux",
+        "Experiments.MindContinuation.runProductive_completes",
+        "Experiments.MindContinuation.checkpoint_restore_matching_context",
+        "Experiments.MindContinuation.runProductive_add",
+        "Experiments.MindContinuation.runProductive_preserves_sufficient_fuel"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.prefix_checkpoint_resume : ∀ (k : ℕ) (s : Experiments.MindContinuation.OperationalState)\n  (freshFuel freshAdmin : ℕ),\n  s.fuel ≥ s.work.pending.length →\n    freshFuel ≥ (Experiments.MindContinuation.runProductive k s).work.pending.length →\n      have mid := Experiments.MindContinuation.runProductive k s;\n      have n := mid.work.pending.length;\n      (Experiments.MindContinuation.runProductive (k + n) s).work.pending = [] ∧\n        Option.map (fun resumed => (Experiments.MindContinuation.runProductive n resumed).work)\n            (Experiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint mid) mid.context freshFuel\n              freshAdmin) =\n          some (Experiments.MindContinuation.runProductive (k + n) s).work",
+      "countercase": "Fuel-starvation fixtures defeat dropping budget conditions; missing-rule/pending fixtures defeat weaker protected projections.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Original fuel covers the original queue and fresh fuel covers the remainder. This is an in-memory model, not byte storage, physical process/crash recovery, or a general scheduler.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-028",
+      "title": "nonmatching evidence fixture",
+      "declaration": "Experiments.MindContinuation.nonmatching_evidence_fixture",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "A concrete nonmatching event leaves account 4 unchanged, removes that event from the queue, appends its no-change receipt, and spends the last fuel unit.",
+      "source_refs": [
+        "MIND-NOCHANGE",
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.nonmatching_evidence_fixture : have start :=\n  { work := { account := 4, pending := [{ id := 7, value := false }], rule := true, receipts := [] }, fuel := 1,\n    context := 3, adminCount := 0 };\nExperiments.MindContinuation.productiveStep start =\n  some\n    {\n      work :=\n        { account := 4, pending := [], rule := true,\n          receipts := [{ before := 4, event := { id := 7, value := false }, rule := true, after := 4 }] },\n      fuel := 0, context := 3, adminCount := 0 }",
+      "countercase": "Positive no-account-change trace witness; no claim that every unchanged-account operation advances a task.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This is one computed witness; it is not a universal claim that every no-change operation advances a task.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-029",
+      "title": "inconsistent receipt delta fixture",
+      "declaration": "Experiments.MindContinuation.inconsistent_receipt_delta_fixture",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "A concrete receipt claiming an increment from a nonmatching event fails the internal consistency predicate.",
+      "source_refs": [
+        "MIND-ATTRIBUTION"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Receipt",
+        "Experiments.MindContinuation.receiptConsistent"
+      ],
+      "expected_axioms": [
+        "propext"
+      ],
+      "expected_signature": "Experiments.MindContinuation.inconsistent_receipt_delta_fixture : have impossible :=\n  { before := 4, event := { id := 7, value := true }, rule := true, after := 4 };\n¬Experiments.MindContinuation.receiptConsistent impossible",
+      "countercase": "inconsistent_receipt_delta_fixture rejects a delta unsupported by its recorded event/rule; consistency cannot authenticate a source.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Passing the predicate still does not authenticate the recorded input or rule.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-030",
+      "title": "dropping rule changes continuation fixture",
+      "declaration": "Experiments.MindContinuation.dropping_rule_changes_continuation_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "statement": "Two states with the same account and pending event but opposite rules produce final account values 1 and 0.",
+      "source_refs": [
+        "MIND-CONFIG",
+        "MIND-SNAPSHOT",
+        "MIND-RECOVERY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.dropping_rule_changes_continuation_fixture : have matching :=\n  { work := { account := 0, pending := [{ id := 1, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 5, adminCount := 0 };\nhave nonmatching :=\n  { work := { account := 0, pending := [{ id := 1, value := true }], rule := false, receipts := [] }, fuel := 1,\n    context := 5, adminCount := 0 };\nmatching.work.account = nonmatching.work.account ∧\n  matching.work.pending = nonmatching.work.pending ∧\n    (Experiments.MindContinuation.runProductive 1 matching).work.account = 1 ∧\n      (Experiments.MindContinuation.runProductive 1 nonmatching).work.account = 0",
+      "countercase": "This declaration constructs the checked countercase to the stronger sufficiency or preservation claim identified in its statement.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The countercase refutes sufficiency of this rule-erasing projection, not every conceivable summary or alternative continuation model.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-031",
+      "title": "dropping pending from capsule changes continuation fixture",
+      "declaration": "Experiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "statement": "An account-only summary merges an empty queue and a pending matching event whose continuations produce different final accounts.",
+      "source_refs": [
+        "MIND-RECOVERY",
+        "MIND-SNAPSHOT"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture : have pending :=\n  { work := { account := 0, pending := [{ id := 2, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 4, adminCount := 0 };\nhave empty :=\n  { work := { account := 0, pending := [], rule := true, receipts := [] }, fuel := 1, context := 4, adminCount := 0 };\npending.work.account = empty.work.account ∧\n  (Experiments.MindContinuation.runProductive 1 pending).work.account = 1 ∧\n    (Experiments.MindContinuation.runProductive 1 empty).work.account = 0",
+      "countercase": "This declaration constructs the checked countercase to the stronger sufficiency or preservation claim identified in its statement.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The countercase concerns a declared missing pending event; it is not an impossibility claim about all compression.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-032",
+      "title": "capsule omits operational state fixture",
+      "declaration": "Experiments.MindContinuation.capsule_omits_operational_state_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "statement": "Two distinct states with equal Work and context but different fuel and administrative counts yield identical capsules.",
+      "source_refs": [
+        "MIND-CONTINUITY",
+        "MIND-CONDITIONS",
+        "MIND-RECOVERY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.Work",
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.capsule_omits_operational_state_fixture : have work :=\n  { account := 2, pending := [{ id := 3, value := true }], rule := true, receipts := [] };\nhave first := { work := work, fuel := 1, context := 10, adminCount := 0 };\nhave second := { work := work, fuel := 8, context := 10, adminCount := 5 };\nExperiments.MindContinuation.checkpoint first = Experiments.MindContinuation.checkpoint second ∧ first ≠ second",
+      "countercase": "This declaration constructs the checked countercase to the stronger sufficiency or preservation claim identified in its statement.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This collision excludes whole-state recovery from this capsule alone while leaving protected Work recovery intact.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-033",
+      "title": "stale context rejected fixture",
+      "declaration": "Experiments.MindContinuation.stale_context_rejected_fixture",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "statement": "A capsule saved at version 10 is rejected at supplied current version 11.",
+      "source_refs": [
+        "MIND-CONDITIONS",
+        "MIND-CARRY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.checkpoint",
+        "Experiments.MindContinuation.restore"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.stale_context_rejected_fixture : have start :=\n  { work := { account := 2, pending := [], rule := true, receipts := [] }, fuel := 6, context := 10, adminCount := 3 };\nExperiments.MindContinuation.restore (Experiments.MindContinuation.checkpoint start) 11 6 3 = none",
+      "countercase": "stale_context_rejected_fixture rejects saved version 10 at supplied version 11; equality alone is not an applicability certificate.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "Version numbers are supplied; the model does not prove they track the actual world or all dependencies.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-034",
+      "title": "admin exhausts fuel and starves fixture",
+      "declaration": "Experiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "statement": "One administrative step preserves a one-item Work record but spends the only fuel unit, so the next productive step is unavailable.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONDITIONS"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.productiveStep",
+        "Experiments.MindContinuation.adminStep"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture : have start :=\n  { work := { account := 0, pending := [{ id := 3, value := true }], rule := true, receipts := [] }, fuel := 1,\n    context := 8, adminCount := 0 };\n∃ afterAdmin,\n  Experiments.MindContinuation.adminStep start = some afterAdmin ∧\n    afterAdmin.work = start.work ∧ afterAdmin.fuel = 0 ∧ Experiments.MindContinuation.productiveStep afterAdmin = none",
+      "countercase": "This declaration constructs the checked countercase to the stronger sufficiency or preservation claim identified in its statement.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "This is a resource-starvation witness, not a universal liveness or scheduling theorem.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    },
+    {
+      "id": "MIND-CONT-035",
+      "title": "insufficient fuel leaves pending fixture",
+      "declaration": "Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "statement": "A two-item matching queue with one fuel unit retains its second event and reaches account 1 despite two allowed attempts.",
+      "source_refs": [
+        "MIND-BUDGET",
+        "MIND-CONTINUITY"
+      ],
+      "assumptions": [
+        "Exact Lean natural-number arithmetic, Boolean matching, and finite lists in this reduced model.",
+        "Evidence is already admitted; identifiers, initial history, context version, and budgets are supplied."
+      ],
+      "dependencies": [
+        "Experiments.MindContinuation.OperationalState",
+        "Experiments.MindContinuation.runProductive"
+      ],
+      "expected_axioms": [],
+      "expected_signature": "Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture : have start :=\n  {\n    work :=\n      { account := 0, pending := [{ id := 1, value := true }, { id := 2, value := true }], rule := true,\n        receipts := [] },\n    fuel := 1, context := 2, adminCount := 0 };\n(Experiments.MindContinuation.runProductive 2 start).work.pending = [{ id := 2, value := true }] ∧\n  (Experiments.MindContinuation.runProductive 2 start).work.account = 1",
+      "countercase": "This declaration constructs the checked countercase to the stronger sufficiency or preservation claim identified in its statement.",
+      "authority_ceiling": "Only this exact reduced MIND-inspired Lean statement; no full MIND/PAL proof, physical recovery, source authenticity, empirical benefit, authority, or adoption.",
+      "residual": "The fixture does not characterize every insufficient-budget case or real implementation cost.",
+      "reopening": "Reopen if this declaration, its typed dependencies, protected projection, event/rule semantics, source interpretation, or resource/continuation conditions change."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+import Experiments.MindContinuation
+
+/-! Fully qualified signature and imported-axiom inventory for the bounded MIND continuation realization. -/
+
+#check @Experiments.MindContinuation.Evidence
+#print axioms Experiments.MindContinuation.Evidence
+
+#check @Experiments.MindContinuation.Receipt
+#print axioms Experiments.MindContinuation.Receipt
+
+#check @Experiments.MindContinuation.receiptConsistent
+#print axioms Experiments.MindContinuation.receiptConsistent
+
+#check @Experiments.MindContinuation.Work
+#print axioms Experiments.MindContinuation.Work
+
+#check @Experiments.MindContinuation.OperationalState
+#print axioms Experiments.MindContinuation.OperationalState
+
+#check @Experiments.MindContinuation.Capsule
+#print axioms Experiments.MindContinuation.Capsule
+
+#check @Experiments.MindContinuation.queueProgress
+#print axioms Experiments.MindContinuation.queueProgress
+
+#check @Experiments.MindContinuation.checkpoint
+#print axioms Experiments.MindContinuation.checkpoint
+
+#check @Experiments.MindContinuation.restore
+#print axioms Experiments.MindContinuation.restore
+
+#check @Experiments.MindContinuation.productiveStep
+#print axioms Experiments.MindContinuation.productiveStep
+
+#check @Experiments.MindContinuation.adminStep
+#print axioms Experiments.MindContinuation.adminStep
+
+#check @Experiments.MindContinuation.runProductive
+#print axioms Experiments.MindContinuation.runProductive
+
+#check @Experiments.MindContinuation.runProductive_stable
+#print axioms Experiments.MindContinuation.runProductive_stable
+
+#check @Experiments.MindContinuation.runProductive_add
+#print axioms Experiments.MindContinuation.runProductive_add
+
+#check @Experiments.MindContinuation.adminStep_preserves_work
+#print axioms Experiments.MindContinuation.adminStep_preserves_work
+
+#check @Experiments.MindContinuation.adminStep_preserves_queueProgress
+#print axioms Experiments.MindContinuation.adminStep_preserves_queueProgress
+
+#check @Experiments.MindContinuation.productiveStep_consumes_fuel
+#print axioms Experiments.MindContinuation.productiveStep_consumes_fuel
+
+#check @Experiments.MindContinuation.productiveStep_decreases_queueProgress
+#print axioms Experiments.MindContinuation.productiveStep_decreases_queueProgress
+
+#check @Experiments.MindContinuation.productiveStep_retains_receipt
+#print axioms Experiments.MindContinuation.productiveStep_retains_receipt
+
+#check @Experiments.MindContinuation.runProductive_completes_aux
+#print axioms Experiments.MindContinuation.runProductive_completes_aux
+
+#check @Experiments.MindContinuation.runProductive_work_independent_aux
+#print axioms Experiments.MindContinuation.runProductive_work_independent_aux
+
+#check @Experiments.MindContinuation.runProductive_preserves_sufficient_fuel
+#print axioms Experiments.MindContinuation.runProductive_preserves_sufficient_fuel
+
+#check @Experiments.MindContinuation.runProductive_completes
+#print axioms Experiments.MindContinuation.runProductive_completes
+
+#check @Experiments.MindContinuation.checkpoint_restore_matching_context
+#print axioms Experiments.MindContinuation.checkpoint_restore_matching_context
+
+#check @Experiments.MindContinuation.checkpoint_restore_rejects_context_mismatch
+#print axioms Experiments.MindContinuation.checkpoint_restore_rejects_context_mismatch
+
+#check @Experiments.MindContinuation.checkpoint_resume_preserves_continuation
+#print axioms Experiments.MindContinuation.checkpoint_resume_preserves_continuation
+
+#check @Experiments.MindContinuation.prefix_checkpoint_resume
+#print axioms Experiments.MindContinuation.prefix_checkpoint_resume
+
+#check @Experiments.MindContinuation.nonmatching_evidence_fixture
+#print axioms Experiments.MindContinuation.nonmatching_evidence_fixture
+
+#check @Experiments.MindContinuation.inconsistent_receipt_delta_fixture
+#print axioms Experiments.MindContinuation.inconsistent_receipt_delta_fixture
+
+#check @Experiments.MindContinuation.dropping_rule_changes_continuation_fixture
+#print axioms Experiments.MindContinuation.dropping_rule_changes_continuation_fixture
+
+#check @Experiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture
+#print axioms Experiments.MindContinuation.dropping_pending_from_capsule_changes_continuation_fixture
+
+#check @Experiments.MindContinuation.capsule_omits_operational_state_fixture
+#print axioms Experiments.MindContinuation.capsule_omits_operational_state_fixture
+
+#check @Experiments.MindContinuation.stale_context_rejected_fixture
+#print axioms Experiments.MindContinuation.stale_context_rejected_fixture
+
+#check @Experiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture
+#print axioms Experiments.MindContinuation.admin_exhausts_fuel_and_starves_fixture
+
+#check @Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture
+#print axioms Experiments.MindContinuation.insufficient_fuel_leaves_pending_fixture
