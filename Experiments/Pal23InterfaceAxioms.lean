@@ -1,0 +1,21 @@
+import Experiments.Pal23Interface
+
+#check @Experiments.Pal23Interface.lostDistinctions
+#check @Experiments.Pal23Interface.labelKernel
+#check @Experiments.Pal23Interface.joint_label_lost_eq_intersection
+#check @Experiments.Pal23Interface.trace_postprocess_lost_subset
+#check @Experiments.Pal23Interface.redundant_trace_restatement_lost_eq
+#check @Experiments.Pal23Interface.question_coarsening_lost_subset
+#check @Experiments.Pal23Interface.question_coarsening_strict_countercase
+#check @Experiments.Pal23Interface.xor_joint_trace_strict_sufficiency_fixture
+#check @Experiments.Pal23Interface.finite_label_lower_bound
+
+#print axioms Experiments.Pal23Interface.lostDistinctions
+#print axioms Experiments.Pal23Interface.labelKernel
+#print axioms Experiments.Pal23Interface.joint_label_lost_eq_intersection
+#print axioms Experiments.Pal23Interface.trace_postprocess_lost_subset
+#print axioms Experiments.Pal23Interface.redundant_trace_restatement_lost_eq
+#print axioms Experiments.Pal23Interface.question_coarsening_lost_subset
+#print axioms Experiments.Pal23Interface.question_coarsening_strict_countercase
+#print axioms Experiments.Pal23Interface.xor_joint_trace_strict_sufficiency_fixture
+#print axioms Experiments.Pal23Interface.finite_label_lower_bound

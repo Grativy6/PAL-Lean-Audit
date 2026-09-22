@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "lane": "pal-v23-coverage",
+  "predecessor_head": "71ef6bbb604664a1b5f8bce6ade08939e13bd286",
+  "identity_basis": "Exact supplied local PAL v2.3 DOCX bytes; no new release or adoption asserted.",
+  "sources": [
+    {
+      "id": "PAL-v2.3-Spine",
+      "filename": "PAL_v2.3_Mechanical_Structural_Spine.docx",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "bytes": 55325,
+      "canonical_paragraph_count": 1199,
+      "source_in_repository": false
+    },
+    {
+      "id": "PAL-v2.3-C",
+      "filename": "PAL_v2.3-C_Compatibility_Note.docx",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "bytes": 37100,
+      "canonical_paragraph_count": 710,
+      "source_in_repository": false
+    },
+    {
+      "id": "PAL-v2.3-L",
+      "filename": "PAL_v2.3-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "bytes": 56780,
+      "canonical_paragraph_count": 1483,
+      "source_in_repository": false
+    },
+    {
+      "id": "PAL-v2.3-M",
+      "filename": "PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "bytes": 980340,
+      "canonical_paragraph_count": 1963,
+      "source_in_repository": false
+    },
+    {
+      "id": "PAL-v2.3-T",
+      "filename": "PAL_v2.3-T_Conformance_Tests.docx",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "bytes": 75493,
+      "canonical_paragraph_count": 1610,
+      "source_in_repository": false
+    }
+  ],
+  "source_excerpts": "Audit/pal-v23-roundtrip/source-excerpts.json",
+  "source_excerpts_sha256": "bc56373bc85579cc712e220287a454284191f039d4018dac84a3174dd43808a9",
+  "context_file": "Audit/pal-v23-coverage/potential-source-excerpts.json",
+  "context_sha256": "3085559c8753b9756991ea62cd4325fd44b3fe0751494c84b479be9339ad20d1",
+  "source_scope": "Discussed Atlas interface, finite trace-replay and cadence gaps; A12 abstract roundtrips retained from prior receipt. Additional source context supports a separate unimplemented candidate list.",
+  "authority_ceiling": "Bounded mathematical evidence and declared model tests only; no full PAL conformance, operational persistence, authority grant, source amendment, PAL v2.3.1 release or source-obligation closure."
+}

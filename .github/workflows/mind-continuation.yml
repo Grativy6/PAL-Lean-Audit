@@ -1,0 +1,46 @@
+name: MIND v0.4 continuation bounded Lean receipt
+on:
+  pull_request:
+    paths:
+      - 'Experiments/**'
+      - 'Audit/**'
+      - 'PAL/**'
+      - 'PALLeanAudit.lean'
+      - 'PAL.lean'
+      - 'Experiments.lean'
+      - 'Audit.lean'
+      - 'scripts/**'
+      - 'docs/REPORTING.md'
+      - 'docs/generated/**'
+      - 'AGENTS.md'
+      - 'lean-toolchain'
+      - 'lake-manifest.json'
+      - 'lakefile.lean'
+      - '.gitattributes'
+      - '.github/workflows/**'
+permissions:
+  contents: read
+jobs:
+  mind-continuation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
+        with:
+          build: false
+          leanchecker: false
+          use-mathlib-cache: true
+      - run: python3 Audit/mind-v04-continuation/run.py --check-inputs
+      - run: python3 Audit/mind-v04-continuation/run.py --check
+      - run: python3 Audit/mind-v04-continuation/run.py --replay --lake lake --output-dir artifacts/mind-continuation-ci
+        env:
+          MIND_CONTINUATION_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: mind-continuation-receipts
+          if-no-files-found: error
+          path: artifacts/mind-continuation-ci/

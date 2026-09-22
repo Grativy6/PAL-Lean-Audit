@@ -1,0 +1,26 @@
+# Wider PAL v2.3 audit candidates
+
+These are proposed later batches, outside the selected interface/A2/A12/A13 additions. They are not executed results, prerequisites for a clarification release, or evidence of defects in PAL. The table identifies v2.3-specific follow-on coverage; earlier generic algebra keeps its existing credit.
+
+All paragraph addresses below refer to the exact Atlas byte identity in `source-manifest.json`. The cited card ranges are preserved in `potential-source-excerpts.json` so the proposal has a stable source handle. This is a targeted source review, not an exhaustive all-claims inventory.
+
+| Priority | Source target | Concrete possible batch | Scope and existing overlap |
+|---|---|---|---|
+| 1 | **M-A3-GRAPH**, P0627–P0641; finite pairgraph/pass fixture | A finite roster with typed edges, diagonal/nonloop split, composable paths, boundary checks and the specified complete comparison pass; check pair count, pass invariant and reversal. | P0641 names fixed-roster complete-graph checks. The new three-coordinate replay does not establish a full pairgraph pass invariant or enumerate all ordered pairs. T61 would need its own direct TestReceipt mapping and source snapshot before claiming that fixture complete. |
+| 2 | **M-A14-SLACK**, P1047–P1067 | Exact rational or integer interval classification; both tolerance endpoints; unresolved intervals crossing a boundary; monotone resource consumption within an epoch; separate top-up epochs. | Arithmetic and ledger-state fixtures only. A successful interval classification cannot establish a real grant or reset spent resources. Current CHARTER proofs do not supply this budget/epoch model. |
+| 3 | **M-A5-DEP**, P0687–P0701 | An admitted witness pair that changes the update result; a function that ignores its feedback argument; distinguish admitted reachable inputs from unavailable witnesses. | Extensional dependence, with admitted-domain and lineage conditions visible. No causal agency conclusion follows. No matching existing PAL feedback-witness implementation was found in the current audit search. |
+| 4 | **M-A9-QUOT**, P0807–P0821 | A small deterministic task with observations over every allowed continuation; equivalence laws, right congruence, reachable-class decoder and task-mutation countercases. | Earlier PAL and BRIDGE fiber/decoder lemmas are related. They do not supply continuation-defined equivalence, continuation closure or task-machine minimality. Minimality would need its exact additional premises. |
+| 5 | **M-GEN-COVER**, P1323–P1329 | Enumerate an explicitly finite generator's complete input/seed/schedule domain; show why omitting a schedule leaves coverage unearned; enlarge the target domain and keep the enlarged obligation open. | Generic answer-recovery results do not certify generator coverage. Failure to generate an object must not be reported as impossibility. Closure stays local to the declared finite domain. |
+| 6 | **M-A1-QSPLIT**, P1354–P1377 | Rational identities for `(P+q)/2` and `(P-q)/2`; `P=q` boundary; odd/even grid cases; absent or mismatched alignment witnesses. | Exact arithmetic is feasible, but readable A1 distinction still requires the supplied alignment and resolution contract. CHARTER arithmetic is not automatically this card's receipt. Fixed-resolution asymptotics are a separate claim. |
+| 7 | **M-RNBW-WEAVE**, P1728–P1740 | Two ordered histories with equal endpoint but different order/sign receipts; deletion and corruption countercases. | Shell arithmetic already overlaps CHARTER. The new target would be history retention and loss, not recounting the endpoint formula. Any logarithmic extension must retain its dimensionless-input restriction. |
+| 8 | **M-COMP-NOHIDE**, P1336–P1344 | Carefully chosen completion/limit counterfixtures with finite observations, frame and quantifiers fixed. | More demanding. The source already warns that finite floors do not identify a completion. A finite fixture would not close functional-analysis or dynamic-frame questions; this should be a separately scoped research batch. |
+
+## Boundaries that deserve their own inventory
+
+The typed return/export family **M-RETURN-PROJ**, P1410–P1436, is already in the primary source snapshot. A systematic test of its typed predicates, selected projection, scope mutation and adapter requirements would complement the answer-recovery work. Earlier A0/source-fiber and decoder proofs cover individual relations, not every boundary-role adapter across the v2.3 cards. A future registry sweep should enumerate its native types before making a completeness claim.
+
+Multi-parent account semantics remain an explicitly open source question. A future audit could check rejection under the existing single-parent core or examine a clearly unadopted extension. It should not manufacture a positive core conformance claim by choosing a convenient multi-parent encoding.
+
+## Suggested next batch
+
+The finite pairgraph/pass fixture is the closest continuation of this replay work. Slack/epoch bookkeeping and admitted feedback dependence are good subsequent bounded batches. The remaining items can be selected individually; none needs to be silently absorbed into the present receipt or the planned v2.3.1 wording.

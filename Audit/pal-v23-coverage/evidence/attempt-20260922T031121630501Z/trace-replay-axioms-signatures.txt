@@ -1,0 +1,77 @@
+@Experiments.Pal23TraceReplay.runFinite : {I : Type u_1} →
+  {S : Type u_2} → {B : Type u_3} → (I → S → S × B) → List I → S → S × List (I × B)
+@Experiments.Pal23TraceReplay.undoFinite : {I : Type u_1} →
+  {S : Type u_2} → {B : Type u_3} → (I → S → B → S) → List (I × B) → S → S
+@Experiments.Pal23TraceReplay.undoFinite_runFinite : ∀ {I : Type u_1} {S : Type u_2} {B : Type u_3}
+  (step : I → S → S × B) (undo : I → S → B → S),
+  (∀ (site : I) (state : S), undo site (step site state).1 (step site state).2 = state) →
+    ∀ (schedule : List I) (state : S),
+      Experiments.Pal23TraceReplay.undoFinite undo (Experiments.Pal23TraceReplay.runFinite step schedule state).2
+          (Experiments.Pal23TraceReplay.runFinite step schedule state).1 =
+        state
+@Experiments.Pal23TraceReplay.runFinite_tags : ∀ {I : Type u_1} {S : Type u_2} {B : Type u_3} (step : I → S → S × B)
+  (schedule : List I) (state : S),
+  List.map Prod.fst (Experiments.Pal23TraceReplay.runFinite step schedule state).2 = schedule
+@Experiments.Pal23TraceReplay.checkedUndo : {I : Type u_1} →
+  {S : Type u_2} → {B : Type u_3} → (I → S → B → S) → [DecidableEq I] → List I → List (I × B) → S → Option S
+@Experiments.Pal23TraceReplay.checkedUndo_generated : ∀ {I : Type u_1} {S : Type u_2} {B : Type u_3}
+  [inst : DecidableEq I] (step : I → S → S × B) (undo : I → S → B → S),
+  (∀ (site : I) (state : S), undo site (step site state).1 (step site state).2 = state) →
+    ∀ (schedule : List I) (state : S),
+      Experiments.Pal23TraceReplay.checkedUndo undo schedule
+          (Experiments.Pal23TraceReplay.runFinite step schedule state).2
+          (Experiments.Pal23TraceReplay.runFinite step schedule state).1 =
+        some state
+Experiments.Pal23TraceReplay.tripleStep : Bool → ℕ × ℕ × ℕ → (ℕ × ℕ × ℕ) × Bool
+Experiments.Pal23TraceReplay.tripleUndo : Bool → ℕ × ℕ × ℕ → Bool → ℕ × ℕ × ℕ
+Experiments.Pal23TraceReplay.triple_fixture_receipt : Experiments.Pal23TraceReplay.runFinite
+    Experiments.Pal23TraceReplay.tripleStep [false, true] (0, 1, 2) =
+  ((1, 2, 0), [(false, true), (true, true)])
+Experiments.Pal23TraceReplay.triple_fixture_replay : Experiments.Pal23TraceReplay.undoFinite
+    Experiments.Pal23TraceReplay.tripleUndo [(false, true), (true, true)] (1, 2, 0) =
+  (0, 1, 2)
+Experiments.Pal23TraceReplay.triple_wrong_order_rejected : Experiments.Pal23TraceReplay.checkedUndo
+    Experiments.Pal23TraceReplay.tripleUndo [false, true] [(true, true), (false, true)] (1, 2, 0) =
+  none
+Experiments.Pal23TraceReplay.triple_missing_receipt_rejected : Experiments.Pal23TraceReplay.checkedUndo
+    Experiments.Pal23TraceReplay.tripleUndo [false, true] [(false, true)] (1, 2, 0) =
+  none
+Experiments.Pal23TraceReplay.triple_corrupt_bit_shape_accepted : List.map Prod.fst [(false, false), (true, true)] =
+  [false, true]
+Experiments.Pal23TraceReplay.triple_corrupt_bit_wrong_recovery : Experiments.Pal23TraceReplay.checkedUndo
+      Experiments.Pal23TraceReplay.tripleUndo [false, true] [(false, false), (true, true)] (1, 2, 0) =
+    some (1, 0, 2) ∧
+  (1, 0, 2) ≠ (0, 1, 2)
+Experiments.Pal23TraceReplay.triple_lost_trace_rejected : Experiments.Pal23TraceReplay.checkedUndo
+    Experiments.Pal23TraceReplay.tripleUndo [false, true] [] (1, 2, 0) =
+  none
+@Experiments.Pal23TraceReplay.runFinite_length : ∀ {I : Type u_1} {S : Type u_2} {B : Type u_3} (step : I → S → S × B)
+  (schedule : List I) (state : S),
+  (Experiments.Pal23TraceReplay.runFinite step schedule state).2.length = schedule.length
+Experiments.Pal23TraceReplay.triple_left_inverse : ∀ (site : Bool) (state : ℕ × ℕ × ℕ),
+  Experiments.Pal23TraceReplay.tripleUndo site (Experiments.Pal23TraceReplay.tripleStep site state).1
+      (Experiments.Pal23TraceReplay.tripleStep site state).2 =
+    state
+Experiments.Pal23TraceReplay.triple_finite_replay : ∀ (schedule : List Bool) (state : ℕ × ℕ × ℕ),
+  Experiments.Pal23TraceReplay.undoFinite Experiments.Pal23TraceReplay.tripleUndo
+      (Experiments.Pal23TraceReplay.runFinite Experiments.Pal23TraceReplay.tripleStep schedule state).2
+      (Experiments.Pal23TraceReplay.runFinite Experiments.Pal23TraceReplay.tripleStep schedule state).1 =
+    state
+'Experiments.Pal23TraceReplay.runFinite' does not depend on any axioms
+'Experiments.Pal23TraceReplay.undoFinite' does not depend on any axioms
+'Experiments.Pal23TraceReplay.undoFinite_runFinite' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.runFinite_tags' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.checkedUndo' does not depend on any axioms
+'Experiments.Pal23TraceReplay.checkedUndo_generated' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.tripleStep' does not depend on any axioms
+'Experiments.Pal23TraceReplay.tripleUndo' does not depend on any axioms
+'Experiments.Pal23TraceReplay.triple_fixture_receipt' does not depend on any axioms
+'Experiments.Pal23TraceReplay.triple_fixture_replay' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.triple_wrong_order_rejected' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.triple_missing_receipt_rejected' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.triple_corrupt_bit_shape_accepted' does not depend on any axioms
+'Experiments.Pal23TraceReplay.triple_corrupt_bit_wrong_recovery' does not depend on any axioms
+'Experiments.Pal23TraceReplay.triple_lost_trace_rejected' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.runFinite_length' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.triple_left_inverse' depends on axioms: [propext]
+'Experiments.Pal23TraceReplay.triple_finite_replay' depends on axioms: [propext]

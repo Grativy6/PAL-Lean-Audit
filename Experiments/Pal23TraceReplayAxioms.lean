@@ -1,0 +1,39 @@
+import Experiments.Pal23TraceReplay
+
+#check @Experiments.Pal23TraceReplay.runFinite
+#check @Experiments.Pal23TraceReplay.undoFinite
+#check @Experiments.Pal23TraceReplay.undoFinite_runFinite
+#check @Experiments.Pal23TraceReplay.runFinite_tags
+#check @Experiments.Pal23TraceReplay.checkedUndo
+#check @Experiments.Pal23TraceReplay.checkedUndo_generated
+#check @Experiments.Pal23TraceReplay.tripleStep
+#check @Experiments.Pal23TraceReplay.tripleUndo
+#check @Experiments.Pal23TraceReplay.triple_fixture_receipt
+#check @Experiments.Pal23TraceReplay.triple_fixture_replay
+#check @Experiments.Pal23TraceReplay.triple_wrong_order_rejected
+#check @Experiments.Pal23TraceReplay.triple_missing_receipt_rejected
+#check @Experiments.Pal23TraceReplay.triple_corrupt_bit_shape_accepted
+#check @Experiments.Pal23TraceReplay.triple_corrupt_bit_wrong_recovery
+#check @Experiments.Pal23TraceReplay.triple_lost_trace_rejected
+#check @Experiments.Pal23TraceReplay.runFinite_length
+#check @Experiments.Pal23TraceReplay.triple_left_inverse
+#check @Experiments.Pal23TraceReplay.triple_finite_replay
+
+#print axioms Experiments.Pal23TraceReplay.runFinite
+#print axioms Experiments.Pal23TraceReplay.undoFinite
+#print axioms Experiments.Pal23TraceReplay.undoFinite_runFinite
+#print axioms Experiments.Pal23TraceReplay.runFinite_tags
+#print axioms Experiments.Pal23TraceReplay.checkedUndo
+#print axioms Experiments.Pal23TraceReplay.checkedUndo_generated
+#print axioms Experiments.Pal23TraceReplay.tripleStep
+#print axioms Experiments.Pal23TraceReplay.tripleUndo
+#print axioms Experiments.Pal23TraceReplay.triple_fixture_receipt
+#print axioms Experiments.Pal23TraceReplay.triple_fixture_replay
+#print axioms Experiments.Pal23TraceReplay.triple_wrong_order_rejected
+#print axioms Experiments.Pal23TraceReplay.triple_missing_receipt_rejected
+#print axioms Experiments.Pal23TraceReplay.triple_corrupt_bit_shape_accepted
+#print axioms Experiments.Pal23TraceReplay.triple_corrupt_bit_wrong_recovery
+#print axioms Experiments.Pal23TraceReplay.triple_lost_trace_rejected
+#print axioms Experiments.Pal23TraceReplay.runFinite_length
+#print axioms Experiments.Pal23TraceReplay.triple_left_inverse
+#print axioms Experiments.Pal23TraceReplay.triple_finite_replay

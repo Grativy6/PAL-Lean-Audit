@@ -1,0 +1,35 @@
+import Experiments.Pal23Cadence
+
+#check @Experiments.Pal23Cadence.AdminClosure
+#check @Experiments.Pal23Cadence.AdminClosure.refl
+#check @Experiments.Pal23Cadence.AdminClosure.step
+#check @Experiments.Pal23Cadence.Macrostep
+#check @Experiments.Pal23Cadence.admin_closure_preserves_projection
+#check @Experiments.Pal23Cadence.macrostep_preserves_work_projection
+#check @Experiments.Pal23Cadence.macrostep_strict_rank_descent
+#check @Experiments.Pal23Cadence.MacroRun
+#check @Experiments.Pal23Cadence.MacroRun.nil
+#check @Experiments.Pal23Cadence.MacroRun.cons
+#check @Experiments.Pal23Cadence.macro_run_length_le_initial_rank
+#check @Experiments.Pal23Cadence.admin_projection_need_not_preserve_rank
+#check @Experiments.Pal23Cadence.admin_recurrence_does_not_force_productive_step
+#check @Experiments.Pal23Cadence.endpoint_equality_can_hide_two_work_changes
+#check @Experiments.Pal23Cadence.macrostep_changes_progress_coordinate
+#check @Experiments.Pal23Cadence.admin_rank_replenishment_cancels_net_descent
+
+#print axioms Experiments.Pal23Cadence.AdminClosure
+#print axioms Experiments.Pal23Cadence.AdminClosure.refl
+#print axioms Experiments.Pal23Cadence.AdminClosure.step
+#print axioms Experiments.Pal23Cadence.Macrostep
+#print axioms Experiments.Pal23Cadence.admin_closure_preserves_projection
+#print axioms Experiments.Pal23Cadence.macrostep_preserves_work_projection
+#print axioms Experiments.Pal23Cadence.macrostep_strict_rank_descent
+#print axioms Experiments.Pal23Cadence.MacroRun
+#print axioms Experiments.Pal23Cadence.MacroRun.nil
+#print axioms Experiments.Pal23Cadence.MacroRun.cons
+#print axioms Experiments.Pal23Cadence.macro_run_length_le_initial_rank
+#print axioms Experiments.Pal23Cadence.admin_projection_need_not_preserve_rank
+#print axioms Experiments.Pal23Cadence.admin_recurrence_does_not_force_productive_step
+#print axioms Experiments.Pal23Cadence.endpoint_equality_can_hide_two_work_changes
+#print axioms Experiments.Pal23Cadence.macrostep_changes_progress_coordinate
+#print axioms Experiments.Pal23Cadence.admin_rank_replenishment_cancels_net_descent
