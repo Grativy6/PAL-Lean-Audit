@@ -8,4 +8,4 @@ This local companion was prepared by Hearthline with Chris under the activated F
 
 The original correction program and fixtures retain their supplied bytes under `Audit/fixture-source`; the audit does not claim their authorship. The local `resource` shim is an explicit adaptation in `scripts/replay_correction.py`.
 
-Lean and Mathlib retain their own authorship and license terms. The bundled checker is a second kernel check within the pinned Lean toolchain, not an independently implemented scientific referee. This audit selects no new project license and performs no public release.
+Lean and Mathlib retain their own authorship and license terms. The bundled checker is a second kernel check within the pinned Lean toolchain, not an independently implemented scientific referee. The original audit selected no new project license. Christopher D. Pang subsequently approved repository publication; publication remains separate from mathematical checking and does not assign new licensing terms.
