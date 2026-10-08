@@ -1,0 +1,1216 @@
+{
+  "status": "PASS_SOURCE_BOUND_KERNEL_CHECKS",
+  "utc": "2026-10-08T09:29:04.417395+00:00",
+  "review": "SAME_SESSION_SELF_REVIEW",
+  "inputs_before": {
+    "APCILeanAudit/Interface.lean": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+    "Audit/Axioms.lean": "ebbfdb52fc86be58979a8af6de1a5a84bc15a6b371bc0e40dddcabc5a784b75c",
+    "Audit/bridge-dependencies.json": "f9dae5ce19b5cd8f2ea09ae077899f84b4687535dae4c82f1476a9c794842df8",
+    "Audit/claims.json": "315b1cd415466d8309fab0bd0daae5b2b8cad657126099310519b4ec71777bdb",
+    "Audit/declarations.json": "32e7dea3830d647403757c267e1242cf9ba6527b7897e8fadffca38dc0713d3b",
+    "Audit/dependencies.json": "7ccd2c1809c551e7648a1b3b295ce71f7d1216c77ccf8395cc77d798d69b8e73",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "FrontLean/Answers.lean": "5f7807083ed32c92f88c443ecad35e2fa433fa0d8a5e1e438443f4714da6cf3c",
+    "FrontLean/Continuation.lean": "f7a5231eaf04fa457b9ae58a137f5de16a83412000acd8336ffe590fff376739",
+    "FrontLean/Controls.lean": "7c63befb16a37b6c664a3676b446768dcd3d3eebf9a6b89838f2a31891c2068a",
+    "FrontLean/Correction.lean": "7b87bc675b517bf9ca109bdcf7858b851e68dbe95316724843b813b4a630256d",
+    "FrontLean/Costs.lean": "b0fd66ac0e0a33f0ad229ccce470318efac5a487ce1454739b370034f27d5d83",
+    "FrontLean/Horizon.lean": "1cef3c90d76fdf8ce84f87eeeb66c2423674cbcf24c694de14cd5a2b683b977e",
+    "FrontLean/Linear.lean": "d02b991a42f20b34c298e84c386b10aae7774c0be20c4ad27390d5ec645c7c9b",
+    "FrontLean/Propagation.lean": "0e2bf9f0ae9bef96aaf97f65695f9eb55a6d97e51d30c588bab536e2ffed09d5",
+    "FrontLean.lean": "464ffbd60f0a020cc1afe914d306b545d9c5a46dca0534c0511ffe7a36c1091a",
+    "lake-manifest.json": "b706840501a7c7f35413dbb7f5f81e4dff97aa83b003f0bdcbe3572076adaaa5",
+    "lakefile.lean": "4dd21eef0d7e86307fba680a9d2e512f7e8dd0c648b2127a20061aa00e5d24e0",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "scripts/map_claims.py": "667025bb92b1dcb2f37b03cf8b9cca96185dc9fe77b9f4d5a011d46079c5e410",
+    "scripts/verify_formal.py": "4dcb8c1cb913796de4c9ddda917ef473d63e90bfee12dc5ee76b6247cb1f5f97"
+  },
+  "inputs_after": {
+    "APCILeanAudit/Interface.lean": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+    "Audit/Axioms.lean": "ebbfdb52fc86be58979a8af6de1a5a84bc15a6b371bc0e40dddcabc5a784b75c",
+    "Audit/bridge-dependencies.json": "f9dae5ce19b5cd8f2ea09ae077899f84b4687535dae4c82f1476a9c794842df8",
+    "Audit/claims.json": "315b1cd415466d8309fab0bd0daae5b2b8cad657126099310519b4ec71777bdb",
+    "Audit/declarations.json": "32e7dea3830d647403757c267e1242cf9ba6527b7897e8fadffca38dc0713d3b",
+    "Audit/dependencies.json": "7ccd2c1809c551e7648a1b3b295ce71f7d1216c77ccf8395cc77d798d69b8e73",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "FrontLean/Answers.lean": "5f7807083ed32c92f88c443ecad35e2fa433fa0d8a5e1e438443f4714da6cf3c",
+    "FrontLean/Continuation.lean": "f7a5231eaf04fa457b9ae58a137f5de16a83412000acd8336ffe590fff376739",
+    "FrontLean/Controls.lean": "7c63befb16a37b6c664a3676b446768dcd3d3eebf9a6b89838f2a31891c2068a",
+    "FrontLean/Correction.lean": "7b87bc675b517bf9ca109bdcf7858b851e68dbe95316724843b813b4a630256d",
+    "FrontLean/Costs.lean": "b0fd66ac0e0a33f0ad229ccce470318efac5a487ce1454739b370034f27d5d83",
+    "FrontLean/Horizon.lean": "1cef3c90d76fdf8ce84f87eeeb66c2423674cbcf24c694de14cd5a2b683b977e",
+    "FrontLean/Linear.lean": "d02b991a42f20b34c298e84c386b10aae7774c0be20c4ad27390d5ec645c7c9b",
+    "FrontLean/Propagation.lean": "0e2bf9f0ae9bef96aaf97f65695f9eb55a6d97e51d30c588bab536e2ffed09d5",
+    "FrontLean.lean": "464ffbd60f0a020cc1afe914d306b545d9c5a46dca0534c0511ffe7a36c1091a",
+    "lake-manifest.json": "b706840501a7c7f35413dbb7f5f81e4dff97aa83b003f0bdcbe3572076adaaa5",
+    "lakefile.lean": "4dd21eef0d7e86307fba680a9d2e512f7e8dd0c648b2127a20061aa00e5d24e0",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "scripts/map_claims.py": "667025bb92b1dcb2f37b03cf8b9cca96185dc9fe77b9f4d5a011d46079c5e410",
+    "scripts/verify_formal.py": "4dcb8c1cb913796de4c9ddda917ef473d63e90bfee12dc5ee76b6247cb1f5f97"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 2.094000000040978,
+      "stdout": "Audit/receipts/formal/lean-version.stdout.txt",
+      "stderr": "Audit/receipts/formal/lean-version.stderr.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "FrontLean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 7.671999999962281,
+      "stdout": "Audit/receipts/formal/build.stdout.txt",
+      "stderr": "Audit/receipts/formal/build.stderr.txt",
+      "stdout_sha256": "c801e46a6fde0218d0449a414f1ab65e219a502abe94cc4c6b439a802fb9f161",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Audit/Axioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 20.21799999999348,
+      "stdout": "Audit/receipts/formal/axioms.stdout.txt",
+      "stderr": "Audit/receipts/formal/axioms.stderr.txt",
+      "stdout_sha256": "18e06e7338b250652305f0f36d7b25a113277a0643bab6938a39ff30964b2c0b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-APCILeanAudit-Interface",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "APCILeanAudit.Interface"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 27.09299999999348,
+      "stdout": "Audit/receipts/formal/kernel-APCILeanAudit-Interface.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-APCILeanAudit-Interface.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-Experiments-BridgeFourSector",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeFourSector"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 29.07900000002701,
+      "stdout": "Audit/receipts/formal/kernel-Experiments-BridgeFourSector.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-Experiments-BridgeFourSector.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-Experiments-BridgeReadout",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeReadout"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 28.95299999997951,
+      "stdout": "Audit/receipts/formal/kernel-Experiments-BridgeReadout.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-Experiments-BridgeReadout.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-Experiments-BridgeRecovery",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeRecovery"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 29.31200000003446,
+      "stdout": "Audit/receipts/formal/kernel-Experiments-BridgeRecovery.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-Experiments-BridgeRecovery.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-Experiments-BridgeDimension",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.BridgeDimension"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 29.43799999996554,
+      "stdout": "Audit/receipts/formal/kernel-Experiments-BridgeDimension.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-Experiments-BridgeDimension.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Answers",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Answers"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 39.29700000002049,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Answers.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Answers.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Continuation",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Continuation"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 39.48399999999674,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Continuation.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Continuation.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Costs",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Costs"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 40.125,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Costs.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Costs.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Propagation",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Propagation"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 39.96899999998277,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Propagation.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Propagation.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Correction",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Correction"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 40.20300000003772,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Correction.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Correction.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Linear",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Linear"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 40.10899999999674,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Linear.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Linear.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Horizon",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Horizon"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 41.14100000000326,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Horizon.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Horizon.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-FrontLean-Controls",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "FrontLean.Controls"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+      "exit_code": 0,
+      "seconds": 39.53099999995902,
+      "stdout": "Audit/receipts/formal/kernel-FrontLean-Controls.stdout.txt",
+      "stderr": "Audit/receipts/formal/kernel-FrontLean-Controls.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "compiled_artifacts": {
+    ".lake/build/lib/lean/APCILeanAudit/Interface.olean": "56617ba2cb186c2b8f8eb52cc715b722bbe9f4ceb8ec682999738ebe73d3fa01",
+    ".lake/build/lib/lean/Experiments/BridgeFourSector.olean": "77a187f0e6e1891b44f31e6f84f61755c899b10f8fd5efb60140fbdcac268513",
+    ".lake/build/lib/lean/Experiments/BridgeReadout.olean": "8a7c740b6cdcc0072a40cbc25be3160efb894e75ed3728a9cbf289f3e0889928",
+    ".lake/build/lib/lean/Experiments/BridgeRecovery.olean": "2c603cc4ba84a23158e8b65b875cb35e05b5d0667202c1a2b67b159ed5b6c2a0",
+    ".lake/build/lib/lean/Experiments/BridgeDimension.olean": "c1952c3aa384e8e5d7fa62907876bfe917b12d99b4e3d2b584adce0ade3d5c7c",
+    ".lake/build/lib/lean/FrontLean/Answers.olean": "4503ff2027b493d9882fa09ab616d350508c888516033c9a51b6b1e768bb21f6",
+    ".lake/build/lib/lean/FrontLean/Continuation.olean": "b2e93f563b253c3d90bcc563ff4c55d2a9180b3135c9617cb90913e01610f189",
+    ".lake/build/lib/lean/FrontLean/Costs.olean": "9390a82c909fe2e243ccb9596a42a20ba89fa61f6ddb5f84aa9f9b4654dcf396",
+    ".lake/build/lib/lean/FrontLean/Propagation.olean": "1dd7421d22f40c387f54a53e0541ff6d89ff84889042b6ff3bb36b489391124c",
+    ".lake/build/lib/lean/FrontLean/Correction.olean": "a1a70a2bf1c222ad220fddcbd3869d06635380a1e9b3ea94198400b8358dedc4",
+    ".lake/build/lib/lean/FrontLean/Linear.olean": "3639aed685d3fcab2d5c3b69c568f591697a2d36d8f6568e2a837cbbc7ba30d0",
+    ".lake/build/lib/lean/FrontLean/Horizon.olean": "ad51b3149d9d3b42debf3d1fabb13267d0f5a3de0e79ef5a1a881dc71f20f58b",
+    ".lake/build/lib/lean/FrontLean/Controls.olean": "7fabf7caaa86f10bf434a23d21d4f319e3dd6656eb61606c465c40962fcdd935",
+    ".lake/build/lib/lean/FrontLean.olean": "1e585cc90a336a48c2459dfbdde7569ea5883fe6cd2630f4ce3f25d3b842d55a"
+  },
+  "signatures": {
+    "APCILeanAudit.FiberConstant": "@APCILeanAudit.FiberConstant : {World : Type u_1} →\n  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop",
+    "APCILeanAudit.ExactCertificate": "@APCILeanAudit.ExactCertificate : {World : Type u_1} →\n  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop",
+    "APCILeanAudit.Reachable": "@APCILeanAudit.Reachable : {World : Type u_1} → {Trace : Type u_2} → (World → Trace) → Type u_2",
+    "APCILeanAudit.ExactOnReachable": "@APCILeanAudit.ExactOnReachable : {World : Type u_1} →\n  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop",
+    "APCILeanAudit.exactCertificate_implies_fiberConstant": "@APCILeanAudit.exactCertificate_implies_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}\n  {trace : World → Trace} {answer : World → Answer},\n  APCILeanAudit.ExactCertificate trace answer → APCILeanAudit.FiberConstant trace answer",
+    "APCILeanAudit.exactOnReachable_implies_fiberConstant": "@APCILeanAudit.exactOnReachable_implies_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}\n  {trace : World → Trace} {answer : World → Answer},\n  APCILeanAudit.ExactOnReachable trace answer → APCILeanAudit.FiberConstant trace answer",
+    "APCILeanAudit.fiberConstant_implies_exactOnReachable": "@APCILeanAudit.fiberConstant_implies_exactOnReachable : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}\n  {trace : World → Trace} {answer : World → Answer},\n  APCILeanAudit.FiberConstant trace answer → APCILeanAudit.ExactOnReachable trace answer",
+    "APCILeanAudit.exactOnReachable_iff_fiberConstant": "@APCILeanAudit.exactOnReachable_iff_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}\n  {trace : World → Trace} {answer : World → Answer},\n  APCILeanAudit.ExactOnReachable trace answer ↔ APCILeanAudit.FiberConstant trace answer",
+    "APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty": "@APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty : ∀ {World : Type u_1} {Trace : Type u_2}\n  {Answer : Type u_3} {trace : World → Trace} {answer : World → Answer},\n  APCILeanAudit.ExactCertificate trace answer ↔ APCILeanAudit.FiberConstant trace answer ∧ Nonempty (Trace → Answer)",
+    "APCILeanAudit.exactCertificate_iff_fiberConstant": "@APCILeanAudit.exactCertificate_iff_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}\n  {trace : World → Trace} {answer : World → Answer} [Inhabited Answer],\n  APCILeanAudit.ExactCertificate trace answer ↔ APCILeanAudit.FiberConstant trace answer",
+    "APCILeanAudit.leftInverse_implies_injective": "@APCILeanAudit.leftInverse_implies_injective : ∀ {World : Type u_1} {Code : Type u_2} {encode : World → Code}\n  {decode : Code → World}, Function.LeftInverse decode encode → Function.Injective encode",
+    "APCILeanAudit.collision_persists_under_postprocessing": "@APCILeanAudit.collision_persists_under_postprocessing : ∀ {World : Type u_1} {Trace : Type u_2} {trace : World → Trace}\n  {Observation : Type u_3} (post : Trace → Observation) {x y : World},\n  trace x = trace y → post (trace x) = post (trace y)",
+    "Experiments.BridgeFourSector.generatedCollision": "@Experiments.BridgeFourSector.generatedCollision : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → (B : Submodule k T) → Submodule k T → Submodule k ↥B",
+    "Experiments.BridgeFourSector.hiddenCollision": "@Experiments.BridgeFourSector.hiddenCollision : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → (K : Submodule k T) → Submodule k ↥K",
+    "Experiments.BridgeFourSector.generatedVisible": "@Experiments.BridgeFourSector.generatedVisible : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2",
+    "Experiments.BridgeFourSector.hidden": "@Experiments.BridgeFourSector.hidden : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2",
+    "Experiments.BridgeFourSector.defect": "@Experiments.BridgeFourSector.defect : {k : Type u_1} →\n  {T : Type u_2} → [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Type u_2",
+    "Experiments.BridgeFourSector.visible": "@Experiments.BridgeFourSector.visible : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2",
+    "Experiments.BridgeFourSector.hiddenRawToDefect": "@Experiments.BridgeFourSector.hiddenRawToDefect : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] → (B K : Submodule k T) → ↥K →ₗ[k] Experiments.BridgeFourSector.defect B",
+    "Experiments.BridgeFourSector.collisionToKernel": "@Experiments.BridgeFourSector.collisionToKernel : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] → (B K : Submodule k T) → ↥(Experiments.BridgeFourSector.generatedCollision B K) →ₗ[k] ↥K",
+    "Experiments.BridgeFourSector.hiddenToDefect": "@Experiments.BridgeFourSector.hiddenToDefect : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] →\n          (B K : Submodule k T) → Experiments.BridgeFourSector.hidden B K →ₗ[k] Experiments.BridgeFourSector.defect B",
+    "Experiments.BridgeFourSector.defectToVisible": "@Experiments.BridgeFourSector.defectToVisible : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] →\n          (B K : Submodule k T) → Experiments.BridgeFourSector.defect B →ₗ[k] Experiments.BridgeFourSector.visible B K",
+    "Experiments.BridgeFourSector.swappedVisibleEquiv": "@Experiments.BridgeFourSector.swappedVisibleEquiv : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] →\n          (B K : Submodule k T) →\n            Experiments.BridgeFourSector.visible K B ≃ₗ[k] Experiments.BridgeFourSector.visible B K",
+    "Experiments.BridgeFourSector.rightColumnToVisible": "@Experiments.BridgeFourSector.rightColumnToVisible : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] →\n          (B K : Submodule k T) → Experiments.BridgeFourSector.defect K →ₗ[k] Experiments.BridgeFourSector.visible B K",
+    "Experiments.BridgeFourSector.ker_hiddenRawToDefect": "@Experiments.BridgeFourSector.ker_hiddenRawToDefect : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  (Experiments.BridgeFourSector.hiddenRawToDefect B K).ker = Experiments.BridgeFourSector.hiddenCollision B K",
+    "Experiments.BridgeFourSector.hiddenToDefect_injective": "@Experiments.BridgeFourSector.hiddenToDefect_injective : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Injective ⇑(Experiments.BridgeFourSector.hiddenToDefect B K)",
+    "Experiments.BridgeFourSector.defectToVisible_surjective": "@Experiments.BridgeFourSector.defectToVisible_surjective : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Surjective ⇑(Experiments.BridgeFourSector.defectToVisible B K)",
+    "Experiments.BridgeFourSector.generated_row_exact": "@Experiments.BridgeFourSector.generated_row_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Exact ⇑(Experiments.BridgeFourSector.generatedCollision B K).subtype\n    ⇑(Experiments.BridgeFourSector.generatedCollision B K).mkQ",
+    "Experiments.BridgeFourSector.kernel_row_exact": "@Experiments.BridgeFourSector.kernel_row_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (K : Submodule k T), Function.Exact ⇑K.subtype ⇑K.mkQ",
+    "Experiments.BridgeFourSector.defect_column_exact": "@Experiments.BridgeFourSector.defect_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B : Submodule k T), Function.Exact ⇑B.subtype ⇑B.mkQ",
+    "Experiments.BridgeFourSector.left_column_exact": "@Experiments.BridgeFourSector.left_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Exact ⇑(Experiments.BridgeFourSector.collisionToKernel B K)\n    ⇑(Experiments.BridgeFourSector.hiddenCollision B K).mkQ",
+    "Experiments.BridgeFourSector.upper_left_square_commutes": "@Experiments.BridgeFourSector.upper_left_square_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  B.subtype ∘ₗ (Experiments.BridgeFourSector.generatedCollision B K).subtype =\n    K.subtype ∘ₗ Experiments.BridgeFourSector.collisionToKernel B K",
+    "Experiments.BridgeFourSector.lower_left_square_commutes": "@Experiments.BridgeFourSector.lower_left_square_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Experiments.BridgeFourSector.hiddenToDefect B K ∘ₗ (Experiments.BridgeFourSector.hiddenCollision B K).mkQ =\n    Experiments.BridgeFourSector.hiddenRawToDefect B K",
+    "Experiments.BridgeFourSector.residual_exact": "@Experiments.BridgeFourSector.residual_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect B K) ⇑(Experiments.BridgeFourSector.defectToVisible B K)",
+    "Experiments.BridgeFourSector.right_column_exact": "@Experiments.BridgeFourSector.right_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect K B)\n    ⇑(Experiments.BridgeFourSector.rightColumnToVisible B K)",
+    "Experiments.BridgeFourSector.ker_readoutOnGenerated": "@Experiments.BridgeFourSector.ker_readoutOnGenerated : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)\n  (r : T →ₗ[k] R), (r ∘ₗ B.subtype).ker = Experiments.BridgeFourSector.generatedCollision B r.ker",
+    "Experiments.BridgeFourSector.generatedVisibleEquivRange": "@Experiments.BridgeFourSector.generatedVisibleEquivRange : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (r : T →ₗ[k] R) → Experiments.BridgeFourSector.generatedVisible B r.ker ≃ₗ[k] ↥(r ∘ₗ B.subtype).range",
+    "Experiments.BridgeFourSector.no_direct_complement_countercase": "Experiments.BridgeFourSector.no_direct_complement_countercase : ¬Disjoint ⊤ ⊤",
+    "Experiments.BridgeReadout.generatedReadout": "@Experiments.BridgeReadout.generatedReadout : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Submodule k T → (r : T →ₗ[k] R) → Submodule k ↥r.range",
+    "Experiments.BridgeReadout.rawReadoutToVisible": "@Experiments.BridgeReadout.rawReadoutToVisible : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (r : T →ₗ[k] R) → T →ₗ[k] ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r",
+    "Experiments.BridgeReadout.residualReadout": "@Experiments.BridgeReadout.residualReadout : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (r : T →ₗ[k] R) →\n                    Experiments.BridgeFourSector.defect B →ₗ[k]\n                      ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r",
+    "Experiments.BridgeReadout.rawReadoutToVisible_surjective": "@Experiments.BridgeReadout.rawReadoutToVisible_surjective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  (B : Submodule k T) (r : T →ₗ[k] R), Function.Surjective ⇑(Experiments.BridgeReadout.rawReadoutToVisible B r)",
+    "Experiments.BridgeReadout.ker_rawReadoutToVisible": "@Experiments.BridgeReadout.ker_rawReadoutToVisible : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)\n  (r : T →ₗ[k] R), (Experiments.BridgeReadout.rawReadoutToVisible B r).ker = B ⊔ r.ker",
+    "Experiments.BridgeReadout.visibleEquivReadout": "@Experiments.BridgeReadout.visibleEquivReadout : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (r : T →ₗ[k] R) →\n                    Experiments.BridgeFourSector.visible B r.ker ≃ₗ[k]\n                      ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r",
+    "Experiments.BridgeReadout.visibleEquivReadout_apply_mk": "@Experiments.BridgeReadout.visibleEquivReadout_apply_mk : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  (B : Submodule k T) (r : T →ₗ[k] R) (t : T),\n  (Experiments.BridgeReadout.visibleEquivReadout B r) (Submodule.Quotient.mk t) =\n    (Experiments.BridgeReadout.rawReadoutToVisible B r) t",
+    "Experiments.BridgeReadout.residualReadout_compatibility": "@Experiments.BridgeReadout.residualReadout_compatibility : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  (B : Submodule k T) (r : T →ₗ[k] R),\n  Experiments.BridgeReadout.residualReadout B r =\n    ↑(Experiments.BridgeReadout.visibleEquivReadout B r) ∘ₗ Experiments.BridgeFourSector.defectToVisible B r.ker",
+    "Experiments.BridgeReadout.generated_directions_required_countercase": "Experiments.BridgeReadout.generated_directions_required_countercase : have B := ⊥;\nhave r := LinearMap.fst ℚ ℚ ℚ;\n(0, 1) ∈ (Experiments.BridgeReadout.rawReadoutToVisible B r).ker ∧ (0, 1) ∉ B",
+    "Experiments.BridgeReadout.generated_component_required_countercase": "Experiments.BridgeReadout.generated_component_required_countercase : have B := ⊤;\nhave r := LinearMap.id;\n1 ∈ (Experiments.BridgeReadout.rawReadoutToVisible B r).ker ∧ 1 ∉ r.ker",
+    "Experiments.BridgeRecovery.residualTarget": "@Experiments.BridgeRecovery.residualTarget : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Submodule k T → (T →ₗ[k] R) → Type u_3",
+    "Experiments.BridgeRecovery.residualReadout_surjective": "@Experiments.BridgeRecovery.residualReadout_surjective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)\n  (r : T →ₗ[k] R), Function.Surjective ⇑(Experiments.BridgeReadout.residualReadout B r)",
+    "Experiments.BridgeRecovery.ker_residualReadout": "@Experiments.BridgeRecovery.ker_residualReadout : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)\n  (r : T →ₗ[k] R),\n  (Experiments.BridgeReadout.residualReadout B r).ker = (Experiments.BridgeFourSector.hiddenToDefect B r.ker).range",
+    "Experiments.BridgeRecovery.residualQuotientEquiv": "@Experiments.BridgeRecovery.residualQuotientEquiv : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (r : T →ₗ[k] R) →\n                    (Experiments.BridgeFourSector.defect B ⧸ (Experiments.BridgeReadout.residualReadout B r).ker) ≃ₗ[k]\n                      Experiments.BridgeRecovery.residualTarget B r",
+    "Experiments.BridgeRecovery.answerDecoder": "@Experiments.BridgeRecovery.answerDecoder : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      {A : Type u_4} →\n        [inst : Field k] →\n          [inst_1 : AddCommGroup T] →\n            [inst_2 : Module k T] →\n              [inst_3 : AddCommGroup R] →\n                [inst_4 : Module k R] →\n                  [inst_5 : AddCommGroup A] →\n                    [inst_6 : Module k A] →\n                      (B : Submodule k T) →\n                        (r : T →ₗ[k] R) →\n                          (a : Experiments.BridgeFourSector.defect B →ₗ[k] A) →\n                            (Experiments.BridgeReadout.residualReadout B r).ker ≤ a.ker →\n                              Experiments.BridgeRecovery.residualTarget B r →ₗ[k] A",
+    "Experiments.BridgeRecovery.answerDecoder_comp_residualReadout": "@Experiments.BridgeRecovery.answerDecoder_comp_residualReadout : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  {A : Type u_4} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]\n  [inst_4 : Module k R] [inst_5 : AddCommGroup A] [inst_6 : Module k A] (B : Submodule k T) (r : T →ₗ[k] R)\n  (a : Experiments.BridgeFourSector.defect B →ₗ[k] A) (h : (Experiments.BridgeReadout.residualReadout B r).ker ≤ a.ker),\n  Experiments.BridgeRecovery.answerDecoder B r a h ∘ₗ Experiments.BridgeReadout.residualReadout B r = a",
+    "Experiments.BridgeRecovery.answer_decodable_iff": "@Experiments.BridgeRecovery.answer_decodable_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {A : Type u_4}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup A] [inst_6 : Module k A] (B : Submodule k T) (r : T →ₗ[k] R)\n  (a : Experiments.BridgeFourSector.defect B →ₗ[k] A),\n  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = a) ↔\n    (Experiments.BridgeFourSector.hiddenToDefect B r.ker).range ≤ a.ker",
+    "Experiments.BridgeRecovery.residual_identity_decoder_iff_injective": "@Experiments.BridgeRecovery.residual_identity_decoder_iff_injective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  (B : Submodule k T) (r : T →ₗ[k] R),\n  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = LinearMap.id) ↔\n    Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r)",
+    "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton": "@Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton : ∀ {k : Type u_1} {T : Type u_2}\n  {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]\n  [inst_4 : Module k R] (B : Submodule k T) (r : T →ₗ[k] R),\n  Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r) ↔\n    Subsingleton (Experiments.BridgeFourSector.hidden B r.ker)",
+    "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le": "@Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le : ∀ {k : Type u_1} {T : Type u_2}\n  {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]\n  [inst_4 : Module k R] (B : Submodule k T) (r : T →ₗ[k] R),\n  Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r) ↔ r.ker ≤ B",
+    "Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le": "@Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  (B : Submodule k T) (r : T →ₗ[k] R),\n  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = LinearMap.id) ↔ r.ker ≤ B",
+    "Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase": "Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase : let B := ⊥;\nhave r := LinearMap.fst ℚ ℚ ℚ;\nhave a := B.liftQ r ⋯;\n(∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = a) ∧\n  ¬Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r)",
+    "Experiments.BridgeDimension.generatedCollision_finrank": "@Experiments.BridgeDimension.generatedCollision_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) = Module.finrank k ↥(B ⊓ K)",
+    "Experiments.BridgeDimension.hiddenCollision_finrank": "@Experiments.BridgeDimension.hiddenCollision_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),\n  Module.finrank k ↥(Experiments.BridgeFourSector.hiddenCollision B K) = Module.finrank k ↥(B ⊓ K)",
+    "Experiments.BridgeDimension.generatedVisible_finrank_add_collision": "@Experiments.BridgeDimension.generatedVisible_finrank_add_collision : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),\n  Module.finrank k (Experiments.BridgeFourSector.generatedVisible B K) +\n      Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) =\n    Module.finrank k ↥B",
+    "Experiments.BridgeDimension.hidden_finrank_add_collision": "@Experiments.BridgeDimension.hidden_finrank_add_collision : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),\n  Module.finrank k (Experiments.BridgeFourSector.hidden B K) +\n      Module.finrank k ↥(Experiments.BridgeFourSector.hiddenCollision B K) =\n    Module.finrank k ↥K",
+    "Experiments.BridgeDimension.visible_finrank_add_sup": "@Experiments.BridgeDimension.visible_finrank_add_sup : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),\n  Module.finrank k (Experiments.BridgeFourSector.visible B K) + Module.finrank k ↥(B ⊔ K) = Module.finrank k T",
+    "Experiments.BridgeDimension.bridge_four_sector_finrank": "@Experiments.BridgeDimension.bridge_four_sector_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),\n  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) +\n          Module.finrank k (Experiments.BridgeFourSector.generatedVisible B K) +\n        Module.finrank k (Experiments.BridgeFourSector.hidden B K) +\n      Module.finrank k (Experiments.BridgeFourSector.visible B K) =\n    Module.finrank k T",
+    "Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase": "Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase : let B :=\n  (LinearMap.inl ℚ ℚ (ℕ →₀ ℚ)).range;\nlet K := ⊥;\n¬Module.finrank ℚ ↥(Experiments.BridgeFourSector.generatedCollision B K) +\n          Module.finrank ℚ (Experiments.BridgeFourSector.generatedVisible B K) +\n        Module.finrank ℚ (Experiments.BridgeFourSector.hidden B K) +\n      Module.finrank ℚ (Experiments.BridgeFourSector.visible B K) =\n    Module.finrank ℚ (ℚ × (ℕ →₀ ℚ))",
+    "FrontLean.answer_sufficiency": "@FrontLean.answer_sufficiency : ∀ {H : Type u_1} {Z : Type u_2} {Y : Type u_3} (τ : H → Z) (q : H → Y),\n  APCILeanAudit.ExactOnReachable τ q ↔ ∀ (x y : H), τ x = τ y → q x = q y",
+    "FrontLean.joint_equality": "@FrontLean.joint_equality : ∀ {H : Type u_1} {I : Type u_2} {Y : I → Type u_3} (o : (i : I) → H → Y i) (x y : H),\n  ((fun i => o i x) = fun i => o i y) ↔ ∀ (i : I), o i x = o i y",
+    "FrontLean.joint_sufficiency": "@FrontLean.joint_sufficiency : ∀ {H : Type u_1} {I : Type u_2} {Y : I → Type u_3} {Q : Type u_4} (o : (i : I) → H → Y i)\n  (q : H → Q), APCILeanAudit.ExactOnReachable (fun x i => o i x) q ↔ ∀ (x y : H), (∀ (i : I), o i x = o i y) → q x = q y",
+    "FrontLean.common_action_iff": "@FrontLean.common_action_iff : ∀ {H : Type u_1} {Z : Type u_2} {A : Type u_3} (τ : H → Z) (G : H → A → Prop),\n  (∃ p, ∀ (h : H), G h (p ⟨τ h, ⋯⟩)) ↔ ∀ (z : APCILeanAudit.Reachable τ), ∃ a, ∀ (h : H), τ h = ↑z → G h a",
+    "FrontLean.coordinate_bit_bound": "FrontLean.coordinate_bit_bound : ∀ (d b : ℕ) (encode : (Fin d → Bool) → Fin b → Bool)\n  (decode : (Fin b → Bool) → Fin d → Bool), (∀ (x : Fin d → Bool) (i : Fin d), decode (encode x) i = x i) → d ≤ b",
+    "FrontLean.answer_does_not_recover_history": "FrontLean.answer_does_not_recover_history : ¬APCILeanAudit.ExactOnReachable (fun x => ()) fun h => h",
+    "FrontLean.absent_reading_is_not_content": "FrontLean.absent_reading_is_not_content : ¬APCILeanAudit.ExactOnReachable (fun x => none) fun h => h",
+    "FrontLean.runWord": "@FrontLean.runWord : {S : Type u_1} → {A : Type u_2} → (S → A → S) → S → List A → S",
+    "FrontLean.FutureEq": "@FrontLean.FutureEq : {S : Type u_1} → {A : Type u_2} → {Y : Type u_3} → (S → A → S) → (S → Y) → S → S → Prop",
+    "FrontLean.future_output_preservation": "@FrontLean.future_output_preservation : ∀ {S : Type u_1} {A : Type u_2} {Y : Type u_3} {Z : Type u_4} (δ : S → A → S)\n  (o : S → Y) (c : S → Z),\n  (∀ (w : List A), APCILeanAudit.ExactOnReachable c fun s => o (FrontLean.runWord δ s w)) ↔\n    ∀ (s t : S), c s = c t → FrontLean.FutureEq δ o s t",
+    "FrontLean.online_update_iff": "@FrontLean.online_update_iff : ∀ {S : Type u_1} {A : Type u_2} {Z : Type u_3} (δ : S → A → S) (c : S → Z),\n  (∃ update, ∀ (s : S) (a : A), update (c s) a = c (δ s a)) ↔ ∀ (s t : S) (a : A), c s = c t → c (δ s a) = c (δ t a)",
+    "FrontLean.future_eq_is_right_congruence": "@FrontLean.future_eq_is_right_congruence : ∀ {S : Type u_1} {A : Type u_2} {Y : Type u_3} (δ : S → A → S) (o : S → Y)\n  {s t : S}, FrontLean.FutureEq δ o s t → ∀ (a : A), FrontLean.FutureEq δ o (δ s a) (δ t a)",
+    "FrontLean.admitted_outputs_sufficiency": "@FrontLean.admitted_outputs_sufficiency : ∀ {S : Type u_1} {Z : Type u_2} {I : Type u_3} {Y : I → Type u_4} (c : S → Z)\n  (observed : (i : I) → S → Y i),\n  (∀ (i : I), APCILeanAudit.ExactOnReachable c (observed i)) ↔\n    ∀ (s t : S), c s = c t → ∀ (i : I), observed i s = observed i t",
+    "FrontLean.output_sufficient_without_online_update": "FrontLean.output_sufficient_without_online_update : (∀ (w : List Unit),\n    APCILeanAudit.ExactOnReachable FrontLean.counterCode✝ fun s =>\n      (fun x => false) (FrontLean.runWord FrontLean.counterStep✝ s w)) ∧\n  ¬∃ update,\n      ∀ (s : Fin 3) (a : Unit),\n        update (FrontLean.counterCode✝ s) a = FrontLean.counterCode✝ (FrontLean.counterStep✝ s a)",
+    "FrontLean.reuse_cheaper_iff": "FrontLean.reuse_cheaper_iff : ∀ (D B R : ℝ) (m : ℕ), D + B + (↑m - 1) * R < ↑m * D ↔ (↑m - 1) * (D - R) > B",
+    "FrontLean.no_saving_when_reuse_is_costlier": "FrontLean.no_saving_when_reuse_is_costlier : ∀ (D B R : ℝ) (m : ℕ),\n  1 ≤ m → 0 ≤ B → D ≤ R → ↑m * D ≤ D + B + (↑m - 1) * R",
+    "FrontLean.descending_rank_bounds_steps": "FrontLean.descending_rank_bounds_steps : ∀ (rank : ℕ → ℕ) (k : ℕ), (∀ i < k, rank (i + 1) < rank i) → k ≤ rank 0",
+    "FrontLean.total_cost_bound": "FrontLean.total_cost_bound : ∀ (rank : ℕ → ℕ) (k initial p₀ p₁ p₂ : ℕ) (cost : Fin (k + 1) → ℕ),\n  (∀ i < k, rank (i + 1) < rank i) →\n    rank 0 ≤ p₁ → initial ≤ p₀ → (∀ (i : Fin (k + 1)), cost i ≤ p₂) → initial + ∑ i, cost i ≤ p₀ + (p₁ + 1) * p₂",
+    "FrontLean.polynomial_accounting": "FrontLean.polynomial_accounting : ∀ (p₀ p₁ p₂ : Polynomial ℕ) (n k initial : ℕ) (rank : ℕ → ℕ) (cost : Fin (k + 1) → ℕ),\n  (∀ i < k, rank (i + 1) < rank i) →\n    rank 0 ≤ Polynomial.eval n p₁ →\n      initial ≤ Polynomial.eval n p₀ →\n        (∀ (i : Fin (k + 1)), cost i ≤ Polynomial.eval n p₂) →\n          initial + ∑ i, cost i ≤ Polynomial.eval n (p₀ + (p₁ + 1) * p₂)",
+    "FrontLean.shared_diamond_cost": "FrontLean.shared_diamond_cost : 12 + 1 + 1 + 1 = 15 ∧ 12 + 1 + (12 + 1) + 1 = 27",
+    "FrontLean.Valid": "@FrontLean.Valid : {α : Type u_1} → FrontLean.Basis α → {q : α} → FrontLean.Derivation α q → Prop",
+    "FrontLean.UsesRoot": "@FrontLean.UsesRoot : {α : Type u_1} → {q : α} → FrontLean.Derivation α q → α → Prop",
+    "FrontLean.UsesRule": "@FrontLean.UsesRule : {α : Type u_1} → {q : α} → FrontLean.Derivation α q → FrontLean.Rule α → Prop",
+    "FrontLean.derivation_sound": "@FrontLean.derivation_sound : ∀ {α : Type u_1} (b : FrontLean.Basis α) (truth : α → Prop),\n  (∀ (a : α), b.root a → truth a) →\n    (∀ (r : FrontLean.Rule α), b.rule r → (∀ a ∈ r.body, truth a) → truth r.head) →\n      ∀ {q : α} (d : FrontLean.Derivation α q), FrontLean.Valid b d → truth q",
+    "FrontLean.premise_substitution": "@FrontLean.premise_substitution : ∀ {α : Type u_1} (Γ Δ : α → Prop) (R : FrontLean.Rule α → Prop),\n  (∀ (a : α), Γ a → ∃ d, FrontLean.Valid { root := Δ, rule := R } d) →\n    ∀ {q : α} (d : FrontLean.Derivation α q),\n      FrontLean.Valid { root := Γ, rule := R } d → ∃ e, FrontLean.Valid { root := Δ, rule := R } e",
+    "FrontLean.valid_under_unchanged_basis": "@FrontLean.valid_under_unchanged_basis : ∀ {α : Type u_1} {q : α} (d : FrontLean.Derivation α q)\n  (b b' : FrontLean.Basis α),\n  (∀ (a : α), FrontLean.UsesRoot d a → (b.root a ↔ b'.root a)) →\n    (∀ (r : FrontLean.Rule α), FrontLean.UsesRule d r → (b.rule r ↔ b'.rule r)) →\n      (FrontLean.Valid b d ↔ FrontLean.Valid b' d)",
+    "FrontLean.increasing_depth_no_cycle": "@FrontLean.increasing_depth_no_cycle : ∀ {V : Type u_1} (edge : V → V → Prop) (depth : V → ℕ),\n  (∀ (a b : V), edge a b → depth a < depth b) → ∀ (v : V), ¬Relation.TransGen edge v v",
+    "FrontLean.negative_core_transfer": "@FrontLean.negative_core_transfer : ∀ {V : Type u_1} {C : Type u_2} (sat : V → C → Prop) (core formula : Set C),\n  core ⊆ formula → (¬∃ v, ∀ c ∈ core, sat v c) → ¬∃ v, ∀ c ∈ formula, sat v c",
+    "FrontLean.hornStep": "@FrontLean.hornStep : {α : Type u_1} → Finset (FrontLean.Rule α) → Finset α → Finset α",
+    "FrontLean.mem_hornStep": "@FrontLean.mem_hornStep : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (s : Finset α) (a : α),\n  a ∈ FrontLean.hornStep rs s ↔ a ∈ s ∨ ∃ r ∈ rs, r.body ⊆ s ∧ r.head = a",
+    "FrontLean.hornStep_inflationary": "@FrontLean.hornStep_inflationary : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (s : Finset α),\n  s ⊆ FrontLean.hornStep rs s",
+    "FrontLean.hornStep_monotone": "@FrontLean.hornStep_monotone : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)), Monotone (FrontLean.hornStep rs)",
+    "FrontLean.rounds": "@FrontLean.rounds : {α : Type u_1} → (Finset α → Finset α) → Finset α → ℕ → Finset α",
+    "FrontLean.rounds_seed": "@FrontLean.rounds_seed : ∀ {α : Type u_1} (f : Finset α → Finset α) (E : Finset α),\n  (∀ (s : Finset α), s ⊆ f s) → ∀ (n : ℕ), E ⊆ FrontLean.rounds f E n",
+    "FrontLean.stable_round_persists": "@FrontLean.stable_round_persists : ∀ {α : Type u_1} (f : Finset α → Finset α) (E : Finset α) (k : ℕ),\n  FrontLean.rounds f E (k + 1) = FrontLean.rounds f E k →\n    ∀ (j : ℕ), FrontLean.rounds f E (k + j) = FrontLean.rounds f E k",
+    "FrontLean.finite_stabilization": "@FrontLean.finite_stabilization : ∀ {α : Type u_1} [inst : Fintype α] (f : Finset α → Finset α) (E : Finset α),\n  (∀ (s : Finset α), s ⊆ f s) → ∃ k ≤ Fintype.card α - E.card, FrontLean.rounds f E (k + 1) = FrontLean.rounds f E k",
+    "FrontLean.rounds_le_closed": "@FrontLean.rounds_le_closed : ∀ {α : Type u_1} (f : Finset α → Finset α) (E T : Finset α),\n  Monotone f → E ⊆ T → f T = T → ∀ (n : ℕ), FrontLean.rounds f E n ⊆ T",
+    "FrontLean.horn_least_closure": "@FrontLean.horn_least_closure : ∀ {α : Type u_1} [inst : Fintype α] (rs : Finset (FrontLean.Rule α)) (E : Finset α),\n  ∃ k ≤ Fintype.card α - E.card,\n    have C := FrontLean.rounds (FrontLean.hornStep rs) E k;\n    E ⊆ C ∧ FrontLean.hornStep rs C = C ∧ ∀ (T : Finset α), E ⊆ T → FrontLean.hornStep rs T = T → C ⊆ T",
+    "FrontLean.horn_rounds_sound": "@FrontLean.horn_rounds_sound : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (E : Finset α) (truth : α → Prop),\n  (∀ a ∈ E, truth a) →\n    (∀ r ∈ rs, (∀ a ∈ r.body, truth a) → truth r.head) →\n      ∀ (n : ℕ), ∀ a ∈ FrontLean.rounds (FrontLean.hornStep rs) E n, truth a",
+    "FrontLean.empty_seed_stays_empty": "@FrontLean.empty_seed_stays_empty : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)),\n  (∀ r ∈ rs, r.body.Nonempty) → ∀ (n : ℕ), FrontLean.rounds (FrontLean.hornStep rs) ∅ n = ∅",
+    "FrontLean.wake_decomposition": "@FrontLean.wake_decomposition : ∀ {α : Type u_1} [inst : DecidableEq α] (E B S : Finset α) (d : α),\n  E ⊆ B → B ⊆ S → S \\ (E ∪ {d}) = (B \\ E) \\ {d} ∪ (S \\ B) \\ {d} ∧ Disjoint ((B \\ E) \\ {d}) ((S \\ B) \\ {d})",
+    "FrontLean.redundant_seed": "@FrontLean.redundant_seed : ∀ {α : Type u_1} [inst : DecidableEq α] (f : Finset α → Finset α) (E B S : Finset α)\n  (d : α),\n  E ⊆ B →\n    d ∈ B →\n      f B = B →\n        f S = S →\n          E ∪ {d} ⊆ S →\n            (∀ (T : Finset α), E ⊆ T → f T = T → B ⊆ T) → (∀ (T : Finset α), E ∪ {d} ⊆ T → f T = T → S ⊆ T) → S = B",
+    "FrontLean.RecordedSupport": "@FrontLean.RecordedSupport : {α : Type u_1} →\n  FrontLean.Basis α → {q : α} → {n : ℕ} → (Fin n → FrontLean.Derivation α q) → Prop",
+    "FrontLean.recorded_support_sound": "@FrontLean.recorded_support_sound : ∀ {α : Type u_1} (b : FrontLean.Basis α) (truth : α → Prop),\n  (∀ (a : α), b.root a → truth a) →\n    (∀ (r : FrontLean.Rule α), b.rule r → (∀ a ∈ r.body, truth a) → truth r.head) →\n      ∀ {q : α} {n : ℕ} (recorded : Fin n → FrontLean.Derivation α q), FrontLean.RecordedSupport b recorded → truth q",
+    "FrontLean.unchanged_alternative_survives": "@FrontLean.unchanged_alternative_survives : ∀ {α : Type u_1} {q : α} {n : ℕ} (b b' : FrontLean.Basis α)\n  (recorded : Fin n → FrontLean.Derivation α q) (i : Fin n),\n  FrontLean.Valid b (recorded i) →\n    (∀ (a : α), FrontLean.UsesRoot (recorded i) a → (b.root a ↔ b'.root a)) →\n      (∀ (r : FrontLean.Rule α), FrontLean.UsesRule (recorded i) r → (b.rule r ↔ b'.rule r)) →\n        FrontLean.RecordedSupport b' recorded",
+    "FrontLean.scratchRepair": "@FrontLean.scratchRepair : {σ : Type u_1} →\n  σ → σ → Prop → (σ → Prop) → List (FrontLean.RepairEvent σ) → FrontLean.RepairResult σ",
+    "FrontLean.scratch_commit_iff": "@FrontLean.scratch_commit_iff : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)\n  (history : List (FrontLean.RepairEvent σ)),\n  (FrontLean.scratchRepair original candidate grant post history).status = FrontLean.RepairStatus.committed ↔\n    candidate ≠ original ∧ grant ∧ post candidate",
+    "FrontLean.failed_scratch_keeps_original": "@FrontLean.failed_scratch_keeps_original : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)\n  (history : List (FrontLean.RepairEvent σ)),\n  (FrontLean.scratchRepair original candidate grant post history).status ≠ FrontLean.RepairStatus.committed →\n    (FrontLean.scratchRepair original candidate grant post history).value = original",
+    "FrontLean.HistoryPrefix": "@FrontLean.HistoryPrefix : {E : Type u_1} → List E → List E → Prop",
+    "FrontLean.history_prefix_refl": "@FrontLean.history_prefix_refl : ∀ {E : Type u_1} (h : List E), FrontLean.HistoryPrefix h h",
+    "FrontLean.history_prefix_trans": "@FrontLean.history_prefix_trans : ∀ {E : Type u_1} {a b c : List E},\n  FrontLean.HistoryPrefix a b → FrontLean.HistoryPrefix b c → FrontLean.HistoryPrefix a c",
+    "FrontLean.scratch_preserves_history": "@FrontLean.scratch_preserves_history : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)\n  (history : List (FrontLean.RepairEvent σ)),\n  FrontLean.HistoryPrefix history (FrontLean.scratchRepair original candidate grant post history).history",
+    "FrontLean.finite_history_preservation": "@FrontLean.finite_history_preservation : ∀ {E : Type u_1} (history : ℕ → List E) (n : ℕ),\n  (∀ i < n, FrontLean.HistoryPrefix (history i) (history (i + 1))) → FrontLean.HistoryPrefix (history 0) (history n)",
+    "FrontLean.failed_secondary_condition_is_recorded": "@FrontLean.failed_secondary_condition_is_recorded : ∀ {σ : Type u_1} (original candidate : σ) (post : σ → Prop)\n  (history : List (FrontLean.RepairEvent σ)),\n  candidate ≠ original →\n    ¬post candidate →\n      (FrontLean.scratchRepair original candidate True post history).value = original ∧\n        FrontLean.RepairEvent.failedRevalidation candidate ∈\n          (FrontLean.scratchRepair original candidate True post history).history",
+    "FrontLean.independent_answer_invalid_receipt": "FrontLean.independent_answer_invalid_receipt : ¬FrontLean.Valid FrontLean.correctedBasis✝ FrontLean.oldRoute✝ ∧\n  FrontLean.Valid FrontLean.correctedBasis✝ FrontLean.alternativeRoute✝",
+    "FrontLean.missing_conjunct_is_rejected": "FrontLean.missing_conjunct_is_rejected : ¬FrontLean.Valid\n    { root := fun atom => atom = FrontLean.TestAtom.a, rule := fun x => True } FrontLean.alternativeRoute✝",
+    "FrontLean.no_recorded_proof_is_not_negation": "FrontLean.no_recorded_proof_is_not_negation : ∃ truth b r, ¬FrontLean.RecordedSupport b r ∧ truth ()",
+    "FrontLean.unchanged_does_not_require_mutation_grant": "@FrontLean.unchanged_does_not_require_mutation_grant : ∀ {σ : Type u_1} (s : σ) (post : σ → Prop),\n  post s →\n    ∀ (history : List (FrontLean.RepairEvent σ)),\n      (FrontLean.scratchRepair s s False post history).status = FrontLean.RepairStatus.unchangedSupported",
+    "FrontLean.linear_factorization": "@FrontLean.linear_factorization : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] (J : T →ₗ[k] R) (q : T →ₗ[k] Q),\n  (∃ d, d ∘ₗ J.rangeRestrict = q) ↔ J.ker ≤ q.ker",
+    "FrontLean.joint_kernel": "@FrontLean.joint_kernel : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] {ι : Type u_3} {V : ι → Type u_4} [inst_3 : (i : ι) → AddCommGroup (V i)]\n  [inst_4 : (i : ι) → Module k (V i)] (J : (i : ι) → T →ₗ[k] V i), (LinearMap.pi J).ker = ⨅ i, (J i).ker",
+    "FrontLean.kernel_refinement": "@FrontLean.kernel_refinement : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] {ι : Type u_4} (J : ι → T →ₗ[k] R)\n  (s t : Set ι), s ⊆ t → ⨅ i ∈ t, (J i).ker ≤ ⨅ i ∈ s, (J i).ker",
+    "FrontLean.joint_residual_short_exact": "@FrontLean.joint_residual_short_exact : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)\n  (J : T →ₗ[k] R),\n  Function.Injective ⇑(Experiments.BridgeFourSector.hiddenToDefect B J.ker) ∧\n    Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect B J.ker)\n        ⇑(Experiments.BridgeReadout.residualReadout B J) ∧\n      Function.Surjective ⇑(Experiments.BridgeReadout.residualReadout B J)",
+    "FrontLean.joint_visible_equiv": "@FrontLean.joint_visible_equiv : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] →\n              [inst_4 : Module k R] →\n                (B : Submodule k T) →\n                  (J : T →ₗ[k] R) →\n                    Experiments.BridgeFourSector.visible B J.ker ≃ₗ[k] Experiments.BridgeRecovery.residualTarget B J",
+    "FrontLean.joint_sector_dimensions": "@FrontLean.joint_sector_dimensions : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [FiniteDimensional k T] (B : Submodule k T) (J : T →ₗ[k] R),\n  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B J.ker) +\n          Module.finrank k (Experiments.BridgeFourSector.generatedVisible B J.ker) +\n        Module.finrank k (Experiments.BridgeFourSector.hidden B J.ker) +\n      Module.finrank k (Experiments.BridgeFourSector.visible B J.ker) =\n    Module.finrank k T",
+    "FrontLean.visibleRefinement": "@FrontLean.visibleRefinement : {k : Type u_1} →\n  {T : Type u_2} →\n    [inst : Field k] →\n      [inst_1 : AddCommGroup T] →\n        [inst_2 : Module k T] →\n          (B Ksmall Klarge : Submodule k T) →\n            Ksmall ≤ Klarge →\n              Experiments.BridgeFourSector.visible B Ksmall →ₗ[k] Experiments.BridgeFourSector.visible B Klarge",
+    "FrontLean.refinement_commutes": "@FrontLean.refinement_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] (B Ksmall Klarge : Submodule k T) (h : Ksmall ≤ Klarge),\n  FrontLean.visibleRefinement B Ksmall Klarge h ∘ₗ Experiments.BridgeFourSector.defectToVisible B Ksmall =\n    Experiments.BridgeFourSector.defectToVisible B Klarge",
+    "FrontLean.quotient_update_iff": "@FrontLean.quotient_update_iff : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] (B : Submodule k T) (L : T →ₗ[k] T), (∃ D, D ∘ₗ B.mkQ = B.mkQ ∘ₗ L) ↔ ∀ x ∈ B, L x ∈ B",
+    "FrontLean.transported_return": "@FrontLean.transported_return : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] (M : Module.End k T) (α : T) (i j : ℕ),\n  (M ^ (i + j)) α - α = (M ^ i) α - α + (M ^ i) ((M ^ j) α - α)",
+    "FrontLean.side_trace_decodable": "@FrontLean.side_trace_decodable : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E] (J : T →ₗ[k] R)\n  (q : T →ₗ[k] Q) (s : T →ₗ[k] E), (∃ d, d ∘ₗ (J.prod s).rangeRestrict = q) ↔ J.ker ⊓ s.ker ≤ q.ker",
+    "FrontLean.query_rank_le": "@FrontLean.query_rank_le : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [FiniteDimensional k T] (f : T →ₗ[k] R) (q : T →ₗ[k] Q),\n  f.ker ≤ q.ker → Module.finrank k ↥q.range ≤ Module.finrank k ↥f.range",
+    "FrontLean.side_trace_rank_lower_bound": "@FrontLean.side_trace_rank_lower_bound : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]\n  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q) (s : T →ₗ[k] E),\n  J.ker ⊓ s.ker ≤ q.ker → Module.finrank k ↥(q.domRestrict J.ker).range ≤ Module.finrank k ↥s.range",
+    "FrontLean.minimum_side_trace": "@FrontLean.minimum_side_trace : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]\n  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q) (e : ↥(q.domRestrict J.ker).range →ₗ[k] E),\n  Function.Injective ⇑e →\n    ∃ s, J.ker ⊓ s.ker ≤ q.ker ∧ Module.finrank k ↥s.range = Module.finrank k ↥(q.domRestrict J.ker).range",
+    "FrontLean.side_trace_capacity": "@FrontLean.side_trace_capacity : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]\n  [FiniteDimensional k T] [FiniteDimensional k E] (J : T →ₗ[k] R) (q : T →ₗ[k] Q),\n  (∃ s, J.ker ⊓ s.ker ≤ q.ker) ↔ Module.finrank k ↥(q.domRestrict J.ker).range ≤ Module.finrank k E",
+    "FrontLean.side_trace_capacity_injection": "@FrontLean.side_trace_capacity_injection : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]\n  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q), (∃ s, J.ker ⊓ s.ker ≤ q.ker) ↔ ∃ e, Function.Injective ⇑e",
+    "FrontLean.residual_query_criterion": "@FrontLean.residual_query_criterion : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E] (B : Submodule k T)\n  (J : T →ₗ[k] R) (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q)\n  (sD : Experiments.BridgeFourSector.defect B →ₗ[k] E),\n  (∃ d, d ∘ₗ ((Experiments.BridgeReadout.residualReadout B J).prod sD).rangeRestrict = qD) ↔\n    (Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ⊓ sD.ker ≤ qD.ker",
+    "FrontLean.residual_debt_image": "@FrontLean.residual_debt_image : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] (B : Submodule k T) (J : T →ₗ[k] R)\n  (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q),\n  (qD.domRestrict (Experiments.BridgeReadout.residualReadout B J).ker).range =\n    (qD ∘ₗ Experiments.BridgeFourSector.hiddenToDefect B J.ker).range",
+    "FrontLean.residual_side_trace_capacity": "@FrontLean.residual_side_trace_capacity : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}\n  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]\n  [FiniteDimensional k T] [FiniteDimensional k E] (B : Submodule k T) (J : T →ₗ[k] R)\n  (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q),\n  (∃ sD, (Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ⊓ sD.ker ≤ qD.ker) ↔\n    Module.finrank k ↥(qD ∘ₗ Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ≤ Module.finrank k E",
+    "FrontLean.horizonKernel": "@FrontLean.horizonKernel : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Module.End k T → (T →ₗ[k] R) → ℕ → Submodule k T",
+    "FrontLean.infiniteKernel": "@FrontLean.infiniteKernel : {k : Type u_1} →\n  {T : Type u_2} →\n    {R : Type u_3} →\n      [inst : Field k] →\n        [inst_1 : AddCommGroup T] →\n          [inst_2 : Module k T] →\n            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Module.End k T → (T →ₗ[k] R) → Submodule k T",
+    "FrontLean.mem_horizon": "@FrontLean.mem_horizon : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R) (n : ℕ)\n  (x : T), x ∈ FrontLean.horizonKernel L r n ↔ ∀ j < n, r ((L ^ j) x) = 0",
+    "FrontLean.mem_infinite": "@FrontLean.mem_infinite : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R) (x : T),\n  x ∈ FrontLean.infiniteKernel L r ↔ ∀ (j : ℕ), r ((L ^ j) x) = 0",
+    "FrontLean.horizon_antitone": "@FrontLean.horizon_antitone : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R),\n  Antitone (FrontLean.horizonKernel L r)",
+    "FrontLean.invariant_kernel_iff": "@FrontLean.invariant_kernel_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)\n  (r : T →ₗ[k] R), (∀ x ∈ r.ker, L x ∈ r.ker) ↔ ∀ x ∈ r.ker, ∀ (j : ℕ), r ((L ^ j) x) = 0",
+    "FrontLean.infinite_invariant": "@FrontLean.infinite_invariant : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)\n  (r : T →ₗ[k] R), ∀ x ∈ FrontLean.infiniteKernel L r, L x ∈ FrontLean.infiniteKernel L r",
+    "FrontLean.all_outputs_equal_iff": "@FrontLean.all_outputs_equal_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)\n  (r : T →ₗ[k] R) (x y : T), (∀ (j : ℕ), r ((L ^ j) x) = r ((L ^ j) y)) ↔ x - y ∈ FrontLean.infiniteKernel L r",
+    "FrontLean.finite_horizon_closure": "@FrontLean.finite_horizon_closure : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]\n  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]\n  [FiniteDimensional k T] (L : Module.End k T) (r : T →ₗ[k] R),\n  FrontLean.horizonKernel L r (Module.finrank k T) = FrontLean.infiniteKernel L r",
+    "FrontLean.finite_subfamily_inside": "@FrontLean.finite_subfamily_inside : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [FiniteDimensional k T] {ι : Type u_3} (U : ι → Submodule k T) (S : Submodule k T),\n  ∃ s, s.card ≤ Module.finrank k ↥S ∧ S ⊓ ⨅ i ∈ s, U i = S ⊓ ⨅ i, U i",
+    "FrontLean.finite_readout_subfamily": "@FrontLean.finite_readout_subfamily : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]\n  [inst_2 : Module k T] [FiniteDimensional k T] {ι : Type u_3} {V : ι → Type u_4}\n  [inst_4 : (i : ι) → AddCommGroup (V i)] [inst_5 : (i : ι) → Module k (V i)] (r : (i : ι) → T →ₗ[k] V i),\n  ∃ s, s.card ≤ Module.finrank k T ∧ ⨅ i ∈ s, (r i).ker = ⨅ i, (r i).ker",
+    "FrontLean.unlabelled": "FrontLean.unlabelled : Bool × Bool → Multiset Bool",
+    "FrontLean.lost_labels_counterexample": "FrontLean.lost_labels_counterexample : ¬∃ d, ∀ (x : Bool × Bool), d (FrontLean.unlabelled x) = x.1",
+    "FrontLean.sat_does_not_transfer_to_strengthening": "FrontLean.sat_does_not_transfer_to_strengthening : (∃ x, x = true) ∧ ¬∃ x, x = true ∧ x = false",
+    "FrontLean.stale_premise_counterexample": "FrontLean.stale_premise_counterexample : FrontLean.Valid { root := fun x => True, rule := fun x => False }\n    (FrontLean.Derivation.root ()) ∧\n  ¬FrontLean.Valid { root := fun x => False, rule := fun x => False } (FrontLean.Derivation.root ())",
+    "FrontLean.technically_valid_but_not_authorized": "FrontLean.technically_valid_but_not_authorized : (FrontLean.scratchRepair 0 1 False (fun x => True) []).status =\n    FrontLean.RepairStatus.notAuthorized ∧\n  (FrontLean.scratchRepair 0 1 False (fun x => True) []).value = 0",
+    "FrontLean.independent_baselines_lose_relation": "FrontLean.independent_baselines_lose_relation : Submodule.map (LinearMap.fst ℚ ℚ ℚ) FrontLean.diagonal✝ = ⊤ ∧\n  Submodule.map (LinearMap.snd ℚ ℚ ℚ) FrontLean.diagonal✝ = ⊤ ∧ FrontLean.diagonal✝.mkQ (1, 0) ≠ 0",
+    "FrontLean.quotient_update_can_fail": "FrontLean.quotient_update_can_fail : ¬∃ D,\n    D ∘ₗ FrontLean.diagonal✝.mkQ = FrontLean.diagonal✝.mkQ ∘ₗ (LinearMap.fst ℚ ℚ ℚ).prod 0",
+    "FrontLean.untransported_return_wrong": "FrontLean.untransported_return_wrong : 2 ^ (1 + 1) - 1 ≠ 2 ^ 1 - 1 + (2 ^ 1 - 1)"
+  },
+  "axioms": {
+    "APCILeanAudit.FiberConstant": [],
+    "APCILeanAudit.ExactCertificate": [],
+    "APCILeanAudit.Reachable": [],
+    "APCILeanAudit.ExactOnReachable": [],
+    "APCILeanAudit.exactCertificate_implies_fiberConstant": [],
+    "APCILeanAudit.exactOnReachable_implies_fiberConstant": [],
+    "APCILeanAudit.fiberConstant_implies_exactOnReachable": [
+      "Classical.choice"
+    ],
+    "APCILeanAudit.exactOnReachable_iff_fiberConstant": [
+      "Classical.choice"
+    ],
+    "APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.exactCertificate_iff_fiberConstant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.leftInverse_implies_injective": [],
+    "APCILeanAudit.collision_persists_under_postprocessing": [],
+    "Experiments.BridgeFourSector.generatedCollision": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hiddenCollision": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.generatedVisible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hidden": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.visible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hiddenRawToDefect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.collisionToKernel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hiddenToDefect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defectToVisible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.swappedVisibleEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.rightColumnToVisible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.ker_hiddenRawToDefect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.hiddenToDefect_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defectToVisible_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.generated_row_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.kernel_row_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.defect_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.left_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.upper_left_square_commutes": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.lower_left_square_commutes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.residual_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.right_column_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.ker_readoutOnGenerated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.generatedVisibleEquivRange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeFourSector.no_direct_complement_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.generatedReadout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.rawReadoutToVisible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.residualReadout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.rawReadoutToVisible_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.ker_rawReadoutToVisible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.visibleEquivReadout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.visibleEquivReadout_apply_mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.residualReadout_compatibility": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.generated_directions_required_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeReadout.generated_component_required_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.residualTarget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.residualReadout_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.ker_residualReadout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.residualQuotientEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.answerDecoder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.answerDecoder_comp_residualReadout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.answer_decodable_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.residual_identity_decoder_iff_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.generatedCollision_finrank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.hiddenCollision_finrank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.generatedVisible_finrank_add_collision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.hidden_finrank_add_collision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.visible_finrank_add_sup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.bridge_four_sector_finrank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.answer_sufficiency": [
+      "Classical.choice"
+    ],
+    "FrontLean.joint_equality": [
+      "Quot.sound"
+    ],
+    "FrontLean.joint_sufficiency": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.common_action_iff": [
+      "Classical.choice"
+    ],
+    "FrontLean.coordinate_bit_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.answer_does_not_recover_history": [
+      "Classical.choice",
+      "propext"
+    ],
+    "FrontLean.absent_reading_is_not_content": [
+      "Classical.choice",
+      "propext"
+    ],
+    "FrontLean.runWord": [],
+    "FrontLean.FutureEq": [],
+    "FrontLean.future_output_preservation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.online_update_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.future_eq_is_right_congruence": [],
+    "FrontLean.admitted_outputs_sufficiency": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.output_sufficient_without_online_update": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.reuse_cheaper_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.no_saving_when_reuse_is_costlier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.descending_rank_bounds_steps": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.total_cost_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.polynomial_accounting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.shared_diamond_cost": [
+      "propext"
+    ],
+    "FrontLean.Valid": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.UsesRoot": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.UsesRule": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.derivation_sound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.premise_substitution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.valid_under_unchanged_basis": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.increasing_depth_no_cycle": [],
+    "FrontLean.negative_core_transfer": [],
+    "FrontLean.hornStep": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.mem_hornStep": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.hornStep_inflationary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.hornStep_monotone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.rounds": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.rounds_seed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.stable_round_persists": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.finite_stabilization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.rounds_le_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.horn_least_closure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.horn_rounds_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.empty_seed_stays_empty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.wake_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.redundant_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.RecordedSupport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.recorded_support_sound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.unchanged_alternative_survives": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.scratchRepair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.scratch_commit_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.failed_scratch_keeps_original": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.HistoryPrefix": [],
+    "FrontLean.history_prefix_refl": [
+      "propext"
+    ],
+    "FrontLean.history_prefix_trans": [
+      "propext"
+    ],
+    "FrontLean.scratch_preserves_history": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.finite_history_preservation": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.failed_secondary_condition_is_recorded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.independent_answer_invalid_receipt": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.missing_conjunct_is_rejected": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.no_recorded_proof_is_not_negation": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.unchanged_does_not_require_mutation_grant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.linear_factorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.joint_kernel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.kernel_refinement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.joint_residual_short_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.joint_visible_equiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.joint_sector_dimensions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.visibleRefinement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.refinement_commutes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.quotient_update_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.transported_return": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.side_trace_decodable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.query_rank_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.side_trace_rank_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.minimum_side_trace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.side_trace_capacity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.side_trace_capacity_injection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.residual_query_criterion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.residual_debt_image": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.residual_side_trace_capacity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.horizonKernel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.infiniteKernel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.mem_horizon": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.mem_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.horizon_antitone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.invariant_kernel_iff": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.infinite_invariant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.all_outputs_equal_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.finite_horizon_closure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.finite_subfamily_inside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.finite_readout_subfamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.unlabelled": [
+      "Quot.sound"
+    ],
+    "FrontLean.lost_labels_counterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.sat_does_not_transfer_to_strengthening": [],
+    "FrontLean.stale_premise_counterexample": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.technically_valid_but_not_authorized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.independent_baselines_lose_relation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.quotient_update_can_fail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FrontLean.untransported_return_wrong": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "dependency_axioms_allowed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "limits": [
+    "Bundled checker, not independent scientific validation",
+    "Source correspondence and mathematical hypotheses remain part of each claim",
+    "No Python/Lean refinement theorem, external authority validation or complexity separation"
+  ]
+}

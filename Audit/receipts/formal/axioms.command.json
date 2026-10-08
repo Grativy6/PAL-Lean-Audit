@@ -1,0 +1,16 @@
+{
+  "label": "axioms",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "Audit/Axioms.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 20.21799999999348,
+  "stdout": "Audit/receipts/formal/axioms.stdout.txt",
+  "stderr": "Audit/receipts/formal/axioms.stderr.txt",
+  "stdout_sha256": "18e06e7338b250652305f0f36d7b25a113277a0643bab6938a39ff30964b2c0b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

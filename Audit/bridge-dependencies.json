@@ -1,0 +1,27 @@
+{
+  "upstream": "https://github.com/Grativy6/PAL-Lean-Audit.git",
+  "commit": "30fd51f8d1927d92f32fb42f68db37fec796098b",
+  "note": "Verbatim inherited source; native line endings retained. No new authorship or discovery claimed.",
+  "files": [
+    {
+      "path": "Experiments/BridgeFourSector.lean",
+      "sha256": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+      "source": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\BridgeFourSector.lean"
+    },
+    {
+      "path": "Experiments/BridgeReadout.lean",
+      "sha256": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+      "source": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\BridgeReadout.lean"
+    },
+    {
+      "path": "Experiments/BridgeRecovery.lean",
+      "sha256": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+      "source": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\BridgeRecovery.lean"
+    },
+    {
+      "path": "Experiments/BridgeDimension.lean",
+      "sha256": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+      "source": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\BridgeDimension.lean"
+    }
+  ]
+}

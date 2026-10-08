@@ -1,0 +1,36 @@
+{
+  "validator_sha256": "1190c474501d82b2ec7f1f38acf3499ccfa8d81779a57b398ad86574619f329f",
+  "commands": [
+    {
+      "run": "correction-normal",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\cdpan\\.codex\\plugins\\cache\\openai-curated-remote\\mathbox\\3.2.0\\skills\\computation-audit\\scripts\\validate_manifest.py",
+        "Audit/runs/correction-normal/manifest.json",
+        "--root",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project"
+      ],
+      "exit_code": 0,
+      "stdout": "valid evidence record; mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "run": "correction-optimized",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\cdpan\\.codex\\plugins\\cache\\openai-curated-remote\\mathbox\\3.2.0\\skills\\computation-audit\\scripts\\validate_manifest.py",
+        "Audit/runs/correction-optimized/manifest.json",
+        "--root",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project"
+      ],
+      "exit_code": 0,
+      "stdout": "valid evidence record; mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "status": "PASS"
+}

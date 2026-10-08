@@ -1,0 +1,7 @@
+{
+  "adaptation": "Original resource.getrusage telemetry unavailable; peak_rss_kib is null.",
+  "frozen_source_changed": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "optimized": true,
+  "scope": "Only the unavailable resource-reporting field. Policy, oracle, checks, fixtures and timers unchanged."
+}

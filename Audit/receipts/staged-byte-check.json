@@ -1,0 +1,7 @@
+{
+  "checked_staged_files": 188,
+  "byte_mismatches": [],
+  "status": "PASS",
+  "whitespace_check_exit": 0,
+  "whitespace_note": "cr-at-eol treats retained Windows CRLF as a line ending, not trailing content."
+}
