@@ -1,5 +1,7 @@
 # Source-to-proof coverage
 
+The line locations below refer to the [preserved audited manuscript](../Publication/audited-source/FRONT_v1.0_WORKING_DRAFT.md). The [publication concordance](../Publication/source-concordance.json) records the editorial release and unchanged mathematical statements.
+
 Source: supplied FRONT v1.0 working draft. General means the named formal statement covers the mathematical claim at the scope below. Bounded means an explicit realization or numerical core with the remaining bridge named. Neither label certifies all prose or the Python implementation. Final checking lives in `receipts/formal/receipt.json`.
 
 | Claim | Batch | Disposition | Main declaration |

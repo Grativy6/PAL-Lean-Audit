@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: Cite FRONT and the exact companion commit used for a formal check.
+title: FRONT Lean audit companion
+type: software
+version: 1.0
+authors:
+  - family-names: Pang
+    given-names: Christopher D.
+repository-code: https://github.com/Grativy6/front-lean
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Pang
+      given-names: Christopher D.
+  title: 'FRONT — The Unclosed Dependency: Correction at the Next-Cut Seam'
+  year: 2026
+  doi: 10.5281/zenodo.23139301

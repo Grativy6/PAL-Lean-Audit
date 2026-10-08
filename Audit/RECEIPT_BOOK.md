@@ -1,5 +1,7 @@
 # FRONT v1.0 — receipt book
 
+This is the retained account of the local audit before publication. The [publication paper](../Publication/FRONT_v1.0.pdf) and [source concordance](../Publication/source-concordance.json) add the subsequent editorial release without changing these historical results.
+
 **8 October 2026 · COMPLETE_LOCAL_AUDIT · [Build, axiom inspection and all 13 bundled kernel checks passed](receipts/formal/receipt.json).**
 
 The approved six-batch audit covers all 21 headed propositions, with an explicit disposition for each. Seventeen have general mathematical statements covering their main claims. Four have bounded realizations or a numerical core whose remaining bridge is named below. C1 stays a definition and C2 stays an accounting schema.

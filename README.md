@@ -1,6 +1,8 @@
 # FRONT v1.0 — Lean audit companion
 
-A source-bound mathematical companion to **FRONT — The Unclosed Dependency: Correction at the Next-Cut Seam**. The controlling source is Chris's supplied v1.0 working-draft archive, SHA-256 `e82195a52d3b65dcca8e6a16b1055c9772d43aa2ebecea6a4a5cd1409167fd9c`.
+A mathematical companion to **FRONT — The Unclosed Dependency: Correction at the Next-Cut Seam**, by Christopher D. Pang. Read the [paper](Publication/FRONT_v1.0.pdf), its [editable text and mathematics](Publication/FRONT_v1.0.md), and the [publication concordance](Publication/source-concordance.json). The paper's DOI is [10.5281/zenodo.23139301](https://doi.org/10.5281/zenodo.23139301); reserving that identifier does not itself confirm the Zenodo deposit is live.
+
+The original audit is bound to the supplied v1.0 archive, SHA-256 `e82195a52d3b65dcca8e6a16b1055c9772d43aa2ebecea6a4a5cd1409167fd9c`. Publication edits preserve the mathematics and update the presentation and proof-coverage account. Historical receipts keep their original source identity.
 
 Start with the [receipt book](Audit/RECEIPT_BOOK.md), the [21-claim coverage map](Audit/COVERAGE.md), and the [machine-readable ledger](Audit/claims.json). Final verification is recorded in [the formal receipt](Audit/receipts/formal/receipt.json). A green build alone is not a verdict about the whole manuscript.
 
@@ -21,6 +23,8 @@ The inherited APCI and BRIDGE modules are byte-preserved copies with their origi
 
 ## Reproduce
 
+The portable verification entry point is `python scripts/ci_verify.py`. It checks the frozen proof files, historical log hashes, signature/axiom inventory and final publication binding without claiming a fresh proof run. Run `python scripts/ci_verify.py --replay` to produce a fresh build and all 13 bundled kernel checks in a new `.ci-evidence` directory. Use `--output` with a different fresh directory for later runs; retained evidence is never overwritten. The GitHub workflow runs this same sequence and saves its fresh logs as an artifact.
+
 Pinned Lean: `leanprover/lean4:v4.32.1`. Pinned Mathlib: `520045ab14e26149ee970e2e617ca04b09bde5d6`; all package revisions are in `lake-manifest.json`.
 
 With the pinned dependencies available, run `lake build FrontLean`, then `lake env lean Audit/Axioms.lean`. For a bundled kernel replay of one module, run `lake env leanchecker FrontLean.Linear`; the exact 13-module sequence is retained in the final receipt.
@@ -33,4 +37,4 @@ On the original Windows audit checkout, `python scripts/verify_formal.py --check
 
 ## Boundaries
 
-The dedicated FRONT checkout was authorized by its own six-batch key. The shared PAL/CHARTER/BRIDGE checkout and other research projects were preserved. All execution here was local, with no model calls. This companion does not amend or adopt the manuscript. Publication and licensing require their own decision.
+The dedicated FRONT checkout was authorized by its own six-batch key. The shared PAL/CHARTER/BRIDGE checkout and other research projects were preserved. The original audit ran locally with no model calls. Repository publication was subsequently approved by Christopher D. Pang on 8 October 2026. The release retains the four explicit formalization limits and does not certify the whole paper, external authority, the Python implementation or a complexity separation. No new project license is inferred from publication permission.
