@@ -1,0 +1,16 @@
+{
+  "label": "kernel-FrontLean-Propagation",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "leanchecker",
+    "FrontLean.Propagation"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 39.96899999998277,
+  "stdout": "Audit/receipts/formal/kernel-FrontLean-Propagation.stdout.txt",
+  "stderr": "Audit/receipts/formal/kernel-FrontLean-Propagation.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

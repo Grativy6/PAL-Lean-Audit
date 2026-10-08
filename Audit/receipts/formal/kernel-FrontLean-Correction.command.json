@@ -1,0 +1,16 @@
+{
+  "label": "kernel-FrontLean-Correction",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "leanchecker",
+    "FrontLean.Correction"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 40.20300000003772,
+  "stdout": "Audit/receipts/formal/kernel-FrontLean-Correction.stdout.txt",
+  "stderr": "Audit/receipts/formal/kernel-FrontLean-Correction.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

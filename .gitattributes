@@ -1,0 +1,2 @@
+# Proof inputs and evidence are byte-pinned. Preserve their native bytes in Git.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

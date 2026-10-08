@@ -1,0 +1,801 @@
+@APCILeanAudit.FiberConstant : {World : Type u_1} →
+  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop
+'APCILeanAudit.FiberConstant' does not depend on any axioms
+@APCILeanAudit.ExactCertificate : {World : Type u_1} →
+  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop
+'APCILeanAudit.ExactCertificate' does not depend on any axioms
+@APCILeanAudit.Reachable : {World : Type u_1} → {Trace : Type u_2} → (World → Trace) → Type u_2
+'APCILeanAudit.Reachable' does not depend on any axioms
+@APCILeanAudit.ExactOnReachable : {World : Type u_1} →
+  {Trace : Type u_2} → {Answer : Type u_3} → (World → Trace) → (World → Answer) → Prop
+'APCILeanAudit.ExactOnReachable' does not depend on any axioms
+@APCILeanAudit.exactCertificate_implies_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}
+  {trace : World → Trace} {answer : World → Answer},
+  APCILeanAudit.ExactCertificate trace answer → APCILeanAudit.FiberConstant trace answer
+'APCILeanAudit.exactCertificate_implies_fiberConstant' does not depend on any axioms
+@APCILeanAudit.exactOnReachable_implies_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}
+  {trace : World → Trace} {answer : World → Answer},
+  APCILeanAudit.ExactOnReachable trace answer → APCILeanAudit.FiberConstant trace answer
+'APCILeanAudit.exactOnReachable_implies_fiberConstant' does not depend on any axioms
+@APCILeanAudit.fiberConstant_implies_exactOnReachable : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}
+  {trace : World → Trace} {answer : World → Answer},
+  APCILeanAudit.FiberConstant trace answer → APCILeanAudit.ExactOnReachable trace answer
+'APCILeanAudit.fiberConstant_implies_exactOnReachable' depends on axioms: [Classical.choice]
+@APCILeanAudit.exactOnReachable_iff_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}
+  {trace : World → Trace} {answer : World → Answer},
+  APCILeanAudit.ExactOnReachable trace answer ↔ APCILeanAudit.FiberConstant trace answer
+'APCILeanAudit.exactOnReachable_iff_fiberConstant' depends on axioms: [Classical.choice]
+@APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty : ∀ {World : Type u_1} {Trace : Type u_2}
+  {Answer : Type u_3} {trace : World → Trace} {answer : World → Answer},
+  APCILeanAudit.ExactCertificate trace answer ↔ APCILeanAudit.FiberConstant trace answer ∧ Nonempty (Trace → Answer)
+'APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@APCILeanAudit.exactCertificate_iff_fiberConstant : ∀ {World : Type u_1} {Trace : Type u_2} {Answer : Type u_3}
+  {trace : World → Trace} {answer : World → Answer} [Inhabited Answer],
+  APCILeanAudit.ExactCertificate trace answer ↔ APCILeanAudit.FiberConstant trace answer
+'APCILeanAudit.exactCertificate_iff_fiberConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@APCILeanAudit.leftInverse_implies_injective : ∀ {World : Type u_1} {Code : Type u_2} {encode : World → Code}
+  {decode : Code → World}, Function.LeftInverse decode encode → Function.Injective encode
+'APCILeanAudit.leftInverse_implies_injective' does not depend on any axioms
+@APCILeanAudit.collision_persists_under_postprocessing : ∀ {World : Type u_1} {Trace : Type u_2} {trace : World → Trace}
+  {Observation : Type u_3} (post : Trace → Observation) {x y : World},
+  trace x = trace y → post (trace x) = post (trace y)
+'APCILeanAudit.collision_persists_under_postprocessing' does not depend on any axioms
+@Experiments.BridgeFourSector.generatedCollision : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → (B : Submodule k T) → Submodule k T → Submodule k ↥B
+'Experiments.BridgeFourSector.generatedCollision' depends on axioms: [propext, Quot.sound]
+@Experiments.BridgeFourSector.hiddenCollision : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → (K : Submodule k T) → Submodule k ↥K
+'Experiments.BridgeFourSector.hiddenCollision' depends on axioms: [propext, Quot.sound]
+@Experiments.BridgeFourSector.generatedVisible : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2
+'Experiments.BridgeFourSector.generatedVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.hidden : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2
+'Experiments.BridgeFourSector.hidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.defect : {k : Type u_1} →
+  {T : Type u_2} → [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Type u_2
+'Experiments.BridgeFourSector.defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.visible : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] → [inst_1 : AddCommGroup T] → [inst_2 : Module k T] → Submodule k T → Submodule k T → Type u_2
+'Experiments.BridgeFourSector.visible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.hiddenRawToDefect : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] → (B K : Submodule k T) → ↥K →ₗ[k] Experiments.BridgeFourSector.defect B
+'Experiments.BridgeFourSector.hiddenRawToDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.collisionToKernel : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] → (B K : Submodule k T) → ↥(Experiments.BridgeFourSector.generatedCollision B K) →ₗ[k] ↥K
+'Experiments.BridgeFourSector.collisionToKernel' depends on axioms: [propext, Quot.sound]
+@Experiments.BridgeFourSector.hiddenToDefect : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] →
+          (B K : Submodule k T) → Experiments.BridgeFourSector.hidden B K →ₗ[k] Experiments.BridgeFourSector.defect B
+'Experiments.BridgeFourSector.hiddenToDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.defectToVisible : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] →
+          (B K : Submodule k T) → Experiments.BridgeFourSector.defect B →ₗ[k] Experiments.BridgeFourSector.visible B K
+'Experiments.BridgeFourSector.defectToVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.swappedVisibleEquiv : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] →
+          (B K : Submodule k T) →
+            Experiments.BridgeFourSector.visible K B ≃ₗ[k] Experiments.BridgeFourSector.visible B K
+'Experiments.BridgeFourSector.swappedVisibleEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.rightColumnToVisible : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] →
+          (B K : Submodule k T) → Experiments.BridgeFourSector.defect K →ₗ[k] Experiments.BridgeFourSector.visible B K
+'Experiments.BridgeFourSector.rightColumnToVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.ker_hiddenRawToDefect : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  (Experiments.BridgeFourSector.hiddenRawToDefect B K).ker = Experiments.BridgeFourSector.hiddenCollision B K
+'Experiments.BridgeFourSector.ker_hiddenRawToDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.hiddenToDefect_injective : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Injective ⇑(Experiments.BridgeFourSector.hiddenToDefect B K)
+'Experiments.BridgeFourSector.hiddenToDefect_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.defectToVisible_surjective : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Surjective ⇑(Experiments.BridgeFourSector.defectToVisible B K)
+'Experiments.BridgeFourSector.defectToVisible_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.generated_row_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Exact ⇑(Experiments.BridgeFourSector.generatedCollision B K).subtype
+    ⇑(Experiments.BridgeFourSector.generatedCollision B K).mkQ
+'Experiments.BridgeFourSector.generated_row_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.kernel_row_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (K : Submodule k T), Function.Exact ⇑K.subtype ⇑K.mkQ
+'Experiments.BridgeFourSector.kernel_row_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.defect_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B : Submodule k T), Function.Exact ⇑B.subtype ⇑B.mkQ
+'Experiments.BridgeFourSector.defect_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.left_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Exact ⇑(Experiments.BridgeFourSector.collisionToKernel B K)
+    ⇑(Experiments.BridgeFourSector.hiddenCollision B K).mkQ
+'Experiments.BridgeFourSector.left_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.upper_left_square_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  B.subtype ∘ₗ (Experiments.BridgeFourSector.generatedCollision B K).subtype =
+    K.subtype ∘ₗ Experiments.BridgeFourSector.collisionToKernel B K
+'Experiments.BridgeFourSector.upper_left_square_commutes' depends on axioms: [propext, Quot.sound]
+@Experiments.BridgeFourSector.lower_left_square_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Experiments.BridgeFourSector.hiddenToDefect B K ∘ₗ (Experiments.BridgeFourSector.hiddenCollision B K).mkQ =
+    Experiments.BridgeFourSector.hiddenRawToDefect B K
+'Experiments.BridgeFourSector.lower_left_square_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.residual_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect B K) ⇑(Experiments.BridgeFourSector.defectToVisible B K)
+'Experiments.BridgeFourSector.residual_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.right_column_exact : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect K B)
+    ⇑(Experiments.BridgeFourSector.rightColumnToVisible B K)
+'Experiments.BridgeFourSector.right_column_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeFourSector.ker_readoutOnGenerated : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)
+  (r : T →ₗ[k] R), (r ∘ₗ B.subtype).ker = Experiments.BridgeFourSector.generatedCollision B r.ker
+'Experiments.BridgeFourSector.ker_readoutOnGenerated' depends on axioms: [propext, Quot.sound]
+@Experiments.BridgeFourSector.generatedVisibleEquivRange : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (r : T →ₗ[k] R) → Experiments.BridgeFourSector.generatedVisible B r.ker ≃ₗ[k] ↥(r ∘ₗ B.subtype).range
+'Experiments.BridgeFourSector.generatedVisibleEquivRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.BridgeFourSector.no_direct_complement_countercase : ¬Disjoint ⊤ ⊤
+'Experiments.BridgeFourSector.no_direct_complement_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeReadout.generatedReadout : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Submodule k T → (r : T →ₗ[k] R) → Submodule k ↥r.range
+'Experiments.BridgeReadout.generatedReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.rawReadoutToVisible : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (r : T →ₗ[k] R) → T →ₗ[k] ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r
+'Experiments.BridgeReadout.rawReadoutToVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.residualReadout : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (r : T →ₗ[k] R) →
+                    Experiments.BridgeFourSector.defect B →ₗ[k]
+                      ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r
+'Experiments.BridgeReadout.residualReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.rawReadoutToVisible_surjective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  (B : Submodule k T) (r : T →ₗ[k] R), Function.Surjective ⇑(Experiments.BridgeReadout.rawReadoutToVisible B r)
+'Experiments.BridgeReadout.rawReadoutToVisible_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.ker_rawReadoutToVisible : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)
+  (r : T →ₗ[k] R), (Experiments.BridgeReadout.rawReadoutToVisible B r).ker = B ⊔ r.ker
+'Experiments.BridgeReadout.ker_rawReadoutToVisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.visibleEquivReadout : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (r : T →ₗ[k] R) →
+                    Experiments.BridgeFourSector.visible B r.ker ≃ₗ[k]
+                      ↥r.range ⧸ Experiments.BridgeReadout.generatedReadout B r
+'Experiments.BridgeReadout.visibleEquivReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.visibleEquivReadout_apply_mk : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  (B : Submodule k T) (r : T →ₗ[k] R) (t : T),
+  (Experiments.BridgeReadout.visibleEquivReadout B r) (Submodule.Quotient.mk t) =
+    (Experiments.BridgeReadout.rawReadoutToVisible B r) t
+'Experiments.BridgeReadout.visibleEquivReadout_apply_mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeReadout.residualReadout_compatibility : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  (B : Submodule k T) (r : T →ₗ[k] R),
+  Experiments.BridgeReadout.residualReadout B r =
+    ↑(Experiments.BridgeReadout.visibleEquivReadout B r) ∘ₗ Experiments.BridgeFourSector.defectToVisible B r.ker
+'Experiments.BridgeReadout.residualReadout_compatibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.BridgeReadout.generated_directions_required_countercase : have B := ⊥;
+have r := LinearMap.fst ℚ ℚ ℚ;
+(0, 1) ∈ (Experiments.BridgeReadout.rawReadoutToVisible B r).ker ∧ (0, 1) ∉ B
+'Experiments.BridgeReadout.generated_directions_required_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.BridgeReadout.generated_component_required_countercase : have B := ⊤;
+have r := LinearMap.id;
+1 ∈ (Experiments.BridgeReadout.rawReadoutToVisible B r).ker ∧ 1 ∉ r.ker
+'Experiments.BridgeReadout.generated_component_required_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeRecovery.residualTarget : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Submodule k T → (T →ₗ[k] R) → Type u_3
+'Experiments.BridgeRecovery.residualTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.residualReadout_surjective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)
+  (r : T →ₗ[k] R), Function.Surjective ⇑(Experiments.BridgeReadout.residualReadout B r)
+'Experiments.BridgeRecovery.residualReadout_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.ker_residualReadout : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)
+  (r : T →ₗ[k] R),
+  (Experiments.BridgeReadout.residualReadout B r).ker = (Experiments.BridgeFourSector.hiddenToDefect B r.ker).range
+'Experiments.BridgeRecovery.ker_residualReadout' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.residualQuotientEquiv : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (r : T →ₗ[k] R) →
+                    (Experiments.BridgeFourSector.defect B ⧸ (Experiments.BridgeReadout.residualReadout B r).ker) ≃ₗ[k]
+                      Experiments.BridgeRecovery.residualTarget B r
+'Experiments.BridgeRecovery.residualQuotientEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.answerDecoder : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      {A : Type u_4} →
+        [inst : Field k] →
+          [inst_1 : AddCommGroup T] →
+            [inst_2 : Module k T] →
+              [inst_3 : AddCommGroup R] →
+                [inst_4 : Module k R] →
+                  [inst_5 : AddCommGroup A] →
+                    [inst_6 : Module k A] →
+                      (B : Submodule k T) →
+                        (r : T →ₗ[k] R) →
+                          (a : Experiments.BridgeFourSector.defect B →ₗ[k] A) →
+                            (Experiments.BridgeReadout.residualReadout B r).ker ≤ a.ker →
+                              Experiments.BridgeRecovery.residualTarget B r →ₗ[k] A
+'Experiments.BridgeRecovery.answerDecoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.answerDecoder_comp_residualReadout : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  {A : Type u_4} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]
+  [inst_4 : Module k R] [inst_5 : AddCommGroup A] [inst_6 : Module k A] (B : Submodule k T) (r : T →ₗ[k] R)
+  (a : Experiments.BridgeFourSector.defect B →ₗ[k] A) (h : (Experiments.BridgeReadout.residualReadout B r).ker ≤ a.ker),
+  Experiments.BridgeRecovery.answerDecoder B r a h ∘ₗ Experiments.BridgeReadout.residualReadout B r = a
+'Experiments.BridgeRecovery.answerDecoder_comp_residualReadout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeRecovery.answer_decodable_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {A : Type u_4}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup A] [inst_6 : Module k A] (B : Submodule k T) (r : T →ₗ[k] R)
+  (a : Experiments.BridgeFourSector.defect B →ₗ[k] A),
+  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = a) ↔
+    (Experiments.BridgeFourSector.hiddenToDefect B r.ker).range ≤ a.ker
+'Experiments.BridgeRecovery.answer_decodable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeRecovery.residual_identity_decoder_iff_injective : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  (B : Submodule k T) (r : T →ₗ[k] R),
+  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = LinearMap.id) ↔
+    Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r)
+'Experiments.BridgeRecovery.residual_identity_decoder_iff_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton : ∀ {k : Type u_1} {T : Type u_2}
+  {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]
+  [inst_4 : Module k R] (B : Submodule k T) (r : T →ₗ[k] R),
+  Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r) ↔
+    Subsingleton (Experiments.BridgeFourSector.hidden B r.ker)
+'Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le : ∀ {k : Type u_1} {T : Type u_2}
+  {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R]
+  [inst_4 : Module k R] (B : Submodule k T) (r : T →ₗ[k] R),
+  Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r) ↔ r.ker ≤ B
+'Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  (B : Submodule k T) (r : T →ₗ[k] R),
+  (∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = LinearMap.id) ↔ r.ker ≤ B
+'Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase : let B := ⊥;
+have r := LinearMap.fst ℚ ℚ ℚ;
+have a := B.liftQ r ⋯;
+(∃ d, d ∘ₗ Experiments.BridgeReadout.residualReadout B r = a) ∧
+  ¬Function.Injective ⇑(Experiments.BridgeReadout.residualReadout B r)
+'Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeDimension.generatedCollision_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) = Module.finrank k ↥(B ⊓ K)
+'Experiments.BridgeDimension.generatedCollision_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeDimension.hiddenCollision_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] (B K : Submodule k T),
+  Module.finrank k ↥(Experiments.BridgeFourSector.hiddenCollision B K) = Module.finrank k ↥(B ⊓ K)
+'Experiments.BridgeDimension.hiddenCollision_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeDimension.generatedVisible_finrank_add_collision : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),
+  Module.finrank k (Experiments.BridgeFourSector.generatedVisible B K) +
+      Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) =
+    Module.finrank k ↥B
+'Experiments.BridgeDimension.generatedVisible_finrank_add_collision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.BridgeDimension.hidden_finrank_add_collision : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),
+  Module.finrank k (Experiments.BridgeFourSector.hidden B K) +
+      Module.finrank k ↥(Experiments.BridgeFourSector.hiddenCollision B K) =
+    Module.finrank k ↥K
+'Experiments.BridgeDimension.hidden_finrank_add_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeDimension.visible_finrank_add_sup : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),
+  Module.finrank k (Experiments.BridgeFourSector.visible B K) + Module.finrank k ↥(B ⊔ K) = Module.finrank k T
+'Experiments.BridgeDimension.visible_finrank_add_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.BridgeDimension.bridge_four_sector_finrank : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [FiniteDimensional k T] (B K : Submodule k T),
+  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B K) +
+          Module.finrank k (Experiments.BridgeFourSector.generatedVisible B K) +
+        Module.finrank k (Experiments.BridgeFourSector.hidden B K) +
+      Module.finrank k (Experiments.BridgeFourSector.visible B K) =
+    Module.finrank k T
+'Experiments.BridgeDimension.bridge_four_sector_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase : let B :=
+  (LinearMap.inl ℚ ℚ (ℕ →₀ ℚ)).range;
+let K := ⊥;
+¬Module.finrank ℚ ↥(Experiments.BridgeFourSector.generatedCollision B K) +
+          Module.finrank ℚ (Experiments.BridgeFourSector.generatedVisible B K) +
+        Module.finrank ℚ (Experiments.BridgeFourSector.hidden B K) +
+      Module.finrank ℚ (Experiments.BridgeFourSector.visible B K) =
+    Module.finrank ℚ (ℚ × (ℕ →₀ ℚ))
+'Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@FrontLean.answer_sufficiency : ∀ {H : Type u_1} {Z : Type u_2} {Y : Type u_3} (τ : H → Z) (q : H → Y),
+  APCILeanAudit.ExactOnReachable τ q ↔ ∀ (x y : H), τ x = τ y → q x = q y
+'FrontLean.answer_sufficiency' depends on axioms: [Classical.choice]
+@FrontLean.joint_equality : ∀ {H : Type u_1} {I : Type u_2} {Y : I → Type u_3} (o : (i : I) → H → Y i) (x y : H),
+  ((fun i => o i x) = fun i => o i y) ↔ ∀ (i : I), o i x = o i y
+'FrontLean.joint_equality' depends on axioms: [Quot.sound]
+@FrontLean.joint_sufficiency : ∀ {H : Type u_1} {I : Type u_2} {Y : I → Type u_3} {Q : Type u_4} (o : (i : I) → H → Y i)
+  (q : H → Q), APCILeanAudit.ExactOnReachable (fun x i => o i x) q ↔ ∀ (x y : H), (∀ (i : I), o i x = o i y) → q x = q y
+'FrontLean.joint_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.common_action_iff : ∀ {H : Type u_1} {Z : Type u_2} {A : Type u_3} (τ : H → Z) (G : H → A → Prop),
+  (∃ p, ∀ (h : H), G h (p ⟨τ h, ⋯⟩)) ↔ ∀ (z : APCILeanAudit.Reachable τ), ∃ a, ∀ (h : H), τ h = ↑z → G h a
+'FrontLean.common_action_iff' depends on axioms: [Classical.choice]
+FrontLean.coordinate_bit_bound : ∀ (d b : ℕ) (encode : (Fin d → Bool) → Fin b → Bool)
+  (decode : (Fin b → Bool) → Fin d → Bool), (∀ (x : Fin d → Bool) (i : Fin d), decode (encode x) i = x i) → d ≤ b
+'FrontLean.coordinate_bit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.answer_does_not_recover_history : ¬APCILeanAudit.ExactOnReachable (fun x => ()) fun h => h
+'FrontLean.answer_does_not_recover_history' depends on axioms: [propext, Classical.choice]
+FrontLean.absent_reading_is_not_content : ¬APCILeanAudit.ExactOnReachable (fun x => none) fun h => h
+'FrontLean.absent_reading_is_not_content' depends on axioms: [propext, Classical.choice]
+@FrontLean.runWord : {S : Type u_1} → {A : Type u_2} → (S → A → S) → S → List A → S
+'FrontLean.runWord' does not depend on any axioms
+@FrontLean.FutureEq : {S : Type u_1} → {A : Type u_2} → {Y : Type u_3} → (S → A → S) → (S → Y) → S → S → Prop
+'FrontLean.FutureEq' does not depend on any axioms
+@FrontLean.future_output_preservation : ∀ {S : Type u_1} {A : Type u_2} {Y : Type u_3} {Z : Type u_4} (δ : S → A → S)
+  (o : S → Y) (c : S → Z),
+  (∀ (w : List A), APCILeanAudit.ExactOnReachable c fun s => o (FrontLean.runWord δ s w)) ↔
+    ∀ (s t : S), c s = c t → FrontLean.FutureEq δ o s t
+'FrontLean.future_output_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.online_update_iff : ∀ {S : Type u_1} {A : Type u_2} {Z : Type u_3} (δ : S → A → S) (c : S → Z),
+  (∃ update, ∀ (s : S) (a : A), update (c s) a = c (δ s a)) ↔ ∀ (s t : S) (a : A), c s = c t → c (δ s a) = c (δ t a)
+'FrontLean.online_update_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.future_eq_is_right_congruence : ∀ {S : Type u_1} {A : Type u_2} {Y : Type u_3} (δ : S → A → S) (o : S → Y)
+  {s t : S}, FrontLean.FutureEq δ o s t → ∀ (a : A), FrontLean.FutureEq δ o (δ s a) (δ t a)
+'FrontLean.future_eq_is_right_congruence' does not depend on any axioms
+@FrontLean.admitted_outputs_sufficiency : ∀ {S : Type u_1} {Z : Type u_2} {I : Type u_3} {Y : I → Type u_4} (c : S → Z)
+  (observed : (i : I) → S → Y i),
+  (∀ (i : I), APCILeanAudit.ExactOnReachable c (observed i)) ↔
+    ∀ (s t : S), c s = c t → ∀ (i : I), observed i s = observed i t
+'FrontLean.admitted_outputs_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.output_sufficient_without_online_update : (∀ (w : List Unit),
+    APCILeanAudit.ExactOnReachable FrontLean.counterCode✝ fun s =>
+      (fun x => false) (FrontLean.runWord FrontLean.counterStep✝ s w)) ∧
+  ¬∃ update,
+      ∀ (s : Fin 3) (a : Unit),
+        update (FrontLean.counterCode✝ s) a = FrontLean.counterCode✝ (FrontLean.counterStep✝ s a)
+'FrontLean.output_sufficient_without_online_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.reuse_cheaper_iff : ∀ (D B R : ℝ) (m : ℕ), D + B + (↑m - 1) * R < ↑m * D ↔ (↑m - 1) * (D - R) > B
+'FrontLean.reuse_cheaper_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.no_saving_when_reuse_is_costlier : ∀ (D B R : ℝ) (m : ℕ),
+  1 ≤ m → 0 ≤ B → D ≤ R → ↑m * D ≤ D + B + (↑m - 1) * R
+'FrontLean.no_saving_when_reuse_is_costlier' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.descending_rank_bounds_steps : ∀ (rank : ℕ → ℕ) (k : ℕ), (∀ i < k, rank (i + 1) < rank i) → k ≤ rank 0
+'FrontLean.descending_rank_bounds_steps' depends on axioms: [propext, Quot.sound]
+FrontLean.total_cost_bound : ∀ (rank : ℕ → ℕ) (k initial p₀ p₁ p₂ : ℕ) (cost : Fin (k + 1) → ℕ),
+  (∀ i < k, rank (i + 1) < rank i) →
+    rank 0 ≤ p₁ → initial ≤ p₀ → (∀ (i : Fin (k + 1)), cost i ≤ p₂) → initial + ∑ i, cost i ≤ p₀ + (p₁ + 1) * p₂
+'FrontLean.total_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.polynomial_accounting : ∀ (p₀ p₁ p₂ : Polynomial ℕ) (n k initial : ℕ) (rank : ℕ → ℕ) (cost : Fin (k + 1) → ℕ),
+  (∀ i < k, rank (i + 1) < rank i) →
+    rank 0 ≤ Polynomial.eval n p₁ →
+      initial ≤ Polynomial.eval n p₀ →
+        (∀ (i : Fin (k + 1)), cost i ≤ Polynomial.eval n p₂) →
+          initial + ∑ i, cost i ≤ Polynomial.eval n (p₀ + (p₁ + 1) * p₂)
+'FrontLean.polynomial_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.shared_diamond_cost : 12 + 1 + 1 + 1 = 15 ∧ 12 + 1 + (12 + 1) + 1 = 27
+'FrontLean.shared_diamond_cost' depends on axioms: [propext]
+@FrontLean.Valid : {α : Type u_1} → FrontLean.Basis α → {q : α} → FrontLean.Derivation α q → Prop
+'FrontLean.Valid' depends on axioms: [propext, Quot.sound]
+@FrontLean.UsesRoot : {α : Type u_1} → {q : α} → FrontLean.Derivation α q → α → Prop
+'FrontLean.UsesRoot' depends on axioms: [propext, Quot.sound]
+@FrontLean.UsesRule : {α : Type u_1} → {q : α} → FrontLean.Derivation α q → FrontLean.Rule α → Prop
+'FrontLean.UsesRule' depends on axioms: [propext, Quot.sound]
+@FrontLean.derivation_sound : ∀ {α : Type u_1} (b : FrontLean.Basis α) (truth : α → Prop),
+  (∀ (a : α), b.root a → truth a) →
+    (∀ (r : FrontLean.Rule α), b.rule r → (∀ a ∈ r.body, truth a) → truth r.head) →
+      ∀ {q : α} (d : FrontLean.Derivation α q), FrontLean.Valid b d → truth q
+'FrontLean.derivation_sound' depends on axioms: [propext, Quot.sound]
+@FrontLean.premise_substitution : ∀ {α : Type u_1} (Γ Δ : α → Prop) (R : FrontLean.Rule α → Prop),
+  (∀ (a : α), Γ a → ∃ d, FrontLean.Valid { root := Δ, rule := R } d) →
+    ∀ {q : α} (d : FrontLean.Derivation α q),
+      FrontLean.Valid { root := Γ, rule := R } d → ∃ e, FrontLean.Valid { root := Δ, rule := R } e
+'FrontLean.premise_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.valid_under_unchanged_basis : ∀ {α : Type u_1} {q : α} (d : FrontLean.Derivation α q)
+  (b b' : FrontLean.Basis α),
+  (∀ (a : α), FrontLean.UsesRoot d a → (b.root a ↔ b'.root a)) →
+    (∀ (r : FrontLean.Rule α), FrontLean.UsesRule d r → (b.rule r ↔ b'.rule r)) →
+      (FrontLean.Valid b d ↔ FrontLean.Valid b' d)
+'FrontLean.valid_under_unchanged_basis' depends on axioms: [propext, Quot.sound]
+@FrontLean.increasing_depth_no_cycle : ∀ {V : Type u_1} (edge : V → V → Prop) (depth : V → ℕ),
+  (∀ (a b : V), edge a b → depth a < depth b) → ∀ (v : V), ¬Relation.TransGen edge v v
+'FrontLean.increasing_depth_no_cycle' does not depend on any axioms
+@FrontLean.negative_core_transfer : ∀ {V : Type u_1} {C : Type u_2} (sat : V → C → Prop) (core formula : Set C),
+  core ⊆ formula → (¬∃ v, ∀ c ∈ core, sat v c) → ¬∃ v, ∀ c ∈ formula, sat v c
+'FrontLean.negative_core_transfer' does not depend on any axioms
+@FrontLean.hornStep : {α : Type u_1} → Finset (FrontLean.Rule α) → Finset α → Finset α
+'FrontLean.hornStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.mem_hornStep : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (s : Finset α) (a : α),
+  a ∈ FrontLean.hornStep rs s ↔ a ∈ s ∨ ∃ r ∈ rs, r.body ⊆ s ∧ r.head = a
+'FrontLean.mem_hornStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.hornStep_inflationary : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (s : Finset α),
+  s ⊆ FrontLean.hornStep rs s
+'FrontLean.hornStep_inflationary' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.hornStep_monotone : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)), Monotone (FrontLean.hornStep rs)
+'FrontLean.hornStep_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.rounds : {α : Type u_1} → (Finset α → Finset α) → Finset α → ℕ → Finset α
+'FrontLean.rounds' depends on axioms: [propext, Quot.sound]
+@FrontLean.rounds_seed : ∀ {α : Type u_1} (f : Finset α → Finset α) (E : Finset α),
+  (∀ (s : Finset α), s ⊆ f s) → ∀ (n : ℕ), E ⊆ FrontLean.rounds f E n
+'FrontLean.rounds_seed' depends on axioms: [propext, Quot.sound]
+@FrontLean.stable_round_persists : ∀ {α : Type u_1} (f : Finset α → Finset α) (E : Finset α) (k : ℕ),
+  FrontLean.rounds f E (k + 1) = FrontLean.rounds f E k →
+    ∀ (j : ℕ), FrontLean.rounds f E (k + j) = FrontLean.rounds f E k
+'FrontLean.stable_round_persists' depends on axioms: [propext, Quot.sound]
+@FrontLean.finite_stabilization : ∀ {α : Type u_1} [inst : Fintype α] (f : Finset α → Finset α) (E : Finset α),
+  (∀ (s : Finset α), s ⊆ f s) → ∃ k ≤ Fintype.card α - E.card, FrontLean.rounds f E (k + 1) = FrontLean.rounds f E k
+'FrontLean.finite_stabilization' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.rounds_le_closed : ∀ {α : Type u_1} (f : Finset α → Finset α) (E T : Finset α),
+  Monotone f → E ⊆ T → f T = T → ∀ (n : ℕ), FrontLean.rounds f E n ⊆ T
+'FrontLean.rounds_le_closed' depends on axioms: [propext, Quot.sound]
+@FrontLean.horn_least_closure : ∀ {α : Type u_1} [inst : Fintype α] (rs : Finset (FrontLean.Rule α)) (E : Finset α),
+  ∃ k ≤ Fintype.card α - E.card,
+    have C := FrontLean.rounds (FrontLean.hornStep rs) E k;
+    E ⊆ C ∧ FrontLean.hornStep rs C = C ∧ ∀ (T : Finset α), E ⊆ T → FrontLean.hornStep rs T = T → C ⊆ T
+'FrontLean.horn_least_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.horn_rounds_sound : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)) (E : Finset α) (truth : α → Prop),
+  (∀ a ∈ E, truth a) →
+    (∀ r ∈ rs, (∀ a ∈ r.body, truth a) → truth r.head) →
+      ∀ (n : ℕ), ∀ a ∈ FrontLean.rounds (FrontLean.hornStep rs) E n, truth a
+'FrontLean.horn_rounds_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.empty_seed_stays_empty : ∀ {α : Type u_1} (rs : Finset (FrontLean.Rule α)),
+  (∀ r ∈ rs, r.body.Nonempty) → ∀ (n : ℕ), FrontLean.rounds (FrontLean.hornStep rs) ∅ n = ∅
+'FrontLean.empty_seed_stays_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.wake_decomposition : ∀ {α : Type u_1} [inst : DecidableEq α] (E B S : Finset α) (d : α),
+  E ⊆ B → B ⊆ S → S \ (E ∪ {d}) = (B \ E) \ {d} ∪ (S \ B) \ {d} ∧ Disjoint ((B \ E) \ {d}) ((S \ B) \ {d})
+'FrontLean.wake_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.redundant_seed : ∀ {α : Type u_1} [inst : DecidableEq α] (f : Finset α → Finset α) (E B S : Finset α)
+  (d : α),
+  E ⊆ B →
+    d ∈ B →
+      f B = B →
+        f S = S →
+          E ∪ {d} ⊆ S →
+            (∀ (T : Finset α), E ⊆ T → f T = T → B ⊆ T) → (∀ (T : Finset α), E ∪ {d} ⊆ T → f T = T → S ⊆ T) → S = B
+'FrontLean.redundant_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.RecordedSupport : {α : Type u_1} →
+  FrontLean.Basis α → {q : α} → {n : ℕ} → (Fin n → FrontLean.Derivation α q) → Prop
+'FrontLean.RecordedSupport' depends on axioms: [propext, Quot.sound]
+@FrontLean.recorded_support_sound : ∀ {α : Type u_1} (b : FrontLean.Basis α) (truth : α → Prop),
+  (∀ (a : α), b.root a → truth a) →
+    (∀ (r : FrontLean.Rule α), b.rule r → (∀ a ∈ r.body, truth a) → truth r.head) →
+      ∀ {q : α} {n : ℕ} (recorded : Fin n → FrontLean.Derivation α q), FrontLean.RecordedSupport b recorded → truth q
+'FrontLean.recorded_support_sound' depends on axioms: [propext, Quot.sound]
+@FrontLean.unchanged_alternative_survives : ∀ {α : Type u_1} {q : α} {n : ℕ} (b b' : FrontLean.Basis α)
+  (recorded : Fin n → FrontLean.Derivation α q) (i : Fin n),
+  FrontLean.Valid b (recorded i) →
+    (∀ (a : α), FrontLean.UsesRoot (recorded i) a → (b.root a ↔ b'.root a)) →
+      (∀ (r : FrontLean.Rule α), FrontLean.UsesRule (recorded i) r → (b.rule r ↔ b'.rule r)) →
+        FrontLean.RecordedSupport b' recorded
+'FrontLean.unchanged_alternative_survives' depends on axioms: [propext, Quot.sound]
+@FrontLean.scratchRepair : {σ : Type u_1} →
+  σ → σ → Prop → (σ → Prop) → List (FrontLean.RepairEvent σ) → FrontLean.RepairResult σ
+'FrontLean.scratchRepair' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.scratch_commit_iff : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)
+  (history : List (FrontLean.RepairEvent σ)),
+  (FrontLean.scratchRepair original candidate grant post history).status = FrontLean.RepairStatus.committed ↔
+    candidate ≠ original ∧ grant ∧ post candidate
+'FrontLean.scratch_commit_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.failed_scratch_keeps_original : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)
+  (history : List (FrontLean.RepairEvent σ)),
+  (FrontLean.scratchRepair original candidate grant post history).status ≠ FrontLean.RepairStatus.committed →
+    (FrontLean.scratchRepair original candidate grant post history).value = original
+'FrontLean.failed_scratch_keeps_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.HistoryPrefix : {E : Type u_1} → List E → List E → Prop
+'FrontLean.HistoryPrefix' does not depend on any axioms
+@FrontLean.history_prefix_refl : ∀ {E : Type u_1} (h : List E), FrontLean.HistoryPrefix h h
+'FrontLean.history_prefix_refl' depends on axioms: [propext]
+@FrontLean.history_prefix_trans : ∀ {E : Type u_1} {a b c : List E},
+  FrontLean.HistoryPrefix a b → FrontLean.HistoryPrefix b c → FrontLean.HistoryPrefix a c
+'FrontLean.history_prefix_trans' depends on axioms: [propext]
+@FrontLean.scratch_preserves_history : ∀ {σ : Type u_1} (original candidate : σ) (grant : Prop) (post : σ → Prop)
+  (history : List (FrontLean.RepairEvent σ)),
+  FrontLean.HistoryPrefix history (FrontLean.scratchRepair original candidate grant post history).history
+'FrontLean.scratch_preserves_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.finite_history_preservation : ∀ {E : Type u_1} (history : ℕ → List E) (n : ℕ),
+  (∀ i < n, FrontLean.HistoryPrefix (history i) (history (i + 1))) → FrontLean.HistoryPrefix (history 0) (history n)
+'FrontLean.finite_history_preservation' depends on axioms: [propext, Quot.sound]
+@FrontLean.failed_secondary_condition_is_recorded : ∀ {σ : Type u_1} (original candidate : σ) (post : σ → Prop)
+  (history : List (FrontLean.RepairEvent σ)),
+  candidate ≠ original →
+    ¬post candidate →
+      (FrontLean.scratchRepair original candidate True post history).value = original ∧
+        FrontLean.RepairEvent.failedRevalidation candidate ∈
+          (FrontLean.scratchRepair original candidate True post history).history
+'FrontLean.failed_secondary_condition_is_recorded' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.independent_answer_invalid_receipt : ¬FrontLean.Valid FrontLean.correctedBasis✝ FrontLean.oldRoute✝ ∧
+  FrontLean.Valid FrontLean.correctedBasis✝ FrontLean.alternativeRoute✝
+'FrontLean.independent_answer_invalid_receipt' depends on axioms: [propext, Quot.sound]
+FrontLean.missing_conjunct_is_rejected : ¬FrontLean.Valid
+    { root := fun atom => atom = FrontLean.TestAtom.a, rule := fun x => True } FrontLean.alternativeRoute✝
+'FrontLean.missing_conjunct_is_rejected' depends on axioms: [propext, Quot.sound]
+FrontLean.no_recorded_proof_is_not_negation : ∃ truth b r, ¬FrontLean.RecordedSupport b r ∧ truth ()
+'FrontLean.no_recorded_proof_is_not_negation' depends on axioms: [propext, Quot.sound]
+@FrontLean.unchanged_does_not_require_mutation_grant : ∀ {σ : Type u_1} (s : σ) (post : σ → Prop),
+  post s →
+    ∀ (history : List (FrontLean.RepairEvent σ)),
+      (FrontLean.scratchRepair s s False post history).status = FrontLean.RepairStatus.unchangedSupported
+'FrontLean.unchanged_does_not_require_mutation_grant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.linear_factorization : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] (J : T →ₗ[k] R) (q : T →ₗ[k] Q),
+  (∃ d, d ∘ₗ J.rangeRestrict = q) ↔ J.ker ≤ q.ker
+'FrontLean.linear_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.joint_kernel : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] {ι : Type u_3} {V : ι → Type u_4} [inst_3 : (i : ι) → AddCommGroup (V i)]
+  [inst_4 : (i : ι) → Module k (V i)] (J : (i : ι) → T →ₗ[k] V i), (LinearMap.pi J).ker = ⨅ i, (J i).ker
+'FrontLean.joint_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.kernel_refinement : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] {ι : Type u_4} (J : ι → T →ₗ[k] R)
+  (s t : Set ι), s ⊆ t → ⨅ i ∈ t, (J i).ker ≤ ⨅ i ∈ s, (J i).ker
+'FrontLean.kernel_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.joint_residual_short_exact : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (B : Submodule k T)
+  (J : T →ₗ[k] R),
+  Function.Injective ⇑(Experiments.BridgeFourSector.hiddenToDefect B J.ker) ∧
+    Function.Exact ⇑(Experiments.BridgeFourSector.hiddenToDefect B J.ker)
+        ⇑(Experiments.BridgeReadout.residualReadout B J) ∧
+      Function.Surjective ⇑(Experiments.BridgeReadout.residualReadout B J)
+'FrontLean.joint_residual_short_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.joint_visible_equiv : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] →
+              [inst_4 : Module k R] →
+                (B : Submodule k T) →
+                  (J : T →ₗ[k] R) →
+                    Experiments.BridgeFourSector.visible B J.ker ≃ₗ[k] Experiments.BridgeRecovery.residualTarget B J
+'FrontLean.joint_visible_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.joint_sector_dimensions : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [FiniteDimensional k T] (B : Submodule k T) (J : T →ₗ[k] R),
+  Module.finrank k ↥(Experiments.BridgeFourSector.generatedCollision B J.ker) +
+          Module.finrank k (Experiments.BridgeFourSector.generatedVisible B J.ker) +
+        Module.finrank k (Experiments.BridgeFourSector.hidden B J.ker) +
+      Module.finrank k (Experiments.BridgeFourSector.visible B J.ker) =
+    Module.finrank k T
+'FrontLean.joint_sector_dimensions' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.visibleRefinement : {k : Type u_1} →
+  {T : Type u_2} →
+    [inst : Field k] →
+      [inst_1 : AddCommGroup T] →
+        [inst_2 : Module k T] →
+          (B Ksmall Klarge : Submodule k T) →
+            Ksmall ≤ Klarge →
+              Experiments.BridgeFourSector.visible B Ksmall →ₗ[k] Experiments.BridgeFourSector.visible B Klarge
+'FrontLean.visibleRefinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.refinement_commutes : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] (B Ksmall Klarge : Submodule k T) (h : Ksmall ≤ Klarge),
+  FrontLean.visibleRefinement B Ksmall Klarge h ∘ₗ Experiments.BridgeFourSector.defectToVisible B Ksmall =
+    Experiments.BridgeFourSector.defectToVisible B Klarge
+'FrontLean.refinement_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.quotient_update_iff : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] (B : Submodule k T) (L : T →ₗ[k] T), (∃ D, D ∘ₗ B.mkQ = B.mkQ ∘ₗ L) ↔ ∀ x ∈ B, L x ∈ B
+'FrontLean.quotient_update_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.transported_return : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] (M : Module.End k T) (α : T) (i j : ℕ),
+  (M ^ (i + j)) α - α = (M ^ i) α - α + (M ^ i) ((M ^ j) α - α)
+'FrontLean.transported_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.side_trace_decodable : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E] (J : T →ₗ[k] R)
+  (q : T →ₗ[k] Q) (s : T →ₗ[k] E), (∃ d, d ∘ₗ (J.prod s).rangeRestrict = q) ↔ J.ker ⊓ s.ker ≤ q.ker
+'FrontLean.side_trace_decodable' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.query_rank_le : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [FiniteDimensional k T] (f : T →ₗ[k] R) (q : T →ₗ[k] Q),
+  f.ker ≤ q.ker → Module.finrank k ↥q.range ≤ Module.finrank k ↥f.range
+'FrontLean.query_rank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.side_trace_rank_lower_bound : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]
+  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q) (s : T →ₗ[k] E),
+  J.ker ⊓ s.ker ≤ q.ker → Module.finrank k ↥(q.domRestrict J.ker).range ≤ Module.finrank k ↥s.range
+'FrontLean.side_trace_rank_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.minimum_side_trace : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]
+  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q) (e : ↥(q.domRestrict J.ker).range →ₗ[k] E),
+  Function.Injective ⇑e →
+    ∃ s, J.ker ⊓ s.ker ≤ q.ker ∧ Module.finrank k ↥s.range = Module.finrank k ↥(q.domRestrict J.ker).range
+'FrontLean.minimum_side_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.side_trace_capacity : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]
+  [FiniteDimensional k T] [FiniteDimensional k E] (J : T →ₗ[k] R) (q : T →ₗ[k] Q),
+  (∃ s, J.ker ⊓ s.ker ≤ q.ker) ↔ Module.finrank k ↥(q.domRestrict J.ker).range ≤ Module.finrank k E
+'FrontLean.side_trace_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.side_trace_capacity_injection : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]
+  [FiniteDimensional k T] (J : T →ₗ[k] R) (q : T →ₗ[k] Q), (∃ s, J.ker ⊓ s.ker ≤ q.ker) ↔ ∃ e, Function.Injective ⇑e
+'FrontLean.side_trace_capacity_injection' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.residual_query_criterion : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E] (B : Submodule k T)
+  (J : T →ₗ[k] R) (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q)
+  (sD : Experiments.BridgeFourSector.defect B →ₗ[k] E),
+  (∃ d, d ∘ₗ ((Experiments.BridgeReadout.residualReadout B J).prod sD).rangeRestrict = qD) ↔
+    (Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ⊓ sD.ker ≤ qD.ker
+'FrontLean.residual_query_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.residual_debt_image : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] (B : Submodule k T) (J : T →ₗ[k] R)
+  (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q),
+  (qD.domRestrict (Experiments.BridgeReadout.residualReadout B J).ker).range =
+    (qD ∘ₗ Experiments.BridgeFourSector.hiddenToDefect B J.ker).range
+'FrontLean.residual_debt_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.residual_side_trace_capacity : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} {Q : Type u_4} {E : Type u_5}
+  [inst : Field k] [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [inst_5 : AddCommGroup Q] [inst_6 : Module k Q] [inst_7 : AddCommGroup E] [inst_8 : Module k E]
+  [FiniteDimensional k T] [FiniteDimensional k E] (B : Submodule k T) (J : T →ₗ[k] R)
+  (qD : Experiments.BridgeFourSector.defect B →ₗ[k] Q),
+  (∃ sD, (Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ⊓ sD.ker ≤ qD.ker) ↔
+    Module.finrank k ↥(qD ∘ₗ Experiments.BridgeFourSector.hiddenToDefect B J.ker).range ≤ Module.finrank k E
+'FrontLean.residual_side_trace_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.horizonKernel : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Module.End k T → (T →ₗ[k] R) → ℕ → Submodule k T
+'FrontLean.horizonKernel' depends on axioms: [propext, Quot.sound]
+@FrontLean.infiniteKernel : {k : Type u_1} →
+  {T : Type u_2} →
+    {R : Type u_3} →
+      [inst : Field k] →
+        [inst_1 : AddCommGroup T] →
+          [inst_2 : Module k T] →
+            [inst_3 : AddCommGroup R] → [inst_4 : Module k R] → Module.End k T → (T →ₗ[k] R) → Submodule k T
+'FrontLean.infiniteKernel' depends on axioms: [propext, Quot.sound]
+@FrontLean.mem_horizon : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R) (n : ℕ)
+  (x : T), x ∈ FrontLean.horizonKernel L r n ↔ ∀ j < n, r ((L ^ j) x) = 0
+'FrontLean.mem_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.mem_infinite : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R) (x : T),
+  x ∈ FrontLean.infiniteKernel L r ↔ ∀ (j : ℕ), r ((L ^ j) x) = 0
+'FrontLean.mem_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.horizon_antitone : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T) (r : T →ₗ[k] R),
+  Antitone (FrontLean.horizonKernel L r)
+'FrontLean.horizon_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.invariant_kernel_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)
+  (r : T →ₗ[k] R), (∀ x ∈ r.ker, L x ∈ r.ker) ↔ ∀ x ∈ r.ker, ∀ (j : ℕ), r ((L ^ j) x) = 0
+'FrontLean.invariant_kernel_iff' depends on axioms: [propext, Quot.sound]
+@FrontLean.infinite_invariant : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)
+  (r : T →ₗ[k] R), ∀ x ∈ FrontLean.infiniteKernel L r, L x ∈ FrontLean.infiniteKernel L r
+'FrontLean.infinite_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.all_outputs_equal_iff : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R] (L : Module.End k T)
+  (r : T →ₗ[k] R) (x y : T), (∀ (j : ℕ), r ((L ^ j) x) = r ((L ^ j) y)) ↔ x - y ∈ FrontLean.infiniteKernel L r
+'FrontLean.all_outputs_equal_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.finite_horizon_closure : ∀ {k : Type u_1} {T : Type u_2} {R : Type u_3} [inst : Field k]
+  [inst_1 : AddCommGroup T] [inst_2 : Module k T] [inst_3 : AddCommGroup R] [inst_4 : Module k R]
+  [FiniteDimensional k T] (L : Module.End k T) (r : T →ₗ[k] R),
+  FrontLean.horizonKernel L r (Module.finrank k T) = FrontLean.infiniteKernel L r
+'FrontLean.finite_horizon_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.finite_subfamily_inside : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [FiniteDimensional k T] {ι : Type u_3} (U : ι → Submodule k T) (S : Submodule k T),
+  ∃ s, s.card ≤ Module.finrank k ↥S ∧ S ⊓ ⨅ i ∈ s, U i = S ⊓ ⨅ i, U i
+'FrontLean.finite_subfamily_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FrontLean.finite_readout_subfamily : ∀ {k : Type u_1} {T : Type u_2} [inst : Field k] [inst_1 : AddCommGroup T]
+  [inst_2 : Module k T] [FiniteDimensional k T] {ι : Type u_3} {V : ι → Type u_4}
+  [inst_4 : (i : ι) → AddCommGroup (V i)] [inst_5 : (i : ι) → Module k (V i)] (r : (i : ι) → T →ₗ[k] V i),
+  ∃ s, s.card ≤ Module.finrank k T ∧ ⨅ i ∈ s, (r i).ker = ⨅ i, (r i).ker
+'FrontLean.finite_readout_subfamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.unlabelled : Bool × Bool → Multiset Bool
+'FrontLean.unlabelled' depends on axioms: [Quot.sound]
+FrontLean.lost_labels_counterexample : ¬∃ d, ∀ (x : Bool × Bool), d (FrontLean.unlabelled x) = x.1
+'FrontLean.lost_labels_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.sat_does_not_transfer_to_strengthening : (∃ x, x = true) ∧ ¬∃ x, x = true ∧ x = false
+'FrontLean.sat_does_not_transfer_to_strengthening' does not depend on any axioms
+FrontLean.stale_premise_counterexample : FrontLean.Valid { root := fun x => True, rule := fun x => False }
+    (FrontLean.Derivation.root ()) ∧
+  ¬FrontLean.Valid { root := fun x => False, rule := fun x => False } (FrontLean.Derivation.root ())
+'FrontLean.stale_premise_counterexample' depends on axioms: [propext, Quot.sound]
+FrontLean.technically_valid_but_not_authorized : (FrontLean.scratchRepair 0 1 False (fun x => True) []).status =
+    FrontLean.RepairStatus.notAuthorized ∧
+  (FrontLean.scratchRepair 0 1 False (fun x => True) []).value = 0
+'FrontLean.technically_valid_but_not_authorized' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.independent_baselines_lose_relation : Submodule.map (LinearMap.fst ℚ ℚ ℚ) FrontLean.diagonal✝ = ⊤ ∧
+  Submodule.map (LinearMap.snd ℚ ℚ ℚ) FrontLean.diagonal✝ = ⊤ ∧ FrontLean.diagonal✝.mkQ (1, 0) ≠ 0
+'FrontLean.independent_baselines_lose_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.quotient_update_can_fail : ¬∃ D,
+    D ∘ₗ FrontLean.diagonal✝.mkQ = FrontLean.diagonal✝.mkQ ∘ₗ (LinearMap.fst ℚ ℚ ℚ).prod 0
+'FrontLean.quotient_update_can_fail' depends on axioms: [propext, Classical.choice, Quot.sound]
+FrontLean.untransported_return_wrong : 2 ^ (1 + 1) - 1 ≠ 2 ^ 1 - 1 + (2 ^ 1 - 1)
+'FrontLean.untransported_return_wrong' depends on axioms: [propext, Classical.choice, Quot.sound]
