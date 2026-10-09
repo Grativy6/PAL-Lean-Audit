@@ -1,0 +1,645 @@
+{
+  "schema_version": 2,
+  "claim_id": "FRONT-CORRECT-01-REPLAY",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-O",
+    "-X",
+    "utf8",
+    "scripts/replay_correction.py",
+    "--output",
+    "Audit/runs/correction-optimized"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Python",
+        "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+      }
+    ],
+    "hardware": "Windows-10-10.0.19045-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Replay the source-locked finite correction study and its own conformance controls; compare saved substantive results separately.",
+    "coefficient_domain": "Finite Boolean/positive Horn fixtures; exact integer operation counts; floating clock measurements are descriptive only.",
+    "conventions": "Original 75 fixtures, 216 questions per arm, five timing repeats, 96 scratch repairs, 5040 orders, 1024 Horn systems, 525 budget cases. A is the deliberately unchecked control.",
+    "inputs": [
+      "Frozen FRONT-CORRECT-01 program and fixtures"
+    ],
+    "bounds": {
+      "fixtures": 75,
+      "queries_per_arm": 216,
+      "technical_repetitions": 5,
+      "scratch_repairs": 96,
+      "timeout_seconds": 120,
+      "scope": "No model, network, filesystem effects beyond own fresh logs; optional RSS unavailable on Windows."
+    },
+    "non_claims": [
+      "No universal proof from finite tests",
+      "No independent referee",
+      "No Python-to-Lean refinement theorem",
+      "No timing superiority over mature systems"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-08T08:43:22.630348+00:00",
+    "runtime_seconds": 4.016,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1000000,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/replay_correction.py",
+    "Audit/fixture-source/cases.json",
+    "Audit/fixture-source/checks.py",
+    "Audit/fixture-source/fixtures/01_attempted_spend_16.json",
+    "Audit/fixture-source/fixtures/01_attempted_spend_4.json",
+    "Audit/fixture-source/fixtures/01_attempted_spend_64.json",
+    "Audit/fixture-source/fixtures/02_accepted_rejection_16.json",
+    "Audit/fixture-source/fixtures/02_accepted_rejection_4.json",
+    "Audit/fixture-source/fixtures/02_accepted_rejection_64.json",
+    "Audit/fixture-source/fixtures/03_only_unsupported_path_16.json",
+    "Audit/fixture-source/fixtures/03_only_unsupported_path_4.json",
+    "Audit/fixture-source/fixtures/03_only_unsupported_path_64.json",
+    "Audit/fixture-source/fixtures/04_independent_survivor_16.json",
+    "Audit/fixture-source/fixtures/04_independent_survivor_4.json",
+    "Audit/fixture-source/fixtures/04_independent_survivor_64.json",
+    "Audit/fixture-source/fixtures/05_same_answer_new_derivation_16.json",
+    "Audit/fixture-source/fixtures/05_same_answer_new_derivation_4.json",
+    "Audit/fixture-source/fixtures/05_same_answer_new_derivation_64.json",
+    "Audit/fixture-source/fixtures/06_changed_scope_16.json",
+    "Audit/fixture-source/fixtures/06_changed_scope_4.json",
+    "Audit/fixture-source/fixtures/06_changed_scope_64.json",
+    "Audit/fixture-source/fixtures/07_no_valid_repair_16.json",
+    "Audit/fixture-source/fixtures/07_no_valid_repair_4.json",
+    "Audit/fixture-source/fixtures/07_no_valid_repair_64.json",
+    "Audit/fixture-source/fixtures/08_missing_permission_16.json",
+    "Audit/fixture-source/fixtures/08_missing_permission_4.json",
+    "Audit/fixture-source/fixtures/08_missing_permission_64.json",
+    "Audit/fixture-source/fixtures/08_missing_witness_16.json",
+    "Audit/fixture-source/fixtures/08_missing_witness_4.json",
+    "Audit/fixture-source/fixtures/08_missing_witness_64.json",
+    "Audit/fixture-source/fixtures/08_proved_negative_16.json",
+    "Audit/fixture-source/fixtures/08_proved_negative_4.json",
+    "Audit/fixture-source/fixtures/08_proved_negative_64.json",
+    "Audit/fixture-source/fixtures/08_timeout_16.json",
+    "Audit/fixture-source/fixtures/08_timeout_4.json",
+    "Audit/fixture-source/fixtures/08_timeout_64.json",
+    "Audit/fixture-source/fixtures/08_tool_error_16.json",
+    "Audit/fixture-source/fixtures/08_tool_error_4.json",
+    "Audit/fixture-source/fixtures/08_tool_error_64.json",
+    "Audit/fixture-source/fixtures/09_alternate_tool_denied_16.json",
+    "Audit/fixture-source/fixtures/09_alternate_tool_denied_4.json",
+    "Audit/fixture-source/fixtures/09_alternate_tool_denied_64.json",
+    "Audit/fixture-source/fixtures/10_repetition_laundering_16.json",
+    "Audit/fixture-source/fixtures/10_repetition_laundering_4.json",
+    "Audit/fixture-source/fixtures/10_repetition_laundering_64.json",
+    "Audit/fixture-source/fixtures/11_changed_dependency_16.json",
+    "Audit/fixture-source/fixtures/11_changed_dependency_4.json",
+    "Audit/fixture-source/fixtures/11_changed_dependency_64.json",
+    "Audit/fixture-source/fixtures/11_expired_grant_16.json",
+    "Audit/fixture-source/fixtures/11_expired_grant_4.json",
+    "Audit/fixture-source/fixtures/11_expired_grant_64.json",
+    "Audit/fixture-source/fixtures/11_untrusted_hash_16.json",
+    "Audit/fixture-source/fixtures/11_untrusted_hash_4.json",
+    "Audit/fixture-source/fixtures/11_untrusted_hash_64.json",
+    "Audit/fixture-source/fixtures/11_wrong_interpretation_16.json",
+    "Audit/fixture-source/fixtures/11_wrong_interpretation_4.json",
+    "Audit/fixture-source/fixtures/11_wrong_interpretation_64.json",
+    "Audit/fixture-source/fixtures/12_cross_desk_16.json",
+    "Audit/fixture-source/fixtures/12_cross_desk_4.json",
+    "Audit/fixture-source/fixtures/12_cross_desk_64.json",
+    "Audit/fixture-source/fixtures/13_selective_disclosure_16.json",
+    "Audit/fixture-source/fixtures/13_selective_disclosure_4.json",
+    "Audit/fixture-source/fixtures/13_selective_disclosure_64.json",
+    "Audit/fixture-source/fixtures/14_grounded_cycle_16.json",
+    "Audit/fixture-source/fixtures/14_grounded_cycle_4.json",
+    "Audit/fixture-source/fixtures/14_grounded_cycle_64.json",
+    "Audit/fixture-source/fixtures/14_missing_parent_16.json",
+    "Audit/fixture-source/fixtures/14_missing_parent_4.json",
+    "Audit/fixture-source/fixtures/14_missing_parent_64.json",
+    "Audit/fixture-source/fixtures/14_ungrounded_cycle_16.json",
+    "Audit/fixture-source/fixtures/14_ungrounded_cycle_4.json",
+    "Audit/fixture-source/fixtures/14_ungrounded_cycle_64.json",
+    "Audit/fixture-source/fixtures/15_repair_new_contradiction_16.json",
+    "Audit/fixture-source/fixtures/15_repair_new_contradiction_4.json",
+    "Audit/fixture-source/fixtures/15_repair_new_contradiction_64.json",
+    "Audit/fixture-source/fixtures/16_quiet_16.json",
+    "Audit/fixture-source/fixtures/16_quiet_4.json",
+    "Audit/fixture-source/fixtures/16_quiet_64.json",
+    "Audit/fixture-source/FREEZE.json",
+    "Audit/fixture-source/make_cases.py",
+    "Audit/fixture-source/oracle.py",
+    "Audit/fixture-source/policy.py",
+    "Audit/fixture-source/PROTOCOL.md",
+    "Audit/fixture-source/run_correct.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/replay_correction.py",
+      "sha256": "14a11968bbb1c8a5cce0d98a4c6624545049ece0133c336d8bd4e6208f42ec3c",
+      "sha256_after": "14a11968bbb1c8a5cce0d98a4c6624545049ece0133c336d8bd4e6208f42ec3c"
+    },
+    {
+      "path": "Audit/fixture-source/cases.json",
+      "sha256": "062f9d8c85cd942a3b3af938eba33f73cd71da80c468b25b15dfdcc2a96d38a5",
+      "sha256_after": "062f9d8c85cd942a3b3af938eba33f73cd71da80c468b25b15dfdcc2a96d38a5"
+    },
+    {
+      "path": "Audit/fixture-source/checks.py",
+      "sha256": "4ed498f074fe00a4fe3000d097449050342db9c14aca1dcf2b277718cc5dd881",
+      "sha256_after": "4ed498f074fe00a4fe3000d097449050342db9c14aca1dcf2b277718cc5dd881"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/01_attempted_spend_16.json",
+      "sha256": "aebc79c4217429c84c81d6244ffc07165a35c96a8fac2d6f2c426188080d744d",
+      "sha256_after": "aebc79c4217429c84c81d6244ffc07165a35c96a8fac2d6f2c426188080d744d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/01_attempted_spend_4.json",
+      "sha256": "ac21b05ca352c4d80febcb5cc7491b135f8d56865deaefad364fa6ee4f3e678d",
+      "sha256_after": "ac21b05ca352c4d80febcb5cc7491b135f8d56865deaefad364fa6ee4f3e678d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/01_attempted_spend_64.json",
+      "sha256": "480ea8fa5b63e7e129526053b9f524853a57f1f3a8fb8b815f1c3da76bbe04e4",
+      "sha256_after": "480ea8fa5b63e7e129526053b9f524853a57f1f3a8fb8b815f1c3da76bbe04e4"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/02_accepted_rejection_16.json",
+      "sha256": "928d51058e8a9e7933a1c9aa52a30bd72eca0bbf7caeb4958d4cc45b6e61ca8d",
+      "sha256_after": "928d51058e8a9e7933a1c9aa52a30bd72eca0bbf7caeb4958d4cc45b6e61ca8d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/02_accepted_rejection_4.json",
+      "sha256": "043cf95212f4a5306c9be1cf97d1887be104e4a2a78b698dff9891c35a0dce2c",
+      "sha256_after": "043cf95212f4a5306c9be1cf97d1887be104e4a2a78b698dff9891c35a0dce2c"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/02_accepted_rejection_64.json",
+      "sha256": "f29bb5b86a2d4437bf36a9a841f2d8c039157a26b38edc6bdac13ae7ede92707",
+      "sha256_after": "f29bb5b86a2d4437bf36a9a841f2d8c039157a26b38edc6bdac13ae7ede92707"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/03_only_unsupported_path_16.json",
+      "sha256": "714552a9644aa410c7548684addf68dfa31e9661dfe4541764c99e0591afa108",
+      "sha256_after": "714552a9644aa410c7548684addf68dfa31e9661dfe4541764c99e0591afa108"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/03_only_unsupported_path_4.json",
+      "sha256": "4a975919031758430ac6ba937243c9035d05beaa79cb4a44a6807938cb436630",
+      "sha256_after": "4a975919031758430ac6ba937243c9035d05beaa79cb4a44a6807938cb436630"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/03_only_unsupported_path_64.json",
+      "sha256": "c59468074233e8a59309220359daa07c4824b9d993614136644b5bc5b4dc3a8b",
+      "sha256_after": "c59468074233e8a59309220359daa07c4824b9d993614136644b5bc5b4dc3a8b"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/04_independent_survivor_16.json",
+      "sha256": "746507403e129316ea7a1429c25ff9e9d0cbeb73eb398c22e87592eeb0c31a4a",
+      "sha256_after": "746507403e129316ea7a1429c25ff9e9d0cbeb73eb398c22e87592eeb0c31a4a"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/04_independent_survivor_4.json",
+      "sha256": "4436cb150c64dcc626bae9161e53c1d954cecb8980cd59fcceb187a710926348",
+      "sha256_after": "4436cb150c64dcc626bae9161e53c1d954cecb8980cd59fcceb187a710926348"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/04_independent_survivor_64.json",
+      "sha256": "833ca60b35756c0e0fb5089b23f9e2854bf638d7f7a36c2d6afd86467dcb7a82",
+      "sha256_after": "833ca60b35756c0e0fb5089b23f9e2854bf638d7f7a36c2d6afd86467dcb7a82"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/05_same_answer_new_derivation_16.json",
+      "sha256": "f64f3c5ff85c963fb3c693b73841909d0eec4b2958f998c40da3ef0cb7ed41ac",
+      "sha256_after": "f64f3c5ff85c963fb3c693b73841909d0eec4b2958f998c40da3ef0cb7ed41ac"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/05_same_answer_new_derivation_4.json",
+      "sha256": "f60416e4c10072be0d36592affbd3912a3b4b3b5d82abe68751bca84738e2c6c",
+      "sha256_after": "f60416e4c10072be0d36592affbd3912a3b4b3b5d82abe68751bca84738e2c6c"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/05_same_answer_new_derivation_64.json",
+      "sha256": "8cd17fd1d91aa7dfe7aa52b47f92c1d3bc48dc047772ae0923b241810a4d47a6",
+      "sha256_after": "8cd17fd1d91aa7dfe7aa52b47f92c1d3bc48dc047772ae0923b241810a4d47a6"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/06_changed_scope_16.json",
+      "sha256": "3137e27166bcdce61795c4f1ae60e8646820e2499faead1912e1e717e4c3030f",
+      "sha256_after": "3137e27166bcdce61795c4f1ae60e8646820e2499faead1912e1e717e4c3030f"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/06_changed_scope_4.json",
+      "sha256": "49a44181c17a11fd1e8c8521698dd30668c13ac444ab5a9c7ccca83882061a78",
+      "sha256_after": "49a44181c17a11fd1e8c8521698dd30668c13ac444ab5a9c7ccca83882061a78"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/06_changed_scope_64.json",
+      "sha256": "c00a64b5ab02902807a2fdd059b4c1e0a99f567bef615ba45d82f3d392e02bbc",
+      "sha256_after": "c00a64b5ab02902807a2fdd059b4c1e0a99f567bef615ba45d82f3d392e02bbc"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/07_no_valid_repair_16.json",
+      "sha256": "229931d83c3027200e43874705e559f0a185d28ba4cbc070e1b8a2911f9f250f",
+      "sha256_after": "229931d83c3027200e43874705e559f0a185d28ba4cbc070e1b8a2911f9f250f"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/07_no_valid_repair_4.json",
+      "sha256": "d30a50f9a2519d8d678adac57212ee8f288c64567881518da840effe9d645ddb",
+      "sha256_after": "d30a50f9a2519d8d678adac57212ee8f288c64567881518da840effe9d645ddb"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/07_no_valid_repair_64.json",
+      "sha256": "0d1cada03a1cc661438490c06fd12d22aba223c6b0445fa7b0de832e4c05474b",
+      "sha256_after": "0d1cada03a1cc661438490c06fd12d22aba223c6b0445fa7b0de832e4c05474b"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_permission_16.json",
+      "sha256": "373bf90fda9203bcb44c0b7260fe1f5f304b644f6496ff24fe3e89b2cf11a733",
+      "sha256_after": "373bf90fda9203bcb44c0b7260fe1f5f304b644f6496ff24fe3e89b2cf11a733"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_permission_4.json",
+      "sha256": "4adcb921d436081b25b0863a67b95e6d069007b86b852c50973c9e158c4f24ce",
+      "sha256_after": "4adcb921d436081b25b0863a67b95e6d069007b86b852c50973c9e158c4f24ce"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_permission_64.json",
+      "sha256": "fc2f81af3039609001f1418dafd922890fc21ed1d122d77e744ce062d3d57bde",
+      "sha256_after": "fc2f81af3039609001f1418dafd922890fc21ed1d122d77e744ce062d3d57bde"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_witness_16.json",
+      "sha256": "bfdad244f486bc35bb84b60d5861ad6500ed76cdc15b937626e3fa9c5db491d0",
+      "sha256_after": "bfdad244f486bc35bb84b60d5861ad6500ed76cdc15b937626e3fa9c5db491d0"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_witness_4.json",
+      "sha256": "03176cff69e8967cff863ceb02b83cf6c54ba68492f413f57110e4006d7e8020",
+      "sha256_after": "03176cff69e8967cff863ceb02b83cf6c54ba68492f413f57110e4006d7e8020"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_missing_witness_64.json",
+      "sha256": "55ed42a147bb4a040522eb5b42d1c355e4c5c0a93efa4831658f5fce198343d9",
+      "sha256_after": "55ed42a147bb4a040522eb5b42d1c355e4c5c0a93efa4831658f5fce198343d9"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_proved_negative_16.json",
+      "sha256": "820f4158a2c5ce490308ff9f35994f43141910a894fd992a7d1c9bd11d4c5fdb",
+      "sha256_after": "820f4158a2c5ce490308ff9f35994f43141910a894fd992a7d1c9bd11d4c5fdb"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_proved_negative_4.json",
+      "sha256": "0ee9bb0f0f3df6d505cc3b560b27352f236514137ad25dfb694942184d3178da",
+      "sha256_after": "0ee9bb0f0f3df6d505cc3b560b27352f236514137ad25dfb694942184d3178da"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_proved_negative_64.json",
+      "sha256": "8abc9a5e2df2e5f718702d1cddf1f42718e057d0917d071a0a1382f6caeabcc9",
+      "sha256_after": "8abc9a5e2df2e5f718702d1cddf1f42718e057d0917d071a0a1382f6caeabcc9"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_timeout_16.json",
+      "sha256": "e0ebf99c6845ab6c759df3fc122ebb8caeb76eed8e19e29a2ab35c5d5eeec95e",
+      "sha256_after": "e0ebf99c6845ab6c759df3fc122ebb8caeb76eed8e19e29a2ab35c5d5eeec95e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_timeout_4.json",
+      "sha256": "824edbbbb7d59ca0e1edeba103097a1c125484af51e6ba3c8cb2c56a1803e34b",
+      "sha256_after": "824edbbbb7d59ca0e1edeba103097a1c125484af51e6ba3c8cb2c56a1803e34b"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_timeout_64.json",
+      "sha256": "469a50be74461ad9a8f4544884b34fec7aee33ddce25e997a1167f4a9862eb20",
+      "sha256_after": "469a50be74461ad9a8f4544884b34fec7aee33ddce25e997a1167f4a9862eb20"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_tool_error_16.json",
+      "sha256": "2506908831aa7747656ee7b543cfdc9f2e0e8c23c068f7f64f1f4552cd8d0a7b",
+      "sha256_after": "2506908831aa7747656ee7b543cfdc9f2e0e8c23c068f7f64f1f4552cd8d0a7b"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_tool_error_4.json",
+      "sha256": "6b8bd0d0d6c21a6aca74cd6ae4a2d5c8faf9f8fd7f26a5316ddb1993dd690180",
+      "sha256_after": "6b8bd0d0d6c21a6aca74cd6ae4a2d5c8faf9f8fd7f26a5316ddb1993dd690180"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/08_tool_error_64.json",
+      "sha256": "efa4ab5f04cad6426e79c038116809ba45e1d5527d9b36ddc18ee66234e7a7eb",
+      "sha256_after": "efa4ab5f04cad6426e79c038116809ba45e1d5527d9b36ddc18ee66234e7a7eb"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/09_alternate_tool_denied_16.json",
+      "sha256": "2686b0c450fc3ae1f84f00466a4c735319d7854d0115a7ea890a8ffc63c454e6",
+      "sha256_after": "2686b0c450fc3ae1f84f00466a4c735319d7854d0115a7ea890a8ffc63c454e6"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/09_alternate_tool_denied_4.json",
+      "sha256": "8245283a514da07f880cc0c216073459616c027d0caca626601d4144b751e56f",
+      "sha256_after": "8245283a514da07f880cc0c216073459616c027d0caca626601d4144b751e56f"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/09_alternate_tool_denied_64.json",
+      "sha256": "6bf21226fa71c6a7dbfb53560f0078bb1b20ae93d0f08a65c9d96aaca0d00c7e",
+      "sha256_after": "6bf21226fa71c6a7dbfb53560f0078bb1b20ae93d0f08a65c9d96aaca0d00c7e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/10_repetition_laundering_16.json",
+      "sha256": "453444e67feea2c1ddf5d059e0a6d796ba3a018ac22c57df50a4d14cc1f256f2",
+      "sha256_after": "453444e67feea2c1ddf5d059e0a6d796ba3a018ac22c57df50a4d14cc1f256f2"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/10_repetition_laundering_4.json",
+      "sha256": "c3796d5a53b85e792fb5920c45077e2dbf90b3d6fb9335f77697381e374cd11e",
+      "sha256_after": "c3796d5a53b85e792fb5920c45077e2dbf90b3d6fb9335f77697381e374cd11e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/10_repetition_laundering_64.json",
+      "sha256": "09d4b76f9363b0309042da230c5813277f1460a17dceb94e8ed1e171b149f8ac",
+      "sha256_after": "09d4b76f9363b0309042da230c5813277f1460a17dceb94e8ed1e171b149f8ac"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_changed_dependency_16.json",
+      "sha256": "72c7523b85b78625988138ad87300199aedaf846b44061e7781fdd349a212b3f",
+      "sha256_after": "72c7523b85b78625988138ad87300199aedaf846b44061e7781fdd349a212b3f"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_changed_dependency_4.json",
+      "sha256": "a77ec3cd2986a3b7dffed1537ad938ffc19d1b266dffd5fd79aa9f19765579dc",
+      "sha256_after": "a77ec3cd2986a3b7dffed1537ad938ffc19d1b266dffd5fd79aa9f19765579dc"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_changed_dependency_64.json",
+      "sha256": "894438e996c2b3b4f480767adc5ee3132efca37ccb58a4a76a1d7e0cdb2f78bb",
+      "sha256_after": "894438e996c2b3b4f480767adc5ee3132efca37ccb58a4a76a1d7e0cdb2f78bb"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_expired_grant_16.json",
+      "sha256": "e88af15cbd300d302404c9c5591f52c3029cd36720c2e24490f811b2c893d2c5",
+      "sha256_after": "e88af15cbd300d302404c9c5591f52c3029cd36720c2e24490f811b2c893d2c5"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_expired_grant_4.json",
+      "sha256": "1ab0d55ed3c2cc34e9e650add96a2fde6e85cc68d5327e20534c9f81c9b2890f",
+      "sha256_after": "1ab0d55ed3c2cc34e9e650add96a2fde6e85cc68d5327e20534c9f81c9b2890f"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_expired_grant_64.json",
+      "sha256": "39fb95659f40cd49da1d35cc493791c6b8e4ca1dc6fd1b708960c02cd1b85267",
+      "sha256_after": "39fb95659f40cd49da1d35cc493791c6b8e4ca1dc6fd1b708960c02cd1b85267"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_untrusted_hash_16.json",
+      "sha256": "c8ad377ae01fde8b08d8bf22f4c11bedcf916ab2765591ecabb4a49bd555a92a",
+      "sha256_after": "c8ad377ae01fde8b08d8bf22f4c11bedcf916ab2765591ecabb4a49bd555a92a"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_untrusted_hash_4.json",
+      "sha256": "191a8045bf4470710dd47c1355206f543ef9573fdd181f6a1ac9e267da0d6738",
+      "sha256_after": "191a8045bf4470710dd47c1355206f543ef9573fdd181f6a1ac9e267da0d6738"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_untrusted_hash_64.json",
+      "sha256": "cd57665f10e35c24f1cd36547ec979758474bc9d0ef2bd79293872b938c5ace9",
+      "sha256_after": "cd57665f10e35c24f1cd36547ec979758474bc9d0ef2bd79293872b938c5ace9"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_wrong_interpretation_16.json",
+      "sha256": "c2e9973ddec4aa28133f0f6777c06dc2b4de1afe298d345ebd9154da9fb4f445",
+      "sha256_after": "c2e9973ddec4aa28133f0f6777c06dc2b4de1afe298d345ebd9154da9fb4f445"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_wrong_interpretation_4.json",
+      "sha256": "bbc24b0939c5c69b70ded903f9cc7f06055c6aff310983093e556ffbc08eb059",
+      "sha256_after": "bbc24b0939c5c69b70ded903f9cc7f06055c6aff310983093e556ffbc08eb059"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/11_wrong_interpretation_64.json",
+      "sha256": "1599e610585a2423d454aeed9878d3f4899de75453a4ae92db23b1398063b5af",
+      "sha256_after": "1599e610585a2423d454aeed9878d3f4899de75453a4ae92db23b1398063b5af"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/12_cross_desk_16.json",
+      "sha256": "7bb808bed09ee70c7fc0a74ab5674ab0e84e8253c7f361814ef028e5cc975b96",
+      "sha256_after": "7bb808bed09ee70c7fc0a74ab5674ab0e84e8253c7f361814ef028e5cc975b96"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/12_cross_desk_4.json",
+      "sha256": "2668d83ea798b596d414cb68a470de88bc6fddf8ee341c8491ac63b3196c57cd",
+      "sha256_after": "2668d83ea798b596d414cb68a470de88bc6fddf8ee341c8491ac63b3196c57cd"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/12_cross_desk_64.json",
+      "sha256": "bbc5dcf1a7dc0217b7cb62f310652fceae1e145b695065a32f0df7d5fbbc7acd",
+      "sha256_after": "bbc5dcf1a7dc0217b7cb62f310652fceae1e145b695065a32f0df7d5fbbc7acd"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/13_selective_disclosure_16.json",
+      "sha256": "f4cc0cd7cd306bffa051e40115e98a5aac7a8bb3aa141490ab144097260dccef",
+      "sha256_after": "f4cc0cd7cd306bffa051e40115e98a5aac7a8bb3aa141490ab144097260dccef"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/13_selective_disclosure_4.json",
+      "sha256": "014aa0201f4f3c9459d8a52f7c50bae1e0e66d83c2c65f34b971cd4caedd571d",
+      "sha256_after": "014aa0201f4f3c9459d8a52f7c50bae1e0e66d83c2c65f34b971cd4caedd571d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/13_selective_disclosure_64.json",
+      "sha256": "033cfd937b5b6a2b93e447875b79f770e6b0d9b23716987ecffe5a6c6ca767f8",
+      "sha256_after": "033cfd937b5b6a2b93e447875b79f770e6b0d9b23716987ecffe5a6c6ca767f8"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_grounded_cycle_16.json",
+      "sha256": "5c8fc3a46b06f446af630794b23ffbfaeb95a92898d919b465fbade08c715a72",
+      "sha256_after": "5c8fc3a46b06f446af630794b23ffbfaeb95a92898d919b465fbade08c715a72"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_grounded_cycle_4.json",
+      "sha256": "dc1d3ab767f40d0a6cc2ad13499115780a3946fa802d01f96d258ed71c53055e",
+      "sha256_after": "dc1d3ab767f40d0a6cc2ad13499115780a3946fa802d01f96d258ed71c53055e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_grounded_cycle_64.json",
+      "sha256": "8edd99a4aec0fd93beb371b1485eb5f4c03affb2910c421a8e538a1ea58c168c",
+      "sha256_after": "8edd99a4aec0fd93beb371b1485eb5f4c03affb2910c421a8e538a1ea58c168c"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_missing_parent_16.json",
+      "sha256": "8ffb1ea889d15c65774db3bb0b521f44f90070b6814a8924a5f09193f300439d",
+      "sha256_after": "8ffb1ea889d15c65774db3bb0b521f44f90070b6814a8924a5f09193f300439d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_missing_parent_4.json",
+      "sha256": "424be93dee5d0952708899e241fb3c29f18af90365204d40e250dd21fee5b045",
+      "sha256_after": "424be93dee5d0952708899e241fb3c29f18af90365204d40e250dd21fee5b045"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_missing_parent_64.json",
+      "sha256": "5b393bf72e594412a69b11f5e336b1a690ec0f8361d58ddd828167b0aa90aa7e",
+      "sha256_after": "5b393bf72e594412a69b11f5e336b1a690ec0f8361d58ddd828167b0aa90aa7e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_ungrounded_cycle_16.json",
+      "sha256": "26e68e890d1ce6dc484136f48f75f7d873eedbcefa4df0b80ce9ad49f0b756e9",
+      "sha256_after": "26e68e890d1ce6dc484136f48f75f7d873eedbcefa4df0b80ce9ad49f0b756e9"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_ungrounded_cycle_4.json",
+      "sha256": "dadbd023c1db4e6147005369d7689b832b0c4e94f5c2d55a407c1bea748cc48d",
+      "sha256_after": "dadbd023c1db4e6147005369d7689b832b0c4e94f5c2d55a407c1bea748cc48d"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/14_ungrounded_cycle_64.json",
+      "sha256": "fc26659d4373c3e0bd83e30a474f2566bb4c4f47851c1a0c0e19d6d53577d874",
+      "sha256_after": "fc26659d4373c3e0bd83e30a474f2566bb4c4f47851c1a0c0e19d6d53577d874"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/15_repair_new_contradiction_16.json",
+      "sha256": "0c4cbbac2bb358925a194a18843f4957d3cf136d4db07603fef6061c5edf333e",
+      "sha256_after": "0c4cbbac2bb358925a194a18843f4957d3cf136d4db07603fef6061c5edf333e"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/15_repair_new_contradiction_4.json",
+      "sha256": "7a51cb7b5bd247cafccea688a8358521aef04880eb97a264dfc53cd19ce6ab72",
+      "sha256_after": "7a51cb7b5bd247cafccea688a8358521aef04880eb97a264dfc53cd19ce6ab72"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/15_repair_new_contradiction_64.json",
+      "sha256": "5ee28e5cb84ff8862a3c2610334627586c83875336a87ff41bac2756e008d7e3",
+      "sha256_after": "5ee28e5cb84ff8862a3c2610334627586c83875336a87ff41bac2756e008d7e3"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/16_quiet_16.json",
+      "sha256": "505f12c6c8719ef51cbc5cdebfcada2bf095608979947ac51c979ccf7b0fb8a8",
+      "sha256_after": "505f12c6c8719ef51cbc5cdebfcada2bf095608979947ac51c979ccf7b0fb8a8"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/16_quiet_4.json",
+      "sha256": "11ddfa9b0db80de69f1a61c276db61063299693befd9af0754616c8968aa0e74",
+      "sha256_after": "11ddfa9b0db80de69f1a61c276db61063299693befd9af0754616c8968aa0e74"
+    },
+    {
+      "path": "Audit/fixture-source/fixtures/16_quiet_64.json",
+      "sha256": "04a68c5370131983a10730e310c1c489ed1da1ff3aa2db51d400146ea4ee622d",
+      "sha256_after": "04a68c5370131983a10730e310c1c489ed1da1ff3aa2db51d400146ea4ee622d"
+    },
+    {
+      "path": "Audit/fixture-source/FREEZE.json",
+      "sha256": "c901c4b2abcf2c744d2424ef74e5a7426a4cb10d6358cec471738e984270059d",
+      "sha256_after": "c901c4b2abcf2c744d2424ef74e5a7426a4cb10d6358cec471738e984270059d"
+    },
+    {
+      "path": "Audit/fixture-source/make_cases.py",
+      "sha256": "5bb2fbf5825c0a23b96b94aa06e674d92bdbab0d34351d8c9958b2d3c4d254cc",
+      "sha256_after": "5bb2fbf5825c0a23b96b94aa06e674d92bdbab0d34351d8c9958b2d3c4d254cc"
+    },
+    {
+      "path": "Audit/fixture-source/oracle.py",
+      "sha256": "7ff6a1f69334ac7460784ada41cf39695815ccfc916d9d18fde8c87310af78c3",
+      "sha256_after": "7ff6a1f69334ac7460784ada41cf39695815ccfc916d9d18fde8c87310af78c3"
+    },
+    {
+      "path": "Audit/fixture-source/policy.py",
+      "sha256": "7e80aa3760f9feaba41d3553f21c339d67077ecd066b12a1abbb2c93d77e25fa",
+      "sha256_after": "7e80aa3760f9feaba41d3553f21c339d67077ecd066b12a1abbb2c93d77e25fa"
+    },
+    {
+      "path": "Audit/fixture-source/PROTOCOL.md",
+      "sha256": "7a215dba46825bb6087dba9d3c6b5a60ee131149592fe68d9c31cbf2d8b62ec1",
+      "sha256_after": "7a215dba46825bb6087dba9d3c6b5a60ee131149592fe68d9c31cbf2d8b62ec1"
+    },
+    {
+      "path": "Audit/fixture-source/run_correct.py",
+      "sha256": "7d26d918b892dc410da1b2b7516073630840088228f1e930c4a53873be3785b7",
+      "sha256_after": "7d26d918b892dc410da1b2b7516073630840088228f1e930c4a53873be3785b7"
+    }
+  ],
+  "output_directory": "Audit/runs/correction-optimized",
+  "declared_results": [
+    "Audit/runs/correction-optimized/results/summary.json",
+    "Audit/runs/correction-optimized/results/events.jsonl",
+    "Audit/runs/correction-optimized/results/repair_events.jsonl",
+    "Audit/runs/correction-optimized/results/supplement.json",
+    "Audit/runs/correction-optimized/platform-adapter.json"
+  ],
+  "outputs": [
+    {
+      "path": "Audit/runs/correction-optimized/stdout.txt",
+      "sha256": "e46ac7869b3a3fca90d2c6850ccc9675986ec39e7d4787e51188615cdd540482",
+      "kind": "log"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/results/summary.json",
+      "sha256": "6f21fbb2b17d61c9e3425632371b681f5addcbb6afae673c2a0f485b3f7b408d",
+      "kind": "result"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/results/events.jsonl",
+      "sha256": "c69921807ccd976937feab6e00a5c4c769c5d69476a76b57d60183f45c04a686",
+      "kind": "result"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/results/repair_events.jsonl",
+      "sha256": "4efd81e272024ae1c88f066ab2255f0fc7d9eb04927be792228bedc27cecfed0",
+      "kind": "result"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/results/supplement.json",
+      "sha256": "2bc804892dc2aef2ba50d66c1e80b134f678016a2fef69e023edada7a3e79936",
+      "kind": "result"
+    },
+    {
+      "path": "Audit/runs/correction-optimized/platform-adapter.json",
+      "sha256": "2f6f80f7fd76b18153d74e40170b1c5ea2f94c1aa7e86c8d961bb0a69e87cd4f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

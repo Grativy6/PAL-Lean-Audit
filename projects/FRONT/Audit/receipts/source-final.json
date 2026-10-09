@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "manifest_entries": 546,
+  "failed": [],
+  "archive_sha256": "e82195a52d3b65dcca8e6a16b1055c9772d43aa2ebecea6a4a5cd1409167fd9c",
+  "manuscript_sha256": "d384d108ebd0602958102ed2cbe59616766a10cca6ae97d929b547367d79790b",
+  "native_equations_review": "Native OMML checked for continuation, horizon, joint quotient, side trace and transported return. Linearized excerpts retain their XML structures in native-equations.json.",
+  "exclusions": "No full visual layout certification or public/local Single-Cut version comparison."
+}

@@ -1,0 +1,347 @@
+--- supplied-v1.0
++++ publication-v1.0
+@@ -2,7 +2,7 @@
+ title: FRONT
+ subtitle: Frontier Resurgent Operations Navigator Tracing
+ author: Christopher D. Pang
+-date: Release candidate v1.0 · 8 October 2026
++date: Version 1.0 · 8 October 2026
+ lang: en-US
+ ---
+ 
+@@ -10,8 +10,7 @@
+ 
+ **Correction at the Next-Cut Seam**
+ 
+-**Prepared for review · UNADOPTED · NOT PUBLISHED**  
+-**Author-reserved DOI:** 10.5281/zenodo.23139301
++**DOI:** 10.5281/zenodo.23139301
+ 
+ > The refusal can be closed. The dependency can remain open. Correction is a different operation.
+ 
+@@ -19,11 +18,11 @@
+ 
+ FRONT asks when retained, warranted work can replace rediscovery and when changed tasks still require new input, derivation or verification. Historical warrant, present applicability and future serviceability are different obligations. The Next-Cut Seam names the boundary of presently justified continuation, not an oracle for choosing or completing every next step.
+ 
+-This release candidate adds the case of an unsupported operative premise: its content can be contradicted while the event of its assertion, and its downstream uses, remain consequential. A finite correction contract preserves history, binds the challenge to the selected support, checks alternative derivations, and separates proposed remedies from permission, execution and revalidation. A source-derived Single-Cut example motivates the distinction without turning its static count into a temporal transport process. One elementary conditional invariant is added; FRONT does not claim invention of truth maintenance, belief revision or provenance tracking.
+-
+-The unchanged FRONT-REUSE-01 baseline contains 27 before/after pairs. A distinct retained FRONT-CORRECT-01 study evaluates three policies on 75 synthetic fixtures and 216 support questions per policy. Selective checking and blanket rederivation answer all 216 correctly; unchecked continuation returns 114 invalid proof receipts, including 30 answers with alternative current support. A separate 96-case scratch transaction assay checks permission and secondary-constraint revalidation. Costs, slower cases, failure controls and limits are retained. No language-model, Lean, deployed security, or independent-referee result is claimed.
+-
+-The proposed contribution is the inspectable integration of scoped reuse, priced applicability, carried dependency, permission-aware correction and protected continuation. The 20 inherited proposition headings, 56 display blocks, BRIDGE adapter and original evidence remain preserved. Publication requires the author’s later adoption and instruction; independent review and public SCT version matching remain open.
++FRONT also addresses an unsupported operative premise: its content can be contradicted while the event of its assertion, and its downstream uses, remain consequential. A finite correction contract preserves history, binds the challenge to the selected support, checks alternative derivations, and separates proposed remedies from permission, execution and revalidation. A source-derived Single-Cut example motivates the distinction without turning its static count into a temporal transport process. An elementary conditional invariant formalizes these obligations; FRONT does not claim invention of truth maintenance, belief revision or provenance tracking.
++
++The FRONT-REUSE-01 baseline contains 27 before/after pairs. A distinct retained FRONT-CORRECT-01 study evaluates three policies on 75 synthetic fixtures and 216 support questions per policy. Selective checking and blanket rederivation answer all 216 correctly; unchecked continuation returns 114 invalid proof receipts, including 30 answers with alternative current support. A separate 96-case scratch transaction assay checks permission and secondary-constraint revalidation. Costs, slower cases, failure controls and limits are retained. The accompanying Lean audit checks 21 headed propositions: 17 at the stated general mathematical scope and four through explicitly bounded formalizations. No language-model, deployed-security or independent-referee result is claimed. [S17]
++
++FRONT integrates scoped reuse, priced applicability, carried dependency, permission-aware correction and protected continuation. The formal companion records its assumptions and remaining bridges separately from the finite experiments. Independent review and public Single-Cut version matching remain open.
+ 
+ **Keywords:** warranted reuse; applicability cost; correction; dependency; provenance; continuation; permission; Single-Cut Transport; BRIDGE.
+ 
+@@ -41,20 +40,23 @@
+ 
+ **FRONT — Frontier Resurgent Operations Navigator Tracing** was coined by **Christopher D. Pang**, including the acronym and its expansion, in the originating conversation. His first written expansion included the aside “Frontier(cheap).” The aside marks an interest in cost; it is not an extra word in the adopted expansion recorded in that exchange. Pang stated that he created the wording himself in roughly two minutes of forward-only composition, with no chatbot supplying the acronym or its component expansion. This account records that statement, not an independently timed cognitive measurement. [S0]
+ 
+-The assistant had previously proposed the label **Next-Cut Seam** and discussed related computational ideas. Those contributions are contextual ancestry, not authorship of FRONT’s name. The definitions, proofs, examples, literature synthesis, and implementation proposals in this manuscript were drafted with AI assistance and remain subject to Pang’s review. The entire manuscript is therefore not described as “100% human-written”; that provenance claim concerns the naming event.
+-
+-## 1.2 What this draft contributes
++The assistant had previously proposed the label **Next-Cut Seam** and discussed related computational ideas. Those contributions are contextual ancestry, not authorship of FRONT’s name. The definitions, proofs, examples, literature synthesis, and implementation proposals in this manuscript were developed with AI assistance under Pang’s authorship and review. The entire manuscript is therefore not described as “100% human-written”; that provenance claim concerns the naming event.
++
++## 1.2 What FRONT contributes
+ 
+ **The practical hinge is this: how much work can a system spend checking that old work still applies before reuse stops saving anything?** An inexpensive but unsound check admits stale results. A sufficient but overly conservative check discards useful ones. A fully semantic check can cost as much as solving again.
+ 
+-This working draft contributes a proposed integration, with four inspectable parts:
++FRONT develops six connected parts:
+ 
+ 1. A task-relative retained-warrant contract and Next-Cut-Seam account, distinguishing a supported answer, an adequate common action and a supported future continuation (§§3–9).
+ 2. A full-cost account in which applicability, packaging, retrieval, reopening and recomputation have to be priced, rather than treating a cache hit as free (§11).
+ 3. An indexed continuation adapter from BRIDGE: only declared and actually available views can support a recovery claim, and recovering the requested answer differs from recovering the entire state (§9; Appendix D).
+ 4. FRONT-REUSE-01's executed deterministic lane and frozen real-model protocol: a small repeat-and-change comparison with stale transfer, conservative misses and first-use costs reported separately (§16.1).
+ 
+-**Claim boundary.** FRONT does not claim invention of caching, dependency tracking, change propagation, clause learning, protected-query reasoning or provenance-aware agent memory. Nor does this draft prove a general complexity separation, a new Hodge result, a physical model of conversation, or measured LLM/token savings. The elementary and inherited mathematics keeps its source labels. The combined account is the proposed contribution; novelty of that integration remains open to further comparison. The current workload does not compare FRONT with a competitive incremental solver or mature build system.
++5. A history-preserving correction contract and FRONT-CORRECT-01, distinguishing failed selected support, alternative support, permission and revalidation (§§11.9 and 16.5; Appendix E).
++6. A source-linked Lean companion with explicit assumptions, bounded formalization limits and reproducible proof receipts (§17.2).
++
++**Claim boundary.** FRONT does not claim invention of caching, dependency tracking, change propagation, clause learning, protected-query reasoning or provenance-aware agent memory. Nor does FRONT prove a general complexity separation, a new Hodge result, a physical model of conversation, or measured LLM/token savings. The elementary and inherited mathematics keeps its source labels. The combined account is the contribution examined here; novelty of that integration remains open to further comparison. The current workload does not compare FRONT with a competitive incremental solver or mature build system.
+ 
+ ## 1.3 The accidental zipper, and the question beneath the arrow
+ 
+@@ -70,7 +72,7 @@
+ 
+ Feynman's radio example supplies a useful picture: changing the receiving instrument can make something readable that the previous instrument did not reveal. His discussion of why magnets attract supplies another: a familiar analogy can borrow the very relation it purports to explain. These are source-labeled motivations for checking an interface and its basis, not premises of FRONT's mathematical results. [S10, supplied 42:50–43:13 and 21:04–21:36]
+ 
+-Version 0.3 integrated that direction into FRONT's existing account of answer sufficiency (§7), decision sufficiency (§8), continuation (§9), and full cost (§11). It uses an indexed family of views and only the frame/continuation pairs specified by the account. A source-linked proof may make an earlier structural implication explicit; that work does not retroactively invent the architecture or observation that supplied the question. BRIDGE remains a separate, unchanged source. Version 0.4 retains that synthesis while placing its reuse and applicability questions first. [S11; S12]
++FRONT integrates that direction into its account of answer sufficiency (§7), decision sufficiency (§8), continuation (§9), and full cost (§11). It uses an indexed family of views and only the frame/continuation pairs specified by the account. A source-linked proof may make an earlier structural implication explicit; that work does not retroactively invent the architecture or observation that supplied the question. BRIDGE remains a separate, unchanged source. Reuse and applicability remain the organizing questions. [S11; S12]
+ 
+ 
+ 
+@@ -79,11 +81,11 @@
+ 
+ A later conversation revisited the supplied Single-Cut Transport note. Hearing “false spends upstream,” Pang distinguished an attempted configuration from an admitted one: a proposed use can be refused, and the refusal can become informative for another continuation. He then pointed out that a refusal need not be respected. A rejected assertion can stay operationally influential without becoming valid. His subsequent formulation placed its unclosed consequences at FRONT’s frontier. A separate Hearthline episode was reported by Pang as identifying the next obligation: “Correction needs its own mechanism.” The present manuscript develops that proposal; it does not claim that the separate episode’s proof checks were independently recovered here. [S14]
+ 
+-The resulting addition is not a new definition of mathematical truth. It is a bounded correction contract: preserve the assertion event, identify the selected support that failed, check surviving alternatives, and obtain the appropriate permission before applying and revalidating a change. Pang supplies the originating observations and the v1.0 destination. The exact finite implementation, elementary proposition, experimental choices, and editorial integration below were prepared by this assistant under his build instruction. The unadopted v0.5 thinking key was planning ancestry, not an intervening FRONT release. [S14–S16]
++The resulting addition is not a new definition of mathematical truth. It is a bounded correction contract: preserve the assertion event, identify the selected support that failed, check surviving alternatives, and obtain the appropriate permission before applying and revalidating a change. Pang supplies the originating observations and the v1.0 destination. The finite implementation, elementary proposition, experimental choices and editorial integration were developed with AI assistance. The unadopted v0.5 thinking key was planning ancestry, not an intervening FRONT release. [S14–S16]
+ 
+ # 2. Corpus placement and inherited limits
+ 
+-PAL v2.4 governs PAL terminology in this draft. It describes an ordered mechanical account, not a universal mathematical theory. A receipt records an account; it does not make that account true or authorized. The first cut is supplied within an account, and closure is scoped and reopenable. [S1, §§1–4, 7]
++PAL v2.4 governs PAL terminology in FRONT. It describes an ordered mechanical account, not a universal mathematical theory. A receipt records an account; it does not make that account true or authorized. The first cut is supplied within an account, and closure is scoped and reopenable. [S1, §§1–4, 7]
+ 
+ MIND v0.4 supplies the question/fork, negation, attention, wake, and revision vocabulary. It already separates missing input from a consequence that has not yet been computed. CHARTER v1.0 supplies the fiber criterion, protected-query carriage, and the distinction between recomputing an answer and preserving its evidence history. These are same-author antecedents, not independent confirmation of FRONT. [S2, §§4–5, 8.7; S3, §§10, 15]
+ 
+@@ -349,7 +351,7 @@
+ 
+ # 6. The Next-Cut Seam is not one undifferentiated ignorance
+ 
+-**Proposed definition.** Relative to a task, retained interface, procedure, and resource budget, a **Next-Cut Seam** occurs where the retained account no longer provides an adequate continuation through the available justified reuse route. Crossing it requires a further supplied distinction, a further derivation, a changed representation, or an additional choice whose basis must be named.
++**Definition.** Relative to a task, retained interface, procedure, and resource budget, a **Next-Cut Seam** occurs where the retained account no longer provides an adequate continuation through the available justified reuse route. Crossing it requires a further supplied distinction, a further derivation, a changed representation, or an additional choice whose basis must be named.
+ 
+ The word *adequate* belongs to the task. It does not mean globally best, uniquely determined, emotionally satisfying, or guaranteed to settle all future questions. A program may have several equally valid next steps. A scientist may sensibly choose among several experiments. A completed task may require no further cut at all.
+ 
+@@ -506,7 +508,7 @@
+ 
+ **Proof.** If \(p\) exists, its single action \(p(z)\) lies in every adequate set in that fiber. Conversely, choose one action from each nonempty finite intersection and define \(p(z)\) to be that action. The chosen rule satisfies (13). ∎
+ 
+-This is an existence criterion, not a cheap algorithm for discovering the sets \(G(h)\) or their intersections. In a large problem, computing the acceptable-action sets can contain the original problem’s difficulty. The draft claims no novelty for the underlying finite-set reasoning.
++This is an existence criterion, not a cheap algorithm for discovering the sets \(G(h)\) or their intersections. In a large problem, computing the acceptable-action sets can contain the original problem’s difficulty. No novelty is claimed for the underlying finite-set reasoning.
+ 
+ ## 8.1 Two different kinds of unfinished
+ 
+@@ -1016,7 +1018,7 @@
+ 
+ ### 11.9 A bounded correction operator and its bill
+ 
+-CORRECT(record, context, grant, budget) is a proposed implementation contract. Its obligations are to detect a typed discrepancy; bind it to a source, interpretation, version and scope; preserve the event; locate recorded affected uses; propose a remedy; check permission where an effect is involved; apply the approved candidate in isolated state; revalidate; and return a supported result or an explicit remainder. These are logical obligations, not nine compulsory model calls. Cheap operations may be fused without losing their receipts.
++CORRECT(record, context, grant, budget) specifies the implementation contract. Its obligations are to detect a typed discrepancy; bind it to a source, interpretation, version and scope; preserve the event; locate recorded affected uses; propose a remedy; check permission where an effect is involved; apply the approved candidate in isolated state; revalidate; and return a supported result or an explicit remainder. These are logical obligations, not nine compulsory model calls. Cheap operations may be fused without losing their receipts.
+ 
+ A selected proof is a finite rooted derivation DAG, not merely a reachability path. All premises of a rule are conjunctive; separate derivations of a conclusion are alternatives. Cyclic operational graphs may be recorded, but an unsupported cycle is not a grounded proof. For a fixed query q, the finite recorded set and its applicability predicate define:
+ 
+@@ -1058,7 +1060,7 @@
+ \tag{23}
+ \]
+ 
+-P asks for a deterministic polynomial-time decision procedure. SAT is NP-complete, so a uniform polynomial-time SAT decision procedure would establish P = NP. These are standard definitions, not FRONT’s restatement of the problem in different metaphysical terms. The Clay Mathematics Institute lists the problem as unresolved at this draft’s research date. [R1; R11]
++P asks for a deterministic polynomial-time decision procedure. SAT is NP-complete, so a uniform polynomial-time SAT decision procedure would establish P = NP. These are standard definitions, not FRONT’s restatement of the problem in different metaphysical terms. The Clay Mathematics Institute lists the problem as unresolved at the research date of 4 October 2026. [R1; R11]
+ 
+ ## 12.1 Three bills that must not be merged
+ 
+@@ -1150,7 +1152,7 @@
+ 
+ Provenance semirings make the AND/OR distinction concrete: joint contributions combine multiplicatively and alternative derivations add. That is closer ancestry for support multiplicity than an ordinary untyped edge list. Our chosen-witness prototype records one successful DAG rather than enumerating all semiring expressions or all consistent repairs. [R24]
+ 
+-The v1.0 contribution is a proposed integration of task-relative serviceability, preserved historical use, selective requalification, explicit effect grants, priced correction, and continuation/return. Its mechanism and finite artifacts can be inspected. Novelty of the integration, practical superiority, and completeness for external consequences are not established by the existence of a working prototype. The current comparison cannot stand in for a competitive incremental-solver or ATMS benchmark.
++FRONT integrates task-relative serviceability, preserved historical use, selective requalification, explicit effect grants, priced correction, and continuation/return. Its mechanism and finite artifacts can be inspected. Novelty of the integration, practical superiority, and completeness for external consequences are not established by the existence of a working prototype. The current comparison cannot stand in for a competitive incremental-solver or ATMS benchmark.
+ 
+ # 14. Why the spherical and Riemann branches belong nearby
+ 
+@@ -1165,7 +1167,7 @@
+ 
+ is tangent because \((x,y,z)\cdot v=0\). It vanishes at the two axis poles. Congruent pole-to-pole lunes can still be carried into one another by rotations. Successful tiling and nonvanishing tangent motion are different claims.
+ 
+-The analogy to FRONT is **property-specific serviceability**: one representation may carry a present answer while failing a requested family of continuations. No topological theorem has thereby been transferred to computation. A seam in a diagram is not evidence of an exponential running-time bound, and this draft imports no minimum physical area, horizon-entropy law, or quantum model of thought.
++The analogy to FRONT is **property-specific serviceability**: one representation may carry a present answer while failing a requested family of continuations. No topological theorem has thereby been transferred to computation. A seam in a diagram is not evidence of an exponential running-time bound, and FRONT imports no minimum physical area, horizon-entropy law, or quantum model of thought.
+ 
+ The Riemann–Pang Ledger provides a second neighboring lesson. Its finite arithmetic and certification work does not discharge its named all-tail obligations merely by extending a prefix. The document explicitly retains `O-ALL-EVENT-BOUND` and related transport, coverage, and stability obligations. FRONT uses this as an example of keeping a remaining proof obligation visible after useful local work—not as a derivation of any SAT result. [S5, p. 22]
+ 
+@@ -1192,7 +1194,7 @@
+ 
+ For the two-fact rule family, a rule chooses one of four premise subsets and either conclusion: eight possible rules, hence 256 rule sets. The checker considers all four initial fact sets and both seeds, compares closure with Boolean valuation enumeration, and checks stabilization, monotonicity, first-discovery depths and the wake decomposition. The maximum observed number of productive rounds is two, within this family only.
+ 
+-The v0.3 linear family uses all 16 binary-entry two-by-two readouts over \(\mathbb Q\), four scalar queries and five generated subspaces per readout. This gives 64 state-query cases and 80 BRIDGE instances. Among 320 residual-query candidates, 160 annihilate the generated subspace and are in scope; the other 160 are not silently admitted. The code constructs side traces and exact decoders, and compares two-column ranks with a separate minor-based calculation.
++The linear family uses all 16 binary-entry two-by-two readouts over \(\mathbb Q\), four scalar queries and five generated subspaces per readout. This gives 64 state-query cases and 80 BRIDGE instances. Among 320 residual-query candidates, 160 annihilate the generated subspace and are in scope; the other 160 are not silently admitted. The code constructs side traces and exact decoders, and compares two-column ranks with a separate minor-based calculation.
+ 
+ The v0.3 groups contain 16 rank-oracle comparisons, 384 state-query repair checks, 480 typed-sequence checks, 800 residual-query repair checks, three common-baseline controls, four partial/restricted-domain controls, 26 update/return checks, seven dependency/acquisition checks and four single-added-view checks. The common-baseline control preserves \(x-y\) through the joint quotient while independent coordinate quotients erase it. These are code-level checks of the stated small constructions; manuscript arguments retain the general hypotheses.
+ 
+@@ -1215,7 +1217,7 @@
+ python -O front_checks_v0_4.py --output checks_results_fresh_opt.json
+ ```
+ 
+-Fresh outputs record exact script hashes, environment and execution time. The complete build note records normal/optimized agreement, the final extracted-package check and visual inspection. No Lean certificate, independent human proof review or model benchmark is claimed by these checks.
++Fresh outputs record exact script hashes, environment and execution time. The complete build note records normal/optimized agreement, the final extracted-package check and visual inspection. These executable checks remain separate from the Lean companion described in §17.2. They do not establish independent human proof review or a model benchmark.
+ 
+ ## 15.4 A separate measurement lane
+ 
+@@ -1357,11 +1359,15 @@
+ 
+ **A, unchecked continuation**, keeps the prior answer and proof without validation. **B, blanket invalidation**, reopens recorded downstream entries and runs a basic whole-graph Horn closure separately for each requested invalidated conclusion. **C, selective witnessed correction**, checks recorded alternatives on demand, validates conjunctive premises and current basis, and retains successful proof subgraphs. Cycles cannot support themselves. B deliberately lacks shared-query recomputation and other mature optimizations; speed relative to B must be read with that limitation.
+ 
+-| Arm | Correct support decisions /216 | Invalid affirmative warrants | False positive decisions | Valid affirmative witnesses | Honest unresolved | Whole-graph recomputations | Unnecessary blanket invalidations |
+-|---|---:|---:|---:|---:|---:|---:|---:|
+-| A | 132 | 114 | 84 | 102 | 0 | 0 | 0 |
+-| B | 216 | 0 | 0 | 132 | 84 | 144 | 60 |
+-| C | 216 | 0 | 0 | 132 | 84 | 0 | 0 |
++| Measure | A | B | C |
++|---|---|---|---|
++| Correct support decisions /216 | 132 | 216 | 216 |
++| Invalid affirmative warrants | 114 | 0 | 0 |
++| False positive decisions | 84 | 0 | 0 |
++| Valid affirmative witnesses | 102 | 132 | 132 |
++| Honest unresolved | 0 | 84 | 84 |
++| Whole-graph recomputations | 0 | 144 | 0 |
++| Unnecessary blanket invalidations | 0 | 60 | 0 |
+ 
+ A’s 114 invalid affirmative warrants include 30 cases where the conclusion has another current justification. Correct answer bytes do not repair the particular proof returned. B and C each requalify 30 formerly invalid selected routes: 24 through independent alternatives and 6 through a changed root version. Those are separate mechanisms, not one inflated “independent discovery” counter.
+ 
+@@ -1373,7 +1379,7 @@
+ 
+ Supplemental checks reproduce all eight source OR counts across **5,040** orders, compare **1,024** two-atom Horn systems / **2,048** queries with explicit Boolean valuation tables, and execute **525** operation-budget cases. The budget wrapper admits no partial witness and returns unresolved on exhaustion; the results include supported, unsupported, exhausted and quiet outcomes. **8** deliberately corrupted-output controls are detected. They are intentional negative fixtures, not undisclosed failures in the clean implementation.
+ 
+-The oracle and evaluated implementation use different algorithms but were written by the same assistant. This is not the independent referee pass required by the key. No Lean proof or real-model execution is claimed. The strictest supported conclusion is that the specified finite procedures, fixtures and conformance controls satisfy their tested contracts, with measured costs and all named limits attached.
++The oracle and evaluated implementation use different algorithms but were written by the same assistant. Independent review and real-model execution remain open. The Lean companion checks mathematical statements and bounded correction models; it does not establish that this Python implementation refines those models. [S17] The strictest supported conclusion is that the specified finite procedures, fixtures and conformance controls satisfy their tested contracts, with measured costs and all named limits attached.
+ 
+ # 17. Open work and conclusion
+ 
+@@ -1391,13 +1397,13 @@
+ 
+ **Actual model and workflow behavior.** Lane M is still unrun. A model may ignore a valid record or produce an invalid first answer, so validity and successful use cannot be collapsed. A live Branchline or Key Turn study must charge preparation and execution, preserve model/version/configuration and failures, and compare matched workloads. A narrow literature comparison is now present; a broad priority claim and independent review are not.
+ 
+-Useful continuation families narrower than all possible future questions, grounded rule discovery, and resource-bounded decision sufficiency also remain open. The v0.4 changes do not discharge the general complexity obligations in §12 or change BRIDGE's Hodge scope.
++Useful continuation families narrower than all possible future questions, grounded rule discovery, and resource-bounded decision sufficiency also remain open. These results do not discharge the general complexity obligations in §12 or change BRIDGE's Hodge scope.
+ 
+ FRONT’s organizing statement is:
+ 
+ > **Do not pay to rediscover an applicable answer merely because the next task arrived. Do not pretend that retaining the answer resolved the next task.**
+ 
+-Version 0.2 added two companion sentences, retained here:
++Two further principles make the cost of propagation explicit:
+ 
+ > **Do not confuse the cost of finding the next cut with the cost of propagating what that cut makes possible.**
+ >
+@@ -1415,15 +1421,25 @@
+ 
+ 
+ 
+-### 17.1 Release-candidate boundary
+-
+-This v1.0 candidate completes an inspectable finite correction mechanism and its bounded experiment, while retaining the applicability-cost question that motivated FRONT. It does not make correction universally cheap, automatic or complete. A settled NO, a surviving historical event, an unsupported selected proof, an independently requalified conclusion and an authorized repair remain distinct objects.
+-
+-Independent mathematics/CS and authority-boundary review is still open. Public Single-Cut record/version matching could not be established from the attempted retrieval, so the local v0.1 supplied file is the inspected mathematical example. The reserved DOI is a destination reported by the author, not publication evidence. The manuscript is ready for author and external review, **not represented as independently reviewed, adopted or published**. Real-model performance, optional Lean formalization, concurrent grant freshness, crash-safe external repair, real-world consequence completeness and priority remain outside this completed finite build. [S14–S16]
++### 17.1 Scope and remaining work
++
++FRONT v1.0 provides an inspectable finite correction mechanism and its bounded experiment, while retaining the applicability-cost question that motivated FRONT. It does not make correction universally cheap, automatic or complete. A settled NO, a surviving historical event, an unsupported selected proof, an independently requalified conclusion and an authorized repair remain distinct objects.
++
++Independent mathematics/CS and authority-boundary review remains open. The Single-Cut example uses the supplied local v0.1 file; its match to the public record remains unverified. Real-model performance, concurrent grant freshness, crash-safe external repair, complete capture of real-world consequences and priority remain open. The Lean coverage and its remaining formalization limits are stated below. [S14–S17]
++
++## 17.2 Lean companion and formalization limits
++
++The Lean 4 companion covers all 21 headed propositions. Seventeen have general mathematical statements covering the named claims; Propositions 1, 7D, 7E and 8 have explicitly bounded formalizations or a checked numerical core. All statements retain their declared hypotheses. C1 remains a definition and C2 remains an accounting schema. [S17]
++
++The checked inventory contains 81 new public theorem declarations and 43 inherited theorem declarations, together with definitions and constructions. These totals include helpers, counterexamples and wrappers and are not counts of discoveries. The 163-declaration signature and axiom inventory, build logs and 13 module kernel checks are retained. Inspected axiom dependencies are confined to Lean’s propext, Classical.choice and Quot.sound; the exact subset is recorded for each declaration.
++
++The remaining bridges concern a general representation of admissible calculi and assumption discharge (Proposition 1); a verified shared-DAG representation, parser and exact-match implementation (7D); general implementation refinement, real authority, concurrent revocation and crash recovery (7E); and the uniform SAT-machine and complexity interpretation beyond the numerical cost bound (8). No SAT algorithm satisfying the latter hypotheses or resolution of P versus NP is constructed.
++
++The companion reuses identified APCI and BRIDGE proofs with their original namespaces and byte identities. Its formal checking is separate from experiment execution and from independent scientific review. The manuscript preserves the audited mathematical statements; an editorial concordance binds the final source bytes to the earlier proof receipts.
+ 
+ # Appendix A. Corrections retained from the originating dialogue
+ 
+-This draft narrows several exploratory claims rather than silently inheriting them.
++The following distinctions qualify the exploratory claims that motivated FRONT.
+ 
+ **“The next cut is not uniquely determined.”** That alone is not a complexity obstruction. Proposition 4 requires a common adequate continuation, not uniqueness.
+ 
+@@ -1437,7 +1453,7 @@
+ 
+ **“Closure has a price.”** The requested property determines the obligation. A topological obstruction is not a universal storage or computational lower bound without an explicit adapter and proof.
+ 
+-**“Repeated full closure describes propagation waves.”** A completed closure is idempotent. Version 0.2 uses a one-step rule operator and defines closure as its eventual fixed point, leaving intermediate work visible.
++**“Repeated full closure describes propagation waves.”** A completed closure is idempotent. FRONT uses a one-step rule operator and defines closure as its eventual fixed point, leaving intermediate work visible.
+ 
+ **“The original learned NO already supplies the chain.”** In the original SAT example, \(\neg a\) leaves three models and does not fix \(b,c\) individually. Equation (9a) visibly supplies new clauses and fresh variables for the chain.
+ 
+@@ -1461,7 +1477,7 @@
+ 
+ **“The familiar analogy supplies its own foundation.”** An unsupported circular restatement adds no warrant. This does not invalidate a sound equivalence or a supported feedback loop. Feynman's examples remain motivating source material. Pang placed his first viewing in his twenties, about fourteen years earlier, not as a fourteen-year-old.
+ 
+-These corrections are part of the drafting trace. They do not change the authorship of FRONT’s name or the conceptual observation that motivated it.
++These corrections preserve the development of the argument. They do not change the authorship of FRONT’s name or the conceptual observation that motivated it.
+ 
+ 
+ 
+@@ -1471,7 +1487,7 @@
+ 
+ # Appendix B. Claim and evidence ledger
+ 
+-| Item | Status in this draft | Basis and remaining obligation |
++| Item | Evidence status | Basis and remaining obligation |
+ |:--|:--|:--|
+ | FRONT name and expansion | User-origin provenance | Current conversation and Pang’s authorship statement [S0] |
+ | Scoped reuse, Propositions 1–2 | Elementary manuscript proofs | Fixed logic, valid premises, explicit transfer scope |
+@@ -1515,28 +1531,29 @@
+ | Full-cost measurement | Executed within fixture boundary | Hashing, reads and first packaging charged; no heap/energy/LLM estimate |
+ | FRONT-REUSE-01 M | PREPARED_NOT_RUN | Requires pinned model, settings, budget and actual receipts |
+ | Historical checks | Freshly rerun, originals preserved | Counts remain separate bounded checks |
+-| Live Branchline modification / publication | Not performed | Requires a separate user request |
+-
+-
+-
+-### v1.0 additions and release gates
++| Live Branchline modification | Not performed | Requires a separate user request |
++
++
++
++### Correction results and evidence limits
+ 
+ | Addition | Status and evidence | Boundary |
+ |---|---|---|
+ | C1 recorded support | Definition on a finite recorded derivation set | Not all truths or all repairs |
+-| Proposition 7E | Elementary conditional argument, proof in §11 | Assumed validator/rule/grant soundness; no kernel certificate |
++| Proposition 7E | Conditional argument in §11; bounded Lean model in the companion | Supplied validators, rules, grants and postconditions; no general implementation-refinement proof |
+ | C2 correction bill | Accounting schema; recorded phase/operation measurements | Not independent costs or a general speed theorem |
+ | FRONT-CORRECT-01 | Executed retained reconstruction, normal and optimized runs | Synthetic fixtures and basic baselines |
+ | Scratch correction | 96 finite state-transition checks, separate row-count oracle | No live filesystem or irreversible-effect recovery |
+ | Source preservation | Manifest and exact-heading/display comparison | Preservation is not independent proof review |
+ | Independent adversarial referee | OPEN / not performed | Same-assistant review is not a substitute |
+ | Public SCT artifact/version match | OPEN / retrieval unresolved | Local v0.1 only is inspected |
+-| Real-model / Lean lanes | PREPARED_NOT_RUN / FORMALIZATION_PREPARED_NOT_RUN | No fabricated model tokens or proof certificates |
+-| Author adoption / publication | NOT_PERFORMED | Reserved DOI grants no publication authority |
++| Real-model study | PREPARED_NOT_RUN | No model-performance or token-saving result |
++| Lean companion | 21 propositions mapped; 17 general and four bounded | Exact assumptions and the remaining bridges are recorded in §17.2 and [S17] |
++
+ 
+ # Appendix C. Sources, attribution, and verification notes
+ 
+-This v0.4 build uses the complete supplied FRONT v0.3 package as its baseline and preserves its nested sources, including BRIDGE v0.4, byte-for-byte. The v0.3 source note records its earlier native-equation and render inspections. Those historical inspections and the source descriptions [S0–S11; R1–R13] below are retained as ancestry, not relabeled as fresh checks of every original source.
++The source history preserves the supplied FRONT v0.3 baseline and its nested sources, including BRIDGE v0.4, byte-for-byte. The v0.3 source note records its earlier native-equation and render inspections. Those historical inspections and the source descriptions [S0–S11; R1–R13] below are retained as ancestry, not relabeled as fresh checks of every original source.
+ 
+ New research for v0.4 inspected the author/publisher sources in [R14–R21], including the relevant build-trace formulas and IMP diagram as page images. PACMI's primary indexed abstract was accessible, while its full text was not; the comparison is limited accordingly. The complete access map and the execution/environment records are supplied beside the manuscript. No external research paper is redistributed. [S12; S13]
+ 
+@@ -1546,7 +1563,7 @@
+ 
+ **[S1] Pang, Christopher D. *PAL v2.4: Mechanical Structural Spine*.** 22 September 2026. DOI [10.5281/zenodo.22888036](https://doi.org/10.5281/zenodo.22888036). Consulted supplied DOCX, especially §§1–4, the A9/A12–A15 roles, closure grammar, and boundary/projection distinctions. Governs PAL terminology here. PAL’s mathematical realizations are not inferred wholesale from this spine.
+ 
+-**[S2] Pang, Christopher D. *MIND: Matrix of Information, Negation, and Distinction*, v0.4.** 21 September 2026, publication-candidate draft. DOI as printed: [10.5281/zenodo.22882309](https://doi.org/10.5281/zenodo.22882309). Consulted supplied PDF, especially §§1, 3–5, 8.7, 9 and its scope notes. Its original PAL v2.3 placement remains historical; this FRONT draft uses v2.4 for PAL terms.
++**[S2] Pang, Christopher D. *MIND: Matrix of Information, Negation, and Distinction*, v0.4.** 21 September 2026, publication-candidate draft. DOI as printed: [10.5281/zenodo.22882309](https://doi.org/10.5281/zenodo.22882309). Consulted supplied PDF, especially §§1, 3–5, 8.7, 9 and its scope notes. Its original PAL v2.3 placement remains historical; FRONT uses v2.4 for PAL terms.
+ 
+ **[S3] Pang, Christopher D. *CHARTER: Certification and History Architecture for Robust Transport, Evidence, and Retention — Framed Prime Shells and Bound Persistent Shells*, v1.0.** 5 September 2026. DOI as printed: [10.5281/zenodo.22288471](https://doi.org/10.5281/zenodo.22288471). Consulted supplied 45-page PDF, especially §§10, 15, 16.3. The source distinguishes a limited inherited Lean core from later manuscript-level material; FRONT does not enlarge that machine-checked boundary. Public deposit was not independently audited here.
+ 
+@@ -1622,11 +1639,11 @@
+ 
+ All new access reports refer to 5 October 2026. The source map separates successful full-text access, section-level inspection and abstract-only comparison.
+ 
+-## C.3 Attribution and release boundary
+-
+-Christopher D. Pang originated the FRONT name and expansion, supplied the conceptual direction and corpus, and is the proposed author and sole adoption authority for this draft. OpenAI ChatGPT, used as Hearthline, assisted with retrieval, literature review, mathematical formulation, proof drafting, executable checks, document preparation, and editing. Its outputs are proposals and tool results, not independent corroboration or author adoption.
+-
+-The v0.4 package preserves the complete v0.3 payload, its five nested manifests, BRIDGE v0.4 and the active research/build key. It adds the editorial revision, direct literature map, frozen study protocol and fixtures, deterministic results, a new audit runner, source/claim notes and a SHA-256 manifest. The original v0.1 evidence gap remains labeled. Creation is neither author adoption nor publication; a hash verifies bytes, not mathematical authority.
++## C.3 Authorship and provenance
++
++Christopher D. Pang is the author of FRONT. He originated its name and expansion and supplied its conceptual direction and corpus. OpenAI ChatGPT, used as Hearthline, assisted with retrieval, literature review, mathematical formulation, proof drafting, executable checks, document preparation, and editing. Its outputs are proposals and tool results, not independent corroboration or author adoption.
++
++The supporting materials retain the source identities, protocols, fixtures, results and formal receipts needed to inspect the claims. Earlier evidence remains attributable to its original version. The original v0.1 evidence gap remains labeled. A hash verifies bytes, not mathematical authority.
+ 
+ 
+ 
+@@ -1637,6 +1654,8 @@
+ [S15] **PAL Single-Cut Transport Lemma, local v0.1, 11 August 2026.** Christopher D. Pang, supplied source-derived manuscript, §§3–5. Exact file identity is retained. User-supplied public reference: https://zenodo.org/records/22239108. The public/local version and byte match remain unverified following retrieval attempts. The note attributes its underlying slot/interface/OR construction to the deposited source at https://zenodo.org/records/21871667; FRONT imports only the displayed finite local count and OR example, not the global NP-completeness or priority claims.
+ 
+ [S16] **FRONT v1.0 retained build and FRONT-CORRECT-01**, 8 October 2026. Assistant-selected finite realization under Pang's activated key. FREEZE.json identifies the reconstructed implementation/protocol/75 fixtures before the retained comparison. results_retained_01 contains the primary events; results_retained_optimized is a robustness rerun, not extra independent observations. Original v0.4 evidence remains in experiment_reuse_v0.4. Review independence is limited to separate algorithms and exact small-fixture enumeration, not separate authors or a second Lean kernel.
++
++[S17] **Pang, Christopher D. FRONT v1.0 Lean audit companion.** 8 October 2026. [Repository](https://github.com/Grativy6/front-lean). Audit/COVERAGE.md maps all 21 propositions; Audit/RECEIPT_BOOK.md reports assumptions, finite experiments and remaining bridges. The original formal receipt checks 163 declarations and 13 modules under Lean 4.32.1 and Mathlib commit 520045ab14e26149ee970e2e617ca04b09bde5d6. Publication/source-concordance.json binds the editorial release to the unchanged mathematical source and proof inputs.
+ 
+ [R22] **Alchourrón, Carlos E.; Gärdenfors, Peter; Makinson, David.** “On the Logic of Theory Change: Partial Meet Contraction and Revision Functions.” Journal of Symbolic Logic 50(2), 510–530 (1985). DOI: 10.2307/2274239. Direct comparison concerns contraction/revision and selection, not a claim to replace the AGM postulates.
+ 
+@@ -1799,4 +1818,4 @@
+ 
+ ### E.4 Trust and remaining work
+ 
+-The frozen program, Python interpreter, operating system and hardware remain part of the execution trust base. The separate fixed-point oracle is additionally compared with explicit valuations in 1,024 two-atom systems, but no general implementation-correctness theorem follows. Truth of source metadata, complete capture of external effects, dynamic concurrency, live authentication, durable rollback, deception attribution and practical agent costs are not verified. The independent-review packet and claim ledger identify those boundaries. The real-model and optional Lean lanes are not executed.
++The frozen program, Python interpreter, operating system and hardware remain part of the execution trust base. The separate fixed-point oracle is additionally compared with explicit valuations in 1,024 two-atom systems, but no general implementation-correctness theorem follows. Truth of source metadata, complete capture of external effects, dynamic concurrency, live authentication, durable rollback, deception attribution and practical agent costs are not verified. The independent-review packet and claim ledger identify those boundaries. The real-model lane remains unrun. The separately checked Lean companion is described in §17.2; no general Python-to-Lean refinement is claimed. [S17]
