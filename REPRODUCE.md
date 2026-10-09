@@ -42,6 +42,14 @@ adapters for a portable replay; do not rewrite old receipts to match a new path.
 In particular, the older whole-directory PAL/CHARTER scan can flag later files;
 the scoped publication replay preserves its exact original population.
 
+MIND's historical runner also binds a whole-repository inventory. Its CI uses
+`python scripts/prepare_mind_replay.py FRESH_DIRECTORY` to verify all 520
+original proof, runner, ledger and dependency input identities against this
+collection, and then replays the original 521-input population in a detached
+historical checkout. The one separately recorded difference is the current CI
+orchestration file. New unrelated projects do not enter that old population.
+The correspondence record accompanies the fresh MIND receipt.
+
 The [collection workflow](.github/workflows/collection.yml) builds each project
 in its own job and uploads the fresh logs, including hidden evidence folders.
 Existing historical workflows remain. Read the tested revision and outcome;
