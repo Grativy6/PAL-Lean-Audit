@@ -30,6 +30,8 @@ jobs:
           fetch-depth: 0
       - name: Match current inputs and prepare the frozen MIND population
         run: python3 scripts/prepare_mind_replay.py "$RUNNER_TEMP/mind-frozen"
+        env:
+          MIND_CONTINUATION_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
       - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1.5.0
         with:
           lake-package-directory: ${{ runner.temp }}/mind-frozen
@@ -40,8 +42,8 @@ jobs:
         working-directory: ${{ runner.temp }}/mind-frozen
       - run: python3 Audit/mind-v04-continuation/run.py --check
         working-directory: ${{ runner.temp }}/mind-frozen
-      - run: python3 Audit/mind-v04-continuation/run.py --replay --lake lake --output-dir artifacts/mind-continuation-ci
-        working-directory: ${{ runner.temp }}/mind-frozen
+      - name: Replay historical inputs with separately bound current CI identity
+        run: python3 scripts/prepare_mind_replay.py "$RUNNER_TEMP/mind-frozen" --replay
         env:
           MIND_CONTINUATION_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
       - if: always()
@@ -51,4 +53,4 @@ jobs:
           if-no-files-found: error
           path: |
             ${{ runner.temp }}/mind-frozen/artifacts/mind-continuation-ci/
-            ${{ runner.temp }}/mind-frozen/MIND-COLLECTION-CORRESPONDENCE.json
+            ${{ runner.temp }}/mind-frozen/artifacts/MIND-COLLECTION-CORRESPONDENCE.json

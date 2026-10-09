@@ -49,6 +49,11 @@ collection, and then replays the original 521-input population in a detached
 historical checkout. The one separately recorded difference is the current CI
 orchestration file. New unrelated projects do not enter that old population.
 The correspondence record accompanies the fresh MIND receipt.
+It records the actual current CI identity separately from the historical
+checkout's revision. The old runner is invoked without its merge-SHA CI claim;
+the outer adapter verifies the actual CI checkout and matching proof inputs.
+Use the same preparation command with `--replay` after installing that
+historical checkout's dependencies to reproduce this step locally.
 
 The [collection workflow](.github/workflows/collection.yml) builds each project
 in its own job and uploads the fresh logs, including hidden evidence folders.
