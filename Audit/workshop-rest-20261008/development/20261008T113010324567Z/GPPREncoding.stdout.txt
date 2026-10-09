@@ -1,0 +1,38 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:90:54: error: unsolved goals
+case neg
+p : Nat.Primes
+k : ℕ
+q : Nat.Primes
+h : ↑p = ↑q
+h' : ¬p = q
+⊢ k = 0
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:93:39: warning: This simp argument is unused:
+  Subtype.ext_iff
+
+Hint: Omit it from the simp argument list.
+  simp_all ̵[̵S̵u̵b̵t̵y̵p̵e̵.̵e̵x̵t̵_̵i̵f̵f̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:123:2: error: unsolved goals
+case refine_2
+q : ℚ
+hq : 0 < q
+h : ↑q.num.natAbs = q.num
+⊢ ↑(NNRat.divNat q.num.natAbs q.den) =
+    ↑(↑(NNRat.divNat q.num.natAbs q.den)).num.natAbs / ↑(↑(NNRat.divNat q.num.natAbs q.den)).den
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:147:58: error(lean.unknownIdentifier): Unknown constant `Complex.ratCast_natCast`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:159:15: warning: Try `simp at h'` instead of `simpa using h'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:162:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field ↥(Subalgebra.algebraicClosure ℚ ℂ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:163:52: error: Application type mismatch: The argument
+  Subtype.val_injective
+has type
+  Injective Subtype.val
+but is expected to have type
+  Injective fun j => j
+in the application
+  { toFun := fun j => j, inj' := ⋯ }

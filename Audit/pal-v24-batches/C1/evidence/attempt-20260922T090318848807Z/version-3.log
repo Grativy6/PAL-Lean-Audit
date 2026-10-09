@@ -1,0 +1,5 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "--version"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 15, "stderr_bytes": 0}
+Python 3.12.14
+
+PAL-STDERR-1

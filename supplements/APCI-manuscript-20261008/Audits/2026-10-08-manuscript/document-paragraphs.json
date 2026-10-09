@@ -1,0 +1,718 @@
+[
+  {
+    "id": "P0001",
+    "text": "APCI RUN 0001  /  FORMAL METHODS AND REPRODUCIBILITY NOTE"
+  },
+  {
+    "id": "P0002",
+    "text": "Exact Certification Through a Declared Interface"
+  },
+  {
+    "id": "P0003",
+    "text": "Fiber Factorization, Finite Capacity, and a Lean 4 Audit (APCI Run 0001)"
+  },
+  {
+    "id": "P0004",
+    "text": "Christopher D. Pang"
+  },
+  {
+    "id": "P0005",
+    "text": "13 August 2026"
+  },
+  {
+    "id": "P0006",
+    "text": "Version 1.0.0"
+  },
+  {
+    "id": "P0007",
+    "text": "Version DOI: 10.5281/zenodo.21923290DOI reserved before publication of the Zenodo record."
+  },
+  {
+    "id": "P0008",
+    "text": "Formal artifact: APCI Lean Audit, immutable Git commit 0f85cc7fac47c3b34ecfd11160f3efae454b900c"
+  },
+  {
+    "id": "P0009",
+    "text": "License: Creative Commons Attribution 4.0 International (CC BY 4.0) for this manuscript and its publication materials. No license claim for the separately hosted repository code is made by this paper."
+  },
+  {
+    "id": "P0010",
+    "text": "Recommended citation: Pang, Christopher D. (2026). Exact Certification Through a Declared Interface: Fiber Factorization, Finite Capacity, and a Lean 4 Audit (APCI Run 0001). Version 1.0.0. Zenodo. https://doi.org/10.5281/zenodo.21923290"
+  },
+  {
+    "id": "P0011",
+    "text": ""
+  },
+  {
+    "id": "P0012",
+    "text": "Abstract"
+  },
+  {
+    "id": "P0013",
+    "text": "This paper asks when a requested answer about an underlying alternative can be certified using only a declared accessible trace. Let τ:W→T map worlds or alternatives to traces and let q:W→Q be the required answer. In classical logic, an exact decoder on the reachable trace space exists if and only if q is constant on every fiber of τ. A decoder on the entire trace type additionally requires the exact totalization condition that the function space T→Q be nonempty; an inhabited answer type is a convenient sufficient condition. This exposes an otherwise hidden empty-answer boundary case. Equal traces remain equal under deterministic post-processing of the same trace, and a map from n+1 alternatives to n traces cannot admit a left-inverse decoder."
+  },
+  {
+    "id": "P0014",
+    "text": "The bounded core is formalized in Lean 4.32.1 using Lean core plus bundled Std, with no Mathlib or third-party theorem dependency. Native continuous integration, bundled leanchecker, an explicit inventory, and logical-dependency receipts audit fifteen public declarations. The result is deliberately conditional at the abstract-to-physical boundary. It does not establish a finite capacity for every physical protocol, compulsory information loss at every physical step, a thermodynamic entropy theorem, or any conclusion about the Riemann hypothesis or P versus NP. The elementary component results are standard; the contribution is their typed integration, the reachable-versus-total decoder audit, reproducible formal verification, and an explicit authority ceiling on physical interpretation."
+  },
+  {
+    "id": "P0015",
+    "text": "Keywords: Lean 4; formal verification; theorem auditing; exact certification; fiber factorization; finite capacity; pigeonhole principle; information loss; reversible computation; abstract-to-physical interface"
+  },
+  {
+    "id": "P0016",
+    "text": "1. Introduction"
+  },
+  {
+    "id": "P0017",
+    "text": "A certificate is useful only relative to what it is supposed to certify and what information it is allowed to use. This sounds elementary, but broad discussions of information loss often blur three different objects: an underlying alternative, the trace made accessible by a protocol, and the answer requested from that trace. The resulting ambiguity can make a local collision look like a universal impossibility theorem, or make a thermodynamic metaphor do work that belongs to a typed mathematical premise."
+  },
+  {
+    "id": "P0018",
+    "text": "This paper isolates the smallest exact question:"
+  },
+  {
+    "id": "P0019",
+    "text": "Given an interface τ:W→T and a requested answer q:W→Q, when does there exist a decoder that computes qw from τw alone?"
+  },
+  {
+    "id": "P0020",
+    "text": "The answer is a fiber criterion. A trace-only decoder exists on reachable traces exactly when no trace fiber contains two worlds that require different answers. The same observation yields a local obstruction: if τu=τv but qu≠qv, no deterministic function of that same trace can answer both cases correctly. When the task is identity recovery and a fixed interface offers only n trace values for n+1 alternatives, finite pigeonhole forces such a collision."
+  },
+  {
+    "id": "P0021",
+    "text": "The mathematics is elementary. What matters here is the audit around it. First, the unconditional factorization theorem lives on the reachable trace subtype, not automatically on all values of an arbitrary trace type. A total decoder on all of T needs an exact additional condition. Second, identity recovery and property certification are separated: a trace map need not be injective if the requested answer is constant on its fibers. Third, every physical application is exposed as a bridge premise about a concrete protocol's accessible trace and retained side information. Finally, the core claims are implemented and checked in Lean 4 with a fail-closed declaration inventory and reproducible receipts."
+  },
+  {
+    "id": "P0022",
+    "text": "The project label APCI abbreviates Abstract-to-Physical Certification Impossibility. In this paper, that name refers to a research framework and run lineage, not to an unconditional theorem that all abstract-to-physical certification is impossible. The checked result is an interface-relative obstruction. It neither defines a universal physical capacity nor derives a global claim about mathematics, physics, infinity, the Riemann hypothesis, or P versus NP."
+  },
+  {
+    "id": "P0023",
+    "text": "1.1 Contributions"
+  },
+  {
+    "id": "P0024",
+    "text": "The paper contributes the following bounded synthesis:"
+  },
+  {
+    "id": "P0025",
+    "text": "a typed certification interface separating worlds, accessible traces, requested answers, reachable traces, and total trace types;"
+  },
+  {
+    "id": "P0026",
+    "text": "an exact reachable-trace factorization theorem and the exact total-decoder condition, including an explicit empty-type countermodel;"
+  },
+  {
+    "id": "P0027",
+    "text": "checked corollaries for left-inverse injectivity, deterministic collapse persistence, and one-more-than-capacity finite recovery;"
+  },
+  {
+    "id": "P0028",
+    "text": "a conditional operational bridge that makes side information and capacity assumptions explicit;"
+  },
+  {
+    "id": "P0029",
+    "text": "a Lean 4.32.1 formalization with fifteen inventoried declarations, native build and leanchecker receipts, and no proof holes or custom postulates; and"
+  },
+  {
+    "id": "P0030",
+    "text": "an authority contract preventing the formal core from being promoted into unsupported thermodynamic, metaphysical, or complexity-theoretic claims."
+  },
+  {
+    "id": "P0031",
+    "text": "No novelty or priority is claimed for factorization through fibers, left-inverse injectivity, preservation of equality under functions, or the finite pigeonhole principle. The contribution is their integration, formal audit, edge-condition repair, and disciplined interpretive boundary."
+  },
+  {
+    "id": "P0032",
+    "text": "2. The declared certification interface"
+  },
+  {
+    "id": "P0033",
+    "text": "Let W, T, and Q be types or sets."
+  },
+  {
+    "id": "P0034",
+    "text": "W is the space of underlying worlds, alternatives, or inputs."
+  },
+  {
+    "id": "P0035",
+    "text": "T is the complete accessible trace type declared for one interface."
+  },
+  {
+    "id": "P0036",
+    "text": "Q is the requested answer type."
+  },
+  {
+    "id": "P0037",
+    "text": "τ:W→T is the trace map."
+  },
+  {
+    "id": "P0038",
+    "text": "q:W→Q is the requested answer."
+  },
+  {
+    "id": "P0039",
+    "text": "The word complete is relative to the declared interface. If a decoder may use a history tape, environment, reference system, correlated input, or later measurement, that information belongs in the trace. For example, adding side information s:W→S replaces τw with the refined interface w↦τw,sw. Recovery from the refined interface does not contradict a collision in τ alone."
+  },
+  {
+    "id": "P0040",
+    "text": "Define the reachable trace subtype"
+  },
+  {
+    "id": "P0041",
+    "text": "Rτ:={t∈T∣∃w∈W, τw=t}."
+  },
+  {
+    "id": "P0042",
+    "text": "Define fiber constancy by"
+  },
+  {
+    "id": "P0043",
+    "text": "∀u,v∈W, τu=τv⇒qu=qv."
+  },
+  {
+    "id": "P0044",
+    "text": "This condition says exactly that the answer classes are no finer than the trace fibers. It does not require τ to distinguish every world. A constant Boolean property can be certified through a one-point trace even if W is infinite; identity recovery, by contrast, requires injectivity."
+  },
+  {
+    "id": "P0045",
+    "text": "2.1 Interface map"
+  },
+  {
+    "id": "P0046",
+    "text": "If u and v produce the same trace t, a deterministic decoder must return the same value on both rows. Exact certification therefore fails precisely when the rows require different answers. This same-trace/conflicting-answer witness is the local obstruction used throughout the paper."
+  },
+  {
+    "id": "P0047",
+    "text": "3. Factorization through reachable fibers"
+  },
+  {
+    "id": "P0048",
+    "text": "Theorem 1 (reachable-trace factorization). In classical logic, the following are equivalent: (i) there exists dR:Rτ→Q such that dRτw=qw for every w∈W; and (ii) for all u,v∈W, τu=τv implies qu=qv."
+  },
+  {
+    "id": "P0049",
+    "text": "Proof. If a decoder exists, apply it to equal reachable traces. Conversely, for each reachable trace choose one preimage wt. Define dRt:=qwt. Fiber constancy shows that this value is independent of which preimage was chosen and that dRτw=qw. In the Lean implementation, the converse over arbitrary types uses Classical.choice; the forward implication is constructive. ▫"
+  },
+  {
+    "id": "P0050",
+    "text": "The theorem can be read as an exact factorization criterion: q factors through τ on the image of τ if and only if q is constant on every fiber. It is the semantic core of trace-only certification."
+  },
+  {
+    "id": "P0051",
+    "text": "3.1 The total-decoder edge condition"
+  },
+  {
+    "id": "P0052",
+    "text": "A frequent informal proof defines a decoder on reachable traces and then says “choose any default answer elsewhere.” That last step is harmless when Q is inhabited, but false for arbitrary types."
+  },
+  {
+    "id": "P0053",
+    "text": "Theorem 2 (exact total-decoder criterion). There exists d:T→Q satisfying dτw=qw for every w if and only if (i) q is constant on every fiber of τ, and (ii) the function space T→Q is nonempty."
+  },
+  {
+    "id": "P0054",
+    "text": "The forward direction supplies both fiber constancy and an inhabitant of T→Q, namely the decoder itself. For the reverse direction, use Theorem 1 on reachable traces and the supplied function as a fallback on unreachable traces."
+  },
+  {
+    "id": "P0055",
+    "text": "When Q has a designated inhabitant, condition 2 is automatic. Without it, the following control is decisive."
+  },
+  {
+    "id": "P0056",
+    "text": "Empty-boundary control. Let W=⌀, let T={*}, and let Q=⌀. Fiber constancy holds vacuously because there are no worlds. Yet no total function T→Q exists. Thus an unqualified total-decoder equivalence is false."
+  },
+  {
+    "id": "P0057",
+    "text": "This edge case is small, but it is exactly the kind of hidden assumption a formal interface audit is meant to expose."
+  },
+  {
+    "id": "P0058",
+    "text": "3.2 Identity recovery is a stronger task"
+  },
+  {
+    "id": "P0059",
+    "text": "Set Q=W and q=idW. An exact decoder is then a left inverse of the encoder."
+  },
+  {
+    "id": "P0060",
+    "text": "Theorem 3 (left inverse implies injectivity). If e:W→T and r:T→W satisfy rew=w for every w, then e is injective."
+  },
+  {
+    "id": "P0061",
+    "text": "Proof. If eu=ev, apply r to both sides and use the left-inverse equations to obtain u=v. ▫"
+  },
+  {
+    "id": "P0062",
+    "text": "For property certification, injectivity of τ is unnecessary. Only pairs with different requested answers must be separated. This distinction prevents a common overclaim: a collision does not obstruct certification unless the colliding alternatives require different answers."
+  },
+  {
+    "id": "P0063",
+    "text": "4. Collision persistence and finite capacity"
+  },
+  {
+    "id": "P0064",
+    "text": "Theorem 4 (deterministic collapse persistence). For every f:T→Z,"
+  },
+  {
+    "id": "P0065",
+    "text": "τu=τv⇒fτu=fτv."
+  },
+  {
+    "id": "P0066",
+    "text": "This is equality substitution, but its interface interpretation is important. Post-processing the same declared trace cannot separate two preimages already collapsed by that trace. The theorem does not cover added side information, renewed access to the underlying world, or a different measurement. Those operations define a different interface."
+  },
+  {
+    "id": "P0067",
+    "text": "Theorem 5 (one-more-than-capacity). For every natural number n and every function"
+  },
+  {
+    "id": "P0068",
+    "text": "e:Finn+1→Finn,"
+  },
+  {
+    "id": "P0069",
+    "text": "e is not injective. Consequently, no r:Finn→Finn+1 is a left inverse of e."
+  },
+  {
+    "id": "P0070",
+    "text": "The Lean proof is an explicit induction, not a Mathlib cardinality theorem. It removes the image of one distinguished input, builds a smaller map, proves that the smaller map would be injective if the original were, and invokes the induction hypothesis."
+  },
+  {
+    "id": "P0071",
+    "text": "4.1 Conditional finite-interface corollary"
+  },
+  {
+    "id": "P0072",
+    "text": "Suppose a declared interface has at most n reachable trace classes, and a witness set contains n+1 alternatives whose required answers are pairwise distinct. Then no exact trace-only decoder exists on that witness set."
+  },
+  {
+    "id": "P0073",
+    "text": "This is a direct written consequence of Theorems 1 and 5. The public Lean inventory checks the identity-recovery map Finn+1→Finn directly; the broader answer-class formulation is labeled here as a derived corollary rather than as an additional inventoried declaration."
+  },
+  {
+    "id": "P0074",
+    "text": "The phrase one declared interface is material. An unbounded family of finite protocols, records, or proof objects can grow with the input. The fact that each completed record is finite does not imply one fixed upper bound across the family."
+  },
+  {
+    "id": "P0075",
+    "text": "5. From abstract alternatives to an operational trace"
+  },
+  {
+    "id": "P0076",
+    "text": "The phrase abstract-to-physical conversion is used here for a typed modeling round trip:"
+  },
+  {
+    "id": "P0077",
+    "text": "alternative→carrier→accessible trace→interpreted answer."
+  },
+  {
+    "id": "P0078",
+    "text": "The theorem does not say that abstract objects exchange energy with physical systems. It says that a requested distinction survives a declared interface exactly when the interface preserves that distinction in its trace fibers."
+  },
+  {
+    "id": "P0079",
+    "text": "A conditional operational application therefore has four explicit premises:"
+  },
+  {
+    "id": "P0080",
+    "text": "Alternatives: a concrete set of alternatives and a declared equivalence notion for the answers that matter;"
+  },
+  {
+    "id": "P0081",
+    "text": "Trace: a complete accessible trace for the protocol, including all retained side information;"
+  },
+  {
+    "id": "P0082",
+    "text": "Exactness: an always-conclusive exact decoding requirement with no abstention; and"
+  },
+  {
+    "id": "P0083",
+    "text": "Capacity: when the finite corollary is used, a separately justified bound on operationally distinguishable trace classes for that completed protocol."
+  },
+  {
+    "id": "P0084",
+    "text": "Under those premises, a same-trace/conflicting-answer pair blocks exact trace-only certification. The formal theorem supplies the implication; it does not supply the physical premises."
+  },
+  {
+    "id": "P0085",
+    "text": "5.1 A two-boundary reading"
+  },
+  {
+    "id": "P0086",
+    "text": "The motivating mechanical intuition can be stated without turning it into an extra theorem: a realized distinction has two answer sides, and the declared interface realizes that distinction only when those sides do not occupy the same trace fiber. If both sides land in one fiber, downstream motion inside that fiber cannot create a cut. This language is interpretive; the proof itself is ordinary factorization and equality."
+  },
+  {
+    "id": "P0087",
+    "text": "6. Entropy, reversibility, and why the core proof is not thermodynamic"
+  },
+  {
+    "id": "P0088",
+    "text": "The route to APCI began with an intuition that entropy has a one-way shape: something is lost at each physical step and remains recoverable only in abstract space. As a universal premise, that statement is too strong."
+  },
+  {
+    "id": "P0089",
+    "text": "Bennett showed that general deterministic computation can be simulated reversibly by retaining and then uncomputing history [5]. Benioff supplied ideal quantum-mechanical Turing-machine models presented as dissipating no energy [6]. Crooks formulated entropy-production relations in microscopically reversible stochastic dynamics [7]. These are counter-boundaries to the claim that every computational or physical transition must be many-to-one."
+  },
+  {
+    "id": "P0090",
+    "text": "Landauer's analysis instead concerns the thermodynamic consequences of logically irreversible operations such as erasure under modeled physical conditions [4]. It can become relevant when a concrete implementation actually performs a many-to-one reset. It is not needed to prove the fiber theorem, and it does not establish that every step loses information."
+  },
+  {
+    "id": "P0091",
+    "text": "Shannon entropy supplies a useful probabilistic corollary once a distribution and channel model are chosen [2,3]. If X is uniform over m alternatives and a deterministic trace Y=τX takes at most n values, then"
+  },
+  {
+    "id": "P0092",
+    "text": "HX∣Y≥log2m−log2n."
+  },
+  {
+    "id": "P0093",
+    "text": "For m>n, residual uncertainty is positive. This quantifies the finite collision under a chosen distribution. It does not mean that “abstract space itself has entropy,” and it does not provide a universal bound on all physical traces. The exact fiber theorem is prior to probability and remains the cleaner foundation for zero-error certification."
+  },
+  {
+    "id": "P0094",
+    "text": "7. Mandatory counter-boundaries"
+  },
+  {
+    "id": "P0095",
+    "text": "The result survives only if the following boundaries remain visible."
+  },
+  {
+    "id": "P0096",
+    "text": "7.1 Target answer versus world identity"
+  },
+  {
+    "id": "P0097",
+    "text": "Exact certification of q requires separation of conflicting answers, not injectivity on all worlds. A small trace alphabet can certify a small-valued invariant over a very large or infinite domain when the invariant is constant on trace fibers."
+  },
+  {
+    "id": "P0098",
+    "text": "7.2 Fixed capacity versus an unbounded family"
+  },
+  {
+    "id": "P0099",
+    "text": "The finite obstruction applies to one fixed interface with a declared finite trace capacity. Variable-length encodings and families of protocols whose resources grow with the instance are different objects."
+  },
+  {
+    "id": "P0100",
+    "text": "7.3 Post-processing versus new information"
+  },
+  {
+    "id": "P0101",
+    "text": "Theorem 4 covers functions of the same trace. A side channel, history tape, environment, reference system, or renewed measurement can refine the trace. Such refinement must be modeled, not dismissed as “post-processing.”"
+  },
+  {
+    "id": "P0102",
+    "text": "7.4 Reversible dynamics"
+  },
+  {
+    "id": "P0103",
+    "text": "Reversible computation blocks the premise that useful computation must destroy information at every step. APCI locates loss in a non-injective declared interface, not in computation as such."
+  },
+  {
+    "id": "P0104",
+    "text": "7.5 Finite descriptions of infinite families"
+  },
+  {
+    "id": "P0105",
+    "text": "A finite proof, program, or generator can intensionally specify an infinite family. The present theorem is not an argument against induction, universal theorems, or finite axiomatization. It only constrains answers recovered from the declared trace."
+  },
+  {
+    "id": "P0106",
+    "text": "7.6 Stochastic, continuous, and quantum interfaces"
+  },
+  {
+    "id": "P0107",
+    "text": "The checked core is deterministic and typed by ordinary functions. Stochastic exact decoding, continuous observation, and quantum distinguishability require their own notions of accessible equivalence, such as identical output distributions, mutual singularity, or orthogonal support. No such generalization is silently inherited from the deterministic theorem."
+  },
+  {
+    "id": "P0108",
+    "text": "8. Lean formalization"
+  },
+  {
+    "id": "P0109",
+    "text": "The formal artifact is the public repository APCI Lean Audit [8]. The paper freezes the signed merge commit"
+  },
+  {
+    "id": "P0110",
+    "text": "0f85cc7fac47c3b34ecfd11160f3efae454b900c"
+  },
+  {
+    "id": "P0111",
+    "text": "with tree"
+  },
+  {
+    "id": "P0112",
+    "text": "a4418e2fb2c1fe5ffe6be768a419385da8834c99."
+  },
+  {
+    "id": "P0113",
+    "text": "The development uses Lean 4.32.1 [1], Lean core, and bundled Std. It has no Mathlib or third-party theorem dependency. The public root imports three modules: Interface, FiniteCapacity, and Controls."
+  },
+  {
+    "id": "P0114",
+    "text": "8.1 Formal definitions"
+  },
+  {
+    "id": "P0115",
+    "text": "The Lean interface defines:"
+  },
+  {
+    "id": "P0116",
+    "text": "FiberConstant trace answer;"
+  },
+  {
+    "id": "P0117",
+    "text": "ExactCertificate trace answer, with a decoder on every value of Trace;"
+  },
+  {
+    "id": "P0118",
+    "text": "Reachable trace, the subtype of trace values with a preimage; and"
+  },
+  {
+    "id": "P0119",
+    "text": "ExactOnReachable trace answer, with a decoder on that subtype."
+  },
+  {
+    "id": "P0120",
+    "text": "The checked theorem exactOnReachable_iff_fiberConstant is the direct formal counterpart of Theorem 1. The checked theorem exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty is Theorem 2. Controls encode the empty-boundary countermodel and the concrete two-to-one finite obstruction."
+  },
+  {
+    "id": "P0121",
+    "text": "8.2 Evidence contract"
+  },
+  {
+    "id": "P0122",
+    "text": "Post-merge GitHub Actions run 31726224678, job 94535148793, completed successfully against the cited main commit on 13 August 2026. The run used native Lean 4.32.1 at Lean commit f054605aea4b840552cca2e725580bffd1e1b704 and Lake 5.0.0-src+f054605."
+  },
+  {
+    "id": "P0123",
+    "text": "The required gate checked:"
+  },
+  {
+    "id": "P0124",
+    "text": "an explicit fifteen-declaration inventory;"
+  },
+  {
+    "id": "P0125",
+    "text": "an empty Lake dependency manifest;"
+  },
+  {
+    "id": "P0126",
+    "text": "a core/Std/local import boundary;"
+  },
+  {
+    "id": "P0127",
+    "text": "a fail-closed source-policy scan;"
+  },
+  {
+    "id": "P0128",
+    "text": "lake build;"
+  },
+  {
+    "id": "P0129",
+    "text": "bundled leanchecker; and"
+  },
+  {
+    "id": "P0130",
+    "text": "#print axioms receipts, with CI rejection of any sorryAx dependency."
+  },
+  {
+    "id": "P0131",
+    "text": "The run uploaded receipt artifact 9191353228. Its 474-byte ZIP has SHA-256"
+  },
+  {
+    "id": "P0132",
+    "text": "79303ddc54398f462009143b716708e3464ebc3265f05a2eb27381f0e100c1f8."
+  },
+  {
+    "id": "P0133",
+    "text": "The contained axioms.txt has SHA-256"
+  },
+  {
+    "id": "P0134",
+    "text": "16ef054d37dd5ec002ce95112f2209558459c5765dd7fb42bb304e47430a1753"
+  },
+  {
+    "id": "P0135",
+    "text": "and is byte-identical to the committed receipt. Some declarations report Lean's standard dependencies Classical.choice, propext, and Quot.sound. The correct claim is therefore “no proof holes or custom postulates,” not “axiom-free.”"
+  },
+  {
+    "id": "P0136",
+    "text": "8.3 External checker boundary"
+  },
+  {
+    "id": "P0137",
+    "text": "An additional Rust nanoda lane is not reported as passing. Under Lean 4.32.1, export completed at 592,193,566 bytes and 10,751,497 lines, after which the checker exited with invalid digit found in string before declaration checking. This is a documented compatibility boundary, not verification of or evidence against a theorem. Native build plus bundled leanchecker are the passed gates."
+  },
+  {
+    "id": "P0138",
+    "text": "9. Authority ceiling and open bridges"
+  },
+  {
+    "id": "P0139",
+    "text": "The machine-checked core proves statements about typed functions, equality, reachable fibers, finite types, and left inverses. It does not prove any of the following:"
+  },
+  {
+    "id": "P0140",
+    "text": "that every physically realizable completed protocol has finite trace capacity;"
+  },
+  {
+    "id": "P0141",
+    "text": "that every physical or computational step loses information;"
+  },
+  {
+    "id": "P0142",
+    "text": "that microscopic dynamics are irreversible;"
+  },
+  {
+    "id": "P0143",
+    "text": "that finite proofs cannot certify infinite, finitely generated invariants;"
+  },
+  {
+    "id": "P0144",
+    "text": "that anything coherent or incoherent lies “outside mathematics”;"
+  },
+  {
+    "id": "P0145",
+    "text": "a stochastic, continuous, or quantum exact-decoding theorem;"
+  },
+  {
+    "id": "P0146",
+    "text": "the Riemann hypothesis, P=NP, P≠NP, independence, or a runtime lower bound for SAT; or"
+  },
+  {
+    "id": "P0147",
+    "text": "novelty or priority for the elementary component results."
+  },
+  {
+    "id": "P0148",
+    "text": "The strongest admissible physical statement is conditional:"
+  },
+  {
+    "id": "P0149",
+    "text": "After a concrete protocol's accessible trace and side-information boundary are declared, a proved collision between alternatives requiring different answers blocks exact certification from that trace alone."
+  },
+  {
+    "id": "P0150",
+    "text": "The still-open work lies in bridge theorems: specifying operational distinguishability for a concrete physical protocol, proving the relevant capacity or collision premise, and extending the interface model where stochastic or quantum effects matter. Formal verification of the abstract implication cannot substitute for empirical or physical justification of those premises."
+  },
+  {
+    "id": "P0151",
+    "text": "10. Discussion"
+  },
+  {
+    "id": "P0152",
+    "text": "The central lesson is not that information is always destroyed. It is that certification is relative to a typed interface and a target answer. Once the interface is fixed, the fiber structure tells us exactly which distinctions are available. A same-trace/conflicting-answer pair is a decisive local obstruction; absent such a pair, the trace may still be fully adequate for the requested property even if it compresses the underlying world space dramatically."
+  },
+  {
+    "id": "P0153",
+    "text": "This reframes the original entropy-shaped intuition. Entropy pointed toward loss, but the abstract obstruction is simpler and sharper: non-factorization. The abstract-to-physical conversion is not a mysterious transfer between ontological realms; in the theorem it is an explicitly modeled map whose adequacy can be tested. Physical entropy may govern the cost or reliability of particular implementations, while reversible models prevent that physical discussion from being collapsed into a universal many-to-one premise."
+  },
+  {
+    "id": "P0154",
+    "text": "The formal audit also illustrates a broader methodological point. Elementary mathematics can still hide consequential scope errors. Here the hidden default value outside the reachable image produced a false total theorem on empty types. A tiny countermodel forced the correct formulation. Similarly, the finite pigeonhole theorem becomes a global impossibility claim only if a fixed finite operational capacity has been independently earned. Recording those seams is as important as checking the proof term."
+  },
+  {
+    "id": "P0155",
+    "text": "11. Conclusion"
+  },
+  {
+    "id": "P0156",
+    "text": "Exact trace-only certification exists precisely when the requested answer is constant on the reachable fibers of the declared trace. Total decoding over an arbitrary trace type requires an additional and exact function-space nonemptiness condition. A left inverse requires injectivity; deterministic processing of the same trace cannot undo a collision; and n+1 identities cannot be recovered exactly through only n trace values."
+  },
+  {
+    "id": "P0157",
+    "text": "These results are standard mathematics, but their integration yields a clean audit discipline: declare the alternatives, trace, answer, side information, exactness criterion, and capacity premise; locate a same-trace/conflicting-answer witness if one exists; and stop the claim at the interface boundary actually proved. Lean verifies the bounded core. Physics must justify any physical bridge. Neither layer licenses a conclusion about RH or P versus NP."
+  },
+  {
+    "id": "P0158",
+    "text": "Acknowledgments and disclosure"
+  },
+  {
+    "id": "P0159",
+    "text": "Use of generative AI. Generative-AI systems, including ChatGPT/Codex, were used as tools for exploratory discussion, source retrieval, draft organization, Lean proof engineering, code review, adversarial counterexample search, testing, formatting, and production. Christopher D. Pang determined the research direction and scope, selected and reviewed the claims, and accepts responsibility for the manuscript and released artifacts. AI outputs were not treated as independent mathematical or empirical evidence, and no AI system is an author. Formal declarations were checked by the pinned Lean toolchain and CI procedures described above."
+  },
+  {
+    "id": "P0160",
+    "text": "Authorship and stewardship. Christopher D. Pang is the sole author and release authority."
+  },
+  {
+    "id": "P0161",
+    "text": "Data, code, and reproducibility"
+  },
+  {
+    "id": "P0162",
+    "text": "The formal development is available from the immutable repository commit [8]. The cited Zenodo version DOI is 10.5281/zenodo.21923290. The publication package contains the manuscript, editable source, structured metadata, citation file, checksum manifest, and a frozen copy of the post-merge logical-dependency receipt."
+  },
+  {
+    "id": "P0163",
+    "text": "The predecessor archive Abstract_Physical_Certification_Impossibility_Run_0001.zip is identified, but not republished, by byte count 53,805 and SHA-256"
+  },
+  {
+    "id": "P0164",
+    "text": "4c889bb710defdde74c340a47182be31b59fe4c86fabaace403c9c3445420ff8."
+  },
+  {
+    "id": "P0165",
+    "text": "Its historical status remains NO LEAN PROOF CLAIMED. The repository cited in this paper is the later bounded verification layer."
+  },
+  {
+    "id": "P0166",
+    "text": "Appendix A. Public Lean declaration inventory"
+  },
+  {
+    "id": "P0167",
+    "text": "All declarations are in namespace APCILeanAudit. “None” means that Lean's #print axioms reported no axioms for that declaration."
+  },
+  {
+    "id": "P0168",
+    "text": "Appendix B. Reproduction commands"
+  },
+  {
+    "id": "P0169",
+    "text": "At the immutable commit, install elan and run:"
+  },
+  {
+    "id": "P0170",
+    "text": "The receipt command prints the logical dependencies for all public declarations. The CI workflow additionally checks the pinned toolchain, dependency boundary, inventory agreement, prohibited proof escapes, and absence of sorryAx in the receipt."
+  },
+  {
+    "id": "P0171",
+    "text": "References"
+  },
+  {
+    "id": "P0172",
+    "text": "[1] L. de Moura and S. Ullrich, “The Lean 4 Theorem Prover and Programming Language,” in Automated Deduction - CADE 28, LNCS 12699, pp. 625-635, 2021. https://doi.org/10.1007/978-3-030-79876-5_37"
+  },
+  {
+    "id": "P0173",
+    "text": "[2] C. E. Shannon, “A Mathematical Theory of Communication,” Bell System Technical Journal, vol. 27, no. 3, pp. 379-423, 1948. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x"
+  },
+  {
+    "id": "P0174",
+    "text": "[3] C. E. Shannon, “A Mathematical Theory of Communication,” Bell System Technical Journal, vol. 27, no. 4, pp. 623-656, 1948. https://doi.org/10.1002/j.1538-7305.1948.tb00917.x"
+  },
+  {
+    "id": "P0175",
+    "text": "[4] R. Landauer, “Irreversibility and Heat Generation in the Computing Process,” IBM Journal of Research and Development, vol. 5, no. 3, pp. 183-191, 1961. https://doi.org/10.1147/rd.53.0183"
+  },
+  {
+    "id": "P0176",
+    "text": "[5] C. H. Bennett, “Logical Reversibility of Computation,” IBM Journal of Research and Development, vol. 17, no. 6, pp. 525-532, 1973. https://doi.org/10.1147/rd.176.0525"
+  },
+  {
+    "id": "P0177",
+    "text": "[6] P. Benioff, “Quantum Mechanical Models of Turing Machines That Dissipate No Energy,” Physical Review Letters, vol. 48, no. 23, pp. 1581-1585, 1982. https://doi.org/10.1103/PhysRevLett.48.1581"
+  },
+  {
+    "id": "P0178",
+    "text": "[7] G. E. Crooks, “Entropy Production Fluctuation Theorem and the Nonequilibrium Work Relation for Free Energy Differences,” Physical Review E, vol. 60, no. 3, pp. 2721-2726, 1999. https://doi.org/10.1103/PhysRevE.60.2721"
+  },
+  {
+    "id": "P0179",
+    "text": "[8] C. D. Pang, APCI Lean Audit (APCI-LEAN-AR0001), Git commit 0f85cc7fac47c3b34ecfd11160f3efae454b900c, GitHub, 2026. https://github.com/Grativy6/APCI-Lean-Audit/tree/0f85cc7fac47c3b34ecfd11160f3efae454b900c"
+  }
+]

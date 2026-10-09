@@ -1,0 +1,21 @@
+✖ [2999/2999] Building Experiments.AbstractLoopsReturnExport (6.8s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\AbstractLoopsReturnExport.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsReturnExport.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsReturnExport.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsReturnExport.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsReturnExport.setup.json --json
+error: Experiments/AbstractLoopsReturnExport.lean:18:35: unexpected token 'export'; expected '_' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:18:41: unexpected token ':'; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:18:81: unexpected token '≠'; expected '('
+error: Experiments/AbstractLoopsReturnExport.lean:68:5: Unknown identifier `CandidatePresent`
+
+Note: It is not possible to treat `CandidatePresent` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: Experiments/AbstractLoopsReturnExport.lean:127:27: unexpected token 'export'; expected '_' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:127:33: unexpected token ':'; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:128:48: unexpected token '('; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:128:73: unexpected token '('; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:129:49: unexpected identifier; expected '('
+error: Experiments/AbstractLoopsReturnExport.lean:142:39: unexpected token 'export'; expected '_' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:142:45: unexpected token ':'; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:143:30: unexpected token '('; expected 'private' or identifier
+error: Experiments/AbstractLoopsReturnExport.lean:144:24: unexpected token '('; expected 'private' or identifier
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.AbstractLoopsReturnExport
+error: build failed

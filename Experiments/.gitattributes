@@ -1,0 +1,6 @@
+Pal24*.lean -text whitespace=cr-at-eol,-blank-at-eof
+AbstractLoops*.lean -text whitespace=cr-at-eol,-blank-at-eof
+Compactification*.lean -text whitespace=cr-at-eol,-blank-at-eof
+GPPR*.lean -text whitespace=cr-at-eol,-blank-at-eof
+FiniteAbstraction*.lean -text whitespace=cr-at-eol,-blank-at-eof
+SingleCut*.lean -text whitespace=cr-at-eol,-blank-at-eof

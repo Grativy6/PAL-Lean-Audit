@@ -1,0 +1,5 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "--version"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 53, "stderr_bytes": 0}
+Lake version 5.0.0-src+f054605 (Lean version 4.32.1)
+
+PAL-STDERR-1

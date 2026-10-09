@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "claim_id": "SNAKY21_FINITE_CERTIFICATE",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-B",
+    "scripts/run-finite-checks.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.14.4"
+      },
+      {
+        "name": "CPython in Ubuntu WSL",
+        "version": "3.14.4"
+      }
+    ],
+    "hardware": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43"
+  },
+  "mathematics": {
+    "assertion_tested": "The pinned 21-move certificate reconstructs identically in both supplied implementations, satisfies the stated finite local reply conditions, ends with no required cells, an envelope of 251 cells within a 17 by 17 square, and height 21; the supplied malformed-input and finite-board boundary tests reject their fixtures.",
+    "coefficient_domain": "Z, exact integer pairs and finite sets",
+    "conventions": "Certificate orientation codes negate x for bit 2, negate y for bit 4, then swap for bit 1; inline pivots stay in the containing line coordinate frame. This code numbering differs from the challenge's equivalent enumeration of the eight orientations.",
+    "inputs": [
+      "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+      "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/certificate.txt"
+    ],
+    "bounds": {
+      "numbered_cards": 728,
+      "numbered_nonbase_rows": 722,
+      "inline_nodes": 898,
+      "combination_nodes": 1620,
+      "references": 4089,
+      "local_reply_classes": 37042,
+      "python_modes": [
+        "normal",
+        "-O",
+        "-OO"
+      ],
+      "implementations": 2,
+      "malformed_fixtures": 18,
+      "finite_board_translations": 4
+    },
+    "non_claims": [
+      "This finite computation alone is not a proof of winning against every infinite-board continuation; that implication uses the combination lemma and induction.",
+      "It does not show 21 is optimal, search for a better strategy, or check the 25- and 35-move appendices.",
+      "Both evaluators are supplied by the same repository; their agreement is not a separate human or AI referee."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-08T04:07:13.340540+00:00",
+    "runtime_seconds": 226.577273,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 300.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": 536870912,
+      "cpu_seconds": 240,
+      "max_cores": 1,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/run-finite-checks.py",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/verify_certificate.py",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/run_tests.py",
+    "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/certificate.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/run-finite-checks.py",
+      "sha256": "a4f7f61b4b0ee45aedfeb750d6880270de5f026f993489671702135fb3e1ea86",
+      "sha256_after": "a4f7f61b4b0ee45aedfeb750d6880270de5f026f993489671702135fb3e1ea86"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/verify_certificate.py",
+      "sha256": "0f59f80e38285b64c2962785f92d9d50bef874a917aa018d9b399cdeabdb3753",
+      "sha256_after": "0f59f80e38285b64c2962785f92d9d50bef874a917aa018d9b399cdeabdb3753"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04",
+      "sha256_after": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+      "sha256": "a341bc0e53dc573c19e3bb6ece6d571a0af0c4dace1e3c4b8bbc9c4b51e12e02",
+      "sha256_after": "a341bc0e53dc573c19e3bb6ece6d571a0af0c4dace1e3c4b8bbc9c4b51e12e02"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+      "sha256": "1984ef060f642a4c1aee20820c6ace2bda39b29781ff356885d922a6d5b44208",
+      "sha256_after": "1984ef060f642a4c1aee20820c6ace2bda39b29781ff356885d922a6d5b44208"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/run_tests.py",
+      "sha256": "c67740c8f5d42e18809a8d4e44e2f3a8fdcc4dfab7d6aa37480ddce56f560545",
+      "sha256_after": "c67740c8f5d42e18809a8d4e44e2f3a8fdcc4dfab7d6aa37480ddce56f560545"
+    },
+    {
+      "path": "source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/certificate.txt",
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04",
+      "sha256_after": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04"
+    }
+  ],
+  "output_directory": "computations/route21-001",
+  "declared_results": [
+    "computations/route21-001/tests/report.json",
+    "computations/route21-001/tests/primary-normal.json",
+    "computations/route21-001/tests/primary-O.json",
+    "computations/route21-001/tests/primary-OO.json",
+    "computations/route21-001/tests/independent-normal.json",
+    "computations/route21-001/tests/independent-O.json",
+    "computations/route21-001/tests/independent-OO.json"
+  ],
+  "outputs": [
+    {
+      "path": "computations/route21-001/stdout.txt",
+      "sha256": "6d8f287d523f61e9979691ef2b8b1c635a75fb7a2e5c550d1791ead99ec5e4fb",
+      "kind": "log"
+    },
+    {
+      "path": "computations/route21-001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "computations/route21-001/tests/report.json",
+      "sha256": "01c6a040329945255b8488ba132a8c418c89f65489fa787c2341af66c698f9f9",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/primary-normal.json",
+      "sha256": "3e9b3882509080d43d374a2000ce452d03fd5dbf4b0ba28036e84e5c28dc05e2",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/primary-O.json",
+      "sha256": "3e9b3882509080d43d374a2000ce452d03fd5dbf4b0ba28036e84e5c28dc05e2",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/primary-OO.json",
+      "sha256": "3e9b3882509080d43d374a2000ce452d03fd5dbf4b0ba28036e84e5c28dc05e2",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/independent-normal.json",
+      "sha256": "f06bdf0ac8f9a591db07d8b517d07b2796d8e100a82d47f63d71075e378174e0",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/independent-O.json",
+      "sha256": "f06bdf0ac8f9a591db07d8b517d07b2796d8e100a82d47f63d71075e378174e0",
+      "kind": "result"
+    },
+    {
+      "path": "computations/route21-001/tests/independent-OO.json",
+      "sha256": "f06bdf0ac8f9a591db07d8b517d07b2796d8e100a82d47f63d71075e378174e0",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

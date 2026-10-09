@@ -1,0 +1,143 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24NestedAccountAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 11451, "stderr_bytes": 0}
+Experiments.Pal24NestedAccount.Unit : Type
+'Experiments.Pal24NestedAccount.Unit' does not depend on any axioms
+Experiments.Pal24NestedAccount.Charge : Type
+'Experiments.Pal24NestedAccount.Charge' does not depend on any axioms
+Experiments.Pal24NestedAccount.Account : Type
+'Experiments.Pal24NestedAccount.Account' does not depend on any axioms
+Experiments.Pal24NestedAccount.AccountWork : Type
+'Experiments.Pal24NestedAccount.AccountWork' does not depend on any axioms
+Experiments.Pal24NestedAccount.chargeId : Experiments.Pal24NestedAccount.Charge → ℕ
+'Experiments.Pal24NestedAccount.chargeId' does not depend on any axioms
+Experiments.Pal24NestedAccount.chargeValue : Experiments.Pal24NestedAccount.Charge → Option ℕ
+'Experiments.Pal24NestedAccount.chargeValue' does not depend on any axioms
+Experiments.Pal24NestedAccount.optionPlus : Option ℕ → Option ℕ → Option ℕ
+'Experiments.Pal24NestedAccount.optionPlus' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.aggregateEvents : List Experiments.Pal24NestedAccount.Charge → Option ℕ
+'Experiments.Pal24NestedAccount.aggregateEvents' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.accountUnit : Experiments.Pal24NestedAccount.Account →
+  Experiments.Pal24NestedAccount.Unit
+'Experiments.Pal24NestedAccount.accountUnit' does not depend on any axioms
+Experiments.Pal24NestedAccount.flattenEvents : Experiments.Pal24NestedAccount.Account →
+  List Experiments.Pal24NestedAccount.Charge
+'Experiments.Pal24NestedAccount.flattenEvents' does not depend on any axioms
+Experiments.Pal24NestedAccount.structuralAggregate : Experiments.Pal24NestedAccount.Account → Option ℕ
+'Experiments.Pal24NestedAccount.structuralAggregate' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.flattenedAggregate : Experiments.Pal24NestedAccount.Account → Option ℕ
+'Experiments.Pal24NestedAccount.flattenedAggregate' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.eventIds : Experiments.Pal24NestedAccount.Account → List ℕ
+'Experiments.Pal24NestedAccount.eventIds' does not depend on any axioms
+Experiments.Pal24NestedAccount.noUnknown : Experiments.Pal24NestedAccount.Account → Bool
+'Experiments.Pal24NestedAccount.noUnknown' does not depend on any axioms
+Experiments.Pal24NestedAccount.uniqueAttribution : Experiments.Pal24NestedAccount.Account → Prop
+'Experiments.Pal24NestedAccount.uniqueAttribution' does not depend on any axioms
+Experiments.Pal24NestedAccount.compatibleUnit : Experiments.Pal24NestedAccount.Account → Bool
+'Experiments.Pal24NestedAccount.compatibleUnit' does not depend on any axioms
+Experiments.Pal24NestedAccount.completeChildren : Experiments.Pal24NestedAccount.Account → Bool
+'Experiments.Pal24NestedAccount.completeChildren' does not depend on any axioms
+Experiments.Pal24NestedAccount.accepted : Experiments.Pal24NestedAccount.Account → Prop
+'Experiments.Pal24NestedAccount.accepted' does not depend on any axioms
+Experiments.Pal24NestedAccount.appendOwn : Experiments.Pal24NestedAccount.Charge →
+  Experiments.Pal24NestedAccount.Account → Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.appendOwn' does not depend on any axioms
+Experiments.Pal24NestedAccount.linkedEpochAggregate : ℕ → Bool → Experiments.Pal24NestedAccount.Account → Option ℕ
+'Experiments.Pal24NestedAccount.linkedEpochAggregate' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.administrationCompletes : ℕ → ℕ → Bool
+'Experiments.Pal24NestedAccount.administrationCompletes' does not depend on any axioms
+Experiments.Pal24NestedAccount.administrationAttempt : Experiments.Pal24NestedAccount.AccountWork →
+  ℕ → ℕ → Bool × Experiments.Pal24NestedAccount.AccountWork
+'Experiments.Pal24NestedAccount.administrationAttempt' does not depend on any axioms
+Experiments.Pal24NestedAccount.optionPlus_assoc : ∀ (left middle right : Option ℕ),
+  Experiments.Pal24NestedAccount.optionPlus (Experiments.Pal24NestedAccount.optionPlus left middle) right =
+    Experiments.Pal24NestedAccount.optionPlus left (Experiments.Pal24NestedAccount.optionPlus middle right)
+'Experiments.Pal24NestedAccount.optionPlus_assoc' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.aggregateEvents_append : ∀ (left right : List Experiments.Pal24NestedAccount.Charge),
+  Experiments.Pal24NestedAccount.aggregateEvents (left ++ right) =
+    Experiments.Pal24NestedAccount.optionPlus (Experiments.Pal24NestedAccount.aggregateEvents left)
+      (Experiments.Pal24NestedAccount.aggregateEvents right)
+'Experiments.Pal24NestedAccount.aggregateEvents_append' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate : ∀
+  (account : Experiments.Pal24NestedAccount.Account),
+  Experiments.Pal24NestedAccount.structuralAggregate account = Experiments.Pal24NestedAccount.flattenedAggregate account
+'Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids : ∀
+  (account : Experiments.Pal24NestedAccount.Account),
+  Experiments.Pal24NestedAccount.accepted account →
+    Experiments.Pal24NestedAccount.structuralAggregate account =
+        Experiments.Pal24NestedAccount.flattenedAggregate account ∧
+      (Experiments.Pal24NestedAccount.eventIds account).Nodup
+'Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.aggregateEvents_append_known : ∀ (events : List Experiments.Pal24NestedAccount.Charge)
+  (eventId amount : ℕ),
+  Experiments.Pal24NestedAccount.aggregateEvents
+      (events ++ [Experiments.Pal24NestedAccount.Charge.known eventId amount]) =
+    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.aggregateEvents events)
+'Experiments.Pal24NestedAccount.aggregateEvents_append_known' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.optionPlus_map_add_left : ∀ (amount : ℕ) (left right : Option ℕ),
+  Experiments.Pal24NestedAccount.optionPlus (Option.map (fun total => total + amount) left) right =
+    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.optionPlus left right)
+'Experiments.Pal24NestedAccount.optionPlus_map_add_left' depends on axioms: [propext, Quot.sound]
+Experiments.Pal24NestedAccount.appendOwn_known_monotone : ∀ (account : Experiments.Pal24NestedAccount.Account)
+  (eventId amount : ℕ),
+  Experiments.Pal24NestedAccount.structuralAggregate
+      (Experiments.Pal24NestedAccount.appendOwn (Experiments.Pal24NestedAccount.Charge.known eventId amount) account) =
+    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.structuralAggregate account)
+'Experiments.Pal24NestedAccount.appendOwn_known_monotone' depends on axioms: [propext, Quot.sound]
+Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend : ∀ (priorSpent total : ℕ)
+  (account : Experiments.Pal24NestedAccount.Account),
+  Experiments.Pal24NestedAccount.structuralAggregate account = Option.some total →
+    Experiments.Pal24NestedAccount.linkedEpochAggregate priorSpent Bool.true account = Option.some (priorSpent + total)
+'Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero : ∀ (eventId : ℕ),
+  Experiments.Pal24NestedAccount.chargeValue (Experiments.Pal24NestedAccount.Charge.unknown eventId) ≠ Option.some 0
+'Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.twoLevel : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.twoLevel' does not depend on any axioms
+Experiments.Pal24NestedAccount.threeLevel : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.threeLevel' does not depend on any axioms
+Experiments.Pal24NestedAccount.missingPromisedChild : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.missingPromisedChild' does not depend on any axioms
+Experiments.Pal24NestedAccount.duplicateAttribution : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.duplicateAttribution' does not depend on any axioms
+Experiments.Pal24NestedAccount.duplicateParentChildAttribution : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.duplicateParentChildAttribution' does not depend on any axioms
+Experiments.Pal24NestedAccount.incompatibleUnit : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.incompatibleUnit' does not depend on any axioms
+Experiments.Pal24NestedAccount.unknownRequired : Experiments.Pal24NestedAccount.Account
+'Experiments.Pal24NestedAccount.unknownRequired' does not depend on any axioms
+Experiments.Pal24NestedAccount.unrecordedReset : Option ℕ
+'Experiments.Pal24NestedAccount.unrecordedReset' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.twoLevel_accepted : Experiments.Pal24NestedAccount.accepted
+  Experiments.Pal24NestedAccount.twoLevel
+'Experiments.Pal24NestedAccount.twoLevel_accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24NestedAccount.threeLevel_total : Experiments.Pal24NestedAccount.structuralAggregate
+    Experiments.Pal24NestedAccount.threeLevel =
+  Option.some 20
+'Experiments.Pal24NestedAccount.threeLevel_total' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.missing_promised_child_rejected : Experiments.Pal24NestedAccount.completeChildren
+    Experiments.Pal24NestedAccount.missingPromisedChild =
+  Bool.false
+'Experiments.Pal24NestedAccount.missing_promised_child_rejected' does not depend on any axioms
+Experiments.Pal24NestedAccount.duplicate_attribution_rejected : ¬Experiments.Pal24NestedAccount.uniqueAttribution
+    Experiments.Pal24NestedAccount.duplicateAttribution
+'Experiments.Pal24NestedAccount.duplicate_attribution_rejected' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected : ¬Experiments.Pal24NestedAccount.uniqueAttribution
+    Experiments.Pal24NestedAccount.duplicateParentChildAttribution
+'Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.incompatible_unit_rejected : Experiments.Pal24NestedAccount.compatibleUnit
+    Experiments.Pal24NestedAccount.incompatibleUnit =
+  Bool.false
+'Experiments.Pal24NestedAccount.incompatible_unit_rejected' does not depend on any axioms
+Experiments.Pal24NestedAccount.unknown_required_rejected : Experiments.Pal24NestedAccount.noUnknown
+    Experiments.Pal24NestedAccount.unknownRequired =
+  Bool.false
+'Experiments.Pal24NestedAccount.unknown_required_rejected' does not depend on any axioms
+Experiments.Pal24NestedAccount.unrecorded_reset_rejected : Experiments.Pal24NestedAccount.unrecordedReset = Option.none
+'Experiments.Pal24NestedAccount.unrecorded_reset_rejected' depends on axioms: [propext]
+Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work : ∀
+  (work : Experiments.Pal24NestedAccount.AccountWork) (fuel requiredFuel : ℕ),
+  requiredFuel > fuel → Experiments.Pal24NestedAccount.administrationAttempt work fuel requiredFuel = (Bool.false, work)
+'Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work' depends on axioms: [propext]
+
+PAL-STDERR-1

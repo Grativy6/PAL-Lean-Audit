@@ -1,0 +1,152 @@
+@Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding : {W A B : Type} →
+  (a : W → A) →
+    (b : W → B) →
+      Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b) →
+        Experiments.AbstractLoopsJoint.Reachable a × Experiments.AbstractLoopsJoint.Reachable b
+'Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding' does not depend on any axioms
+@Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective : ∀ {W A B : Type} (a : W → A) (b : W → B),
+  Function.Injective (Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding a b)
+'Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective' does not depend on any axioms
+@Experiments.AbstractLoopsFiniteImage.joint_support_finite : ∀ {W A B : Type} (a : W → A) (b : W → B)
+  [Finite (Experiments.AbstractLoopsJoint.Reachable a)] [Finite (Experiments.AbstractLoopsJoint.Reachable b)],
+  Finite (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b))
+'Experiments.AbstractLoopsFiniteImage.joint_support_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.joint_capacity_bound : ∀ {W A B : Type} (a : W → A) (b : W → B)
+  [Finite (Experiments.AbstractLoopsJoint.Reachable a)] [Finite (Experiments.AbstractLoopsJoint.Reachable b)],
+  Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ≤
+    Nat.card (Experiments.AbstractLoopsJoint.Reachable a) * Nat.card (Experiments.AbstractLoopsJoint.Reachable b)
+'Experiments.AbstractLoopsFiniteImage.joint_capacity_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.certification_capacity : ∀ {W T Q : Type} (q : W → Q) (t : W → T)
+  [Finite (Experiments.AbstractLoopsJoint.Reachable t)],
+  Experiments.AbstractLoopsJoint.Certifies q t →
+    Finite (Experiments.AbstractLoopsJoint.Reachable q) ∧
+      Nat.card (Experiments.AbstractLoopsJoint.Reachable q) ≤ Nat.card (Experiments.AbstractLoopsJoint.Reachable t)
+'Experiments.AbstractLoopsFiniteImage.certification_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain : ∀ {W A B Q : Type} (a : W → A) (b : W → B)
+  (q : W → Q) [Finite (Experiments.AbstractLoopsJoint.Reachable a)]
+  [Finite (Experiments.AbstractLoopsJoint.Reachable b)],
+  Experiments.AbstractLoopsJoint.Certifies q (Experiments.AbstractLoopsJoint.jointTrace a b) →
+    Nat.card (Experiments.AbstractLoopsJoint.Reachable q) ≤
+        Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ∧
+      Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ≤
+        Nat.card (Experiments.AbstractLoopsJoint.Reachable a) * Nat.card (Experiments.AbstractLoopsJoint.Reachable b)
+'Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value : (Bool.false, Bool.true) ∉
+  Set.range (Experiments.AbstractLoopsJoint.jointTrace id id)
+'Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value' depends on axioms: [propext]
+Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification : Function.Surjective
+    Experiments.AbstractLoopsJoint.xorFirst ∧
+  Function.Surjective Experiments.AbstractLoopsJoint.xorAnswer ∧
+    ¬Experiments.AbstractLoopsJoint.Certifies Experiments.AbstractLoopsJoint.xorAnswer
+        Experiments.AbstractLoopsJoint.xorFirst
+'Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification' depends on axioms: [propext,
+ Classical.choice]
+@Experiments.AbstractLoopsFiniteImage.evolution_factors_initial : ∀ {W S : Type} (step : ℕ → S → S) (initial : W → S)
+  (n : ℕ) (w : W),
+  Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n w =
+    Experiments.AbstractLoopsPostprocessing.scheduledIteration step (fun z => ↑z) n ⟨initial w, ⋯⟩
+'Experiments.AbstractLoopsFiniteImage.evolution_factors_initial' depends on axioms: [propext]
+@Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes : ∀ {W S : Type} (step : ℕ → S → S)
+  (initial : W → S),
+  (Set.range initial).Finite →
+    ∃ start,
+      ∀ (n : ℕ),
+        start ≤ n →
+          ∀ (u v : W),
+            Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial start u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial start v ↔
+              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n v
+'Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes : ∀ {W T S : Type} (trace : W → T)
+  (init : T → S) (step : ℕ → S → S),
+  (Set.range trace).Finite →
+    ∃ start,
+      ∀ (n : ℕ),
+        start ≤ n →
+          ∀ (u v : W),
+            Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) start u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) start v ↔
+              Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) n u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) n v
+'Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.evolution_range_finite : ∀ {W S : Type} (step : ℕ → S → S) (initial : W → S),
+  (Set.range initial).Finite →
+    ∀ (n : ℕ), (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n)).Finite
+'Experiments.AbstractLoopsFiniteImage.evolution_range_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop : ∀ {W S : Type} (f : W → S) (c : S → S),
+  (Set.range f).Finite → ((∃ u v, f u ≠ f v ∧ c (f u) = c (f v)) ↔ (Set.range (c ∘ f)).ncard < (Set.range f).ncard)
+'Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop : ∀ {W S : Type} (step : ℕ → S → S)
+  (initial : W → S),
+  (Set.range initial).Finite →
+    ∀ (n : ℕ),
+      (∃ u v,
+          Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n u ≠
+              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n v ∧
+            Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) u =
+              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) v) ↔
+        (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1))).ncard <
+          (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n)).ncard
+'Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsFiniteImage.dropCount : (ℕ → ℕ) → ℕ → ℕ
+'Experiments.AbstractLoopsFiniteImage.dropCount' does not depend on any axioms
+Experiments.AbstractLoopsFiniteImage.strict_drop_budget : ∀ (capacity : ℕ → ℕ),
+  (∀ (n : ℕ), capacity (n + 1) ≤ capacity n) →
+    ∀ (n : ℕ), Experiments.AbstractLoopsFiniteImage.dropCount capacity n + capacity n ≤ capacity 0
+'Experiments.AbstractLoopsFiniteImage.strict_drop_budget' depends on axioms: [propext, Quot.sound]
+@Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget : ∀ {W S : Type} [Nonempty W] (step : ℕ → S → S)
+  (initial : W → S),
+  (Set.range initial).Finite →
+    ∀ (n : ℕ),
+      Experiments.AbstractLoopsFiniteImage.dropCount
+          (fun k => (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial k)).ncard) n ≤
+        (Set.range initial).ncard - 1
+'Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsFiniteImage.delayedStep : ℕ → ℕ → Bool → Bool
+'Experiments.AbstractLoopsFiniteImage.delayedStep' does not depend on any axioms
+Experiments.AbstractLoopsFiniteImage.delayed_evolution : ∀ (delay n : ℕ) (b : Bool),
+  Experiments.AbstractLoopsPostprocessing.scheduledIteration (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id
+      n b =
+    if n ≤ delay then b else Bool.false
+'Experiments.AbstractLoopsFiniteImage.delayed_evolution' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late : ∀ (delay : ℕ),
+  (∀ n ≤ delay,
+      Experiments.AbstractLoopsPostprocessing.scheduledIteration
+          (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id n Bool.false ≠
+        Experiments.AbstractLoopsPostprocessing.scheduledIteration
+          (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id n Bool.true) ∧
+    Experiments.AbstractLoopsPostprocessing.scheduledIteration (Experiments.AbstractLoopsFiniteImage.delayedStep delay)
+        id (delay + 1) Bool.false =
+      Experiments.AbstractLoopsPostprocessing.scheduledIteration
+        (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id (delay + 1) Bool.true
+'Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsFiniteImage.predecessor_evolution : ∀ (n w : ℕ),
+  Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n w = w - n
+'Experiments.AbstractLoopsFiniteImage.predecessor_evolution' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes : (Set.range id).Infinite ∧
+  ¬∃ start,
+      ∀ (n : ℕ),
+        start ≤ n →
+          ∀ (u v : ℕ),
+            Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id start u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id start v ↔
+              Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n u =
+                Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n v
+'Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

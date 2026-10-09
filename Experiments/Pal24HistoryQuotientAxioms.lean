@@ -1,0 +1,42 @@
+import Experiments.Pal24HistoryQuotient
+
+set_option pp.fullNames true
+
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent_refl
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent_refl
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent_symm
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent_symm
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent_trans
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent_trans
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent_right_congruent
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent_right_congruent
+#check @Experiments.Pal24HistoryQuotient.futureSetoid
+#print axioms Experiments.Pal24HistoryQuotient.futureSetoid
+#check @Experiments.Pal24HistoryQuotient.historyClass
+#print axioms Experiments.Pal24HistoryQuotient.historyClass
+#check @Experiments.Pal24HistoryQuotient.historyClass_eq_iff_futureEquivalent
+#print axioms Experiments.Pal24HistoryQuotient.historyClass_eq_iff_futureEquivalent
+#check @Experiments.Pal24HistoryQuotient.futureEquivalent_implies_current_observation
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalent_implies_current_observation
+#check @Experiments.Pal24HistoryQuotient.quotientObservation
+#print axioms Experiments.Pal24HistoryQuotient.quotientObservation
+#check @Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture
+#print axioms Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture
+#check @Experiments.Pal24HistoryQuotient.apertureFutureEquivalent_right_congruent
+#print axioms Experiments.Pal24HistoryQuotient.apertureFutureEquivalent_right_congruent
+#check @Experiments.Pal24HistoryQuotient.constantTask
+#print axioms Experiments.Pal24HistoryQuotient.constantTask
+#check @Experiments.Pal24HistoryQuotient.headTask
+#print axioms Experiments.Pal24HistoryQuotient.headTask
+#check @Experiments.Pal24HistoryQuotient.constantTask_one_class
+#print axioms Experiments.Pal24HistoryQuotient.constantTask_one_class
+#check @Experiments.Pal24HistoryQuotient.constantTask_quotient_subsingleton
+#print axioms Experiments.Pal24HistoryQuotient.constantTask_quotient_subsingleton
+#check @Experiments.Pal24HistoryQuotient.headTask_distinguishes_histories
+#print axioms Experiments.Pal24HistoryQuotient.headTask_distinguishes_histories
+#check @Experiments.Pal24HistoryQuotient.task_mutation_changes_future_equivalence
+#print axioms Experiments.Pal24HistoryQuotient.task_mutation_changes_future_equivalence
+#check @Experiments.Pal24HistoryQuotient.aperture_closure_is_load_bearing
+#print axioms Experiments.Pal24HistoryQuotient.aperture_closure_is_load_bearing

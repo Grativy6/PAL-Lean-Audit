@@ -1,0 +1,1161 @@
+{
+  "modules": [
+    "APCILeanAudit.Interface",
+    "Experiments.BridgeFourSector",
+    "Experiments.BridgeReadout",
+    "Experiments.BridgeRecovery",
+    "Experiments.BridgeDimension",
+    "FrontLean.Answers",
+    "FrontLean.Continuation",
+    "FrontLean.Costs",
+    "FrontLean.Propagation",
+    "FrontLean.Correction",
+    "FrontLean.Linear",
+    "FrontLean.Horizon",
+    "FrontLean.Controls"
+  ],
+  "declarations": [
+    {
+      "name": "APCILeanAudit.FiberConstant",
+      "kind": "def",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 8,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.ExactCertificate",
+      "kind": "def",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 14,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.Reachable",
+      "kind": "def",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 20,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.ExactOnReachable",
+      "kind": "def",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 25,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.exactCertificate_implies_fiberConstant",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 34,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.exactOnReachable_implies_fiberConstant",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 43,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.fiberConstant_implies_exactOnReachable",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 57,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.exactOnReachable_iff_fiberConstant",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 69,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 76,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.exactCertificate_iff_fiberConstant",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 94,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.leftInverse_implies_injective",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 103,
+      "inherited": true
+    },
+    {
+      "name": "APCILeanAudit.collision_persists_under_postprocessing",
+      "kind": "theorem",
+      "file": "APCILeanAudit/Interface.lean",
+      "line": 108,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.generatedCollision",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 24,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.hiddenCollision",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 27,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.generatedVisible",
+      "kind": "abbrev",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 30,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.hidden",
+      "kind": "abbrev",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 33,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.defect",
+      "kind": "abbrev",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 36,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.visible",
+      "kind": "abbrev",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 39,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.hiddenRawToDefect",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 42,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.collisionToKernel",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 46,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.hiddenToDefect",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 52,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.defectToVisible",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 59,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.swappedVisibleEquiv",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 65,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.rightColumnToVisible",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 70,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.ker_hiddenRawToDefect",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 74,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.hiddenToDefect_injective",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 80,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.defectToVisible_surjective",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 87,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.generated_row_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 95,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.kernel_row_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 100,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.defect_column_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 105,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.left_column_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 110,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.upper_left_square_commutes",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 123,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.lower_left_square_commutes",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 130,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.residual_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 136,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.right_column_exact",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 145,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.ker_readoutOnGenerated",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 150,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.generatedVisibleEquivRange",
+      "kind": "def",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 156,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeFourSector.no_direct_complement_countercase",
+      "kind": "theorem",
+      "file": "Experiments/BridgeFourSector.lean",
+      "line": 162,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.generatedReadout",
+      "kind": "def",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 20,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.rawReadoutToVisible",
+      "kind": "def",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 24,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.residualReadout",
+      "kind": "def",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 29,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.rawReadoutToVisible_surjective",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 38,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.ker_rawReadoutToVisible",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 47,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.visibleEquivReadout",
+      "kind": "def",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 77,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.visibleEquivReadout_apply_mk",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 85,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.residualReadout_compatibility",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 90,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.generated_directions_required_countercase",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 97,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeReadout.generated_component_required_countercase",
+      "kind": "theorem",
+      "file": "Experiments/BridgeReadout.lean",
+      "line": 111,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.residualTarget",
+      "kind": "abbrev",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 23,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.residualReadout_surjective",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 27,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.ker_residualReadout",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 34,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.residualQuotientEquiv",
+      "kind": "def",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 46,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.answerDecoder",
+      "kind": "def",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 53,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.answerDecoder_comp_residualReadout",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 60,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.answer_decodable_iff",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 78,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.residual_identity_decoder_iff_injective",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 103,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_hidden_subsingleton",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 128,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.full_residual_identity_recovery_iff_kernel_le",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 155,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.residual_identity_decoder_iff_kernel_le",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 177,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeRecovery.coarser_answer_decodable_without_identity_countercase",
+      "kind": "theorem",
+      "file": "Experiments/BridgeRecovery.lean",
+      "line": 185,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.generatedCollision_finrank",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 24,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.hiddenCollision_finrank",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 35,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.generatedVisible_finrank_add_collision",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 46,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.hidden_finrank_add_collision",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 51,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.visible_finrank_add_sup",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 56,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.bridge_four_sector_finrank",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 61,
+      "inherited": true
+    },
+    {
+      "name": "Experiments.BridgeDimension.four_sector_finrank_requires_finite_dimensional_countercase",
+      "kind": "theorem",
+      "file": "Experiments/BridgeDimension.lean",
+      "line": 73,
+      "inherited": true
+    },
+    {
+      "name": "FrontLean.answer_sufficiency",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 11,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_equality",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 17,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_sufficiency",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 22,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.common_action_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 35,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.coordinate_bit_bound",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 51,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.answer_does_not_recover_history",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 66,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.absent_reading_is_not_content",
+      "kind": "theorem",
+      "file": "FrontLean/Answers.lean",
+      "line": 74,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.runWord",
+      "kind": "def",
+      "file": "FrontLean/Continuation.lean",
+      "line": 6,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.FutureEq",
+      "kind": "def",
+      "file": "FrontLean/Continuation.lean",
+      "line": 9,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.future_output_preservation",
+      "kind": "theorem",
+      "file": "FrontLean/Continuation.lean",
+      "line": 13,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.online_update_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Continuation.lean",
+      "line": 25,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.future_eq_is_right_congruence",
+      "kind": "theorem",
+      "file": "FrontLean/Continuation.lean",
+      "line": 41,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.admitted_outputs_sufficiency",
+      "kind": "theorem",
+      "file": "FrontLean/Continuation.lean",
+      "line": 49,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.output_sufficient_without_online_update",
+      "kind": "theorem",
+      "file": "FrontLean/Continuation.lean",
+      "line": 64,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.reuse_cheaper_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 6,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.no_saving_when_reuse_is_costlier",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 11,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.descending_rank_bounds_steps",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 18,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.total_cost_bound",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 35,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.polynomial_accounting",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 49,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.shared_diamond_cost",
+      "kind": "theorem",
+      "file": "FrontLean/Costs.lean",
+      "line": 59,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.Valid",
+      "kind": "def",
+      "file": "FrontLean/Propagation.lean",
+      "line": 21,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.UsesRoot",
+      "kind": "def",
+      "file": "FrontLean/Propagation.lean",
+      "line": 25,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.UsesRule",
+      "kind": "def",
+      "file": "FrontLean/Propagation.lean",
+      "line": 29,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.derivation_sound",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 34,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.premise_substitution",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 45,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.valid_under_unchanged_basis",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 59,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.increasing_depth_no_cycle",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 76,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.negative_core_transfer",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 88,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.hornStep",
+      "kind": "def",
+      "file": "FrontLean/Propagation.lean",
+      "line": 95,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.mem_hornStep",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 99,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.hornStep_inflationary",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 105,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.hornStep_monotone",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 110,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.rounds",
+      "kind": "def",
+      "file": "FrontLean/Propagation.lean",
+      "line": 116,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.rounds_seed",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 120,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.stable_round_persists",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 126,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.finite_stabilization",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 139,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.rounds_le_closed",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 171,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.horn_least_closure",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 182,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.horn_rounds_sound",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 191,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.empty_seed_stays_empty",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 205,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.wake_decomposition",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 221,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.redundant_seed",
+      "kind": "theorem",
+      "file": "FrontLean/Propagation.lean",
+      "line": 237,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.RecordedSupport",
+      "kind": "def",
+      "file": "FrontLean/Correction.lean",
+      "line": 6,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.recorded_support_sound",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 10,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.unchanged_alternative_survives",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 18,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.scratchRepair",
+      "kind": "def",
+      "file": "FrontLean/Correction.lean",
+      "line": 46,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.scratch_commit_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 62,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.failed_scratch_keeps_original",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 70,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.HistoryPrefix",
+      "kind": "def",
+      "file": "FrontLean/Correction.lean",
+      "line": 78,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.history_prefix_refl",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 80,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.history_prefix_trans",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 83,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.scratch_preserves_history",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 90,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.finite_history_preservation",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 98,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.failed_secondary_condition_is_recorded",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 107,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.independent_answer_invalid_receipt",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 127,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.missing_conjunct_is_rejected",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 132,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.no_recorded_proof_is_not_negation",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 137,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.unchanged_does_not_require_mutation_grant",
+      "kind": "theorem",
+      "file": "FrontLean/Correction.lean",
+      "line": 144,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.linear_factorization",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 14,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_kernel",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 30,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.kernel_refinement",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 36,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_residual_short_exact",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 43,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_visible_equiv",
+      "kind": "def",
+      "file": "FrontLean/Linear.lean",
+      "line": 52,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.joint_sector_dimensions",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 55,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.visibleRefinement",
+      "kind": "def",
+      "file": "FrontLean/Linear.lean",
+      "line": 62,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.refinement_commutes",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 66,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.quotient_update_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 73,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.transported_return",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 90,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.side_trace_decodable",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 96,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.query_rank_le",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 102,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.side_trace_rank_lower_bound",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 109,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.minimum_side_trace",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 121,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.side_trace_capacity",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 142,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.side_trace_capacity_injection",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 156,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.residual_query_criterion",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 169,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.residual_debt_image",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 177,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.residual_side_trace_capacity",
+      "kind": "theorem",
+      "file": "FrontLean/Linear.lean",
+      "line": 188,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.horizonKernel",
+      "kind": "def",
+      "file": "FrontLean/Horizon.lean",
+      "line": 9,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.infiniteKernel",
+      "kind": "def",
+      "file": "FrontLean/Horizon.lean",
+      "line": 12,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.mem_horizon",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 15,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.mem_infinite",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 19,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.horizon_antitone",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 23,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.invariant_kernel_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 30,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.infinite_invariant",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 40,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.all_outputs_equal_iff",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 47,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.finite_horizon_closure",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 81,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.finite_subfamily_inside",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 109,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.finite_readout_subfamily",
+      "kind": "theorem",
+      "file": "FrontLean/Horizon.lean",
+      "line": 144,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.unlabelled",
+      "kind": "def",
+      "file": "FrontLean/Controls.lean",
+      "line": 10,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.lost_labels_counterexample",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 12,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.sat_does_not_transfer_to_strengthening",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 21,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.stale_premise_counterexample",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 25,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.technically_valid_but_not_authorized",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 31,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.independent_baselines_lose_relation",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 40,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.quotient_update_can_fail",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 56,
+      "inherited": false
+    },
+    {
+      "name": "FrontLean.untransported_return_wrong",
+      "kind": "theorem",
+      "file": "FrontLean/Controls.lean",
+      "line": 66,
+      "inherited": false
+    }
+  ],
+  "excluded_from_public_inventory": "Private helpers, generated recursors and instances are checked inside their modules but not counted as public declarations."
+}

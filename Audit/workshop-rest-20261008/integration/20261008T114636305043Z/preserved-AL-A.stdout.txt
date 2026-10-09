@@ -1,0 +1,1 @@
+PASS_SAVED_RECEIPT_CHECK AL-A (no Lean rerun)

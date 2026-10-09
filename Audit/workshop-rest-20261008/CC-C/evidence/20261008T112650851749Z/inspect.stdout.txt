@@ -1,0 +1,138 @@
+@Experiments.CompactificationFixtures.fiber_answer_bound : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3} {S : Type u_4}
+  [inst : Fintype W] [inst_1 : Fintype S] [inst_2 : DecidableEq T] [inst_3 : DecidableEq Q] [DecidableEq S] (t : W → T)
+  (q : W → Q) (side : W → S) (d : T × S → Q),
+  (∀ (w : W), d (t w, side w) = q w) → ∀ (v : T), (Finset.image q {w | t w = v}).card ≤ Fintype.card S
+'Experiments.CompactificationFixtures.fiber_answer_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.CompactificationFixtures.maximum_answer_bound : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {S : Type u_4} [inst : Fintype W] [inst_1 : Fintype S] [inst_2 : DecidableEq T] [inst_3 : DecidableEq Q]
+  [DecidableEq S] (t : W → T) (q : W → Q) (side : W → S) (d : T × S → Q),
+  (∀ (w : W), d (t w, side w) = q w) → (Finset.univ.sup fun w => (Finset.image q {x | t x = t w}).card) ≤ Fintype.card S
+'Experiments.CompactificationFixtures.maximum_answer_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.cube : Bool × Bool × Bool → ℤ × ℤ
+'Experiments.CompactificationFixtures.cube' does not depend on any axioms
+Experiments.CompactificationFixtures.cubeEdges : Finset (Finset (Bool × Bool × Bool))
+'Experiments.CompactificationFixtures.cubeEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.cube_vertex_and_edge_counts : (Finset.image
+        Experiments.CompactificationFixtures.cube Finset.univ).card =
+    7 ∧
+  Experiments.CompactificationFixtures.cubeEdges.card = 12 ∧
+    (Finset.image (fun edge => Finset.image Experiments.CompactificationFixtures.cube edge)
+          Experiments.CompactificationFixtures.cubeEdges).card =
+      12
+'Experiments.CompactificationFixtures.cube_vertex_and_edge_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CompactificationFixtures.cube_fibers : ∀ (a b : Bool × Bool × Bool),
+  Experiments.CompactificationFixtures.cube a = Experiments.CompactificationFixtures.cube b ↔
+    a = b ∨
+      a = (Bool.false, Bool.false, Bool.false) ∧ b = (Bool.true, Bool.true, Bool.true) ∨
+        b = (Bool.false, Bool.false, Bool.false) ∧ a = (Bool.true, Bool.true, Bool.true)
+'Experiments.CompactificationFixtures.cube_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.cube_side_bit : Function.Injective fun v =>
+  (Experiments.CompactificationFixtures.cube v, v.1)
+'Experiments.CompactificationFixtures.cube_side_bit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.omega : ℂ
+'Experiments.CompactificationFixtures.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.omega_coordinates : Experiments.CompactificationFixtures.omega =
+  -1 / 2 + ↑(√3 / 2) * Complex.I
+'Experiments.CompactificationFixtures.omega_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.omega_quadratic : 1 + Experiments.CompactificationFixtures.omega +
+    Experiments.CompactificationFixtures.omega ^ 2 =
+  0
+'Experiments.CompactificationFixtures.omega_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.lattice : ℂ → ℤ × ℤ → ℂ
+'Experiments.CompactificationFixtures.lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.lattice_injective : ∀ (w : ℂ),
+  w.im ≠ 0 → Function.Injective (Experiments.CompactificationFixtures.lattice w)
+'Experiments.CompactificationFixtures.lattice_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.omega_nonreal : Experiments.CompactificationFixtures.omega.im ≠ 0
+'Experiments.CompactificationFixtures.omega_nonreal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.actual_cube_projection : ∀ (v : Bool × Bool × Bool),
+  (if v.1 = Bool.true then 1 else 0) +
+        (if v.2.1 = Bool.true then 1 else 0) * Experiments.CompactificationFixtures.omega +
+      (if v.2.2 = Bool.true then 1 else 0) * Experiments.CompactificationFixtures.omega ^ 2 =
+    Experiments.CompactificationFixtures.lattice Experiments.CompactificationFixtures.omega
+      (Experiments.CompactificationFixtures.cube v)
+'Experiments.CompactificationFixtures.actual_cube_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.complex_projection_counts : (Finset.image
+        (Experiments.CompactificationFixtures.lattice Experiments.CompactificationFixtures.omega ∘
+          Experiments.CompactificationFixtures.cube)
+        Finset.univ).card =
+    7 ∧
+  (Finset.image
+        (fun edge =>
+          Finset.image
+            (Experiments.CompactificationFixtures.lattice Experiments.CompactificationFixtures.omega ∘
+              Experiments.CompactificationFixtures.cube)
+            edge)
+        Experiments.CompactificationFixtures.cubeEdges).card =
+    12
+'Experiments.CompactificationFixtures.complex_projection_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CompactificationFixtures.discrete_hub_size : {v |
+      Experiments.CompactificationFixtures.cube v = (0, 0)}.card =
+  2
+'Experiments.CompactificationFixtures.discrete_hub_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.mean : (Fin 6 → ℝ) →ₗ[ℝ] ℝ
+'Experiments.CompactificationFixtures.mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.common : (Fin 6 → ℝ) → Fin 6 → ℝ
+'Experiments.CompactificationFixtures.common' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.residual : (Fin 6 → ℝ) → Fin 6 → ℝ
+'Experiments.CompactificationFixtures.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.mean_constant : ∀ (a : ℝ),
+  (Experiments.CompactificationFixtures.mean fun x => a) = a
+'Experiments.CompactificationFixtures.mean_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.mean_surjective : Function.Surjective ⇑Experiments.CompactificationFixtures.mean
+'Experiments.CompactificationFixtures.mean_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.comparison_dimension : Module.finrank ℝ
+    ↥Experiments.CompactificationFixtures.mean.ker =
+  5
+'Experiments.CompactificationFixtures.comparison_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.common_comparison_reconstruction : ∀ (x : Fin 6 → ℝ),
+  Experiments.CompactificationFixtures.common x + Experiments.CompactificationFixtures.residual x = x ∧
+    Experiments.CompactificationFixtures.mean (Experiments.CompactificationFixtures.residual x) = 0
+'Experiments.CompactificationFixtures.common_comparison_reconstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CompactificationFixtures.mean_fiber : ∀ (x y : Fin 6 → ℝ),
+  Experiments.CompactificationFixtures.mean x = Experiments.CompactificationFixtures.mean y ↔
+    x - y ∈ Experiments.CompactificationFixtures.mean.ker
+'Experiments.CompactificationFixtures.mean_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.mean_loses_comparisons : ∃ x,
+  Experiments.CompactificationFixtures.mean x = Experiments.CompactificationFixtures.mean 0 ∧
+    Experiments.CompactificationFixtures.residual x ≠ Experiments.CompactificationFixtures.residual 0
+'Experiments.CompactificationFixtures.mean_loses_comparisons' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.sectorInteger : ℝ → ℤ
+'Experiments.CompactificationFixtures.sectorInteger' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.sector : ℝ → ℤ
+'Experiments.CompactificationFixtures.sector' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.angularResidual : ℝ → ℝ
+'Experiments.CompactificationFixtures.angularResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.residual_bounds : ∀ (x : ℝ),
+  -1 / 12 ≤ Experiments.CompactificationFixtures.angularResidual x ∧
+    Experiments.CompactificationFixtures.angularResidual x < 1 / 12
+'Experiments.CompactificationFixtures.residual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.sector_range : ∀ (x : ℝ),
+  0 ≤ Experiments.CompactificationFixtures.sector x ∧ Experiments.CompactificationFixtures.sector x < 6
+'Experiments.CompactificationFixtures.sector_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.phase_reconstruction : ∀ (x : ℝ),
+  x =
+    ↑(Experiments.CompactificationFixtures.sector x) / 6 + Experiments.CompactificationFixtures.angularResidual x +
+      ↑(Experiments.CompactificationFixtures.sectorInteger x / 6)
+'Experiments.CompactificationFixtures.phase_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.radians_reconstruction : ∀ (theta : ℝ),
+  ∃ n,
+    theta =
+      ↑(Experiments.CompactificationFixtures.sector (theta / (2 * Real.pi))) * Real.pi / 3 +
+          2 * Real.pi * Experiments.CompactificationFixtures.angularResidual (theta / (2 * Real.pi)) +
+        2 * Real.pi * ↑n
+'Experiments.CompactificationFixtures.radians_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CompactificationFixtures.sector_collision_and_tie : Experiments.CompactificationFixtures.sector 0 =
+    Experiments.CompactificationFixtures.sector (1 / 24) ∧
+  0 ≠ 1 / 24 ∧
+    Experiments.CompactificationFixtures.sector (1 / 12) = 1 ∧
+      Experiments.CompactificationFixtures.angularResidual (1 / 12) = -1 / 12
+'Experiments.CompactificationFixtures.sector_collision_and_tie' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

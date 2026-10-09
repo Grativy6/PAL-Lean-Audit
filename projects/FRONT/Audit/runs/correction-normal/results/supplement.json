@@ -1,0 +1,4364 @@
+{
+  "status": "PASS",
+  "or_orders": 5040,
+  "or_counts": {
+    "000": 0,
+    "001": 8,
+    "010": 4,
+    "011": 28,
+    "100": 2,
+    "101": 12,
+    "110": 14,
+    "111": 50
+  },
+  "horn_systems": 1024,
+  "horn_queries": 2048,
+  "budget_cases": 525,
+  "budget_outcomes": {
+    "BUDGET_EXHAUSTED_UNRESOLVED": 408,
+    "UNRESOLVED": 56,
+    "SUPPORTED_WITH_BASIS": 40,
+    "STOP": 21
+  },
+  "budget_events": [
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "01_attempted_spend_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "02_accepted_rejection_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "03_only_unsupported_path_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "04_independent_survivor_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "05_same_answer_new_derivation_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p_v2"
+      ],
+      "used": 27
+    },
+    {
+      "id": "06_changed_scope_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p_v2"
+      ],
+      "used": 27
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "07_no_valid_repair_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "08_timeout_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "08_missing_witness_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "08_proved_negative_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "08_missing_permission_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "08_tool_error_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 24
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "09_alternate_tool_denied_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "10_repetition_laundering_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "11_untrusted_hash_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "11_expired_grant_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "11_wrong_interpretation_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "11_changed_dependency_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "12_cross_desk_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "13_selective_disclosure_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "root_p"
+      ],
+      "used": 28
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "14_ungrounded_cycle_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 64,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "14_grounded_cycle_4",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 41
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 23
+    },
+    {
+      "id": "14_missing_parent_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 23
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 64,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "15_repair_new_contradiction_4",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 27
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 0,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 1,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 2,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 4,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 16,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 64,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_4",
+      "budget": 512,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "01_attempted_spend_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "02_accepted_rejection_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "03_only_unsupported_path_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 72
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "04_independent_survivor_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 89
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "05_same_answer_new_derivation_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 89
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "06_changed_scope_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p_v2"
+      ],
+      "used": 75
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "07_no_valid_repair_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_timeout_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 72
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_missing_witness_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 72
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_proved_negative_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_missing_permission_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 76
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_tool_error_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 72
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "09_alternate_tool_denied_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 76
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "10_repetition_laundering_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_untrusted_hash_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 89
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_expired_grant_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 76
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_wrong_interpretation_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_changed_dependency_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "12_cross_desk_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 76
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "13_selective_disclosure_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 76
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_ungrounded_cycle_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_grounded_cycle_16",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 89
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_missing_parent_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 71
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "15_repair_new_contradiction_16",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 75
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 0,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 1,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 2,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 4,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 16,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 64,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_16",
+      "budget": 512,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "01_attempted_spend_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "02_accepted_rejection_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "03_only_unsupported_path_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 264
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "04_independent_survivor_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 281
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "05_same_answer_new_derivation_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 281
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "06_changed_scope_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p_v2"
+      ],
+      "used": 267
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "07_no_valid_repair_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_timeout_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 264
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_missing_witness_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 264
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_proved_negative_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_missing_permission_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 268
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "08_tool_error_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 264
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "09_alternate_tool_denied_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 268
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "10_repetition_laundering_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_untrusted_hash_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 281
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_expired_grant_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 268
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_wrong_interpretation_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "11_changed_dependency_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "12_cross_desk_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 268
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "13_selective_disclosure_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "old_q",
+        "r0",
+        "r1",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r2",
+        "r20",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r26",
+        "r27",
+        "r28",
+        "r29",
+        "r3",
+        "r30",
+        "r31",
+        "r32",
+        "r33",
+        "r34",
+        "r35",
+        "r36",
+        "r37",
+        "r38",
+        "r39",
+        "r4",
+        "r40",
+        "r41",
+        "r42",
+        "r43",
+        "r44",
+        "r45",
+        "r46",
+        "r47",
+        "r48",
+        "r49",
+        "r5",
+        "r50",
+        "r51",
+        "r52",
+        "r53",
+        "r54",
+        "r55",
+        "r56",
+        "r57",
+        "r58",
+        "r59",
+        "r6",
+        "r60",
+        "r61",
+        "r62",
+        "r63",
+        "r7",
+        "r8",
+        "r9",
+        "root_p"
+      ],
+      "used": 268
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_ungrounded_cycle_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_grounded_cycle_64",
+      "budget": 512,
+      "status": "SUPPORTED_WITH_BASIS",
+      "proof": [
+        "alt_q",
+        "root_a",
+        "root_b"
+      ],
+      "used": 281
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "14_missing_parent_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 263
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 0,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 1,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 1
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 2,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 2
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 4,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 4
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 16,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 16
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 64,
+      "status": "BUDGET_EXHAUSTED_UNRESOLVED",
+      "proof": [],
+      "used": 64
+    },
+    {
+      "id": "15_repair_new_contradiction_64",
+      "budget": 512,
+      "status": "UNRESOLVED",
+      "proof": [],
+      "used": 267
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 0,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 1,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 2,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 4,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 16,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 64,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    },
+    {
+      "id": "16_quiet_64",
+      "budget": 512,
+      "status": "STOP",
+      "proof": [],
+      "used": 0
+    }
+  ]
+}

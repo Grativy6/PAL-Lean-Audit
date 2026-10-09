@@ -1,0 +1,92 @@
+{
+  "status": "IMPLEMENTATION_AND_FINITE_ASSERTION_VERIFIED",
+  "orders": 5040,
+  "truth_triples": 8,
+  "order_truth_pairs": 40320,
+  "arithmetic": "exact Python integers and sets",
+  "filtering": "none",
+  "counts": {
+    "000": 0,
+    "001": 8,
+    "010": 4,
+    "011": 28,
+    "100": 2,
+    "101": 12,
+    "110": 14,
+    "111": 50
+  },
+  "example_witnesses": {
+    "001": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      5
+    ],
+    "011": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      5
+    ],
+    "101": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      5
+    ],
+    "111": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      5
+    ],
+    "010": [
+      0,
+      5,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "110": [
+      0,
+      5,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "100": [
+      3,
+      0,
+      4,
+      1,
+      2,
+      5,
+      6
+    ]
+  },
+  "checks": [
+    "hull set counting agrees with span subtraction",
+    "prefix set counting agrees with slack subtraction",
+    "all orders unique",
+    "exact OR projection",
+    "source count comparison"
+  ],
+  "review": "self-review; Python and Lean implementations share the inspected source specification",
+  "scope": "local gadget only; no global reduction or minimality claim"
+}

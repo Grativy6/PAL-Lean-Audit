@@ -2,6 +2,22 @@
 
 An adversarial Lean 4 audit of Primitive Axiom Layers (PAL).
 
+**[Open the paper and receipt index](papers/INDEX.md)** — the common home for
+Christopher D. Pang's PAL, CHARTER, BRIDGE, FRONT, APCI, Abstract Loops,
+Compactification Costs, GPPR, Finite Abstraction and Single-Cut Transport audits,
+the separate MIND-inspired experiment, and attributed audits of external work.
+GOLD and RPL have explicit source/queue entries rather than passing-audit badges.
+
+The root preserves the historical PAL package. [APCI](projects/APCI/README.md)
+and [FRONT](projects/FRONT/README.md) are complete, independently buildable
+projects inside the same ordinary clone. Their inherited modules and source
+versions retain their identities. [Replay instructions](REPRODUCE.md) ·
+[License scope](LICENSE_SCOPE.md) · [Migration provenance](provenance/migrations/2026-10-09/README.md).
+
+The historical accounts below retain their run-specific wording and scope.
+Use the index and current CI for the collection's newer additions.
+
+
 > **Disambiguation:** In this repository, **PAL** means **Primitive Axiom Layers**, authored and stewarded by Christopher D. Pang. PAL Lean Audit is not affiliated with other projects, packages, or frameworks that also use the acronym “PAL.”
 
 This source-locked audit bench tests bounded mechanical claims and declared mathematical realizations. Attack Runs 0001 and 0002 retain their original **PAL v2.0** scope; **PAL v2.1** controls Attack Run 0003. The separately scoped PAL v2.3 and CHARTER experiment below does not migrate those historical records.
@@ -212,7 +228,7 @@ Source, adoption, migration, run, and generated-report files:
 
 ## Licensing
 
-Lean code, scripts, and CI configuration are licensed under Apache-2.0. Documentation, diagrams, and generated explanatory reports are licensed under CC BY 4.0. See [`LICENSE`](LICENSE), [`LICENSE-DOCS.md`](LICENSE-DOCS.md), and [`NOTICE`](NOTICE).
+For the original PAL collection, Lean code, scripts, and CI configuration use Apache-2.0; documentation, diagrams, and generated explanatory reports use CC BY 4.0. See [`LICENSE`](LICENSE), [`LICENSE-DOCS.md`](LICENSE-DOCS.md), and [`NOTICE`](NOTICE). Separately imported projects, supplements and external audits retain their own terms and exclusions in [LICENSE_SCOPE.md](LICENSE_SCOPE.md); these root statements do not assign them a new license.
 
 ## AI assistance
 

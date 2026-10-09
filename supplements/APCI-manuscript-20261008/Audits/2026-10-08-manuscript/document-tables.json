@@ -1,0 +1,149 @@
+[
+  {
+    "id": "T01",
+    "rows": [
+      [
+        "Underlying alternatives",
+        "Declared interface",
+        "Accessible traces",
+        "Decoder",
+        "Requested answers"
+      ],
+      [
+        "u",
+        "τ",
+        "t",
+        "d",
+        "qu"
+      ],
+      [
+        "v",
+        "τ",
+        "t",
+        "d",
+        "qv"
+      ]
+    ]
+  },
+  {
+    "id": "T02",
+    "rows": [
+      [
+        "ID",
+        "Public declaration",
+        "Source target",
+        "Receipt dependency summary"
+      ],
+      [
+        "A01",
+        "exactCertificate_implies_fiberConstant",
+        "APC-T01",
+        "none"
+      ],
+      [
+        "A02",
+        "exactOnReachable_implies_fiberConstant",
+        "APC-T01",
+        "none"
+      ],
+      [
+        "A03",
+        "fiberConstant_implies_exactOnReachable",
+        "APC-T01",
+        "Classical.choice"
+      ],
+      [
+        "A04",
+        "exactOnReachable_iff_fiberConstant",
+        "APC-T01",
+        "Classical.choice"
+      ],
+      [
+        "A05",
+        "exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty",
+        "APC-T01",
+        "propext, Classical.choice, Quot.sound"
+      ],
+      [
+        "A06",
+        "exactCertificate_iff_fiberConstant",
+        "APC-T01",
+        "propext, Classical.choice, Quot.sound"
+      ],
+      [
+        "A07",
+        "leftInverse_implies_injective",
+        "APC-T02",
+        "none"
+      ],
+      [
+        "A08",
+        "collision_persists_under_postprocessing",
+        "APC-T03",
+        "none"
+      ],
+      [
+        "A09",
+        "fin_succ_not_injective",
+        "APC-T04",
+        "propext, Quot.sound"
+      ],
+      [
+        "A10",
+        "fin_succ_has_collision",
+        "APC-T04",
+        "propext, Classical.choice, Quot.sound"
+      ],
+      [
+        "A11",
+        "no_exact_decoder_one_more",
+        "APC-T04",
+        "propext, Quot.sound"
+      ],
+      [
+        "A12",
+        "EmptyBoundaryControl.fiberConstant_is_vacuous",
+        "Control",
+        "none"
+      ],
+      [
+        "A13",
+        "EmptyBoundaryControl.total_decoder_does_not_exist",
+        "Control",
+        "none"
+      ],
+      [
+        "A14",
+        "ConcreteCapacityControl.twoToOne_collision",
+        "Control",
+        "propext"
+      ],
+      [
+        "A15",
+        "ConcreteCapacityControl.twoToOne_no_leftInverse",
+        "Control",
+        "propext, Quot.sound"
+      ]
+    ]
+  },
+  {
+    "id": "T03",
+    "rows": [
+      [
+        "Command"
+      ],
+      [
+        "lake build"
+      ],
+      [
+        "./scripts/policy_scan.sh"
+      ],
+      [
+        "./scripts/check_inventory.py"
+      ],
+      [
+        "lake env lean Audit.lean"
+      ]
+    ]
+  }
+]

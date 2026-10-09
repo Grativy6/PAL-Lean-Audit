@@ -1,0 +1,24 @@
+import Experiments.CompactificationBoundary
+
+set_option pp.fullNames true
+
+#check @Experiments.CompactificationBoundary.Boundary
+#print axioms Experiments.CompactificationBoundary.Boundary
+#check @Experiments.CompactificationBoundary.interior_fiber_unique
+#print axioms Experiments.CompactificationBoundary.interior_fiber_unique
+#check @Experiments.CompactificationBoundary.boundary_preserved
+#print axioms Experiments.CompactificationBoundary.boundary_preserved
+#check @Experiments.CompactificationBoundary.boundary_onto
+#print axioms Experiments.CompactificationBoundary.boundary_onto
+#check @Experiments.CompactificationBoundary.boundaryMap
+#print axioms Experiments.CompactificationBoundary.boundaryMap
+#check @Experiments.CompactificationBoundary.boundary_map_continuous
+#print axioms Experiments.CompactificationBoundary.boundary_map_continuous
+#check @Experiments.CompactificationBoundary.boundary_map_surjective
+#print axioms Experiments.CompactificationBoundary.boundary_map_surjective
+#check @Experiments.CompactificationBoundary.compact_surjection_is_quotient
+#print axioms Experiments.CompactificationBoundary.compact_surjection_is_quotient
+#check @Experiments.CompactificationBoundary.quotient_continuous_decoder
+#print axioms Experiments.CompactificationBoundary.quotient_continuous_decoder
+#check @Experiments.CompactificationBoundary.strict_boundary_decoder
+#print axioms Experiments.CompactificationBoundary.strict_boundary_decoder

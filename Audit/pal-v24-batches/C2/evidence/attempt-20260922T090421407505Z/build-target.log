@@ -1,0 +1,18 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "build", "Experiments.Pal24IntervalSlack"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 877, "stderr_bytes": 0}
+⚠ [8655/8655] Replayed Experiments.Pal24IntervalSlack
+warning: Experiments/Pal24IntervalSlack.lean:89:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Experiments/Pal24IntervalSlack.lean:100:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Experiments/Pal24IntervalSlack.lean:113:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Experiments/Pal24IntervalSlack.lean:128:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (8655 jobs).
+
+PAL-STDERR-1

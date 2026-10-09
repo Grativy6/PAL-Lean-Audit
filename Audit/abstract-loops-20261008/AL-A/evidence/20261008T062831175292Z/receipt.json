@@ -1,0 +1,326 @@
+{
+  "schema": "abstract-loops-local-lean-receipt-v1",
+  "batch": "AL-A",
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "started_utc": "20261008T062831175292Z",
+  "branch": "agent/abstract-loops-workshop-20261008",
+  "git_head": "39e786c068d61fb9b523c667b17466c93ab0a0f9",
+  "working_tree": "?? Audit/abstract-loops-20261008/\n?? Audit/pal-v24-batches/\n?? Audit/pal-v24-candidate/\n?? Audit/pal-v24-publication/\n?? Experiments/AbstractLoopsDynamics.lean\n?? Experiments/AbstractLoopsDynamicsAxioms.lean\n?? Experiments/AbstractLoopsFiniteImage.lean\n?? Experiments/AbstractLoopsFiniteImageAxioms.lean\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/AbstractLoopsReturnExport.lean\n?? Experiments/AbstractLoopsReturnExportAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/\n?? tmp/",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_dirty": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_support_finite",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_capacity_bound",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.certification_capacity",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.evolution_factors_initial",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.evolution_range_finite",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.dropCount",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.strict_drop_budget",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.delayedStep",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.delayed_evolution",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.predecessor_evolution",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes",
+      "kind": "theorem"
+    }
+  ],
+  "input_hashes_before": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-A\\claims.json": "7c1d1dbcd81fa37c08dc85d24a51a32d8f42a9e69b9d7731e6ff65bd8a189074",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImage.lean": "c399c2ebc4462f40d501280768c1034a84288a0969132aade541a4ba916035c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImageAxioms.lean": "65d1bec5046877c12acc251cf094771c96428d9892b3fa5e54a6cf47277937e0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 1.9530000000377186,
+      "stdout": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/lean-version.stdout.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/lean-version.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.AbstractLoopsFiniteImage"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.60899999999674,
+      "stdout": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/build.stdout.txt",
+      "stdout_sha256": "e02d314584616170e274bc79343e2ca27a7b4f67aa87b5927643da1959d3926b",
+      "stderr": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "inspect",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImageAxioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.73399999999674,
+      "stdout": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/inspect.stdout.txt",
+      "stdout_sha256": "b5af1da582c59d5c4385972578fa4efd765ec53cf4b52b95ec4366429c3012e3",
+      "stderr": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/inspect.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.AbstractLoopsFiniteImage"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 32.79699999996228,
+      "stdout": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/abstract-loops-20261008/AL-A/evidence/20261008T062831175292Z/kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": {
+    "Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding": "@Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding : {W A B : Type} →\n  (a : W → A) →\n    (b : W → B) →\n      Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b) →\n        Experiments.AbstractLoopsJoint.Reachable a × Experiments.AbstractLoopsJoint.Reachable b",
+    "Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective": "@Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective : ∀ {W A B : Type} (a : W → A) (b : W → B),\n  Function.Injective (Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding a b)",
+    "Experiments.AbstractLoopsFiniteImage.joint_support_finite": "@Experiments.AbstractLoopsFiniteImage.joint_support_finite : ∀ {W A B : Type} (a : W → A) (b : W → B)\n  [Finite (Experiments.AbstractLoopsJoint.Reachable a)] [Finite (Experiments.AbstractLoopsJoint.Reachable b)],\n  Finite (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b))",
+    "Experiments.AbstractLoopsFiniteImage.joint_capacity_bound": "@Experiments.AbstractLoopsFiniteImage.joint_capacity_bound : ∀ {W A B : Type} (a : W → A) (b : W → B)\n  [Finite (Experiments.AbstractLoopsJoint.Reachable a)] [Finite (Experiments.AbstractLoopsJoint.Reachable b)],\n  Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ≤\n    Nat.card (Experiments.AbstractLoopsJoint.Reachable a) * Nat.card (Experiments.AbstractLoopsJoint.Reachable b)",
+    "Experiments.AbstractLoopsFiniteImage.certification_capacity": "@Experiments.AbstractLoopsFiniteImage.certification_capacity : ∀ {W T Q : Type} (q : W → Q) (t : W → T)\n  [Finite (Experiments.AbstractLoopsJoint.Reachable t)],\n  Experiments.AbstractLoopsJoint.Certifies q t →\n    Finite (Experiments.AbstractLoopsJoint.Reachable q) ∧\n      Nat.card (Experiments.AbstractLoopsJoint.Reachable q) ≤ Nat.card (Experiments.AbstractLoopsJoint.Reachable t)",
+    "Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain": "@Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain : ∀ {W A B Q : Type} (a : W → A) (b : W → B)\n  (q : W → Q) [Finite (Experiments.AbstractLoopsJoint.Reachable a)]\n  [Finite (Experiments.AbstractLoopsJoint.Reachable b)],\n  Experiments.AbstractLoopsJoint.Certifies q (Experiments.AbstractLoopsJoint.jointTrace a b) →\n    Nat.card (Experiments.AbstractLoopsJoint.Reachable q) ≤\n        Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ∧\n      Nat.card (Experiments.AbstractLoopsJoint.Reachable (Experiments.AbstractLoopsJoint.jointTrace a b)) ≤\n        Nat.card (Experiments.AbstractLoopsJoint.Reachable a) * Nat.card (Experiments.AbstractLoopsJoint.Reachable b)",
+    "Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value": "Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value : (Bool.false, Bool.true) ∉\n  Set.range (Experiments.AbstractLoopsJoint.jointTrace id id)",
+    "Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification": "Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification : Function.Surjective\n    Experiments.AbstractLoopsJoint.xorFirst ∧\n  Function.Surjective Experiments.AbstractLoopsJoint.xorAnswer ∧\n    ¬Experiments.AbstractLoopsJoint.Certifies Experiments.AbstractLoopsJoint.xorAnswer\n        Experiments.AbstractLoopsJoint.xorFirst",
+    "Experiments.AbstractLoopsFiniteImage.evolution_factors_initial": "@Experiments.AbstractLoopsFiniteImage.evolution_factors_initial : ∀ {W S : Type} (step : ℕ → S → S) (initial : W → S)\n  (n : ℕ) (w : W),\n  Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n w =\n    Experiments.AbstractLoopsPostprocessing.scheduledIteration step (fun z => ↑z) n ⟨initial w, ⋯⟩",
+    "Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes": "@Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes : ∀ {W S : Type} (step : ℕ → S → S)\n  (initial : W → S),\n  (Set.range initial).Finite →\n    ∃ start,\n      ∀ (n : ℕ),\n        start ≤ n →\n          ∀ (u v : W),\n            Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial start u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial start v ↔\n              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n v",
+    "Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes": "@Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes : ∀ {W T S : Type} (trace : W → T)\n  (init : T → S) (step : ℕ → S → S),\n  (Set.range trace).Finite →\n    ∃ start,\n      ∀ (n : ℕ),\n        start ≤ n →\n          ∀ (u v : W),\n            Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) start u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) start v ↔\n              Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) n u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration step (init ∘ trace) n v",
+    "Experiments.AbstractLoopsFiniteImage.evolution_range_finite": "@Experiments.AbstractLoopsFiniteImage.evolution_range_finite : ∀ {W S : Type} (step : ℕ → S → S) (initial : W → S),\n  (Set.range initial).Finite →\n    ∀ (n : ℕ), (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n)).Finite",
+    "Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop": "@Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop : ∀ {W S : Type} (f : W → S) (c : S → S),\n  (Set.range f).Finite → ((∃ u v, f u ≠ f v ∧ c (f u) = c (f v)) ↔ (Set.range (c ∘ f)).ncard < (Set.range f).ncard)",
+    "Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop": "@Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop : ∀ {W S : Type} (step : ℕ → S → S)\n  (initial : W → S),\n  (Set.range initial).Finite →\n    ∀ (n : ℕ),\n      (∃ u v,\n          Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n u ≠\n              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n v ∧\n            Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) u =\n              Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) v) ↔\n        (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1))).ncard <\n          (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n)).ncard",
+    "Experiments.AbstractLoopsFiniteImage.dropCount": "Experiments.AbstractLoopsFiniteImage.dropCount : (ℕ → ℕ) → ℕ → ℕ",
+    "Experiments.AbstractLoopsFiniteImage.strict_drop_budget": "Experiments.AbstractLoopsFiniteImage.strict_drop_budget : ∀ (capacity : ℕ → ℕ),\n  (∀ (n : ℕ), capacity (n + 1) ≤ capacity n) →\n    ∀ (n : ℕ), Experiments.AbstractLoopsFiniteImage.dropCount capacity n + capacity n ≤ capacity 0",
+    "Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget": "@Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget : ∀ {W S : Type} [Nonempty W] (step : ℕ → S → S)\n  (initial : W → S),\n  (Set.range initial).Finite →\n    ∀ (n : ℕ),\n      Experiments.AbstractLoopsFiniteImage.dropCount\n          (fun k => (Set.range (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial k)).ncard) n ≤\n        (Set.range initial).ncard - 1",
+    "Experiments.AbstractLoopsFiniteImage.delayedStep": "Experiments.AbstractLoopsFiniteImage.delayedStep : ℕ → ℕ → Bool → Bool",
+    "Experiments.AbstractLoopsFiniteImage.delayed_evolution": "Experiments.AbstractLoopsFiniteImage.delayed_evolution : ∀ (delay n : ℕ) (b : Bool),\n  Experiments.AbstractLoopsPostprocessing.scheduledIteration (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id\n      n b =\n    if n ≤ delay then b else Bool.false",
+    "Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late": "Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late : ∀ (delay : ℕ),\n  (∀ n ≤ delay,\n      Experiments.AbstractLoopsPostprocessing.scheduledIteration\n          (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id n Bool.false ≠\n        Experiments.AbstractLoopsPostprocessing.scheduledIteration\n          (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id n Bool.true) ∧\n    Experiments.AbstractLoopsPostprocessing.scheduledIteration (Experiments.AbstractLoopsFiniteImage.delayedStep delay)\n        id (delay + 1) Bool.false =\n      Experiments.AbstractLoopsPostprocessing.scheduledIteration\n        (Experiments.AbstractLoopsFiniteImage.delayedStep delay) id (delay + 1) Bool.true",
+    "Experiments.AbstractLoopsFiniteImage.predecessor_evolution": "Experiments.AbstractLoopsFiniteImage.predecessor_evolution : ∀ (n w : ℕ),\n  Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n w = w - n",
+    "Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes": "Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes : (Set.range id).Infinite ∧\n  ¬∃ start,\n      ∀ (n : ℕ),\n        start ≤ n →\n          ∀ (u v : ℕ),\n            Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id start u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id start v ↔\n              Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n u =\n                Experiments.AbstractLoopsPostprocessing.scheduledIteration (fun x k => k - 1) id n v"
+  },
+  "axioms": {
+    "Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding": [],
+    "Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective": [],
+    "Experiments.AbstractLoopsFiniteImage.joint_support_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.joint_capacity_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.certification_capacity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value": [
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification": [
+      "Classical.choice",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.evolution_factors_initial": [
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.evolution_range_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.dropCount": [],
+    "Experiments.AbstractLoopsFiniteImage.strict_drop_budget": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.delayedStep": [],
+    "Experiments.AbstractLoopsFiniteImage.delayed_evolution": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.predecessor_evolution": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "compiled_artifacts": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\.lake\\build\\lib\\lean\\Experiments\\AbstractLoopsFiniteImage.olean": "40bb2b5f60246b7bc1466e8c7ab32c1486c47ee4f49d300e5f46fd66a20e35cf"
+  },
+  "review": "self-review; bundled checker is not an independent implementation",
+  "authority": "local bounded proof evidence; no manuscript adoption or publication",
+  "input_hashes_after": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-A\\claims.json": "7c1d1dbcd81fa37c08dc85d24a51a32d8f42a9e69b9d7731e6ff65bd8a189074",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImage.lean": "c399c2ebc4462f40d501280768c1034a84288a0969132aade541a4ba916035c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImageAxioms.lean": "65d1bec5046877c12acc251cf094771c96428d9892b3fa5e54a6cf47277937e0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  }
+}

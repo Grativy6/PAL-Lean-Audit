@@ -1,0 +1,476 @@
+{
+  "batch": "AL-C",
+  "module": "Experiments.AbstractLoopsReturnExport",
+  "state_at_freeze": "TARGETS_DECLARED_BEFORE_FINAL_CHECKS",
+  "groups": [
+    {
+      "id": "AL-C/readable-return",
+      "source": "P0099-P0107",
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions."
+    },
+    {
+      "id": "AL-C/typed-model",
+      "source": "P0081-P0089; P0105-P0107",
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification."
+    },
+    {
+      "id": "AL-C/generation-fixture",
+      "source": "P0081-P0089; P0091; P0107",
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem."
+    },
+    {
+      "id": "AL-C/initializer",
+      "source": "P0087-P0089",
+      "assumptions": "A deterministic readout receives a declared complete initializer. A separate control varies an omitted Boolean environment coordinate; the positive counterpart fixes it.",
+      "ceiling": "Full-input kernel preservation reuses C5 and is not new corroboration. Varying extra input can defeat the narrower original-trace ceiling; fixing it restores that particular factorization."
+    }
+  ],
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.ReadableIdentity",
+      "kind": "def",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 16,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.DirectResidual",
+      "kind": "def",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 17,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.CandidatePresent",
+      "kind": "def",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 18,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity",
+      "kind": "theorem",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 20,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition_or_direct_interface_check"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.hiddenReturn",
+      "kind": "def",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 25,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity",
+      "kind": "theorem",
+      "source_group": "AL-C/readable-return",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0099-P0107"
+      ],
+      "assumptions": "Total typed maps, declared reachable interface and common output alphabet. Hidden-motion fixture uses all four Boolean pair states.",
+      "authority_ceiling": "Readable identity need not be state identity. The equivalence between no residual and identity only checks the declared definitions.",
+      "source_line": 27,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.RosterState",
+      "kind": "inductive",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 33,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.contributors",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 38,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.candidate",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 42,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.addresses",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 46,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.writeCandidate",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 51,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.declared_cut_witness",
+      "kind": "theorem",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 55,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition_or_direct_interface_check"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.closure",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 61,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations",
+      "kind": "theorem",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 65,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupledStep",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 74,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baselineStep",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 78,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupledHistory",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 80,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baselineHistory",
+      "kind": "def",
+      "source_group": "AL-C/typed-model",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0105-P0107"
+      ],
+      "assumptions": "Two finite roster components share one ambient inductive type. Original payload has A/B values; extended payload additionally has C. The supplied intervention writes C separately.",
+      "authority_ceiling": "Address and coordinate witnesses are explicit modeling choices; no physical generation or universal adequacy of this qualification convention follows. Candidate presence is distinguished from full qualification.",
+      "source_line": 84,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupled_history_after_entry",
+      "kind": "theorem",
+      "source_group": "AL-C/generation-fixture",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0091; P0107"
+      ],
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "authority_ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem.",
+      "source_line": 88,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster",
+      "kind": "theorem",
+      "source_group": "AL-C/generation-fixture",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0091; P0107"
+      ],
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "authority_ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem.",
+      "source_line": 97,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt",
+      "kind": "theorem",
+      "source_group": "AL-C/generation-fixture",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0091; P0107"
+      ],
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "authority_ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem.",
+      "source_line": 104,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence",
+      "kind": "theorem",
+      "source_group": "AL-C/generation-fixture",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0091; P0107"
+      ],
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "authority_ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem.",
+      "source_line": 114,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy",
+      "kind": "theorem",
+      "source_group": "AL-C/generation-fixture",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0081-P0089; P0091; P0107"
+      ],
+      "assumptions": "Common ambient roster type, input, and identity rule. Coupled update copies initial B to the new C; extended states persist. Baseline is identity on the same full state type.",
+      "authority_ceiling": "The explicit fixture proves new address, arbitrary finite persistence horizon, source-copy provenance, baseline exclusion, and unchanged contributor readouts. It illustrates a supplied criterion, not a general carrier-qualification theorem.",
+      "source_line": 121,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer",
+      "kind": "theorem",
+      "source_group": "AL-C/initializer",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0087-P0089"
+      ],
+      "assumptions": "A deterministic readout receives a declared complete initializer. A separate control varies an omitted Boolean environment coordinate; the positive counterpart fixes it.",
+      "authority_ceiling": "Full-input kernel preservation reuses C5 and is not new corroboration. Varying extra input can defeat the narrower original-trace ceiling; fixing it restores that particular factorization.",
+      "source_line": 127,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "reused_result_or_specialization"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling",
+      "kind": "theorem",
+      "source_group": "AL-C/initializer",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0087-P0089"
+      ],
+      "assumptions": "A deterministic readout receives a declared complete initializer. A separate control varies an omitted Boolean environment coordinate; the positive counterpart fixes it.",
+      "authority_ceiling": "Full-input kernel preservation reuses C5 and is not new corroboration. Varying extra input can defeat the narrower original-trace ceiling; fixing it restores that particular factorization.",
+      "source_line": 133,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization",
+      "kind": "theorem",
+      "source_group": "AL-C/initializer",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0087-P0089"
+      ],
+      "assumptions": "A deterministic readout receives a declared complete initializer. A separate control varies an omitted Boolean environment coordinate; the positive counterpart fixes it.",
+      "authority_ceiling": "Full-input kernel preservation reuses C5 and is not new corroboration. Varying extra input can defeat the narrower original-trace ceiling; fixing it restores that particular factorization.",
+      "source_line": 142,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    }
+  ],
+  "counting": "Explicit source declarations only; auto-generated constructors/recursors are kernel-checked but not counted as separate claims. Final mathematical verdicts are in REVIEW.md, conditional on matching PASS receipts."
+}

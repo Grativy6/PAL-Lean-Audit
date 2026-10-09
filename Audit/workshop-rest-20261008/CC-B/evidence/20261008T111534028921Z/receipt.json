@@ -1,0 +1,300 @@
+{
+  "schema": "remaining-workshop-local-lean-receipt-v1",
+  "batch": "CC-B",
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "started_utc": "20261008T111534028921Z",
+  "branch": "agent/workshop-rest-20261008",
+  "git_head": "86b1e0d888133eead2890fb26b00668400e72abd",
+  "working_tree": "M .gitignore\n?? Audit/pal-v24-batches/\n?? Audit/pal-v24-candidate/\n?? Audit/pal-v24-publication/\n?? Audit/workshop-rest-20261008/CC-B/\n?? Audit/workshop-rest-20261008/CC-C/\n?? Audit/workshop-rest-20261008/GPPR-A/\n?? Audit/workshop-rest-20261008/development/20261008T111240485088Z/\n?? Audit/workshop-rest-20261008/development/20261008T111354659884Z/\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/CompactificationFixtures.lean\n?? Experiments/CompactificationProfile.lean\n?? Experiments/CompactificationProfileAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/\n?? tmp/",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_dirty": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "declarations": [
+    {
+      "name": "Experiments.CompactificationProfile.Lost",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.refinement_exact",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.derived_side_changes_no_loss",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.postprocessing_inclusion",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.postprocessing_equality",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.question_coarsening",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.question_injective_equality",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.strict_loss_controls",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.Extension",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.quotient_descent_iff",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.extensionEquiv",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.extension_existence_preserved",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.detector_image_transport",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.loss_transport",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.empty_extensions_vacuous_decoder",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.undefined_is_not_zero",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.empty_reachable_decoder",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.compatible_restriction_telescope",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement",
+      "kind": "theorem"
+    }
+  ],
+  "input_hashes_before": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\verify.py": "061fece3d4a8a5ed39a0b3e532081e7608f430a4e9892b742cb56a489643e063",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md": "153701aceda7edf6869d32670ffa6650eb39f982a093c9524dd00de1aabf0eeb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\claims.json": "09265ba5c46b7b3995656c8ab8fc0ca59fb288da1e4c3fd0390a6cc35931d227",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfile.lean": "765f12be5e1250f321207f938e2be8f0029675de2479850dc49f57aa67c602e0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfileAxioms.lean": "e539d1c67de734f84849e56de8f1223ae869d1f8766854325ead34552b5b16a8",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\TARGET.md": "72de37aeffb4a0fde3b835ce37e9a398bd31b12701995a034511f3302eed9049",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\Sources\\PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx": "c9168a69ece8e405d643a86580e6637001de3f14514495d9b3943ce943e0290e",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.json": "bcc6f0b57d6439fb8c640ff902647677b3eaedfbddf9394d8c132a548c269812",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.txt": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.docx": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.pdf": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.json": "d6b199e4719feebdd49a146effba9902421b4d242537dc37ae00dcfc25b8027d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.txt": "360dd27c377e2c7342c78a2bbebe1f6caabb50d389012fb38e612f0bf273a49f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.pdf.txt": "8a5e7fb3ff7a66fb6b25b91680285fb3057cb4c8b3a7880c7522adc24bcc5639",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.docx": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.pdf": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.json": "3a902652df9c63a6402aa6516d1766096ff175d3f20f37bb90a827abfb904600",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.txt": "0df349ad2c9b000dd9ce902c17dd69e73be0d01c8ffbccc52ec59ef3a4c53b84",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.pdf.txt": "b54ee051155fe38b757991f8733566ac370cfc8426d092ce3c8f246d551f38ce",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.json": "23bf22a55e6505286cbf9f79fbad6f5232773f9a9752b1c4f26c1fc415d81b22",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.txt": "161c5f0ead8183eddc379e13193f4d9815119d321f6ae8d77ff15741b8bba365",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.pdf.txt": "0f72b7b2fdd41e46d929dbdc921a239ed39836bd7fa744dc7a69315123bf0399",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 1.9059999999590218,
+      "stdout": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/lean-version.stdout.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/lean-version.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.CompactificationProfile"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.328000000037719,
+      "stdout": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/build.stdout.txt",
+      "stdout_sha256": "cb57f4af5a604164bbdd2a5eeff5252ae22110976adfab5b9121884642bf7f75",
+      "stderr": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "inspect",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfileAxioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.812999999965541,
+      "stdout": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/inspect.stdout.txt",
+      "stdout_sha256": "4b08791dd187664ac1777309906d2811a3123f56fb7248624166d7627fbe7eb0",
+      "stderr": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/inspect.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.CompactificationProfile"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 32.56300000002375,
+      "stdout": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/workshop-rest-20261008/CC-B/evidence/20261008T111534028921Z/kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": {
+    "Experiments.CompactificationProfile.Lost": "@Experiments.CompactificationProfile.Lost : {W : Type u_1} →\n  {T : Type u_2} → {Q : Type u_3} → (W → T) → (W → Q) → Set (W × W)",
+    "Experiments.CompactificationProfile.refinement_exact": "@Experiments.CompactificationProfile.refinement_exact : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3} {Q : Type u_4}\n  (t : W → T) (s : W → S) (q : W → Q),\n  Experiments.CompactificationProfile.Lost (fun w => (t w, s w)) q =\n    Experiments.CompactificationProfile.Lost t q ∩ {p | s p.1 = s p.2}",
+    "Experiments.CompactificationProfile.derived_side_changes_no_loss": "@Experiments.CompactificationProfile.derived_side_changes_no_loss : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}\n  {Q : Type u_4} (t : W → T) (s : T → S) (q : W → Q),\n  Experiments.CompactificationProfile.Lost (fun w => (t w, s (t w))) q = Experiments.CompactificationProfile.Lost t q",
+    "Experiments.CompactificationProfile.postprocessing_inclusion": "@Experiments.CompactificationProfile.postprocessing_inclusion : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}\n  {Q : Type u_4} (t : W → T) (p : T → S) (q : W → Q),\n  Experiments.CompactificationProfile.Lost t q ⊆ Experiments.CompactificationProfile.Lost (p ∘ t) q",
+    "Experiments.CompactificationProfile.postprocessing_equality": "@Experiments.CompactificationProfile.postprocessing_equality : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}\n  {Q : Type u_4} (t : W → T) (p : T → S) (q : W → Q),\n  Set.InjOn p (Set.range t) →\n    Experiments.CompactificationProfile.Lost (p ∘ t) q = Experiments.CompactificationProfile.Lost t q",
+    "Experiments.CompactificationProfile.question_coarsening": "@Experiments.CompactificationProfile.question_coarsening : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}\n  {Q' : Type u_4} (t : W → T) (q : W → Q) (h : Q → Q'),\n  Experiments.CompactificationProfile.Lost t (h ∘ q) ⊆ Experiments.CompactificationProfile.Lost t q",
+    "Experiments.CompactificationProfile.question_injective_equality": "@Experiments.CompactificationProfile.question_injective_equality : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}\n  {Q' : Type u_4} (t : W → T) (q : W → Q) (h : Q → Q'),\n  Set.InjOn h (Set.range q) →\n    Experiments.CompactificationProfile.Lost t (h ∘ q) = Experiments.CompactificationProfile.Lost t q",
+    "Experiments.CompactificationProfile.strict_loss_controls": "Experiments.CompactificationProfile.strict_loss_controls : Experiments.CompactificationProfile.Lost id id = ∅ ∧\n  (Bool.false, Bool.true) ∈ Experiments.CompactificationProfile.Lost (fun x => ()) id ∧\n    (Experiments.CompactificationProfile.Lost (fun x => ()) fun x => ()) = ∅",
+    "Experiments.CompactificationProfile.Extension": "@Experiments.CompactificationProfile.Extension : {A : Type u_1} → {S : Type u_2} → (A → S) → (A → Prop) → S → Type u_1",
+    "Experiments.CompactificationProfile.quotient_descent_iff": "@Experiments.CompactificationProfile.quotient_descent_iff : ∀ {A : Type u_1} {D : Type u_2} (r : Setoid A) (f : A → D),\n  (∀ (a b : A), r a b → f a = f b) ↔ ∃! d, ∀ (a : A), d ⟦a⟧ = f a",
+    "Experiments.CompactificationProfile.extensionEquiv": "@Experiments.CompactificationProfile.extensionEquiv : {A : Type u_1} →\n  {B : Type u_2} →\n    {S : Type u_3} →\n      (e : A ≃ B) →\n        (rA : A → S) →\n          (rB : B → S) →\n            (aA : A → Prop) →\n              (aB : B → Prop) →\n                (base : S) →\n                  (∀ (a : A), aB (e a) ↔ aA a) →\n                    (∀ (a : A), rB (e a) = rA a) →\n                      Experiments.CompactificationProfile.Extension rA aA base ≃\n                        Experiments.CompactificationProfile.Extension rB aB base",
+    "Experiments.CompactificationProfile.extension_existence_preserved": "@Experiments.CompactificationProfile.extension_existence_preserved : ∀ {A : Type u_1} {B : Type u_2} (e : A ≃ B),\n  Nonempty A ↔ Nonempty B",
+    "Experiments.CompactificationProfile.detector_image_transport": "@Experiments.CompactificationProfile.detector_image_transport : ∀ {A : Type u_1} {B : Type u_2} {D : Type u_3}\n  (e : A ≃ B) (dA : A → D) (dB : B → D), (∀ (a : A), dB (e a) = dA a) → Set.range dA = Set.range dB",
+    "Experiments.CompactificationProfile.loss_transport": "@Experiments.CompactificationProfile.loss_transport : ∀ {A : Type u_1} {B : Type u_2} {T : Type u_3} {Q : Type u_4}\n  (e : A ≃ B) (tA : A → T) (tB : B → T) (qA : A → Q) (qB : B → Q),\n  (∀ (a : A), tB (e a) = tA a) →\n    (∀ (a : A), qB (e a) = qA a) →\n      Experiments.CompactificationProfile.Lost tA qA =\n        (fun p => (e p.1, e p.2)) ⁻¹' Experiments.CompactificationProfile.Lost tB qB",
+    "Experiments.CompactificationProfile.empty_extensions_vacuous_decoder": "Experiments.CompactificationProfile.empty_extensions_vacuous_decoder : (∀ (a b : Empty),\n    (fun x => ()) a = (fun x => ()) b → a = b) ∧\n  ¬Nonempty Empty",
+    "Experiments.CompactificationProfile.undefined_is_not_zero": "Experiments.CompactificationProfile.undefined_is_not_zero : Option.none ≠ Option.some 0",
+    "Experiments.CompactificationProfile.empty_reachable_decoder": "Experiments.CompactificationProfile.empty_reachable_decoder : ∃ d, ∀ (a : Empty), d ⟨(), ⋯⟩ = Bool.false",
+    "Experiments.CompactificationProfile.compatible_restriction_telescope": "@Experiments.CompactificationProfile.compatible_restriction_telescope : ∀ {A : Type u_1} {B : Type u_2} {C : Type u_3}\n  {G : Type u_4} [inst : AddCommGroup G] (rAB : A → B) (rBC : B → C) (iA : A → G) (iB : B → G) (iC : C → G) (a : A),\n  iA a - iC (rBC (rAB a)) = iA a - iB (rAB a) + (iB (rAB a) - iC (rBC (rAB a)))",
+    "Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement": "Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement : ∃ e dA dB,\n  Set.range dA ≠ Set.range dB"
+  },
+  "axioms": {
+    "Experiments.CompactificationProfile.Lost": [],
+    "Experiments.CompactificationProfile.refinement_exact": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.derived_side_changes_no_loss": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.postprocessing_inclusion": [],
+    "Experiments.CompactificationProfile.postprocessing_equality": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.question_coarsening": [],
+    "Experiments.CompactificationProfile.question_injective_equality": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.strict_loss_controls": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.Extension": [],
+    "Experiments.CompactificationProfile.quotient_descent_iff": [
+      "Quot.sound"
+    ],
+    "Experiments.CompactificationProfile.extensionEquiv": [
+      "Quot.sound"
+    ],
+    "Experiments.CompactificationProfile.extension_existence_preserved": [
+      "Quot.sound"
+    ],
+    "Experiments.CompactificationProfile.detector_image_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.loss_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.empty_extensions_vacuous_decoder": [],
+    "Experiments.CompactificationProfile.undefined_is_not_zero": [],
+    "Experiments.CompactificationProfile.empty_reachable_decoder": [],
+    "Experiments.CompactificationProfile.compatible_restriction_telescope": [
+      "propext"
+    ],
+    "Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "compiled_artifacts": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\.lake\\build\\lib\\lean\\Experiments\\CompactificationProfile.olean": "91efcfdb9a65867348df344631ccd7a8f6d391178e1cf2341538e829a36f6c70"
+  },
+  "review": "self-review; bundled checker is not an independent implementation",
+  "authority": "local bounded proof evidence; no manuscript adoption or publication",
+  "input_hashes_after": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\verify.py": "061fece3d4a8a5ed39a0b3e532081e7608f430a4e9892b742cb56a489643e063",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md": "153701aceda7edf6869d32670ffa6650eb39f982a093c9524dd00de1aabf0eeb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\claims.json": "09265ba5c46b7b3995656c8ab8fc0ca59fb288da1e4c3fd0390a6cc35931d227",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfile.lean": "765f12be5e1250f321207f938e2be8f0029675de2479850dc49f57aa67c602e0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfileAxioms.lean": "e539d1c67de734f84849e56de8f1223ae869d1f8766854325ead34552b5b16a8",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\TARGET.md": "72de37aeffb4a0fde3b835ce37e9a398bd31b12701995a034511f3302eed9049",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\Sources\\PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx": "c9168a69ece8e405d643a86580e6637001de3f14514495d9b3943ce943e0290e",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.json": "bcc6f0b57d6439fb8c640ff902647677b3eaedfbddf9394d8c132a548c269812",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.txt": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.docx": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.pdf": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.json": "d6b199e4719feebdd49a146effba9902421b4d242537dc37ae00dcfc25b8027d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.txt": "360dd27c377e2c7342c78a2bbebe1f6caabb50d389012fb38e612f0bf273a49f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.pdf.txt": "8a5e7fb3ff7a66fb6b25b91680285fb3057cb4c8b3a7880c7522adc24bcc5639",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.docx": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.pdf": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.json": "3a902652df9c63a6402aa6516d1766096ff175d3f20f37bb90a827abfb904600",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.txt": "0df349ad2c9b000dd9ce902c17dd69e73be0d01c8ffbccc52ec59ef3a4c53b84",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.pdf.txt": "b54ee051155fe38b757991f8733566ac370cfc8426d092ce3c8f246d551f38ce",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.json": "23bf22a55e6505286cbf9f79fbad6f5232773f9a9752b1c4f26c1fc415d81b22",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.txt": "161c5f0ead8183eddc379e13193f4d9815119d321f6ae8d77ff15741b8bba365",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.pdf.txt": "0f72b7b2fdd41e46d929dbdc921a239ed39836bd7fa744dc7a69315123bf0399",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  }
+}

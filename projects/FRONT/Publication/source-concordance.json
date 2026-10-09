@@ -1,0 +1,932 @@
+{
+  "status": "PASS_PUBLICATION_SOURCE_CONCORDANCE",
+  "date": "2026-10-08",
+  "source_archive_sha256": "e82195a52d3b65dcca8e6a16b1055c9772d43aa2ebecea6a4a5cd1409167fd9c",
+  "audited_source_identity_retained": true,
+  "repository_files": {
+    "Publication/FRONT_v1.0.docx": "835cb26e1c2bba175903321a0b41e631bba4cfe8a83cec1eeeebe1db73c7e14e",
+    "Publication/FRONT_v1.0.md": "c1a60570a0df368a739eac5c2ef20b989a5eb09635dcbfda4c14e546da1df173",
+    "Publication/FRONT_v1.0.pdf": "7708013e9b067753da4ea5f827747eb1201473fad4fda703c364edca4befb807",
+    "Publication/audited-source/FRONT_v1.0_WORKING_DRAFT.docx": "4a823c42ae71e2600342f0687ec6f9bfa6d391483da0d383004e7299f5cca722",
+    "Publication/audited-source/FRONT_v1.0_WORKING_DRAFT.md": "d384d108ebd0602958102ed2cbe59616766a10cca6ae97d929b547367d79790b",
+    "Publication/editorial/editorial.diff": "39561655305e155e5cbe4d4fee8570b5eed94eac00400d10d3883e6fb2a2da17",
+    "Publication/editorial/normalize_omml.py": "9a7374d33b3fd3a8819ce54c89a3bf5b0ff54fda551e778af467249cca5575c9",
+    "Publication/editorial/README.md": "5cf97685aaac23f65f21dd2f9a803db9b90bed681cc1c2d905c791f9cad4bded",
+    "Publication/editorial/visual-review.json": "ec78479eaf2c444a2c90c4e352d6a4dd8e14ccd1dcf88942d7a7212c284bc372"
+  },
+  "proposition_blocks": [
+    {
+      "heading": "## Proposition 1 — Scoped deductive reuse",
+      "source_sha256": "57bd6831c1214e1e0cccd5f0c70b90b7e984af7c89910a139ad16a543a84f4de",
+      "release_sha256": "57bd6831c1214e1e0cccd5f0c70b90b7e984af7c89910a139ad16a543a84f4de",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 1 — Scoped deductive reuse\n\n**Elementary consequence of ordinary deduction.** Fix a sound monotone deductive calculus with admissible substitution of premise derivations, such as ordinary propositional natural deduction. Suppose a retained proof establishes \\(\\Gamma\\vdash\\varphi\\), and the present account \\(\\Delta\\) establishes every premise in \\(\\Gamma\\). Then\n\n\\[\n\\Delta\\vdash\\varphi.\n\\tag{4}\n\\]\n\n**Proof.** For each use of a premise from \\(\\Gamma\\), insert its derivation from \\(\\Delta\\), retaining the proof’s rules and substitutions. The resulting derivation proves \\(\\varphi\\) from \\(\\Delta\\). This is a standard proof-composition argument. Its validity does not give a bound on the size of the composed proof or the time needed to find the premise derivations. ∎\n\nA particularly cheap sufficient condition is exact premise inclusion, \\(\\Gamma\\subseteq\\Delta\\), under unchanged interpretations. A more general entailment check may be expensive. FRONT must not hide that expense behind the word *applicable*.\n\nCook and Reckhow explicitly allow natural-deduction proofs to share already derived formulas under the same assumptions rather than repeat the derivation. The reuse principle is established proof practice, not a FRONT invention. [R2, §3]\n\nFor defeasible observations, changed physical conditions, or modified software, (4) is not a license to preserve the answer blindly. Their dependence on circumstances must be represented in the premises and versions, or evaluated by a separate, adequate transfer rule. Dependency-maintenance systems are direct prior art for this problem. [R5; R6]"
+    },
+    {
+      "heading": "## Proposition 2 — Negative-core transfer",
+      "source_sha256": "3c5cfcd74fd47e5c96a6e5f7988fa7eefd98d3ce14728f99d6258a103cbbc5b3",
+      "release_sha256": "3c5cfcd74fd47e5c96a6e5f7988fa7eefd98d3ce14728f99d6258a103cbbc5b3",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 2 — Negative-core transfer\n\n**Elementary SAT fact.** If a set of clauses \\(C\\) is unsatisfiable and \\(C\\subseteq F'\\), then \\(F'\\) is unsatisfiable.\n\n**Proof.** A satisfying assignment of \\(F'\\) would satisfy every clause of \\(C\\), contradicting its unsatisfiability. ∎\n\nThe corresponding rule for a positive witness is different. An assignment satisfying \\(F\\) need not satisfy \\(F\\land D\\). Added constraints preserve an UNSAT core but may invalidate a SAT witness. Deleting clauses can do the reverse. “Same kind of problem” is not a transfer certificate."
+    },
+    {
+      "heading": "## Proposition 3 — Fiber criterion for an answer",
+      "source_sha256": "cb1f0ebbc0f60feb2005b4c312128ae09d238e058b8a2ed2542dbac903788d4e",
+      "release_sha256": "cb1f0ebbc0f60feb2005b4c312128ae09d238e058b8a2ed2542dbac903788d4e",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 3 — Fiber criterion for an answer\n\n**Inherited criterion, restated.** A decoder \\(d:\\operatorname{im}\\tau\\to Y\\) satisfying \\(q=d\\circ\\tau\\) exists exactly when\n\n\\[\n\\operatorname{EqKer}(\\tau)\\subseteq\\operatorname{EqKer}(q).\n\\tag{11}\n\\]\n\n**Proof.** If \\(q=d\\circ\\tau\\), equal retained values give equal answers. Conversely, if \\(q\\) is constant on each fiber, define \\(d(z)=q(h)\\) for any \\(h\\) with \\(\\tau(h)=z\\). Fiber constancy makes this well-defined. ∎\n\nThis is CHARTER’s Corollary 10.4 in FRONT notation, not a new theorem. It concerns a function on the reachable image. It does not by itself make that function continuous, computable, efficient, or authorized. [S3, §§10.1–10.4; S1, §2]\n\nFor a finite protected family \\(\\mathcal Q\\), retaining every answer requires\n\n\\[\n\\operatorname{EqKer}(\\tau)\\subseteq\\bigcap_{q\\in\\mathcal Q}\\operatorname{EqKer}(q).\n\\tag{12}\n\\]\n\nWhen queries are partial, answerability must also be preserved; two unavailable answers do not establish an answer. One can encode definedness explicitly, but an equality of “unknown” labels then certifies only the status, not the missing content. [S3, §15.3]"
+    },
+    {
+      "heading": "### Proposition 3A — Indexed joint sufficiency",
+      "source_sha256": "484c3c55a54732a5ace7973ad4ec0ead88c2b9049554ea8cbcff2b42ef4b52d3",
+      "release_sha256": "484c3c55a54732a5ace7973ad4ec0ead88c2b9049554ea8cbcff2b42ef4b52d3",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 3A — Indexed joint sufficiency\n\n**Elementary application of Proposition 3.** The equality relation of the joint readout is\n\n\\[\n\\operatorname{EqKer}(\\mathcal J_{\\mathcal F})\n=\\bigcap_{f\\in\\mathcal F}\\operatorname{EqKer}(o_f).\n\\tag{12b}\n\\]\n\nA total protected query \\(q:S\\to Q\\) has a decoder on \\(\\operatorname{im}\\mathcal J_{\\mathcal F}\\) exactly when this intersection is contained in \\(\\operatorname{EqKer}(q)\\).\n\n**Proof.** Two indexed tuples are equal exactly when their entries agree at every index. This proves (12b); Proposition 3 then gives the decoder criterion. The decoder is defined only on reachable tuples, where the value of \\(q\\) is independent of the representative. ∎\n\nThe family is relationally indexed, not an unlabeled bag. For \\(S=\\mathbb Q^2\\), the views \\(o_x(x,y)=x\\) and \\(o_y(x,y)=y\\) distinguish \\((1,0)\\) from \\((0,1)\\). Forgetting the labels and keeping only the multiset \\(\\{0,1\\}\\) merges them. Reordering fully labeled records does not make that loss. An arbitrary tuple also need not come from a common state: \\((1,3)\\) is incompatible with the joint readout \\((x,2x)\\).\n\nThis is the bounded mathematical reading of “all of it at once.” It does not assert that simultaneous acquisition has more information than the same complete indexed observations gathered serially from a stable source. A changing source requires time labels and a justified comparison or update model. A perceptual image, a joint mathematical object, and a feasible measurement procedure remain different claims. [S11]\n\nA relevant optical neighbor is the light-field representation of Levoy and Hanrahan: under their static-scene, fixed-illumination, unobstructed-space assumptions, images sample a four-parameter family of rays. FRONT uses that work as a representation comparison, not as an identification of a person's imagined percept or proof of complete scene recovery. [R13, §§1–2]"
+    },
+    {
+      "heading": "### Proposition 3B — View-to-view factorization",
+      "source_sha256": "558e00c499152f9ff7ad1c3acf2b1819a84bce3df5094602286c4135a7187b14",
+      "release_sha256": "558e00c499152f9ff7ad1c3acf2b1819a84bce3df5094602286c4135a7187b14",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 3B — View-to-view factorization\n\n**Elementary linear factorization.** A linear map \\(D_{g\\leftarrow f}:\\operatorname{im}r_f\\to R_g\\) satisfying \\(r_g=D_{g\\leftarrow f}r_f\\) exists exactly when\n\n\\[\n\\ker r_f\\subseteq\\ker r_g.\n\\tag{12c}\n\\]\n\n**Proof.** Factorization makes every vector killed by \\(r_f\\) also killed by \\(r_g\\). Conversely, define \\(D_{g\\leftarrow f}(r_fx)=r_gx\\). The inclusion makes this independent of the choice of \\(x\\); linearity follows from the two linear maps. ∎\n\nThus \\(x\\) determines \\(2x\\), but on unrestricted \\(\\mathbb Q^2\\), \\(x\\) does not determine \\(y\\). A common source and related view maps do not supply an image-to-image oracle. In a non-vector application, use the fiber criterion instead of assigning a linear kernel to a photograph or unknown geometry.\n\nAn invertible coordinate change is different again. If \\(P:T\\to T'\\) and \\(C:R\\to R'\\) are invertible and \\(r'=CrP^{-1}\\), then \\(r'(Px)=Crx\\) and \\(\\ker r'=P(\\ker r)\\). The same distinction is expressed in new coordinates; no new observation was acquired. BRIDGE's frame-transport account requires the relevant commuting maps rather than treating a change of notation as a new witness. [S9, “Frame Morphisms and Certificate Transport”]"
+    },
+    {
+      "heading": "## Proposition 4 — Common-continuation criterion",
+      "source_sha256": "dbae07ff0bd14308539aeb2ad29e259d86a4be89701c1d3f5e79caf1241b2ddd",
+      "release_sha256": "f70088b0da7cd9aba05b2aa923c6448b40c221ec540f0309c59372943a4120f1",
+      "exact_bytes_unchanged": false,
+      "permitted_editorial_changes": [
+        {
+          "old": "The draft claims no novelty for the underlying finite-set reasoning.",
+          "new": "No novelty is claimed for the underlying finite-set reasoning."
+        }
+      ],
+      "release_text": "## Proposition 4 — Common-continuation criterion\n\n**Proposed FRONT formulation of an elementary set fact.** There is a deterministic rule \\(p:\\operatorname{im}\\tau\\to A\\) such that\n\n\\[\np(\\tau(h))\\in G(h)\\quad\\text{for every }h\\in H\n\\tag{13}\n\\]\n\nif and only if every retained-value fiber has a common adequate action:\n\n\\[\n\\forall z\\in\\operatorname{im}\\tau,\\qquad\n\\bigcap_{h:\\tau(h)=z}G(h)\\ne\\varnothing.\n\\tag{14}\n\\]\n\n**Proof.** If \\(p\\) exists, its single action \\(p(z)\\) lies in every adequate set in that fiber. Conversely, choose one action from each nonempty finite intersection and define \\(p(z)\\) to be that action. The chosen rule satisfies (13). ∎\n\nThis is an existence criterion, not a cheap algorithm for discovering the sets \\(G(h)\\) or their intersections. In a large problem, computing the acceptable-action sets can contain the original problem’s difficulty. No novelty is claimed for the underlying finite-set reasoning."
+    },
+    {
+      "heading": "## Proposition 5 — Future-output preservation",
+      "source_sha256": "6bb8969359c20100a0b4180c5fdc94a32c7f40ec50cbedfc0e8cb06c8c4698a3",
+      "release_sha256": "6bb8969359c20100a0b4180c5fdc94a32c7f40ec50cbedfc0e8cb06c8c4698a3",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 5 — Future-output preservation\n\n**Standard continuation argument.** For a compression \\(c:S\\to Z\\), every query\n\\(q_w(s)=o(\\delta^*(s,w))\\) has a decoder from \\(c(s)\\) exactly when\n\n\\[\n\\operatorname{EqKer}(c)\\subseteq\\equiv_o.\n\\tag{18}\n\\]\n\n**Proof.** Apply Proposition 3 to each \\(q_w\\) and intersect the resulting kernel conditions. ∎\n\nDecoder existence for each word is not yet an efficient online implementation. To update the *same chosen compressed representation* step by step, a sufficient and necessary factorization condition for an exact \\(\\bar\\delta\\) satisfying\n\\(c(\\delta(s,a))=\\bar\\delta(c(s),a)\\)\nis\n\n\\[\nc(s)=c(s')\\ \\Longrightarrow\\ c(\\delta(s,a))=c(\\delta(s',a))\n\\quad\\text{for every }a.\n\\tag{19}\n\\]\n\nCondition (18) alone need not make an arbitrary representation satisfy (19). Taking the quotient by \\(\\equiv_o\\) does provide a well-defined transition: appending one input preserves future-output equivalence. The quotient is a mathematical object; its construction and execution still require resource bounds.\n\nFor an explicit counterexample to confusing (18) with (19), take three states \\(r,s,t\\), all with constant protected output zero. Let \\(c(r)=c(s)=0\\), \\(c(t)=1\\), and for a single input \\(a\\) set \\(\\delta(r,a)=r\\), \\(\\delta(s,a)=t\\), \\(\\delta(t,a)=t\\). All future protected outputs agree, so (18) holds. Yet the two states encoded as zero require different next encodings, violating (19). A simpler one-state representation would suffice for the constant-output task. The extra encoded distinction is not automatically a useful one."
+    },
+    {
+      "heading": "## Proposition 6 — Cost of protecting all coordinate queries",
+      "source_sha256": "c254ef4dbe48bf147abf98cc2fea103d0df280f8b69ffc0abe641ac747c49407",
+      "release_sha256": "c254ef4dbe48bf147abf98cc2fea103d0df280f8b69ffc0abe641ac747c49407",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 6 — Cost of protecting all coordinate queries\n\n**Elementary counting bound.** An exact fixed-length encoding that answers every coordinate query for every \\(d\\)-bit string without external rereading requires at least \\(d\\) bits.\n\n**Proof.** If two distinct strings had the same code, a coordinate on which they differ would violate Proposition 3. The encoding must therefore have at least \\(2^d\\) distinct codewords. A \\(b\\)-bit encoding supplies at most \\(2^b\\), so \\(b\\ge d\\). ∎\n\nFor the six-bit fixture, the current query uses two classes, while the full family of future coordinate queries requires 64. The reconstructed companion checks all 1,953 distinct pairs merged by the OR summary and finds a distinguishing query for each.\n\nA pointer to an intact archive can avoid keeping six bits in the *active* summary. It does not refute the bound: the decoder then has external access. The resource account must include the archive and rereading route. This is why a short retained handle and a short self-sufficient representation are different claims."
+    },
+    {
+      "heading": "### Proposition 5A — Combined-interface sufficiency",
+      "source_sha256": "a59f2a6f65e72e6f57507b954ce0dd8a805be206ededf841ee77458cfd35550a",
+      "release_sha256": "a59f2a6f65e72e6f57507b954ce0dd8a805be206ededf841ee77458cfd35550a",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5A — Combined-interface sufficiency\n\n**Application of Propositions 3 and 3A.** A retained map \\(\\tau:S\\to Z\\) supports every output in (20a) exactly when\n\n\\[\n\\operatorname{EqKer}(\\tau)\n\\subseteq\\bigcap_{(f,w)\\in\\Lambda}\n\\operatorname{EqKer}(o_f\\circ\\delta_w),\n\\qquad \\delta_w(s)=\\delta^*(s,w).\n\\tag{20b}\n\\]\n\nFor finite-dimensional linear \\(T\\), declared linear \\(L_w:T\\to T\\), and linear \\(r_f:T\\to R_f\\), put\n\n\\[\nJ_\\Lambda x=(r_fL_wx)_{(f,w)\\in\\Lambda},\n\\qquad K_\\Lambda=\\ker J_\\Lambda\n=\\bigcap_{(f,w)\\in\\Lambda}\\ker(r_fL_w).\n\\tag{20c}\n\\]\n\nA linear protected query \\(q:T\\to Q\\) factors through \\(J_\\Lambda\\) exactly when \\(K_\\Lambda\\subseteq\\ker q\\). If \\(\\Lambda\\subseteq\\Lambda'\\), then \\(K_{\\Lambda'}\\subseteq K_\\Lambda\\).\n\n**Proof.** Apply the equality-of-tuples argument to the composed readouts. In the linear case, a tuple is zero exactly when every component is zero, giving the kernel intersection. Define the query decoder by \\(J_\\Lambda x\\mapsto qx\\); it is well-defined precisely under the stated inclusion. Adding components intersects with further kernels and can only shrink the common kernel. ∎\n\nThe factorization describes what the supplied readings determine, not how to acquire them or choose the cheapest ones. The new application of the existing sufficiency criterion is the explicit indexed contract: a difference can be hidden in the present view yet distinguished by a particular later view. **Detection of one difference still does not guarantee recovery of every possible cause.**"
+    },
+    {
+      "heading": "### Proposition 5B — Persistent invisibility and finite-horizon closure",
+      "source_sha256": "46d2c49b6e06fefb59da71164b9ecbc10f0ea2e80310955f0924153d18d1154b",
+      "release_sha256": "46d2c49b6e06fefb59da71164b9ecbc10f0ea2e80310955f0924153d18d1154b",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5B — Persistent invisibility and finite-horizon closure\n\n**Standard observability argument, with proof in Appendix D.1.** Writing \\(K=\\ker r\\), the following are equivalent on the full linear difference domain: \\(L(K)\\subseteq K\\), and \\(rL^jd=0\\) for every \\(d\\in K\\) and every \\(j\\ge0\\). Moreover,\n\n\\[\nK_{N+1}\\subseteq K_N,\\qquad\nK_\\infty:=\\bigcap_{j\\ge0}\\ker(rL^j)=K_n.\n\\tag{20i}\n\\]\n\nThe subspace \\(K_\\infty\\) is \\(L\\)-invariant, and two states have equal outputs for all iterations exactly when their difference lies in it. The stacked map, Cayley–Hamilton stabilization, and invariance are established observability mathematics; FRONT's application connects them to the retained-interface contract. [R12, lecture pp. 19–4–19–7, 19–12]\n\nRestricting admissible states can weaken the necessary condition: only differences of actually admitted pairs matter. Nor does equality at sampled times establish equality for every continuation unless the model and argument justify that conclusion. For several supplied updates and all finite words, the invisible space is invariant under each update by concatenation. A restricted pair set need not have this closure property.\n\nKeeping the history also differs from keeping the latest value. A coordinate swap on \\(\\mathbb Q^2\\), starting at \\((0,1)\\) and reading the first coordinate, gives \\(0,1,0\\). The last zero does not erase the retained middle distinction."
+    },
+    {
+      "heading": "### Proposition 5C — Finite subfamily with the same hidden space",
+      "source_sha256": "24665cb32177f4cc1b8513e827ffe1934760f7c99a40a38e5b0eee4b18a38bd1",
+      "release_sha256": "24665cb32177f4cc1b8513e827ffe1934760f7c99a40a38e5b0eee4b18a38bd1",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5C — Finite subfamily with the same hidden space\n\n**Elementary finite-dimensional argument.** Let \\(\\dim T=n\\) and let \\(r_f:T\\to R_f\\) be any indexed family of linear maps with finite-dimensional codomains. A subfamily of at most \\(n\\) readouts has the same common kernel as the whole family. The empty subfamily suffices when every readout is zero.\n\n**Proof.** Appendix D.6 retains the finite row-span argument. ∎\n\nFor example, every member of \\(r_a(x,y,z)=x+ay\\), \\(a\\in\\mathbb Q\\), misses \\(z\\); \\(r_0\\) and \\(r_1\\) already have the family's complete row span. **All these views still do not recover all the state.**\n\nThe proposition is about existence in a fixed finite-dimensional family, including the combined readouts \\(r_fL_w\\) when its hypotheses apply. It does not find the useful probes in an infinite or black-box presentation, bound their acquisition costs, or extend automatically to noise and nonlinear or infinite-dimensional models. Section 11.7 keeps those costs in the same account as reuse."
+    },
+    {
+      "heading": "### Proposition 5D — BRIDGE at the combined interface",
+      "source_sha256": "71941e080f94ff335fae8942a3ba968bf319a2140bd88a990e6f72b3ff374c7c",
+      "release_sha256": "71941e080f94ff335fae8942a3ba968bf319a2140bd88a990e6f72b3ff374c7c",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5D — BRIDGE at the combined interface\n\n**Specified instance of BRIDGE's existing endpoint theorem.** There is a natural exact sequence\n\n\\[\n0\\longrightarrow \\frac{K}{B\\cap K}\n\\xrightarrow{\\ i\\ }\\frac{T}{B}\n\\xrightarrow{\\ \\bar J\\ }\\frac{J(T)}{J(B)}\n\\longrightarrow0,\n\\qquad V\\cong\\frac{J(T)}{J(B)}.\n\\tag{20j}\n\\]\n\nHere \\(i([k])=[k]\\) and \\(\\bar J([x])=[Jx]\\). In finite dimension, \\(\\dim T=\\dim C+\\dim G_v+\\dim H+\\dim V\\). Appendix D.2 supplies the maps and proof, including compatibility under readout refinement.\n\nHolding \\(B\\) fixed while adding observations changes visibility, not the generative defect \\(T/B\\). In example (20d), take \\(B=\\operatorname{span}(1,0,0)\\). At horizons one, two, and three, the sector dimensions \\((C,G_v,H,V)\\) are respectively \\((0,1,2,0)\\), \\((0,1,1,1)\\), and \\((0,1,0,2)\\). The total generative defect remains two-dimensional while more of it becomes visible.\n\nThere must also be **one common generated baseline across the views**. Let \\(T=\\mathbb Q^2\\), \\(B=\\operatorname{span}(1,1)\\), and \\(J(x,y)=(x,y)\\). The joint quotient \\(J(T)/J(B)\\) retains \\(x-y\\). But each separate quotient \\(r_x(T)/r_x(B)\\) and \\(r_y(T)/r_y(B)\\) is zero. Quotienting each coordinate independently has allowed different generated baselines and erased the cross-view relation. It is a different interface, not another notation for (20j)."
+    },
+    {
+      "heading": "### Proposition 5E — Query-specific side-trace capacity and minimum rank",
+      "source_sha256": "583734789a99578ef88c602942d062c9daf5f44bacfc6ceb771e4ea1c5d0c7d7",
+      "release_sha256": "583734789a99578ef88c602942d062c9daf5f44bacfc6ceb771e4ea1c5d0c7d7",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5E — Query-specific side-trace capacity and minimum rank\n\n**Application of BRIDGE's repair argument.** For finite-dimensional \\(T\\), a linear query \\(q\\), readout \\(J\\), and side space \\(E\\), a linear side trace \\(s:T\\to E\\) makes \\(q\\) decodable from \\((J,s)\\) exactly when\n\n\\[\n\\ker J\\cap\\ker s\\subseteq\\ker q.\n\\tag{20k}\n\\]\n\nSuch an \\(s\\) exists exactly when \\(\\dim E\\ge d_q\\), and its minimum possible rank is\n\n\\[\nd_q=\\operatorname{rank}(q|_{\\ker J}).\n\\tag{20l}\n\\]\n\nFor a residual-target query replace \\(T,J,\\ker J\\) by \\(T/B,\\bar J,i(H)\\), giving debt \\(\\operatorname{rank}(q_D\\circ i)\\). Appendix D.3 gives the lower bound and an attaining extension; the choice is not canonical. [S9, “Protected Answers and Minimal Repair”]\n\nIn (20d), the \\(z\\)-query debts at horizons one, two, and three are \\(1,1,0\\). At horizon one, appending \\(z\\) settles that query while \\(y\\) remains hidden. A sufficient answer can therefore be strictly cheaper in information than full state recovery. Whether the extra measurement itself is available or economical is a separate question. Minimum rank is not minimum price, bit length, or operator effort."
+    },
+    {
+      "heading": "### Proposition 5F — When an update descends to a quotient",
+      "source_sha256": "082c7a75530c5cad14c81b22b6ba8d1d900f82df47063e270f0713e9cdc80838",
+      "release_sha256": "082c7a75530c5cad14c81b22b6ba8d1d900f82df47063e270f0713e9cdc80838",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 5F — When an update descends to a quotient\n\n**Elementary well-definedness criterion.** For a subspace \\(B\\subseteq T\\), the formula \\([x]\\mapsto[Lx]\\) defines a linear update on \\(T/B\\) exactly when \\(L(B)\\subseteq B\\). The analogous update on \\(T/K\\) requires \\(L(K)\\subseteq K\\). Appendix D.4 gives the proof.\n\nThe stacked readout exists without the first condition. In (20d), \\(B=\\operatorname{span}(0,1,0)\\) is not \\(U\\)-invariant because \\(U(0,1,0)=(1,1,0)\\). Zero and \\((0,1,0)\\) represent the same source quotient class but their images do not. A static BRIDGE quotient is lawful here; that proposed quotient update is not. This is the linear counterpart of FRONT's earlier separation between output sufficiency and online-update compatibility.\n\nBRIDGE already supplies accumulated return in its branch-indexed monodromy setting. Suppressing those indices locally, its identity is\n\n\\[\nR_k=(M^k-I)\\alpha,\\qquad\nR_{k+\\ell}=R_k+M^kR_\\ell.\n\\tag{20m}\n\\]\n\nThe second term is transported, not merely added as an unchanged remainder. The algebra follows from \\(M^{k+\\ell}-I=(M^k-I)+M^k(M^\\ell-I)\\). A readout can hide a nonzero return discrepancy; a fixed class has exact zero return. Example (20d) illustrates the algebra but is not claimed to be monodromy of a geometric family. BRIDGE's cycle-lifting and Hodge obligations remain at their original scope. [S9, “Monodromy Return”]\n\nThese results return to FRONT's starting problem: carry enough supported structure to answer the next question, but do not turn an observed difference, a chosen representative, or a static quotient into an unearned continuation."
+    },
+    {
+      "heading": "## Proposition 7 — Amortized reuse condition",
+      "source_sha256": "218dd8f9c7ff8bd062ea2b3679bf7e3d1d972d7dafedec5594a46b61194410fa",
+      "release_sha256": "218dd8f9c7ff8bd062ea2b3679bf7e3d1d972d7dafedec5594a46b61194410fa",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 7 — Amortized reuse condition\n\n**Elementary cost identity.** Under these assumptions, reuse is cheaper exactly when\n\n\\[\n(m-1)(D-R)>B.\n\\tag{22}\n\\]\n\n**Proof.** Subtract the two expressions in (21) and rearrange. ∎\n\nIf \\(D\\le R\\) and \\(B\\ge0\\), the model gives no saving. For \\(D=10\\), \\(B=30\\), \\(R=2\\), four uses cost 40 without reuse and 46 with it; five uses cost 50 and 48. These stipulated-work-unit values are checked by the script. They are not timing measurements.\n\nReal systems have variable costs, invalidation events, many queries, and storage pressure. A fuller account records acquisition, derivation, indexing, matching, checking, retrieval, update, and retention costs separately. Unknown costs stay unknown. A measured energy value is not interchangeable with elapsed time or operator effort without a declared comparison rule. CHARTER’s Systemic Friction profile supplies this separation. [S3, §15.2]\n\nThe old literature is instructive here: de Kleer’s ATMS discussion warns that straightforward bookkeeping can dominate the solver, and reports operations for which caching costs more than recomputation. Preserving structure has a price even when its logical utility is clear. [R6, §6]"
+    },
+    {
+      "heading": "### Proposition 7A — Finite stabilization and least closure",
+      "source_sha256": "39c901c926ebeffaf8eb56f5e0925bc0dc299d053dc0ac7b10c5bdd64281ec95",
+      "release_sha256": "39c901c926ebeffaf8eb56f5e0925bc0dc299d053dc0ac7b10c5bdd64281ec95",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 7A — Finite stabilization and least closure\n\n**Elementary finite-rule argument.** For the supplied \\(\\mathcal L,\\mathcal R,E_0\\), the sequence reaches a fixed point after at most \\(N-|E_0|\\) strict rounds. Its final set is the least \\(\\mathcal R\\)-closed superset of \\(E_0\\), denoted \\(\\operatorname{cl}_{\\mathcal R}(E_0)\\).\n\n**Proof.** Every step retains the previous set. A strict step adds at least one member of the finite complement of \\(E_0\\), so there can be at most \\(N-|E_0|\\) such steps. Equality at one step gives equality thereafter, since the operator is fixed. If \\(T\\) contains \\(E_0\\) and is closed under every rule, induction on \\(j\\) gives \\(E_j\\subseteq T\\): every premise of each new conclusion is already in \\(T\\), so its conclusion is too. The final set is closed and contained in every such \\(T\\), proving leastness. ∎\n\nThe bound counts strict rounds, not all operations. The companion performs one final no-change pass as well. With \\(m=|\\mathcal R|\\) and \\(\\ell=\\sum_r|A_r|\\), a scan that examines every rule and every body occurrence on each pass records exactly \\((k+1)m\\) rule checks and \\((k+1)\\ell\\) premise membership tests for \\(k\\) productive rounds. The implementation separately constructs dependencies and copies sets; those operations are not included in the two counters. Finding a suitable rule representation, its size, initialization, matching, and storage remain part of the larger bill.\n\nThis is a finite forward-rule construction, not a claim to a new general closure method. In the concrete positive-rule interpretation used by the exhaustive fixture, one can check its least result independently by enumerating all Boolean valuations that satisfy the rules and initial facts and intersecting their true-fact sets. This separate finite oracle checks the implementation without being proposed as an efficient general solver."
+    },
+    {
+      "heading": "### Proposition 7B — Sound propagation relative to a basis",
+      "source_sha256": "4a12ea2b9938f991cd37e459fb613152167f495d70fcebce2d58e6d0162bf2f5",
+      "release_sha256": "4a12ea2b9938f991cd37e459fb613152167f495d70fcebce2d58e6d0162bf2f5",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 7B — Sound propagation relative to a basis\n\n**Elementary induction.** Fix an interpretation and an admissible situation \\(h\\). Suppose every fact in \\(E_0\\) is true in \\(h\\), and every rule in \\(\\mathcal R\\) preserves truth in \\(h\\): whenever all members of \\(A_r\\) are true, \\(b_r\\) is true. Then every fact exposed by (22b), and hence every fact in its final closure, is true in \\(h\\).\n\n**Proof.** The initial facts are true by assumption. If all facts in \\(E_j\\) are true, every rule fired at the next step has true premises and a true conclusion. Thus all facts in \\(E_{j+1}\\) are true. Apply induction and Proposition 7A. ∎\n\nIf a member of \\(E_0\\) is hypothetical, the statement applies only to situations satisfying that hypothesis along with the other premises and rule assumptions. It does not make the hypothesis actual. Nor does the theorem establish that any such situation exists. The companion carries hypothetical-root dependencies into its descendants and rejects a grant object supplied as a factual premise; these are software distinctions, not verification of the world described by a premise label.\n\nAn empty-body rule is allowed. Its conclusion is an explicitly supplied axiom of the chosen rule account, not a discovery from no basis. A cyclic rule graph can also be allowed; it need not start itself. For \\(p\\to q\\) and \\(q\\to p\\), no initial facts and no empty-body rules give an empty closure. Supplying \\(p\\) activates \\(q\\). The distinction is between a declared root and an unsupported cycle, not between graphs with and without any cycles.\n\nFor the positive grounded fixtures, tokens have the ordinary Boolean valuation interpretation. General semantic interpretations can include incompatible facts; soundness remains conditional on the premises. The separate SAT fixture returns an explicit conflict on contradictory units and does not add ordinary prospective conclusions from the conflicting pass. No universal inconsistency-management system is inferred from these two small implementations."
+    },
+    {
+      "heading": "### Proposition 7C — Decomposing the exposed wake",
+      "source_sha256": "6985bc8e4813e5cebd6b2f3c22228a314d704676f93c0b3757274f38fc0e1738",
+      "release_sha256": "6985bc8e4813e5cebd6b2f3c22228a314d704676f93c0b3757274f38fc0e1738",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 7C — Decomposing the exposed wake\n\n**Elementary set consequence.** Let \\(X_d=S\\setminus(E\\cup\\{d\\})\\), the union of the productive waves in (22b). Then\n\n\\[\nX_d=\\big((B\\setminus E)\\setminus\\{d\\}\\big)\n\\ \\dot\\cup\\ \\big(\\Delta_d\\setminus\\{d\\}\\big).\n\\tag{22d}\n\\]\n\nIf \\(d\\in B\\), then \\(S=B\\) and \\(\\Delta_d=\\varnothing\\).\n\n**Proof.** Monotonicity gives \\(E\\subseteq B\\subseteq S\\). Partition \\(S\\) into the disjoint sets \\(B\\) and \\(S\\setminus B\\), then remove \\(E\\) and \\(d\\). This gives (22d); a fact first exposed at a step is never removed, so the productive waves have union \\(X_d\\). If \\(d\\in B\\), the closed set \\(B\\) already contains \\(E\\cup\\{d\\}\\); leastness gives \\(S\\subseteq B\\), and monotonicity gives the reverse inclusion. ∎\n\nFor example, take rules \\(p\\to q\\) and \\(r\\to s\\), initial facts \\(E=\\{p\\}\\), and seed \\(d=r\\). The seeded run exposes \\(\\{q,s\\}\\) in its first wave. But \\(B=\\{p,q\\}\\), and the closure difference is \\(\\{r,s\\}\\). The seed-dependent consequence is \\(s\\); \\(q\\) was unfinished prior work, not an effect unique to the new seed.\n\nThis also sharpens the SAT example. The sound learned \\(\\neg a\\) is already a semantic consequence of \\(F^\\star\\), so adding it does not change the models. It is nevertheless unavailable to the initially stalled unit-propagation procedure. A stronger derivation makes that consequence explicit and allows the restricted procedure to continue. **New explicit access, new final rule closure, and new semantic information are different changes.** Scheduling or lookup cost may change even when the final closure does not."
+    },
+    {
+      "heading": "### Proposition 7D — Transfer of a selected, rooted derivation",
+      "source_sha256": "36da0f98b93253c5ab0c2b269000ffce6ce4c30bd130bf5293c216e7bda2c9b9",
+      "release_sha256": "36da0f98b93253c5ab0c2b269000ffce6ce4c30bd130bf5293c216e7bda2c9b9",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 7D — Transfer of a selected, rooted derivation\n\n**Conditional proof-composition argument.** A first-discovery proof graph formed from (22b) is acyclic when edges run from premises to their derived conclusions. If its factual roots remain supported, its hypothetical roots remain explicitly assumed where used, and its rule steps retain an applicable truth-preserving interpretation in the new account, its conclusion transfers with those same conditions.\n\n**Proof.** Every edge strictly increases discovery depth, so a directed cycle is impossible. Order the finite nodes by depth. The roots have their declared present basis. At each later node, the already supported parent conclusions and the applicable rule justify the node. Induction establishes the terminal conclusion, retaining any hypothetical conditions. ∎\n\nThe first claim concerns the recorded proof, not the entire rule graph, which may contain cycles. An empty-body rule node still records the rule basis. The second claim is conditional, not an assertion that the system can certify all its roots or checker rules without assumptions. A root’s label and a cryptographic hash identify part of the account; neither makes the root true.\n\nThe companion uses exact signatures as a sufficient reuse test within its fixed fixture contract. It rejects a changed premise, used-rule version, used-rule body, or interpretation; changing an unrelated rule does not invalidate the selected proof. Its historical proof object remains unchanged. If a different surviving rule path can establish the same conclusion, recomputation can recover it. Thus a failed applicability test means “this retained proof is not admitted by this test,” not “the conclusion is false.”\n\nOnly one selected proof per fact is retained. The implementation does not claim to enumerate every possible justification or perform optimal incremental invalidation. Exact matching can reject semantically valid transfer, and a newly established interpretation may allow more than the test recognizes. This restricted check demonstrates an economical, inspectable seam; it does not settle the general cost of semantic applicability.\n\nThis is the bounded answer to the recursive question. A retained proof can point to what supports its therefore without being required to re-earn that entire history at every use. When a relevant basis changes, reopen that basis and its affected use. The account may stop at a declared floor without claiming that no further question about the floor can exist."
+    },
+    {
+      "heading": "### Proposition 7E — Conditional support and history preservation under correction",
+      "source_sha256": "5cdeb9806c5719d5e23e2f22ba23ebadd1005ed1d8436d4c375ed43b3771d04a",
+      "release_sha256": "5cdeb9806c5719d5e23e2f22ba23ebadd1005ed1d8436d4c375ed43b3771d04a",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "### Proposition 7E — Conditional support and history preservation under correction\n\n**Elementary proof-composition and transition invariant.** Fix a finite context, a declared interpretation h, and the recorded candidate derivations. Assume (i) accepted root validators support facts true in h; (ii) each admitted rule preserves truth in h; (iii) every returned affirmative witness is a grounded finite derivation whose conjunctive parents and current basis are checked; (iv) an effectful candidate is committed only under the required current grant and a successful declared postcondition; and (v) each transition appends history without altering its earlier prefix. Then every returned supported conclusion is true in h under that basis. Invalidating one selected derivation does not invalidate another derivation with an unchanged valid basis. Every committed modeled change satisfies the declared grant and postcondition, and the history prefix survives both successful and failed attempts.\n\n*Proof.* For an affirmative witness, order its finite DAG topologically. Root truth follows from (i). At each rule node all parent facts are true by induction, so (ii) gives the conclusion. This proves the terminal query under its recorded basis. Disqualifying another derivation changes none of the checked nodes of an independent valid witness. By (iv), commit can occur only after both guards hold. By (v), each transition preserves the prefix; induction over finitely many transitions preserves the initial history, including failures. ∎\n\nThese are conditional invariants, not an independent formal verification of the Python implementation or the world supplying its inputs. Freshness is fixed during the modeled call. Concurrent grant revocation, external changes between check and use, crash recovery, incomplete real-world dependency capture, and dishonest validators remain outside this result. The implementation’s executable checks test bounded instances of these obligations. No termination, completeness, cheapest-repair, or universal reversibility theorem is added.\n\nThe result vocabulary distinguishes supported-with-basis, conditional-on-roots, proposed-not-applied, revalidated-after-change, unresolved/no-valid-return-found, not-authorized, error, and quiet STOP. These operational types do not replace PAL claim statuses. The present executable lanes implement finite support/unresolved/stop, explicit grant tokens, and the scratch-repair outcomes. The broader conditional and open-ended evidence-acquisition interfaces remain proposed, not implemented merely because they have names.\n\nThe correction bill extends rather than replaces §11’s reuse accounting:\n\n\\[\n\\begin{aligned}\nC_{\\mathrm{correction}}={}&C_{\\mathrm{detect}}+C_{\\mathrm{bind}}+C_{\\mathrm{trace}}\n+C_{\\mathrm{alt\\ check}}+C_{\\mathrm{plan}}\\\\\n&+C_{\\mathrm{grant}}+C_{\\mathrm{apply}}+C_{\\mathrm{revalidate}}+C_{\\mathrm{record}}.\n\\end{aligned}\\tag{C2}\n\\]\n\nEquation (C2) is an accounting schema. Shared reads are charged once; absent phases cost zero, not an invented measurement. The study records root/rule/premise checks, graph indexing and visits, closure passes, witness/history bytes, call wall/CPU time, input parsing, and separate oracle/logging costs. Schema categories are not claimed to equal independent hardware timers. In particular, a support-only run does not include a real file repair, a human reviewer’s labor, or model tokens. A finite operation-budget wrapper returns unresolved on exhaustion before issuing an incomplete witness; it is not a wall-time or memory sandbox. [S16]"
+    },
+    {
+      "heading": "## Proposition 8 — Polynomial accounting consequence",
+      "source_sha256": "650174c5e36a7c790e6a07c99831a7da66ef477d0fd9acdb25c102a0d1a2ce0b",
+      "release_sha256": "650174c5e36a7c790e6a07c99831a7da66ef477d0fd9acdb25c102a0d1a2ce0b",
+      "exact_bytes_unchanged": true,
+      "permitted_editorial_changes": [],
+      "release_text": "## Proposition 8 — Polynomial accounting consequence\n\n**Conditional bookkeeping lemma.** Under those premises the algorithm decides SAT in polynomial time, within\n\n\\[\np_0(n)+(p_1(n)+1)p_2(n)\n\\tag{24}\n\\]\n\nup to a fixed implementation factor. Therefore those premises for an actual SAT algorithm would imply P = NP.\n\n**Proof.** There are at most \\(p_1(n)\\) nonterminal steps and one final step. Add their bounded costs to initialization. The assumed correctness and termination make the result a SAT decider. ∎\n\nThis does not solve the hard part. It states its unpaid obligations. None of the reuse or fiber lemmas supplies the rank, the per-step bound, or the correct terminal decision for arbitrary SAT instances. Administrative returns hidden between macro-steps must also be bounded. A heartbeat is not a rank decrease. [S1, A13]\n\nConversely, a polynomial-time SAT decider could be instrumented to retain a polynomial-size transcript of its computation. Thus FRONT is not a complexity class that excludes efficient ordinary algorithms. Its accounting language becomes a substantive complexity result only when the missing uniform bounds are independently proved."
+    }
+  ],
+  "unchanged_display_blocks": 58,
+  "unchanged_inline_math": 538,
+  "native_math_objects": 596,
+  "unchanged_native_math_objects": 571,
+  "native_math_export_repairs": [
+    {
+      "math_object_index": 75,
+      "before_sha256": "0f9342511b2fdd31c869d8fca9f4e95172629146ca2f412ac49a31fef72198ab",
+      "after_sha256": "81e851a5595404e07a98ade0bb7d3f7437d4894170ddaf3a9bc5113009e2d8e6",
+      "operations": [
+        {
+          "kind": "layout",
+          "equation": "9a",
+          "change": "Two aligned rows joined into one complete equation; token order unchanged"
+        }
+      ]
+    },
+    {
+      "math_object_index": 156,
+      "before_sha256": "cd258c393d7e03f574268a0b19059cb25acaa4dd8120408db47b50463e033d8e",
+      "after_sha256": "412b4ba515944c155e5047ee48e62ce53aeb096d2e0c6312997e069927dc9516",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "⌀",
+          "after": "∅"
+        }
+      ]
+    },
+    {
+      "math_object_index": 165,
+      "before_sha256": "7df258fa99df003b5b70188edb02fd672ae985ab425dbf5e77216e0c48718515",
+      "after_sha256": "2d032320b1b84f9a73c2db9b2437607f0ff9724e52002b95fae8bbbb814aaaa8",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 167,
+      "before_sha256": "6f34eaf9cde3f4fac70969002f68f226c35e00152aa5fa61cc1f38018de151cd",
+      "after_sha256": "d7c72c65476df06b4b850886a8d285cbc8fa844992819800613cbd7c9dcdde19",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 182,
+      "before_sha256": "d2a549d7e3701fbf14176e899acf229951a159e39cef15d539243c809f9d3f8e",
+      "after_sha256": "d621bfde2514e13f257daee3893c6d70dfc2af6e40bca68f45c18c77110895b8",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 184,
+      "before_sha256": "1c07f65ec3bee6c50516b4422459c519cbd1580c181c47263d216acfb5488b76",
+      "after_sha256": "0174f78dd43943b6462cabf18032b8d92882671bbea21ac05f69837f48f4e1c2",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        },
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        },
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 186,
+      "before_sha256": "92fe96231d4afd419e9b6af37bc33cacff4c2194121236d3688e902ad7122e44",
+      "after_sha256": "5205e7ace7f6b34f8dcc017048e39e0a8c7fc899d1ce426a918a2e8390063b98",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 211,
+      "before_sha256": "d6cafb3d0c025c734805789cec50bd83b7e11ab296ad467b127ecc0d9a3e7eb2",
+      "after_sha256": "63f32a646ec487f9ba8400cfdccb9447fd2b31fce6b1babacf27f1af60239f65",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 213,
+      "before_sha256": "564495618ac809e7647eef8312f47105c59617be56147b36a0c4b7ed67d8f8ea",
+      "after_sha256": "4db203e25f1385605b49c54c89581c37864851fdee9147da21d84b835713fa5c",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 215,
+      "before_sha256": "7a922a1ad1148b2427bf4a41c0ea9a2cbdbd95ce1deeb2dacd3ef909139b0110",
+      "after_sha256": "3a0c05200cdeeaff59be4b4e1bbebafe400bec6540b44a5af2d55f857ce9745a",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    },
+    {
+      "math_object_index": 233,
+      "before_sha256": "33c4ebb094082e1429c73e5fc99b5413ce30a2fb10ecf2fc4c482aeaa2b6c8ad",
+      "after_sha256": "fec8afd787583b699de782eb266cd0d825c560e5a21c04efee99341a401d54b7",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "⌀",
+          "after": "∅"
+        }
+      ]
+    },
+    {
+      "math_object_index": 314,
+      "before_sha256": "246d1b17da333e6e8dcd1a530a41fc27cc5564b91d845d0ebfd2a4250811d01a",
+      "after_sha256": "6613be0ce5c9fdeb980cdfa4e8373bae47241adc9af333e3400ed5289215d346",
+      "operations": [
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        }
+      ]
+    },
+    {
+      "math_object_index": 362,
+      "before_sha256": "579213423d7c86ff083c79cd1bbe72f63fdd887e4a469c323453590689dc8c8a",
+      "after_sha256": "e28f1f199406f4a49d20192a28c39edb1a09b19b17413450055da3bfa65df844",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        }
+      ]
+    },
+    {
+      "math_object_index": 378,
+      "before_sha256": "5ef34634ea88b5e956ead712da12f6b12421845c6e788d55c7fb4914ada81517",
+      "after_sha256": "e3d3cabda6ee1ae6569805d43479d71f8246ae4c5a6c324654227ab9df353d60",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "​",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "math_object_index": 397,
+      "before_sha256": "da07d1636814fafe55c0d6fe89d3b7cd15cd9fa6f6acf9ee3855af577e434e0c",
+      "after_sha256": "6b9b6e356e2896b628b0e8da4b1d1fda067c599db7f7b82804ad19be1128af26",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        }
+      ]
+    },
+    {
+      "math_object_index": 402,
+      "before_sha256": "e28f81b50dae84d77571416e618199326f707195c935dc58c3a325bfc1832660",
+      "after_sha256": "659c7debae486170c623da2d6a6d9c85077798de8c47b3a2c326f0e7350bd18f",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        }
+      ]
+    },
+    {
+      "math_object_index": 403,
+      "before_sha256": "2fba020750b463930a2eb10ed29bfc7c15f01da72a090dea2bd53e621ac8b0b2",
+      "after_sha256": "9ed1c4f10e85d3930d6df37e321d2400773ad0ae77e463b0a2027263e7eefb58",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        },
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        },
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        }
+      ]
+    },
+    {
+      "math_object_index": 406,
+      "before_sha256": "f8636a4f69519aa237cff07a6e5ae12c8c677a7174b26d5d36590818dc71ee3f",
+      "after_sha256": "76aaa44a104d20effbf368118208a0a3eec38b51864db1d82800925f36ea0e13",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "⌀",
+          "after": "∅"
+        }
+      ]
+    },
+    {
+      "math_object_index": 410,
+      "before_sha256": "acad871c763145db90f8cfa60ac2769029aad84f8fef1d1115bf14f253dd62b4",
+      "after_sha256": "02ed85017d17586b9763da07f7c0eb14ea336f710533d980b0bc7acd306d7472",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "\\",
+          "after": "∖"
+        }
+      ]
+    },
+    {
+      "math_object_index": 446,
+      "before_sha256": "36212e7cb2c65064a5daeb9be80183f8d0d447d0b2f1e553cd5770163d7b8b84",
+      "after_sha256": "a54fb376d4552f5011ff77beec541eebe807f7ff33652e7fbfe1555a1fd49c6d",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "​",
+          "after": ""
+        },
+        {
+          "kind": "layout",
+          "equation": "C2",
+          "change": "Aligned matrix replaced by equation array; rows and token order unchanged"
+        }
+      ]
+    },
+    {
+      "math_object_index": 536,
+      "before_sha256": "aa9586c1230a6107f56d97660177080f7e35eda446cfdde8a9cd90be913ae3f7",
+      "after_sha256": "1e076c5b577d283b3e9de79ee3c59e73e93c753f94befef89a41c5eee7561431",
+      "operations": [
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        }
+      ]
+    },
+    {
+      "math_object_index": 537,
+      "before_sha256": "350a990edba165279906887e8f262ffa534e2d6683fd1177de0b1b46b853e5bf",
+      "after_sha256": "bb4229bac64f22e20e904d2aad828daf040412b8e9b51cbefc996980c2698a28",
+      "operations": [
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        }
+      ]
+    },
+    {
+      "math_object_index": 538,
+      "before_sha256": "4c9be7b2982303aa6bd78dd0b9bd5678314c9608d1a61b9eed2d88182cf45aa9",
+      "after_sha256": "e3b3a1f01259b890ede4c61d322b804c17b8dc460a6ad794a04a582e8a96e0cc",
+      "operations": [
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        },
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        }
+      ]
+    },
+    {
+      "math_object_index": 560,
+      "before_sha256": "67091ab6ce8953f218ea5a332ba794830cdfb4d8c697ac5f997794271b97ba34",
+      "after_sha256": "2a27d423cbf44cd0d7e3526e1be1ebf83642a3aa5feaeff3d3c436649f96e6a0",
+      "operations": [
+        {
+          "kind": "format",
+          "symbol": "|",
+          "change": "Mark restriction bar literal so the converter does not parse an unmatched delimiter"
+        }
+      ]
+    },
+    {
+      "math_object_index": 594,
+      "before_sha256": "e7a07f3a8e50b6f839846665657d716622a3fcc5075091c9b060216210fc24da",
+      "after_sha256": "acaeb0c7f8d2a09d914baf3dd52272ba3f4331cc68750433b89cf47287e08aa7",
+      "operations": [
+        {
+          "kind": "glyph",
+          "before": "*",
+          "after": "∗"
+        }
+      ]
+    }
+  ],
+  "docx_symbol_repairs": [
+    {
+      "kind": "glyph",
+      "before": "⌀",
+      "after": "∅"
+    },
+    {
+      "kind": "glyph",
+      "before": "⌀",
+      "after": "∅"
+    },
+    {
+      "kind": "glyph",
+      "before": "⌀",
+      "after": "∅"
+    }
+  ],
+  "restored_equation_labels": [
+    "1",
+    "2",
+    "3",
+    "3a",
+    "3b",
+    "4",
+    "4a",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9a",
+    "9b",
+    "10",
+    "11",
+    "12",
+    "12a",
+    "12b",
+    "12c",
+    "13",
+    "14",
+    "15",
+    "16",
+    "16a",
+    "17",
+    "18",
+    "19",
+    "20",
+    "20a",
+    "20b",
+    "20c",
+    "20f",
+    "20g",
+    "20h",
+    "20i",
+    "20j",
+    "20k",
+    "20l",
+    "20m",
+    "21",
+    "22",
+    "22a",
+    "22b",
+    "22c",
+    "22d",
+    "C1",
+    "C2",
+    "23",
+    "24",
+    "25",
+    "D1",
+    "D2",
+    "D3",
+    "20d",
+    "20e"
+  ],
+  "mathematical_token_changes": [],
+  "editorial_changes": [
+    {
+      "old": "This release candidate adds the case of an unsupported operative premise:",
+      "new": "FRONT also addresses an unsupported operative premise:",
+      "paragraphs": 1
+    },
+    {
+      "old": "One elementary conditional invariant is added;",
+      "new": "An elementary conditional invariant formalizes these obligations;",
+      "paragraphs": 1
+    },
+    {
+      "old": "The unchanged FRONT-REUSE-01 baseline contains",
+      "new": "The FRONT-REUSE-01 baseline contains",
+      "paragraphs": 1
+    },
+    {
+      "old": "No language-model, Lean, deployed security, or independent-referee result is claimed.",
+      "new": "The accompanying Lean audit checks 21 headed propositions: 17 at the stated general mathematical scope and four through explicitly bounded formalizations. No language-model, deployed-security or independent-referee result is claimed. [S17]",
+      "paragraphs": 1
+    },
+    {
+      "old": "The proposed contribution is the inspectable integration of scoped reuse, priced applicability, carried dependency, permission-aware correction and protected continuation. The 20 inherited proposition headings, 56 display blocks, BRIDGE adapter and original evidence remain preserved. Publication requires the author’s later adoption and instruction; independent review and public SCT version matching remain open.",
+      "new": "FRONT integrates scoped reuse, priced applicability, carried dependency, permission-aware correction and protected continuation. The formal companion records its assumptions and remaining bridges separately from the finite experiments. Independent review and public Single-Cut version matching remain open.",
+      "paragraphs": 1
+    },
+    {
+      "old": "were drafted with AI assistance and remain subject to Pang’s review.",
+      "new": "were developed with AI assistance under Pang’s authorship and review.",
+      "paragraphs": 1
+    },
+    {
+      "old": "What this draft contributes",
+      "new": "What FRONT contributes",
+      "paragraphs": 1
+    },
+    {
+      "old": "This working draft contributes a proposed integration, with four inspectable parts:",
+      "new": "FRONT develops six connected parts:",
+      "paragraphs": 1
+    },
+    {
+      "old": "Nor does this draft prove",
+      "new": "Nor does FRONT prove",
+      "paragraphs": 1
+    },
+    {
+      "old": "The combined account is the proposed contribution;",
+      "new": "The combined account is the contribution examined here;",
+      "paragraphs": 1
+    },
+    {
+      "old": "Version 0.3 integrated that direction into FRONT's existing account",
+      "new": "FRONT integrates that direction into its account",
+      "paragraphs": 1
+    },
+    {
+      "old": "Version 0.4 retains that synthesis while placing its reuse and applicability questions first.",
+      "new": "Reuse and applicability remain the organizing questions.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The exact finite implementation, elementary proposition, experimental choices, and editorial integration below were prepared by this assistant under his build instruction.",
+      "new": "The finite implementation, elementary proposition, experimental choices and editorial integration were developed with AI assistance.",
+      "paragraphs": 1
+    },
+    {
+      "old": "PAL v2.4 governs PAL terminology in this draft.",
+      "new": "PAL v2.4 governs PAL terminology in FRONT.",
+      "paragraphs": 1
+    },
+    {
+      "old": "Proposed definition.",
+      "new": "Definition.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The draft claims no novelty for the underlying finite-set reasoning.",
+      "new": "No novelty is claimed for the underlying finite-set reasoning.",
+      "paragraphs": 1
+    },
+    {
+      "old": "CORRECT(record, context, grant, budget) is a proposed implementation contract.",
+      "new": "CORRECT(record, context, grant, budget) specifies the implementation contract.",
+      "paragraphs": 1
+    },
+    {
+      "old": "at this draft’s research date.",
+      "new": "at the research date of 4 October 2026.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The v1.0 contribution is a proposed integration of",
+      "new": "FRONT integrates",
+      "paragraphs": 1
+    },
+    {
+      "old": "and this draft imports no",
+      "new": "and FRONT imports no",
+      "paragraphs": 1
+    },
+    {
+      "old": "The v0.3 linear family uses",
+      "new": "The linear family uses",
+      "paragraphs": 1
+    },
+    {
+      "old": "No Lean certificate, independent human proof review or model benchmark is claimed by these checks.",
+      "new": "These executable checks remain separate from the Lean companion described in §17.2. They do not establish independent human proof review or a model benchmark.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The oracle and evaluated implementation use different algorithms but were written by the same assistant. This is not the independent referee pass required by the key. No Lean proof or real-model execution is claimed.",
+      "new": "The oracle and evaluated implementation use different algorithms but were written by the same assistant. Independent review and real-model execution remain open. The Lean companion checks mathematical statements and bounded correction models; it does not establish that this Python implementation refines those models. [S17]",
+      "paragraphs": 1
+    },
+    {
+      "old": "The v0.4 changes do not discharge",
+      "new": "These results do not discharge",
+      "paragraphs": 1
+    },
+    {
+      "old": "Version 0.2 added two companion sentences, retained here:",
+      "new": "Two further principles make the cost of propagation explicit:",
+      "paragraphs": 1
+    },
+    {
+      "old": "Release-candidate boundary",
+      "new": "Scope and remaining work",
+      "paragraphs": 1
+    },
+    {
+      "old": "This v1.0 candidate completes",
+      "new": "FRONT v1.0 provides",
+      "paragraphs": 1
+    },
+    {
+      "old": "Independent mathematics/CS and authority-boundary review is still open. Public Single-Cut record/version matching could not be established from the attempted retrieval, so the local v0.1 supplied file is the inspected mathematical example. The reserved DOI is a destination reported by the author, not publication evidence. The manuscript is ready for author and external review, not represented as independently reviewed, adopted or published. Real-model performance, optional Lean formalization, concurrent grant freshness, crash-safe external repair, real-world consequence completeness and priority remain outside this completed finite build. [S14–S16]",
+      "new": "Independent mathematics/CS and authority-boundary review remains open. The Single-Cut example uses the supplied local v0.1 file; its match to the public record remains unverified. Real-model performance, concurrent grant freshness, crash-safe external repair, complete capture of real-world consequences and priority remain open. The Lean coverage and its remaining formalization limits are stated below. [S14–S17]",
+      "paragraphs": 1
+    },
+    {
+      "old": "This draft narrows several exploratory claims rather than silently inheriting them.",
+      "new": "The following distinctions qualify the exploratory claims that motivated FRONT.",
+      "paragraphs": 1
+    },
+    {
+      "old": "Version 0.2 uses a one-step rule operator",
+      "new": "FRONT uses a one-step rule operator",
+      "paragraphs": 1
+    },
+    {
+      "old": "These corrections are part of the drafting trace.",
+      "new": "These corrections preserve the development of the argument.",
+      "paragraphs": 1
+    },
+    {
+      "old": "Status in this draft",
+      "new": "Evidence status",
+      "paragraphs": 1
+    },
+    {
+      "old": "v1.0 additions and release gates",
+      "new": "Correction results and evidence limits",
+      "paragraphs": 1
+    },
+    {
+      "old": "Elementary conditional argument, proof in §11",
+      "new": "Conditional argument in §11; bounded Lean model in the companion",
+      "paragraphs": 1
+    },
+    {
+      "old": "Assumed validator/rule/grant soundness; no kernel certificate",
+      "new": "Supplied validators, rules, grants and postconditions; no general implementation-refinement proof",
+      "paragraphs": 1
+    },
+    {
+      "old": "Live Branchline modification / publication",
+      "new": "Live Branchline modification",
+      "paragraphs": 1
+    },
+    {
+      "old": "This v0.4 build uses the complete supplied FRONT v0.3 package as its baseline and preserves its nested sources, including BRIDGE v0.4, byte-for-byte.",
+      "new": "The source history preserves the supplied FRONT v0.3 baseline and its nested sources, including BRIDGE v0.4, byte-for-byte.",
+      "paragraphs": 1
+    },
+    {
+      "old": "this FRONT draft uses v2.4 for PAL terms.",
+      "new": "FRONT uses v2.4 for PAL terms.",
+      "paragraphs": 1
+    },
+    {
+      "old": "Attribution and release boundary",
+      "new": "Authorship and provenance",
+      "paragraphs": 1
+    },
+    {
+      "old": "Christopher D. Pang originated the FRONT name and expansion, supplied the conceptual direction and corpus, and is the proposed author and sole adoption authority for this draft.",
+      "new": "Christopher D. Pang is the author of FRONT. He originated its name and expansion and supplied its conceptual direction and corpus.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The v0.4 package preserves the complete v0.3 payload, its five nested manifests, BRIDGE v0.4 and the active research/build key. It adds the editorial revision, direct literature map, frozen study protocol and fixtures, deterministic results, a new audit runner, source/claim notes and a SHA-256 manifest. The original v0.1 evidence gap remains labeled. Creation is neither author adoption nor publication; a hash verifies bytes, not mathematical authority.",
+      "new": "The supporting materials retain the source identities, protocols, fixtures, results and formal receipts needed to inspect the claims. Earlier evidence remains attributable to its original version. The original v0.1 evidence gap remains labeled. A hash verifies bytes, not mathematical authority.",
+      "paragraphs": 1
+    },
+    {
+      "old": "The real-model and optional Lean lanes are not executed.",
+      "new": "The real-model lane remains unrun. The separately checked Lean companion is described in §17.2; no general Python-to-Lean refinement is claimed. [S17]",
+      "paragraphs": 1
+    }
+  ],
+  "table_layout_change": "Policy comparison transposed without altering policy labels or values; table rows kept intact",
+  "pages": 56,
+  "contents_entries_verified": [
+    {
+      "heading": "1. Origin: the answer that should not need earning twice",
+      "page": 4,
+      "bookmark": "front_section_1"
+    },
+    {
+      "heading": "2. Corpus placement and inherited limits",
+      "page": 6,
+      "bookmark": "front_section_2"
+    },
+    {
+      "heading": "3. The room before the symbols",
+      "page": 7,
+      "bookmark": "front_section_3"
+    },
+    {
+      "heading": "4. A hard NO is an answer, not a general-purpose negative flag",
+      "page": 9,
+      "bookmark": "front_section_4"
+    },
+    {
+      "heading": "5. A small SAT laboratory: when a NO becomes reusable structure",
+      "page": 10,
+      "bookmark": "front_section_5"
+    },
+    {
+      "heading": "6. The Next-Cut Seam is not one undifferentiated ignorance",
+      "page": 12,
+      "bookmark": "front_section_6"
+    },
+    {
+      "heading": "7. Answer sufficiency: what the retained carrier can distinguish",
+      "page": 14,
+      "bookmark": "front_section_7"
+    },
+    {
+      "heading": "8. Decision sufficiency: unresolved alternatives may share a next move",
+      "page": 16,
+      "bookmark": "front_section_8"
+    },
+    {
+      "heading": "9. Continuation sufficiency: tomorrow may ask a different question",
+      "page": 18,
+      "bookmark": "front_section_9"
+    },
+    {
+      "heading": "10. No free oracle emerges from retained trace",
+      "page": 23,
+      "bookmark": "front_section_10"
+    },
+    {
+      "heading": "11. The bill: when reuse actually saves work",
+      "page": 24,
+      "bookmark": "front_section_11"
+    },
+    {
+      "heading": "12. P versus NP: exactly what this buys, and what it does not",
+      "page": 30,
+      "bookmark": "front_section_12"
+    },
+    {
+      "heading": "13. Neighboring work: compare the mechanism, not only the vocabulary",
+      "page": 32,
+      "bookmark": "front_section_13"
+    },
+    {
+      "heading": "14. Why the spherical and Riemann branches belong nearby",
+      "page": 34,
+      "bookmark": "front_section_14"
+    },
+    {
+      "heading": "15. Executable evidence: families first, counts second",
+      "page": 34,
+      "bookmark": "front_section_15"
+    },
+    {
+      "heading": "16. Branchline application: keep the support smaller than the work",
+      "page": 36,
+      "bookmark": "front_section_16"
+    },
+    {
+      "heading": "17. Open work and conclusion",
+      "page": 42,
+      "bookmark": "front_section_17"
+    },
+    {
+      "heading": "Appendix A. Corrections retained from the originating dialogue",
+      "page": 43,
+      "bookmark": "front_section_18"
+    },
+    {
+      "heading": "Appendix B. Claim and evidence ledger",
+      "page": 45,
+      "bookmark": "front_section_19"
+    },
+    {
+      "heading": "Appendix C. Sources, attribution, and verification notes",
+      "page": 47,
+      "bookmark": "front_section_20"
+    },
+    {
+      "heading": "Appendix D. Proofs and boundaries of the linear continuation adapter",
+      "page": 52,
+      "bookmark": "front_section_21"
+    },
+    {
+      "heading": "Appendix E. Finite correction record and reproducibility",
+      "page": 54,
+      "bookmark": "front_section_22"
+    }
+  ],
+  "formal_receipt_sha256": "13d5e3f8c9971f9bf6dffe2239e9ee2cda7b0e752620def3765a85bfabee4336",
+  "claim_ceiling": "Publication edits preserve statements; four bounded formalization limits remain. No independent review or Python refinement claim."
+}

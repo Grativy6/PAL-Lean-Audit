@@ -1,0 +1,12 @@
+✖ [8655/8655] Building Experiments.GPPREncoding (11s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\GPPREncoding.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\GPPREncoding.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\GPPREncoding.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\GPPREncoding.setup.json --json
+error: Experiments/GPPREncoding.lean:129:72: mod_cast has type
+  q.num = |q.num|
+but is expected to have type
+  ↑q.num = ↑q.num.natAbs
+warning: Experiments/GPPREncoding.lean:164:15: Try `simp at h'` instead of `simpa using h'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.GPPREncoding

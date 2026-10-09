@@ -1,0 +1,180 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24SourcePathAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 13848, "stderr_bytes": 0}
+Experiments.Pal24SourcePath.CheckResult : Type
+'Experiments.Pal24SourcePath.CheckResult' does not depend on any axioms
+Experiments.Pal24SourcePath.PathRecord : Type
+'Experiments.Pal24SourcePath.PathRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.ChannelAdapter : Type
+'Experiments.Pal24SourcePath.ChannelAdapter' does not depend on any axioms
+Experiments.Pal24SourcePath.ReplayContext : Type
+'Experiments.Pal24SourcePath.ReplayContext' does not depend on any axioms
+Experiments.Pal24SourcePath.knownStep : ℕ → ℕ → ℕ
+'Experiments.Pal24SourcePath.knownStep' does not depend on any axioms
+Experiments.Pal24SourcePath.adaptedEvent : Experiments.Pal24SourcePath.ChannelAdapter → ℕ → Option ℕ
+'Experiments.Pal24SourcePath.adaptedEvent' does not depend on any axioms
+Experiments.Pal24SourcePath.contentCheck : Experiments.Pal24SourcePath.PathRecord →
+  Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.contentCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.associationCheck : Experiments.Pal24SourcePath.ChannelAdapter →
+  Experiments.Pal24SourcePath.PathRecord → Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.associationCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.applicabilityCheck : Experiments.Pal24SourcePath.ReplayContext →
+  Experiments.Pal24SourcePath.PathRecord → Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.applicabilityCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.orderCheck : Option ℕ →
+  Experiments.Pal24SourcePath.PathRecord → Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.orderCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.transitionLinkCheck : ℕ →
+  Experiments.Pal24SourcePath.PathRecord → Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.transitionLinkCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.admitted : List Experiments.Pal24SourcePath.CheckResult → Bool
+'Experiments.Pal24SourcePath.admitted' does not depend on any axioms
+Experiments.Pal24SourcePath.recordChecks : Experiments.Pal24SourcePath.ReplayContext →
+  Option ℕ → ℕ → Experiments.Pal24SourcePath.PathRecord → List Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.recordChecks' does not depend on any axioms
+Experiments.Pal24SourcePath.historyChecksFrom : Experiments.Pal24SourcePath.ReplayContext →
+  Option ℕ → ℕ → List Experiments.Pal24SourcePath.PathRecord → List Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.historyChecksFrom' does not depend on any axioms
+Experiments.Pal24SourcePath.historyChecks : Experiments.Pal24SourcePath.ReplayContext →
+  List Experiments.Pal24SourcePath.PathRecord → List Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.historyChecks' does not depend on any axioms
+Experiments.Pal24SourcePath.coverageCheck : Experiments.Pal24SourcePath.ReplayContext →
+  List Experiments.Pal24SourcePath.PathRecord → Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.coverageCheck' does not depend on any axioms
+Experiments.Pal24SourcePath.fullAudit : Experiments.Pal24SourcePath.ReplayContext →
+  List Experiments.Pal24SourcePath.PathRecord → List Experiments.Pal24SourcePath.CheckResult
+'Experiments.Pal24SourcePath.fullAudit' does not depend on any axioms
+Experiments.Pal24SourcePath.replayStored : ℕ → List Experiments.Pal24SourcePath.PathRecord → ℕ
+'Experiments.Pal24SourcePath.replayStored' does not depend on any axioms
+Experiments.Pal24SourcePath.checkedReplay : Experiments.Pal24SourcePath.ReplayContext →
+  List Experiments.Pal24SourcePath.PathRecord →
+    List Experiments.Pal24SourcePath.CheckResult × Experiments.Pal24SourcePath.CheckResult × Option ℕ
+'Experiments.Pal24SourcePath.checkedReplay' depends on axioms: [propext]
+Experiments.Pal24SourcePath.runKnown : List ℕ → ℕ → ℕ
+'Experiments.Pal24SourcePath.runKnown' does not depend on any axioms
+Experiments.Pal24SourcePath.transitionChain : ℕ → List Experiments.Pal24SourcePath.PathRecord → Prop
+'Experiments.Pal24SourcePath.transitionChain' does not depend on any axioms
+Experiments.Pal24SourcePath.content_chain_replay : ∀ (state : ℕ)
+  (records : List Experiments.Pal24SourcePath.PathRecord),
+  Experiments.Pal24SourcePath.transitionChain state records →
+    Experiments.Pal24SourcePath.replayStored state records =
+      Experiments.Pal24SourcePath.runKnown (List.map Experiments.Pal24SourcePath.PathRecord.value records) state
+'Experiments.Pal24SourcePath.content_chain_replay' depends on axioms: [propext]
+Experiments.Pal24SourcePath.history_yes_chain : ∀ (c : Experiments.Pal24SourcePath.ReplayContext) (previous : Option ℕ)
+  (expectedState : ℕ) (records : List Experiments.Pal24SourcePath.PathRecord),
+  (∀ (check : Experiments.Pal24SourcePath.CheckResult),
+      check ∈ Experiments.Pal24SourcePath.historyChecksFrom c previous expectedState records →
+        check = Experiments.Pal24SourcePath.CheckResult.yes) →
+    Experiments.Pal24SourcePath.transitionChain expectedState records
+'Experiments.Pal24SourcePath.history_yes_chain' depends on axioms: [propext]
+Experiments.Pal24SourcePath.admitted_fullAudit_implies_transitionChain : ∀
+  (c : Experiments.Pal24SourcePath.ReplayContext) (records : List Experiments.Pal24SourcePath.PathRecord),
+  Experiments.Pal24SourcePath.admitted (Experiments.Pal24SourcePath.fullAudit c records) = Bool.true →
+    Experiments.Pal24SourcePath.transitionChain c.initialState records
+'Experiments.Pal24SourcePath.admitted_fullAudit_implies_transitionChain' depends on axioms: [propext, Quot.sound]
+Experiments.Pal24SourcePath.checkedReplay_success_matches_runKnown : ∀ (c : Experiments.Pal24SourcePath.ReplayContext)
+  (records : List Experiments.Pal24SourcePath.PathRecord) (output : ℕ),
+  (Experiments.Pal24SourcePath.checkedReplay c records).snd.fst = Experiments.Pal24SourcePath.CheckResult.yes →
+    (Experiments.Pal24SourcePath.checkedReplay c records).snd.snd = Option.some output →
+      output =
+        Experiments.Pal24SourcePath.runKnown (List.map Experiments.Pal24SourcePath.PathRecord.value records)
+          c.initialState
+'Experiments.Pal24SourcePath.checkedReplay_success_matches_runKnown' depends on axioms: [propext, Quot.sound]
+Experiments.Pal24SourcePath.sampleAdapter : Experiments.Pal24SourcePath.ChannelAdapter
+'Experiments.Pal24SourcePath.sampleAdapter' does not depend on any axioms
+Experiments.Pal24SourcePath.sampleContext : Experiments.Pal24SourcePath.ReplayContext
+'Experiments.Pal24SourcePath.sampleContext' does not depend on any axioms
+Experiments.Pal24SourcePath.sampleFirst : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.sampleFirst' does not depend on any axioms
+Experiments.Pal24SourcePath.sampleSecond : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.sampleSecond' does not depend on any axioms
+Experiments.Pal24SourcePath.sampleRecords : List Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.sampleRecords' does not depend on any axioms
+Experiments.Pal24SourcePath.positive_history_admitted : Experiments.Pal24SourcePath.admitted
+    (Experiments.Pal24SourcePath.fullAudit Experiments.Pal24SourcePath.sampleContext
+      Experiments.Pal24SourcePath.sampleRecords) =
+  Bool.true
+'Experiments.Pal24SourcePath.positive_history_admitted' does not depend on any axioms
+Experiments.Pal24SourcePath.positive_history_replay : Experiments.Pal24SourcePath.checkedReplay
+    Experiments.Pal24SourcePath.sampleContext Experiments.Pal24SourcePath.sampleRecords =
+  (Experiments.Pal24SourcePath.fullAudit Experiments.Pal24SourcePath.sampleContext
+      Experiments.Pal24SourcePath.sampleRecords,
+    Experiments.Pal24SourcePath.CheckResult.yes, Option.some 5)
+'Experiments.Pal24SourcePath.positive_history_replay' depends on axioms: [propext]
+Experiments.Pal24SourcePath.replacedSourceRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.replacedSourceRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.unchanged_channel_replaced_source_rejected : Experiments.Pal24SourcePath.associationCheck
+    Experiments.Pal24SourcePath.sampleAdapter Experiments.Pal24SourcePath.replacedSourceRecord =
+  Experiments.Pal24SourcePath.CheckResult.no "source/channel/version/event association mismatch"
+'Experiments.Pal24SourcePath.unchanged_channel_replaced_source_rejected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24SourcePath.staleVersionRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.staleVersionRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.stale_version_rejected : Experiments.Pal24SourcePath.applicabilityCheck
+    Experiments.Pal24SourcePath.sampleContext Experiments.Pal24SourcePath.staleVersionRecord =
+  Experiments.Pal24SourcePath.CheckResult.no "task/version/channel applicability mismatch"
+'Experiments.Pal24SourcePath.stale_version_rejected' depends on axioms: [propext]
+Experiments.Pal24SourcePath.reordered_history_rejected : Experiments.Pal24SourcePath.coverageCheck
+    Experiments.Pal24SourcePath.sampleContext Experiments.Pal24SourcePath.sampleRecords.reverse =
+  Experiments.Pal24SourcePath.CheckResult.no "event coverage/order mismatch"
+'Experiments.Pal24SourcePath.reordered_history_rejected' depends on axioms: [propext]
+Experiments.Pal24SourcePath.missing_history_rejected : Experiments.Pal24SourcePath.coverageCheck
+    Experiments.Pal24SourcePath.sampleContext [Experiments.Pal24SourcePath.sampleFirst] =
+  Experiments.Pal24SourcePath.CheckResult.no "event coverage/order mismatch"
+'Experiments.Pal24SourcePath.missing_history_rejected' depends on axioms: [propext]
+Experiments.Pal24SourcePath.alteredValueRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.alteredValueRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.altered_value_rejected : Experiments.Pal24SourcePath.contentCheck
+    Experiments.Pal24SourcePath.alteredValueRecord =
+  Experiments.Pal24SourcePath.CheckResult.no "event content mismatch"
+'Experiments.Pal24SourcePath.altered_value_rejected' depends on axioms: [propext]
+Experiments.Pal24SourcePath.wrongEventBindingRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.wrongEventBindingRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.consistent_content_wrong_event_binding : Experiments.Pal24SourcePath.contentCheck
+      Experiments.Pal24SourcePath.wrongEventBindingRecord =
+    Experiments.Pal24SourcePath.CheckResult.yes ∧
+  Experiments.Pal24SourcePath.associationCheck Experiments.Pal24SourcePath.sampleAdapter
+      Experiments.Pal24SourcePath.wrongEventBindingRecord =
+    Experiments.Pal24SourcePath.CheckResult.no "source/channel/version/event association mismatch"
+'Experiments.Pal24SourcePath.consistent_content_wrong_event_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24SourcePath.wrongTaskRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.wrongTaskRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.task_mismatch_rejected : Experiments.Pal24SourcePath.applicabilityCheck
+    Experiments.Pal24SourcePath.sampleContext Experiments.Pal24SourcePath.wrongTaskRecord =
+  Experiments.Pal24SourcePath.CheckResult.no "task/version/channel applicability mismatch"
+'Experiments.Pal24SourcePath.task_mismatch_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24SourcePath.unknownEvidenceRecord : Experiments.Pal24SourcePath.PathRecord
+'Experiments.Pal24SourcePath.unknownEvidenceRecord' does not depend on any axioms
+Experiments.Pal24SourcePath.unknown_is_retained_and_fails_closed : (Experiments.Pal24SourcePath.recordChecks
+        Experiments.Pal24SourcePath.sampleContext Option.none 0
+        Experiments.Pal24SourcePath.unknownEvidenceRecord).getLast? =
+    Option.some (Experiments.Pal24SourcePath.CheckResult.unknown "signature check unavailable") ∧
+  Experiments.Pal24SourcePath.admitted
+      (Experiments.Pal24SourcePath.recordChecks Experiments.Pal24SourcePath.sampleContext Option.none 0
+        Experiments.Pal24SourcePath.unknownEvidenceRecord) =
+    Bool.false
+'Experiments.Pal24SourcePath.unknown_is_retained_and_fails_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24SourcePath.unknown_evidence_declines_with_reason : (Experiments.Pal24SourcePath.checkedReplay
+          Experiments.Pal24SourcePath.sampleContext [Experiments.Pal24SourcePath.unknownEvidenceRecord]).snd.fst =
+    Experiments.Pal24SourcePath.CheckResult.unknown "signature check unavailable" ∧
+  (Experiments.Pal24SourcePath.checkedReplay Experiments.Pal24SourcePath.sampleContext
+            [Experiments.Pal24SourcePath.unknownEvidenceRecord]).snd.snd =
+      Option.none ∧
+    (Experiments.Pal24SourcePath.checkedReplay Experiments.Pal24SourcePath.sampleContext
+              [Experiments.Pal24SourcePath.unknownEvidenceRecord]).fst.contains
+        (Experiments.Pal24SourcePath.CheckResult.unknown "signature check unavailable") =
+      Bool.true
+'Experiments.Pal24SourcePath.unknown_evidence_declines_with_reason' depends on axioms: [propext]
+Experiments.Pal24SourcePath.unknown_not_equal_no : Experiments.Pal24SourcePath.CheckResult.unknown "x" ≠
+  Experiments.Pal24SourcePath.CheckResult.no "x"
+'Experiments.Pal24SourcePath.unknown_not_equal_no' does not depend on any axioms
+Experiments.Pal24SourcePath.unknown_not_equal_yes : Experiments.Pal24SourcePath.CheckResult.unknown "x" ≠
+  Experiments.Pal24SourcePath.CheckResult.yes
+'Experiments.Pal24SourcePath.unknown_not_equal_yes' does not depend on any axioms
+
+PAL-STDERR-1

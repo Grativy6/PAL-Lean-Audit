@@ -1,0 +1,347 @@
+{
+  "batch": "C2",
+  "module": "Experiments.Pal24IntervalSlack",
+  "axioms_module": "Experiments.Pal24IntervalSlackAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "corpus_source"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C2/source-excerpts.json",
+      "sha256": "f6d6e82f5b2315b42ad3aa4f3b4ed9586350c859b06347e721a43e0346abaec7",
+      "role": "source_extraction"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.Pal24IntervalSlack.SlackClass",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Finite outcome tags FEASIBLE, VIOLATED, CONTACT, and UNRESOLVED.",
+      "ceiling": "Tags only; no evaluator or receipt authenticity.",
+      "residual": "No semantic status outside the declared classifier."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.SlackInterval",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Raw rational interval with lower and upper endpoints.",
+      "ceiling": "Exact scalar representation only.",
+      "residual": "Units and measurement uncertainty provenance are omitted."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.validInterval",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Interval validity predicate lower ≤ upper.",
+      "ceiling": "A mathematical ordering check only.",
+      "residual": "Does not establish units or source data quality."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.constraintToSlack",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Maps [c_lo,c_hi] to [-c_hi,-c_lo].",
+      "ceiling": "Sign reversal only.",
+      "residual": "No evaluation of a constraint."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.feasible",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Predicate s_lo > ε.",
+      "ceiling": "Implements the source inequality.",
+      "residual": "No real-world feasibility inference."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.violated",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Predicate s_hi < -ε.",
+      "ceiling": "Implements the source inequality.",
+      "residual": "No normative or safety judgment."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.contact",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Predicate -ε ≤ s_lo and s_hi ≤ ε.",
+      "ceiling": "Implements the source closed-band inequality.",
+      "residual": "No physical contact semantics."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.classify",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Prioritized source predicates with residual UNRESOLVED.",
+      "ceiling": "Pure deterministic classification.",
+      "residual": "No measurement or authority."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.constraintToSlack_valid",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Negation preserves interval ordering while reversing endpoints.",
+      "ceiling": "Rational order only.",
+      "residual": "No uncertainty model."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.feasible_not_violated",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Rational interval endpoints satisfy lower ≤ upper where stated; tolerance satisfies 0 ≤ ε where stated."
+      ],
+      "statement": "Valid intervals and ε ≥ 0 cannot be both FEASIBLE and VIOLATED.",
+      "ceiling": "Requires ordered endpoints and nonnegative tolerance.",
+      "residual": "Assumptions are substantive."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.feasible_not_contact",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Ordered endpoints exclude simultaneous FEASIBLE and CONTACT.",
+      "ceiling": "Requires interval validity.",
+      "residual": "No claim for malformed intervals."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.violated_not_contact",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Rational interval endpoints satisfy lower ≤ upper where stated; tolerance satisfies 0 ≤ ε where stated."
+      ],
+      "statement": "Valid intervals and ε ≥ 0 exclude simultaneous VIOLATED and CONTACT.",
+      "ceiling": "Requires ordered endpoints and nonnegative tolerance.",
+      "residual": "No claim for malformed inputs."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.feasible_iff_classified",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "FEASIBLE classifier tag iff the raw feasible predicate holds, for every tolerance and interval.",
+      "ceiling": "Classifier branch identity.",
+      "residual": "No physical feasibility claim."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.violated_iff_classified",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Rational interval endpoints satisfy lower ≤ upper where stated; tolerance satisfies 0 ≤ ε where stated."
+      ],
+      "statement": "For valid interval and nonnegative tolerance, VIOLATED tag iff its predicate.",
+      "ceiling": "Uses non-overlap with FEASIBLE.",
+      "residual": "Input assumptions remain explicit."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.contact_iff_classified",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Rational interval endpoints satisfy lower ≤ upper where stated; tolerance satisfies 0 ≤ ε where stated."
+      ],
+      "statement": "For valid interval and nonnegative tolerance, CONTACT tag iff its predicate.",
+      "ceiling": "Uses ordered-input disjointness.",
+      "residual": "Input assumptions remain explicit."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.unresolved_iff_classified",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "UNRESOLVED tag iff all three predicates fail, for every tolerance and interval.",
+      "ceiling": "Residual classifier rule.",
+      "residual": "No diagnosis of why uncertainty remains."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.source_regions_pairwise_disjoint",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Rational interval endpoints satisfy lower ≤ upper where stated; tolerance satisfies 0 ≤ ε where stated."
+      ],
+      "statement": "Three named source regions are pairwise disjoint on valid intervals with ε ≥ 0.",
+      "ceiling": "Exact rational inequalities.",
+      "residual": "Does not cover units/evaluator obligations."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.source_regions_cover",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Every raw interval is in a named predicate region or in the complement of all three predicates.",
+      "ceiling": "Coverage only; invalid intervals can still satisfy multiple predicates.",
+      "residual": "Logical classification completeness only."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.classification_total_exclusive",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "The prioritized classifier returns one mutually exclusive tag for every raw input.",
+      "ceiling": "Tag partition is guaranteed by the classifier definition; source predicate disjointness has separate validity assumptions.",
+      "residual": "Does not validate the supplied interval."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.constraintToSlack_endpoints",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Endpoint equations for the interval sign reversal.",
+      "ceiling": "Definitional computation.",
+      "residual": "No constraint semantics."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.positive_tolerance_boundary_is_contact",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Singleton slack interval [ε,ε] is CONTACT at ε ≥ 0.",
+      "ceiling": "Exact boundary fixture.",
+      "residual": "No tolerance calibration."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.negative_tolerance_boundary_is_contact",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "Singleton slack interval [-ε,-ε] is CONTACT at ε ≥ 0.",
+      "ceiling": "Exact boundary fixture.",
+      "residual": "No tolerance calibration."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.cross_regime_interval_is_unresolved",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [],
+      "statement": "At ε=1, slack interval [-2,2] is UNRESOLVED.",
+      "ceiling": "One exact rational fixture.",
+      "residual": "Not an empirical uncertainty test."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.invalid_interval_overlap_counterexample",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P1049-P1061"
+      ],
+      "assumptions": [
+        "Explicitly malformed endpoint order; counterexample is outside the valid-interval source domain."
+      ],
+      "statement": "Malformed interval [2,-2] at ε=1 satisfies all three raw predicates while failing validity.",
+      "ceiling": "Counterexample only to omitting interval-order condition.",
+      "residual": "Outside the source precondition; no in-domain defect."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.budgetSlack",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P1047-P1049",
+        "PAL-v2.3-M:P1055-P1067"
+      ],
+      "assumptions": [],
+      "statement": "Fixed budget minus cumulative consumption.",
+      "ceiling": "Single fixed budget scalar.",
+      "residual": "Grant epochs/top-ups are not modeled."
+    },
+    {
+      "name": "Experiments.Pal24IntervalSlack.budget_slack_antitone",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P1047-P1049",
+        "PAL-v2.3-M:P1055-P1067"
+      ],
+      "assumptions": [
+        "One fixed budget and one grant epoch; cumulative consumption is nondecreasing."
+      ],
+      "statement": "Nondecreasing cumulative consumption makes fixed-budget slack nonincreasing.",
+      "ceiling": "Rational order and unchanged budget.",
+      "residual": "Applies within one fixed epoch only."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "claim_id": "APCI-v1.0.0-manuscript-supplement",
+  "mathematics": {
+    "assertion_tested": "Lean checks the general finite reachable-trace answer-class obstruction and three source-specific boundary controls.",
+    "coefficient_domain": "Lean 4 dependent types, exact equality and natural-number finite types; no floating arithmetic",
+    "conventions": "APCI v1.0.0 definitions; arbitrary World, Trace, Answer types; actual reachable subtype; classical logic where printed",
+    "inputs": [
+      "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+      "Audits/2026-10-08-manuscript/verify.py",
+      "Audits/2026-10-08-manuscript/CONTRACT.md",
+      "source-manifest.json",
+      "Receipts/2026-10-08-local-replay/receipt.json",
+      "Sources/APCI_Declared_Interface_v1.0.0.docx",
+      "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+      "Lean project/APCILeanAudit.lean",
+      "Lean project/Audit.lean",
+      "Lean project/lakefile.lean",
+      "Lean project/APCILeanAudit/Controls.lean",
+      "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "Lean project/APCILeanAudit/Interface.lean",
+      "Lean project/lean-toolchain",
+      "Lean project/lake-manifest.json",
+      "Lean project/THEOREM_INVENTORY.json",
+      "Lean project/audit/AXIOM_RECEIPT.txt",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/Controls.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/FiniteCapacity.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/Interface.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit.olean"
+    ],
+    "bounds": {
+      "source_claim": "DOCX P0072-P0073, PDF section 4.1 page 6",
+      "supplementary_theorems": 4,
+      "new_corollaries": 1,
+      "boundary_controls": 3,
+      "prior_declarations_reused": 15,
+      "timeout_per_formal_command_seconds": 120,
+      "compiler_threads": 1,
+      "compiler_requested_memory_MB": 2048,
+      "proof_repair_attempts_max": 3
+    },
+    "non_claims": [
+      "No other keyring lane executed.",
+      "No physical capacity premise, thermodynamics, quantum extension, or external nanoda verification.",
+      "Source-to-formal matching is self-review; command success alone is not semantic alignment.",
+      "Standard Lean logical dependencies are retained."
+    ]
+  },
+  "execution_artifacts": [
+    "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+    "Audits/2026-10-08-manuscript/verify.py",
+    "Audits/2026-10-08-manuscript/CONTRACT.md",
+    "source-manifest.json",
+    "Receipts/2026-10-08-local-replay/receipt.json",
+    "Sources/APCI_Declared_Interface_v1.0.0.docx",
+    "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+    "Lean project/APCILeanAudit.lean",
+    "Lean project/Audit.lean",
+    "Lean project/lakefile.lean",
+    "Lean project/APCILeanAudit/Controls.lean",
+    "Lean project/APCILeanAudit/FiniteCapacity.lean",
+    "Lean project/APCILeanAudit/Interface.lean",
+    "Lean project/lean-toolchain",
+    "Lean project/lake-manifest.json",
+    "Lean project/THEOREM_INVENTORY.json",
+    "Lean project/audit/AXIOM_RECEIPT.txt",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/Controls.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/FiniteCapacity.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/Interface.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit.olean"
+  ],
+  "software": [
+    {
+      "name": "Lean and bundled leanchecker",
+      "version": "4.32.1, f054605aea4b840552cca2e725580bffd1e1b704"
+    },
+    {
+      "name": "Python checker",
+      "version": "3.12.14"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

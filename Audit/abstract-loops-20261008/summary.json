@@ -1,0 +1,143 @@
+{
+  "schema": "abstract-loops-workshop-summary-v1",
+  "local_date": "2026-10-08",
+  "key": "MATH-SHELF-FIVE-PAPERS-v1",
+  "activated_scope": [
+    "AL-A",
+    "AL-B",
+    "AL-C"
+  ],
+  "state": "COMPLETE_SELECTED_BATCHES",
+  "batches": [
+    {
+      "batch": "AL-A",
+      "execution_state": "PASS_BOUNDED_LEAN_CHECKS",
+      "source_groups": [
+        "AL-A/capacity",
+        "AL-A/capacity-controls",
+        "AL-A/finite-image",
+        "AL-A/merge-budget",
+        "AL-A/time-and-infinity-controls"
+      ],
+      "explicit_declarations": 22,
+      "declaration_kinds": {
+        "def": 3,
+        "theorem": 19
+      },
+      "declaration_roles": {
+        "definition": 3,
+        "helper_lemma": 9,
+        "formal_result": 9,
+        "reused_result_or_specialization": 1
+      },
+      "receipt": "AL-A/results.json",
+      "receipt_sha256": "e0e3a4517847f119ac692b34c91d5c401f72bc3f5722dc6ccc961f7704da1029",
+      "module": "Experiments.AbstractLoopsFiniteImage",
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "AL-B",
+      "execution_state": "PASS_BOUNDED_LEAN_CHECKS",
+      "source_groups": [
+        "AL-B/protocol",
+        "AL-B/surplus",
+        "AL-B/run-account",
+        "AL-B/possible-inevitable",
+        "AL-B/persistence"
+      ],
+      "explicit_declarations": 28,
+      "declaration_kinds": {
+        "theorem": 17,
+        "def": 10,
+        "inductive": 1
+      },
+      "declaration_roles": {
+        "formal_result": 15,
+        "definition": 11,
+        "helper_lemma": 1,
+        "definition_or_direct_interface_check": 1
+      },
+      "receipt": "AL-B/results.json",
+      "receipt_sha256": "88b8e49e26f0c94f67f4fa56c84c64e16196af368a1c413d4d1093ba411cf355",
+      "module": "Experiments.AbstractLoopsDynamics",
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "AL-C",
+      "execution_state": "PASS_BOUNDED_LEAN_CHECKS",
+      "source_groups": [
+        "AL-C/readable-return",
+        "AL-C/typed-model",
+        "AL-C/generation-fixture",
+        "AL-C/initializer"
+      ],
+      "explicit_declarations": 26,
+      "declaration_kinds": {
+        "def": 13,
+        "theorem": 12,
+        "inductive": 1
+      },
+      "declaration_roles": {
+        "definition": 14,
+        "definition_or_direct_interface_check": 2,
+        "formal_result": 7,
+        "helper_lemma": 2,
+        "reused_result_or_specialization": 1
+      },
+      "receipt": "AL-C/results.json",
+      "receipt_sha256": "9b970e851be77b58a9db6bb0b9185c14127ae172a167267d9702777fd4b9d93f",
+      "module": "Experiments.AbstractLoopsReturnExport",
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "new_source_defects_found": [],
+  "earlier_coverage_gaps_closed": [
+    "C1 reachable-capacity obligations",
+    "C5 arbitrary alternatives with finite reachable image"
+  ],
+  "existing_evidence": {
+    "C1": {
+      "declarations": 19,
+      "theorems": 9,
+      "count_as_new": false
+    },
+    "C5": {
+      "declarations": 12,
+      "theorems": 8,
+      "count_as_new": false
+    }
+  },
+  "review": "REVIEW.md",
+  "clarifications": "CLARIFICATIONS.md",
+  "readable_receipt_book": "RECEIPT_BOOK.md",
+  "integration": "integration-results.json",
+  "limits": [
+    "Self-review, bundled kernel implementation",
+    "No physical carrier generation, LQG, causal-baseline identification or implementation efficiency theorem",
+    "No manuscript edit, source adoption, CI or publication"
+  ],
+  "unactivated_key_batches": [
+    "SCT-A",
+    "SCT-B",
+    "SCT-C",
+    "CC-A",
+    "CC-B",
+    "CC-C",
+    "GPPR-A",
+    "GPPR-B",
+    "GPPR-C",
+    "FA-A"
+  ]
+}

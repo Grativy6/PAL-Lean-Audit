@@ -1,0 +1,70 @@
+import Experiments.CompactificationFixtures
+
+set_option pp.fullNames true
+
+#check @Experiments.CompactificationFixtures.fiber_answer_bound
+#print axioms Experiments.CompactificationFixtures.fiber_answer_bound
+#check @Experiments.CompactificationFixtures.maximum_answer_bound
+#print axioms Experiments.CompactificationFixtures.maximum_answer_bound
+#check @Experiments.CompactificationFixtures.cube
+#print axioms Experiments.CompactificationFixtures.cube
+#check @Experiments.CompactificationFixtures.cubeEdges
+#print axioms Experiments.CompactificationFixtures.cubeEdges
+#check @Experiments.CompactificationFixtures.cube_vertex_and_edge_counts
+#print axioms Experiments.CompactificationFixtures.cube_vertex_and_edge_counts
+#check @Experiments.CompactificationFixtures.cube_fibers
+#print axioms Experiments.CompactificationFixtures.cube_fibers
+#check @Experiments.CompactificationFixtures.cube_side_bit
+#print axioms Experiments.CompactificationFixtures.cube_side_bit
+#check @Experiments.CompactificationFixtures.omega
+#print axioms Experiments.CompactificationFixtures.omega
+#check @Experiments.CompactificationFixtures.omega_coordinates
+#print axioms Experiments.CompactificationFixtures.omega_coordinates
+#check @Experiments.CompactificationFixtures.omega_quadratic
+#print axioms Experiments.CompactificationFixtures.omega_quadratic
+#check @Experiments.CompactificationFixtures.lattice
+#print axioms Experiments.CompactificationFixtures.lattice
+#check @Experiments.CompactificationFixtures.lattice_injective
+#print axioms Experiments.CompactificationFixtures.lattice_injective
+#check @Experiments.CompactificationFixtures.omega_nonreal
+#print axioms Experiments.CompactificationFixtures.omega_nonreal
+#check @Experiments.CompactificationFixtures.actual_cube_projection
+#print axioms Experiments.CompactificationFixtures.actual_cube_projection
+#check @Experiments.CompactificationFixtures.complex_projection_counts
+#print axioms Experiments.CompactificationFixtures.complex_projection_counts
+#check @Experiments.CompactificationFixtures.discrete_hub_size
+#print axioms Experiments.CompactificationFixtures.discrete_hub_size
+#check @Experiments.CompactificationFixtures.mean
+#print axioms Experiments.CompactificationFixtures.mean
+#check @Experiments.CompactificationFixtures.common
+#print axioms Experiments.CompactificationFixtures.common
+#check @Experiments.CompactificationFixtures.residual
+#print axioms Experiments.CompactificationFixtures.residual
+#check @Experiments.CompactificationFixtures.mean_constant
+#print axioms Experiments.CompactificationFixtures.mean_constant
+#check @Experiments.CompactificationFixtures.mean_surjective
+#print axioms Experiments.CompactificationFixtures.mean_surjective
+#check @Experiments.CompactificationFixtures.comparison_dimension
+#print axioms Experiments.CompactificationFixtures.comparison_dimension
+#check @Experiments.CompactificationFixtures.common_comparison_reconstruction
+#print axioms Experiments.CompactificationFixtures.common_comparison_reconstruction
+#check @Experiments.CompactificationFixtures.mean_fiber
+#print axioms Experiments.CompactificationFixtures.mean_fiber
+#check @Experiments.CompactificationFixtures.mean_loses_comparisons
+#print axioms Experiments.CompactificationFixtures.mean_loses_comparisons
+#check @Experiments.CompactificationFixtures.sectorInteger
+#print axioms Experiments.CompactificationFixtures.sectorInteger
+#check @Experiments.CompactificationFixtures.sector
+#print axioms Experiments.CompactificationFixtures.sector
+#check @Experiments.CompactificationFixtures.angularResidual
+#print axioms Experiments.CompactificationFixtures.angularResidual
+#check @Experiments.CompactificationFixtures.residual_bounds
+#print axioms Experiments.CompactificationFixtures.residual_bounds
+#check @Experiments.CompactificationFixtures.sector_range
+#print axioms Experiments.CompactificationFixtures.sector_range
+#check @Experiments.CompactificationFixtures.phase_reconstruction
+#print axioms Experiments.CompactificationFixtures.phase_reconstruction
+#check @Experiments.CompactificationFixtures.radians_reconstruction
+#print axioms Experiments.CompactificationFixtures.radians_reconstruction
+#check @Experiments.CompactificationFixtures.sector_collision_and_tie
+#print axioms Experiments.CompactificationFixtures.sector_collision_and_tie

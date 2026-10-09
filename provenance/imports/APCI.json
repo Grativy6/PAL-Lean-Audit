@@ -1,0 +1,163 @@
+{
+  "repository": "https://github.com/Grativy6/APCI-Lean-Audit",
+  "original_commit": "0f85cc7fac47c3b34ecfd11160f3efae454b900c",
+  "original_tree": "a4418e2fb2c1fe5ffe6be768a419385da8834c99",
+  "prefix": "projects/APCI",
+  "method": "Unrelated-history merge with original commits retained and original tree read at prefix; no squash, no nested Git directory",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "git_blob": "dc54f0418362dcd44b12a722426b8c1a5205e89d",
+      "sha256": "c0caa2a6870c7d89a84a1d6c2b3ef0d2228bd6eeccd8b304199886407619c543",
+      "bytes": 1338,
+      "mode": "100644"
+    },
+    {
+      "path": ".gitignore",
+      "git_blob": "eec0daa2071995699e7a406e695e44d4aa976f9b",
+      "sha256": "787772219bba8d73d5a232fa62f7de3f6f69d7298dbdf9d4d50d343d19d6e4cd",
+      "bytes": 68,
+      "mode": "100644"
+    },
+    {
+      "path": "APCILeanAudit.lean",
+      "git_blob": "ff3972b17ecf127616827ab82adb6d44a5c0475d",
+      "sha256": "3d76bd08a24cf7614ca68f2ad3858a1df886ef662e09790534a0a7b15aba8708",
+      "bytes": 97,
+      "mode": "100644"
+    },
+    {
+      "path": "APCILeanAudit/Controls.lean",
+      "git_blob": "382c25b97785f627c1bb56355a1be2ff49129b26",
+      "sha256": "91cf4c1b72c5f390b0f0cd3eeaba0cdeeaadcc8e170e19593b69d9afeb4b01db",
+      "bytes": 866,
+      "mode": "100644"
+    },
+    {
+      "path": "APCILeanAudit/FiniteCapacity.lean",
+      "git_blob": "269659e3c9167318d5e726e6a15ef79e1bf22a9f",
+      "sha256": "1abe8999380b5a7c32c44846bd9e4974639ae3fb0d71eaa9edc2f123428633f4",
+      "bytes": 2659,
+      "mode": "100644"
+    },
+    {
+      "path": "APCILeanAudit/Interface.lean",
+      "git_blob": "14a3286433af1b4909f69ac12ce41491a391782b",
+      "sha256": "94a81ed49c32457bf40404200f8632edee1bee1784080efbaa0ae02c244f7ab4",
+      "bytes": 4487,
+      "mode": "100644"
+    },
+    {
+      "path": "AUDIT_SCOPE.md",
+      "git_blob": "9c40b57c7e26fbadef5567dda8bb124ba844d1c1",
+      "sha256": "2164a547658724ca747ac9fee116739bfe1a7c2ecb1b9101bf0c193551f4c076",
+      "bytes": 2242,
+      "mode": "100644"
+    },
+    {
+      "path": "AUTHORITY_CEILING.md",
+      "git_blob": "5f35cd302ccfab1ac89bb4f8d9463fb44bcc4d35",
+      "sha256": "3ebc302d84310ee9400b413429b635d0d9a8363696ca9531df7431505c2e8a03",
+      "bytes": 1451,
+      "mode": "100644"
+    },
+    {
+      "path": "Audit.lean",
+      "git_blob": "b2858f13fe5c760a05b3c96d07266b57db9ae3b2",
+      "sha256": "e58bd1358068be872b9c82a7a10289cef11556d6deee0d48541707ae48f6c886",
+      "bytes": 1018,
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "git_blob": "5e2469c085a51ec73efc101e30a5f0c2a64e1efd",
+      "sha256": "909ddfad0545e27d8a9200d415c8abec6b943e869ba2778e274c0e5f47c36897",
+      "bytes": 2436,
+      "mode": "100644"
+    },
+    {
+      "path": "SOURCE_LOCK.md",
+      "git_blob": "9b8ed61fab575203e285ca0f72aa1a7b889ac1ea",
+      "sha256": "0d65741b8f0a7a51bd7b9d9049000c35a49c89164b0f591778630ef073006428",
+      "bytes": 1704,
+      "mode": "100644"
+    },
+    {
+      "path": "THEOREM_INVENTORY.json",
+      "git_blob": "5df28c27b06300cbf37e386aa1df5f585c25ac87",
+      "sha256": "53f5f26f15748f22b3e147d54ecd20be2e51097d8cbe23434d0e1e67643c91f2",
+      "bytes": 2010,
+      "mode": "100644"
+    },
+    {
+      "path": "audit/AUDIT_REPORT.md",
+      "git_blob": "fd82e22fc45b717b74ba82a7cc37b0bba9ebff9a",
+      "sha256": "0a2753405c25842307bc6e0f1ce5ba5a89773db7097e77173f5f779c24f01015",
+      "bytes": 2846,
+      "mode": "100644"
+    },
+    {
+      "path": "audit/AXIOM_RECEIPT.txt",
+      "git_blob": "54fd6e0d2623e5950fc8da6c952c202a12509cc5",
+      "sha256": "16ef054d37dd5ec002ce95112f2209558459c5765dd7fb42bb304e47430a1753",
+      "bytes": 1403,
+      "mode": "100644"
+    },
+    {
+      "path": "audit/NANODA_COMPATIBILITY.md",
+      "git_blob": "b408c99eb3525a3ff5233d0d28ce14d999fc47e2",
+      "sha256": "b50328efa093ccace7f28abd8e4306f388d9c9901ab6bf3b181545a4188e423c",
+      "bytes": 1321,
+      "mode": "100644"
+    },
+    {
+      "path": "lake-manifest.json",
+      "git_blob": "568984e015a4ebc637c068413ed3b2ff34265306",
+      "sha256": "af036f93df1433b0bef0d3bf841d6a3a33ddc4a44d2c20e8ab8c1c3f2639bdf2",
+      "bytes": 154,
+      "mode": "100644"
+    },
+    {
+      "path": "lakefile.lean",
+      "git_blob": "fa3945510bd4fafdfb881ad3f00f25faf20dba90",
+      "sha256": "48a805ec5f47c813342220be6140bbde9ef582a089510166b7beb86fe446be0f",
+      "bytes": 121,
+      "mode": "100644"
+    },
+    {
+      "path": "lean-toolchain",
+      "git_blob": "2b61957be5f4986fcc464cb4f62322f2d6ca3dfc",
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+      "bytes": 25,
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/check_inventory.py",
+      "git_blob": "82e7d31fca00177a293bfa02dd6260ea9c5aa591",
+      "sha256": "018cf6c867d84cda5e1cff601414c335f4213afed9e1a0bcd7010425e2ead121",
+      "bytes": 1710,
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/policy_scan.sh",
+      "git_blob": "9980e0b9195524f7eaa5cc5a8fe260fa56e632fb",
+      "sha256": "3638863dd7cf1962129dc038d6e88ea6a989c27493646e3ea3247134885a451e",
+      "bytes": 1361,
+      "mode": "100755"
+    },
+    {
+      "path": "source/README.md",
+      "git_blob": "13e42e3d22b7eeb1bbfa0a9466da95de21ba9733",
+      "sha256": "564607afd483ed9559f250584665dd04bcef33ce1ab08d05193d9b21328a7805",
+      "bytes": 537,
+      "mode": "100644"
+    },
+    {
+      "path": "source/SOURCE_ARCHIVE.sha256",
+      "git_blob": "2fa102a949f8af5ffb51303c9e408be93db9d4c1",
+      "sha256": "9a039426fb022269b87f4c8bcb72fab3ea0bcb0940cca2cf6db29a477c26a0e4",
+      "bytes": 125,
+      "mode": "100644"
+    }
+  ]
+}

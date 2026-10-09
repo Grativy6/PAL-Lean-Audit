@@ -1,0 +1,216 @@
+{
+  "batch": "CC-B",
+  "module": "Experiments.CompactificationProfile",
+  "declarations": [
+    {
+      "name": "Experiments.CompactificationProfile.Lost",
+      "kind": "def",
+      "source_line": 7,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.refinement_exact",
+      "kind": "theorem",
+      "source_line": 10,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.derived_side_changes_no_loss",
+      "kind": "theorem",
+      "source_line": 14,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.postprocessing_inclusion",
+      "kind": "theorem",
+      "source_line": 20,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.postprocessing_equality",
+      "kind": "theorem",
+      "source_line": 23,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.question_coarsening",
+      "kind": "theorem",
+      "source_line": 29,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.question_injective_equality",
+      "kind": "theorem",
+      "source_line": 34,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.strict_loss_controls",
+      "kind": "theorem",
+      "source_line": 40,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.Extension",
+      "kind": "def",
+      "source_line": 47,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.quotient_descent_iff",
+      "kind": "theorem",
+      "source_line": 50,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.extensionEquiv",
+      "kind": "def",
+      "source_line": 63,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.extension_existence_preserved",
+      "kind": "theorem",
+      "source_line": 75,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.detector_image_transport",
+      "kind": "theorem",
+      "source_line": 80,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.loss_transport",
+      "kind": "theorem",
+      "source_line": 87,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.empty_extensions_vacuous_decoder",
+      "kind": "theorem",
+      "source_line": 93,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.undefined_is_not_zero",
+      "kind": "theorem",
+      "source_line": 100,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.empty_reachable_decoder",
+      "kind": "theorem",
+      "source_line": 102,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.compatible_restriction_telescope",
+      "kind": "theorem",
+      "source_line": 107,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement",
+      "kind": "theorem",
+      "source_line": 112,
+      "source_target": "Audit/workshop-rest-20261008/CC-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

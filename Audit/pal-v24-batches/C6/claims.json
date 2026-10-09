@@ -1,0 +1,315 @@
+{
+  "batch": "C6",
+  "module": "Experiments.Pal24HistoryQuotient",
+  "axioms_module": "Experiments.Pal24HistoryQuotientAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "corpus_source"
+    },
+    {
+      "path": "artifacts/pal-v23-charter-2026-09-07/sources/PAL_v2.3-M_Mathematical_Realization_Atlas.txt",
+      "sha256": "ef2030ee8d540aba439e001c6265806e61d6005361dd723f969c72772492fe47",
+      "role": "source_extraction"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C6/source-excerpts.json",
+      "sha256": "d61d1982d2b37d7d1ab6e74b73e0dd9cda2abb1fd763c813346c5f68221bb68a",
+      "role": "source_excerpts"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0807-P0809"
+      ],
+      "assumptions": [
+        "Alphabet and Observation are supplied types; observe is a total deterministic function on all finite histories."
+      ],
+      "statement": "Two finite-list histories are future-equivalent exactly when every finite suffix yields equal task observations.",
+      "ceiling": "Definition over all finite list suffixes and the supplied observation function.",
+      "residual": "No application-specific task semantics, observation adequacy, or Myhill-Nerode minimality."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent_refl",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "Equality is the observation comparison."
+      ],
+      "statement": "Future-equivalence is reflexive for every supplied task observation.",
+      "ceiling": "Equivalence law only.",
+      "residual": "No task source or utility result."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent_symm",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "Equality is symmetric."
+      ],
+      "statement": "Future-equivalence is symmetric for every supplied task observation.",
+      "ceiling": "Equivalence law only.",
+      "residual": "No task source or utility result."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent_trans",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "Equality is transitive."
+      ],
+      "statement": "Future-equivalence is transitive for every supplied task observation.",
+      "ceiling": "Equivalence law only.",
+      "residual": "No task source or utility result."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent_right_congruent",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809",
+        "PAL-v2.3-M:P0813",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "All finite lists are histories and all finite lists are admissible continuations; append associativity."
+      ],
+      "statement": "Equivalent histories remain equivalent after appending any common finite suffix.",
+      "ceiling": "Right congruence for the unrestricted list-history and all-suffix model.",
+      "residual": "The theorem does not apply unchanged to a restricted continuation aperture."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureSetoid",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809-P0811"
+      ],
+      "assumptions": [
+        "The proved reflexive, symmetric, and transitive laws for future-equivalence."
+      ],
+      "statement": "Package future-equivalence as the Setoid relation used to form the history quotient.",
+      "ceiling": "A quotient relation for the declared task observation only.",
+      "residual": "No minimality or computational quotient representation."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.historyClass",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0808-P0811"
+      ],
+      "assumptions": [
+        "Histories are finite lists and the Setoid is future-equivalence for the supplied observation."
+      ],
+      "statement": "Map each history to its canonical class in the task-relative quotient.",
+      "ceiling": "Abstract quotient class only.",
+      "residual": "No efficiency, canonical representative, or decidable equality claim."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.historyClass_eq_iff_futureEquivalent",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809-P0811"
+      ],
+      "assumptions": [
+        "The quotient uses the declared future-equivalence Setoid."
+      ],
+      "statement": "Two histories have the same quotient class exactly when they are future-equivalent.",
+      "ceiling": "Standard quotient characterization for this Setoid.",
+      "residual": "No minimality theorem or computable representation."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalent_implies_current_observation",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0809-P0815"
+      ],
+      "assumptions": [
+        "The empty list is an admissible finite continuation."
+      ],
+      "statement": "Future-equivalent histories have equal current task observations, by taking the empty suffix.",
+      "ceiling": "A factorization prerequisite only; no totalization or reachable-image decoder theorem is claimed.",
+      "residual": "Decoder class, reachability, and task adequacy are not modeled."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.quotientObservation",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0807-P0815"
+      ],
+      "assumptions": [
+        "Observation is constant on each future-equivalence class, proved from the empty suffix."
+      ],
+      "statement": "The current task observation descends to a well-defined function on future-equivalence classes.",
+      "ceiling": "Well-defined abstract quotient map only.",
+      "residual": "No decoder-class separation, reachable-image semantics, or computability."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0813-P0815",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "Aperture is a supplied predicate on allowed finite suffixes; observe remains total on all lists."
+      ],
+      "statement": "Restricted future-equivalence compares observations only for suffixes admitted by the supplied continuation aperture.",
+      "ceiling": "Suffix-indexed restricted relation only.",
+      "residual": "No history-indexed varying aperture or closure consequence without an explicit closure premise."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.apertureFutureEquivalent_right_congruent",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0813-P0815",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "The continuation aperture is explicitly closed under prefixing the common appended task symbol."
+      ],
+      "statement": "Restricted future-equivalence is preserved by appending a task when every admitted suffix remains admitted after that task is prefixed.",
+      "ceiling": "Right congruence conditional on the displayed closure hypothesis.",
+      "residual": "Closure is not inferred for an arbitrary restricted aperture."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.constantTask",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0817"
+      ],
+      "assumptions": [
+        "Finite Boolean observation codomain."
+      ],
+      "statement": "A constant task observation returns false for every finite history.",
+      "ceiling": "Counterfixture to an unconditional nontrivial-usefulness claim.",
+      "residual": "No interpretation of a real task's usefulness."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.headTask",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0817-P0821"
+      ],
+      "assumptions": [
+        "Boolean alphabet and Option Bool observation."
+      ],
+      "statement": "A head-reading task observes the first Boolean symbol when present.",
+      "ceiling": "Finite-list task fixture only.",
+      "residual": "No real-world task semantics."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.constantTask_one_class",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0817"
+      ],
+      "assumptions": [
+        "Constant Boolean task observation."
+      ],
+      "statement": "Every pair of histories is future-equivalent under the constant task.",
+      "ceiling": "One-class future-equivalence fixture.",
+      "residual": "It does not establish nontrivial work or usefulness."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.constantTask_quotient_subsingleton",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0811",
+        "PAL-v2.3-M:P0817"
+      ],
+      "assumptions": [
+        "The quotient is formed from the constant task's future-equivalence relation."
+      ],
+      "statement": "The constant task quotient has at most one class.",
+      "ceiling": "Formal one-class counterfixture only.",
+      "residual": "Usefulness, work, or adequacy remains unproved."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.headTask_distinguishes_histories",
+      "kind": "theorem",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0809",
+        "PAL-v2.3-M:P0817-P0821"
+      ],
+      "assumptions": [
+        "The empty continuation is among all finite suffixes."
+      ],
+      "statement": "The head task distinguishes the empty history from the one-symbol false history.",
+      "ceiling": "A nontrivial task fixture; distinction follows already at the empty suffix.",
+      "residual": "No general nontriviality criterion for arbitrary tasks."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.task_mutation_changes_future_equivalence",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0809-P0815",
+        "PAL-v2.3-M:P0820-P0821"
+      ],
+      "assumptions": [
+        "Compare the same two histories under the constant task and the head-reading task."
+      ],
+      "statement": "The same history pair is equivalent for the constant task but inequivalent for the head-reading task.",
+      "ceiling": "Finite fixture showing the quotient depends on the supplied task observation.",
+      "residual": "No source-versioning or task-selection authority claim."
+    },
+    {
+      "name": "Experiments.Pal24HistoryQuotient.aperture_closure_is_load_bearing",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0813",
+        "PAL-v2.3-M:P0821"
+      ],
+      "assumptions": [
+        "Boolean histories over finite lists.",
+        "Aperture admits exactly the empty suffix.",
+        "Observation is natural-number history length divided by two."
+      ],
+      "statement": "The aperture fails closure under prefixing false; empty and one-symbol histories agree within it, but after common extension [false], lengths one and two have different observations.",
+      "ceiling": "Finite counterfixture showing restricted right congruence can fail when the theorem’s continuation-closure premise is omitted.",
+      "residual": "This does not challenge all-finite-suffix right congruence or refute the source-scoped theorem; it demonstrates that arbitrary restricted apertures need not satisfy the premise."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "C6-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "P0819 names a Myhill-Nerode realization but explicitly limits minimality to its theorem assumptions; this batch proves no minimality."
+    },
+    {
+      "id": "C6-MANUAL-02",
+      "status": "OPEN_MANUAL",
+      "detail": "Reachable-image decoder variants, separately proved totalization, decoder-class separation, aperture stability across task changes, and forget-to-A8 remain outside this model."
+    }
+  ]
+}

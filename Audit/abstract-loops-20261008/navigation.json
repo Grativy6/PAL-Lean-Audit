@@ -1,0 +1,426 @@
+{
+  "status": "PASS_LOCAL_LINKS_AND_GIT_INPUT_BYTES",
+  "checked_links": 73,
+  "files": [
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "sha256": "4fe93ba15bafc267c72c1e7184b5d50df5bd1579e9d00a91d822c37d605bffe7",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "sha256": "76b2eae14ae317554715df78f4cf8eff5eb2798ead65d0f79beb34f9f34e7e8b",
+      "content": "# Personal mathematics and Lean workbench\n\nYour PAL-related research stays together here. Open a named paper folder for its sources, checked claims, and proof links. The shared Lean project preserves the original collection; APCI has its own existing project inside its paper folder.\n\n## Main papers\n\n| Paper | Receipt coverage |\n| --- | --- |\n| [FRONT](<FRONT/README.md>) | Unpublished v0.4 source supplied by Chris; no FRONT-specific Lean receipt identified in this collection yet. |\n| [PAL](<PAL/README.md>) | Existing bounded Lean receipts across v2.0, v2.1, v2.3, and the v2.4 candidate. |\n| [CHARTER](<CHARTER/README.md>) | 15 original CHARTER targets and 4 follow-up targets in shared execution receipts. |\n| [BRIDGE](<BRIDGE/README.md>) | Endpoint, four-sector, diagram/readout, dimension/recovery, and generated-range receipts retained. |\n| [GOLD](<GOLD/README.md>) | Source collected; no GOLD-specific Lean receipt identified in this collection yet. |\n| [RPL](<RPL/README.md>) | v1.0 manuscript and supporting evidence package collected; not independently replayed in this organization step. |\n| [MIND](<MIND/README.md>) | 35 declarations in the retained reduced MIND-inspired continuation experiment. |\n\n## Other mathematics\n\n- [Abstract Loops](<Other mathematics/Abstract Loops/README.md>) — Three workshop batches completed with local kernel receipts, plus the preserved C1/C5 evidence. Finite-image stabilization now covers arbitrary alternatives.\n- [APCI](<Other mathematics/APCI/README.md>) — Existing audit retrieved; all 15 declarations locally replayed with matching dependencies and a passing bundled kernel check.\n- [Compactification Costs](<Other mathematics/Compactification Costs/README.md>) — Source collected; no dedicated receipt identified in this collection yet.\n- [Finite Abstraction](<Other mathematics/Finite Abstraction/README.md>) — Three-page synthesis note collected; no dedicated Lean claim selected yet.\n- [GPPR](<Other mathematics/GPPR/README.md>) — Source collected; no dedicated receipt identified in this collection yet.\n- [Single Cut Transport](<Other mathematics/Single Cut Transport/README.md>) — Source collected; no source-mapped receipt identified in this collection yet.\n\n## Shared machinery and preserved history\n\n- [Complete receipt catalog](<Shared Lean project/workbench/CATALOG.md>)\n- [How to replay the checks](<Shared Lean project/workbench/REPLAY.md>)\n- [Original migration record](<Shared Lean project/workbench/migration/2026-10-07/completion.json>)\n- [Folder reorganization record](<Shared Lean project/workbench/layout-20261008/move-receipt.json>)\n\nThe shared project moved intact: proof names, imports, Git history, old result labels, and receipt files retain their original identities. Paper folders link to the actual Lean files; they do not contain competing editable copies.\n\nThe Math Stack originals remain unchanged. Sources here are hash-checked copies. The old C: checkout remains the recovery copy. FRONT is marked unpublished; older PAL/CHARTER/BRIDGE receipts still need an explicit source map before they can count as FRONT coverage.\n\n## Audit queue\n\nAPCI's existing 15-declaration audit is now recovered and locally replayed.\n\nChris activated the Abstract Loops portion of the [five-paper workshop key](<Shared Lean project/workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md>) on 8 October 2026. **Its three batches are complete**; the [new receipt book](<Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md>) records the results. The other ten proposed batches remain unactivated. The original key and its source map are retained as preparation history.\n\nFRONT, GOLD's full audit, RPL, and recovery of CHARTER's earlier chains remain on the broader queue. Reuse a prior receipt only after its source and formal statement match.\n\n[Earlier organization and reading checkpoint](<Shared Lean project/workbench/layout-20261008/audit-queue.md>) · [Current key source map](<Shared Lean project/workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "sha256": "3b6f37f91ccd5332f340817d2b012da684c246cbc97a60faed562814bdbd0db7",
+      "content": "# Abstract Loops\n\nAbstract Loops\n\n**Current receipt coverage:** Three new workshop batches completed on 8 October\n2026, alongside the preserved C1 and C5 batches.\n\n## New workshop receipts\n\nOpen the [Abstract Loops receipt book](<../../Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md>).\nThe finite-image stabilization result now covers arbitrary alternatives, and\nthe new batches check capacity, quantifiers, dynamics, return, and export.\nAll three passed local builds, exact axiom inspection, and bundled kernel checks.\n\n- [AL-A — capacity and finite-image stabilization](<../../Shared Lean project/Audit/abstract-loops-20261008/AL-A/results.json>)\n- [AL-B — dynamics and quantifier discipline](<../../Shared Lean project/Audit/abstract-loops-20261008/AL-B/results.json>)\n- [AL-C — return, export, and complete initializer](<../../Shared Lean project/Audit/abstract-loops-20261008/AL-C/results.json>)\n- [Clarifications for Chris](<../../Shared Lean project/Audit/abstract-loops-20261008/CLARIFICATIONS.md>)\n\nNo manuscript was changed. The selected checks found no new mathematical\ndefect; carrier qualification and physical realization retain their declared\nconditions and limits.\n\nC1 and C5 belong to Abstract Loops v1.0 even though their receipts sit in the historical nine-batch audit directory.\n\n## Sources\n\n- [Abstract_Loops_v1.0.docx](<Sources/Abstract_Loops_v1.0.docx>)\n- [Abstract_Loops_v1.0.pdf](<Sources/Abstract_Loops_v1.0.pdf>)\n\n## Lean proofs and receipts\n\n### Joint certificates and answer decoding (C1)\n\n- [Execution receipt](<../../Shared Lean project/Audit/pal-v24-batches/C1/results.json>)\n- [Declared claims — claims.json](<../../Shared Lean project/Audit/pal-v24-batches/C1/claims.json>)\n- [Lean — AbstractLoopsJoint.lean](<../../Shared Lean project/Experiments/AbstractLoopsJoint.lean>)\n- [Lean — AbstractLoopsJointAxioms.lean](<../../Shared Lean project/Experiments/AbstractLoopsJointAxioms.lean>)\n\n19 explicit declarations, including 9 theorems. Local saved receipt; not a fresh CI result or a publication-source rebind.\n\n### Abstract-loop postprocessing (C5)\n\n- [Execution receipt](<../../Shared Lean project/Audit/pal-v24-batches/C5/results.json>)\n- [Declared claims — claims.json](<../../Shared Lean project/Audit/pal-v24-batches/C5/claims.json>)\n- [Lean — AbstractLoopsPostprocessing.lean](<../../Shared Lean project/Experiments/AbstractLoopsPostprocessing.lean>)\n- [Lean — AbstractLoopsPostprocessingAxioms.lean](<../../Shared Lean project/Experiments/AbstractLoopsPostprocessingAxioms.lean>)\n\n12 explicit declarations, including 8 theorems. Local saved receipt; not a fresh CI result or a publication-source rebind.\n\n\n## Working here\n\nUse this paper folder to read its sources and follow its evidence. The editable Lean files and original receipts for the existing PAL-related collection live together in the shared project, so imports and historical paths stay intact. There is one working copy of each proof.\n\n[All personal research](<../../WORKBENCH.md>) · [Complete historical receipt catalog](<../../Shared Lean project/workbench/CATALOG.md>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "sha256": "2bbbecac38c4fc2904312f870b4072dfbe6f3c0e01c0dc63f8c90804390262db",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\REVIEW.md",
+      "sha256": "2e6dd070a149e85a1c7f6fde2399ffed1f924f70adf07de84bee0b29fa87d7e3",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\CLARIFICATIONS.md",
+      "sha256": "66d6c681412b8f0f8a11c12b08d6db51a26585c9fe65c788355439057a42bd35",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\ABSTRACT_LOOPS_ACTIVATION.md",
+      "sha256": "4af56724461580b73f6e2e262261780edf2d15175bbc05044cbbad79763392bf",
+      "content": null
+    }
+  ],
+  "links": [
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/SOURCES.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\SOURCES.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/REPLAY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\REPLAY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4/LEAN_RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4\\LEAN_RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4_Zenodo/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4_Zenodo\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4_Zenodo_Upload/",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4_Zenodo_Upload"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/transfer-result.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\transfer-result.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/copied-files.jsonl",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\copied-files.jsonl"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/latest-replay.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\latest-replay.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/completion.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\completion.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/source-locations.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\source-locations.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "FRONT/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "PAL/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\PAL\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "CHARTER/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\CHARTER\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "BRIDGE/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\BRIDGE\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "GOLD/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\GOLD\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "RPL/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\RPL\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "MIND/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\MIND\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Abstract Loops/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/APCI/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Compactification Costs/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Finite Abstraction/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/GPPR/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Single Cut Transport/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/REPLAY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\REPLAY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/migration/2026-10-07/completion.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\completion.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/layout-20261008/move-receipt.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\layout-20261008\\move-receipt.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/layout-20261008/audit-queue.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\layout-20261008\\audit-queue.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/abstract-loops-20261008/AL-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/abstract-loops-20261008/AL-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/abstract-loops-20261008/AL-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/abstract-loops-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "Sources/Abstract_Loops_v1.0.docx",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "Sources/Abstract_Loops_v1.0.pdf",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/pal-v24-batches/C1/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\pal-v24-batches\\C1\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/pal-v24-batches/C1/claims.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\pal-v24-batches\\C1\\claims.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Experiments/AbstractLoopsJoint.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Experiments/AbstractLoopsJointAxioms.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJointAxioms.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/pal-v24-batches/C5/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\pal-v24-batches\\C5\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Audit/pal-v24-batches/C5/claims.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\pal-v24-batches\\C5\\claims.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Experiments/AbstractLoopsPostprocessing.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/Experiments/AbstractLoopsPostprocessingAxioms.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessingAxioms.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md",
+      "link": "../../Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-A/claims.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-A\\claims.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../Experiments/AbstractLoopsFiniteImage.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsFiniteImage.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-B/claims.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-B\\claims.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../Experiments/AbstractLoopsDynamics.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamics.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "AL-C/claims.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-C\\claims.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../Experiments/AbstractLoopsReturnExport.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExport.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "summary.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\summary.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "TARGETS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "integration-results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\integration-results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../../Other mathematics/Abstract Loops/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md",
+      "link": "../../workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\ABSTRACT_LOOPS_ACTIVATION.md",
+      "link": "../../../Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\ABSTRACT_LOOPS_ACTIVATION.md",
+      "link": "../../../Audit/abstract-loops-20261008/summary.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\summary.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\ABSTRACT_LOOPS_ACTIVATION.md",
+      "link": "../../../Audit/abstract-loops-20261008/TARGETS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md"
+    }
+  ],
+  "checked_git_head": "c52947c17e426949e16d3b40285d1bd04e228a34",
+  "committed_input_hashes": {
+    "Audit/abstract-loops-20261008/verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "Audit/abstract-loops-20261008/source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "Audit/abstract-loops-20261008/TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "Audit/abstract-loops-20261008/AL-A/claims.json": "5321412daa3af12f86824926d98369b2e47406ee7cbd93b209df6afba9a88f3f",
+    "Experiments/AbstractLoopsFiniteImage.lean": "03965f524f893cca90a5b386701415336ea988879941d18297afe3031ed4d5e9",
+    "Experiments/AbstractLoopsFiniteImageAxioms.lean": "65d1bec5046877c12acc251cf094771c96428d9892b3fa5e54a6cf47277937e0",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Audit/abstract-loops-20261008/AL-B/claims.json": "84b5c0a5af82be235c18881baca2529832dfc5aa180023361c3827df0717331d",
+    "Experiments/AbstractLoopsDynamics.lean": "209bea6686ca141e0c2bfa5153d965539ad2b1d735512413858e28afc5552324",
+    "Experiments/AbstractLoopsDynamicsAxioms.lean": "ba54e7050cd33f018e394c53e64ec32ad85ec188cde450f0fcc101cd1d1b3b46",
+    "Audit/abstract-loops-20261008/AL-C/claims.json": "f35a434df0efbaa08fcd7f1a330c5b3a5fd963baea4dc8f2f3737c75705a23f1",
+    "Experiments/AbstractLoopsReturnExport.lean": "733091c6e9319eed4ab68b1a686db8b38d6fb3119492df8358e8d51cc429db50",
+    "Experiments/AbstractLoopsReturnExportAxioms.lean": "e10e69f09bdf5ac294ba3897aa8a11cb3ee3914325bf6f2a9432e060e79783c4"
+  },
+  "snapshot_note": "Outer shelf guides are outside Git; content is retained here as a dated evidence snapshot, not another editable guide."
+}

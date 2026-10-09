@@ -1,0 +1,239 @@
+✖ [2998/2998] Building Experiments.AbstractLoopsDynamics (6.7s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\AbstractLoopsDynamics.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsDynamics.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsDynamics.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsDynamics.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsDynamics.setup.json --json
+warning: Experiments/AbstractLoopsDynamics.lean:37:61: Variable name `w` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: Experiments/AbstractLoopsDynamics.lean:75:14: unexpected token 'at'; expected '_' or identifier
+error: Experiments/AbstractLoopsDynamics.lean:79:13: unexpected token 'at'; expected '=>'
+error: Experiments/AbstractLoopsDynamics.lean:78:45: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  S
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:84:13: unexpected token 'at'; expected '=>'
+error: Experiments/AbstractLoopsDynamics.lean:83:62: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  S
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:90:37: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  S
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:93:39: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  S
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:97:17: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  S
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:99:2: Tactic `generalize` failed: result is not type correct
+  Possible runs failure
+
+x✝ : Sort u_1
+Run : x✝
+S : Type
+runs : Set sorry
+failure : S → Prop
+hne : runs.Nonempty
+hi : Inevitable runs failure
+⊢ Possible runs failure
+error: Experiments/AbstractLoopsDynamics.lean:103:25: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:104:25: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:104:59: unsolved goals
+x✝ : Sort u_1
+Run : x✝
+⊢ (sorry ∅ fun b => b = true) ∧ ¬sorry ∅ fun b => b = true
+warning: Experiments/AbstractLoopsDynamics.lean:105:8: declaration uses `sorry`
+warning: Experiments/AbstractLoopsDynamics.lean:105:20: declaration uses `sorry`
+error: Experiments/AbstractLoopsDynamics.lean:108:17: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:109:17: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:110:20: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:113:40: don't know how to synthesize implicit argument `Run`
+  @Complete (?m.15 r) (?m.16 r) Bool forkStep false r
+context:
+r : sorry
+⊢ ?m.15 r
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:113:40: don't know how to synthesize implicit argument
+  @Complete (?m.15 r) (?m.16 r) Bool forkStep false r
+context:
+r : sorry
+⊢ Sort ?u.14
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:113:30: don't know how to synthesize implicit argument `Run`
+  @forkRuns (?m.13 r) (?m.14 r)
+context:
+r : sorry
+⊢ ?m.13 r
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:113:30: don't know how to synthesize implicit argument
+  @forkRuns (?m.13 r) (?m.14 r)
+context:
+r : sorry
+⊢ Sort ?u.11
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:113:13: don't know how to synthesize placeholder
+context:
+⊢ ?m.1
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:113:13: don't know how to synthesize placeholder
+context:
+⊢ Sort ?u.3
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:114:23: unsolved goals
+⊢ waitingRun ∈ sorry
+error: Experiments/AbstractLoopsDynamics.lean:113:69: unsolved goals
+⊢ forkRuns.Nonempty ∧ ∀ r ∈ forkRuns, Complete forkStep false r
+warning: Experiments/AbstractLoopsDynamics.lean:114:32: declaration uses `sorry`
+error: Experiments/AbstractLoopsDynamics.lean:122:46: don't know how to synthesize implicit argument `Run`
+  @Inevitable ?m.8 ?m.9 Bool forkRuns fun b => b = true
+context:
+⊢ ?m.8
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:46: don't know how to synthesize implicit argument
+  @Inevitable ?m.8 ?m.9 Bool forkRuns fun b => b = true
+context:
+⊢ Sort ?u.9
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:57: don't know how to synthesize implicit argument `Run`
+  @forkRuns ?m.11 ?m.12
+context:
+⊢ ?m.11
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:57: don't know how to synthesize implicit argument
+  @forkRuns ?m.11 ?m.12
+context:
+⊢ Sort ?u.11
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:4: don't know how to synthesize implicit argument `Run`
+  @Possible ?m.1 ?m.2 Bool forkRuns fun b => b = true
+context:
+⊢ ?m.1
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:4: don't know how to synthesize implicit argument
+  @Possible ?m.1 ?m.2 Bool forkRuns fun b => b = true
+context:
+⊢ Sort ?u.3
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:13: don't know how to synthesize implicit argument `Run`
+  @forkRuns ?m.4 ?m.5
+context:
+⊢ ?m.4
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:122:13: don't know how to synthesize implicit argument
+  @forkRuns ?m.4 ?m.5
+context:
+⊢ Sort ?u.5
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: Experiments/AbstractLoopsDynamics.lean:125:4: No goals to be solved
+error: Experiments/AbstractLoopsDynamics.lean:127:14: Function expected at
+  hi
+but this term has type
+  Inevitable forkRuns fun b => b = true
+
+Note: Expected a function because this term is being applied to the argument
+  waitingRun
+error: Experiments/AbstractLoopsDynamics.lean:132:25: Function expected at
+  Run
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+
+Hint: The identifier `Run` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+error: Experiments/AbstractLoopsDynamics.lean:135:8: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+x✝ : Sort u_1
+Run : x✝
+⊢ Inevitable {failingRun} fun b => b = true
+error: Experiments/AbstractLoopsDynamics.lean:142:5: unexpected token 'at'; expected '_' or identifier
+error: Experiments/AbstractLoopsDynamics.lean:157:75: unsolved goals
+⊢ False
+warning: Experiments/AbstractLoopsDynamics.lean:158:8: declaration uses `sorry`
+warning: Experiments/AbstractLoopsDynamics.lean:158:18: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.AbstractLoopsDynamics
+error: build failed

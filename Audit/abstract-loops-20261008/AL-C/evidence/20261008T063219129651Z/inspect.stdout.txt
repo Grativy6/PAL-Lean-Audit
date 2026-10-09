@@ -1,0 +1,127 @@
+@Experiments.AbstractLoopsReturnExport.ReadableIdentity : {A O : Type} → (A → O) → (A → O) → Prop
+'Experiments.AbstractLoopsReturnExport.ReadableIdentity' does not depend on any axioms
+@Experiments.AbstractLoopsReturnExport.DirectResidual : {A O : Type} → (A → O) → (A → O) → Prop
+'Experiments.AbstractLoopsReturnExport.DirectResidual' does not depend on any axioms
+@Experiments.AbstractLoopsReturnExport.CandidatePresent : {A C : Type} → (A → Option C) → Prop
+'Experiments.AbstractLoopsReturnExport.CandidatePresent' does not depend on any axioms
+@Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity : ∀ {A O : Type} (before after : A → O),
+  ¬Experiments.AbstractLoopsReturnExport.DirectResidual before after ↔
+    Experiments.AbstractLoopsReturnExport.ReadableIdentity before after
+'Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsReturnExport.hiddenReturn : Bool × Bool → Bool × Bool
+'Experiments.AbstractLoopsReturnExport.hiddenReturn' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity : Experiments.AbstractLoopsReturnExport.ReadableIdentity
+    Prod.fst (Prod.fst ∘ Experiments.AbstractLoopsReturnExport.hiddenReturn) ∧
+  Experiments.AbstractLoopsReturnExport.hiddenReturn (Bool.false, Bool.false) ≠ (Bool.false, Bool.false)
+'Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.RosterState : Type
+'Experiments.AbstractLoopsReturnExport.RosterState' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.contributors : Experiments.AbstractLoopsReturnExport.RosterState → Bool × Bool
+'Experiments.AbstractLoopsReturnExport.contributors' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.candidate : Experiments.AbstractLoopsReturnExport.RosterState → Option Bool
+'Experiments.AbstractLoopsReturnExport.candidate' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.addresses : Experiments.AbstractLoopsReturnExport.RosterState → Finset ℕ
+'Experiments.AbstractLoopsReturnExport.addresses' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsReturnExport.writeCandidate : Bool →
+  Experiments.AbstractLoopsReturnExport.RosterState → Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.writeCandidate' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.declared_cut_witness : ∀ (a b c value : Bool),
+  Experiments.AbstractLoopsReturnExport.contributors
+        (Experiments.AbstractLoopsReturnExport.writeCandidate value
+          (Experiments.AbstractLoopsReturnExport.RosterState.extended a b c)) =
+      (a, b) ∧
+    Experiments.AbstractLoopsReturnExport.candidate
+        (Experiments.AbstractLoopsReturnExport.writeCandidate value
+          (Experiments.AbstractLoopsReturnExport.RosterState.extended a b c)) =
+      Option.some value
+'Experiments.AbstractLoopsReturnExport.declared_cut_witness' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.closure : Bool →
+  Bool → Bool × Bool → Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.closure' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations : ∀ (direct exported : Bool),
+  (Experiments.AbstractLoopsReturnExport.ReadableIdentity id
+        (Experiments.AbstractLoopsReturnExport.contributors ∘
+          Experiments.AbstractLoopsReturnExport.closure direct exported) ↔
+      direct = Bool.false) ∧
+    (Experiments.AbstractLoopsReturnExport.DirectResidual id
+          (Experiments.AbstractLoopsReturnExport.contributors ∘
+            Experiments.AbstractLoopsReturnExport.closure direct exported) ↔
+        direct = Bool.true) ∧
+      (Experiments.AbstractLoopsReturnExport.CandidatePresent
+          (Experiments.AbstractLoopsReturnExport.candidate ∘
+            Experiments.AbstractLoopsReturnExport.closure direct exported) ↔
+        exported = Bool.true)
+'Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsReturnExport.coupledStep : Bool →
+  Bool → Experiments.AbstractLoopsReturnExport.RosterState → Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.coupledStep' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.baselineStep : Experiments.AbstractLoopsReturnExport.RosterState →
+  Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.baselineStep' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.coupledHistory : Bool →
+  Bool × Bool → ℕ → Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.coupledHistory' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.baselineHistory : Bool × Bool →
+  ℕ → Experiments.AbstractLoopsReturnExport.RosterState
+'Experiments.AbstractLoopsReturnExport.baselineHistory' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.coupled_history_after_entry : ∀ (direct : Bool) (input : Bool × Bool) (n : ℕ),
+  Experiments.AbstractLoopsReturnExport.coupledHistory direct input (n + 1) =
+    Experiments.AbstractLoopsReturnExport.closure direct Bool.true input
+'Experiments.AbstractLoopsReturnExport.coupled_history_after_entry' depends on axioms: [propext]
+Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster : ∀ (input : Bool × Bool) (n : ℕ),
+  Experiments.AbstractLoopsReturnExport.baselineHistory input n =
+    Experiments.AbstractLoopsReturnExport.RosterState.original input.1 input.2
+'Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.generated_fixture_receipt : ∀ (input : Bool × Bool) (n : ℕ),
+  2 ∈
+      Experiments.AbstractLoopsReturnExport.addresses
+        (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) ∧
+    2 ∉
+        Experiments.AbstractLoopsReturnExport.addresses
+          (Experiments.AbstractLoopsReturnExport.baselineHistory input n) ∧
+      Experiments.AbstractLoopsReturnExport.candidate
+            (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) =
+          Option.some input.2 ∧
+        Experiments.AbstractLoopsReturnExport.candidate
+              (Experiments.AbstractLoopsReturnExport.baselineHistory input n) =
+            Option.none ∧
+          Experiments.AbstractLoopsReturnExport.contributors
+              (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) =
+            input
+'Experiments.AbstractLoopsReturnExport.generated_fixture_receipt' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence : 2 ∈
+    Experiments.AbstractLoopsReturnExport.addresses
+      (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ∧
+  2 ∉
+    Experiments.AbstractLoopsReturnExport.addresses
+      ((fun x => Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false)
+        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true))
+'Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy : 2 ∈
+    Experiments.AbstractLoopsReturnExport.addresses
+      (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ∧
+  Experiments.AbstractLoopsReturnExport.contributors
+        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) =
+      Experiments.AbstractLoopsReturnExport.contributors
+        (Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false) ∧
+    Experiments.AbstractLoopsReturnExport.candidate
+        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ≠
+      Option.some
+        (Experiments.AbstractLoopsReturnExport.contributors
+            (Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false)).2
+'Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy' depends on axioms: [propext, Quot.sound]
+@Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer : ∀ {W I C : Type} (initializer : W → I)
+  (emit : I → Option C) (u v : W), initializer u = initializer v → emit (initializer u) = emit (initializer v)
+'Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer' does not depend on any axioms
+Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling : Experiments.AbstractLoopsJoint.Certifies
+    (fun w => Option.some w.2) id ∧
+  ¬Experiments.AbstractLoopsJoint.Certifies (fun w => Option.some w.2) Prod.fst
+'Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling' depends on axioms: [Classical.choice]
+@Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization : ∀ {W T E C : Type}
+  (trace : W → T) (environment : E) (emit : T × E → Option C),
+  Experiments.AbstractLoopsJoint.Certifies (fun w => emit (trace w, environment)) trace
+'Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization' does not depend on any axioms

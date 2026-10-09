@@ -1,0 +1,74 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24FeedbackAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 5018, "stderr_bytes": 0}
+Experiments.Pal24Feedback.RetainedOutput : Type u_1 → Type u_2 → Type (max u_2 u_1)
+'Experiments.Pal24Feedback.RetainedOutput' does not depend on any axioms
+Experiments.Pal24Feedback.LaterSuccessor : Type u_2 → Type u_1 → Type (max u_1 u_2)
+'Experiments.Pal24Feedback.LaterSuccessor' does not depend on any axioms
+@Experiments.Pal24Feedback.FeedbackCertificate : {X : Type u_1} →
+  {U : Type u_2} →
+    {Y : Type u_3} →
+      {Lineage : Type u_4} →
+        {State : Type u_5} →
+          (X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop) →
+            (X →
+                U →
+                  Experiments.Pal24Feedback.RetainedOutput Y Lineage →
+                    Experiments.Pal24Feedback.LaterSuccessor State Lineage) →
+              Type (max (max (max u_4 u_2) u_1) u_3)
+'Experiments.Pal24Feedback.FeedbackCertificate' does not depend on any axioms
+@Experiments.Pal24Feedback.AdmittedVariation : {X : Type u_1} →
+  {U : Type u_2} →
+    {Y : Type u_3} →
+      {Lineage : Type u_4} →
+        {State : Type u_5} →
+          (X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop) →
+            (X →
+                U →
+                  Experiments.Pal24Feedback.RetainedOutput Y Lineage →
+                    Experiments.Pal24Feedback.LaterSuccessor State Lineage) →
+              Prop
+'Experiments.Pal24Feedback.AdmittedVariation' does not depend on any axioms
+@Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation : ∀ {X : Type u_1} {U : Type u_2} {Y : Type u_3}
+  {Lineage : Type u_4} {State : Type u_5} (Adm : X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop)
+  (F :
+    X →
+      U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Experiments.Pal24Feedback.LaterSuccessor State Lineage),
+  Nonempty (Experiments.Pal24Feedback.FeedbackCertificate Adm F) ↔ Experiments.Pal24Feedback.AdmittedVariation Adm F
+'Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation' does not depend on any axioms
+@Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate : ∀ {X : Type u_1} {U : Type u_2} {Y : Type u_3}
+  {Lineage : Type u_4} {State : Type u_5} (Adm : X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop)
+  (F :
+    X →
+      U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Experiments.Pal24Feedback.LaterSuccessor State Lineage),
+  (∀ (x : X) (u : U) (first second : Experiments.Pal24Feedback.RetainedOutput Y Lineage), F x u first = F x u second) →
+    ¬Nonempty (Experiments.Pal24Feedback.FeedbackCertificate Adm F)
+'Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate' does not depend on any axioms
+Experiments.Pal24Feedback.boolRetainedFalse : Experiments.Pal24Feedback.RetainedOutput Bool Unit
+'Experiments.Pal24Feedback.boolRetainedFalse' does not depend on any axioms
+Experiments.Pal24Feedback.boolRetainedTrue : Experiments.Pal24Feedback.RetainedOutput Bool Unit
+'Experiments.Pal24Feedback.boolRetainedTrue' does not depend on any axioms
+Experiments.Pal24Feedback.boolEcho : Unit →
+  Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Experiments.Pal24Feedback.LaterSuccessor Bool Unit
+'Experiments.Pal24Feedback.boolEcho' does not depend on any axioms
+Experiments.Pal24Feedback.restrictedAdmission : Unit → Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Prop
+'Experiments.Pal24Feedback.restrictedAdmission' does not depend on any axioms
+Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain : Experiments.Pal24Feedback.boolEcho () ()
+    Experiments.Pal24Feedback.boolRetainedFalse ≠
+  Experiments.Pal24Feedback.boolEcho () () Experiments.Pal24Feedback.boolRetainedTrue
+'Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain' does not depend on any axioms
+Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation : ¬Experiments.Pal24Feedback.AdmittedVariation
+    Experiments.Pal24Feedback.restrictedAdmission Experiments.Pal24Feedback.boolEcho
+'Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation' does not depend on any axioms
+Experiments.Pal24Feedback.allBoolOutputsAdmitted : Unit →
+  Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Prop
+'Experiments.Pal24Feedback.allBoolOutputsAdmitted' does not depend on any axioms
+Experiments.Pal24Feedback.finite_positive_feedback_fixture : Nonempty
+  (Experiments.Pal24Feedback.FeedbackCertificate Experiments.Pal24Feedback.allBoolOutputsAdmitted
+    Experiments.Pal24Feedback.boolEcho)
+'Experiments.Pal24Feedback.finite_positive_feedback_fixture' does not depend on any axioms
+Experiments.Pal24Feedback.bool_echo_preserves_lineage : ∀ (input action : Unit)
+  (retained : Experiments.Pal24Feedback.RetainedOutput Bool Unit),
+  (Experiments.Pal24Feedback.boolEcho input action retained).lineage = retained.lineage
+'Experiments.Pal24Feedback.bool_echo_preserves_lineage' does not depend on any axioms
+
+PAL-STDERR-1

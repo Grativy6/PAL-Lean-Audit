@@ -1,0 +1,34 @@
+✖ [2999/2999] Building Experiments.AbstractLoopsReturnExport (6.7s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\AbstractLoopsReturnExport.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsReturnExport.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsReturnExport.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsReturnExport.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsReturnExport.setup.json --json
+error: Experiments/AbstractLoopsReturnExport.lean:70:4: failed to synthesize
+  Decidable
+    ((ReadableIdentity id (contributors ∘ closure false false) ↔ false = false) ∧
+      (DirectResidual id (contributors ∘ closure false false) ↔ false = true) ∧
+        (CandidatePresent (candidate ∘ closure false false) ↔ false = true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Experiments/AbstractLoopsReturnExport.lean:70:4: failed to synthesize
+  Decidable
+    ((ReadableIdentity id (contributors ∘ closure false true) ↔ false = false) ∧
+      (DirectResidual id (contributors ∘ closure false true) ↔ false = true) ∧
+        (CandidatePresent (candidate ∘ closure false true) ↔ true = true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Experiments/AbstractLoopsReturnExport.lean:70:4: failed to synthesize
+  Decidable
+    ((ReadableIdentity id (contributors ∘ closure true false) ↔ true = false) ∧
+      (DirectResidual id (contributors ∘ closure true false) ↔ true = true) ∧
+        (CandidatePresent (candidate ∘ closure true false) ↔ false = true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Experiments/AbstractLoopsReturnExport.lean:70:4: failed to synthesize
+  Decidable
+    ((ReadableIdentity id (contributors ∘ closure true true) ↔ true = false) ∧
+      (DirectResidual id (contributors ∘ closure true true) ↔ true = true) ∧
+        (CandidatePresent (candidate ∘ closure true true) ↔ true = true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.AbstractLoopsReturnExport
+error: build failed

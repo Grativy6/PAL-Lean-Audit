@@ -1,0 +1,172 @@
+{
+  "batch": "GPPR-A",
+  "module": "Experiments.GPPRTranscendence",
+  "declarations": [
+    {
+      "name": "Experiments.GPPRTranscendence.phi",
+      "kind": "def",
+      "source_line": 6,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.beta",
+      "kind": "def",
+      "source_line": 7,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.delta",
+      "kind": "def",
+      "source_line": 8,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.zeta",
+      "kind": "def",
+      "source_line": 9,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.minusOneLog",
+      "kind": "def",
+      "source_line": 10,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.phi_positive",
+      "kind": "theorem",
+      "source_line": 12,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.beta_exact",
+      "kind": "theorem",
+      "source_line": 14,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.exponent_exact",
+      "kind": "theorem",
+      "source_line": 21,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.delta_irrational",
+      "kind": "theorem",
+      "source_line": 23,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.delta_algebraic",
+      "kind": "theorem",
+      "source_line": 27,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.chosen_logarithm",
+      "kind": "theorem",
+      "source_line": 35,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.golden_branch_identity",
+      "kind": "theorem",
+      "source_line": 37,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.GelfondSchneiderRealExponent",
+      "kind": "def",
+      "source_line": 43,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.golden_transcendence_conditional",
+      "kind": "theorem",
+      "source_line": 48,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRTranscendence.golden_polynomial_evaluation_conditional",
+      "kind": "theorem",
+      "source_line": 54,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

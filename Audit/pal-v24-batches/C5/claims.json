@@ -1,0 +1,210 @@
+{
+  "batch": "C5",
+  "module": "Experiments.AbstractLoopsPostprocessing",
+  "axioms_module": "Experiments.AbstractLoopsPostprocessingAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Math Stack/Abstract_Loops_v1.0.docx",
+      "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+      "role": "corpus_source"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C5/source-excerpts.json",
+      "sha256": "50be78058f561d529213c2831d04a8883d78794c4d99483f096a593651e99bd2",
+      "role": "source_extraction"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C1/source-excerpts.json",
+      "sha256": "d7dc5145fabd7bd363c9dd417245bef676eae505ea110f792ccd0607d696c9cc",
+      "role": "predecessor_source_extraction"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.postprocess",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039"
+      ],
+      "assumptions": [
+        "Supplied total functions trace : α → Trace and c : Trace → Output."
+      ],
+      "statement": "Closed deterministic postprocessing is the composite c ∘ trace.",
+      "ceiling": "Function composition only; it captures no storage or physical process.",
+      "residual": "Reachability and output restrictions are not modeled."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.postprocess_preserves_kernel",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039"
+      ],
+      "assumptions": [
+        "Equality on Trace and Output is the selected comparison."
+      ],
+      "statement": "If two alternatives have equal trace values, every deterministic postprocessing gives them equal outputs.",
+      "ceiling": "One-way preservation of trace collisions for this composite function.",
+      "residual": "No converse or physical persistence claim."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.fresh_xor_observation_changes_aperture",
+      "kind": "theorem",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039",
+        "Abstract-Loops-v1.0:P0045",
+        "Abstract-Loops-v1.0:P0022-P0023"
+      ],
+      "assumptions": [
+        "The C1 Bool×Bool XOR answer and coordinate traces are used."
+      ],
+      "statement": "The first coordinate does not certify XOR, while the joint pair of coordinates does certify it.",
+      "ceiling": "Finite Boolean illustration that a newly included observation changes the interface's certifying power.",
+      "residual": "No general observation or acquisition dynamics."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.fresh_xor_pair_not_closed_postprocess",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039",
+        "Abstract-Loops-v1.0:P0045"
+      ],
+      "assumptions": [
+        "The declared Bool×Bool world and Bool first-coordinate trace."
+      ],
+      "statement": "No deterministic postprocessing of the first XOR coordinate equals the pair-valued joint trace.",
+      "ceiling": "This specific fresh pair observation is not a closed postprocessing of the first coordinate.",
+      "residual": "Other source traces or modelled inputs may carry the missing distinction."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.scheduledIteration",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0044-P0046"
+      ],
+      "assumptions": [
+        "Supplied initial map and total update family step : Nat → State → State."
+      ],
+      "statement": "Scheduled state evolution applies the indexed deterministic update at each successor step.",
+      "ceiling": "Recursive function over a declared schedule only.",
+      "residual": "No runtime, physical, or autonomous-loop semantics."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.scheduled_iteration_preserves_kernel",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039",
+        "Abstract-Loops-v1.0:P0045"
+      ],
+      "assumptions": [
+        "Each scheduled update is a total deterministic function; equality is the chosen kernel relation."
+      ],
+      "statement": "If two alternatives have equal states at step n, they have equal states at step n+1.",
+      "ceiling": "One-step equality preservation only.",
+      "residual": "No fresh observations or rereading are modeled."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.kernelPairs",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0019",
+        "Abstract-Loops-v1.0:P0037-P0039"
+      ],
+      "assumptions": [
+        "Finite World, decidable equality on World and State; equality defines the observation fibers."
+      ],
+      "statement": "kernelPairs records all ordered world pairs that a state observation maps to equal values.",
+      "ceiling": "Finite encoding of a function kernel.",
+      "residual": "No non-equality partition semantics."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.finite_relation_chain_stabilizes",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0037-P0039",
+        "Abstract-Loops-v1.0:P0046"
+      ],
+      "assumptions": [
+        "α is finite; each relations n is a finite subset of α; inclusion is monotone at each successor."
+      ],
+      "statement": "Every inclusion-monotone sequence of relations over a finite carrier is eventually constant.",
+      "ceiling": "Finite-set order result; it applies in particular to finite partition relations but does not assert a physical or infinite-domain result.",
+      "residual": "The stabilization index is existential, with no explicit bound returned."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.finite_scheduled_partition_stabilizes",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0044-P0046"
+      ],
+      "assumptions": [
+        "World is finite; State has decidable equality; updates form the supplied total family step : Nat → State → State."
+      ],
+      "statement": "The equality-kernel partitions of scheduled deterministic processing on a finite World are eventually constant.",
+      "ceiling": "Finite alternative-domain model; only induced equality partitions are stabilized.",
+      "residual": "No result for infinite World with merely finite reachable trace image, infinite reachable state, or physical storage/cycle behavior."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.booleanSwap",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": [
+        "Bool equality and Boolean negation."
+      ],
+      "statement": "booleanSwap exchanges the two Boolean state values.",
+      "ceiling": "Finite illustrative state update only.",
+      "residual": "No physical dynamics are represented."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.boolean_swap_kernel_unchanged",
+      "kind": "theorem",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": [
+        "Two-valued Bool state; kernel means equality of observed state."
+      ],
+      "statement": "Boolean swapping changes state values but leaves the equality kernel over Bool unchanged.",
+      "ceiling": "Finite fixture only.",
+      "residual": "No general invariant or persistence claim."
+    },
+    {
+      "name": "Experiments.AbstractLoopsPostprocessing.boolean_swap_has_two_cycle",
+      "kind": "theorem",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": [
+        "Boolean negation as the update."
+      ],
+      "statement": "Applying booleanSwap twice returns the original Boolean value.",
+      "ceiling": "A two-cycle fixture for the stated map.",
+      "residual": "No general trajectory theorem."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "C5-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "P0043 explicitly excludes physical destruction, entropy increase, and ontological disappearance from the informational model."
+    },
+    {
+      "id": "C5-MANUAL-02",
+      "status": "OPEN_MANUAL",
+      "detail": "P0045-P0046's infinite-alternative case with finite reachable trace image, fresh-input behavior, and physical loop interpretations are not formalized here."
+    }
+  ]
+}

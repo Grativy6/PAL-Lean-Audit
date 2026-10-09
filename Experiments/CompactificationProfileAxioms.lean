@@ -1,0 +1,42 @@
+import Experiments.CompactificationProfile
+
+set_option pp.fullNames true
+
+#check @Experiments.CompactificationProfile.Lost
+#print axioms Experiments.CompactificationProfile.Lost
+#check @Experiments.CompactificationProfile.refinement_exact
+#print axioms Experiments.CompactificationProfile.refinement_exact
+#check @Experiments.CompactificationProfile.derived_side_changes_no_loss
+#print axioms Experiments.CompactificationProfile.derived_side_changes_no_loss
+#check @Experiments.CompactificationProfile.postprocessing_inclusion
+#print axioms Experiments.CompactificationProfile.postprocessing_inclusion
+#check @Experiments.CompactificationProfile.postprocessing_equality
+#print axioms Experiments.CompactificationProfile.postprocessing_equality
+#check @Experiments.CompactificationProfile.question_coarsening
+#print axioms Experiments.CompactificationProfile.question_coarsening
+#check @Experiments.CompactificationProfile.question_injective_equality
+#print axioms Experiments.CompactificationProfile.question_injective_equality
+#check @Experiments.CompactificationProfile.strict_loss_controls
+#print axioms Experiments.CompactificationProfile.strict_loss_controls
+#check @Experiments.CompactificationProfile.Extension
+#print axioms Experiments.CompactificationProfile.Extension
+#check @Experiments.CompactificationProfile.quotient_descent_iff
+#print axioms Experiments.CompactificationProfile.quotient_descent_iff
+#check @Experiments.CompactificationProfile.extensionEquiv
+#print axioms Experiments.CompactificationProfile.extensionEquiv
+#check @Experiments.CompactificationProfile.extension_existence_preserved
+#print axioms Experiments.CompactificationProfile.extension_existence_preserved
+#check @Experiments.CompactificationProfile.detector_image_transport
+#print axioms Experiments.CompactificationProfile.detector_image_transport
+#check @Experiments.CompactificationProfile.loss_transport
+#print axioms Experiments.CompactificationProfile.loss_transport
+#check @Experiments.CompactificationProfile.empty_extensions_vacuous_decoder
+#print axioms Experiments.CompactificationProfile.empty_extensions_vacuous_decoder
+#check @Experiments.CompactificationProfile.undefined_is_not_zero
+#print axioms Experiments.CompactificationProfile.undefined_is_not_zero
+#check @Experiments.CompactificationProfile.empty_reachable_decoder
+#print axioms Experiments.CompactificationProfile.empty_reachable_decoder
+#check @Experiments.CompactificationProfile.compatible_restriction_telescope
+#print axioms Experiments.CompactificationProfile.compatible_restriction_telescope
+#check @Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement
+#print axioms Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement

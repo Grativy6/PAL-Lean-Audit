@@ -1,0 +1,16 @@
+{
+  "label": "kernel-FrontLean-Controls",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "leanchecker",
+    "FrontLean.Controls"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 39.53099999995902,
+  "stdout": "Audit/receipts/formal/kernel-FrontLean-Controls.stdout.txt",
+  "stderr": "Audit/receipts/formal/kernel-FrontLean-Controls.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "CompactificationBoundary",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundary.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 1,
+  "elapsed_seconds": 10.780999999959022,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T110220360639Z/CompactificationBoundary.stdout.txt",
+  "stdout_sha256": "7bdca8ee958de5a6ba090301f23dd6aaa7c60f3c92eb67bda71a3f7d9e351dae",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T110220360639Z/CompactificationBoundary.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

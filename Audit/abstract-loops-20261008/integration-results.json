@@ -1,0 +1,119 @@
+{
+  "schema": "abstract-loops-integration-v1",
+  "status": "PASS_INTEGRATION",
+  "started_utc": "20261008T063638083997Z",
+  "commands": [
+    {
+      "label": "default-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 3.6089999999967404,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/default-build.stdout.txt",
+      "stdout_sha256": "ed4c7411ec67e537530e61e3d15de978eb60168d53f12ac0ad23aeed2675d368",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/default-build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "root-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "PALLeanAudit"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 34.40600000001723,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/root-kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/root-kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "historical-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.15700000000651926,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/historical-policy.stdout.txt",
+      "stdout_sha256": "563adc036b5c9bec1686d23dd6396212745b7fbc734c6590c9ac9cb48d1895ad",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/historical-policy.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.15600000001722947,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/report-check.stdout.txt",
+      "stdout_sha256": "fa51595ed5d42f457bad9c08d86094966ff90d634d4268a1d04a52e932d8f654",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "migration-report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_migration_report.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.09399999998277053,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/migration-report-check.stdout.txt",
+      "stdout_sha256": "05fdb92ea694e505cadf578909c86954a94ac82b0be245fabb717c90c7864c5f",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/migration-report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "attack-run-0003-report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1559999999590218,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/attack-run-0003-report-check.stdout.txt",
+      "stdout_sha256": "bec85c3c9ab1ad93fad56a593d4fc48e801b4cb47a40c4e84e440b7a41b3fde3",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/attack-run-0003-report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0470000000204891,
+      "stdout": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/diff-check.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/abstract-loops-20261008/integration/20261008T063638083997Z/diff-check.stderr.txt",
+      "stderr_sha256": "27c51123b0695a2886e7887d49f40ec1e9681190c0f62ae5e15c1e08b2c4ed22"
+    }
+  ],
+  "receipt_mutation_controls": 6,
+  "selected_source_policy": "Every new module and inspection module checked by verify.py, exact declaration inventory and no forbidden proof escapes; historical policy has its original narrower scope.",
+  "receipts": {
+    "AL-A": "e0e3a4517847f119ac692b34c91d5c401f72bc3f5722dc6ccc961f7704da1029",
+    "AL-B": "88b8e49e26f0c94f67f4fa56c84c64e16196af368a1c413d4d1093ba411cf355",
+    "AL-C": "9b970e851be77b58a9db6bb0b9185c14127ae172a167267d9702777fd4b9d93f"
+  },
+  "scope": "Local integration; no CI, remote write, source adoption or publication"
+}

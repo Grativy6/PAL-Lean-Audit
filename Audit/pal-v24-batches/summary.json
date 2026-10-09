@@ -1,0 +1,182 @@
+{
+  "schema": "pal-v24-nine-batch-summary-v1",
+  "status": "PASS_NINE_BOUNDED_BATCHES",
+  "declarations": 231,
+  "theorems": 101,
+  "batches": [
+    {
+      "batch": "B1",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 13,
+      "theorems": 4,
+      "started_utc": "2026-09-22T09:00:29.194236+00:00",
+      "finished_utc": "2026-09-22T09:01:24.114051+00:00",
+      "result_path": "Audit/pal-v24-batches/B1/results.json",
+      "result_sha256": "8efd72df074b6005977d8ad56dfe7295f726216d5956005937100b06305f2bd9",
+      "classification_population": {
+        "BOUNDED_MODEL_DEFINITION": 5,
+        "PROVED_FROM_DECLARED_RULES": 3,
+        "COUNTERMODEL_FIXTURE_DEFINITION": 4,
+        "COUNTERMODEL_TO_OVERCLAIM": 1
+      },
+      "axiom_union": [
+        "propext"
+      ]
+    },
+    {
+      "batch": "B2",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 49,
+      "theorems": 17,
+      "started_utc": "2026-09-22T09:01:24.664050+00:00",
+      "finished_utc": "2026-09-22T09:02:21.037631+00:00",
+      "result_path": "Audit/pal-v24-batches/B2/results.json",
+      "result_sha256": "075b323bf2fccc64a8ab7b57bf5a56baedc40272a6e9af15e54c91bed6453280",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 32,
+        "PROVED_FROM_DECLARED_RULES": 17
+      },
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "B3",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 48,
+      "theorems": 18,
+      "started_utc": "2026-09-22T09:02:21.585631+00:00",
+      "finished_utc": "2026-09-22T09:03:18.346806+00:00",
+      "result_path": "Audit/pal-v24-batches/B3/results.json",
+      "result_sha256": "2428e3980bb1cbf4ec858285e5cbdd529d7ab22f66842ba578e51d8d1a2d53fd",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 11,
+        "PROVED_FROM_DECLARED_RULES": 20,
+        "ASSUMPTION_BOUND": 5,
+        "COUNTERMODEL_TO_OVERCLAIM": 12
+      },
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "C1",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 19,
+      "theorems": 9,
+      "started_utc": "2026-09-22T09:03:18.849807+00:00",
+      "finished_utc": "2026-09-22T09:04:20.904504+00:00",
+      "result_path": "Audit/pal-v24-batches/C1/results.json",
+      "result_sha256": "5432933dcb099072d3bc17714d02b3a4d1884246266d69bd2cfbb6d393dfba3c",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 8,
+        "PROVED_FROM_DECLARED_RULES": 4,
+        "ASSUMPTION_BOUND": 1,
+        "COUNTERMODEL_TO_OVERCLAIM": 6
+      },
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "C2",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 26,
+      "theorems": 17,
+      "started_utc": "2026-09-22T09:04:21.408504+00:00",
+      "finished_utc": "2026-09-22T09:10:42.645189+00:00",
+      "result_path": "Audit/pal-v24-batches/C2/results.json",
+      "result_sha256": "968c91338d99785c9f81dba4c3338da6420744f1a0ecbfb04d348249654ab519",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 9,
+        "PROVED_FROM_DECLARED_RULES": 16,
+        "COUNTERMODEL_TO_OVERCLAIM": 1
+      },
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "C3",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 30,
+      "theorems": 10,
+      "started_utc": "2026-09-22T09:10:43.168189+00:00",
+      "finished_utc": "2026-09-22T09:11:40.612858+00:00",
+      "result_path": "Audit/pal-v24-batches/C3/results.json",
+      "result_sha256": "53ec2aff663b1efa07501b78bae67ba91a8caedf2432e7ec34f70e7b46c03619",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 12,
+        "PROVED_FROM_DECLARED_RULES": 9,
+        "COUNTERMODEL_TO_OVERCLAIM": 9
+      },
+      "axiom_union": [
+        "propext"
+      ]
+    },
+    {
+      "batch": "C4",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 15,
+      "theorems": 6,
+      "started_utc": "2026-09-22T09:11:41.114856+00:00",
+      "finished_utc": "2026-09-22T09:12:34.716819+00:00",
+      "result_path": "Audit/pal-v24-batches/C4/results.json",
+      "result_sha256": "a4d5a0a36619ff41febf09a8611d90aa3b5287fef3a5d307092b895dd9cf3def",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 10,
+        "PROVED_FROM_DECLARED_RULES": 3,
+        "COUNTERMODEL_TO_OVERCLAIM": 2
+      },
+      "axiom_union": []
+    },
+    {
+      "batch": "C5",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 12,
+      "theorems": 8,
+      "started_utc": "2026-09-22T09:12:35.249819+00:00",
+      "finished_utc": "2026-09-22T09:13:35.998801+00:00",
+      "result_path": "Audit/pal-v24-batches/C5/results.json",
+      "result_sha256": "cf8984f83a1e16d4e992b746a797e6814dd9d8213319b22edbbbe983843eada4",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 7,
+        "PROVED_FROM_DECLARED_RULES": 4,
+        "COUNTERMODEL_TO_OVERCLAIM": 1
+      },
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "batch": "C6",
+      "status": "PASS_BOUNDED_LEAN_CHECKS",
+      "declarations": 19,
+      "theorems": 12,
+      "started_utc": "2026-09-22T08:59:31.600641+00:00",
+      "finished_utc": "2026-09-22T09:00:28.698238+00:00",
+      "result_path": "Audit/pal-v24-batches/C6/results.json",
+      "result_sha256": "044716f78d71616258922b1895fab95ee73b13e1d3780d94698a072338c72c79",
+      "classification_population": {
+        "CONSISTENT_REALIZATION": 5,
+        "PROVED_FROM_DECLARED_RULES": 9,
+        "COUNTERMODEL_TO_OVERCLAIM": 5
+      },
+      "axiom_union": [
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Bounded local Lean models. Counts are explicit declarations, not independent findings or full source conformance. Existing historical declarations are not counted again. Integration is recorded separately."
+}

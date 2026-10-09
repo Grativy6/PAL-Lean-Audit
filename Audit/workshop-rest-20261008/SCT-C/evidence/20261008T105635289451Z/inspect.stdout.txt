@@ -1,0 +1,41 @@
+Experiments.SingleCutOR.orders : List (List ℕ)
+'Experiments.SingleCutOR.orders' does not depend on any axioms
+Experiments.SingleCutOR.positions : List ℕ → Finset ℕ → Finset ℕ
+'Experiments.SingleCutOR.positions' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.prefixSlack : List ℕ → Finset ℕ → ℕ
+'Experiments.SingleCutOR.prefixSlack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.positions_card : ∀ (p : List ℕ) (row : Finset ℕ),
+  p.Perm (List.range 7) → (∀ x ∈ row, x < 7) → (Experiments.SingleCutOR.positions p row).card = row.card
+'Experiments.SingleCutOR.positions_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.prefixSlack_counts_missing : ∀ (p : List ℕ) (row : Finset ℕ),
+  p.Perm (List.range 7) →
+    (∀ x ∈ row, x < 7) →
+      Experiments.SingleCutOR.prefixSlack p row =
+        (Finset.range ((Experiments.SingleCutOR.positions p row).sup fun j => j + 1) \
+            Experiments.SingleCutOR.positions p row).card
+'Experiments.SingleCutOR.prefixSlack_counts_missing' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.viable : List ℕ → Bool → Bool → Bool → Bool
+'Experiments.SingleCutOR.viable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.accepted : Bool → Bool → Bool → Bool
+'Experiments.SingleCutOR.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.enumerator_length : Experiments.SingleCutOR.orders.length = 5040
+'Experiments.SingleCutOR.enumerator_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.enumerator_covers_exactly : ∀ (p : List ℕ),
+  p ∈ Experiments.SingleCutOR.orders ↔ p.Perm (List.range 7)
+'Experiments.SingleCutOR.enumerator_covers_exactly' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.enumerator_has_no_duplicates : Experiments.SingleCutOR.orders.Nodup
+'Experiments.SingleCutOR.enumerator_has_no_duplicates' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.accepted_truth_table : ∀ (a b c : Bool), Experiments.SingleCutOR.accepted a b c = (a || b || c)
+'Experiments.SingleCutOR.accepted_truth_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.local_OR : ∀ (a b c : Bool),
+  (∃ p, p.Perm (List.range 7) ∧ Experiments.SingleCutOR.viable p a b c = Bool.true) ↔ (a || b || c) = Bool.true
+'Experiments.SingleCutOR.local_OR' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.supplied_witness_100 : [3, 0, 4, 1, 2, 5, 6] ∈ Experiments.SingleCutOR.orders ∧
+  Experiments.SingleCutOR.viable [3, 0, 4, 1, 2, 5, 6] Bool.true Bool.false Bool.false = Bool.true
+'Experiments.SingleCutOR.supplied_witness_100' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.supplied_witness_010 : [0, 5, 1, 2, 3, 4, 6] ∈ Experiments.SingleCutOR.orders ∧
+  Experiments.SingleCutOR.viable [0, 5, 1, 2, 3, 4, 6] Bool.false Bool.true Bool.false = Bool.true
+'Experiments.SingleCutOR.supplied_witness_010' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutOR.supplied_witness_001 : [0, 1, 2, 3, 4, 6, 5] ∈ Experiments.SingleCutOR.orders ∧
+  Experiments.SingleCutOR.viable [0, 1, 2, 3, 4, 6, 5] Bool.false Bool.false Bool.true = Bool.true
+'Experiments.SingleCutOR.supplied_witness_001' depends on axioms: [propext, Classical.choice, Quot.sound]

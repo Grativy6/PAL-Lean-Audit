@@ -1,0 +1,5 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "build", "Experiments.AbstractLoopsPostprocessing"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 41, "stderr_bytes": 0}
+Build completed successfully (787 jobs).
+
+PAL-STDERR-1

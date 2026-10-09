@@ -1,0 +1,1618 @@
+{
+  "assert_nodes_in_checkers": 0,
+  "bytes": 38367,
+  "certificate_sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04",
+  "counts": {
+    "cards": 728,
+    "combination_nodes": 1620,
+    "inline_nodes": 898,
+    "numbered_rows": 722,
+    "references": 4089,
+    "reply_classes": 37042
+  },
+  "endpoint": {
+    "A_size": 0,
+    "T_size": 251,
+    "height": 21,
+    "pivot": [
+      8,
+      8
+    ]
+  },
+  "finite_board_translation_tests": [
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "primary.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "normal"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-O"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        -1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        1,
+        0
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        -1
+      ]
+    },
+    {
+      "T_size": 251,
+      "checker": "independent.py",
+      "error": "ValueError: final envelope is outside the 17-by-17 board",
+      "mode": [
+        "-OO"
+      ],
+      "rejected": true,
+      "translation": [
+        0,
+        1
+      ]
+    }
+  ],
+  "full_numbered_cards_compared": 728,
+  "full_postorder_nodes_compared": 1620,
+  "negative_cli_tests": 108,
+  "negative_finite_board_tests": 24,
+  "negative_raw_reconstruction_tests": 108,
+  "negative_tests": [
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: expected exactly 722 literal rows",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: invalid reference: 04:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not backward",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid reference: -4:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid reference: 4:800",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: invalid point: 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: invalid reference: 4::100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: unclosed inline expression",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unmatched closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid reference: ?!",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: expected exactly 722 literal rows",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: invalid reference: 04:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not backward",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid reference: -4:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid reference: 4:800",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: invalid point: 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: invalid reference: 4::100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: unclosed inline expression",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unmatched closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid reference: ?!",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: expected exactly 722 literal rows",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: invalid reference: 04:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not backward",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid reference: -4:100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid reference: 4:800",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: invalid point: 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: invalid reference: 4::100",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: invalid row index or missing fields",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: unclosed inline expression",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unmatched closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid reference: ?!",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "primary.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: wrong literal row count",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: blank certificate line",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: noncanonical decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not an earlier card",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid placement",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: bad coordinate 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: too many colons",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: missing closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unexpected closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "normal"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: wrong literal row count",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: blank certificate line",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: noncanonical decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not an earlier card",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid placement",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: bad coordinate 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: too many colons",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: missing closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unexpected closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-O"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "truncated_file",
+      "raw_error": "ValueError: wrong literal row count",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "missing_final_newline",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_file",
+      "raw_error": "ValueError: missing final newline",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "blank_row",
+      "raw_error": "ValueError: blank certificate line",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "bad_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "leading_zero_index",
+      "raw_error": "ValueError: nonconsecutive or noncanonical card index",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "leading_zero_reference",
+      "raw_error": "ValueError: noncanonical decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "forward_reference",
+      "raw_error": "ValueError: reference is not an earlier card",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "negative_reference",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "symmetry_eight",
+      "raw_error": "ValueError: invalid placement",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "bad_coordinate",
+      "raw_error": "ValueError: bad coordinate 1H",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "extra_colon",
+      "raw_error": "ValueError: too many colons",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_children",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "empty_inline",
+      "raw_error": "ValueError: empty child list",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "unclosed_inline",
+      "raw_error": "ValueError: missing closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "extra_close",
+      "raw_error": "ValueError: unexpected closing parenthesis",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "trailing_junk",
+      "raw_error": "ValueError: invalid decimal reference",
+      "raw_reconstruction_rejected": true
+    },
+    {
+      "checker": "independent.py",
+      "cli_exit": 1,
+      "cli_rejection": "literal SHA256 mismatch",
+      "mode": [
+        "-OO"
+      ],
+      "mutation": "non_ascii",
+      "raw_error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)",
+      "raw_reconstruction_rejected": true
+    }
+  ],
+  "normal_and_optimized_runs": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/primary-normal.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-O",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/primary-O.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-OO",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/primary-OO.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/independent-normal.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"card_height_histogram\": {\"1\": 6, \"2\": 42, \"3\": 66, \"4\": 94, \"5\": 100, \"6\": 86, \"7\": 65, \"8\": 51, \"9\": 56, \"10\": 44, \"11\": 32, \"12\": 20, \"13\": 26, \"14\": 12, \"15\": 12, \"16\": 5, \"17\": 3, \"18\": 3, \"19\": 1, \"20\": 3, \"21\": 1}, \"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"matrix_checks\": {\"composition_pairs_checked\": 64, \"distinct_signed_permutation_matrices\": 8}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-O",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/independent-O.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"card_height_histogram\": {\"1\": 6, \"2\": 42, \"3\": 66, \"4\": 94, \"5\": 100, \"6\": 86, \"7\": 65, \"8\": 51, \"9\": 56, \"10\": 44, \"11\": 32, \"12\": 20, \"13\": 26, \"14\": 12, \"15\": 12, \"16\": 5, \"17\": 3, \"18\": 3, \"19\": 1, \"20\": 3, \"21\": 1}, \"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"matrix_checks\": {\"composition_pairs_checked\": 64, \"distinct_signed_permutation_matrices\": 8}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-OO",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/source/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+        "--output",
+        "/mnt/h/Hearthline's Path/Math Workbench/openai-math-snaky-2026-10-07/computations/route21-001/tests/independent-OO.json"
+      ],
+      "cards_sha256": "8d9134e82a9e75f5959ca928c20d1625d7b3929f1bb6525d32317eaadbca844a",
+      "postorder_sha256": "99a97ab2fc1be95e3ce2addeef7ce2a70787f199ea328d122158a81c00098bd1",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"card_height_histogram\": {\"1\": 6, \"2\": 42, \"3\": 66, \"4\": 94, \"5\": 100, \"6\": 86, \"7\": 65, \"8\": 51, \"9\": 56, \"10\": 44, \"11\": 32, \"12\": 20, \"13\": 26, \"14\": 12, \"15\": 12, \"16\": 5, \"17\": 3, \"18\": 3, \"19\": 1, \"20\": 3, \"21\": 1}, \"certificate_sha256\": \"3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04\", \"counts\": {\"cards\": 728, \"combination_nodes\": 1620, \"inline_nodes\": 898, \"numbered_rows\": 722, \"references\": 4089, \"reply_classes\": 37042}, \"endpoint\": {\"A_size\": 0, \"T_size\": 251, \"height\": 21, \"pivot\": [8, 8]}, \"matrix_checks\": {\"composition_pairs_checked\": 64, \"distinct_signed_permutation_matrices\": 8}, \"status\": \"PASS\", \"tactics\": {\"684_composed_pivot\": [11, 8], \"708_pivot\": [8, 7], \"old_and_new_replies_avoided\": true}, \"top_intersections\": [35, 31, 21, 12, 4, 0]}\n"
+    }
+  ],
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "scope": "Current standalone route21 support paths; mathematical soundness and final article review remain separate.",
+  "status": "PASS"
+}

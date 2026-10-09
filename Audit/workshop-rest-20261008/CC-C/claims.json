@@ -1,0 +1,370 @@
+{
+  "batch": "CC-C",
+  "module": "Experiments.CompactificationFixtures",
+  "declarations": [
+    {
+      "name": "Experiments.CompactificationFixtures.fiber_answer_bound",
+      "kind": "theorem",
+      "source_line": 6,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.maximum_answer_bound",
+      "kind": "theorem",
+      "source_line": 19,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.cube",
+      "kind": "def",
+      "source_line": 26,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.cubeEdges",
+      "kind": "def",
+      "source_line": 30,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.cube_vertex_and_edge_counts",
+      "kind": "theorem",
+      "source_line": 37,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.cube_fibers",
+      "kind": "theorem",
+      "source_line": 41,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.cube_side_bit",
+      "kind": "theorem",
+      "source_line": 46,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.omega",
+      "kind": "def",
+      "source_line": 54,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.omega_coordinates",
+      "kind": "theorem",
+      "source_line": 56,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.omega_quadratic",
+      "kind": "theorem",
+      "source_line": 67,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.lattice",
+      "kind": "def",
+      "source_line": 71,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.lattice_injective",
+      "kind": "theorem",
+      "source_line": 73,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.omega_nonreal",
+      "kind": "theorem",
+      "source_line": 83,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.actual_cube_projection",
+      "kind": "theorem",
+      "source_line": 87,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.complex_projection_counts",
+      "kind": "theorem",
+      "source_line": 94,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.discrete_hub_size",
+      "kind": "theorem",
+      "source_line": 109,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.mean",
+      "kind": "def",
+      "source_line": 111,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.common",
+      "kind": "def",
+      "source_line": 119,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.residual",
+      "kind": "def",
+      "source_line": 120,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.mean_constant",
+      "kind": "theorem",
+      "source_line": 122,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.mean_surjective",
+      "kind": "theorem",
+      "source_line": 124,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.comparison_dimension",
+      "kind": "theorem",
+      "source_line": 126,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.common_comparison_reconstruction",
+      "kind": "theorem",
+      "source_line": 132,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.mean_fiber",
+      "kind": "theorem",
+      "source_line": 139,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.mean_loses_comparisons",
+      "kind": "theorem",
+      "source_line": 142,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.sectorInteger",
+      "kind": "def",
+      "source_line": 152,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.sector",
+      "kind": "def",
+      "source_line": 153,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.angularResidual",
+      "kind": "def",
+      "source_line": 154,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.residual_bounds",
+      "kind": "theorem",
+      "source_line": 156,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.sector_range",
+      "kind": "theorem",
+      "source_line": 162,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.phase_reconstruction",
+      "kind": "theorem",
+      "source_line": 165,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.radians_reconstruction",
+      "kind": "theorem",
+      "source_line": 172,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationFixtures.sector_collision_and_tie",
+      "kind": "theorem",
+      "source_line": 181,
+      "source_target": "Audit/workshop-rest-20261008/CC-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

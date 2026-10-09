@@ -1,0 +1,167 @@
+{
+  "schema": "apci-bounded-audit-closeout-v1",
+  "finished_utc": "2026-10-08T06:33:28.164870+00:00",
+  "status": "COMPLETE_APCI_BOUNDED_TARGET",
+  "target": "APCI v1.0.0 Theorems 1-5 and section 4.1; source mapping and boundary controls",
+  "primary_verdict": "proved as written",
+  "review_type": "self-review",
+  "original_core_declarations_reused": 15,
+  "new_substantive_formal_coverage": 1,
+  "new_boundary_controls": 3,
+  "formal_attempts": 1,
+  "formal_failures": 0,
+  "manuscript_source_hashes": {
+    "APCI_Declared_Interface_v1.0.0.docx": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+    "APCI_Declared_Interface_v1.0.0.pdf": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3"
+  },
+  "original_repository_unchanged": true,
+  "original_repository_clean": true,
+  "original_commit": "0f85cc7fac47c3b34ecfd11160f3efae454b900c",
+  "original_tree": "a4418e2fb2c1fe5ffe6be768a419385da8834c99",
+  "supplemental_kernel": "PASS",
+  "dependency_check": "PASS_EXACT_EXPECTED_4_RECORDS",
+  "published_inventory_mapping": "PASS_ALL_15",
+  "v2_manifest_validation": "PASS",
+  "declared_limits_met": true,
+  "other_keyring_lanes": "NOT_EXECUTED_OR_EDITED",
+  "remote_writes": "NONE",
+  "remaining": [
+    "Concrete physical capacity and full-access bridge premises are conditional.",
+    "Entropy not formally checked; literature inputs not independently reverified.",
+    "Historical nanoda lane remains blocked before declaration checking.",
+    "Predecessor ZIP bytes unavailable."
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 2822,
+      "sha256": "6c88de73c043c91d3d28d2aca7c19f889cda5e846f4a3507bd29bf83b5ebb133"
+    },
+    {
+      "path": "RECEIPT_BOOK.md",
+      "bytes": 10688,
+      "sha256": "156b8b9068d029a13090a5cb11cf6c6e1fad8a97903d7d4d80c9f3f18fd88590"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+      "bytes": 3008,
+      "sha256": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/checks/links.json",
+      "bytes": 68,
+      "sha256": "d542ca97aa2ce7c5dd22c25586cacbcdca941395d09cd15f13cce076b2f70624"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/checks/manifest-validation.log",
+      "bytes": 68,
+      "sha256": "7cc55b3194879d8c593523253d2ae528ae808ce3a1a64bb8091ab52ac300ec6a"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/checks/source-map.log",
+      "bytes": 156,
+      "sha256": "2df669a71bcb310f1bf048f50546b32f02631551fd79088678554bee70ba264c"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/computation-contract.json",
+      "bytes": 3730,
+      "sha256": "32b8be9be6f953b8405026d47b3c05be4bb150d846c1b6f1c1c7023fab3b43f0"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/CONTRACT.md",
+      "bytes": 2846,
+      "sha256": "479bf04037e938c48bea60453990f7bb3646cc5afc4cf359bd754579c6f1347b"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/document-paragraphs.json",
+      "bytes": 34830,
+      "sha256": "c48d8597b31b5a66a4351e9ec38e416987a25d4f517b0814ddabd7cd4b9f5e30"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/document-tables.json",
+      "bytes": 2869,
+      "sha256": "8a0590b4caf817f06a307f2a6c9697138f42c247fe70cffb76a1bc95e0c8afc3"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/inspection/page-04.png",
+      "bytes": 169089,
+      "sha256": "46d18c693ad9e1dc8c970cbd1bb2d897e3a97a0a706468bf0c8adcbedfb1a509"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/inspection/page-05.png",
+      "bytes": 178333,
+      "sha256": "422374e19b0bf25fafce6e78f2d35351d880f04a93f9feb4d8b57b8f772e03f4"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/inspection/page-06.png",
+      "bytes": 187930,
+      "sha256": "f907469c58e6f0b822b803c43a9a9ba787c5b155af82a0f3dd2345b801b6e796"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/inspection/page-07.png",
+      "bytes": 201440,
+      "sha256": "8e30f6a8eed93bbf53fe091ab6e76ba8c16795affa241ff8900fd8dba32b11d1"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/map_sources.py",
+      "bytes": 8558,
+      "sha256": "48e0cca51cabe34e2d6eef762a3dd3ed55e9f228aa656527d0f9ac1d4322f89c"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/REPRODUCE.md",
+      "bytes": 2089,
+      "sha256": "cd39dfa6daa7d84364a0cd5af401dcb04cb4288e1a5aee892287c994a083cc5b"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/SOURCE_MAP.json",
+      "bytes": 14131,
+      "sha256": "a237d76ef282cf5e31a20cb3f02656e92cea8c0273a2dd6e96b35ce1fbba5127"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/verify.py",
+      "bytes": 7387,
+      "sha256": "eb92bdaf7ea5cd901261b82660256bd9fac120eca30a0d80eaae41a0f5ac69af"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/APCIManuscript.olean",
+      "bytes": 42440,
+      "sha256": "5f3bb5a19d15f3c14f320281dedfc14cfe58b9ecd8ad202a6853eaa976a5deeb"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/bundled-kernel.log",
+      "bytes": 25,
+      "sha256": "27ca5666e8317647f1c710b835c233a3fc748d7dd85e31e721d53fae258ea432"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/compile-and-dependencies.log",
+      "bytes": 349,
+      "sha256": "79ac41486c9682841d6f977b1df9c1991702ec4d017198ffbf429d302bab3859"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/lean-version.log",
+      "bytes": 104,
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/manifest.json",
+      "bytes": 12194,
+      "sha256": "b6e9b99e625ea83ec161058b357d43f5fbd78bea2a037f485ab3376932237ee8"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/result.json",
+      "bytes": 8130,
+      "sha256": "85705611929cbf65377bad1c6acabd8bdfddd2290ff88dd132242058d9adf19d"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/stdout.txt",
+      "bytes": 154,
+      "sha256": "9b8bbd155ed991d18bb124028ed689a601f6258b8414d88be114933bf720ccb0"
+    }
+  ],
+  "listed_bytes": 893438
+}

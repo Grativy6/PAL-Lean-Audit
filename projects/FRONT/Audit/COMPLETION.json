@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_LOCAL_AUDIT",
+  "scope": "Activated FRONT v1.0 six-batch key; no publication",
+  "claims": 21,
+  "general_statements": 17,
+  "bounded_realizations": 4,
+  "kernel_modules": 13,
+  "formal_receipt_sha256": "13d5e3f8c9971f9bf6dffe2239e9ee2cda7b0e752620def3765a85bfabee4336",
+  "experiment_reconciliation_sha256": "8a9f9193e9f7afe83c2cab29b25650d49e2ec9982bcbd49107c973952cbf28fe",
+  "manuscript_archive_sha256": "e82195a52d3b65dcca8e6a16b1055c9772d43aa2ebecea6a4a5cd1409167fd9c",
+  "publications": 0,
+  "remote_runs": 0,
+  "model_calls": 0,
+  "delegated_agents": 0,
+  "independent_adversarial_review": "NOT_PERFORMED",
+  "manuscript_adoption": "NOT_PERFORMED"
+}

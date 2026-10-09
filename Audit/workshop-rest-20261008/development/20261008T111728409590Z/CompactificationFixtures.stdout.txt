@@ -1,0 +1,112 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:24:15: error: Application type mismatch: The argument
+  fun w x => fiber_answer_bound t q side d recover (t w)
+has type
+  ∀ (w : W) (x : ?m.42 w), #(image q {w_1 | t w_1 = t w}) ≤ Fintype.card S
+but is expected to have type
+  ?m.28 ≤ ?m.30
+in the application
+  sup_le fun w x => fiber_answer_bound t q side d recover (t w)
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:56:86: error: unsolved goals
+case a
+hc : Real.cos (2 * Real.pi / 3) = -1 / 2
+hs : Real.sin (2 * Real.pi / 3) = √3 / 2
+⊢ (Complex.cos (2 * ↑Real.pi / 3)).re + -(Complex.sin (2 * ↑Real.pi / 3)).im = -1 / 2
+
+case a
+hc : Real.cos (2 * Real.pi / 3) = -1 / 2
+hs : Real.sin (2 * Real.pi / 3) = √3 / 2
+⊢ (Complex.cos (2 * ↑Real.pi / 3)).im + (Complex.sin (2 * ↑Real.pi / 3)).re = √3 / 2
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:63:54: warning: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp [omega, ̲Complex.exp_mul_I, ̲hc̵,̵h̵s]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:63:57: warning: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [omega, ̲Complex.exp_mul_I, ̲hc,̵h̵s̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:76:47: error: Application type mismatch: The argument
+  hi
+has type
+  b = d ∨ w.im = 0
+but is expected to have type
+  ↑b * w.im = ↑d * w.im
+in the application
+  mul_right_cancel₀ hw hi
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:77:28: error: linarith failed to find a contradiction
+case h1
+w : ℂ
+hw : w.im ≠ 0
+a b c d : ℤ
+h : lattice w (a, b) = lattice w (c, d)
+hi : b = d ∨ w.im = 0
+hr : ↑a + ↑b * w.re = ↑c + ↑d * w.re
+hb : ↑b = ↑d
+a✝ : ↑a < ↑c
+⊢ False
+failed
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:83:4: error(lean.unknownIdentifier): Unknown constant `Complex.ofNat_im`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:83:21: error(lean.unknownIdentifier): Unknown constant `Complex.ofNat_re`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:86:2: error: failed to prove positivity/nonnegativity/nonzeroness
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:83:77: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵C̵o̵m̵p̵l̵e̵x̵.̵a̵d̵d̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵d̵i̵v̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵n̵e̵g̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵n̵e̵_̵i̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵N̵a̵t̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵N̵a̵t̵_̵r̵e̵,̵C̵o̵m̵p̵l̵e̵x̵.̵n̵o̵r̵m̵S̵q̵_̵o̵f̵N̵a̵t̵,̵n̵e̵g̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵m̵u̵l̵,̵s̵u̵b̵_̵z̵e̵r̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵z̵e̵r̵o̵_̵d̵i̵v̵,̵C̵o̵m̵p̵l̵e̵x̵.̵m̵u̵l̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵r̵e̵,̵C̵o̵m̵p̵l̵e̵x̵.̵I̵_̵i̵m̵,̵m̵u̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵I̵_̵r̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲C̲o̲m̲p̲l̲e̲x̲.̲a̲d̲d̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲d̲i̲v̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲n̲e̲g̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲n̲e̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲N̲a̲t̲_̲i̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲N̲a̲t̲_̲r̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲n̲o̲r̲m̲S̲q̲_̲o̲f̲N̲a̲t̲,̲ ̲n̲e̲g̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲ ̲z̲e̲r̲o̲_̲d̲i̲v̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲m̲u̲l̲_̲i̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲R̲e̲a̲l̲_̲r̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲I̲_̲i̲m̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲R̲e̲a̲l̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲I̲_̲r̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:85:53: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [̵C̵o̵m̵p̵l̵e̵x̵.̵a̵d̵d̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵d̵i̵v̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵n̵e̵g̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵n̵e̵_̵i̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵N̵a̵t̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵N̵a̵t̵_̵r̵e̵,̵C̵o̵m̵p̵l̵e̵x̵.̵n̵o̵r̵m̵S̵q̵_̵o̵f̵N̵a̵t̵,̵n̵e̵g̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵m̵u̵l̵,̵s̵u̵b̵_̵z̵e̵r̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵z̵e̵r̵o̵_̵d̵i̵v̵,̵C̵o̵m̵p̵l̵e̵x̵.̵m̵u̵l̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵r̵e̵,̵C̵o̵m̵p̵l̵e̵x̵.̵I̵_̵i̵m̵,̵m̵u̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵i̵m̵,̵C̵o̵m̵p̵l̵e̵x̵.̵I̵_̵r̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲C̲o̲m̲p̲l̲e̲x̲.̲a̲d̲d̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲d̲i̲v̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲n̲e̲g̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲n̲e̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲N̲a̲t̲_̲i̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲N̲a̲t̲_̲r̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲n̲o̲r̲m̲S̲q̲_̲o̲f̲N̲a̲t̲,̲ ̲n̲e̲g̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲ ̲s̲u̲b̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲d̲i̲v̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲m̲u̲l̲_̲i̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲R̲e̲a̲l̲_̲r̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲I̲_̲i̲m̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲o̲f̲R̲e̲a̲l̲_̲i̲m̲,̲ ̲C̲o̲m̲p̲l̲e̲x̲.̲I̲_̲r̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:98:19: error: unsolved goals
+a : ℝ
+x : Fin 6 → ℝ
+⊢ (∑ x_1, a * x x_1) * (1 / 6) = (a * ∑ j, x j) * (1 / 6)
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:98:28: warning: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:103:73: error: No goals to be solved
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:103:66: warning: declaration uses `sorry`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:123:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.linearOrder', which is 'noncomputable'
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:124:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'sectorInteger', which is 'noncomputable'
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:139:4: error: mod_cast has type
+  sectorInteger x % 6 + 6 * (sectorInteger x / 6) = sectorInteger x
+but is expected to have type
+  ↑(sectorInteger x) % 6 + ↑(6 * (sectorInteger x / 6)) = ↑(sectorInteger x)
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean:141:2: error: linarith failed to find a contradiction
+case h1
+x : ℝ
+h : ↑(sectorInteger x) % 6 + 6 * ↑(sectorInteger x / 6) = ↑(sectorInteger x)
+a✝ : x < ↑(sectorInteger x % 6) / 6 + (x - ↑(sectorInteger x) / 6) + ↑(sectorInteger x / 6)
+⊢ False
+failed

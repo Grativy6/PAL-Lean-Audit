@@ -1,0 +1,8 @@
+{
+  "challenge_module": "ComparatorChallenges.PiExponent.FlintHills",
+  "solution_module": "OAI.NumberTheory.PiExponent.Main",
+  "theorem_names": ["OAI.PiExponent.flint_hills_summable"],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}

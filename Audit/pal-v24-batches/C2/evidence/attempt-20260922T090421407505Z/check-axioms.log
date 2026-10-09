@@ -1,0 +1,147 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24IntervalSlackAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 10711, "stderr_bytes": 0}
+Experiments.Pal24IntervalSlack.SlackClass : Type
+'Experiments.Pal24IntervalSlack.SlackClass' does not depend on any axioms
+Experiments.Pal24IntervalSlack.SlackInterval : Type
+'Experiments.Pal24IntervalSlack.SlackInterval' does not depend on any axioms
+Experiments.Pal24IntervalSlack.validInterval : Experiments.Pal24IntervalSlack.SlackInterval → Prop
+'Experiments.Pal24IntervalSlack.validInterval' does not depend on any axioms
+Experiments.Pal24IntervalSlack.constraintToSlack : Experiments.Pal24IntervalSlack.SlackInterval →
+  Experiments.Pal24IntervalSlack.SlackInterval
+'Experiments.Pal24IntervalSlack.constraintToSlack' does not depend on any axioms
+Experiments.Pal24IntervalSlack.feasible : ℚ → Experiments.Pal24IntervalSlack.SlackInterval → Prop
+'Experiments.Pal24IntervalSlack.feasible' does not depend on any axioms
+Experiments.Pal24IntervalSlack.violated : ℚ → Experiments.Pal24IntervalSlack.SlackInterval → Prop
+'Experiments.Pal24IntervalSlack.violated' does not depend on any axioms
+Experiments.Pal24IntervalSlack.contact : ℚ → Experiments.Pal24IntervalSlack.SlackInterval → Prop
+'Experiments.Pal24IntervalSlack.contact' does not depend on any axioms
+Experiments.Pal24IntervalSlack.classify : ℚ →
+  Experiments.Pal24IntervalSlack.SlackInterval → Experiments.Pal24IntervalSlack.SlackClass
+'Experiments.Pal24IntervalSlack.classify' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.constraintToSlack_valid : ∀ (constraint : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.validInterval constraint →
+    Experiments.Pal24IntervalSlack.validInterval (Experiments.Pal24IntervalSlack.constraintToSlack constraint)
+'Experiments.Pal24IntervalSlack.constraintToSlack_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.feasible_not_violated : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  0 ≤ tolerance →
+    Experiments.Pal24IntervalSlack.validInterval slack →
+      ¬(Experiments.Pal24IntervalSlack.feasible tolerance slack ∧
+          Experiments.Pal24IntervalSlack.violated tolerance slack)
+'Experiments.Pal24IntervalSlack.feasible_not_violated' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.feasible_not_contact : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.validInterval slack →
+    ¬(Experiments.Pal24IntervalSlack.feasible tolerance slack ∧ Experiments.Pal24IntervalSlack.contact tolerance slack)
+'Experiments.Pal24IntervalSlack.feasible_not_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.violated_not_contact : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.validInterval slack →
+    ¬(Experiments.Pal24IntervalSlack.violated tolerance slack ∧ Experiments.Pal24IntervalSlack.contact tolerance slack)
+'Experiments.Pal24IntervalSlack.violated_not_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.feasible_iff_classified : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.feasible ↔
+    Experiments.Pal24IntervalSlack.feasible tolerance slack
+'Experiments.Pal24IntervalSlack.feasible_iff_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.violated_iff_classified : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  0 ≤ tolerance →
+    Experiments.Pal24IntervalSlack.validInterval slack →
+      (Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.violated ↔
+        Experiments.Pal24IntervalSlack.violated tolerance slack)
+'Experiments.Pal24IntervalSlack.violated_iff_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.contact_iff_classified : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.validInterval slack →
+    (Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.contact ↔
+      Experiments.Pal24IntervalSlack.contact tolerance slack)
+'Experiments.Pal24IntervalSlack.contact_iff_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.unresolved_iff_classified : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.unresolved ↔
+    ¬Experiments.Pal24IntervalSlack.feasible tolerance slack ∧
+      ¬Experiments.Pal24IntervalSlack.violated tolerance slack ∧ ¬Experiments.Pal24IntervalSlack.contact tolerance slack
+'Experiments.Pal24IntervalSlack.unresolved_iff_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.source_regions_pairwise_disjoint : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  0 ≤ tolerance →
+    Experiments.Pal24IntervalSlack.validInterval slack →
+      ¬(Experiments.Pal24IntervalSlack.feasible tolerance slack ∧
+            Experiments.Pal24IntervalSlack.violated tolerance slack) ∧
+        ¬(Experiments.Pal24IntervalSlack.feasible tolerance slack ∧
+              Experiments.Pal24IntervalSlack.contact tolerance slack) ∧
+          ¬(Experiments.Pal24IntervalSlack.violated tolerance slack ∧
+              Experiments.Pal24IntervalSlack.contact tolerance slack)
+'Experiments.Pal24IntervalSlack.source_regions_pairwise_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.source_regions_cover : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  Experiments.Pal24IntervalSlack.feasible tolerance slack ∨
+    Experiments.Pal24IntervalSlack.violated tolerance slack ∨
+      Experiments.Pal24IntervalSlack.contact tolerance slack ∨
+        ¬Experiments.Pal24IntervalSlack.feasible tolerance slack ∧
+          ¬Experiments.Pal24IntervalSlack.violated tolerance slack ∧
+            ¬Experiments.Pal24IntervalSlack.contact tolerance slack
+'Experiments.Pal24IntervalSlack.source_regions_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.classification_total_exclusive : ∀ (tolerance : ℚ)
+  (slack : Experiments.Pal24IntervalSlack.SlackInterval),
+  (Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.feasible ∨
+      Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.violated ∨
+        Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.contact ∨
+          Experiments.Pal24IntervalSlack.classify tolerance slack =
+            Experiments.Pal24IntervalSlack.SlackClass.unresolved) ∧
+    ¬(Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.feasible ∧
+          Experiments.Pal24IntervalSlack.classify tolerance slack =
+            Experiments.Pal24IntervalSlack.SlackClass.violated) ∧
+      ¬(Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.feasible ∧
+            Experiments.Pal24IntervalSlack.classify tolerance slack =
+              Experiments.Pal24IntervalSlack.SlackClass.contact) ∧
+        ¬(Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.violated ∧
+            Experiments.Pal24IntervalSlack.classify tolerance slack = Experiments.Pal24IntervalSlack.SlackClass.contact)
+'Experiments.Pal24IntervalSlack.classification_total_exclusive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.constraintToSlack_endpoints : ∀
+  (constraint : Experiments.Pal24IntervalSlack.SlackInterval),
+  (Experiments.Pal24IntervalSlack.constraintToSlack constraint).lower = -constraint.upper ∧
+    (Experiments.Pal24IntervalSlack.constraintToSlack constraint).upper = -constraint.lower
+'Experiments.Pal24IntervalSlack.constraintToSlack_endpoints' does not depend on any axioms
+Experiments.Pal24IntervalSlack.positive_tolerance_boundary_is_contact : ∀ (tolerance : ℚ),
+  0 ≤ tolerance →
+    Experiments.Pal24IntervalSlack.classify tolerance { lower := tolerance, upper := tolerance } =
+      Experiments.Pal24IntervalSlack.SlackClass.contact
+'Experiments.Pal24IntervalSlack.positive_tolerance_boundary_is_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.negative_tolerance_boundary_is_contact : ∀ (tolerance : ℚ),
+  0 ≤ tolerance →
+    Experiments.Pal24IntervalSlack.classify tolerance { lower := -tolerance, upper := -tolerance } =
+      Experiments.Pal24IntervalSlack.SlackClass.contact
+'Experiments.Pal24IntervalSlack.negative_tolerance_boundary_is_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.cross_regime_interval_is_unresolved : Experiments.Pal24IntervalSlack.classify 1
+    { lower := -2, upper := 2 } =
+  Experiments.Pal24IntervalSlack.SlackClass.unresolved
+'Experiments.Pal24IntervalSlack.cross_regime_interval_is_unresolved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.invalid_interval_overlap_counterexample : Experiments.Pal24IntervalSlack.validInterval
+      { lower := 2, upper := -2 } =
+    False ∧
+  Experiments.Pal24IntervalSlack.feasible 1 { lower := 2, upper := -2 } ∧
+    Experiments.Pal24IntervalSlack.violated 1 { lower := 2, upper := -2 } ∧
+      Experiments.Pal24IntervalSlack.contact 1 { lower := 2, upper := -2 }
+'Experiments.Pal24IntervalSlack.invalid_interval_overlap_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.Pal24IntervalSlack.budgetSlack : ℚ → ℚ → ℚ
+'Experiments.Pal24IntervalSlack.budgetSlack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.Pal24IntervalSlack.budget_slack_antitone : ∀ (budget earlier later : ℚ),
+  earlier ≤ later →
+    Experiments.Pal24IntervalSlack.budgetSlack budget later ≤ Experiments.Pal24IntervalSlack.budgetSlack budget earlier
+'Experiments.Pal24IntervalSlack.budget_slack_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PAL-STDERR-1

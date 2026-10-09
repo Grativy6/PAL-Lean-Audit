@@ -1,0 +1,172 @@
+{
+  "batch": "SCT-C",
+  "module": "Experiments.SingleCutOR",
+  "declarations": [
+    {
+      "name": "Experiments.SingleCutOR.orders",
+      "kind": "def",
+      "source_line": 10,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.positions",
+      "kind": "def",
+      "source_line": 12,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.prefixSlack",
+      "kind": "def",
+      "source_line": 14,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.positions_card",
+      "kind": "theorem",
+      "source_line": 17,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.prefixSlack_counts_missing",
+      "kind": "theorem",
+      "source_line": 24,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.viable",
+      "kind": "def",
+      "source_line": 36,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.accepted",
+      "kind": "def",
+      "source_line": 44,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.enumerator_length",
+      "kind": "theorem",
+      "source_line": 46,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.enumerator_covers_exactly",
+      "kind": "theorem",
+      "source_line": 51,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.enumerator_has_no_duplicates",
+      "kind": "theorem",
+      "source_line": 54,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.accepted_truth_table",
+      "kind": "theorem",
+      "source_line": 57,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.local_OR",
+      "kind": "theorem",
+      "source_line": 60,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.supplied_witness_100",
+      "kind": "theorem",
+      "source_line": 66,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.supplied_witness_010",
+      "kind": "theorem",
+      "source_line": 69,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutOR.supplied_witness_001",
+      "kind": "theorem",
+      "source_line": 72,
+      "source_target": "Audit/workshop-rest-20261008/SCT-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

@@ -1,0 +1,4 @@
+'APCIManuscript.no_exact_on_witness_of_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'APCIManuscript.infinite_world_constant_property' does not depend on any axioms
+'APCIManuscript.side_information_changes_interface' does not depend on any axioms
+'APCIManuscript.empty_trace_allows_empty_answer' does not depend on any axioms

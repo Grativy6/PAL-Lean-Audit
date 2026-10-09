@@ -1,0 +1,242 @@
+{
+  "schema": "remaining-workshop-local-lean-receipt-v1",
+  "batch": "CC-A",
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "started_utc": "20261008T111002341354Z",
+  "branch": "agent/workshop-rest-20261008",
+  "git_head": "1256b2d8d902c2b4b55937e340e6009e2829f7c7",
+  "working_tree": "M .gitignore\n?? Audit/pal-v24-batches/\n?? Audit/pal-v24-candidate/\n?? Audit/pal-v24-publication/\n?? Audit/workshop-rest-20261008/CC-A/\n?? Audit/workshop-rest-20261008/CC-B/\n?? Audit/workshop-rest-20261008/GPPR-A/\n?? Audit/workshop-rest-20261008/development/20261008T110220360639Z/\n?? Audit/workshop-rest-20261008/development/20261008T110411166572Z/\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/CompactificationBoundary.lean\n?? Experiments/CompactificationBoundaryAxioms.lean\n?? Experiments/CompactificationProfile.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/\n?? tmp/",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_dirty": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "declarations": [
+    {
+      "name": "Experiments.CompactificationBoundary.Boundary",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.interior_fiber_unique",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_preserved",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_onto",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundaryMap",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_map_continuous",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_map_surjective",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.compact_surjection_is_quotient",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.quotient_continuous_decoder",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.strict_boundary_decoder",
+      "kind": "theorem"
+    }
+  ],
+  "input_hashes_before": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\verify.py": "061fece3d4a8a5ed39a0b3e532081e7608f430a4e9892b742cb56a489643e063",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md": "153701aceda7edf6869d32670ffa6650eb39f982a093c9524dd00de1aabf0eeb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\claims.json": "ec002f576f48d2b17a4fd72b2834e545372a6319aa4025672de6c55451776e78",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundary.lean": "fbe5de893b33451d0234cc4a2cb61acd9c542da1f8d35a503a91324fe5b4ff43",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundaryAxioms.lean": "8cb067baeae82dd8d2011886c7c367038151d4147d4649add2998f358742898b",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\TARGET.md": "9ce877a3943a643e7ed95c8cab856b65ee570191630dfb4129e7b95d6a66ca41",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\Sources\\PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx": "c9168a69ece8e405d643a86580e6637001de3f14514495d9b3943ce943e0290e",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.json": "bcc6f0b57d6439fb8c640ff902647677b3eaedfbddf9394d8c132a548c269812",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.txt": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.docx": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.pdf": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.json": "d6b199e4719feebdd49a146effba9902421b4d242537dc37ae00dcfc25b8027d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.txt": "360dd27c377e2c7342c78a2bbebe1f6caabb50d389012fb38e612f0bf273a49f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.pdf.txt": "8a5e7fb3ff7a66fb6b25b91680285fb3057cb4c8b3a7880c7522adc24bcc5639",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.docx": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.pdf": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.json": "3a902652df9c63a6402aa6516d1766096ff175d3f20f37bb90a827abfb904600",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.txt": "0df349ad2c9b000dd9ce902c17dd69e73be0d01c8ffbccc52ec59ef3a4c53b84",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.pdf.txt": "b54ee051155fe38b757991f8733566ac370cfc8426d092ce3c8f246d551f38ce",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.json": "23bf22a55e6505286cbf9f79fbad6f5232773f9a9752b1c4f26c1fc415d81b22",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.txt": "161c5f0ead8183eddc379e13193f4d9815119d321f6ae8d77ff15741b8bba365",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.pdf.txt": "0f72b7b2fdd41e46d929dbdc921a239ed39836bd7fa744dc7a69315123bf0399",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0160000000032596,
+      "stdout": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/lean-version.stdout.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/lean-version.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.CompactificationBoundary"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.545999999972992,
+      "stdout": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/build.stdout.txt",
+      "stdout_sha256": "161794b4df5209a69f367f47b34116c00c041124c5e2d72f6456ea9d047c1985",
+      "stderr": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "inspect",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundaryAxioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.672000000020489,
+      "stdout": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/inspect.stdout.txt",
+      "stdout_sha256": "12fdab226b8fbd7b76370605e6f182c7cd8fd65489853e5d1dbdd318e564ff7b",
+      "stderr": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/inspect.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.CompactificationBoundary"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 32.29599999997299,
+      "stdout": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/workshop-rest-20261008/CC-A/evidence/20261008T111002341354Z/kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": {
+    "Experiments.CompactificationBoundary.Boundary": "@Experiments.CompactificationBoundary.Boundary : {X : Type u_1} → {Y : Type u_2} → (X → Y) → Type u_2",
+    "Experiments.CompactificationBoundary.interior_fiber_unique": "@Experiments.CompactificationBoundary.interior_fiber_unique : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)\n  (r : X → Y) (k : Y → Z),\n  Topology.IsEmbedding j →\n    Topology.IsEmbedding r →\n      DenseRange r → Continuous k → (∀ (x : X), k (r x) = j x) → ∀ (y : Y) (x : X), k y = j x → y = r x",
+    "Experiments.CompactificationBoundary.boundary_preserved": "@Experiments.CompactificationBoundary.boundary_preserved : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)\n  (r : X → Y) (k : Y → Z),\n  Topology.IsEmbedding j →\n    Topology.IsEmbedding r →\n      DenseRange r → Continuous k → (∀ (x : X), k (r x) = j x) → Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ",
+    "Experiments.CompactificationBoundary.boundary_onto": "@Experiments.CompactificationBoundary.boundary_onto : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)\n  (r : X → Y) (k : Y → Z),\n  Topology.IsEmbedding j →\n    Topology.IsEmbedding r →\n      DenseRange r →\n        Continuous k → (∀ (x : X), k (r x) = j x) → Function.Surjective k → k '' (Set.range r)ᶜ = (Set.range j)ᶜ",
+    "Experiments.CompactificationBoundary.boundaryMap": "@Experiments.CompactificationBoundary.boundaryMap : {X : Type u_1} →\n  {Y : Type u_2} →\n    {Z : Type u_3} →\n      (j : X → Z) →\n        (r : X → Y) →\n          (k : Y → Z) →\n            Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ →\n              Experiments.CompactificationBoundary.Boundary r → Experiments.CompactificationBoundary.Boundary j",
+    "Experiments.CompactificationBoundary.boundary_map_continuous": "@Experiments.CompactificationBoundary.boundary_map_continuous : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  [TopologicalSpace X] [inst : TopologicalSpace Y] [inst_1 : TopologicalSpace Z] (j : X → Z) (r : X → Y) (k : Y → Z)\n  (h : Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ),\n  Continuous k → Continuous (Experiments.CompactificationBoundary.boundaryMap j r k h)",
+    "Experiments.CompactificationBoundary.boundary_map_surjective": "@Experiments.CompactificationBoundary.boundary_map_surjective : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  (j : X → Z) (r : X → Y) (k : Y → Z) (h : Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ),\n  Function.Surjective k →\n    (∀ (x : X), k (r x) = j x) → Function.Surjective (Experiments.CompactificationBoundary.boundaryMap j r k h)",
+    "Experiments.CompactificationBoundary.compact_surjection_is_quotient": "@Experiments.CompactificationBoundary.compact_surjection_is_quotient : ∀ {A : Type u_1} {B : Type u_2}\n  [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] [CompactSpace A] [T2Space B] (f : A → B),\n  Continuous f → Function.Surjective f → Topology.IsQuotientMap f",
+    "Experiments.CompactificationBoundary.quotient_continuous_decoder": "@Experiments.CompactificationBoundary.quotient_continuous_decoder : ∀ {A : Type u_1} {B : Type u_2} {D : Type u_3}\n  [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] [inst_2 : TopologicalSpace D] (f : A → B),\n  Topology.IsQuotientMap f →\n    ∀ (u : A → D),\n      Continuous u → (∀ (a a' : A), f a = f a' → u a = u a') → ∃! d, Continuous d ∧ ∀ (a : A), d (f a) = u a",
+    "Experiments.CompactificationBoundary.strict_boundary_decoder": "@Experiments.CompactificationBoundary.strict_boundary_decoder : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}\n  {D : Type u_4} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z]\n  [inst_3 : TopologicalSpace D] [CompactSpace Y] [inst_5 : T2Space Y] [T2Space Z] (j : X → Z) (r : X → Y) (k : Y → Z)\n  (hj : Topology.IsEmbedding j) (hr : Topology.IsOpenEmbedding r) (hd : DenseRange r) (hk : Continuous k)\n  (comm : ∀ (x : X), k (r x) = j x),\n  Function.Surjective k →\n    ∀ (u : Experiments.CompactificationBoundary.Boundary r → D),\n      Continuous u →\n        (∀ (a a' : Experiments.CompactificationBoundary.Boundary r), k ↑a = k ↑a' → u a = u a') →\n          ∃! d, Continuous d ∧ ∀ (a : Experiments.CompactificationBoundary.Boundary r), d ⟨k ↑a, ⋯⟩ = u a"
+  },
+  "axioms": {
+    "Experiments.CompactificationBoundary.Boundary": [],
+    "Experiments.CompactificationBoundary.interior_fiber_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.boundary_preserved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.boundary_onto": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.boundaryMap": [],
+    "Experiments.CompactificationBoundary.boundary_map_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.boundary_map_surjective": [],
+    "Experiments.CompactificationBoundary.compact_surjection_is_quotient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.quotient_continuous_decoder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CompactificationBoundary.strict_boundary_decoder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "compiled_artifacts": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\.lake\\build\\lib\\lean\\Experiments\\CompactificationBoundary.olean": "8bd5bd1a8de1b1944678fd82add3d96282b0fbc55634357f7e7066c8919b55cb"
+  },
+  "review": "self-review; bundled checker is not an independent implementation",
+  "authority": "local bounded proof evidence; no manuscript adoption or publication",
+  "input_hashes_after": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\verify.py": "061fece3d4a8a5ed39a0b3e532081e7608f430a4e9892b742cb56a489643e063",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md": "153701aceda7edf6869d32670ffa6650eb39f982a093c9524dd00de1aabf0eeb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\claims.json": "ec002f576f48d2b17a4fd72b2834e545372a6319aa4025672de6c55451776e78",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundary.lean": "fbe5de893b33451d0234cc4a2cb61acd9c542da1f8d35a503a91324fe5b4ff43",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundaryAxioms.lean": "8cb067baeae82dd8d2011886c7c367038151d4147d4649add2998f358742898b",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\TARGET.md": "9ce877a3943a643e7ed95c8cab856b65ee570191630dfb4129e7b95d6a66ca41",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\Sources\\PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx": "c9168a69ece8e405d643a86580e6637001de3f14514495d9b3943ce943e0290e",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.json": "bcc6f0b57d6439fb8c640ff902647677b3eaedfbddf9394d8c132a548c269812",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Single Cut Transport.docx.txt": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.docx": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.pdf": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.json": "d6b199e4719feebdd49a146effba9902421b4d242537dc37ae00dcfc25b8027d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.docx.txt": "360dd27c377e2c7342c78a2bbebe1f6caabb50d389012fb38e612f0bf273a49f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Compactification Costs.pdf.txt": "8a5e7fb3ff7a66fb6b25b91680285fb3057cb4c8b3a7880c7522adc24bcc5639",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.docx": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.pdf": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.json": "3a902652df9c63a6402aa6516d1766096ff175d3f20f37bb90a827abfb904600",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.docx.txt": "0df349ad2c9b000dd9ce902c17dd69e73be0d01c8ffbccc52ec59ef3a4c53b84",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\GPPR.pdf.txt": "b54ee051155fe38b757991f8733566ac370cfc8426d092ce3c8f246d551f38ce",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.json": "23bf22a55e6505286cbf9f79fbad6f5232773f9a9752b1c4f26c1fc415d81b22",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.docx.txt": "161c5f0ead8183eddc379e13193f4d9815119d321f6ae8d77ff15741b8bba365",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Finite Abstraction.pdf.txt": "0f72b7b2fdd41e46d929dbdc921a239ed39836bd7fa744dc7a69315123bf0399",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  }
+}

@@ -1,0 +1,768 @@
+{
+  "status": "PASS",
+  "review_status": "SAME_SESSION_SELF_REVIEW",
+  "all_four_runs_same_substantive_results": true,
+  "correction": {
+    "supplied_primary": {
+      "study": "FRONT-CORRECT-01",
+      "result_directory": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Sources\\v1.0\\extracted\\FRONT_v1.0_Working_Draft\\experiment_correct\\results_retained_01",
+      "hashes": {
+        "events.jsonl": "a6833bb4522be24bef33ff2b9c48cf3e23586ba112e7314a2fec3003a08e73fb",
+        "repair_events.jsonl": "4efd81e272024ae1c88f066ab2255f0fc7d9eb04927be792228bedc27cecfed0",
+        "summary.json": "e0353adcbdef24f49a5c9103f704ed7436f7425799102db6ec49d6eee1c1c819",
+        "supplement.json": "5b351312b6a7d4d6f3e352783694473780a04ac2d7baf80509d4dce616c10a67"
+      },
+      "recomputed": true,
+      "primary": {
+        "A": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 0,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 132,
+          "invalid_warrants": 114,
+          "valid_affirmatives": 102,
+          "false_positive_decisions": 84,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 0,
+          "requalified_different_basis": 0,
+          "independent_alternative_rescues": 0,
+          "changed_root_rescues": 0,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "B": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 144,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 144,
+          "unnecessary_invalidations": 60,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "C": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        }
+      },
+      "faster": 67,
+      "not_faster": 8,
+      "repair_outcomes": {
+        "UNCHANGED_SUPPORTED": 16,
+        "NOT_AUTHORIZED": 24,
+        "REVALIDATED_AFTER_CHANGE": 8,
+        "NO_VALID_RETURN_FOUND": 48
+      },
+      "rollbacks": 16,
+      "supplement": {
+        "status": "PASS",
+        "or_orders": 5040,
+        "or_counts": {
+          "000": 0,
+          "001": 8,
+          "010": 4,
+          "011": 28,
+          "100": 2,
+          "101": 12,
+          "110": 14,
+          "111": 50
+        },
+        "horn_systems": 1024,
+        "horn_queries": 2048,
+        "budget_cases": 525,
+        "budget_outcomes": {
+          "BUDGET_EXHAUSTED_UNRESOLVED": 408,
+          "UNRESOLVED": 56,
+          "SUPPORTED_WITH_BASIS": 40,
+          "STOP": 21
+        }
+      },
+      "negative_controls": [
+        {
+          "control": "history_erasure",
+          "expected": "HISTORY_ERASED",
+          "faults": [
+            "HISTORY_ERASED"
+          ],
+          "detected": true
+        },
+        {
+          "control": "intent_promotion",
+          "expected": "INTENT_PROMOTION",
+          "faults": [
+            "INTENT_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "stale_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "hash_as_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "coverage_invention",
+          "expected": "COVERAGE_PROMOTION",
+          "faults": [
+            "COVERAGE_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "type_collapse",
+          "expected": "NO_COLLAPSE",
+          "faults": [
+            "NO_COLLAPSE"
+          ],
+          "detected": true
+        },
+        {
+          "control": "alternate_grant",
+          "faults": [
+            "GRANT_BYPASS"
+          ],
+          "detected": true
+        },
+        {
+          "control": "quiet_summon",
+          "faults": [
+            "TASK_SUMMONED"
+          ],
+          "detected": true
+        }
+      ]
+    },
+    "supplied_optimized": {
+      "study": "FRONT-CORRECT-01",
+      "result_directory": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Sources\\v1.0\\extracted\\FRONT_v1.0_Working_Draft\\experiment_correct\\results_retained_optimized",
+      "hashes": {
+        "events.jsonl": "4c0b75c221a846fe3b5588cacf042801537422df375c51d50f4ebde55539ecae",
+        "repair_events.jsonl": "4efd81e272024ae1c88f066ab2255f0fc7d9eb04927be792228bedc27cecfed0",
+        "summary.json": "a4d2d7bcb2a40c3f0b5ec2fab96acbfa6ea7f6ef7f44f9a80bc273c69bea493f",
+        "supplement.json": "5b351312b6a7d4d6f3e352783694473780a04ac2d7baf80509d4dce616c10a67"
+      },
+      "recomputed": true,
+      "primary": {
+        "A": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 0,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 132,
+          "invalid_warrants": 114,
+          "valid_affirmatives": 102,
+          "false_positive_decisions": 84,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 0,
+          "requalified_different_basis": 0,
+          "independent_alternative_rescues": 0,
+          "changed_root_rescues": 0,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "B": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 144,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 144,
+          "unnecessary_invalidations": 60,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "C": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        }
+      },
+      "faster": 63,
+      "not_faster": 12,
+      "repair_outcomes": {
+        "UNCHANGED_SUPPORTED": 16,
+        "NOT_AUTHORIZED": 24,
+        "REVALIDATED_AFTER_CHANGE": 8,
+        "NO_VALID_RETURN_FOUND": 48
+      },
+      "rollbacks": 16,
+      "supplement": {
+        "status": "PASS",
+        "or_orders": 5040,
+        "or_counts": {
+          "000": 0,
+          "001": 8,
+          "010": 4,
+          "011": 28,
+          "100": 2,
+          "101": 12,
+          "110": 14,
+          "111": 50
+        },
+        "horn_systems": 1024,
+        "horn_queries": 2048,
+        "budget_cases": 525,
+        "budget_outcomes": {
+          "BUDGET_EXHAUSTED_UNRESOLVED": 408,
+          "UNRESOLVED": 56,
+          "SUPPORTED_WITH_BASIS": 40,
+          "STOP": 21
+        }
+      },
+      "negative_controls": [
+        {
+          "control": "history_erasure",
+          "expected": "HISTORY_ERASED",
+          "faults": [
+            "HISTORY_ERASED"
+          ],
+          "detected": true
+        },
+        {
+          "control": "intent_promotion",
+          "expected": "INTENT_PROMOTION",
+          "faults": [
+            "INTENT_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "stale_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "hash_as_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "coverage_invention",
+          "expected": "COVERAGE_PROMOTION",
+          "faults": [
+            "COVERAGE_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "type_collapse",
+          "expected": "NO_COLLAPSE",
+          "faults": [
+            "NO_COLLAPSE"
+          ],
+          "detected": true
+        },
+        {
+          "control": "alternate_grant",
+          "faults": [
+            "GRANT_BYPASS"
+          ],
+          "detected": true
+        },
+        {
+          "control": "quiet_summon",
+          "faults": [
+            "TASK_SUMMONED"
+          ],
+          "detected": true
+        }
+      ]
+    },
+    "fresh_windows_normal": {
+      "study": "FRONT-CORRECT-01",
+      "result_directory": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project\\Audit\\runs\\correction-normal\\results",
+      "hashes": {
+        "events.jsonl": "2438be5b51cfa963e0759643b350d18b9b4bc417fa5fe7164ec6ee35e257b8a8",
+        "repair_events.jsonl": "4efd81e272024ae1c88f066ab2255f0fc7d9eb04927be792228bedc27cecfed0",
+        "summary.json": "45b2512dcb9ca0db0a155d3abf2d758b51ef0236f8b557151a6a362ff4267f83",
+        "supplement.json": "2bc804892dc2aef2ba50d66c1e80b134f678016a2fef69e023edada7a3e79936"
+      },
+      "recomputed": true,
+      "primary": {
+        "A": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 0,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 132,
+          "invalid_warrants": 114,
+          "valid_affirmatives": 102,
+          "false_positive_decisions": 84,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 0,
+          "requalified_different_basis": 0,
+          "independent_alternative_rescues": 0,
+          "changed_root_rescues": 0,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "B": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 144,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 144,
+          "unnecessary_invalidations": 60,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "C": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        }
+      },
+      "faster": 75,
+      "not_faster": 0,
+      "repair_outcomes": {
+        "UNCHANGED_SUPPORTED": 16,
+        "NOT_AUTHORIZED": 24,
+        "REVALIDATED_AFTER_CHANGE": 8,
+        "NO_VALID_RETURN_FOUND": 48
+      },
+      "rollbacks": 16,
+      "supplement": {
+        "status": "PASS",
+        "or_orders": 5040,
+        "or_counts": {
+          "000": 0,
+          "001": 8,
+          "010": 4,
+          "011": 28,
+          "100": 2,
+          "101": 12,
+          "110": 14,
+          "111": 50
+        },
+        "horn_systems": 1024,
+        "horn_queries": 2048,
+        "budget_cases": 525,
+        "budget_outcomes": {
+          "BUDGET_EXHAUSTED_UNRESOLVED": 408,
+          "UNRESOLVED": 56,
+          "SUPPORTED_WITH_BASIS": 40,
+          "STOP": 21
+        }
+      },
+      "negative_controls": [
+        {
+          "control": "history_erasure",
+          "expected": "HISTORY_ERASED",
+          "faults": [
+            "HISTORY_ERASED"
+          ],
+          "detected": true
+        },
+        {
+          "control": "intent_promotion",
+          "expected": "INTENT_PROMOTION",
+          "faults": [
+            "INTENT_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "stale_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "hash_as_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "coverage_invention",
+          "expected": "COVERAGE_PROMOTION",
+          "faults": [
+            "COVERAGE_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "type_collapse",
+          "expected": "NO_COLLAPSE",
+          "faults": [
+            "NO_COLLAPSE"
+          ],
+          "detected": true
+        },
+        {
+          "control": "alternate_grant",
+          "faults": [
+            "GRANT_BYPASS"
+          ],
+          "detected": true
+        },
+        {
+          "control": "quiet_summon",
+          "faults": [
+            "TASK_SUMMONED"
+          ],
+          "detected": true
+        }
+      ]
+    },
+    "fresh_windows_optimized": {
+      "study": "FRONT-CORRECT-01",
+      "result_directory": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project\\Audit\\runs\\correction-optimized\\results",
+      "hashes": {
+        "events.jsonl": "c69921807ccd976937feab6e00a5c4c769c5d69476a76b57d60183f45c04a686",
+        "repair_events.jsonl": "4efd81e272024ae1c88f066ab2255f0fc7d9eb04927be792228bedc27cecfed0",
+        "summary.json": "6f21fbb2b17d61c9e3425632371b681f5addcbb6afae673c2a0f485b3f7b408d",
+        "supplement.json": "2bc804892dc2aef2ba50d66c1e80b134f678016a2fef69e023edada7a3e79936"
+      },
+      "recomputed": true,
+      "primary": {
+        "A": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 0,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 132,
+          "invalid_warrants": 114,
+          "valid_affirmatives": 102,
+          "false_positive_decisions": 84,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 0,
+          "requalified_different_basis": 0,
+          "independent_alternative_rescues": 0,
+          "changed_root_rescues": 0,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "B": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 144,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 144,
+          "unnecessary_invalidations": 60,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        },
+        "C": {
+          "fixtures": 75,
+          "queries": 216,
+          "stops": 3,
+          "histories_preserved": 75,
+          "full_recomputations": 0,
+          "selected_routes_reopened": 144,
+          "blanket_invalidations": 0,
+          "unnecessary_invalidations": 0,
+          "grant_requests": 21,
+          "correct_support_decisions": 216,
+          "invalid_warrants": 0,
+          "valid_affirmatives": 132,
+          "false_positive_decisions": 0,
+          "false_negative_decisions": 0,
+          "honest_unresolved": 84,
+          "requalified_different_basis": 30,
+          "independent_alternative_rescues": 24,
+          "changed_root_rescues": 6,
+          "grants_allowed": 3,
+          "grants_denied": 18,
+          "grant_violations": 0
+        }
+      },
+      "faster": 73,
+      "not_faster": 2,
+      "repair_outcomes": {
+        "UNCHANGED_SUPPORTED": 16,
+        "NOT_AUTHORIZED": 24,
+        "REVALIDATED_AFTER_CHANGE": 8,
+        "NO_VALID_RETURN_FOUND": 48
+      },
+      "rollbacks": 16,
+      "supplement": {
+        "status": "PASS",
+        "or_orders": 5040,
+        "or_counts": {
+          "000": 0,
+          "001": 8,
+          "010": 4,
+          "011": 28,
+          "100": 2,
+          "101": 12,
+          "110": 14,
+          "111": 50
+        },
+        "horn_systems": 1024,
+        "horn_queries": 2048,
+        "budget_cases": 525,
+        "budget_outcomes": {
+          "BUDGET_EXHAUSTED_UNRESOLVED": 408,
+          "UNRESOLVED": 56,
+          "SUPPORTED_WITH_BASIS": 40,
+          "STOP": 21
+        }
+      },
+      "negative_controls": [
+        {
+          "control": "history_erasure",
+          "expected": "HISTORY_ERASED",
+          "faults": [
+            "HISTORY_ERASED"
+          ],
+          "detected": true
+        },
+        {
+          "control": "intent_promotion",
+          "expected": "INTENT_PROMOTION",
+          "faults": [
+            "INTENT_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "stale_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "hash_as_warrant",
+          "expected": "BAD_WARRANT:q",
+          "faults": [
+            "WRONG_SUPPORT:q",
+            "BAD_WARRANT:q"
+          ],
+          "detected": true
+        },
+        {
+          "control": "coverage_invention",
+          "expected": "COVERAGE_PROMOTION",
+          "faults": [
+            "COVERAGE_PROMOTION"
+          ],
+          "detected": true
+        },
+        {
+          "control": "type_collapse",
+          "expected": "NO_COLLAPSE",
+          "faults": [
+            "NO_COLLAPSE"
+          ],
+          "detected": true
+        },
+        {
+          "control": "alternate_grant",
+          "faults": [
+            "GRANT_BYPASS"
+          ],
+          "detected": true
+        },
+        {
+          "control": "quiet_summon",
+          "faults": [
+            "TASK_SUMMONED"
+          ],
+          "detected": true
+        }
+      ]
+    }
+  },
+  "legacy": {
+    "study": "FRONT-REUSE-01",
+    "status": "SAVED_EVENT_REAGGREGATION_NOT_FRESH_REPLAY",
+    "event_count": 810,
+    "arms": {
+      "A": {
+        "first_pass_repeat_queries": 27,
+        "correct_repeat": 27,
+        "cache_reuses": 0,
+        "false_reuses": 0,
+        "support_available_repeat": 27
+      },
+      "B": {
+        "first_pass_repeat_queries": 27,
+        "correct_repeat": 21,
+        "cache_reuses": 21,
+        "false_reuses": 6,
+        "support_available_repeat": 6
+      },
+      "C": {
+        "first_pass_repeat_queries": 27,
+        "correct_repeat": 27,
+        "cache_reuses": 12,
+        "false_reuses": 0,
+        "support_available_repeat": 27
+      }
+    },
+    "truth_reference": "Predeclared validity ledger; no fresh legacy solver run.",
+    "policy_identity": "A fresh recomputation; B blind cache; C checked reuse. These letters do not name the correction policies.",
+    "hashes": {
+      "events.jsonl": "90559f71f014a7dd05333e3fccf4be9f9dcae52cb67ffa35627a7ce038cad14b",
+      "run_identity.json": "c798ad42df2c06db0150241f7acd54de8839feb773bd0077d1ab31637cb581c7",
+      "summary.json": "0330430d42051a2df0d7a394d65b91ae1fe910673aed1c54accbfaf67e4c959b"
+    }
+  },
+  "completion_message_55_20": "No matching source run located; do not substitute for supplied 67/8 or 63/12.",
+  "limits": [
+    "No general Python-to-Lean refinement theorem",
+    "No external trust or authority authentication",
+    "Shared-machine timing observations are descriptive, not a superiority benchmark"
+  ]
+}

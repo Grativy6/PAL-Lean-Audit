@@ -1,0 +1,6 @@
+.lake/
+__pycache__/
+*.pyc
+Audit/dev/
+.ci-evidence/
+.local-publication-replay/

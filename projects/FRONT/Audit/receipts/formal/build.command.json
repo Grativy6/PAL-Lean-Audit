@@ -1,0 +1,15 @@
+{
+  "label": "build",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "build",
+    "FrontLean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 7.671999999962281,
+  "stdout": "Audit/receipts/formal/build.stdout.txt",
+  "stderr": "Audit/receipts/formal/build.stderr.txt",
+  "stdout_sha256": "c801e46a6fde0218d0449a414f1ab65e219a502abe94cc4c6b439a802fb9f161",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

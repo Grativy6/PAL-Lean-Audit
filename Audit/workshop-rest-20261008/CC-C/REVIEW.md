@@ -1,0 +1,13 @@
+# CC-C self-review
+
+Primary verdict: **proved as written for the selected finite/linear/phase fixtures**, with an explicit additional tie convention for the source's tie-excluded sector map. Thirty-three declarations include twenty-three theorems, helpers and controls. Two failed final build attempts and two development attempts are retained; the final result points to the passing build, inspection and kernel replay. Failures concerned elaboration of finite vector coordinates, not a mathematical counterexample.
+
+The side-label bound counts distinct answers inside each trace fiber, then takes the maximum over worlds. The theorem also handles empty W by defining the finite supremum as zero, a harmless extension of the source's nonempty convention. No conflicting-pair count is promoted to bits.
+
+The Boolean cube map uses lattice coordinates (a-c,b-c). The audit proves that these coordinates inject into the complex plane at omega=exp(2*pi*i/3), and proves pointwise equality with a+b*omega+c*omega^2. Both lattice and actual complex projections have seven vertices and twelve distinct undirected edges. The only collapsed vertex pair is 000/111; the hub fiber has exactly two elements, and retaining the first Boolean coordinate restores injectivity. This is the discrete cube, not its solid interior. The regular-hexagon metric description is not separately inventoried as a new theorem.
+
+The common-mode fixture uses the actual six-channel mean sum/6. Its surjectivity and rank-nullity give a five-dimensional kernel. Reconstruction, zero residual mean, exact affine-fiber characterization and an explicit lost-comparison example are checked. No interpretation as personal persistence or consciousness follows.
+
+The sector fixture rounds 6*x to its nearest integer, with upper-sector assignment at ties, reduces the label modulo 6 and retains a residual in [-1/12,1/12) turns. It proves reconstruction modulo an integer turn and a radians-scaled identity. A collision shows the sector label alone loses phase. The paper excludes ties; the chosen tie rule is audit implementation policy, not an adopted manuscript amendment.
+
+Remaining optional work from the key: lens signed-area integration needs its oriented arc parameterizations and integration convention; Euler boundary accounting needs a formal triangulated-surface model and incidence hypotheses; analytic extension examples need their declared function classes. Those are not silently counted as covered by this batch. No correction surfaced in the selected source claims. This is self-review with only standard Lean axioms; bundled kernel replay is not independent kernel implementation evidence.

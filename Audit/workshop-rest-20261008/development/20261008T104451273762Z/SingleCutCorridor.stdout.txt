@@ -1,0 +1,8 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutCorridor.lean:76:25: error: Application type mismatch: The argument
+  hs
+has type
+  s.Nonempty
+of sort `Prop` but is expected to have type
+  Finset ?m.168
+of sort `Type ?u.79` in the application
+  min'_le_max' hs

@@ -1,0 +1,13 @@
+# GPPR-B self-review
+
+Primary verdict: **conditional on named transcendence**, with the valuation algebra, coefficient extraction, rational well-definedness and weight admissibility proved unconditionally. Twenty-eight declarations include twenty-four theorems and controls; exact signatures and axiom inventories are retained in results.json.
+
+The proof builds an actual finite polynomial from integer-valued finite-support vectors. Faithful addresses recover each coefficient; nonzero weights permit cancellation; characteristic zero recovers each integer coefficient. Injective polynomial evaluation follows from the explicit transcendence hypothesis. For algebraic weights, Transcendental.extendScalars is invoked with an algebraic integral coefficient domain, rather than assuming that rational transcendence automatically applies to complex coefficients. The source's algebraic coefficient field is covered; the formal theorem needs only the weaker integral-domain structure.
+
+Prime identities are the subtype Nat.Primes. Natural factorization is restricted to that subtype, and its coefficients are cast to integers. Unique factorization proves injectivity on n != 0; multiplication, 1 and prime powers have explicit statements. A supplied faithful embedding of prime identities into nonnegative addresses models the source registry. For its consecutive-index code use address(p_j)=j, not address(p)=p. Generation or authentication of that registry is not proved by the code theorem.
+
+Signed numerator-minus-denominator valuations are equal exactly when the positive fractions are equal. Every positive rational has a represented numerator/denominator pair, and product valuations add. Thus the extension descends through different presentations, rather than merely distinguishing pairs of natural numbers. Code additivity then gives the group operation. Zero and negative represented magnitudes remain outside this domain.
+
+The actual Vogel coefficient sqrt(j) is proved algebraic by X^2-j and nonzero for positive j, placed in the algebraic-closure subalgebra, and fed to the weighted injection theorem. Repeated-address and zero-weight controls show why those assumptions matter. The polynomial implementation is explicitly bridged by code_single to the source's weighted power sum.
+
+No source correction surfaced. The golden number is supplied through GPPR-A's conditional result; this batch does not close Gelfond-Schneider. No finite-precision separation, factoring method, efficient inverse, or performance benchmark is established. Build, exact type/axiom inspection, bundled kernel replay and saved receipt checks passed. Only standard Lean axioms occur. This is self-review, not independent corroboration of the manuscript.

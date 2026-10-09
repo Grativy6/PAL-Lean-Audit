@@ -1,0 +1,16 @@
+{
+  "label": "kernel-Experiments-BridgeFourSector",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "leanchecker",
+    "Experiments.BridgeFourSector"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 29.07900000002701,
+  "stdout": "Audit/receipts/formal/kernel-Experiments-BridgeFourSector.stdout.txt",
+  "stderr": "Audit/receipts/formal/kernel-Experiments-BridgeFourSector.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

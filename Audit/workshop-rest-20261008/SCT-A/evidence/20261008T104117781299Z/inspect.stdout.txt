@@ -1,0 +1,49 @@
+Experiments.SingleCutSpan.hull : Finset ℕ → Finset ℕ
+'Experiments.SingleCutSpan.hull' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.charge : Finset ℕ → ℕ
+'Experiments.SingleCutSpan.charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.support_subset_hull : ∀ (s : Finset ℕ), s ⊆ Experiments.SingleCutSpan.hull s
+'Experiments.SingleCutSpan.support_subset_hull' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.span_identity : ∀ (s : Finset ℕ) (h : s.Nonempty),
+  Experiments.SingleCutSpan.charge s = s.max' h - s.min' h + 1 - s.card
+'Experiments.SingleCutSpan.span_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.empty_charge : Experiments.SingleCutSpan.charge ∅ = 0
+'Experiments.SingleCutSpan.empty_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.singleton_charge : ∀ (x : ℕ), Experiments.SingleCutSpan.charge {x} = 0
+'Experiments.SingleCutSpan.singleton_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.one_defect_criterion : ∀ (s : Finset ℕ),
+  Experiments.SingleCutSpan.charge s ≤ 1 ↔
+    Experiments.SingleCutSpan.hull s \ s = ∅ ∨ ∃ x, Experiments.SingleCutSpan.hull s \ s = {x}
+'Experiments.SingleCutSpan.one_defect_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.SingleCutSpan.rankedSupport : {V : Type u_1} → [DecidableEq V] → {n : ℕ} → V ≃ Fin n → Finset V → Finset ℕ
+'Experiments.SingleCutSpan.rankedSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.SingleCutSpan.bijective_order_preserves_support_size : ∀ {V : Type u_1} [inst : DecidableEq V] {n : ℕ}
+  (order : V ≃ Fin n) (s : Finset V), (Experiments.SingleCutSpan.rankedSupport order s).card = s.card
+'Experiments.SingleCutSpan.bijective_order_preserves_support_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.SingleCutSpan.hull_positions_realized : ∀ {V : Type u_1} [inst : DecidableEq V] {n : ℕ} (order : V ≃ Fin n)
+  (s : Finset V),
+  ∀ x ∈ Experiments.SingleCutSpan.hull (Experiments.SingleCutSpan.rankedSupport order s), ∃ v, ↑(order v) = x
+'Experiments.SingleCutSpan.hull_positions_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.single_hole_is_two_blocks : ∀ (a k b : ℕ),
+  a < k → k < b → Finset.Icc a b \ {k} = Finset.Icc a (k - 1) ∪ Finset.Icc (k + 1) b
+'Experiments.SingleCutSpan.single_hole_is_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.serial : ℕ → ℕ → Finset ℕ → Finset ℕ
+'Experiments.SingleCutSpan.serial' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.serial_nonempty : ∀ (e c : ℕ) (u : Finset ℕ),
+  (Experiments.SingleCutSpan.serial e c u).Nonempty
+'Experiments.SingleCutSpan.serial_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.serial_min : ∀ (e c : ℕ) (u : Finset ℕ), (Experiments.SingleCutSpan.serial e c u).min' ⋯ = 0
+'Experiments.SingleCutSpan.serial_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.serial_max : ∀ (e c : ℕ) (u : Finset ℕ) (hu : u.Nonempty),
+  (Experiments.SingleCutSpan.serial e c u).max' ⋯ = e + c + 2 + u.max' hu
+'Experiments.SingleCutSpan.serial_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.serial_card : ∀ (e c : ℕ) (u : Finset ℕ),
+  (Experiments.SingleCutSpan.serial e c u).card = c + 2 + u.card
+'Experiments.SingleCutSpan.serial_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.prefix_card_le : ∀ (u : Finset ℕ) (hu : u.Nonempty), u.card ≤ u.max' hu + 1
+'Experiments.SingleCutSpan.prefix_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutSpan.exact_endpoint_decomposition : ∀ (e c : ℕ) (u : Finset ℕ) (hu : u.Nonempty),
+  Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e c u) = e + (u.max' hu + 1 - u.card)
+'Experiments.SingleCutSpan.exact_endpoint_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]

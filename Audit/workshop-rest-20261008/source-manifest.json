@@ -1,0 +1,125 @@
+{
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "inputs": [
+    {
+      "path": "../Other mathematics/Single Cut Transport/Sources/PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx",
+      "sha256": "c9168a69ece8e405d643a86580e6637001de3f14514495d9b3943ce943e0290e",
+      "role": "manuscript",
+      "paper": "Single Cut Transport"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.json",
+      "sha256": "bcc6f0b57d6439fb8c640ff902647677b3eaedfbddf9394d8c132a548c269812",
+      "role": "source_address_extraction",
+      "paper": "Single Cut Transport"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+      "sha256": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+      "role": "source_address_extraction",
+      "paper": "Single Cut Transport"
+    },
+    {
+      "path": "../Other mathematics/Compactification Costs/Sources/Compactification_Costs_v0.2.docx",
+      "sha256": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+      "role": "manuscript",
+      "paper": "Compactification Costs"
+    },
+    {
+      "path": "../Other mathematics/Compactification Costs/Sources/Compactification_Costs_v0.2.pdf",
+      "sha256": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+      "role": "manuscript",
+      "paper": "Compactification Costs"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Compactification Costs.docx.json",
+      "sha256": "d6b199e4719feebdd49a146effba9902421b4d242537dc37ae00dcfc25b8027d",
+      "role": "source_address_extraction",
+      "paper": "Compactification Costs"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Compactification Costs.docx.txt",
+      "sha256": "360dd27c377e2c7342c78a2bbebe1f6caabb50d389012fb38e612f0bf273a49f",
+      "role": "source_address_extraction",
+      "paper": "Compactification Costs"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Compactification Costs.pdf.txt",
+      "sha256": "8a5e7fb3ff7a66fb6b25b91680285fb3057cb4c8b3a7880c7522adc24bcc5639",
+      "role": "source_address_extraction",
+      "paper": "Compactification Costs"
+    },
+    {
+      "path": "../Other mathematics/GPPR/Sources/GPPR_v0.1.docx",
+      "sha256": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+      "role": "manuscript",
+      "paper": "GPPR"
+    },
+    {
+      "path": "../Other mathematics/GPPR/Sources/GPPR_v0.1.pdf",
+      "sha256": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f",
+      "role": "manuscript",
+      "paper": "GPPR"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/GPPR.docx.json",
+      "sha256": "3a902652df9c63a6402aa6516d1766096ff175d3f20f37bb90a827abfb904600",
+      "role": "source_address_extraction",
+      "paper": "GPPR"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/GPPR.docx.txt",
+      "sha256": "0df349ad2c9b000dd9ce902c17dd69e73be0d01c8ffbccc52ec59ef3a4c53b84",
+      "role": "source_address_extraction",
+      "paper": "GPPR"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/GPPR.pdf.txt",
+      "sha256": "b54ee051155fe38b757991f8733566ac370cfc8426d092ce3c8f246d551f38ce",
+      "role": "source_address_extraction",
+      "paper": "GPPR"
+    },
+    {
+      "path": "../Other mathematics/Finite Abstraction/Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx",
+      "sha256": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+      "role": "manuscript",
+      "paper": "Finite Abstraction"
+    },
+    {
+      "path": "../Other mathematics/Finite Abstraction/Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf",
+      "sha256": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802",
+      "role": "manuscript",
+      "paper": "Finite Abstraction"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Finite Abstraction.docx.json",
+      "sha256": "23bf22a55e6505286cbf9f79fbad6f5232773f9a9752b1c4f26c1fc415d81b22",
+      "role": "source_address_extraction",
+      "paper": "Finite Abstraction"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Finite Abstraction.docx.txt",
+      "sha256": "161c5f0ead8183eddc379e13193f4d9815119d321f6ae8d77ff15741b8bba365",
+      "role": "source_address_extraction",
+      "paper": "Finite Abstraction"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Finite Abstraction.pdf.txt",
+      "sha256": "0f72b7b2fdd41e46d929dbdc921a239ed39836bd7fa744dc7a69315123bf0399",
+      "role": "source_address_extraction",
+      "paper": "Finite Abstraction"
+    },
+    {
+      "path": "workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json",
+      "sha256": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+      "role": "prepared_key"
+    },
+    {
+      "path": "workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "sha256": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62",
+      "role": "prepared_key"
+    }
+  ],
+  "activation_date": "2026-10-08",
+  "source_documents_modified": false
+}

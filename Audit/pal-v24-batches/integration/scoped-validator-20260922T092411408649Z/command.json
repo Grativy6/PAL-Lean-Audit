@@ -1,0 +1,29 @@
+{
+  "name": "pal23-charter-preserved-receipt",
+  "argv": [
+    "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-X",
+    "utf8",
+    "Audit/pal-v23-charter/check_publication.py",
+    "--check",
+    "--source-dir",
+    "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Audit\\pal-v24-batches\\integration\\attempt-20260922T091427769405Z\\source-copies"
+  ],
+  "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+  "exit_code": 0,
+  "runtime_seconds": 0.172,
+  "logs": {
+    "stdout": {
+      "path": "Audit/pal-v24-batches/integration/scoped-validator-20260922T092411408649Z/publication-validator.stdout.log",
+      "sha256": "5bff45066c17460cb7293df7eae4adc38ee10a580acffd9b75c60daa42b57f55",
+      "bytes": 115
+    },
+    "stderr": {
+      "path": "Audit/pal-v24-batches/integration/scoped-validator-20260922T092411408649Z/publication-validator.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "started_utc": "2026-09-22T09:24:11.408649+00:00",
+  "finished_utc": "2026-09-22T09:24:11.575645+00:00"
+}

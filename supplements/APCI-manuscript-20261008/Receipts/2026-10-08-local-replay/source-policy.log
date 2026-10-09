@@ -1,0 +1,4 @@
+inventory exact: 15 public declarations
+policy pass: 6 Lean sources; pinned core+Std; original inventory checker passed
+Windows Python adaptation; the Bash script was reviewed but not executed.
+Source-lock text checked; the unpublished predecessor archive was not available for byte verification.

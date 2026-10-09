@@ -1,0 +1,375 @@
+{
+  "source_sha256": "d384d108ebd0602958102ed2cbe59616766a10cca6ae97d929b547367d79790b",
+  "claims": [
+    {
+      "id": "1",
+      "source_heading": "Proposition 1 — Scoped deductive reuse",
+      "source_markdown_line": 204,
+      "status": "BOUNDED_REALIZATION",
+      "formal_declarations": [
+        "FrontLean.premise_substitution"
+      ],
+      "assumptions_and_scope": "Fixed finitary inference rules, arbitrary proposition labels, every retained premise has a valid present derivation; substitution is proved by structural induction.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "Explicit finitary calculus realization. No encoding of all sound monotone calculi or natural deduction with discharged assumptions.",
+      "source_heading_sha256": "199ad4f88c2c475d79ad2c65051d92cde72a6216642098d55b8b8ada382ff3ef"
+    },
+    {
+      "id": "2",
+      "source_heading": "Proposition 2 — Negative-core transfer",
+      "source_markdown_line": 279,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.negative_core_transfer"
+      ],
+      "assumptions_and_scope": "Arbitrary clauses and valuations with a fixed satisfaction relation; an unsatisfiable core is a subset of the new clause set.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "0309b33aab6c4b06603edccbfce8e82bae59d119b4455f88dec37ea436183d66"
+    },
+    {
+      "id": "3",
+      "source_heading": "Proposition 3 — Fiber criterion for an answer",
+      "source_markdown_line": 405,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.answer_sufficiency"
+      ],
+      "assumptions_and_scope": "Arbitrary types and total input/answer maps. Decoder lives on the reachable subtype, including empty domains. Reuses APCI exactOnReachable_iff_fiberConstant.",
+      "batch": "A",
+      "module": "FrontLean.Answers",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "3004f3e660f2bb5e342bb5be2482591f192475aa5f0e26f64034dba56c71bd4d"
+    },
+    {
+      "id": "3A",
+      "source_heading": "Proposition 3A — Indexed joint sufficiency",
+      "source_markdown_line": 444,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.joint_equality",
+        "FrontLean.joint_sufficiency"
+      ],
+      "assumptions_and_scope": "Dependent labeled family of readouts, with a decoder on its actual reachable tuples; classical choice is explicit in the dependency inventory.",
+      "batch": "A",
+      "module": "FrontLean.Answers",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "c091b59c9500fa69f68f110b7a74eda9e0143b3d8d15daae3109b899def88a82"
+    },
+    {
+      "id": "3B",
+      "source_heading": "Proposition 3B — View-to-view factorization",
+      "source_markdown_line": 468,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.linear_factorization"
+      ],
+      "assumptions_and_scope": "Linear maps on one full vector space over a field; the decoder domain is the image of J and existence is equivalent to ker J <= ker q.",
+      "batch": "E",
+      "module": "FrontLean.Linear",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "064fd3f4c05701210e437fbf76cb76b4c201fdd0865f1cbfac00502deeb8de19"
+    },
+    {
+      "id": "4",
+      "source_heading": "Proposition 4 — Common-continuation criterion",
+      "source_markdown_line": 490,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.common_action_iff"
+      ],
+      "assumptions_and_scope": "One adequate action common to each reachable fiber, with adequacy supplied as a relation. The proof permits arbitrary sets; the finite manuscript case is an instance.",
+      "batch": "A",
+      "module": "FrontLean.Answers",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "f2b6aac7d777df7e65be73f0d2d3adad085ceeacf6b8ff66a5ffb891473d3feb"
+    },
+    {
+      "id": "5",
+      "source_heading": "Proposition 5 — Future-output preservation",
+      "source_markdown_line": 581,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.future_output_preservation",
+        "FrontLean.online_update_iff",
+        "FrontLean.future_eq_is_right_congruence"
+      ],
+      "assumptions_and_scope": "All finite words over the declared deterministic update alphabet; output preservation and a same-encoding transition function have separate iff statements.",
+      "batch": "D",
+      "module": "FrontLean.Continuation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "41e24c2dc3b7cd4be64b47a6d8144629864d2679b379c00fc98823d8a10de0aa"
+    },
+    {
+      "id": "6",
+      "source_heading": "Proposition 6 — Cost of protecting all coordinate queries",
+      "source_markdown_line": 618,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.coordinate_bit_bound"
+      ],
+      "assumptions_and_scope": "Exact recovery of every coordinate of d Boolean bits from a fixed-length b-bit representation. No noise, probabilistic guarantee, variable length, or external rereading.",
+      "batch": "A",
+      "module": "FrontLean.Answers",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "4c433bc0941d370ece68d9158108f0f92c618099858105eaa0d652327fc14673"
+    },
+    {
+      "id": "5A",
+      "source_heading": "Proposition 5A — Combined-interface sufficiency",
+      "source_markdown_line": 644,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.admitted_outputs_sufficiency",
+        "FrontLean.joint_kernel",
+        "FrontLean.kernel_refinement"
+      ],
+      "assumptions_and_scope": "The actual admitted index set, not its rectangular completion. Dependent indexed outputs. Linear joint-kernel and refinement statements in Linear.lean.",
+      "batch": "DE",
+      "module": "FrontLean.Continuation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "32ca1c3b8a75cdfeee437a89751e9b2cd98bef7809611e23535d211a0969f839"
+    },
+    {
+      "id": "5B",
+      "source_heading": "Proposition 5B — Persistent invisibility and finite-horizon closure",
+      "source_markdown_line": 712,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.invariant_kernel_iff",
+        "FrontLean.horizon_antitone",
+        "FrontLean.finite_horizon_closure",
+        "FrontLean.infinite_invariant",
+        "FrontLean.all_outputs_equal_iff"
+      ],
+      "assumptions_and_scope": "Full vector-space difference domain; one linear endomorphism and readout. Stabilization at dim T holds for any finite-dimensional field vector space (including zero dimension). The Lean proof uses strict dimension drop, not Cayley-Hamilton.",
+      "batch": "E",
+      "module": "FrontLean.Horizon",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "aed1b702a48bd97f44db001eada33166b5469c129af211d372d7f05f1eefa711"
+    },
+    {
+      "id": "5C",
+      "source_heading": "Proposition 5C — Finite subfamily with the same hidden space",
+      "source_markdown_line": 730,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.finite_readout_subfamily",
+        "FrontLean.finite_subfamily_inside"
+      ],
+      "assumptions_and_scope": "Arbitrary indexed family; finite-dimensional input. At most dim T readouts preserve the common kernel. The proof works even without finite-dimensional codomains; no effective selection or acquisition claim.",
+      "batch": "E",
+      "module": "FrontLean.Horizon",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "a71adc7cfd818eb2c09b35c5ce8995cd3a10719e171c6dfc75f258ed2f035f5c"
+    },
+    {
+      "id": "5D",
+      "source_heading": "Proposition 5D — BRIDGE at the combined interface",
+      "source_markdown_line": 751,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.joint_residual_short_exact",
+        "FrontLean.joint_visible_equiv",
+        "FrontLean.joint_sector_dimensions",
+        "FrontLean.visibleRefinement",
+        "FrontLean.refinement_commutes",
+        "Experiments.BridgeRecovery.ker_residualReadout"
+      ],
+      "assumptions_and_scope": "One common B and actual J; typed hidden injection, residual quotient map, exactness, injectivity, surjectivity and visible equivalence. Finite dimension only for the dimension identity. Refinement uses the same B. Verbatim inherited BRIDGE proofs keep their identity.",
+      "batch": "E",
+      "module": "FrontLean.Linear",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "5bf775fe955455f5bc362f53f87de63af56c2a2b55c06151eb96eda7bf99f710"
+    },
+    {
+      "id": "5E",
+      "source_heading": "Proposition 5E — Query-specific side-trace capacity and minimum rank",
+      "source_markdown_line": 774,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.side_trace_decodable",
+        "FrontLean.side_trace_rank_lower_bound",
+        "FrontLean.minimum_side_trace",
+        "FrontLean.side_trace_capacity",
+        "FrontLean.side_trace_capacity_injection",
+        "FrontLean.residual_query_criterion",
+        "FrontLean.residual_debt_image",
+        "FrontLean.residual_side_trace_capacity",
+        "Experiments.BridgeRecovery.answer_decodable_iff"
+      ],
+      "assumptions_and_scope": "Finite-dimensional input, state query q, actual J and linear side trace. Lower bound plus attaining noncanonical extension. Finite-side-space dimension iff; arbitrary side spaces use an equivalent injective-copy capacity statement. Residual target uses T/B and the range of its named hidden injection. Rank is not acquisition cost.",
+      "batch": "E",
+      "module": "FrontLean.Linear",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "5acc64a5cce5969893aaa1d1a22fca1de086cc58ad02238ec1ca05c9dfed173c"
+    },
+    {
+      "id": "5F",
+      "source_heading": "Proposition 5F — When an update descends to a quotient",
+      "source_markdown_line": 796,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.quotient_update_iff",
+        "FrontLean.transported_return"
+      ],
+      "assumptions_and_scope": "Arbitrary subspace B and linear L: a commuting quotient update exists iff B is invariant. B may be ker J. Equation 20m uses powers of the same endomorphism and transports the second return.",
+      "batch": "DE",
+      "module": "FrontLean.Linear",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "6de4819f3c31cbe537ee3ccf4b3bc264793750f33cee85abe5c86eb7a6929597"
+    },
+    {
+      "id": "7",
+      "source_heading": "Proposition 7 — Amortized reuse condition",
+      "source_markdown_line": 851,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.reuse_cheaper_iff",
+        "FrontLean.no_saving_when_reuse_is_costlier"
+      ],
+      "assumptions_and_scope": "Equal-unit real costs in the stated model; algebraic break-even identity. No-cost-saving corollary assumes m>=1, B>=0 and R>=D.",
+      "batch": "F",
+      "module": "FrontLean.Costs",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "9c1aed7b0c4d9ad0aaede6ba9685b31b5d7d5665dfdec1eeb282fedb05c2e52e"
+    },
+    {
+      "id": "7A",
+      "source_heading": "Proposition 7A — Finite stabilization and least closure",
+      "source_markdown_line": 915,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.finite_stabilization",
+        "FrontLean.horn_least_closure",
+        "FrontLean.stable_round_persists"
+      ],
+      "assumptions_and_scope": "Finite atom type, finite rule set, inflationary monotone Horn step. At most card atoms minus card seeds strict growth rounds; fixed point contains seeds and is least among closed supersets. Final no-change scan is additional work.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "e0eb7a74c4054c00ecec4d3576a647a8b8644b8e2a517f69b68b44b16aca3886"
+    },
+    {
+      "id": "7B",
+      "source_heading": "Proposition 7B — Sound propagation relative to a basis",
+      "source_markdown_line": 927,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.horn_rounds_sound",
+        "FrontLean.derivation_sound",
+        "FrontLean.empty_seed_stays_empty"
+      ],
+      "assumptions_and_scope": "Declared true roots and truth-preserving rules; every conjunctive parent is checked. No unsupported cycle generates support. Empty-body rules require their own declared rule soundness.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "7f7ca24ef0b9156dc5fe08c0ee96047e5aa3b3f352f22348ad8ce583240e85c2"
+    },
+    {
+      "id": "7C",
+      "source_heading": "Proposition 7C — Decomposing the exposed wake",
+      "source_markdown_line": 952,
+      "status": "GENERAL_STATEMENT_CHECKED",
+      "formal_declarations": [
+        "FrontLean.wake_decomposition",
+        "FrontLean.redundant_seed"
+      ],
+      "assumptions_and_scope": "Finite set partition with E subset B subset S and old/new least-closure properties supplied for the redundancy corollary. No generic speedup is asserted.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No open gap in the stated formal target. External application, illustrative examples and all surrounding prose are not thereby certified.",
+      "source_heading_sha256": "08a0ec1adf7f5d03175bd173da8bb0de341a050b124b9c9f554eba6425dae202"
+    },
+    {
+      "id": "7D",
+      "source_heading": "Proposition 7D — Transfer of a selected, rooted derivation",
+      "source_markdown_line": 974,
+      "status": "BOUNDED_REALIZATION",
+      "formal_declarations": [
+        "FrontLean.increasing_depth_no_cycle",
+        "FrontLean.valid_under_unchanged_basis",
+        "FrontLean.derivation_sound"
+      ],
+      "assumptions_and_scope": "Any strictly increasing discovery ranking rules out cycles. A finite rooted derivation remains valid when every actually used root and rule retains validity; that returned derivation implies its head under sound interpretations.",
+      "batch": "B",
+      "module": "FrontLean.Propagation",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "Sharing is represented by the finite tree obtained after unfolding a DAG. No verified parser, DAG-to-tree compiler, exact byte matcher or Python implementation refinement theorem.",
+      "source_heading_sha256": "f47374d6d41c122b5fb32fb85e9591d6f06709f6402af2f621060cb30351c131"
+    },
+    {
+      "id": "7E",
+      "source_heading": "Proposition 7E — Conditional support and history preservation under correction",
+      "source_markdown_line": 1030,
+      "status": "BOUNDED_REALIZATION",
+      "formal_declarations": [
+        "FrontLean.recorded_support_sound",
+        "FrontLean.unchanged_alternative_survives",
+        "FrontLean.scratch_commit_iff",
+        "FrontLean.failed_scratch_keeps_original",
+        "FrontLean.scratch_preserves_history",
+        "FrontLean.finite_history_preservation"
+      ],
+      "assumptions_and_scope": "Finite recorded witnesses with all children grounded; conditional root/rule truth. An explicit pure scratch transition commits changed state iff its grant and postcondition hold, otherwise retains the original state. Every transition appends history; prefix preservation composes.",
+      "batch": "C",
+      "module": "FrontLean.Correction",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "A checked realization of the conditional correction claims, not a proof for arbitrary repair implementations. The grant/postcondition are fixed supplied predicates; the Python fixture increments a version on commit and is not compiled from this Lean transition. External authority, concurrent revocation and crash recovery remain outside.",
+      "source_heading_sha256": "898caa79cce68e4259ec48406b95e3f6e3f903631067843102422cefe3b25d0b"
+    },
+    {
+      "id": "8",
+      "source_heading": "Proposition 8 — Polynomial accounting consequence",
+      "source_markdown_line": 1081,
+      "status": "BOUNDED_REALIZATION",
+      "formal_declarations": [
+        "FrontLean.descending_rank_bounds_steps",
+        "FrontLean.total_cost_bound",
+        "FrontLean.polynomial_accounting"
+      ],
+      "assumptions_and_scope": "Natural-valued strictly decreasing rank, bounded initial rank, bounded per-stage cost, polynomial init cost. Proves the p0+(p1+1)*p2 numerical bound and polynomial expression.",
+      "batch": "F",
+      "module": "FrontLean.Costs",
+      "verification": "Authoritative local verification status: receipts/formal/receipt.json",
+      "remaining_obligation": "No encoding of a uniform SAT decider or machine-level complexity classes. The source consequence about P=NP remains conditional on its stated algorithm, correctness, totality and cost hypotheses; none is constructed here.",
+      "source_heading_sha256": "b5beed7b6e2dc09e2dca62a829c0368f558346ee4e2a13816e5322a0874f6fb4"
+    }
+  ],
+  "review_status": "SAME_SESSION_SELF_REVIEW",
+  "source_correspondence": "Human-readable map assessed separately from Lean acceptance.",
+  "definitions_and_schemas": [
+    {
+      "id": "C1",
+      "kind": "definition",
+      "declaration": "FrontLean.RecordedSupport",
+      "scope": "Existence among a fixed finite recorded list. Exhaustion is not negation of the query."
+    },
+    {
+      "id": "C2",
+      "kind": "accounting schema",
+      "evidence": "receipts/experiment-reconciliation.json",
+      "scope": "All logged phase times sum to measured wall time; operation counters reaggregate. No universal cost theorem or memory sandbox follows."
+    }
+  ]
+}

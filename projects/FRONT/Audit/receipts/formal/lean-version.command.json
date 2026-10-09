@@ -1,0 +1,16 @@
+{
+  "label": "lean-version",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--version"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project",
+  "exit_code": 0,
+  "seconds": 2.094000000040978,
+  "stdout": "Audit/receipts/formal/lean-version.stdout.txt",
+  "stderr": "Audit/receipts/formal/lean-version.stderr.txt",
+  "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

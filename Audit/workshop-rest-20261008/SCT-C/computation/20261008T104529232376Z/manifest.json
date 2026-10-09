@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "claim_id": "SCT-C-local-OR-counts",
+  "repository": {
+    "commit": "1b2fdf6de9804e564c091cac6f2d31d5d017ec62",
+    "dirty": true
+  },
+  "command": [
+    "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-X",
+    "utf8",
+    "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+    "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z/counts.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "CPython",
+        "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+      }
+    ],
+    "hardware": "Windows-10-10.0.19045-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact source counts and OR projection over every permutation of seven labels and every three-bit truth triple",
+    "coefficient_domain": "exact integers and finite sets",
+    "conventions": "zero-based column ranks; actual holes in inclusive row hull; prefix slack ends at last selected rank",
+    "inputs": [
+      "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+      "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+      "Audit/workshop-rest-20261008/source-manifest.json"
+    ],
+    "bounds": {
+      "columns": 7,
+      "orders": 5040,
+      "truth_triples": 8,
+      "order_truth_pairs": 40320,
+      "symmetry_filtering": false
+    },
+    "non_claims": [
+      "Global NP reduction",
+      "Gadget minimality",
+      "Kernel proof from Python output"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-08T10:45:29.549573+00:00",
+    "runtime_seconds": 0.219,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+    "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+    "Audit/workshop-rest-20261008/source-manifest.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+      "sha256": "dc71ba05d945797765de3fd46a705e2e226849a444f434638162c0dec45b30f6",
+      "sha256_after": "dc71ba05d945797765de3fd46a705e2e226849a444f434638162c0dec45b30f6"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+      "sha256": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364",
+      "sha256_after": "e956586e86e6fc2b8011610903f81990920f05ab968e8a7ac32299bf64175364"
+    },
+    {
+      "path": "Audit/workshop-rest-20261008/source-manifest.json",
+      "sha256": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+      "sha256_after": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda"
+    }
+  ],
+  "output_directory": "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z",
+  "declared_results": [
+    "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z/counts.json"
+  ],
+  "outputs": [
+    {
+      "path": "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z/stdout.txt",
+      "sha256": "284fa270e2a26606322de8e9f1edf91b9695f763fb3bd69fe01d2c7e88c32374",
+      "kind": "log"
+    },
+    {
+      "path": "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "Audit/workshop-rest-20261008/SCT-C/computation/20261008T104529232376Z/counts.json",
+      "sha256": "ca7f196d342ef543f89dfea1d3355fde36a5aa9027fa507b64538758628375b3",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

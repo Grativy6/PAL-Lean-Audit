@@ -1,0 +1,91 @@
+{
+  "source_id": "PAL-v2.3-M",
+  "source_file": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+  "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "paragraphs": [
+    {
+      "paragraph": "P1047",
+      "exact_text": "State x, predeclared constraint c, ordered codomain with units, zero boundary, tolerance ε, uncertainty interval [c_lo,c_hi], and optional grant-epoch budget B with cumulative consumption c_k."
+    },
+    {
+      "paragraph": "P1048",
+      "exact_text": "Formal object"
+    },
+    {
+      "paragraph": "P1049",
+      "exact_text": "Given a constraint interval [c_lo,c_hi], define slack interval [s_lo,s_hi]=[-c_hi,-c_lo] and ε≥0. FEASIBLE iff s_lo>ε; VIOLATED iff s_hi<-ε; CONTACT iff -ε≤s_lo and s_hi≤ε; otherwise UNRESOLVED. For exact c(x), s(x)=-c(x). In the budget branch, s_k=B-c_k; nondecreasing c_k makes s_k nonincreasing within one grant epoch."
+    },
+    {
+      "paragraph": "P1050",
+      "exact_text": "Constructor or predicate"
+    },
+    {
+      "paragraph": "P1051",
+      "exact_text": "Evaluate the fixed constraint and issue an interval-aware slack receipt."
+    },
+    {
+      "paragraph": "P1052",
+      "exact_text": "Assumptions and cost"
+    },
+    {
+      "paragraph": "P1053",
+      "exact_text": "Constraint fixed before observation, units, order, evaluator, uncertainty, and tolerance."
+    },
+    {
+      "paragraph": "P1054",
+      "exact_text": "Preservation account"
+    },
+    {
+      "paragraph": "P1055",
+      "exact_text": "A6 boundary, A13 route, original constraint, interval, units, tolerance, grant epoch, resource ledger, and sensitivity evidence. Work stutter may consume slack."
+    },
+    {
+      "paragraph": "P1056",
+      "exact_text": "Predecessor and strictness"
+    },
+    {
+      "paragraph": "P1057",
+      "exact_text": "A cadence with no quantitative constraint is a predecessor countermodel; a gradient requires added differentiability."
+    },
+    {
+      "paragraph": "P1058",
+      "exact_text": "Claim class and status"
+    },
+    {
+      "paragraph": "P1059",
+      "exact_text": "Scalar/interval minimum; vector and gradient extensions are branches."
+    },
+    {
+      "paragraph": "P1060",
+      "exact_text": "Tests and falsifier"
+    },
+    {
+      "paragraph": "P1061",
+      "exact_text": "Known feasible/contact/violated fixtures including equality at ±ε; cross-regime interval -> UNRESOLVED; monotone-consumption budget fixture; stutter-with-resource-use; top-up-as-new-epoch; units, post-hoc constraint, tolerance mutation, and no-gradient default."
+    },
+    {
+      "paragraph": "P1062",
+      "exact_text": "Authority ceiling"
+    },
+    {
+      "paragraph": "P1063",
+      "exact_text": "No ethical permission, value judgment, free scalarization, or mandatory gradient."
+    },
+    {
+      "paragraph": "P1064",
+      "exact_text": "Residual"
+    },
+    {
+      "paragraph": "P1065",
+      "exact_text": "Vector aggregation, nonsmooth sensitivity, partial observation, norms, and gradient laws."
+    },
+    {
+      "paragraph": "P1066",
+      "exact_text": "Return-to-PAL handle"
+    },
+    {
+      "paragraph": "P1067",
+      "exact_text": "Any constraint/unit/tolerance/interval/evaluator/route change reopens the assessment. A top-up opens a new receipted grant epoch; it does not reset spent budget."
+    }
+  ]
+}

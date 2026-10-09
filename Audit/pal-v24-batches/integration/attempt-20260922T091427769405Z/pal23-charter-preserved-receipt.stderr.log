@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\cdpan\OneDrive\Documents\Lean4 PAL test\scripts\run_pal23_charter.py", line 251, in <module>
+    main()
+  File "C:\Users\cdpan\OneDrive\Documents\Lean4 PAL test\scripts\run_pal23_charter.py", line 225, in main
+    raise ValueError('Missing passing result or stale input evidence')
+ValueError: Missing passing result or stale input evidence

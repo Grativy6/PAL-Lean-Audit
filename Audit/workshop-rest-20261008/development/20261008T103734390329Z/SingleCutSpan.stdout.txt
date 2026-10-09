@@ -1,0 +1,41 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:20:14: error: Function expected at
+  card_sdiff
+but this term has type
+  #(?m.36 \ ?m.35) = #?m.36 - #(?m.35 ∩ ?m.36)
+
+Note: Expected a function because this term is being applied to the argument
+  (support_subset_hull s)
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:18:51: error: unsolved goals
+s : Finset ℕ
+h : s.Nonempty
+hm : s.min' ⋯ ≤ s.max' h
+⊢ #(hull s \ s) = s.max' h - s.min' h + 1 - #s
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:31:11: error: Tactic `rcases` failed: `a✝ : ∀ a ∈ hull s \ s, ∀ b ∈ hull s \ s, a = b` is not an inductive datatype
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:39:12: error: Invalid `⟨...⟩` notation: The expected type
+  ∀ a ∈ hull s \ s, ∀ b ∈ hull s \ s, a = b
+is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:40:12: error: Invalid `⟨...⟩` notation: The expected type
+  ∀ a ∈ hull s \ s, ∀ b ∈ hull s \ s, a = b
+is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:76:26: error: No goals to be solved
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:84:79: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≥ 1
+  d ≥ 0
+where
+ d := ↑((fun j => e + c + 2 + j) b)
+ f := ↑b
+ g := ↑a
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\SingleCutSpan.lean:76:10: warning: This simp argument is unused:
+  disjoint_left
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵d̵i̵s̵j̵o̵i̵n̵t̵_̵l̵e̵f̵t̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

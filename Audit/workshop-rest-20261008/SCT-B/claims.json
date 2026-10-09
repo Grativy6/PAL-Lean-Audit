@@ -1,0 +1,172 @@
+{
+  "batch": "SCT-B",
+  "module": "Experiments.SingleCutCorridor",
+  "declarations": [
+    {
+      "name": "Experiments.SingleCutCorridor.filled_corridor_invariant",
+      "kind": "theorem",
+      "source_line": 6,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.corridor_permutation",
+      "kind": "theorem",
+      "source_line": 10,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.unit_admissible_iff",
+      "kind": "theorem",
+      "source_line": 24,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.valid_unused_capacity",
+      "kind": "theorem",
+      "source_line": 29,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.invalid_truncation_does_not_close",
+      "kind": "theorem",
+      "source_line": 32,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.zero_slack_iff_exact_prefix",
+      "kind": "theorem",
+      "source_line": 34,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.one_slack_iff_prefix_bound",
+      "kind": "theorem",
+      "source_line": 48,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.erased_interior_adds_one",
+      "kind": "theorem",
+      "source_line": 61,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.inserted_corridor_puncture",
+      "kind": "theorem",
+      "source_line": 82,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.zero_slack_accepts_both",
+      "kind": "theorem",
+      "source_line": 90,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.full_target_has_no_slack",
+      "kind": "theorem",
+      "source_line": 94,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.slack_cannot_decode_orientation",
+      "kind": "theorem",
+      "source_line": 104,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.orientation_is_load_bearing",
+      "kind": "theorem",
+      "source_line": 110,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.puncture_changes_feasibility",
+      "kind": "theorem",
+      "source_line": 116,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutCorridor.separate_occurrence_budgets",
+      "kind": "theorem",
+      "source_line": 122,
+      "source_target": "Audit/workshop-rest-20261008/SCT-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

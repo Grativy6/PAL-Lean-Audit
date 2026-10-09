@@ -1,0 +1,54 @@
+Experiments.SingleCutCorridor.filled_corridor_invariant : ∀ (e c d : ℕ) (u : Finset ℕ),
+  u.Nonempty →
+    Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e c u) =
+      Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e d u)
+'Experiments.SingleCutCorridor.filled_corridor_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.corridor_permutation : ∀ (e c : ℕ) (p : Equiv.Perm (Fin (c + 1))),
+  Finset.image (fun i => e + 1 + ↑(p i)) Finset.univ = Finset.Icc (e + 1) (e + c + 1)
+'Experiments.SingleCutCorridor.corridor_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.unit_admissible_iff : ∀ (e c : ℕ),
+  e ≤ 1 →
+    ∀ (u : Finset ℕ) (hu : u.Nonempty),
+      Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e c u) ≤ 1 ↔ u.max' hu + 1 - u.card ≤ 1 - e
+'Experiments.SingleCutCorridor.unit_admissible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.valid_unused_capacity : ∀ (e s : ℕ), e + s ≤ 1 → e + s + (1 - e - s) = 1
+'Experiments.SingleCutCorridor.valid_unused_capacity' depends on axioms: [propext, Quot.sound]
+Experiments.SingleCutCorridor.invalid_truncation_does_not_close : 1 + 1 + (1 - 1 - 1) ≠ 1
+'Experiments.SingleCutCorridor.invalid_truncation_does_not_close' does not depend on any axioms
+Experiments.SingleCutCorridor.zero_slack_iff_exact_prefix : ∀ (u : Finset ℕ) (hu : u.Nonempty),
+  u.max' hu + 1 - u.card = 0 ↔ u = Finset.range (u.max' hu + 1)
+'Experiments.SingleCutCorridor.zero_slack_iff_exact_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.one_slack_iff_prefix_bound : ∀ (u : Finset ℕ) (hu : u.Nonempty),
+  u.max' hu + 1 - u.card ≤ 1 ↔ u ⊆ Finset.range (u.card + 1)
+'Experiments.SingleCutCorridor.one_slack_iff_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.erased_interior_adds_one : ∀ (s : Finset ℕ) (hs : s.Nonempty),
+  ∀ k ∈ s,
+    s.min' hs < k →
+      k < s.max' hs → Experiments.SingleCutSpan.charge (s.erase k) = Experiments.SingleCutSpan.charge s + 1
+'Experiments.SingleCutCorridor.erased_interior_adds_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.inserted_corridor_puncture : ∀ (e c : ℕ) (u : Finset ℕ),
+  u.Nonempty →
+    Experiments.SingleCutSpan.charge ((Experiments.SingleCutSpan.serial e (c + 1) u).erase (e + 1)) =
+      Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e c u) + 1
+'Experiments.SingleCutCorridor.inserted_corridor_puncture' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.zero_slack_accepts_both : ∀ (c : ℕ),
+  Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial 0 c {0}) ≤ 1 ∧
+    Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial 1 c {0}) ≤ 1
+'Experiments.SingleCutCorridor.zero_slack_accepts_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.full_target_has_no_slack : ∀ (e c q : ℕ),
+  Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial e c (Finset.range (q + 1))) = e
+'Experiments.SingleCutCorridor.full_target_has_no_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.slack_cannot_decode_orientation : ¬∃ decode, decode 0 = Bool.false ∧ decode 0 = Bool.true
+'Experiments.SingleCutCorridor.slack_cannot_decode_orientation' does not depend on any axioms
+Experiments.SingleCutCorridor.orientation_is_load_bearing : ∀ (c : ℕ),
+  Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial 0 c {0}) ≠
+    Experiments.SingleCutSpan.charge (Experiments.SingleCutSpan.serial 1 c {0})
+'Experiments.SingleCutCorridor.orientation_is_load_bearing' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.SingleCutCorridor.puncture_changes_feasibility : Experiments.SingleCutSpan.charge
+      (Experiments.SingleCutSpan.serial 1 0 {0}) ≤
+    1 ∧
+  ¬Experiments.SingleCutSpan.charge ((Experiments.SingleCutSpan.serial 1 1 {0}).erase 2) ≤ 1
+'Experiments.SingleCutCorridor.puncture_changes_feasibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.SingleCutCorridor.separate_occurrence_budgets : ∀ {I : Type u_1} (e s : I → ℕ),
+  (∀ (i : I), e i + s i ≤ 1) → ∀ (i : I), e i + s i + (1 - e i - s i) = 1
+'Experiments.SingleCutCorridor.separate_occurrence_budgets' depends on axioms: [propext, Quot.sound]

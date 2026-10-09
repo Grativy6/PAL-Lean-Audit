@@ -1,0 +1,516 @@
+{
+  "batch": "AL-B",
+  "module": "Experiments.AbstractLoopsDynamics",
+  "state_at_freeze": "TARGETS_DECLARED_BEFORE_FINAL_CHECKS",
+  "groups": [
+    {
+      "id": "AL-B/protocol",
+      "source": "P0048; P0058",
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted."
+    },
+    {
+      "id": "AL-B/surplus",
+      "source": "P0049-P0058",
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline."
+    },
+    {
+      "id": "AL-B/run-account",
+      "source": "P0059-P0062",
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability."
+    },
+    {
+      "id": "AL-B/possible-inevitable",
+      "source": "P0059-P0062",
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle."
+    },
+    {
+      "id": "AL-B/persistence",
+      "source": "P0059-P0062",
+      "assumptions": "Persistence theorem: every consecutive transition is valid and the failure predicate is closed under the declared relation. Controls use a universal-step transient run and a finite deadlock.",
+      "ceiling": "Persistence is proved for infinite sequences. The finite-run fixture checks its actual valid finite indices, without treating a terminated run as an infinite observed path."
+    }
+  ],
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies",
+      "kind": "theorem",
+      "source_group": "AL-B/protocol",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0048; P0058"
+      ],
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "authority_ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted.",
+      "source_line": 14,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies",
+      "kind": "theorem",
+      "source_group": "AL-B/protocol",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0048; P0058"
+      ],
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "authority_ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted.",
+      "source_line": 21,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification",
+      "kind": "theorem",
+      "source_group": "AL-B/protocol",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0048; P0058"
+      ],
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "authority_ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted.",
+      "source_line": 33,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information",
+      "kind": "theorem",
+      "source_group": "AL-B/protocol",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0048; P0058"
+      ],
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "authority_ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted.",
+      "source_line": 42,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.certification_not_implementation",
+      "kind": "theorem",
+      "source_group": "AL-B/protocol",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0048; P0058"
+      ],
+      "assumptions": "A strategy or set of allowed outputs receives only the declared trace; correctness is uniform over alternatives. Nondeterministic outputs must be nonempty and all correct. Countermodels have Boolean worlds or a one-state allowed-output machine.",
+      "authority_ceiling": "Uniform trace-indexed correctness gives certification for deterministic and nondeterministic outputs. No computational resource bound, arbitrary coalition strategy, fairness theorem, or implementability of every set-theoretic decoder is asserted.",
+      "source_line": 50,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.surplus",
+      "kind": "def",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 58,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.observableSurplus",
+      "kind": "def",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 60,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.one_jump_reachable_support",
+      "kind": "theorem",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 64,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus",
+      "kind": "theorem",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 80,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement",
+      "kind": "theorem",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 89,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus",
+      "kind": "theorem",
+      "source_group": "AL-B/surplus",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0049-P0058"
+      ],
+      "assumptions": "Same ambient state type and declared readout/baseline. One-jump transition systems witness the finite supports from a common initial state.",
+      "authority_ceiling": "Observable surplus entails raw surplus; raw surplus can vanish at the readout; reachable supports can be incomparable. This does not identify a uniquely justified causal baseline.",
+      "source_line": 97,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Run",
+      "kind": "inductive",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 106,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Visits",
+      "kind": "def",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 110,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Complete",
+      "kind": "def",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 115,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Possible",
+      "kind": "def",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 122,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Inevitable",
+      "kind": "def",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 125,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible",
+      "kind": "theorem",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 128,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition_or_direct_interface_check"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous",
+      "kind": "theorem",
+      "source_group": "AL-B/run-account",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Runs are infinite sequences or finite sequences indexed by Fin(last+1); complete finite paths are maximal, with no outgoing last transition. Admissible run classes are declared explicitly.",
+      "authority_ceiling": "Quantifier definitions are bookkeeping. The source's nonemptiness obligation is separately proved for positive fixtures; no fairness restriction is hidden in reachability.",
+      "source_line": 134,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.forkStep",
+      "kind": "def",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 139,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.waitingRun",
+      "kind": "def",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 140,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.failingRun",
+      "kind": "def",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 141,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.forkRuns",
+      "kind": "def",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 142,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty",
+      "kind": "theorem",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 144,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.possible_not_inevitable",
+      "kind": "theorem",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 153,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability",
+      "kind": "theorem",
+      "source_group": "AL-B/possible-inevitable",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Both waiting and failing paths are complete for the same Boolean transition relation and initializer. The restricted fixture explicitly removes the forever-waiting path.",
+      "authority_ceiling": "Possible failure is not inevitable. A supplied restriction can change inevitability; the result does not infer that restriction or a fairness principle.",
+      "source_line": 163,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.absorbing_failure_persists",
+      "kind": "theorem",
+      "source_group": "AL-B/persistence",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Persistence theorem: every consecutive transition is valid and the failure predicate is closed under the declared relation. Controls use a universal-step transient run and a finite deadlock.",
+      "authority_ceiling": "Persistence is proved for infinite sequences. The finite-run fixture checks its actual valid finite indices, without treating a terminated run as an infinite observed path.",
+      "source_line": 172,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist",
+      "kind": "theorem",
+      "source_group": "AL-B/persistence",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Persistence theorem: every consecutive transition is valid and the failure predicate is closed under the declared relation. Controls use a universal-step transient run and a finite deadlock.",
+      "authority_ceiling": "Persistence is proved for infinite sequences. The finite-run fixture checks its actual valid finite indices, without treating a terminated run as an infinite observed path.",
+      "source_line": 181,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture",
+      "kind": "theorem",
+      "source_group": "AL-B/persistence",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0059-P0062"
+      ],
+      "assumptions": "Persistence theorem: every consecutive transition is valid and the failure predicate is closed under the declared relation. Controls use a universal-step transient run and a finite deadlock.",
+      "authority_ceiling": "Persistence is proved for infinite sequences. The finite-run fixture checks its actual valid finite indices, without treating a terminated run as an infinite observed path.",
+      "source_line": 188,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    }
+  ],
+  "counting": "Explicit source declarations only; auto-generated constructors/recursors are kernel-checked but not counted as separate claims. Final mathematical verdicts are in REVIEW.md, conditional on matching PASS receipts."
+}

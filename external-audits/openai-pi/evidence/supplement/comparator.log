@@ -1,0 +1,17 @@
+Running as unit: pi-audit-flint-hills-20261006.service; invocation ID: bea5be48a1f2487da5748884a21ca03c
+Building ComparatorChallenges.PiExponent.FlintHills
+⚠ [8924/8924] Built ComparatorChallenges.PiExponent.FlintHills (5.6s)
+warning: ComparatorChallenges/PiExponent/FlintHills.lean:6:8: declaration uses `sorry`
+Build completed successfully (8924 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PiExponent.flint_hills_summable, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from ComparatorChallenges.PiExponent.FlintHills
+Building OAI.NumberTheory.PiExponent.Main
+Build completed successfully (9792 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PiExponent.flint_hills_summable, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from OAI.NumberTheory.PiExponent.Main
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 18min 11.661s
+             CPU time consumed: 18min 19.264s
+                   Memory peak: 5G (swap: 0B)
