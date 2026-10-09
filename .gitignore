@@ -6,7 +6,3 @@ __pycache__/
 # Editor-local state
 .vscode/
 .idea/
-
-# Fresh collection replay outputs
-.collection-evidence/
-**/.ci-evidence/
