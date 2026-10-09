@@ -1,0 +1,19 @@
+Running as unit: pi-audit-comparator-20261006.service; invocation ID: e31d1c9ef55848fa96c9b581289e67d2
+Building ComparatorChallenges.PiExponent
+⚠ [8924/8924] Built ComparatorChallenges.PiExponent (52s)
+warning: ComparatorChallenges/PiExponent.lean:7:8: declaration uses `sorry`
+Build completed successfully (8924 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PiExponent.main, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from ComparatorChallenges.PiExponent
+Building OAI.NumberTheory.PiExponent.Main
+✖ [2/2] Building OAI.NumberTheory.PiExponent.Main (237ms)
+trace: .> LEAN_PATH=/home/cdpang/math-pi-audit-20261006/project/.lake/packages/Cli/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/batteries/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/Qq/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/aesop/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/plausible/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/cdpang/math-pi-audit-20261006/project/.lake/build/lib/lean /home/cdpang/math-pi-audit-20261006/tools/lean-4.34.1-linux/bin/lean /home/cdpang/math-pi-audit-20261006/project/OAI/NumberTheory/PiExponent/Main.lean -o /home/cdpang/math-pi-audit-20261006/project/.lake/build/lib/lean/OAI/NumberTheory/PiExponent/Main.olean -i /home/cdpang/math-pi-audit-20261006/project/.lake/build/lib/lean/OAI/NumberTheory/PiExponent/Main.ilean -c /home/cdpang/math-pi-audit-20261006/project/.lake/build/ir/OAI/NumberTheory/PiExponent/Main.c --setup /home/cdpang/math-pi-audit-20261006/project/.lake/build/ir/OAI/NumberTheory/PiExponent/Main.setup.json --json
+error: OAI/NumberTheory/PiExponent/Main.lean:1:0: object file '/home/cdpang/math-pi-audit-20261006/project/.lake/build/lib/lean/OAI/NumberTheory/PiExponent/Approximation/AdmissibleMatrixGeometry.olean' of module OAI.NumberTheory.PiExponent.Approximation.AdmissibleMatrixGeometry does not exist
+Some required targets logged failures:
+- OAI.NumberTheory.PiExponent.Main
+error: build failed
+uncaught exception: Child exited with 1
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 40.105s
+             CPU time consumed: 52.816s
+                   Memory peak: 9.4G (swap: 0B)

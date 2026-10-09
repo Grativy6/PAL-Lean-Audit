@@ -1,0 +1,34 @@
+[
+  {
+    "copy": "corpus-extracts\\Math Stack__Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1.txt",
+    "read_from": "C:\\Users\\cdpan\\Documents\\Codex\\2026-09-13\\i-wa\\work\\stack-text\\Math Stack__Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1.txt",
+    "extraction_sha256": "c68773738c78f55df1450b5ac600378d13eb317ab32883dfdb3d1e0d683adf36",
+    "original_document_path_as_recorded_in_September": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Math Stack\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1.docx",
+    "original_document_sha256_as_recorded_in_September": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830",
+    "status": "Preserved September extraction reread; original source hash not revalidated this turn. No original drive accessed. Equations omitted by old extraction are not reconstructed here."
+  },
+  {
+    "copy": "corpus-extracts\\Math Stack__Abstract_Loops_v1.0.txt",
+    "read_from": "C:\\Users\\cdpan\\Documents\\Codex\\2026-09-13\\i-wa\\work\\stack-text\\Math Stack__Abstract_Loops_v1.0.txt",
+    "extraction_sha256": "8c0adbcf90663dbace085767f1f180fcbd2d81b58b10687c1ae50b928d2a6312",
+    "original_document_path_as_recorded_in_September": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Math Stack\\Abstract_Loops_v1.0.docx",
+    "original_document_sha256_as_recorded_in_September": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "status": "Preserved September extraction reread; original source hash not revalidated this turn. No original drive accessed. Equations omitted by old extraction are not reconstructed here."
+  },
+  {
+    "copy": "corpus-extracts\\Software Stack__Compactification_Costs_v0.2.txt",
+    "read_from": "C:\\Users\\cdpan\\Documents\\Codex\\2026-09-13\\i-wa\\work\\stack-text\\Software Stack__Compactification_Costs_v0.2.txt",
+    "extraction_sha256": "cb5ad9d61cb2842bba359bdc87f79f7e6c37e48044523a26b36cc8b12b940b3f",
+    "original_document_path_as_recorded_in_September": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Software Stack\\Compactification_Costs_v0.2.docx",
+    "original_document_sha256_as_recorded_in_September": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554",
+    "status": "Preserved September extraction reread; original source hash not revalidated this turn. No original drive accessed. Equations omitted by old extraction are not reconstructed here."
+  },
+  {
+    "copy": "corpus-extracts\\Math Stack__GPPR_v0.1.txt",
+    "read_from": "C:\\Users\\cdpan\\Documents\\Codex\\2026-09-13\\i-wa\\work\\stack-text\\Math Stack__GPPR_v0.1.txt",
+    "extraction_sha256": "ad9e217f9a5506b9242856d7deebc6a553a63255c252888f0c8afed559237a9b",
+    "original_document_path_as_recorded_in_September": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Math Stack\\GPPR_v0.1.docx",
+    "original_document_sha256_as_recorded_in_September": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "status": "Preserved September extraction reread; original source hash not revalidated this turn. No original drive accessed. Equations omitted by old extraction are not reconstructed here."
+  }
+]

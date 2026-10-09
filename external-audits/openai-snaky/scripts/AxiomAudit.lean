@@ -1,0 +1,6 @@
+import OAI.GameTheory.SnakyTwentyOne.Main
+
+#print axioms OAI.SnakyPrototype.snaky_winning_strategy_21_with_legal_states
+#print axioms OAI.SnakyPrototype.empty_board_wins_21
+#print axioms OAI.SnakyPrototype.Certificate21.current_certificate_verified
+#print axioms OAI.SnakyPrototype.OrdinaryStrategy.exists_legal_replies

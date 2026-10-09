@@ -1,0 +1,460 @@
+{
+  "recorded_at_utc": "2026-10-07T05:15:52.171213+00:00",
+  "target": "OAI.PiExponent.main",
+  "source_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "main_formal_check": "PASS",
+  "main_attempts": {
+    "initial-root-registration-error": {
+      "status": "NOT_PASSED",
+      "exit_code": 1,
+      "kernel_acceptance_marker": false,
+      "comparator_success_marker": false,
+      "log_sha256": "6350827800a86858f7883afeb5fcea1b107d1cbcd1d7dd76329592460c3cac15",
+      "path": "/home/cdpang/math-pi-audit-20261006/logs",
+      "classification": "Audit Lake configuration failure before proof elaboration; retained and repaired."
+    },
+    "attempt-02": {
+      "status": "PASS",
+      "exit_code": 0,
+      "kernel_acceptance_marker": true,
+      "comparator_success_marker": true,
+      "log_sha256": "b124c2e96da8e049534274962a0539419a16d08dc3e811337ea116f1fee04c86",
+      "path": "/home/cdpang/math-pi-audit-20261006/logs/attempt-02"
+    }
+  },
+  "flint_hills_supplement": {
+    "status": "PASS",
+    "exit_code": 0,
+    "kernel_acceptance_marker": true,
+    "comparator_success_marker": true,
+    "log_sha256": "4ee28280c82c1f9ebf0d2c72037d5f5b868392887a600bfe209b2fa4a35505d4",
+    "path": "/home/cdpang/math-pi-audit-20261006/logs/supplement"
+  },
+  "explicit_axiom_inspection": {
+    "exit_code": 0,
+    "status": "PASS",
+    "declarations": {
+      "OAI.PiExponent.main": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OAI.PiExponent.pi_eventual_lower_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OAI.PiExponent.pi_irrationalityExponent_eq_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OAI.PiExponent.flint_hills_summable": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "stdout_and_service_log": "Running as unit: pi-audit-axioms-20261006.service; invocation ID: e4d7842ea1bd4e22a629db1f28b63147\nOAI.PiExponent.main :\n  (\u2200 (\u03bd : \u211d), 2 < \u03bd \u2192 \u2203 Q, 2 \u2264 Q \u2227 \u2200 (p q : \u2124), Q \u2264 q \u2192 \u2191q ^ (-\u03bd) \u2264 |Real.pi - \u2191p / \u2191q|) \u2227\n    sSup {\u03bd | 0 < \u03bd \u2227 {r | 2 \u2264 r.den \u2227 0 < |Real.pi - \u2191r| \u2227 |Real.pi - \u2191r| < \u2191r.den ^ (-\u03bd)}.Infinite} = 2\nOAI.PiExponent.flint_hills_summable : Summable fun n => 1 / (\u2191(n + 1) ^ 3 * Real.sin \u2191(n + 1) ^ 2)\n'OAI.PiExponent.main' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OAI.PiExponent.pi_eventual_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OAI.PiExponent.pi_irrationalityExponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OAI.PiExponent.flint_hills_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n          Finished with result: success\nMain processes terminated with: code=exited, status=0/SUCCESS\n               Service runtime: 11.309s\n             CPU time consumed: 9.132s\n                   Memory peak: 1.2G (swap: 0B)\n",
+    "sha256": "7609a4ed9d9d7b6bb31e1be9608ab21f75ee57a6b64db563fe5c73db4ff4c526"
+  },
+  "source_integrity": {
+    "result": "PASS",
+    "proof_source_count": 869,
+    "receipt_sha256": "9d45debedde1079dbed9a7a91e57a841d4e228b64a78f78fc62ddc0973575ba2"
+  },
+  "proof_olean_count": 869,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "independent_kernel_implementation_used": false,
+  "tool_metadata": {
+    "comparator": {
+      "revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "d03acab154d269c06e60e4de7e4cc85deebff94b\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": " M lean-toolchain\n",
+        "stderr": ""
+      },
+      "diff": {
+        "argv": [
+          "git",
+          "diff"
+        ],
+        "exit_code": 0,
+        "stdout": "diff --git a/lean-toolchain b/lean-toolchain\nindex 12359f9..ba8ebf2 100644\n--- a/lean-toolchain\n+++ b/lean-toolchain\n@@ -1 +1 @@\n-leanprover/lean4:v4.34.0\n+leanprover/lean4:v4.34.1\n",
+        "stderr": ""
+      }
+    },
+    "landrun": {
+      "revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "diff": {
+        "argv": [
+          "git",
+          "diff"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "lean4export": {
+      "revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "076e8e57707e813375e8f9da8bf989799ace9680\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "lean_version": {
+      "argv": [
+        "/home/cdpang/math-pi-audit-20261006/tools/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+      "stderr": ""
+    },
+    "lake_version": {
+      "argv": [
+        "/home/cdpang/math-pi-audit-20261006/tools/lean-4.34.1-linux/bin/lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "argv": [
+        "uname",
+        "-sr"
+      ],
+      "exit_code": 0,
+      "stdout": "Linux 6.18.40.1-microsoft-standard-WSL2\n",
+      "stderr": ""
+    },
+    "map_limit": "1048576"
+  },
+  "tool_binary_hashes": {
+    "tools/lean-4.34.1-linux/bin/lean": {
+      "bytes": 9024,
+      "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+    },
+    "tools/lean-4.34.1-linux/bin/lake": {
+      "bytes": 13840,
+      "sha256": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d"
+    },
+    "tools/comparator/.lake/build/bin/comparator": {
+      "bytes": 122488776,
+      "sha256": "afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2"
+    },
+    "tools/comparator/.lake/packages/lean4export/.lake/build/bin/lean4export": {
+      "bytes": 233952032,
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    "tools/landrun-bin": {
+      "bytes": 7322960,
+      "sha256": "0012392f92415d5618372452dd57a50df206d04e802ec0355820a682999ee3f6"
+    },
+    "tools/landrun-with-threads": {
+      "bytes": 183,
+      "sha256": "467fb2d2e6335337c632c96fc96c3b22d4013c97b6d8902760829034dfb93c42"
+    }
+  },
+  "dependency_sources": [
+    {
+      "name": "mathlib",
+      "expected_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "d13f23b723b8a846827a245b89c10fc7d3f11612\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "plausible",
+      "expected_revision": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "118aa17ee84656b8bd727fef7c458ee8c833385c\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_revision": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "ddf04cf3949fa556442341e87d47f9f6e6074707\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "importGraph",
+      "expected_revision": "e928b72544873815af278d38681b31c0293588e3",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "e928b72544873815af278d38681b31c0293588e3\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "proofwidgets",
+      "expected_revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "aesop",
+      "expected_revision": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "355695d523e41d0554926416cba2a2b3544fbbc9\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "Qq",
+      "expected_revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "batteries",
+      "expected_revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "Cli",
+      "expected_revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "actual_revision": {
+        "argv": [
+          "git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stdout": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204\n",
+        "stderr": ""
+      },
+      "tracked_changes": {
+        "argv": [
+          "git",
+          "status",
+          "--porcelain",
+          "--untracked-files=no"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "storage": {
+    "argv": [
+      "du",
+      "-sh",
+      "/home/cdpang/math-pi-audit-20261006",
+      "/mnt/h/Hearthline's Path/Math Workbench/openai-math-pi-2026-10-06"
+    ],
+    "exit_code": 0,
+    "stdout": "17G\t/home/cdpang/math-pi-audit-20261006\n55M\t/mnt/h/Hearthline's Path/Math Workbench/openai-math-pi-2026-10-06\n",
+    "stderr": ""
+  },
+  "limits": [
+    "Single-assistant prose review, not an independent second referee.",
+    "Trusted public Lean release and pinned Mathlib cache; unrelated Mathlib modules were not all rebuilt.",
+    "Isolated Lake dependency slice; original proof sources and official target are unchanged.",
+    "Flint-Hills target, when run, is audit-authored and separate from the official PiExponent challenge."
+  ]
+}

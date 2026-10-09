@@ -1,0 +1,1047 @@
+{
+  "status": "PINNED_SOURCE_EXPORTED",
+  "repository": "https://github.com/openai/math",
+  "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "selected_files": 146,
+  "source_bytes": 6399798,
+  "proof_modules": 94,
+  "proof_lines": 71326,
+  "external_imports": [
+    "Mathlib"
+  ],
+  "paper_prefix": "preprints/Snaky-in-21-Maker-moves-September-25-2026/",
+  "target": "OAI.SnakyPrototype.snaky_winning_strategy_21_with_legal_states",
+  "source_checkout_tracked_changes": false,
+  "git_blobs_verified": true,
+  "storage_before": {
+    "root": "H:\\Hearthline's Path",
+    "logical_bytes": 127697352483,
+    "files": 281149,
+    "ceiling_bytes": 500000000000
+  },
+  "elapsed_seconds": 69.91777569998521,
+  "files": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob": "8ac0cb7dbf1f38ad3b7480310d4e1d9482f0cfe8",
+      "bytes": 4131,
+      "sha256": "af984f110f6583ba57ec1af907dc989bfce86713161e9c8b0543b052a138ff64"
+    },
+    {
+      "path": "lean/ComparatorChallenges/README.md",
+      "mode": "100644",
+      "git_blob": "c1ac131559880e759c28caf79905ba4fe6194eb7",
+      "bytes": 287,
+      "sha256": "051459a45da1bedd1c0a6585a5b5e5425c7c40a369f2922d7b519e2fd02333b0"
+    },
+    {
+      "path": "lean/ComparatorChallenges/SnakyTwentyOne.json",
+      "mode": "100644",
+      "git_blob": "5f481d82221109fae8538e6ed23bea2a15d14331",
+      "bytes": 355,
+      "sha256": "ec747732de2646f1d1381dacde26824b11a34a0220401c6a77141620599316b7"
+    },
+    {
+      "path": "lean/ComparatorChallenges/SnakyTwentyOne.lean",
+      "mode": "100644",
+      "git_blob": "0fe6ab5c77ba9e4a7819c75c4be0b45d1f50d194",
+      "bytes": 2207,
+      "sha256": "6b26e6b265ec08aaf044c3564cb346d6a989cfbf92f0e102af741c6962c988f5"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height01Part01.lean",
+      "mode": "100644",
+      "git_blob": "b1b9b1c334f5be5ca1390fd08524b4ba75841538",
+      "bytes": 6498,
+      "sha256": "b721851d44936e696a7ca108bc258a9cff38340751b3d779e2cbbf8d8b5b5036"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height02Part01.lean",
+      "mode": "100644",
+      "git_blob": "013dcdc41e4da2684bd1f99a371eb2eba213a6f1",
+      "bytes": 64348,
+      "sha256": "59d96363dfcfba2711d08567a0f536af7f4ec54cc777c823c78d4b5f6b905aa4"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height02Part02.lean",
+      "mode": "100644",
+      "git_blob": "da608f2d471ba7b8773574a9c0d95649f6508106",
+      "bytes": 49722,
+      "sha256": "0d57456db981f46183771645e5176837cf7d22bfddbb1a9ee2651bc0cfe900e4"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height03Part01.lean",
+      "mode": "100644",
+      "git_blob": "6fae9e58694d630fd41ee6f8c9e0af7eac1d9060",
+      "bytes": 64534,
+      "sha256": "09869ff7e389b199966af69e5e2b1b8c4a617656d6277698a8c96aa4b021a4b9"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height03Part02.lean",
+      "mode": "100644",
+      "git_blob": "859175daf39602f3c5f0bf384091bd80bf327827",
+      "bytes": 66354,
+      "sha256": "f229e04ff8b7d9176d39b26b24bfaa88b3f26d2710340db46e5b1b1d22144fc6"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height03Part03.lean",
+      "mode": "100644",
+      "git_blob": "4c1647d6b7912ad800c21282e81013b31f8dd45c",
+      "bytes": 61734,
+      "sha256": "1b9ddf7e48a2d55d51fc18ddc0f93bcb7b4dc048bd648d2d4e5a72d8bbdf17a3"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height04Part01.lean",
+      "mode": "100644",
+      "git_blob": "9a58ed0ab5440607f6e3c7ddb8855dbc3b35ca35",
+      "bytes": 66124,
+      "sha256": "f9e2556bf69c4f88311787cf0d663f0a24d2bfdd43762a6774f9133241b82b5b"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height04Part02.lean",
+      "mode": "100644",
+      "git_blob": "22fbb281f74a2f8c65e391d293e7f8b92b9a07e5",
+      "bytes": 66420,
+      "sha256": "b7371990d1a053b8dad99d5e3d0bdbfb4be5fc147d8ee5c7d886d89d4bc584e0"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height04Part03.lean",
+      "mode": "100644",
+      "git_blob": "c104fd46f3185398ef5977002fef57e1c2659300",
+      "bytes": 67434,
+      "sha256": "e80807a7f939ffebcdc234e68c234a3ac1c77e0571ee72c6aac569ff9f3e7b7d"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height04Part04.lean",
+      "mode": "100644",
+      "git_blob": "4f03c9cb1743512100e8db0e8ee72387247b5774",
+      "bytes": 62808,
+      "sha256": "93a6c395d391c2f2d73c0a6d6274c53904ed6a6b3e1f88a73781388ffdff6e34"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height04Part05.lean",
+      "mode": "100644",
+      "git_blob": "0304d9e7f465d158b9ef8dd57cd17ed8638dd0bc",
+      "bytes": 31977,
+      "sha256": "878e72c12b9e84fef33a3ea7d649574d08e19565c5560441d7d863117b89e8c3"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part01.lean",
+      "mode": "100644",
+      "git_blob": "d4dcbd30abb02ad258c6e47f67fa3fd209367562",
+      "bytes": 68339,
+      "sha256": "e8bbd9bc6e87400a19e7a80e23eb2a0d3424199590ca3803befc6ecd6ee5a25a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part02.lean",
+      "mode": "100644",
+      "git_blob": "549edad041f3d7f933e318c91455b2b6947e11c5",
+      "bytes": 68684,
+      "sha256": "dd932253e77d2f7292d44782e4b6e37a8ff93c2df170a1340f27834c37894cc3"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part03.lean",
+      "mode": "100644",
+      "git_blob": "536083b30bea7bfc6152b7c77c1a63bd59623b1c",
+      "bytes": 70003,
+      "sha256": "53b601dc52ccff754ccf70084ef44d606d93b41beaf2f7dd61cca127fa799933"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part04.lean",
+      "mode": "100644",
+      "git_blob": "8047e2b99ea6b068f6400edee7577b6a276ee7fb",
+      "bytes": 64468,
+      "sha256": "dd7bf148b9ad98c1430be052ef1f6e9e437ee111a32166443790f15175506777"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part05.lean",
+      "mode": "100644",
+      "git_blob": "744a769c1e4248099dff7695d5e3b940f92b5856",
+      "bytes": 67226,
+      "sha256": "aea13ebf283c4d058d25ada4ed15cec3c3b0ce062b05769aecbac509d309dda5"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part06.lean",
+      "mode": "100644",
+      "git_blob": "d878f7cff971d0215e29eaca5ef7f71eb7a64554",
+      "bytes": 68261,
+      "sha256": "649732e2efb25248b34b40715c91d769d5074fc03c89ba0a43065aa09ebf93f7"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height05Part07.lean",
+      "mode": "100644",
+      "git_blob": "c01d3c17a16c2d195ca77fa931390322d85a70dd",
+      "bytes": 6193,
+      "sha256": "ba0397ab80d2c5744520d4ea44eb6f857aabe35c7d1bfd787bbdd22f06269397"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part01.lean",
+      "mode": "100644",
+      "git_blob": "fa75c81ae6569fdd6f97ffaea86485f4eb4565be",
+      "bytes": 69070,
+      "sha256": "25631c997e43e5d2b93a65de3fa7b445be17232674796aba2572e7fea6f15852"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part02.lean",
+      "mode": "100644",
+      "git_blob": "aa639bb661f9a77898e6305c9e5e40d52b15d81c",
+      "bytes": 68568,
+      "sha256": "c9676996ed11ffa3e24f78308318b2cd9100f36edca21633434ba629198ec813"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part03.lean",
+      "mode": "100644",
+      "git_blob": "fa31fbc6df39371175d503482a6954a30a633ccb",
+      "bytes": 68690,
+      "sha256": "9a6db2aec95eced43911499fbc2841ab1f831885bc087882be027b41b303a046"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part04.lean",
+      "mode": "100644",
+      "git_blob": "9cc30101b04cdd9c2ca2a82502527b8607d21386",
+      "bytes": 59602,
+      "sha256": "edb074c085baafc8a5dd469ff28d1650d0f51b99a0e46455f30a36a7996dbd7c"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part05.lean",
+      "mode": "100644",
+      "git_blob": "c36c7630a27fdd8a17df74492789782452bd0409",
+      "bytes": 65932,
+      "sha256": "fb883f0172b0d7195cbc41290c6c2de9879221913ee699494f7179ed9fa5d162"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height06Part06.lean",
+      "mode": "100644",
+      "git_blob": "b49b0454a472d8a2591ec18a7b797bf2c5e5a527",
+      "bytes": 66245,
+      "sha256": "d16fbbc1233561d5fa5295174fce0c97805b32c8351374413c7038982392ea33"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part01.lean",
+      "mode": "100644",
+      "git_blob": "b6dabd29ddd772fd0c3fa34d6c88f0fe12f6725e",
+      "bytes": 69667,
+      "sha256": "25cd3b6dfb5d18f99a0a9a3a50a5b54f0bf2bf600c942b1fc17cefb7fef79b12"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part02.lean",
+      "mode": "100644",
+      "git_blob": "87f96a85a691c66d38f6dc21da131c5c85c883b0",
+      "bytes": 69700,
+      "sha256": "11eb252c6d440ed9f51bb56e78af089e155bbe71c9a560a69fc12c331695b1bd"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part03.lean",
+      "mode": "100644",
+      "git_blob": "308d7590ed9a33546257cca04dff5abcef37ad04",
+      "bytes": 66656,
+      "sha256": "706d293c21868a010c5b8eda2cd1cfdbfdf9378e60e8053c190e15f29b8d034f"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part04.lean",
+      "mode": "100644",
+      "git_blob": "bb4c525b97c3ace49af7e060cbcd9c74c8823820",
+      "bytes": 72465,
+      "sha256": "b6ada6198549c57e2c1780de45025ea71667386a45e1a7e551b437ed5fda6a47"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part05.lean",
+      "mode": "100644",
+      "git_blob": "0e9bab1a13ba2a80fc64bd4a8d5cf849d357712b",
+      "bytes": 72488,
+      "sha256": "8f0684cca8d7bc6258c368e7ad5d14f55972a411f64f26e7ccc6f3258a673acc"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height07Part06.lean",
+      "mode": "100644",
+      "git_blob": "ff60814ad63dac380cfda575b8bf4943d80a6fdb",
+      "bytes": 12836,
+      "sha256": "243c2861da61125a2ae538143bd1016c70d888c90030174a43ba55f95f62e919"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height08Part01.lean",
+      "mode": "100644",
+      "git_blob": "8569f3020e73b22654a4467d52ad6b9b64568031",
+      "bytes": 69336,
+      "sha256": "82c6d8311c44ad8d40aea9f0237156dad735197c0ae7986fd5c9169cd76eaf3b"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height08Part02.lean",
+      "mode": "100644",
+      "git_blob": "843ef21abde15c4cebcb5e80eab7b3616341a271",
+      "bytes": 64539,
+      "sha256": "78a39d42a9ce6b5ba0450598209571689a8ffd3ddecdf788c9080d2964b08694"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height08Part03.lean",
+      "mode": "100644",
+      "git_blob": "c2a4a7fe180017f387515746f529f76ec4adffc0",
+      "bytes": 69482,
+      "sha256": "a502d65803e3611d7df6e7933edb50a86a0f5d74ebfb134203864996c9a6efca"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height08Part04.lean",
+      "mode": "100644",
+      "git_blob": "5fe43b25b445c25675b415ea6ee2f80e5ec4a648",
+      "bytes": 72682,
+      "sha256": "d383e19ead30aa84f8dfc1d91cba6bc899aea830b1bd8e75a71d535d8ac72753"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height08Part05.lean",
+      "mode": "100644",
+      "git_blob": "cea1ec31302486f08ae1d8a80ddad6621407fc1e",
+      "bytes": 66645,
+      "sha256": "aac655834b86fccaf58a123116ef69a4503d0254e74bf3a5313e87169b7e03d7"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part01.lean",
+      "mode": "100644",
+      "git_blob": "ceb58b7b913475de2051a3ee9882fa372eb62903",
+      "bytes": 68779,
+      "sha256": "eb041abc50134f6a894027720e1f5a72d210885e27e798fa25ecbd40cfcc7b8e"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part02.lean",
+      "mode": "100644",
+      "git_blob": "9e3bc0944e80171ac6294ab570a6e2a34f5dfcf0",
+      "bytes": 55059,
+      "sha256": "d70ef317bc9b10e88176c5299878b37fea8ff32ef13d2705dc5f2e11fe6cd744"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part03.lean",
+      "mode": "100644",
+      "git_blob": "92ce48d777c37be849eaba0899a833337168e346",
+      "bytes": 66161,
+      "sha256": "51e58151811ea564c431a3354866283620e588e911873f91232e57dff26f5d2d"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part04.lean",
+      "mode": "100644",
+      "git_blob": "87f43f2afdba5c44dc07030787ac798ce169e2a0",
+      "bytes": 69160,
+      "sha256": "c67800b85780fbc0a017ac90bb69aa43474735fbcd36eae20230cb56bacdd792"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part05.lean",
+      "mode": "100644",
+      "git_blob": "9fd42c3cd5d51933b7ee0836c1335940be3a362b",
+      "bytes": 43746,
+      "sha256": "a96acbd788ebbc4414d0e61a7d06e3a65d860c83f1db354511eda3543d4e9076"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part06.lean",
+      "mode": "100644",
+      "git_blob": "2abf0ce7471727a51b98443b5f89af97ec1ef5f3",
+      "bytes": 58830,
+      "sha256": "e483d02b0f566c62b17bd12614bce69f9589b9de4d93000c9305bc645c84dc82"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part07.lean",
+      "mode": "100644",
+      "git_blob": "0d953695f81c6a0a32fdce18a32a531a33db0c32",
+      "bytes": 67163,
+      "sha256": "c64b6fc7441de2c2d3b92daf23c7fdba4448d42589bc46f79ebfb7dae00209a8"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height09Part08.lean",
+      "mode": "100644",
+      "git_blob": "53a20b68c007f093127f61098e863d6b416795d2",
+      "bytes": 55565,
+      "sha256": "0d711b1ba2d8f0caf5e6188100216e78d3fb76ebfd63d7e8935d70a4f779681e"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part01.lean",
+      "mode": "100644",
+      "git_blob": "d1fb2fb63fd154c8b2ff3d3e361f6d1c00085c15",
+      "bytes": 77714,
+      "sha256": "d8a501150730c5868dc1e87fa4e8f691df984e817b9b87fb454e9b86d12ebaf6"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part02.lean",
+      "mode": "100644",
+      "git_blob": "4219dd456b7a534371a089fa25f92c2ba050719c",
+      "bytes": 74217,
+      "sha256": "47128473825a65bb8a7c6edf869345edb33197e1b08b64452f7413b0b258ca5a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part03.lean",
+      "mode": "100644",
+      "git_blob": "3280e945e249e905f60ed4dc2d77374d8c1f21d6",
+      "bytes": 74070,
+      "sha256": "90591ceddfdfb8a7109f4ec3ba1feac0c777d4aa8f98ef448a2081be2907c335"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part04.lean",
+      "mode": "100644",
+      "git_blob": "e7f4bea3f13889bb124931c85179901acb8123f0",
+      "bytes": 63172,
+      "sha256": "995aeb639e7a2ea3fc12b19382d26465d447e8fbfd12bfa275931f3dd05b3416"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part05.lean",
+      "mode": "100644",
+      "git_blob": "ba552590b8a10dde1e9cff787d75535d844cbe28",
+      "bytes": 67601,
+      "sha256": "adbd7834740f2e09d435c743cb00ad078165321a388e86d7f0e4a07593e22846"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part06.lean",
+      "mode": "100644",
+      "git_blob": "7de72595544282be2b378f0357f63eb4635294e1",
+      "bytes": 69473,
+      "sha256": "941557ad54a116a5c5353f3abb2d347e995a301ed6d3fb9dd482ddae01c73a7d"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height10Part07.lean",
+      "mode": "100644",
+      "git_blob": "d8c5ad24cdc8f7d95fddc27a7c6738c95ba59649",
+      "bytes": 19625,
+      "sha256": "16bb244088a706cb45bba2c479a60c1ee525d46ab52069c5e27018251c199c6a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part01.lean",
+      "mode": "100644",
+      "git_blob": "aa1c4e082a22aaa8091ce5c23c4150cba3267da0",
+      "bytes": 61334,
+      "sha256": "2afe7b6b6d805fec07aef8b1560f7c7c10f5ee1ea2e60131cd2991c132a14425"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part02.lean",
+      "mode": "100644",
+      "git_blob": "a0eeb998d08ce46ad5a24eaf332ac895dedf3dde",
+      "bytes": 72515,
+      "sha256": "6052574dc2afcc7933532c978ae9f50104b000d3f9e7d23bde74c7a984aafd33"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part03.lean",
+      "mode": "100644",
+      "git_blob": "8fcdd3565cefdcb5a833cb9f62cd984d77927949",
+      "bytes": 57110,
+      "sha256": "c955d181f3d7e17739df4ce36a8e306f067e7ecd47dad1e301a603fbaeccbd24"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part04.lean",
+      "mode": "100644",
+      "git_blob": "e20210ddb5a7fe03103d8f0f5ed20510b5504a0c",
+      "bytes": 66597,
+      "sha256": "3e15ffd5811c739975a3cccd95bd44abe635f97b9baaed944841b751365afd22"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part05.lean",
+      "mode": "100644",
+      "git_blob": "e99f4fca415551b34eab7f67197d981c388bb4be",
+      "bytes": 77995,
+      "sha256": "75f02f38d91fec7e334a0aa89450a0c27b728be98221d7559964ae0eb0e811e0"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height11Part06.lean",
+      "mode": "100644",
+      "git_blob": "37224772159e80ed8300d477898163c160492b24",
+      "bytes": 49737,
+      "sha256": "744342de6ed465e062d443e918dcbf298636856e35958cc7afa32f827dde6da1"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height12Part01.lean",
+      "mode": "100644",
+      "git_blob": "29f0fdec1d6a9dd90bd0e29ebb5775b6738417f9",
+      "bytes": 73924,
+      "sha256": "98ada75cffa280d9bfe02e5510507cdb7a425d326652119fd676e2a612b7de98"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height12Part02.lean",
+      "mode": "100644",
+      "git_blob": "5c0ed55d4ac8411c9afc0af929a1c81e341c682b",
+      "bytes": 74230,
+      "sha256": "92978a0d11d3c74f49f2fed81eb75f7296610af3a4c4cd890f0b695009d9bb63"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height12Part03.lean",
+      "mode": "100644",
+      "git_blob": "3862e7249b5b136f9d7354eea3563351547bf16e",
+      "bytes": 73308,
+      "sha256": "9caf9a13e979d827a4c0d74deca5f32c54f4b85c2e7d87ffde7015f02e82e0fb"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height12Part04.lean",
+      "mode": "100644",
+      "git_blob": "95fcb04eb4ba9806e1d623706b80accfc979c610",
+      "bytes": 66987,
+      "sha256": "45ab2b20c2db4517ef9db6d8c10849f623b78b4e0e90ed33532f2c456c47646a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height12Part05.lean",
+      "mode": "100644",
+      "git_blob": "4bdf82f6775a2a2aab1ffaaedd60cc9311c4a8bc",
+      "bytes": 61987,
+      "sha256": "844faee78ca99c9bf2644389ae17459584ed4bd76b1183b44407ea336a001e00"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part01.lean",
+      "mode": "100644",
+      "git_blob": "9319f1e1829a07c2cee24e8fe3186f042a8a8a34",
+      "bytes": 64984,
+      "sha256": "c7d05c2ae8c69a2b0d985c2e18edeab63af7e03276ecf47ed80768f730f43cec"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part02.lean",
+      "mode": "100644",
+      "git_blob": "f6fed4825b482e983bd14771092693b932ed3fc7",
+      "bytes": 73324,
+      "sha256": "98283cc58c87f7dbd87cb88ff0ba4b897e7683cafee56c1341610fc81f9a4c55"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part03.lean",
+      "mode": "100644",
+      "git_blob": "2c72780d1366a353fed863426bd6d4d62fd72c89",
+      "bytes": 78951,
+      "sha256": "4e604e82c10e2d76f1b2c9a39d96f2f7472c0a8d3fc5f3c109668ba193d1bfa5"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part04.lean",
+      "mode": "100644",
+      "git_blob": "78e30ddc2fd52e343fa95ec0e48965722f35a819",
+      "bytes": 55050,
+      "sha256": "c6eb8cd09091be55e2bd853d8d0a02c6f3b01e56cf187831d866fe7c72481d16"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part05.lean",
+      "mode": "100644",
+      "git_blob": "f253ae16967aa03ce6467c6e8c65c8091555b257",
+      "bytes": 65234,
+      "sha256": "f13ea4353c6cda2dbf684a2734e92f5064822170665155699c5113771be3f3a3"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part06.lean",
+      "mode": "100644",
+      "git_blob": "c39ac7f824f01507b1af65f47e6ce13748488958",
+      "bytes": 62882,
+      "sha256": "b4eb63c7fefeb0a5da6d8a047be13a9bb988a0abc0fa0b2e8e090e7952c2b3a4"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height13Part07.lean",
+      "mode": "100644",
+      "git_blob": "79c1f426ec0ba9cec617aedc5e6b8aeda4db73ba",
+      "bytes": 23996,
+      "sha256": "608570161b4a67b15a575d09664f5032ae854a881950cf6a98e9cf7c972138ca"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height14Part01.lean",
+      "mode": "100644",
+      "git_blob": "282a9f7f666d80194ed3a73197cb9773f73cee85",
+      "bytes": 74722,
+      "sha256": "cdcae9363b98149cce6a8a6d95b255bbb928b19226ad53a0efbe0283de9a2f68"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height14Part02.lean",
+      "mode": "100644",
+      "git_blob": "af5369aad11e6c99cac3341686b78da61e568f59",
+      "bytes": 75908,
+      "sha256": "536089a57e85902db6c1d5b125a4346fc8669ae9aba55099faba30ed1bbbc78a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height14Part03.lean",
+      "mode": "100644",
+      "git_blob": "4e9ae540d0530cea9530bc269bc54945cc9bcece",
+      "bytes": 68216,
+      "sha256": "78867488bf9599a41719f74e42c34d5bd21047308382079ba3b59b408d5120a3"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height14Part04.lean",
+      "mode": "100644",
+      "git_blob": "ed3b984385355bb2f63abc4835a552bf66b6e5d9",
+      "bytes": 51167,
+      "sha256": "ce1b0fa24cc8ed5050692cc200401c05f27c80ec295e2337cf687055efe7a751"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height15Part01.lean",
+      "mode": "100644",
+      "git_blob": "8c5be523a5e860c5a07b8cabe281951ab7e97c0c",
+      "bytes": 78755,
+      "sha256": "95030470ead192c47b9115eed23c003978646393f5ca4f6257a0a1dde0ba7195"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height15Part02.lean",
+      "mode": "100644",
+      "git_blob": "9632c4508edc83996431b15a77c50370b4adfea3",
+      "bytes": 81934,
+      "sha256": "8d849760c2d74d70cf77c7ccbceca941ebe3fdf867f86afd13911f8e5b194ca2"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height15Part03.lean",
+      "mode": "100644",
+      "git_blob": "9eb39037b5c1fab609c2997a60b8e56e6058afac",
+      "bytes": 80615,
+      "sha256": "d859675955b216884012b25c82b2c86f0ee159ed7d8fd51320fac584339946ac"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height15Part04.lean",
+      "mode": "100644",
+      "git_blob": "415e543635919b27e12943173e4db22dcfdd491f",
+      "bytes": 30128,
+      "sha256": "03498c2351fbd34ae0d95e0e971856f79593df844fc0190a7a0c921cd951da52"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height16Part01.lean",
+      "mode": "100644",
+      "git_blob": "e9944d2414c89816e2228dcf85bf7ab2e5777500",
+      "bytes": 72771,
+      "sha256": "486549710154751edc1a3b719d1780e0b7bf0aa2955b7d3961e7f4a251ed7248"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height16Part02.lean",
+      "mode": "100644",
+      "git_blob": "b568fad496b5b17cf6dd425933767b207d1c1d73",
+      "bytes": 48651,
+      "sha256": "03dfedd9067aaf0644c6d76d75b470141dfd6eb48495eed2c9d3b7bc0a49aed7"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height16Part03.lean",
+      "mode": "100644",
+      "git_blob": "d18334a7de18b30bf51471e2f222eda52e5b52bd",
+      "bytes": 37527,
+      "sha256": "a9b209921b6691c59d893c8d58eaab64f359707778b8785da65959491164610c"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height17Part01.lean",
+      "mode": "100644",
+      "git_blob": "691a17cb35712ae403e258d5e50c379b09704f56",
+      "bytes": 58108,
+      "sha256": "060e3a5d9d3b5123433eb50d186c38679892e6663a7c1405ae21c77bc001e862"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height17Part02.lean",
+      "mode": "100644",
+      "git_blob": "a8def2540b74c4bebff4ea6be4706aef39a8cd58",
+      "bytes": 40234,
+      "sha256": "4bd93d460827cf7c577fa113136abd40a53f5a8da1c6cd31f945ddd38d7c24ea"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height18Part01.lean",
+      "mode": "100644",
+      "git_blob": "9465f26beead3fb2b4cc6584d0ef525405e39c04",
+      "bytes": 73483,
+      "sha256": "154698a2eafd7ab3118236a2f7c772c1b2057846780457f55f074703c267765b"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height18Part02.lean",
+      "mode": "100644",
+      "git_blob": "279df041a53734fd3d6b6152c38fd052ce4db614",
+      "bytes": 31641,
+      "sha256": "fc1ea2edfb94e051c937f84b1add1adc18fd106fcc5e2bf8a60ba5b26328acc9"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height19Part01.lean",
+      "mode": "100644",
+      "git_blob": "36b8840f6fc1cfc0bb39807ca8ccdf5dfff59eb4",
+      "bytes": 13196,
+      "sha256": "59c407a3ab501823540cf7732c8a9589ecb1a87a73af2776abdfa06c6da30bbb"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height20Part01.lean",
+      "mode": "100644",
+      "git_blob": "c019963065a65dce97da244684dd66272fa64bd8",
+      "bytes": 51003,
+      "sha256": "579f5ac435486638f55cba08fe32d2762291d7d3eecd2f54056f491e396fb6c1"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Cards/Height21Part01.lean",
+      "mode": "100644",
+      "git_blob": "71a637e34e3d6c06f3d64bf5f521a27c4cff118b",
+      "bytes": 10088,
+      "sha256": "4f89721d3d39ac9e4e253edc1cbe367f5a4b7db7a15d6241e28951899fa32845"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Certificate/Operations.lean",
+      "mode": "100644",
+      "git_blob": "5d67389577013fa634c1a15e13024feca66a5da2",
+      "bytes": 4003,
+      "sha256": "e69c168bfdf68f10052ceb9963a4013ddf536bd15ac79f5522fe932e82364a03"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Certificate/Summary.lean",
+      "mode": "100644",
+      "git_blob": "4152b6f2018288e7c74cdfc23859ca8c4c6275f4",
+      "bytes": 18019,
+      "sha256": "93ec0b599d3ed2628af92fe631dcf1c185fa0a44c3a532cf3c9179edfe1c9f87"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Main.lean",
+      "mode": "100644",
+      "git_blob": "88f3c5abed104c22507f89ac827d88bbdc15f051",
+      "bytes": 2191,
+      "sha256": "a62fa55a65fd74a1bb9a06509a668feba17a0ce589586e72ffee0c6d83134e28"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Model.lean",
+      "mode": "100644",
+      "git_blob": "bba3eae2213b2aaafdd7e5a2700f922f4d5f407e",
+      "bytes": 1546,
+      "sha256": "e2b6365603299d20d407519c365561f330d03af3e579c0042f19cdc2657df8b0"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Semantics/Game.lean",
+      "mode": "100644",
+      "git_blob": "7baa698332ef9e70ba91b679df4180473bfceab7",
+      "bytes": 8245,
+      "sha256": "1d20aa7e7c30c525e6daf2a0145668bbd50b42386e2f4523a96fa982b295730a"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Semantics/Geometry.lean",
+      "mode": "100644",
+      "git_blob": "5f94d6cef3c78d0fdf7ac92c45ea2c6c95b66fa3",
+      "bytes": 3954,
+      "sha256": "0d07595a7c774d1a7c6954f2241d32635457f84500ab32016f55a48e563655db"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Semantics/Policy.lean",
+      "mode": "100644",
+      "git_blob": "fb88d0a8f1f9fb386be598a56f3d5b933eb11bd5",
+      "bytes": 7983,
+      "sha256": "c5feb030221603a62c91caaff754700b20da2c519a5bc05cf797f2dcd79598e5"
+    },
+    {
+      "path": "lean/OAI/GameTheory/SnakyTwentyOne/Semantics/Replies.lean",
+      "mode": "100644",
+      "git_blob": "9ab14baae9de23e65d673d05f7f9d3637f934a43",
+      "bytes": 1710,
+      "sha256": "b7571f5cce7fa672f93e00a74b2cd5d5a1f8d694f4ba791a9d421e27bf3c56b2"
+    },
+    {
+      "path": "lean/README.md",
+      "mode": "100644",
+      "git_blob": "f1ab618366051a4b3683b14ed2a0ac4bb7c620fb",
+      "bytes": 650,
+      "sha256": "292ff9d539f494158dfbf68d989ba85a82782a4343b2fe43088f8fa62525bf1b"
+    },
+    {
+      "path": "lean/docs/187.md",
+      "mode": "100644",
+      "git_blob": "b377da7e6be6705d5a7c8863b42d389f1eeecc58",
+      "bytes": 1431,
+      "sha256": "4faf4c5d8fb5957cbe0b2c0b4728d99acefee79b05180e61354298fe9c8a3782"
+    },
+    {
+      "path": "lean/lake-manifest.json",
+      "mode": "100644",
+      "git_blob": "67d01d2717d0aaff59fb8814bb53581b961f42b4",
+      "bytes": 14622,
+      "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+    },
+    {
+      "path": "lean/lakefile.lean",
+      "mode": "100644",
+      "git_blob": "66c3867331c7c607ffc0e60955cc86cccf046e12",
+      "bytes": 15457,
+      "sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74"
+    },
+    {
+      "path": "lean/lean-toolchain",
+      "mode": "100644",
+      "git_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "bytes": 25,
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/README.md",
+      "mode": "100644",
+      "git_blob": "7d0154fc5c4c0045b7da91301d388924cba9c290",
+      "bytes": 1130,
+      "sha256": "80089278b8ec3aee28876f9a2d3cb5be68cee99aa4e342b74d71491543c64c15"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/article.pdf",
+      "mode": "100644",
+      "git_blob": "cb20d9986a5ba69f00d69eda885418875ac6b1c9",
+      "bytes": 668742,
+      "sha256": "e5ce107fdc4ec77fbbe2d3eab6babe6198e7160b0904462ae3fddfab0c88634c"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/certificate-appendix.tex",
+      "mode": "100644",
+      "git_blob": "425f606614f5ea380e2c560fa7f5d28f2a78eec1",
+      "bytes": 4848,
+      "sha256": "cbc040a864882a0335a378d231541efed77a17eb83e48fc53aefbcb2ab943185"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/certificate-proof.tex",
+      "mode": "100644",
+      "git_blob": "e29d6015093816df7c943a6d4b3a2858e19de628",
+      "bytes": 9091,
+      "sha256": "4f38b93893ae50cbdbec687a243c9eafda6e7b6cabd46d5c023f8ae3381be5b4"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/formalization.tex",
+      "mode": "100644",
+      "git_blob": "82e45b069249e8d123f0de2f42104a25659cfd79",
+      "bytes": 2479,
+      "sha256": "1a467ec9563d7757784ea10a8b7aca6628af93ee95e7f94236c4aa3754fe7ee3"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/geometry.tex",
+      "mode": "100644",
+      "git_blob": "b66903a0fffa206c944f8d8094ad53f46b6a72ca",
+      "bytes": 11465,
+      "sha256": "cb03629302277c687bc3c871dc53c3f6963800cc7f1e7770b6f216242c5a18cc"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/introduction.tex",
+      "mode": "100644",
+      "git_blob": "fcc3c444e15c00c347024e254c188157d3951ea3",
+      "bytes": 7400,
+      "sha256": "56e35be69cac7fd8905f9bef385f770f20c90394676bfb7c960fad28525d6403"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/paper.tex",
+      "mode": "100644",
+      "git_blob": "c655bfb7748bfbfd3acfede649ec48550fdd653c",
+      "bytes": 1613,
+      "sha256": "864956989aba1c861c0a99dcd6355a584b4321bc1b57a0ffefe04644a18bcf22"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/references.bib",
+      "mode": "100644",
+      "git_blob": "df1c43874549022670cf17920e573c487b1c4ed4",
+      "bytes": 2640,
+      "sha256": "3ac58626fcdbc4774bbf102ab007d274557f7b80f33b88b4965ff36503488a03"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "mode": "100644",
+      "git_blob": "1b12eff00c66307e0d8818ba6e531eef7e13b634",
+      "bytes": 23648,
+      "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route35.tex",
+      "mode": "100644",
+      "git_blob": "2bdf5a15a99e207dbf0b5ecbb2bb459690006447",
+      "bytes": 26239,
+      "sha256": "43c66f69d1a35b519878543d0551b9930a0ba7ff613b4de598913e8456baf5b3"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+      "mode": "100644",
+      "git_blob": "eff596ebb123294ceebf84a718931053923ff170",
+      "bytes": 4905,
+      "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+      "mode": "100644",
+      "git_blob": "089872d37272c3c5325de7b0942817a553c92f61",
+      "bytes": 5078,
+      "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/verification.tex",
+      "mode": "100644",
+      "git_blob": "bd543fa570af78e73d10d03254c6875be44459f0",
+      "bytes": 4801,
+      "sha256": "7edcabcedf3e6551a54169ce390e8ba3c32a82264a9848dd03ba47396268f433"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+      "mode": "100644",
+      "git_blob": "265eedcd3684c34c10c87aff44d1efbb777d363d",
+      "bytes": 38367,
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/CERTIFICATE-SUPPORT-MANIFEST.json",
+      "mode": "100644",
+      "git_blob": "01b35207e74954e81f78558874f92445d94d157a",
+      "bytes": 4958,
+      "sha256": "b6169cdcd42ad4541b8610083639f1b941f7518afc61e6ba645b089085cdb711"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/CERTIFICATES.md",
+      "mode": "100644",
+      "git_blob": "bab0017858a6252b818f443071f5968a4e7e7f51",
+      "bytes": 693,
+      "sha256": "c7d6e52208561eca882d3e62ce33e691fe430046033e54f67fbccf08c9ca8f33"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/independent_evaluator.py",
+      "mode": "100644",
+      "git_blob": "1f04b933b047acf3722f968da2396afc15979c97",
+      "bytes": 8864,
+      "sha256": "8995a6da330d4775d878f809438d4ccd9e267561fa596adb939c5a8440322d8f"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/prior-35/certificate.txt",
+      "mode": "100644",
+      "git_blob": "78805ecf269d9424aa9f979ae3b0032447f6fb4c",
+      "bytes": 14093,
+      "sha256": "16d077f0b64df70dd67fb6e9651636d42eaab0ce0f01f46180a57846e38fedc2"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/README.md",
+      "mode": "100644",
+      "git_blob": "22eba2dd9e83063117e8f6cd9a55cd2eb86beaae",
+      "bytes": 466,
+      "sha256": "f109e434d24f0011aafbfbd925cf93649c20e30d0e09d77e07ccb1b2f5933ab2"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/certificate.txt",
+      "mode": "100644",
+      "git_blob": "265eedcd3684c34c10c87aff44d1efbb777d363d",
+      "bytes": 38367,
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/data-manifest.json",
+      "mode": "100644",
+      "git_blob": "5e01b1cbb5c3311be73e773fd25c45c7435026fe",
+      "bytes": 1026,
+      "sha256": "9ec31a5c50805d804fbd17829bb73ef7582fe241c24ccdad10bfc79110385827"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/independent.py",
+      "mode": "100644",
+      "git_blob": "ea1eece4841362106b1765fb91d1e38e39383dfc",
+      "bytes": 11607,
+      "sha256": "1984ef060f642a4c1aee20820c6ace2bda39b29781ff356885d922a6d5b44208"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/primary.py",
+      "mode": "100644",
+      "git_blob": "b18816d8816abc03d7de94010975e318be710afa",
+      "bytes": 7600,
+      "sha256": "a341bc0e53dc573c19e3bb6ece6d571a0af0c4dace1e3c4b8bbc9c4b51e12e02"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route21/run_tests.py",
+      "mode": "100644",
+      "git_blob": "4f8d33ec775abcb5916c6140bdb91d4b1e4609d0",
+      "bytes": 7849,
+      "sha256": "c67740c8f5d42e18809a8d4e44e2f3a8fdcc4dfab7d6aa37480ddce56f560545"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/README.md",
+      "mode": "100644",
+      "git_blob": "1d96d9121984e591cd5aaf074b21c0850d0d04fb",
+      "bytes": 434,
+      "sha256": "60b910e3ec5283107896996292bc690d423aa4de42ac5f402dd3a4583ae08b23"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/certificate-display.txt",
+      "mode": "100644",
+      "git_blob": "c6ed91a46d78c1a5fb9cbb1dd20b606d69c7c563",
+      "bytes": 49099,
+      "sha256": "953664d1d46e13ceeb8a65a2345eb1e2def451be599a64b3ce9deddf33fa1ccb"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/certificate.txt",
+      "mode": "100644",
+      "git_blob": "5a1440a801a0c21e03c2bba63468b5384f2f16e2",
+      "bytes": 29167,
+      "sha256": "41cd04620af889771862dcceda7383afd99933ae03ddb0a566a00d742a8249b0"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/display-identity.json",
+      "mode": "100644",
+      "git_blob": "e6a065cfc79beb608eab414019461d9f7254053b",
+      "bytes": 360,
+      "sha256": "45732c2f78d2be5d48112308d3cb6611815c63c8216a45c91a964ac6213011c7"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/identity.json",
+      "mode": "100644",
+      "git_blob": "883e2e6f14cf286febf2b442ff4ee6627c33e7eb",
+      "bytes": 2446,
+      "sha256": "a8e5ab51705546d66c03d8c3e1ec8e2083315ad68ee9c3aba7fd0cdae346ba08"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/independent_certificate.py",
+      "mode": "100755",
+      "git_blob": "0128ce91960a3b72b2780a919dfe8feaf224476b",
+      "bytes": 17656,
+      "sha256": "6440fa6b2e2b10ee200fdfd99480b98500f09ac85d2adc59088d08a7ace1eb0e"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/run_tests.py",
+      "mode": "100755",
+      "git_blob": "fd6e28749b6a1e0108f4e68bad033a4d100e156b",
+      "bytes": 9065,
+      "sha256": "de920e5da5d652a816d89b83972b2015a2f9022eec6372efd42e6dcff583251d"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route25/verify_certificate.py",
+      "mode": "100755",
+      "git_blob": "26c0a9dd1a31cc396cae3eca6897a01c3330b13a",
+      "bytes": 13078,
+      "sha256": "bdfc0bcec7a62b25fd87b2932aae387f44cadc26e06b588068f7f329beefda76"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/README.md",
+      "mode": "100644",
+      "git_blob": "2239d23e98cb12c55cf99ace4e618d6d74897a13",
+      "bytes": 596,
+      "sha256": "5c1b6788bd16bbc45d8d45d8a49fbb353a9188a5c1af4d17a8ee1a074c8f13f3"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/certificate.txt",
+      "mode": "100644",
+      "git_blob": "78805ecf269d9424aa9f979ae3b0032447f6fb4c",
+      "bytes": 14093,
+      "sha256": "16d077f0b64df70dd67fb6e9651636d42eaab0ce0f01f46180a57846e38fedc2"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/independent_certificate.py",
+      "mode": "100755",
+      "git_blob": "f350242110fc6931e4a36479281dcf737730b90e",
+      "bytes": 11773,
+      "sha256": "48b206a04132937eb092f0b4980093eb516a4642180e3f12dee7f43248b6c049"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/independent_opening.py",
+      "mode": "100755",
+      "git_blob": "aa59b05796e2169b0066510ea5fd582fe4cf907f",
+      "bytes": 18373,
+      "sha256": "9b0250f205f19a5b03fdbf03ee4c666bdcc7da6485e8606e4fc2e4922d536cf2"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/manifest.json",
+      "mode": "100644",
+      "git_blob": "8ccc6ac9df398eb56710773071d7c3a78dcfb6e1",
+      "bytes": 1989,
+      "sha256": "85383761e1eaae709f4d0592cb0ef45a55d59e0910e6eb5a22a8e359841fc831"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/run_tests.py",
+      "mode": "100755",
+      "git_blob": "1dbe2f710d4b44046e4658fc45398baafe4c620b",
+      "bytes": 10181,
+      "sha256": "840724b4872a3fbb84588e28a50004d96fb5ae6dc7b996b4faad59837770c56f"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/route35/verify_certificate.py",
+      "mode": "100755",
+      "git_blob": "266c743f77523c915c6dff14136d8b018ab3c1d6",
+      "bytes": 13346,
+      "sha256": "4319825c40566a1a05f9e2521b1df15ab215a91a6ffd461b32590a428ca68f73"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/supporting/verify_all.py",
+      "mode": "100644",
+      "git_blob": "89a8140049654d5d67363b9cb4784b5d18b9b232",
+      "bytes": 3433,
+      "sha256": "54d960aef43b1940b80fc17a243fbfd3204f32368fdfb4f4196808999e58b020"
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/verify_certificate.py",
+      "mode": "100644",
+      "git_blob": "2e87cd62759e022f02f597da139f574d706a4e69",
+      "bytes": 4210,
+      "sha256": "0f59f80e38285b64c2962785f92d9d50bef874a917aa018d9b399cdeabdb3753"
+    }
+  ]
+}

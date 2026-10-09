@@ -1,0 +1,136 @@
+{
+  "source": "H:\\Hearthline's Path\\Math Workbench\\openai-math-fourier-corpus-2026-10-08",
+  "scope": "Selected local audit contribution and exact upstream source subset; no new proof run",
+  "upstream_repository": "https://github.com/openai/math",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "status": "READING_AND_CONSTANTS_ONLY",
+  "files": [
+    {
+      "path": "corpus-source-records.json",
+      "sha256": "f74b69785a723a293ea3f6d1ad6bbc1dd9d0eaad1ec9d7ed963467309d10b2db",
+      "bytes": 3162
+    },
+    {
+      "path": "displayed-constants-check.json",
+      "sha256": "3f34d83f1c787aaf122d6f958f6c5f71aee84da78bb7a078ee1ae02da8a3ec92",
+      "bytes": 510
+    },
+    {
+      "path": "Fourier-and-the-corpus.md",
+      "sha256": "8f7f077bab24fcbb630a19e6c171d28064b1c9a8322cb1488baf1da126adcf92",
+      "bytes": 8036
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "d70ae1c83f5840dbbcb1bae2f1d3c71965e0cc11112e745542b95325ffba7262",
+      "bytes": 3959
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "ccd6ca6fd199862fe07aec5ef7ca095d6c37ce021a30405ad7f9d3a1709e453a",
+      "bytes": 8173
+    },
+    {
+      "path": "sources/lean/ComparatorChallenges/ExactFourier.json",
+      "sha256": "5c80971062c12f3ec364ae482fbd1e0d954c81c36437f3faa0b2c56562d1892c",
+      "bytes": 323
+    },
+    {
+      "path": "sources/lean/ComparatorChallenges/ExactFourier.lean",
+      "sha256": "93b33a2b9f6543dd0b893c3a5a504df19a1a39476072c6d7ebe18133a820ef6d",
+      "bytes": 2005
+    },
+    {
+      "path": "sources/lean/formalization.yaml",
+      "sha256": "5a8a164259591208886cd018416e61552665265ec9e20cff636f9d51117c2278",
+      "bytes": 79482
+    },
+    {
+      "path": "sources/lean/OAI/Computability/FourierCircuit/Main.lean",
+      "sha256": "ff1fb1bc4b5ec26f1722d41d9603898b3361844af1cb4a78e0233a6bc6de582b",
+      "bytes": 15102
+    },
+    {
+      "path": "sources/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/main.tex",
+      "sha256": "7c4fc69f11b77c56c9177d6285165ddedb20bcea75ed0845dca0b187368130bd",
+      "bytes": 2084
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/references.bib",
+      "sha256": "19c8b77639a9f441b8f046d9661e03e8d1fdf103d3e24407f7850f20f5f0851b",
+      "bytes": 6312
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/all-lengths.tex",
+      "sha256": "9dfb302812971062af2990918c4b02190e3ad0ca8f271dc207241976b23c45c7",
+      "bytes": 12316
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/introduction.tex",
+      "sha256": "341e2b3f2fad1db94305d7b5efc4eb29cc7bd3c6ec69ea68cf9775840ebc3523",
+      "bytes": 11292
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+      "sha256": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561",
+      "bytes": 21506
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/network.tex",
+      "sha256": "7218f4312afb772bde87c5e1c64eabe7ab3524be090ea5621afb5608a4b10350",
+      "bytes": 25384
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/synchronization.tex",
+      "sha256": "4c461713ce43d5d2dd8fca84f3260925b8fb69b819e96067bc2a76e3d75c306c",
+      "bytes": 6543
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/synthesis.tex",
+      "sha256": "601067c49c2d61c56d0d42ab4a35d4c3d4b2c95d5428e61e44fda71c3dce1d39",
+      "bytes": 21378
+    },
+    {
+      "path": "sources/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/README.md",
+      "sha256": "dd9405ab717a224bdec887aba3b4296a771eb78dec7a08f84e987e3e4081d464",
+      "bytes": 682
+    },
+    {
+      "path": "sources/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/main.tex",
+      "sha256": "081de539120f6e9b90e2cd45c624e654347946a7c033a65b9a65b8e6152791af",
+      "bytes": 2751
+    },
+    {
+      "path": "sources/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/01-introduction.tex",
+      "sha256": "7d7df83a197091ab04737eca2ddbe5f97e99d02b7a133f2710ee69c00bd3cad7",
+      "bytes": 14326
+    },
+    {
+      "path": "sources/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/03-fourier-transfer.tex",
+      "sha256": "27d252f63ad9a1562466495c5a08893d1923851fe3e29544ec8320bc4e73f535",
+      "bytes": 20489
+    },
+    {
+      "path": "sources/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md",
+      "sha256": "87f2088fb02c24eb9a304786fad9e6a6da5033f6dab009b671453ed96deff2d2",
+      "bytes": 598
+    },
+    {
+      "path": "sources/README.md",
+      "sha256": "5e8878ee04866f52ec942852552b9c28db278f65691c7ab49a87c9e93a9199fd",
+      "bytes": 4190
+    }
+  ],
+  "exclusions": [
+    {
+      "path": "corpus-extracts",
+      "reason": "Local whole-paper reading extracts; hashes and source identities retained without republishing them"
+    }
+  ],
+  "historical_checksums": "Original SHA256SUMS may name excluded files. MIGRATION.json is the exact public subset manifest."
+}

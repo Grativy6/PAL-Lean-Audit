@@ -1,0 +1,183 @@
+[
+  {
+    "paper": "PAL",
+    "title": "Primitive Axiom Layers",
+    "version": "v2.0, v2.1, v2.3; v2.4 candidate receipts",
+    "source_doi": "https://doi.org/10.5281/zenodo.22888036",
+    "coverage": "Historical attacks, recovery and cadence experiments, and nine later batches retain their own source scopes. B1–B3 bind the frozen v2.4 candidate; C1/C5 concern Abstract Loops and the other C batches use the v2.3 Atlas. The 231 declarations / 101 theorems belong only to those nine batches.",
+    "limits": "O04, O25 and the first-occurrence debt stay open. The finished publication and candidate have different hashes. This migration preserves their distinction and does not establish a new final-publication source rebind.",
+    "links": [
+      "docs/generated/summary.md",
+      "docs/generated/attack-run-0003-summary.md",
+      "Audit/pal-v23-charter/PUBLICATION.md",
+      "Audit/pal-v23-roundtrip/SUMMARY.md",
+      "Audit/pal-v23-coverage/SUMMARY.md",
+      "Audit/pal-v24-batches/README.md",
+      "provenance/migrations/2026-10-09/batch-inventory.json"
+    ]
+  },
+  {
+    "paper": "CHARTER",
+    "title": "Framed Prime Shells and Bound Persistent Shells",
+    "version": "v1.0",
+    "source_doi": null,
+    "coverage": "Fifteen original arithmetic targets and four follow-up declarations are retained. Shared PAL/CHARTER receipts are not two independent populations.",
+    "limits": "The earlier shell proposals remain unadopted: PR 9, and PR 10 based on PR 9. Their branches are preserved, not merged by this collection move.",
+    "links": [
+      "Audit/pal-v23-charter/source-manifest.json",
+      "Audit/pal-v23-charter/charter-claims.json",
+      "Experiments/Charter.lean",
+      "Audit/recent-work-20260911/charter-claims.json",
+      "Experiments/CharterFollowup.lean"
+    ]
+  },
+  {
+    "paper": "BRIDGE",
+    "title": "Binding Residue and Information Dynamics of Generative Export",
+    "version": "v0.2 and v0.4",
+    "source_doi": null,
+    "coverage": "Endpoint, four-sector exactness, diagram/readout, dimension/recovery and generated-range checks. Replayed predecessors retain their original identities.",
+    "limits": "Recovery depends on the admitted differences and readout kernel. FRONT contains documented copies of selected modules; that reuse is not independent corroboration.",
+    "links": [
+      "Audit/bridge-v0.2/README.md",
+      "Audit/bridge-v04-four-sector/SUMMARY.md",
+      "Audit/bridge-v04-diagram-readout/SUMMARY.md",
+      "Audit/bridge-v04-dimension-recovery/SUMMARY.md",
+      "Audit/bridge-v04-generated-recovery/SUMMARY.md"
+    ]
+  },
+  {
+    "paper": "MIND",
+    "title": "MIND-inspired continuation experiment",
+    "version": "v0.4 draft",
+    "source_doi": null,
+    "coverage": "Thirty-five declarations in a reduced continuation/checkpoint model.",
+    "limits": "A reduced experiment does not formalize the entire manuscript or merge MIND into PAL.",
+    "links": [
+      "Audit/mind-v04-continuation/README.md",
+      "Audit/mind-v04-continuation/claims.json",
+      "Experiments/MindContinuation.lean",
+      "Audit/mind-v04-continuation/results.json"
+    ]
+  },
+  {
+    "paper": "Abstract-Loops",
+    "title": "Abstract Loops",
+    "version": "v1.0",
+    "source_doi": "https://doi.org/10.5281/zenodo.21950771",
+    "coverage": "Three completed workshop batches cover reachable capacity, finite-image stabilization, protocols and run quantifiers, and return/export boundaries. Earlier C1/C5 remain separate inherited receipts.",
+    "limits": "Finite-image stabilization does not supply a deadline on the final merge. Physical carrier adequacy and implementation costs remain outside the model.",
+    "links": [
+      "Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "Audit/abstract-loops-20261008/source-manifest.json",
+      "Audit/abstract-loops-20261008/TARGETS.md",
+      "Audit/abstract-loops-20261008/CLARIFICATIONS.md"
+    ]
+  },
+  {
+    "paper": "Compactification-Costs",
+    "title": "Compactification Costs",
+    "version": "v0.2",
+    "source_doi": "https://doi.org/10.5281/zenodo.22238012",
+    "coverage": "Three completed batches cover topological boundary recovery, compatible typed profiles, and selected geometric fixtures.",
+    "limits": "Lens-area, Euler-triangulation and analytic-extension developments were not part of these targets. The DOI is the identifier recorded by the source; this migration does not change the deposit.",
+    "links": [
+      "Audit/workshop-rest-20261008/CC/RECEIPT_BOOK.md",
+      "Audit/workshop-rest-20261008/source-manifest.json",
+      "Experiments/CompactificationBoundary.lean",
+      "Experiments/CompactificationProfile.lean",
+      "Experiments/CompactificationFixtures.lean"
+    ]
+  },
+  {
+    "paper": "GPPR",
+    "title": "Golden Phase Prime Ribbons",
+    "version": "v0.1",
+    "source_doi": "https://doi.org/10.5281/zenodo.22225414",
+    "coverage": "Three completed batches cover exact valuation/weighted encoding, positive rational extension, the golden specialization, and routing controls.",
+    "limits": "Golden transcendence is an explicit hypothesis: Gelfond–Schneider is not proved inside this dependency closure. G06 needs its root-representation/collision qualification. Equal endpoints need not mean equal ordered receipts. The recorded source DOI is not a new publication action.",
+    "links": [
+      "Audit/workshop-rest-20261008/GPPR/RECEIPT_BOOK.md",
+      "Audit/workshop-rest-20261008/GPPR-A/LITERATURE.md",
+      "Experiments/GPPRTranscendence.lean",
+      "Experiments/GPPREncoding.lean",
+      "Experiments/GPPRRouting.lean"
+    ]
+  },
+  {
+    "paper": "Finite-Abstraction",
+    "title": "Finite Abstraction Between RH and P versus NP",
+    "version": "working paper v0.1",
+    "source_doi": null,
+    "coverage": "Finite-test countermodels, positive unbounded induction, quantifier controls and growing finite records.",
+    "limits": "No RH, P-versus-NP, lower-bound, reduction or independence result is claimed. Finite evidence and finite descriptions with proved universal reach remain distinct.",
+    "links": [
+      "Audit/workshop-rest-20261008/FA/RECEIPT_BOOK.md",
+      "Audit/workshop-rest-20261008/source-manifest.json",
+      "Experiments/FiniteAbstractionControls.lean"
+    ]
+  },
+  {
+    "paper": "Single-Cut-Transport",
+    "title": "PAL Single Cut Transport Lemma",
+    "version": "v0.1",
+    "source_doi": null,
+    "coverage": "Three completed batches: finite-support counting, filled-corridor invariance and puncture controls, and the seven-column OR gadget with all 40,320 order/truth pairs.",
+    "limits": "The local lemma audit does not establish a global reduction, minimality or historical priority.",
+    "links": [
+      "Audit/workshop-rest-20261008/SCT/RECEIPT_BOOK.md",
+      "Audit/workshop-rest-20261008/source-manifest.json",
+      "Experiments/SingleCutSpan.lean",
+      "Experiments/SingleCutCorridor.lean",
+      "Experiments/SingleCutOR.lean"
+    ]
+  },
+  {
+    "paper": "APCI",
+    "title": "Exact Certification Through a Declared Interface",
+    "version": "v1.0.0",
+    "source_doi": "https://doi.org/10.5281/zenodo.21923290",
+    "coverage": "The published fifteen-declaration project is imported intact, with an empty third-party dependency manifest. A separately retained manuscript supplement contains one finite-capacity corollary and three boundary controls.",
+    "limits": "The physical applications need a correct concrete trace model. The original predecessor archive is unavailable for byte verification. The historical alternative-kernel attempt remains blocked. The supplement is separate from the original fifteen declarations.",
+    "links": [
+      "projects/APCI/README.md",
+      "projects/APCI/THEOREM_INVENTORY.json",
+      "projects/APCI/audit/AXIOM_RECEIPT.txt",
+      "supplements/APCI-manuscript-20261008/RECEIPT_BOOK.md",
+      "provenance/imports/APCI.json"
+    ]
+  },
+  {
+    "paper": "FRONT",
+    "title": "FRONT",
+    "version": "v1.0",
+    "source_doi": "https://doi.org/10.5281/zenodo.23139301",
+    "coverage": "The published v1.0 project, paper concordance and complete Git history are imported intact. Its audit distinguishes seventeen general targets and four bounded formalizations across twenty-one headed propositions.",
+    "limits": "The inherited APCI/BRIDGE copies remain byte-pinned. Bundled kernel replay is not an independently implemented checker or independent scientific review. Published Zenodo files are unchanged.",
+    "links": [
+      "projects/FRONT/README.md",
+      "projects/FRONT/Audit/RECEIPT_BOOK.md",
+      "projects/FRONT/Audit/declarations.json",
+      "projects/FRONT/Publication/source-concordance.json",
+      "provenance/imports/FRONT.json"
+    ]
+  },
+  {
+    "paper": "GOLD",
+    "title": "Golden-Oriented Lens Diagram",
+    "version": "v0.1",
+    "source_doi": "https://doi.org/10.5281/zenodo.22236848",
+    "coverage": "Source and queue entry only. No GOLD-specific passing Lean receipt was located in the agreed collection.",
+    "limits": "Reading or organizing a source does not establish formal coverage.",
+    "links": []
+  },
+  {
+    "paper": "RPL",
+    "title": "Riemann-Pang Ledger",
+    "version": "v1.0",
+    "source_doi": "https://doi.org/10.5281/zenodo.21894278",
+    "coverage": "Source and queue entry only. Its manuscript and evidence package were collected locally; no new independent replay is claimed here.",
+    "limits": "The private v0.72 structural draft remains private recovery material. The presence of the public v1.0 package is not a passing Lean audit.",
+    "links": []
+  }
+]

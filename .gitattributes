@@ -7,16 +7,16 @@
 /scripts/extract_pal23_charter_sources.py text eol=lf
 
 # Preserve byte-pinned imported proofs and historical receipts.
-/Audit/pal-v24-batches/** -text
-/Audit/pal-v24-candidate/** -text
-/Audit/abstract-loops-20261008/** -text
-/Audit/workshop-rest-20261008/** -text
-/Experiments/Pal24*.lean -text
-/Experiments/AbstractLoops*.lean -text
-/Experiments/Compactification*.lean -text
-/Experiments/GPPR*.lean -text
-/Experiments/FiniteAbstraction*.lean -text
-/Experiments/SingleCut*.lean -text
-/projects/** -text
-/supplements/** -text
-/external-audits/** -text
+/Audit/pal-v24-batches/** -text -whitespace
+/Audit/pal-v24-candidate/** -text -whitespace
+/Audit/abstract-loops-20261008/** -text -whitespace
+/Audit/workshop-rest-20261008/** -text -whitespace
+/Experiments/Pal24*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/Experiments/AbstractLoops*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/Experiments/Compactification*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/Experiments/GPPR*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/Experiments/FiniteAbstraction*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/Experiments/SingleCut*.lean -text whitespace=cr-at-eol,-blank-at-eof
+/projects/** -text -whitespace
+/supplements/** -text -whitespace
+/external-audits/** -text -whitespace

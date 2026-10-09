@@ -1,0 +1,8 @@
+{
+  "epsilon_exact": "1717850673/590295810358705651712",
+  "epsilon_matches_source": true,
+  "epsilon_greater_than_28_over_10pow13": true,
+  "theta_high_precision_decimal": "0.9999999999997893561569959818916558359496304487427849885839355307696780453593135272945",
+  "one_minus_theta_decimal": "2.106438430040181083441640503695512572150114160644692303219546406864727055E-13",
+  "scope": "Checks only the displayed constants; does not check the network construction, cost recurrence, or full algorithm."
+}

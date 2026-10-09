@@ -1,0 +1,114 @@
+HEARTHLINE'S MATH SHELF
+02 / SNAKY
+A reading companion for Chris
+1
+A GAME, A GUARANTEE, AND ROOM FOR A REPLY
+Snaky
+A win with a ceiling
+Notes by Hearthline for Chris | October 8, 2026
+Six squares, an endless board
+Two players take turns claiming empty squares. Maker goes first and wants to own the
+six-square shape below, anywhere on the board. Breaker wants to prevent it. Rotations and
+reflections count; the shape cannot be stretched.
+Six squares. Rotations and reflections count.
+OpenAI's Snaky in 21 Maker moves gives a promise about every legal opponent: from the
+empty infinite square grid, one strategy guarantees a snake within 21 of Maker's own
+moves. That means at most 20 intervening Breaker moves, or 41 individual turns. A game
+can end sooner.
+A ceiling, not a speed record. This gives a strategy that needs no more than 21 Maker
+moves. It does not prove that 20 is impossible, or that every game lasts 21 moves.
+This is the Maker-Breaker version: Breaker obstructs Maker, rather than racing to complete another snake. Extra
+Maker squares are allowed.
+
+HEARTHLINE'S MATH SHELF
+02 / SNAKY
+A reading companion for Chris
+2
+A dilemma small enough to hold
+Suppose Maker already owns five squares in a vertical column and the three marked squares
+to their right are free. Maker takes the middle one. Now there are two places to complete a
+snake. Breaker can take only one.
+Make the fork
+Maker takes green.
+Block one finish
+Breaker takes red.
+Take the other
+Gold forms Snaky.
+Gold and green belong to Maker; outlined circles are possible finishes.
+If Breaker blocks the upper finish instead, Maker uses the lower one. If Breaker plays
+elsewhere, either finish works. In the last picture the grey stone is still Maker's; that particular
+snake simply does not need it.
+How the big construction grows
+A little card records which squares Maker must already own, an area that must contain no
+Breaker stones, and a limit on further Maker moves. That surrounding area is the card's
+envelope.
+Several child cards can be combined. After Maker's next move, all the children's required
+squares are owned. Crucially, every square shared by all their envelopes is owned too.
+A legal blocking move cannot land on an owned square, so it cannot hit every child envelope
+at once. At least one child survives. Older Breaker stones remain outside that child because
+its envelope sits inside the parent's clean envelope.
+Parent allowance = 1 + the largest child allowance.
+The largest allowance covers the hardest surviving continuation. The extra one pays for the
+move Maker just made.
+
+HEARTHLINE'S MATH SHELF
+02 / SNAKY
+A reading companion for Chris
+3
+Many plans, one descending allowance
+The certificate begins with six elementary cards: own five squares of a snake, with its last
+square unblocked, and finish in one move. Later cards combine earlier ones. A rotation or
+translation preserves the guarantee.
+There are 728 numbered cards and 1,620 combination steps, including combinations
+nested inside the numbered cards. These are pieces of the proof, not turns in a single game.
+The final card requires no pre-existing Maker stones and has height 21, so its conditions
+hold on the empty board. After the first move, it offers 32 placed child cards, each allowing
+at most 20 further Maker moves.
+The final envelope
+251 gold or green squares inside a 17 x 17 grid.
+The green square is the first pivot, (8, 8). The grey
+corner squares lie outside the envelope.
+Why distant play cannot escape the plan
+A reply outside the parent envelope misses every child envelope. That observation covers all
+distant replies at once. The finite computation checks the sets; the mathematical argument
+explains why they cover unlimited possible play.
+If Maker already owns a planned pivot, it claims another free square instead. That still costs
+one real move, and Breaker still gets a reply. Extra Maker ownership can help; it cannot
+create an extra blocking opportunity.
+The paper also proves a win on the 251-square envelope itself. Before Maker's 21st move, at most 40 squares
+are occupied, so a fresh replacement is available. This finite-board argument is separate from the selected Lean
+theorem, which states the infinite-board result.
+
+HEARTHLINE'S MATH SHELF
+02 / SNAKY
+A reading companion for Chris
+4
+What came home with this book
+The written argument. I checked the combination rule, its move count, the order of choices,
+and why earlier and distant Breaker stones cannot invalidate the surviving plan. The proof
+starts with one-move finishes and works upward through a finite certificate.
+The finite data. The two supplied Python implementations reconstructed the same 728
+numbered cards and all 1,620 combination nodes. They checked 37,042 local reply classes, in
+normal and optimized modes. All 108 malformed-input cases passed through each of two
+rejection paths; all 24 finite-board boundary tests passed.
+The formal check is unfinished. 83 of 94 proof modules compiled before the 30-minute
+ceiling stopped the run. The final theorem comparison, axiom acceptance, and kernel replay
+were not reached. This visit therefore makes no completed machine-verification claim. The
+build progress is saved.
+This was one assistant's mathematical review with local computational checks. Both finite checkers came from
+the same source repository; their agreement is not a separate referee. The Lean run reuses pinned Mathlib and
+toolchain artifacts and is not an independent bootstrap of those tools.
+A useful resemblance, with a limit
+There is something familiar here: a parent plan must be able to afford every continuation it
+might choose. Each step spends part of a finite allowance, and the remaining plan fits inside
+what is left.
+For this game, the construction also proves that the goal is reachable before the allowance
+runs out. In open-ended research or agent work, a budget can guarantee a stopping point
+without guaranteeing a solution. That difference matters.
+One route survives, and the remaining route fits. That is the little idea I wanted to bring
+back to the shelf.
+SOURCE AND RECEIPTS
+OpenAI, Snaky in 21 Maker moves, September 25, 2026. Formalization scope. Repository revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. The drawings adapt card 6 and the exact final envelope.
+The neighboring AUDIT.md and evidence folder retain the claim, sources, local results, and limitations. The
+booklet is Hearthline's explanation; the mathematical construction belongs to the cited source.

@@ -1,0 +1,227 @@
+{
+  "checked_at_utc": "2026-10-07T04:17:35.556144+00:00",
+  "references": [
+    {
+      "id": "arxiv:2208.13356v1",
+      "lookup": {
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "cache_present": false,
+        "count": 0,
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "matches": [],
+        "unreadable_records": []
+      },
+      "retained": {
+        "action": "added",
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "record": {
+          "authors": [],
+          "created_at": "2026-10-07T04:17:11+00:00",
+          "date_checked": "2026-10-07",
+          "extraction": {
+            "command": null,
+            "status": "available",
+            "tool": "pypdf extract_text, page-marked"
+          },
+          "identifiers": [
+            "arxiv:2208.13356v1"
+          ],
+          "locators": [
+            "https://arxiv.org/pdf/2208.13356v1"
+          ],
+          "pdf": {
+            "path": "pdf\\a082b6da509e2d9cf307e5779f7092d6a0f6dbae79c86850794e4ddcbe5bb7e0.pdf",
+            "sha256": "a082b6da509e2d9cf307e5779f7092d6a0f6dbae79c86850794e4ddcbe5bb7e0"
+          },
+          "retention_bases": [
+            "Chris authorized a source-grounded local proof audit and retaining its sources and receipts on this dedicated workbench."
+          ],
+          "schema_version": 1,
+          "sha256": "a082b6da509e2d9cf307e5779f7092d6a0f6dbae79c86850794e4ddcbe5bb7e0",
+          "text": {
+            "path": "text\\a082b6da509e2d9cf307e5779f7092d6a0f6dbae79c86850794e4ddcbe5bb7e0.txt",
+            "sha256": "6f3a36d013d497e2eed16b8851cae3ee8d5cd74cf477110cf49f9e773f44bcbc"
+          },
+          "title": "Bounds on Irrationality Measures and the Flint-Hills Series",
+          "updated_at": "2026-10-07T04:17:11+00:00",
+          "version": "v1"
+        }
+      },
+      "pages": 12
+    },
+    {
+      "id": "arxiv:1104.5100v1",
+      "lookup": {
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "cache_present": true,
+        "count": 0,
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "matches": [],
+        "unreadable_records": []
+      },
+      "retained": {
+        "action": "added",
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "record": {
+          "authors": [],
+          "created_at": "2026-10-07T04:17:12+00:00",
+          "date_checked": "2026-10-07",
+          "extraction": {
+            "command": null,
+            "status": "available",
+            "tool": "pypdf extract_text, page-marked"
+          },
+          "identifiers": [
+            "arxiv:1104.5100v1"
+          ],
+          "locators": [
+            "https://arxiv.org/pdf/1104.5100v1"
+          ],
+          "pdf": {
+            "path": "pdf\\1cb8745ac1a847eaaff20cd9f7be6ce6bbb3c1448599288cbacc2148c12448d3.pdf",
+            "sha256": "1cb8745ac1a847eaaff20cd9f7be6ce6bbb3c1448599288cbacc2148c12448d3"
+          },
+          "retention_bases": [
+            "Chris authorized a source-grounded local proof audit and retaining its sources and receipts on this dedicated workbench."
+          ],
+          "schema_version": 1,
+          "sha256": "1cb8745ac1a847eaaff20cd9f7be6ce6bbb3c1448599288cbacc2148c12448d3",
+          "text": {
+            "path": "text\\1cb8745ac1a847eaaff20cd9f7be6ce6bbb3c1448599288cbacc2148c12448d3.txt",
+            "sha256": "83c6fa527808bcb1dd5ee524b6750ef85c49f479b6ed76217124be1660bfa00b"
+          },
+          "title": "On convergence of the Flint Hills series",
+          "updated_at": "2026-10-07T04:17:12+00:00",
+          "version": "v1"
+        }
+      },
+      "pages": 5
+    },
+    {
+      "id": "arxiv:1806.05346v5",
+      "lookup": {
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "cache_present": true,
+        "count": 0,
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "matches": [],
+        "unreadable_records": []
+      },
+      "retained": {
+        "action": "added",
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "record": {
+          "authors": [],
+          "created_at": "2026-10-07T04:17:28+00:00",
+          "date_checked": "2026-10-07",
+          "extraction": {
+            "command": null,
+            "status": "available",
+            "tool": "pypdf extract_text, page-marked"
+          },
+          "identifiers": [
+            "arxiv:1806.05346v5"
+          ],
+          "locators": [
+            "https://arxiv.org/pdf/1806.05346v5"
+          ],
+          "pdf": {
+            "path": "pdf\\6fed5b20d631b83eca120ecf4f17fb03e14b8d8fce03382cd5aedb04c723332d.pdf",
+            "sha256": "6fed5b20d631b83eca120ecf4f17fb03e14b8d8fce03382cd5aedb04c723332d"
+          },
+          "retention_bases": [
+            "Chris authorized a source-grounded local proof audit and retaining its sources and receipts on this dedicated workbench."
+          ],
+          "schema_version": 1,
+          "sha256": "6fed5b20d631b83eca120ecf4f17fb03e14b8d8fce03382cd5aedb04c723332d",
+          "text": {
+            "path": "text\\6fed5b20d631b83eca120ecf4f17fb03e14b8d8fce03382cd5aedb04c723332d.txt",
+            "sha256": "63cc07841a51ff306d9d5a5001a06546ee3e75fb1d8da4c9da30ffc39893d9bc"
+          },
+          "title": "How many zeroes? Counting the number of solutions of systems of polynomials via geometry at infinity (Draft III)",
+          "updated_at": "2026-10-07T04:17:29+00:00",
+          "version": "v5"
+        }
+      },
+      "pages": 245
+    },
+    {
+      "id": "url:https://www.math.stonybrook.edu/robert.lazarsfeld/Reprints/Laz.PAG.Chapt1.pdf",
+      "lookup": {
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "cache_present": true,
+        "count": 0,
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "matches": [],
+        "unreadable_records": []
+      },
+      "retained": {
+        "action": "added",
+        "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+        "git_ignore_repository_rule": false,
+        "git_ignore_source": null,
+        "git_ignored": true,
+        "record": {
+          "authors": [],
+          "created_at": "2026-10-07T04:17:35+00:00",
+          "date_checked": "2026-10-07",
+          "extraction": {
+            "command": null,
+            "status": "available",
+            "tool": "pypdf extract_text, page-marked"
+          },
+          "identifiers": [
+            "url:https://www.math.stonybrook.edu/robert.lazarsfeld/Reprints/Laz.PAG.Chapt1.pdf"
+          ],
+          "locators": [
+            "https://www.math.stonybrook.edu/robert.lazarsfeld/Reprints/Laz.PAG.Chapt1.pdf"
+          ],
+          "pdf": {
+            "path": "pdf\\68001621457020858e287168fc51648800759e3e1c6cc82d05049805852ba73b.pdf",
+            "sha256": "68001621457020858e287168fc51648800759e3e1c6cc82d05049805852ba73b"
+          },
+          "retention_bases": [
+            "Chris authorized a source-grounded local proof audit and retaining its sources and receipts on this dedicated workbench."
+          ],
+          "schema_version": 1,
+          "sha256": "68001621457020858e287168fc51648800759e3e1c6cc82d05049805852ba73b",
+          "text": {
+            "path": "text\\68001621457020858e287168fc51648800759e3e1c6cc82d05049805852ba73b.txt",
+            "sha256": "7ea2fd344c494d7f49e5013ea4e2d18ceb4ef8982b1174afbfd935edd47f2c3e"
+          },
+          "title": "Positivity in Algebraic Geometry I - Chapter 1 author reprint",
+          "updated_at": "2026-10-07T04:17:35+00:00",
+          "version": "author-reprint"
+        }
+      },
+      "pages": 116
+    }
+  ],
+  "verification": {
+    "cache": "H:\\Hearthline's Path\\Math Workbench\\openai-math-pi-2026-10-06\\.research-cache\\literature",
+    "cache_present": true,
+    "git_ignore_repository_rule": false,
+    "git_ignore_source": null,
+    "git_ignored": true,
+    "issues": [],
+    "records_checked": 4,
+    "valid": true
+  }
+}
