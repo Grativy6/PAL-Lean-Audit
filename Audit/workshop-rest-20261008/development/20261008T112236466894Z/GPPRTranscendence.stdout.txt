@@ -1,0 +1,2 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPRTranscendence.lean:17:9: error(lean.unknownIdentifier): Unknown identifier `inv_eq_iff_eq_inv₀`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPRTranscendence.lean:18:2: error: No goals to be solved

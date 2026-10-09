@@ -1,0 +1,9 @@
+# GPPR-A self-review
+
+Primary mathematical verdict: **externally proved in the exact required form**, via the primary Ricci theorem and branch convention recorded in LITERATURE.md. Primary formal verdict: **conditional on the named GelfondSchneiderRealExponent input**. No custom axiom was added. Fifteen declarations include nine theorems; the exact quantifiers and dependencies are retained in results.json.
+
+The kernel checked phi>0, beta=phi^(-2)=(3-sqrt(5))/2, delta=2*beta, delta's irrationality and a nonzero rational polynomial annihilating delta, exp(pi*i)=-1, the golden branch identity, and the conditional transcendence/evaluation-injectivity conclusions. Algebraicity is proved with X^2-6X+4, not assumed. The external theorem parameter handles a complex algebraic base and a real algebraic irrational exponent with any specified logarithm determination; this is a sufficient specialization of the cited complex theorem.
+
+No bounded-name search result was treated as proof of library absence. No part of Gelfond-Schneider was silently simulated by a newly declared axiom. The result is not an unconditional kernel proof of golden transcendence. The source application needs no correction from this check; the missing checked dependency is a library-coverage boundary.
+
+Primary scan and extracted text were retained in the ignored literature cache with identity bc479d3d352aac29a5a83286a77171ef1364ac3858e840cf713557a734620a71. The cache helper verified its record on this run. Original printed pages 343 and 348 were visually checked. The full long proof was not independently re-audited. This is source/application self-review, with build, exact type/axiom inspection, bundled kernel replay and saved receipt validation passing. Literature status, source adoption and formal status remain separate.

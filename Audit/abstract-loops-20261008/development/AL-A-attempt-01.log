@@ -1,0 +1,43 @@
+✖ [2999/2999] Building Experiments.AbstractLoopsFiniteImage (30s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\AbstractLoopsFiniteImage.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsFiniteImage.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\AbstractLoopsFiniteImage.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsFiniteImage.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\AbstractLoopsFiniteImage.setup.json --json
+warning: Experiments/AbstractLoopsFiniteImage.lean:134:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+error: Experiments/AbstractLoopsFiniteImage.lean:167:34: Application type mismatch: The argument
+  hmono
+has type
+  ∀ (k : ℕ),
+    (Set.range (scheduledIteration step initial (k + 1))).ncard ≤ (Set.range (scheduledIteration step initial k)).ncard
+but is expected to have type
+  ∀ (n : ℕ), ?m.70 (n + 1) ≤ ?m.70 n
+in the application
+  strict_drop_budget ?m.70 hmono
+error: Experiments/AbstractLoopsFiniteImage.lean:181:18: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 0
+where
+ a := ↑delay
+error: Experiments/AbstractLoopsFiniteImage.lean:181:18: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  a ≥ 0
+  a - c ≥ 1
+where
+ a := ↑delay
+ c := ↑n
+error: Experiments/AbstractLoopsFiniteImage.lean:181:18: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  a ≥ 0
+  a - c ≥ 1
+where
+ a := ↑n
+ c := ↑delay
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.AbstractLoopsFiniteImage
+error: build failed

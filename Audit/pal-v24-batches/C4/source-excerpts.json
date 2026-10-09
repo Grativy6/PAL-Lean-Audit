@@ -1,0 +1,27 @@
+{
+  "source_id": "PAL-v2.3-M",
+  "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+  "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "indexing": "One-based w:body/w:p paragraphs from word/document.xml; literal text below is from the source-verified extracted text at artifacts/pal-v24-workflow-20260922/PAL-v2.3-M.txt.",
+  "paragraphs": [
+    {"paragraph":"P0687","text":"Update F(x,u,y), admitted domain Adm, retained output y with lineage, and comparison equality."},
+    {"paragraph":"P0688","text":"Formal object"},
+    {"paragraph":"P0689","text":"Dep_y(F) iff some admitted x,u,y≠y’ satisfy F(x,u,y)≠F(x,u,y’)."},
+    {"paragraph":"P0690","text":"Constructor or predicate"},
+    {"paragraph":"P0691","text":"Attach a dependence certificate linking a retained output to a later successor."},
+    {"paragraph":"P0692","text":"Assumptions and cost"},
+    {"paragraph":"P0693","text":"Admitted domain, equality, output lineage, update law, and selected dependence semantics."},
+    {"paragraph":"P0694","text":"Preservation account"},
+    {"paragraph":"P0695","text":"Compared inputs, successors, lineage, and semantics."},
+    {"paragraph":"P0696","text":"Predecessor and strictness"},
+    {"paragraph":"P0697","text":"A y-independent F0 is a predecessor countermodel and cannot satisfy the certificate on the admitted domain."},
+    {"paragraph":"P0698","text":"Claim class and status"},
+    {"paragraph":"P0699","text":"Minimum extensional realization; causal readings require additional structure."},
+    {"paragraph":"P0700","text":"Tests and falsifier"},
+    {"paragraph":"P0701","text":"Witness pair, unused-argument negative, reachability distinction, lineage, noise, and forget-to-A4."},
+    {"paragraph":"P0702","text":"Authority ceiling"},
+    {"paragraph":"P0703","text":"No intervention causality, reachable influence, stability, intent, or agency."},
+    {"paragraph":"P0704","text":"Residual"},
+    {"paragraph":"P0705","text":"Reachability, stochasticity, interventions, thresholds, and causal interpretation."}
+  ]
+}

@@ -1,0 +1,12 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationProfile.lean:44:14: warning: This simp argument is unused:
+  Set.ext_iff
+
+Hint: Omit it from the simp argument list.
+  simp [Lost,̵ ̵S̵e̵t̵.̵e̵x̵t̵_̵i̵f̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationProfile.lean:113:7: warning: Variable name `e` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

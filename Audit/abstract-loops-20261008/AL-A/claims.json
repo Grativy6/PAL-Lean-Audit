@@ -1,0 +1,414 @@
+{
+  "batch": "AL-A",
+  "module": "Experiments.AbstractLoopsFiniteImage",
+  "state_at_freeze": "TARGETS_DECLARED_BEFORE_FINAL_CHECKS",
+  "groups": [
+    {
+      "id": "AL-A/capacity",
+      "source": "P0014-P0026",
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim."
+    },
+    {
+      "id": "AL-A/capacity-controls",
+      "source": "P0023-P0026; P0034",
+      "assumptions": "Boolean finite fixtures, total coordinate maps.",
+      "ceiling": "The diagonal misses an ambient product value; surjective trace and answer maps into Bool still need aligned fibers. Reuses C1's XOR obstruction."
+    },
+    {
+      "id": "AL-A/finite-image",
+      "source": "P0045-P0046",
+      "assumptions": "Fixed world-independent deterministic schedule; no rereading or fresh observation; finite range of initial state, or finite source trace followed by an initializer defined only on reachable trace values.",
+      "ceiling": "The world and ambient state types may be infinite. Equality kernels eventually stabilize; no uniform time bound or state-value convergence follows. Reuses C5 on the finite initial-image subtype."
+    },
+    {
+      "id": "AL-A/merge-budget",
+      "source": "P0045-P0046",
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event."
+    },
+    {
+      "id": "AL-A/time-and-infinity-controls",
+      "source": "P0045-P0046",
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix."
+    }
+  ],
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.jointSupportEmbedding",
+      "kind": "def",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 17,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_support_embedding_injective",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 22,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_support_finite",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 28,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.joint_capacity_bound",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 32,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.certification_capacity",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 39,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.certified_joint_capacity_chain",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0026"
+      ],
+      "assumptions": "Finite reachable component images; arbitrary alternative and alphabet types. Certification uses a decoder on reachable values only.",
+      "authority_ceiling": "Joint capacity and answer capacity count reachable values, including empty images. No efficiency or physical-information claim.",
+      "source_line": 56,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.diagonal_support_omits_product_value",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0023-P0026; P0034"
+      ],
+      "assumptions": "Boolean finite fixtures, total coordinate maps.",
+      "authority_ceiling": "The diagonal misses an ambient product value; surjective trace and answer maps into Bool still need aligned fibers. Reuses C1's XOR obstruction.",
+      "source_line": 64,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.sufficient_label_count_not_certification",
+      "kind": "theorem",
+      "source_group": "AL-A/capacity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0023-P0026; P0034"
+      ],
+      "assumptions": "Boolean finite fixtures, total coordinate maps.",
+      "authority_ceiling": "The diagonal misses an ambient product value; surjective trace and answer maps into Bool still need aligned fibers. Reuses C1's XOR obstruction.",
+      "source_line": 70,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "reused_result_or_specialization"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.evolution_factors_initial",
+      "kind": "theorem",
+      "source_group": "AL-A/finite-image",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Fixed world-independent deterministic schedule; no rereading or fresh observation; finite range of initial state, or finite source trace followed by an initializer defined only on reachable trace values.",
+      "authority_ceiling": "The world and ambient state types may be infinite. Equality kernels eventually stabilize; no uniform time bound or state-value convergence follows. Reuses C5 on the finite initial-image subtype.",
+      "source_line": 78,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_initial_image_kernel_stabilizes",
+      "kind": "theorem",
+      "source_group": "AL-A/finite-image",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Fixed world-independent deterministic schedule; no rereading or fresh observation; finite range of initial state, or finite source trace followed by an initializer defined only on reachable trace values.",
+      "authority_ceiling": "The world and ambient state types may be infinite. Equality kernels eventually stabilize; no uniform time bound or state-value convergence follows. Reuses C5 on the finite initial-image subtype.",
+      "source_line": 86,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_trace_initialized_kernel_stabilizes",
+      "kind": "theorem",
+      "source_group": "AL-A/finite-image",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Fixed world-independent deterministic schedule; no rereading or fresh observation; finite range of initial state, or finite source trace followed by an initializer defined only on reachable trace values.",
+      "authority_ceiling": "The world and ambient state types may be infinite. Equality kernels eventually stabilize; no uniform time bound or state-value convergence follows. Reuses C5 on the finite initial-image subtype.",
+      "source_line": 101,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.evolution_range_finite",
+      "kind": "theorem",
+      "source_group": "AL-A/finite-image",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Fixed world-independent deterministic schedule; no rereading or fresh observation; finite range of initial state, or finite source trace followed by an initializer defined only on reachable trace values.",
+      "authority_ceiling": "The world and ambient state types may be infinite. Equality kernels eventually stabilize; no uniform time bound or state-value convergence follows. Reuses C5 on the finite initial-image subtype.",
+      "source_line": 116,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.merge_iff_capacity_drop",
+      "kind": "theorem",
+      "source_group": "AL-A/merge-budget",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "authority_ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event.",
+      "source_line": 127,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.scheduled_merge_iff_capacity_drop",
+      "kind": "theorem",
+      "source_group": "AL-A/merge-budget",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "authority_ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event.",
+      "source_line": 148,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.dropCount",
+      "kind": "def",
+      "source_group": "AL-A/merge-budget",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "authority_ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event.",
+      "source_line": 159,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.strict_drop_budget",
+      "kind": "theorem",
+      "source_group": "AL-A/merge-budget",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "authority_ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event.",
+      "source_line": 163,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.finite_image_merge_budget",
+      "kind": "theorem",
+      "source_group": "AL-A/merge-budget",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Finite reachable initial image. The m-1 budget also assumes a nonempty alternative type; the general finite-capacity drop inequality has no such assumption.",
+      "authority_ceiling": "Each counted strict step merges at least one previously distinct pair. Bound counts strict events in every finite prefix, not the step index of the last event.",
+      "source_line": 173,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.delayedStep",
+      "kind": "def",
+      "source_group": "AL-A/time-and-infinity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "authority_ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix.",
+      "source_line": 190,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "definition"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.delayed_evolution",
+      "kind": "theorem",
+      "source_group": "AL-A/time-and-infinity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "authority_ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix.",
+      "source_line": 192,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.merge_can_be_arbitrarily_late",
+      "kind": "theorem",
+      "source_group": "AL-A/time-and-infinity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "authority_ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix.",
+      "source_line": 200,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.predecessor_evolution",
+      "kind": "theorem",
+      "source_group": "AL-A/time-and-infinity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "authority_ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix.",
+      "source_line": 208,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "helper_lemma"
+    },
+    {
+      "name": "Experiments.AbstractLoopsFiniteImage.infinite_image_never_stabilizes",
+      "kind": "theorem",
+      "source_group": "AL-A/time-and-infinity-controls",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0045-P0046"
+      ],
+      "assumptions": "Boolean delayed-collapse schedule for arbitrary delay; natural-number predecessor with identity initial trace for the infinite-image control.",
+      "authority_ceiling": "Counterexamples target stronger unlicensed time-bound/infinite-image claims, not the manuscript. Infinite-image control quantifies over all natural times, not a sampled prefix.",
+      "source_line": 214,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "role": "formal_result"
+    }
+  ],
+  "counting": "Explicit source declarations only; auto-generated constructors/recursors are kernel-checked but not counted as separate claims. Final mathematical verdicts are in REVIEW.md, conditional on matching PASS receipts."
+}

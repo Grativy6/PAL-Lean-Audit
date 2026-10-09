@@ -1,0 +1,799 @@
+{
+  "batch": "B3",
+  "module": "Experiments.Pal24NestedAccount",
+  "axioms_module": "Experiments.Pal24NestedAccountAxioms",
+  "source_inputs": [
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx",
+      "sha256": "61e6894c21a3c6a7fe2cbfec5be82f1f11ed83fb640f7a38a1b0b89638b68786",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "110602faf4f2e7dae3ef46a998561a35497363d7c54deb257f2c6226f6231539",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "bc655015201c87e62d5d79a16bc7376aad5cd517217df5a0c2bc01c4c8e37a9b",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx",
+      "sha256": "27d8caece6e7f4162cebcc37bb5a9edadb9eb3fdeb34d064a39ff844edcb763f",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx",
+      "sha256": "2ed7739b898edf4552316ef4c6e002f702656746cb89f33d3c8531e77d96381e",
+      "role": "candidate"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3_Mechanical_Structural_Spine.docx",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-T_Conformance_Tests.docx",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-C_Compatibility_Note.docx",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "role": "predecessor_source"
+    }
+  ],
+  "source_binding": "Bound to exact reviewed candidate DOCX bytes in Audit/pal-v24-candidate/source-manifest.json; no adoption implied.",
+  "claims": [
+    {
+      "name": "Experiments.Pal24NestedAccount.Unit",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "SC-22",
+        "D42",
+        "O65",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Two tags model one declared unit and an incompatible-unit rejection."
+      ],
+      "statement": "The unit tag has credit and hour constructors.",
+      "ceiling": "Tags do not supply conversion, calibration, or physical dimension.",
+      "residual": "Only same-tag aggregation is modeled."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.Charge",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "SC-22",
+        "D42",
+        "O65",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Amounts are natural numbers."
+      ],
+      "statement": "A charge is known with an event ID and nonnegative amount, or unknown with an event ID.",
+      "ceiling": "This is not a measured cost record.",
+      "residual": "Unknown has no numeric amount."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.Account",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "SC-22",
+        "D42",
+        "O65",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Finite binary tree carrier."
+      ],
+      "statement": "Accounts are leaves or binary branches with unit, expected child count, own events, and descendants.",
+      "ceiling": "Acyclicity follows only from this inductive carrier.",
+      "residual": "General graphs and flat cycle validation are not implemented."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.AccountWork",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "T75"
+      ],
+      "assumptions": [
+        "Contains only the nested Account projection."
+      ],
+      "statement": "The account projection held fixed across a modeled administrative attempt.",
+      "ceiling": "This is not the full protected work state described by M-CONTINUATION-PROFILE.",
+      "residual": "Other protected fields and their preservation are not represented."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.chargeId",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Extract the supplied event identifier from either charge constructor.",
+      "ceiling": "An identifier is not provenance or authority.",
+      "residual": "Identifier collision is checked separately."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.chargeValue",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Known charges map to some amount and unknown charges map to none.",
+      "ceiling": "No unknown charge is converted to numeric zero.",
+      "residual": "Measurement and uncertainty distributions are absent."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Natural-number addition."
+      ],
+      "statement": "Add two resolved totals, otherwise return none.",
+      "ceiling": "Only finite exact arithmetic is represented.",
+      "residual": "No rounding or conversion."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Finite event list."
+      ],
+      "statement": "Aggregate an event list while propagating unknown as none.",
+      "ceiling": "Totals cover only listed events.",
+      "residual": "Scope completeness is separately checked."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accountUnit",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Read an account's declared unit.",
+      "ceiling": "The tag has no conversion semantics.",
+      "residual": "Compatibility is separately checked."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.flattenEvents",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Finite binary tree."
+      ],
+      "statement": "Flatten own and descendant event lists in structural order.",
+      "ceiling": "Flattening preserves only modeled events.",
+      "residual": "No external omitted events are reconstructed."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.structuralAggregate",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Finite binary tree and listed charges."
+      ],
+      "statement": "Aggregate own charges and both child aggregates.",
+      "ceiling": "This is scoped composition, not universal cost.",
+      "residual": "Unit validity and attribution are predicates, not implicit facts."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.flattenedAggregate",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Finite flattened list."
+      ],
+      "statement": "Aggregate the flattened event list.",
+      "ceiling": "No source completeness follows.",
+      "residual": "Unknown remains unresolved."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.eventIds",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "List all event IDs in flattened structural order.",
+      "ceiling": "IDs do not establish attribution by themselves.",
+      "residual": "Nodup is checked separately."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.noUnknown",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Return true exactly when every modeled charge is known.",
+      "ceiling": "Known means constructor-tagged, not measured or complete.",
+      "residual": "Outside-scope costs are unclaimed."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.uniqueAttribution",
+      "kind": "def",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Modeled event IDs serve as identity keys; no external owner identity is checked."
+      ],
+      "statement": "Require every event ID in the flattened modeled tree to occur at most once.",
+      "ceiling": "This is a syntactic uniqueness predicate over supplied IDs.",
+      "residual": "The model does not authenticate IDs or external attribution owners."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.compatibleUnit",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Only exact equal units compose."
+      ],
+      "statement": "Require every child unit to equal its parent unit recursively.",
+      "ceiling": "Mismatches reject; no conversion is inferred.",
+      "residual": "Supplied conversion rates are not modeled."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.completeChildren",
+      "kind": "def",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [
+        "Expected child count is supplied."
+      ],
+      "statement": "Check declared expected child count against leaf or binary branch shape.",
+      "ceiling": "It checks only the modeled tree boundary.",
+      "residual": "Unlisted real children remain outside scope."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accepted",
+      "kind": "def",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "SC-22",
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [
+        "Accepted means no modeled unknown charge, unique supplied IDs, exact unit-tag compatibility, and supplied child counts."
+      ],
+      "statement": "Local acceptance predicate for the finite binary account.",
+      "ceiling": "No external scope, completeness, identity, or unit conversion is established.",
+      "residual": "The declared tree and acceptance rules remain supplied model inputs."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.appendOwn",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Charge domain is known or unknown with a Nat-valued amount when known; no scope or freshness check."
+      ],
+      "statement": "Append one charge to the root node’s own event list.",
+      "ceiling": "The operation does not validate scope, ID freshness, unit compatibility, or acceptedness.",
+      "residual": "Callers must revalidate account predicates after the append."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.linkedEpochAggregate",
+      "kind": "def",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Prior spend is supplied and link flag records an epoch link."
+      ],
+      "statement": "A linked epoch adds prior spend to a resolved current aggregate; an unlinked reset is unresolved.",
+      "ceiling": "This is not a grant or resource authorization.",
+      "residual": "Epoch lineage is a Boolean model only."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.administrationCompletes",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Fuel and required fuel are natural numbers."
+      ],
+      "statement": "Boolean threshold test for whether modeled fuel meets a modeled administrative requirement.",
+      "ceiling": "No scheduler, real fuel, or protected-work behavior is established by this definition.",
+      "residual": "T75 supplies the bounded exhaustion fixture requirement; operational semantics remain absent."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.administrationAttempt",
+      "kind": "def",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Fuel threshold and unchanged account-work result are stipulated by the definition."
+      ],
+      "statement": "Return completion status together with the same nested-account projection.",
+      "ceiling": "Models only the account projection and this declared transition rule.",
+      "residual": "No scheduler, concurrent change, or external resource effect is modeled."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus_assoc",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Natural-number addition."
+      ],
+      "statement": "Option total addition is associative.",
+      "ceiling": "Only the declared arithmetic operator is covered.",
+      "residual": "No unit conversions."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents_append",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Finite lists."
+      ],
+      "statement": "Aggregating concatenated events equals option-addition of the two aggregates.",
+      "ceiling": "Only listed events contribute.",
+      "residual": "Unknown propagates none."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "Finite binary account tree."
+      ],
+      "statement": "Structural aggregate equals the aggregate of all flattened modeled events.",
+      "ceiling": "The equality establishes no real-world completeness.",
+      "residual": "Cycle handling and unit conversion are not implemented."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75",
+        "M-NESTED-ACCOUNT"
+      ],
+      "assumptions": [
+        "The account satisfies the local accepted predicate."
+      ],
+      "statement": "For an accepted account, the recursive total equals the flattened-list aggregate and the modeled event IDs are unique.",
+      "ceiling": "Count-once is relative to the supplied ID-identity proxy and flattened finite tree.",
+      "residual": "No real-world identity, inclusion scope, or inventory completeness."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents_append_known",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Appended known nonnegative charge."
+      ],
+      "statement": "Appending one known event increases a resolved event aggregate by its amount and preserves unresolved status.",
+      "ceiling": "Only one event list is covered.",
+      "residual": "Attribution validity is not implied."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus_map_add_left",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Natural-number commutative addition."
+      ],
+      "statement": "Adding a nonnegative increment before option composition equals adding it after a resolved total.",
+      "ceiling": "Exact arithmetic only.",
+      "residual": "No conversions or rounding."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.appendOwn_known_monotone",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "No theorem hypotheses; all accounts, IDs, and Nat amounts are quantified."
+      ],
+      "statement": "Appending a known root charge maps each resolved aggregate to that aggregate plus the amount and preserves unresolved status.",
+      "ceiling": "This is an unconditional list-arithmetic identity over the model; it does not establish in-scope addition or accepted-account preservation.",
+      "residual": "Freshness, scope, unit compatibility, and acceptance are not checked by the theorem."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Linked epoch, supplied prior spend, resolved current aggregate."
+      ],
+      "statement": "A linked epoch aggregate equals prior spend plus current total.",
+      "ceiling": "It does not prove an actual grant epoch or complete ledger.",
+      "residual": "Unlinked resets remain rejected."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "An unknown charge's value is not some zero.",
+      "ceiling": "It is a constructor-level rejection only.",
+      "residual": "No probability or measurement model."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.twoLevel",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Credit unit and unique listed events."
+      ],
+      "statement": "Construct a two-level compatible account.",
+      "ceiling": "Fixture only.",
+      "residual": "No external account correspondence."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.threeLevel",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Credit unit and unique listed events."
+      ],
+      "statement": "Construct a three-level compatible account.",
+      "ceiling": "Fixture only.",
+      "residual": "No general branching claim."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.missingPromisedChild",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Construct a leaf that promises one child.",
+      "ceiling": "Fixture only.",
+      "residual": "Expected count is supplied."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicateAttribution",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Construct two root charges with the same event ID.",
+      "ceiling": "Fixture only.",
+      "residual": "ID semantics are local."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicateParentChildAttribution",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Finite binary fixture; repeated ID is used as the same modeled event."
+      ],
+      "statement": "A root and one child each list event ID 1, creating cross-level duplicate attribution.",
+      "ceiling": "A supplied fixture of the local uniqueness rule only.",
+      "residual": "No external event identity is authenticated."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.incompatibleUnit",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Construct a credit parent with an hour child.",
+      "ceiling": "Fixture only.",
+      "residual": "No conversion model."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknownRequired",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Construct an account with one unknown required event.",
+      "ceiling": "Fixture only.",
+      "residual": "Unknown provenance is not modeled."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unrecordedReset",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "Construct an unlinked reset after prior spend.",
+      "ceiling": "Fixture only.",
+      "residual": "Epoch link is a Boolean abstraction."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.twoLevel_accepted",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [
+        "Fixture's explicit boundary."
+      ],
+      "statement": "The two-level fixture satisfies accepted.",
+      "ceiling": "Only this finite fixture is accepted.",
+      "residual": "No source completeness."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.threeLevel_total",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [
+        "Fixture charges."
+      ],
+      "statement": "The three-level fixture has structural aggregate some 20.",
+      "ceiling": "Fixture arithmetic only.",
+      "residual": "No unit calibration."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.missing_promised_child_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The missing-child fixture fails completeChildren.",
+      "ceiling": "Refutes only unqualified completeness for the fixture.",
+      "residual": "No external child inventory."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicate_attribution_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The duplicate-ID fixture is not uniquely attributed.",
+      "ceiling": "Refutes only this local double-counting overclaim.",
+      "residual": "No real-world identity proof."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The cross-level duplicate-ID fixture fails the global modeled uniqueness predicate.",
+      "ceiling": "Refutes only the claim that this fixture has unique modeled attribution.",
+      "residual": "Does not detect duplicates when external events have inconsistent IDs."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.incompatible_unit_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The mismatched-unit fixture fails compatibleUnit.",
+      "ceiling": "It does not rule out supplied valid conversions.",
+      "residual": "Conversions absent."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknown_required_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The unknown-cost fixture fails noUnknown.",
+      "ceiling": "It rejects only the unknown-to-known coercion.",
+      "residual": "Unknown measurement remains unresolved."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unrecorded_reset_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "D42",
+        "O65",
+        "T75"
+      ],
+      "assumptions": [],
+      "statement": "The unlinked reset aggregate is none.",
+      "ceiling": "This is not a historical ledger proof.",
+      "residual": "Real epoch lineage is not authenticated."
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "T75",
+        "PAL-v2.3-A13",
+        "PAL-v2.3-A14"
+      ],
+      "assumptions": [
+        "Required fuel exceeds available modeled fuel."
+      ],
+      "statement": "An insufficient-fuel attempt denies completion and returns the identical nested-account projection.",
+      "ceiling": "Only AccountWork.account is held fixed; no broader protected work, scheduler, or real resource behavior is represented.",
+      "residual": "Other protected state and interference remain outside this model."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "B3-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "Candidate DOCX hashes and paragraph bindings remain pending controller freeze; no source hash is invented."
+    },
+    {
+      "id": "B3-MANUAL-02",
+      "status": "OPEN_MANUAL",
+      "detail": "This binary inductive model has no flat graph cycle validator, unit conversion, measurement, or external completeness evidence."
+    }
+  ]
+}

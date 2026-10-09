@@ -1,0 +1,34 @@
+Experiments.FiniteAbstractionControls.finite_prefix_does_not_cover : ∀ (N : ℕ), ∃ P, (∀ n ≤ N, P n) ∧ ¬∀ (n : ℕ), P n
+'Experiments.FiniteAbstractionControls.finite_prefix_does_not_cover' depends on axioms: [propext, Quot.sound]
+Experiments.FiniteAbstractionControls.finite_set_does_not_cover : ∀ (tested : Finset ℕ),
+  ∃ P, (∀ n ∈ tested, P n) ∧ ¬∀ (n : ℕ), P n
+'Experiments.FiniteAbstractionControls.finite_set_does_not_cover' depends on axioms: [propext, Quot.sound]
+Experiments.FiniteAbstractionControls.induction_has_unbounded_reach : ∀ (n : ℕ),
+  ∑ i ∈ Finset.range n, (2 * i + 1) = n ^ 2
+'Experiments.FiniteAbstractionControls.induction_has_unbounded_reach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.FiniteAbstractionControls.pointwise_bounds_without_constant_bound : (∀ (n : ℕ), ∃ b, n < b) ∧
+  ¬∃ b, ∀ (n : ℕ), n < b
+'Experiments.FiniteAbstractionControls.pointwise_bounds_without_constant_bound' depends on axioms: [propext, Quot.sound]
+Experiments.FiniteAbstractionControls.a_uniform_construction_still_exists : ∃ f, ∀ (n : ℕ), n < f n
+'Experiments.FiniteAbstractionControls.a_uniform_construction_still_exists' does not depend on any axioms
+Experiments.FiniteAbstractionControls.prefix_interface_loses_identity : ∀ (N : ℕ),
+  ¬Experiments.AbstractLoopsJoint.Certifies id fun n => Min.min n N
+'Experiments.FiniteAbstractionControls.prefix_interface_loses_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.FiniteAbstractionControls.unaryRecord : ℕ → List Unit
+'Experiments.FiniteAbstractionControls.unaryRecord' does not depend on any axioms
+Experiments.FiniteAbstractionControls.variable_finite_records_recover : ∀ (n : ℕ),
+  (Experiments.FiniteAbstractionControls.unaryRecord n).length = n
+'Experiments.FiniteAbstractionControls.variable_finite_records_recover' depends on axioms: [propext]
+Experiments.FiniteAbstractionControls.variable_finite_records_injective : Function.Injective
+  Experiments.FiniteAbstractionControls.unaryRecord
+'Experiments.FiniteAbstractionControls.variable_finite_records_injective' depends on axioms: [propext]
+Experiments.FiniteAbstractionControls.variable_finite_records_unbounded : ¬∃ B,
+    ∀ (n : ℕ), (Experiments.FiniteAbstractionControls.unaryRecord n).length ≤ B
+'Experiments.FiniteAbstractionControls.variable_finite_records_unbounded' depends on axioms: [propext, Quot.sound]
+Experiments.FiniteAbstractionControls.variable_record_certifies_identity : Experiments.AbstractLoopsJoint.Certifies id
+  Experiments.FiniteAbstractionControls.unaryRecord
+'Experiments.FiniteAbstractionControls.variable_record_certifies_identity' depends on axioms: [propext]

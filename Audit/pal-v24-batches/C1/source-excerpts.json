@@ -1,0 +1,21 @@
+{
+  "source_id": "Abstract-Loops-v1.0",
+  "path": "E:/New folder/New folder (2)/seeds/Corpus/Math Stack/Abstract_Loops_v1.0.docx",
+  "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+  "indexing": "One-based w:body/w:p paragraphs from word/document.xml.",
+  "paragraphs": [
+    {"paragraph":"P0014","text":"Let W be a set of alternatives, q:W→Q the requested answer, and τ_A:W→T_A and τ_B:W→T_B two declared traces. For any map f, write K(f) for its kernel relation: two alternatives are related when f gives them the same value. Let f[W] be the reachable image. Here a finite abstraction means that its reachable trace image is finite; W itself need not be finite."},
+    {"paragraph":"P0015","text":"K(f) = {(u,v) ∈ W² : f(u) = f(v)}"},
+    {"paragraph":"P0016","text":"Exact certification. Cert(q | f) holds when a decoder d:f[W]→Q exists with q=d∘f on W. Restricting d to the reachable image avoids silently assigning answers to impossible traces."},
+    {"paragraph":"P0017","text":"The fiber-factorization criterion says that exact certification holds if and only if every f-fiber is q-constant, equivalently K(f)⊆K(q) (Pang 2026a). Form the joint trace τ=<τ_A,τ_B> and its reachable image R=τ[W]⊆T_A×T_B. Then:"},
+    {"paragraph":"P0018","text":"K(τ) = K(τ_A) ∩ K(τ_B)"},
+    {"paragraph":"P0019","text":"Cert(q | τ) ⇔ K(τ_A) ∩ K(τ_B) ⊆ K(q)"},
+    {"paragraph":"P0020","text":"This is the common refinement of the two fiber partitions, a standard construction in the theory of equivalence relations (Ore 1942). In epistemic language it has the same shape as distributed knowledge: the group can eliminate possibilities that no member eliminates alone (Halpern and Moses 1990). The formulation is task-relative. It says nothing by itself about causation, cooperation, or physical interaction."},
+    {"paragraph":"P0021","text":"1.2 Strict exact synergy"},
+    {"paragraph":"P0022","text":"Definition. The pair has strict exact synergy for q when the joint trace certifies q but neither individual trace does. Equivalently, each trace has at least one q-conflicting collision, but no q-conflicting pair is collapsed by both."},
+    {"paragraph":"P0023","text":"The canonical finite example is XOR. Take W={0,1}², τ_A(x,y)=x, τ_B(x,y)=y, and q(x,y)=x XOR y. Each single-coordinate fiber contains both q-values, so neither trace certifies q. The pair recovers (x,y), and the decoder computes XOR. The effect is fiber alignment, not raw capacity: each individual trace already has as many labels as q has answers. Williams and Beer use the same XOR pattern as a canonical example of information available only jointly, although numerical partial-information decompositions require additional choices (Williams and Beer 2010)."},
+    {"paragraph":"P0024","text":"First boundary. Individual insufficiency never proves joint insufficiency. To block the pair, one needs a target-conflicting collision shared by both traces, or a separately justified capacity obstruction."},
+    {"paragraph":"P0025","text":"1.3 Fixed finite capacity"},
+    {"paragraph":"P0026","text":"If the reachable images of τ_A and τ_B have m_A and m_B values, then |R|≤m_A m_B. Joint certification therefore requires |q[W]|≤|R|≤m_A m_B. The inequality is necessary, not sufficient; the kernel condition decides whether the labels fall on the right fibers. This is a fixed-interface statement. Variable-length records, growing memories, fresh observations, or families indexed by input size are different interfaces and need their own uniform analysis."}
+  ]
+}

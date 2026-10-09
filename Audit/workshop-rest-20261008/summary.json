@@ -1,0 +1,112 @@
+{
+  "status": "COMPLETE_SELECTED_KEY_WITH_EXPLICIT_EXTERNAL_DEPENDENCY",
+  "completed_utc": "2026-10-08T11:48:08.966674+00:00",
+  "new_batches": [
+    {
+      "batch": "SCT-A",
+      "module": "SingleCutSpan",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 18,
+      "theorems_including_helpers_controls_reuse": 14,
+      "receipt_sha256": "548610e2e95a7bfe43cfe759660ac29ee07e17c2b292db10f05aa7b7860e13b4",
+      "review": "SCT-A/REVIEW.md"
+    },
+    {
+      "batch": "SCT-B",
+      "module": "SingleCutCorridor",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 15,
+      "theorems_including_helpers_controls_reuse": 15,
+      "receipt_sha256": "519021162f49411b1b607ce4e85d7066aa947211da370ce88de814f2d16a704d",
+      "review": "SCT-B/REVIEW.md"
+    },
+    {
+      "batch": "SCT-C",
+      "module": "SingleCutOR",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 15,
+      "theorems_including_helpers_controls_reuse": 10,
+      "receipt_sha256": "818ab774b86ee636c6493f6eff752737f3871363971fc9b1261cde299f5f2b49",
+      "review": "SCT-C/REVIEW.md"
+    },
+    {
+      "batch": "CC-A",
+      "module": "CompactificationBoundary",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 10,
+      "theorems_including_helpers_controls_reuse": 8,
+      "receipt_sha256": "e52e348c3dca54abd4c9cc68fc33d47b135e48553f8c67f24fe7d737a9e4bb2e",
+      "review": "CC-A/REVIEW.md"
+    },
+    {
+      "batch": "CC-B",
+      "module": "CompactificationProfile",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 19,
+      "theorems_including_helpers_controls_reuse": 16,
+      "receipt_sha256": "d582d978da39dc9db10352bc8e1439f023b0eec4503cfcad92b5296eedd7c56c",
+      "review": "CC-B/REVIEW.md"
+    },
+    {
+      "batch": "CC-C",
+      "module": "CompactificationFixtures",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 33,
+      "theorems_including_helpers_controls_reuse": 23,
+      "receipt_sha256": "c7894071d22502949f25005623906d055db1c789bdef851a247fc022f3991d1d",
+      "review": "CC-C/REVIEW.md"
+    },
+    {
+      "batch": "GPPR-A",
+      "module": "GPPRTranscendence",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 15,
+      "theorems_including_helpers_controls_reuse": 9,
+      "receipt_sha256": "cee6e61b1a90fb1d433e8f5c8e0f9e93e8afea64a41b437f9be91b3fc4c8952c",
+      "review": "GPPR-A/REVIEW.md"
+    },
+    {
+      "batch": "GPPR-B",
+      "module": "GPPREncoding",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 28,
+      "theorems_including_helpers_controls_reuse": 24,
+      "receipt_sha256": "6b6a4c763f8f6b88913c85770b5773d02e5a476f65e3a0435187b8cd156ebb4f",
+      "review": "GPPR-B/REVIEW.md"
+    },
+    {
+      "batch": "GPPR-C",
+      "module": "GPPRRouting",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 37,
+      "theorems_including_helpers_controls_reuse": 26,
+      "receipt_sha256": "735bc6ad81505713760321bbfa4d6bcc170e3da3e661999998a4eb8469737943",
+      "review": "GPPR-C/REVIEW.md"
+    },
+    {
+      "batch": "FA-A",
+      "module": "FiniteAbstractionControls",
+      "execution": "PASS_BOUNDED_LEAN_CHECKS",
+      "explicit_declarations": 11,
+      "theorems_including_helpers_controls_reuse": 10,
+      "receipt_sha256": "af272a95cb02b71b92ec39bdbe367220afedab4bc6d286a03f8ef039bff72e77",
+      "review": "FA-A/REVIEW.md"
+    }
+  ],
+  "earlier_batches": [
+    "AL-A",
+    "AL-B",
+    "AL-C"
+  ],
+  "apci": "Existing local replay retained; not counted as a new audit.",
+  "mathematical_open_inputs": [
+    "Checked Gelfond-Schneider theorem not supplied; golden formalization conditional."
+  ],
+  "optional_unselected_followups": [
+    "CC lens integration, Euler triangulations and analytic extension classes",
+    "GPPR density/separation development and implementation-specific routing/benchmark protocols",
+    "SCT global reduction, minimality and priority"
+  ],
+  "integration_receipt_sha256": "08b9c59a1f1c74244e8c09f3775b619aa24c1f3d7d50b53eb237816a189ddb73",
+  "authority": "Local receipts and commits only. No source amendment, publication, remote CI or adoption."
+}

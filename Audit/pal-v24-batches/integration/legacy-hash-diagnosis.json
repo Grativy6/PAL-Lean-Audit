@@ -1,0 +1,424 @@
+{
+  "mismatches": [
+    {
+      "path": "Experiments/AbstractLoopsJoint.lean",
+      "historical_raw": null,
+      "current_raw": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+      "canonical_lf": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/AbstractLoopsJointAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+      "canonical_lf": "85023648dba11edfa7e161f329b7980292b7a12bfc2f3d725788f54dec5133ea",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 42
+    },
+    {
+      "path": "Experiments/AbstractLoopsPostprocessing.lean",
+      "historical_raw": null,
+      "current_raw": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+      "canonical_lf": "d98a10b8a7c3dbf8cd95f962657ee842a920f613c91fdcb541ab21ee59aae366",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 115
+    },
+    {
+      "path": "Experiments/AbstractLoopsPostprocessingAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+      "canonical_lf": "fb1e4b8dc6753cbbe8b5d54a936de70f42df38f728e6aff685a5068d623a4b89",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 28
+    },
+    {
+      "path": "Experiments/Bridge.lean",
+      "historical_raw": null,
+      "current_raw": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+      "canonical_lf": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+      "canonical_lf": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeDiagram.lean",
+      "historical_raw": null,
+      "current_raw": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+      "canonical_lf": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeDiagramAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+      "canonical_lf": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeDimension.lean",
+      "historical_raw": null,
+      "current_raw": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+      "canonical_lf": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeDimensionAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+      "canonical_lf": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeFourSector.lean",
+      "historical_raw": null,
+      "current_raw": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+      "canonical_lf": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeFourSectorAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+      "canonical_lf": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeGeneratedRecovery.lean",
+      "historical_raw": null,
+      "current_raw": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+      "canonical_lf": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeGeneratedRecoveryAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+      "canonical_lf": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeReadout.lean",
+      "historical_raw": null,
+      "current_raw": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+      "canonical_lf": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeReadoutAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+      "canonical_lf": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeRecovery.lean",
+      "historical_raw": null,
+      "current_raw": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+      "canonical_lf": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/BridgeRecoveryAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+      "canonical_lf": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/CharterFollowup.lean",
+      "historical_raw": null,
+      "current_raw": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+      "canonical_lf": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/CharterFollowupAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+      "canonical_lf": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/MindContinuation.lean",
+      "historical_raw": null,
+      "current_raw": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+      "canonical_lf": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/MindContinuationAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+      "canonical_lf": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal23Cadence.lean",
+      "historical_raw": null,
+      "current_raw": "5f492008c9c5d1f2621f17b5e520f0b18e372fe9bd8c5b05c2fef637795a151c",
+      "canonical_lf": "e207269f1f2423c611414e330d615f4e2e6fe277e248cd9ca185f777a01e93a4",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 140
+    },
+    {
+      "path": "Experiments/Pal23CadenceAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "82c729a8448dd6d654d43eb2c8b1077b1561e5aaf982108c2dc75225928a32d9",
+      "canonical_lf": "401418e2da37ebe2eee594291f6339e06d8e8bbaa71dbed58891986f27db9544",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 34
+    },
+    {
+      "path": "Experiments/Pal23Followup.lean",
+      "historical_raw": null,
+      "current_raw": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+      "canonical_lf": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal23FollowupAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+      "canonical_lf": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal23Interface.lean",
+      "historical_raw": null,
+      "current_raw": "87c0a625a16af28e752e293c282512b104e8b75d79a84875e982a591ecb2a17a",
+      "canonical_lf": "624b2833659126c3e9ce879a56057291a14a08c21fd7eb43c2760b706488109d",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 104
+    },
+    {
+      "path": "Experiments/Pal23InterfaceAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "4acfc13caead4ba35bc64bc01009c9bc83c6f3f90a1f1236480607a5d7593eec",
+      "canonical_lf": "19ba50423826334ab5d2d081baf150c25a019fc88ab6eb8053acdecaa859b65d",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 1
+    },
+    {
+      "path": "Experiments/Pal23Roundtrip.lean",
+      "historical_raw": null,
+      "current_raw": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+      "canonical_lf": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal23RoundtripAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+      "canonical_lf": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal23TraceReplay.lean",
+      "historical_raw": null,
+      "current_raw": "aa34431d3722106f3782953411058fc9bcb5a17e06b7e3442e697c9680d70c5e",
+      "canonical_lf": "c009f8b2ff84d33a0b49742ee6380442109a67a03bb5ff386cf64aaeec8b2794",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 1
+    },
+    {
+      "path": "Experiments/Pal23TraceReplayAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+      "canonical_lf": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal24Continuation.lean",
+      "historical_raw": null,
+      "current_raw": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+      "canonical_lf": "4067a7197f655848cf160aba999effb82f79eb444b716d606043131aeb1bfe2e",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 9
+    },
+    {
+      "path": "Experiments/Pal24ContinuationAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+      "canonical_lf": "eb9a768f48b11ee7b572c04180e9dc94cdc372fec8559477410899f8b370c619",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 34
+    },
+    {
+      "path": "Experiments/Pal24Feedback.lean",
+      "historical_raw": null,
+      "current_raw": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+      "canonical_lf": "71296713c1e5efdafcd4cde5b2ecedff3c591576c3f013569b03659ed707fa14",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 1
+    },
+    {
+      "path": "Experiments/Pal24FeedbackAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+      "canonical_lf": "98a7a2b530cd742841064119d4d8036543d927d551eb7e67cae433f641d81142",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 33
+    },
+    {
+      "path": "Experiments/Pal24HistoryQuotient.lean",
+      "historical_raw": null,
+      "current_raw": "e010ae9a982b6ad9964ec2f532f5a14b1ed357ca67a902864bca0553a32c8185",
+      "canonical_lf": "e010ae9a982b6ad9964ec2f532f5a14b1ed357ca67a902864bca0553a32c8185",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal24HistoryQuotientAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "d7b060282ebffff6350a30d227d2dcbf7941848ee5363f9219807689c8041f52",
+      "canonical_lf": "d7b060282ebffff6350a30d227d2dcbf7941848ee5363f9219807689c8041f52",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal24IntervalSlack.lean",
+      "historical_raw": null,
+      "current_raw": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+      "canonical_lf": "d2aa1d7046343d40dc9aca333f0a41e075adb9b9738782b839c7d157e8cac51e",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 209
+    },
+    {
+      "path": "Experiments/Pal24IntervalSlackAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+      "canonical_lf": "e66f94d0df513faa88570604ab670c16275937705b984d2b6fb40dbbab938d08",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 57
+    },
+    {
+      "path": "Experiments/Pal24NestedAccount.lean",
+      "historical_raw": null,
+      "current_raw": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+      "canonical_lf": "f230a7b32250460d93e506670735db2db9d018aa321cb464179e58016c0f2d15",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 118
+    },
+    {
+      "path": "Experiments/Pal24NestedAccountAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+      "canonical_lf": "1ecf04f765ff61d2ddebd1652b977869f9389f5eb2bf7fef39728dd2addd4cab",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 100
+    },
+    {
+      "path": "Experiments/Pal24SourcePath.lean",
+      "historical_raw": null,
+      "current_raw": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+      "canonical_lf": "9708306405d330e66d9ce436b907a1f25508d2e147cf2d1641efaad1bf4cc70d",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 194
+    },
+    {
+      "path": "Experiments/Pal24SourcePathAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+      "canonical_lf": "2a0efae43810279d38f5f3c08ae06fb01030a0cb2f471db45dd3cb4932eba86b",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 154
+    },
+    {
+      "path": "Experiments/Pal24TypedPaths.lean",
+      "historical_raw": null,
+      "current_raw": "54d7f04dadb07da370bc13565b7f9d51912531b945eabc791bd202647791ebbb",
+      "canonical_lf": "54d7f04dadb07da370bc13565b7f9d51912531b945eabc791bd202647791ebbb",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 0
+    },
+    {
+      "path": "Experiments/Pal24TypedPathsAxioms.lean",
+      "historical_raw": null,
+      "current_raw": "928fbd3f631fd44603ebb56352044adcfb1392dabfaaaa00dffa4ecbe59ba9c2",
+      "canonical_lf": "1560311407b16edcaf6a7e3d4651e738fd3b760e867b8ab07af2473125bba93d",
+      "publication_lock": null,
+      "matches_publication_lock": false,
+      "crlf_count": 54
+    }
+  ],
+  "scope": "The original runner globs all current Experiments/*.lean and requires equality with its original whole-directory inventory. Added experiments expand that inventory. The dedicated committed publication validator instead checks the original locked input subset and exact declared targets.",
+  "summary": {
+    "added_paths": 46,
+    "changed_original_paths": 0,
+    "all_changed_originals_match_publication_lock": true
+  }
+}

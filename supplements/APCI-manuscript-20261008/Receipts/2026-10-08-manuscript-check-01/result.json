@@ -1,0 +1,130 @@
+{
+  "schema": "apci-manuscript-supplement-v1",
+  "started_utc": "2026-10-08T06:22:45.235189+00:00",
+  "status": "PASS_SUPPLEMENT_AND_SOURCE_ALIGNMENT",
+  "commands": [
+    {
+      "name": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\toolchains\\leanprover--lean4---v4.32.1\\bin\\lean.exe",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Lean project",
+      "exit_code": 0,
+      "seconds": 0.07472939998842776,
+      "log_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d"
+    },
+    {
+      "name": "compile-and-dependencies",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\toolchains\\leanprover--lean4---v4.32.1\\bin\\lean.exe",
+        "-R",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Audits\\2026-10-08-manuscript",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-o",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Receipts\\2026-10-08-manuscript-check-01\\APCIManuscript.olean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Audits\\2026-10-08-manuscript\\APCIManuscript.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Lean project",
+      "exit_code": 0,
+      "seconds": 1.356140099989716,
+      "log_sha256": "79ac41486c9682841d6f977b1df9c1991702ec4d017198ffbf429d302bab3859"
+    },
+    {
+      "name": "bundled-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\toolchains\\leanprover--lean4---v4.32.1\\bin\\leanchecker.exe",
+        "--verbose",
+        "APCIManuscript"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Lean project",
+      "exit_code": 0,
+      "seconds": 3.0681768000358716,
+      "log_sha256": "27ca5666e8317647f1c710b835c233a3fc748d7dd85e31e721d53fae258ea432"
+    }
+  ],
+  "scope": "one derived corollary and three boundary controls; APCI only",
+  "commit": "0f85cc7fac47c3b34ecfd11160f3efae454b900c",
+  "tree": "a4418e2fb2c1fe5ffe6be768a419385da8834c99",
+  "git_status_before": "",
+  "tracked_before": {
+    ".github/workflows/ci.yml": "b1c0878949c76fbc29d4e1cf3410fe28aa5442d64cc3579ccf68e6539ffdaad6",
+    ".gitignore": "43ed15f6f49d6a20b1316c1d0c2ca697c01d755705417cb44949818b608117d2",
+    "APCILeanAudit.lean": "86dba9eb7a3498daae2754e64f4916638ce7186f9332a706007d6f579e78b8e8",
+    "APCILeanAudit/Controls.lean": "00ff107be80a79cd5cd27b75e1d2e82a93c22600791d2a047939e342c5335e8e",
+    "APCILeanAudit/FiniteCapacity.lean": "e2f2a87377992382579bb5c69dfe7b659069c33e831d011c4ff91ec7a6105cf3",
+    "APCILeanAudit/Interface.lean": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+    "AUDIT_SCOPE.md": "5b15361693c9c9a545e46c9dff4175df8e86dc30dc6904adb5b5bfbac925ee64",
+    "AUTHORITY_CEILING.md": "d6d8d0445a1bfa2e715a1765b1f92a55aa252e35de8ce0cf1c0bbfbfdd2c47d7",
+    "Audit.lean": "b9f9b590a7c29cf1059606f18d216aa0780d3e52e098b7c799af799dfe467119",
+    "README.md": "dad3e71560afeaaf634382893ce1f473a59ca92a263814e7bf22ec93c359abc0",
+    "SOURCE_LOCK.md": "8d9e8e27132608610fd38188cadb9cdf9ebb48a54871de54694db82b9a7adab6",
+    "THEOREM_INVENTORY.json": "20ff1443e1d294e1bcd476e8e0e395c3fe405f342b19a8200c324c87b9482101",
+    "audit/AUDIT_REPORT.md": "63f8b8e018e0420783eb98417bd24a5eaa51697ccb5e1f67d760423caa07c509",
+    "audit/AXIOM_RECEIPT.txt": "51117c296383f4dd3583d1572138a97e958c8a994275b451acee1557e3dea768",
+    "audit/NANODA_COMPATIBILITY.md": "6be7621af4d7410a2746470b2dbcc1a4b17968f239fac658b58f9349f8152b03",
+    "lake-manifest.json": "00006bb2976893a003806eb7264ab54b5f4cc24ba49294c5022e40c4ed38b63c",
+    "lakefile.lean": "9302f4b9922cfc4f305cb3cc259463a7d3485f6fc6a2b8fbff7fe0f0137a56e8",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "scripts/check_inventory.py": "91def23a7d081f20ab3a9280a3a0e9dbd628dc4a88c89b176d4ad2717004f5cb",
+    "scripts/policy_scan.sh": "b72d26a1623f2aa069674e92b7583af5e443ee5e2c682270c947d1dca05bcda6",
+    "source/README.md": "4a35fa412b0596d26a525310ee066552b8993045b4b584603b6ad22274451a98",
+    "source/SOURCE_ARCHIVE.sha256": "df4443046655e1773e5db0587cd6cc3823a797a790c52fb337022b4d86a5c52b"
+  },
+  "reused_core_receipt": {
+    "path": "Receipts/2026-10-08-local-replay/receipt.json",
+    "sha256": "6e5525f89752421eb145e22f4b871293ac9dd68c1ad9b47da17ca7849bd25749",
+    "status": "PASS_LOCAL_REPLAY",
+    "source_bytes_match": true
+  },
+  "source_hashes": {
+    "APCI_Declared_Interface_v1.0.0.docx": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+    "APCI_Declared_Interface_v1.0.0.pdf": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3"
+  },
+  "historical_receipt_git_blob_sha256": "16ef054d37dd5ec002ce95112f2209558459c5765dd7fb42bb304e47430a1753",
+  "checkout_receipt_differs_only_by_crlf": true,
+  "source_policy": "PASS",
+  "lean_search_path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Receipts\\2026-10-08-manuscript-check-01;H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Lean project\\.lake\\build\\lib\\lean",
+  "dependencies": {
+    "APCIManuscript.no_exact_on_witness_of_capacity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCIManuscript.infinite_world_constant_property": [],
+    "APCIManuscript.side_information_changes_interface": [],
+    "APCIManuscript.empty_trace_allows_empty_answer": []
+  },
+  "supplement_sha256": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf",
+  "olean_sha256": "5f3bb5a19d15f3c14f320281dedfc14cfe58b9ecd8ad202a6853eaa976a5deeb",
+  "tracked_after": {
+    ".github/workflows/ci.yml": "b1c0878949c76fbc29d4e1cf3410fe28aa5442d64cc3579ccf68e6539ffdaad6",
+    ".gitignore": "43ed15f6f49d6a20b1316c1d0c2ca697c01d755705417cb44949818b608117d2",
+    "APCILeanAudit.lean": "86dba9eb7a3498daae2754e64f4916638ce7186f9332a706007d6f579e78b8e8",
+    "APCILeanAudit/Controls.lean": "00ff107be80a79cd5cd27b75e1d2e82a93c22600791d2a047939e342c5335e8e",
+    "APCILeanAudit/FiniteCapacity.lean": "e2f2a87377992382579bb5c69dfe7b659069c33e831d011c4ff91ec7a6105cf3",
+    "APCILeanAudit/Interface.lean": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+    "AUDIT_SCOPE.md": "5b15361693c9c9a545e46c9dff4175df8e86dc30dc6904adb5b5bfbac925ee64",
+    "AUTHORITY_CEILING.md": "d6d8d0445a1bfa2e715a1765b1f92a55aa252e35de8ce0cf1c0bbfbfdd2c47d7",
+    "Audit.lean": "b9f9b590a7c29cf1059606f18d216aa0780d3e52e098b7c799af799dfe467119",
+    "README.md": "dad3e71560afeaaf634382893ce1f473a59ca92a263814e7bf22ec93c359abc0",
+    "SOURCE_LOCK.md": "8d9e8e27132608610fd38188cadb9cdf9ebb48a54871de54694db82b9a7adab6",
+    "THEOREM_INVENTORY.json": "20ff1443e1d294e1bcd476e8e0e395c3fe405f342b19a8200c324c87b9482101",
+    "audit/AUDIT_REPORT.md": "63f8b8e018e0420783eb98417bd24a5eaa51697ccb5e1f67d760423caa07c509",
+    "audit/AXIOM_RECEIPT.txt": "51117c296383f4dd3583d1572138a97e958c8a994275b451acee1557e3dea768",
+    "audit/NANODA_COMPATIBILITY.md": "6be7621af4d7410a2746470b2dbcc1a4b17968f239fac658b58f9349f8152b03",
+    "lake-manifest.json": "00006bb2976893a003806eb7264ab54b5f4cc24ba49294c5022e40c4ed38b63c",
+    "lakefile.lean": "9302f4b9922cfc4f305cb3cc259463a7d3485f6fc6a2b8fbff7fe0f0137a56e8",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "scripts/check_inventory.py": "91def23a7d081f20ab3a9280a3a0e9dbd628dc4a88c89b176d4ad2717004f5cb",
+    "scripts/policy_scan.sh": "b72d26a1623f2aa069674e92b7583af5e443ee5e2c682270c947d1dca05bcda6",
+    "source/README.md": "4a35fa412b0596d26a525310ee066552b8993045b4b584603b6ad22274451a98",
+    "source/SOURCE_ARCHIVE.sha256": "df4443046655e1773e5db0587cd6cc3823a797a790c52fb337022b4d86a5c52b"
+  },
+  "git_status_after": "",
+  "original_repository_unchanged": true,
+  "finished_utc": "2026-10-08T06:22:49.886670+00:00"
+}

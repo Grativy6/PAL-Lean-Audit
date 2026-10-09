@@ -1,0 +1,83 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24HistoryQuotientAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 6776, "stderr_bytes": 0}
+@Experiments.Pal24HistoryQuotient.futureEquivalent : {Alphabet Observation : Type} →
+  (List Alphabet → Observation) → List Alphabet → List Alphabet → Prop
+'Experiments.Pal24HistoryQuotient.futureEquivalent' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.futureEquivalent_refl : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) (history : List Alphabet),
+  Experiments.Pal24HistoryQuotient.futureEquivalent observe history history
+'Experiments.Pal24HistoryQuotient.futureEquivalent_refl' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.futureEquivalent_symm : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) {left right : List Alphabet},
+  Experiments.Pal24HistoryQuotient.futureEquivalent observe left right →
+    Experiments.Pal24HistoryQuotient.futureEquivalent observe right left
+'Experiments.Pal24HistoryQuotient.futureEquivalent_symm' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.futureEquivalent_trans : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) {first second third : List Alphabet},
+  Experiments.Pal24HistoryQuotient.futureEquivalent observe first second →
+    Experiments.Pal24HistoryQuotient.futureEquivalent observe second third →
+      Experiments.Pal24HistoryQuotient.futureEquivalent observe first third
+'Experiments.Pal24HistoryQuotient.futureEquivalent_trans' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.futureEquivalent_right_congruent : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) {left right : List Alphabet},
+  Experiments.Pal24HistoryQuotient.futureEquivalent observe left right →
+    ∀ (extension : List Alphabet),
+      Experiments.Pal24HistoryQuotient.futureEquivalent observe (left ++ extension) (right ++ extension)
+'Experiments.Pal24HistoryQuotient.futureEquivalent_right_congruent' depends on axioms: [propext]
+@Experiments.Pal24HistoryQuotient.futureSetoid : {Alphabet Observation : Type} →
+  (List Alphabet → Observation) → Setoid (List Alphabet)
+'Experiments.Pal24HistoryQuotient.futureSetoid' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.historyClass : {Alphabet Observation : Type} →
+  (observe : List Alphabet → Observation) →
+    List Alphabet → Quotient (Experiments.Pal24HistoryQuotient.futureSetoid observe)
+'Experiments.Pal24HistoryQuotient.historyClass' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.historyClass_eq_iff_futureEquivalent : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) (left right : List Alphabet),
+  Experiments.Pal24HistoryQuotient.historyClass observe left =
+      Experiments.Pal24HistoryQuotient.historyClass observe right ↔
+    Experiments.Pal24HistoryQuotient.futureEquivalent observe left right
+'Experiments.Pal24HistoryQuotient.historyClass_eq_iff_futureEquivalent' depends on axioms: [propext, Quot.sound]
+@Experiments.Pal24HistoryQuotient.futureEquivalent_implies_current_observation : ∀ {Alphabet Observation : Type}
+  (observe : List Alphabet → Observation) {left right : List Alphabet},
+  Experiments.Pal24HistoryQuotient.futureEquivalent observe left right → observe left = observe right
+'Experiments.Pal24HistoryQuotient.futureEquivalent_implies_current_observation' depends on axioms: [propext]
+@Experiments.Pal24HistoryQuotient.quotientObservation : {Alphabet Observation : Type} →
+  (observe : List Alphabet → Observation) →
+    Quotient (Experiments.Pal24HistoryQuotient.futureSetoid observe) → Observation
+'Experiments.Pal24HistoryQuotient.quotientObservation' depends on axioms: [propext]
+@Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture : {Alphabet Observation : Type} →
+  (List Alphabet → Prop) → (List Alphabet → Observation) → List Alphabet → List Alphabet → Prop
+'Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture' does not depend on any axioms
+@Experiments.Pal24HistoryQuotient.apertureFutureEquivalent_right_congruent : ∀ {Alphabet Observation : Type}
+  (aperture : List Alphabet → Prop) (observe : List Alphabet → Observation) {left right : List Alphabet},
+  Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture aperture observe left right →
+    ∀ (task : Alphabet),
+      (∀ (suffix : List Alphabet), aperture suffix → aperture (task :: suffix)) →
+        Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture aperture observe (left ++ [task]) (right ++ [task])
+'Experiments.Pal24HistoryQuotient.apertureFutureEquivalent_right_congruent' depends on axioms: [propext]
+Experiments.Pal24HistoryQuotient.constantTask : List Bool → Bool
+'Experiments.Pal24HistoryQuotient.constantTask' does not depend on any axioms
+Experiments.Pal24HistoryQuotient.headTask : List Bool → Option Bool
+'Experiments.Pal24HistoryQuotient.headTask' does not depend on any axioms
+Experiments.Pal24HistoryQuotient.constantTask_one_class : ∀ (left right : List Bool),
+  Experiments.Pal24HistoryQuotient.futureEquivalent Experiments.Pal24HistoryQuotient.constantTask left right
+'Experiments.Pal24HistoryQuotient.constantTask_one_class' does not depend on any axioms
+Experiments.Pal24HistoryQuotient.constantTask_quotient_subsingleton : Subsingleton
+  (Quotient (Experiments.Pal24HistoryQuotient.futureSetoid Experiments.Pal24HistoryQuotient.constantTask))
+'Experiments.Pal24HistoryQuotient.constantTask_quotient_subsingleton' depends on axioms: [Quot.sound]
+Experiments.Pal24HistoryQuotient.headTask_distinguishes_histories : ¬Experiments.Pal24HistoryQuotient.futureEquivalent
+    Experiments.Pal24HistoryQuotient.headTask [] [Bool.false]
+'Experiments.Pal24HistoryQuotient.headTask_distinguishes_histories' does not depend on any axioms
+Experiments.Pal24HistoryQuotient.task_mutation_changes_future_equivalence : Experiments.Pal24HistoryQuotient.futureEquivalent
+    Experiments.Pal24HistoryQuotient.constantTask [] [Bool.false] ∧
+  ¬Experiments.Pal24HistoryQuotient.futureEquivalent Experiments.Pal24HistoryQuotient.headTask [] [Bool.false]
+'Experiments.Pal24HistoryQuotient.task_mutation_changes_future_equivalence' does not depend on any axioms
+Experiments.Pal24HistoryQuotient.aperture_closure_is_load_bearing : (¬∀ (suffix : List Bool),
+      suffix = [] → Bool.false :: suffix = []) ∧
+  Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture (fun suffix => suffix = [])
+      (fun history => history.length / 2) [] [Bool.false] ∧
+    ¬Experiments.Pal24HistoryQuotient.futureEquivalentOnAperture (fun suffix => suffix = [])
+        (fun history => history.length / 2) [Bool.false] [Bool.false, Bool.false]
+'Experiments.Pal24HistoryQuotient.aperture_closure_is_load_bearing' does not depend on any axioms
+
+PAL-STDERR-1

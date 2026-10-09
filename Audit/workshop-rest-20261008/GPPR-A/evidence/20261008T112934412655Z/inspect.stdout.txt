@@ -1,0 +1,40 @@
+Experiments.GPPRTranscendence.phi : ℝ
+'Experiments.GPPRTranscendence.phi' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.beta : ℝ
+'Experiments.GPPRTranscendence.beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.delta : ℝ
+'Experiments.GPPRTranscendence.delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.zeta : ℂ
+'Experiments.GPPRTranscendence.zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.minusOneLog : ℂ
+'Experiments.GPPRTranscendence.minusOneLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.phi_positive : 0 < Experiments.GPPRTranscendence.phi
+'Experiments.GPPRTranscendence.phi_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.beta_exact : Experiments.GPPRTranscendence.beta = (3 - √5) / 2
+'Experiments.GPPRTranscendence.beta_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.exponent_exact : 2 * Experiments.GPPRTranscendence.beta =
+  Experiments.GPPRTranscendence.delta
+'Experiments.GPPRTranscendence.exponent_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.delta_irrational : Irrational Experiments.GPPRTranscendence.delta
+'Experiments.GPPRTranscendence.delta_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.delta_algebraic : IsAlgebraic ℚ Experiments.GPPRTranscendence.delta
+'Experiments.GPPRTranscendence.delta_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.chosen_logarithm : Complex.exp Experiments.GPPRTranscendence.minusOneLog = -1
+'Experiments.GPPRTranscendence.chosen_logarithm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.golden_branch_identity : Complex.exp
+    (↑Experiments.GPPRTranscendence.delta * Experiments.GPPRTranscendence.minusOneLog) =
+  Experiments.GPPRTranscendence.zeta
+'Experiments.GPPRTranscendence.golden_branch_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.GelfondSchneiderRealExponent : Prop
+'Experiments.GPPRTranscendence.GelfondSchneiderRealExponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRTranscendence.golden_transcendence_conditional : Experiments.GPPRTranscendence.GelfondSchneiderRealExponent →
+  Transcendental ℚ Experiments.GPPRTranscendence.zeta
+'Experiments.GPPRTranscendence.golden_transcendence_conditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.GPPRTranscendence.golden_polynomial_evaluation_conditional : Transcendental ℚ
+    Experiments.GPPRTranscendence.zeta →
+  Function.Injective ⇑(Polynomial.aeval Experiments.GPPRTranscendence.zeta)
+'Experiments.GPPRTranscendence.golden_polynomial_evaluation_conditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

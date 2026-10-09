@@ -1,0 +1,8 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:129:36: error: unsolved goals
+q : ℚ
+hq : 0 < q
+h : ↑q.num.natAbs = q.num
+⊢ ↑(NNRat.divNat q.num.natAbs q.den) = ↑q.num.natAbs / ↑q.den
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPREncoding.lean:164:15: warning: Try `simp at h'` instead of `simpa using h'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

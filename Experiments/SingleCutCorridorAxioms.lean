@@ -1,0 +1,34 @@
+import Experiments.SingleCutCorridor
+
+set_option pp.fullNames true
+
+#check @Experiments.SingleCutCorridor.filled_corridor_invariant
+#print axioms Experiments.SingleCutCorridor.filled_corridor_invariant
+#check @Experiments.SingleCutCorridor.corridor_permutation
+#print axioms Experiments.SingleCutCorridor.corridor_permutation
+#check @Experiments.SingleCutCorridor.unit_admissible_iff
+#print axioms Experiments.SingleCutCorridor.unit_admissible_iff
+#check @Experiments.SingleCutCorridor.valid_unused_capacity
+#print axioms Experiments.SingleCutCorridor.valid_unused_capacity
+#check @Experiments.SingleCutCorridor.invalid_truncation_does_not_close
+#print axioms Experiments.SingleCutCorridor.invalid_truncation_does_not_close
+#check @Experiments.SingleCutCorridor.zero_slack_iff_exact_prefix
+#print axioms Experiments.SingleCutCorridor.zero_slack_iff_exact_prefix
+#check @Experiments.SingleCutCorridor.one_slack_iff_prefix_bound
+#print axioms Experiments.SingleCutCorridor.one_slack_iff_prefix_bound
+#check @Experiments.SingleCutCorridor.erased_interior_adds_one
+#print axioms Experiments.SingleCutCorridor.erased_interior_adds_one
+#check @Experiments.SingleCutCorridor.inserted_corridor_puncture
+#print axioms Experiments.SingleCutCorridor.inserted_corridor_puncture
+#check @Experiments.SingleCutCorridor.zero_slack_accepts_both
+#print axioms Experiments.SingleCutCorridor.zero_slack_accepts_both
+#check @Experiments.SingleCutCorridor.full_target_has_no_slack
+#print axioms Experiments.SingleCutCorridor.full_target_has_no_slack
+#check @Experiments.SingleCutCorridor.slack_cannot_decode_orientation
+#print axioms Experiments.SingleCutCorridor.slack_cannot_decode_orientation
+#check @Experiments.SingleCutCorridor.orientation_is_load_bearing
+#print axioms Experiments.SingleCutCorridor.orientation_is_load_bearing
+#check @Experiments.SingleCutCorridor.puncture_changes_feasibility
+#print axioms Experiments.SingleCutCorridor.puncture_changes_feasibility
+#check @Experiments.SingleCutCorridor.separate_occurrence_budgets
+#print axioms Experiments.SingleCutCorridor.separate_occurrence_budgets

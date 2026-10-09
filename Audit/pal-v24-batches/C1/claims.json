@@ -1,0 +1,275 @@
+{
+  "batch": "C1",
+  "module": "Experiments.AbstractLoopsJoint",
+  "axioms_module": "Experiments.AbstractLoopsJointAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Math Stack/Abstract_Loops_v1.0.docx",
+      "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+      "role": "corpus_source"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C1/source-excerpts.json",
+      "sha256": "d7dc5145fabd7bd363c9dd417245bef676eae505ea110f792ccd0607d696c9cc",
+      "role": "source_extraction"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.AbstractLoopsJoint.kernel",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0019"
+      ],
+      "assumptions": [
+        "Ordinary total function."
+      ],
+      "statement": "kernel trace first second means equal trace values.",
+      "ceiling": "A kernel is an equality relation only.",
+      "residual": "No causal relation."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.jointTrace",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0019"
+      ],
+      "assumptions": [
+        "Two declared total traces."
+      ],
+      "statement": "Pair two trace values at each world.",
+      "ceiling": "A product trace does not establish cooperation.",
+      "residual": "Reachability may be a proper product subset."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.Reachable",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0014-P0016"
+      ],
+      "assumptions": [
+        "Declared trace."
+      ],
+      "statement": "Reachable values are trace values with a supplied preimage witness.",
+      "ceiling": "No decoder is defined on unreachable ambient values.",
+      "residual": "No totalization."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.Certifies",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0016-P0019"
+      ],
+      "assumptions": [
+        "Declared answer and trace."
+      ],
+      "statement": "Certification is a decoder on the reachable trace subtype agreeing at every world.",
+      "ceiling": "No physical or authority interpretation.",
+      "residual": "Decoder class is unrestricted set-theoretic functions."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.joint_kernel_eq_intersection",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0017-P0019"
+      ],
+      "assumptions": [
+        "Ordinary total functions."
+      ],
+      "statement": "The joint trace kernel equals conjunction of component kernels.",
+      "ceiling": "Equality of relations only.",
+      "residual": "No capacity bound."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.reachable_certifies_iff_kernel_subset",
+      "kind": "theorem",
+      "classification": "ASSUMPTION_BOUND",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0016-P0019"
+      ],
+      "assumptions": [
+        "Classical.choice for the reverse direction."
+      ],
+      "statement": "A reachable decoder exists iff each trace-equal pair has equal answers.",
+      "ceiling": "Reachable subtype only; no ambient total decoder.",
+      "residual": "Computability and restricted decoder classes absent."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.common_collision_blocks_joint_certification",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0024"
+      ],
+      "assumptions": [
+        "One shared component collision and conflicting answers."
+      ],
+      "statement": "A pair collapsed by both components cannot be jointly certified.",
+      "ceiling": "Blocks only the declared paired trace.",
+      "residual": "Other traces or side information are outside scope."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xorAnswer",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0023"
+      ],
+      "assumptions": [
+        "Boolean-pair fixture."
+      ],
+      "statement": "Boolean XOR answer function.",
+      "ceiling": "Finite fixture only.",
+      "residual": "No information measure."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xorFirst",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0023"
+      ],
+      "assumptions": [],
+      "statement": "First-coordinate trace.",
+      "ceiling": "Fixture only.",
+      "residual": "No channel semantics."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xorSecond",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0023"
+      ],
+      "assumptions": [],
+      "statement": "Second-coordinate trace.",
+      "ceiling": "Fixture only.",
+      "residual": "No channel semantics."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xorPair",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0023"
+      ],
+      "assumptions": [],
+      "statement": "Paired coordinate trace.",
+      "ceiling": "Fixture only.",
+      "residual": "No capacity conclusion."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xor_first_insufficient",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0024"
+      ],
+      "assumptions": [],
+      "statement": "No reachable decoder for XOR from the first coordinate alone.",
+      "ceiling": "Specific finite fixture.",
+      "residual": "No statement about other answer functions."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xor_second_insufficient",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0024"
+      ],
+      "assumptions": [],
+      "statement": "No reachable decoder for XOR from the second coordinate alone.",
+      "ceiling": "Specific finite fixture.",
+      "residual": "No statement about other answer functions."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xor_pair_certifies",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0023"
+      ],
+      "assumptions": [],
+      "statement": "The paired coordinates certify XOR on the reachable image.",
+      "ceiling": "Boolean-pair fixture only.",
+      "residual": "No causal or capacity interpretation."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.xor_strict_joint_sufficiency",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0022-P0024"
+      ],
+      "assumptions": [],
+      "statement": "XOR is jointly certified while neither coordinate is sufficient.",
+      "ceiling": "Finite functional fact only.",
+      "residual": "No general synergy measure."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.collapsedTrace",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0024"
+      ],
+      "assumptions": [],
+      "statement": "Constant Boolean trace for the shared-collision fixture.",
+      "ceiling": "Fixture only.",
+      "residual": "No physical collapse claim."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.firstBitAnswer",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0024"
+      ],
+      "assumptions": [],
+      "statement": "First-bit answer for the shared-collision fixture.",
+      "ceiling": "Fixture only.",
+      "residual": "No task generalization."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.common_collision_negative_fixture",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0024"
+      ],
+      "assumptions": [],
+      "statement": "A concrete pair shares the constant trace while its first-bit answers conflict.",
+      "ceiling": "Fixture only.",
+      "residual": "No capacity proof."
+    },
+    {
+      "name": "Experiments.AbstractLoopsJoint.common_collision_negative_blocks_joint",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "Abstract-Loops-v1.0:P0024"
+      ],
+      "assumptions": [],
+      "statement": "Two constant component traces cannot jointly certify the conflicting first-bit answer.",
+      "ceiling": "Specific paired constant trace.",
+      "residual": "Fresh observations remain distinct interfaces."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "C1-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "P0025-P0026 capacity claims are deliberately not formalized."
+    },
+    {
+      "id": "C1-MANUAL-02",
+      "status": "OPEN_MANUAL",
+      "detail": "Causal, cooperation, coalition, and physical interpretations are outside this function-level realization."
+    }
+  ]
+}

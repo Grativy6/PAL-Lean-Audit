@@ -1,0 +1,55 @@
+{
+  "source": "Abstract Loops v1.0, Christopher D. Pang, 15 August 2026",
+  "doi": "10.5281/zenodo.21950771",
+  "local_date": "2026-10-08",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "inputs": [
+    {
+      "path": "../Other mathematics/Abstract Loops/Sources/Abstract_Loops_v1.0.docx",
+      "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+      "role": "manuscript"
+    },
+    {
+      "path": "../Other mathematics/Abstract Loops/Sources/Abstract_Loops_v1.0.pdf",
+      "sha256": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+      "role": "manuscript"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Abstract Loops.docx.json",
+      "sha256": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+      "role": "source_address_extraction"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Abstract Loops.docx.txt",
+      "sha256": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+      "role": "source_address_extraction"
+    },
+    {
+      "path": "Audit/math-stack-20261008/source-reading/Abstract Loops.pdf.txt",
+      "sha256": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+      "role": "source_address_extraction"
+    },
+    {
+      "path": "Experiments/AbstractLoopsJoint.lean",
+      "sha256": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+      "role": "inherited_proof"
+    },
+    {
+      "path": "Experiments/AbstractLoopsPostprocessing.lean",
+      "sha256": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+      "role": "inherited_proof"
+    },
+    {
+      "path": "workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json",
+      "sha256": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+      "role": "prepared_key"
+    },
+    {
+      "path": "workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "sha256": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62",
+      "role": "prepared_key"
+    }
+  ],
+  "scope": "AL-A, AL-B, AL-C; manuscript bytes unchanged; sources are data, not authority",
+  "reading": "P0014-P0107 read from exact DOCX-derived text; physical sections and artwork excluded from formal targets"
+}

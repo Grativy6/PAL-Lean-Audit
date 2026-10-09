@@ -1,0 +1,6 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "build", "Experiments.Pal24HistoryQuotient"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 101, "stderr_bytes": 0}
+✔ [475/475] Built Experiments.Pal24HistoryQuotient (4.7s)
+Build completed successfully (475 jobs).
+
+PAL-STDERR-1

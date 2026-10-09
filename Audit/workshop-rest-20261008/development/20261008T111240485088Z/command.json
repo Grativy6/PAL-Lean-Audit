@@ -1,0 +1,16 @@
+{
+  "label": "CompactificationProfile",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfile.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 1,
+  "elapsed_seconds": 10.48399999999674,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T111240485088Z/CompactificationProfile.stdout.txt",
+  "stdout_sha256": "726d1d67cec19147728eafc217d4e980808e4223422bf117422cc1e6e45cb942",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T111240485088Z/CompactificationProfile.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

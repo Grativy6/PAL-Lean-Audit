@@ -1,0 +1,268 @@
+{
+  "batch": "C4",
+  "module": "Experiments.Pal24Feedback",
+  "axioms_module": "Experiments.Pal24FeedbackAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "corpus_source"
+    },
+    {
+      "path": "artifacts/pal-v24-workflow-20260922/PAL-v2.3-M.txt",
+      "sha256": "1fb159f2ad73cbf9c913bf176aa5d0758aaf21bbac07ec4d0efbb1cec8b18bd8",
+      "role": "source_extraction"
+    },
+    {
+      "path": "artifacts/pal-v24-workflow-20260922/source-verification.json",
+      "sha256": "f802627c7cafae80d4dac2682130ac2f0e8c47e9838985324a8ad0eb3f6ed46b",
+      "role": "source_verification"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C4/source-excerpts.json",
+      "sha256": "c5ce28fae1964dfed612053f695762f6e7bc0505a0a6427de35ad88cdc56b43a",
+      "role": "source_extraction"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.Pal24Feedback.RetainedOutput",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687",
+        "PAL-v2.3-M:P0693",
+        "PAL-v2.3-M:P0695"
+      ],
+      "assumptions": [
+        "Y and Lineage are supplied types."
+      ],
+      "statement": "A retained output pairs its value with explicit lineage data.",
+      "ceiling": "Typed record only; lineage authenticity and persistence are not established.",
+      "residual": "The model does not select the source or semantics of lineage."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.LaterSuccessor",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687",
+        "PAL-v2.3-M:P0691",
+        "PAL-v2.3-M:P0695"
+      ],
+      "assumptions": [
+        "State and Lineage are supplied types."
+      ],
+      "statement": "A later successor pairs its state with explicit lineage data.",
+      "ceiling": "Typed record only; no temporal or physical interpretation is supplied.",
+      "residual": "No account of storage, reachability, or lineage creation."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.FeedbackCertificate",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687-P0695",
+        "PAL-v2.3-M:P0699"
+      ],
+      "assumptions": [
+        "Adm and F are supplied; equality is the selected comparison semantics."
+      ],
+      "statement": "A certificate supplies two admitted retained outputs at common input/action, distinct retained records, and unequal later successors.",
+      "ceiling": "Minimum extensional witness only; it implies no causal reading.",
+      "residual": "No reachability, intervention, stability, noise, intent, or agency structure."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.AdmittedVariation",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0689",
+        "PAL-v2.3-M:P0693"
+      ],
+      "assumptions": [
+        "Adm is the declared admitted-domain predicate; F is a total function; equality is selected."
+      ],
+      "statement": "There exist common input and action and two distinct admitted retained outputs whose successors differ.",
+      "ceiling": "Extensional dependence on the admitted domain only.",
+      "residual": "No causal, reachable-influence, intervention, stochastic, or threshold semantics."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0689-P0695",
+        "PAL-v2.3-M:P0699"
+      ],
+      "assumptions": [
+        "Ordinary dependent-pair logic and equality."
+      ],
+      "statement": "A feedback certificate exists exactly when admitted variation holds.",
+      "ceiling": "Equivalence of this certificate structure and this extensional predicate.",
+      "residual": "No causal or physical implication."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0697",
+        "PAL-v2.3-M:P0689"
+      ],
+      "assumptions": [
+        "F is independent of the retained-output argument for all compared inputs/actions."
+      ],
+      "statement": "If changing the retained argument never changes the successor, no feedback certificate can exist on any admitted domain.",
+      "ceiling": "Functional predecessor result; a certificate's admitted witness pair cannot have unequal successors.",
+      "residual": "Does not classify causal dependence or mechanisms."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolRetainedFalse",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Finite Bool value and Unit lineage fixture."
+      ],
+      "statement": "False retained output in the finite fixture.",
+      "ceiling": "Fixture data only.",
+      "residual": "No application-level lineage semantics."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolRetainedTrue",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Finite Bool value and Unit lineage fixture."
+      ],
+      "statement": "True retained output in the finite fixture.",
+      "ceiling": "Fixture data only.",
+      "residual": "No application-level lineage semantics."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolEcho",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687",
+        "PAL-v2.3-M:P0695",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Finite Bool state and Unit lineage fixture."
+      ],
+      "statement": "The update copies the retained Bool value and lineage into the later successor.",
+      "ceiling": "One total finite fixture; copying does not model physical feedback.",
+      "residual": "No noise, reachability, or mechanism."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.restrictedAdmission",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0689",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "The declared admitted domain contains only retained outputs with value false."
+      ],
+      "statement": "A restricted finite domain admits false-valued outputs only.",
+      "ceiling": "Fixture-specific admitted domain.",
+      "residual": "No claim that a real process has this domain."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Bool fixture uses both false and true outputs in the ambient type."
+      ],
+      "statement": "The Bool echo update is nonconstant on its full ambient retained-output type.",
+      "ceiling": "Ambient variation does not establish variation within a chosen admitted domain.",
+      "residual": "No claim about the reachable image of any process."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL-v2.3-M:P0697",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Only false-valued outputs are admitted; lineage is Unit."
+      ],
+      "statement": "Despite ambient nonconstancy, Bool echo has no distinct admitted pair and therefore no admitted feedback variation on this restricted domain.",
+      "ceiling": "Finite counterexample to replacing admitted-domain dependence with ambient nonconstancy.",
+      "residual": "Reachability and application-level domain selection remain open."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.allBoolOutputsAdmitted",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0689-P0695",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "Unit input/action and Bool retained value fixture."
+      ],
+      "statement": "The finite positive fixture admits every retained Bool output.",
+      "ceiling": "Fixture domain only.",
+      "residual": "No connection to a real reachable domain."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.finite_positive_feedback_fixture",
+      "kind": "theorem",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "PAL-v2.3-M:P0687-P0695",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "The finite Bool outputs are admitted and boolEcho copies the retained value."
+      ],
+      "statement": "The two Bool retained outputs give a positive feedback certificate for the finite fixture.",
+      "ceiling": "Finite extensional witness only.",
+      "residual": "No causal, intervention, stability, or physical conclusion."
+    },
+    {
+      "name": "Experiments.Pal24Feedback.bool_echo_preserves_lineage",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL-v2.3-M:P0695",
+        "PAL-v2.3-M:P0701"
+      ],
+      "assumptions": [
+        "The fixture update copies the lineage field by definition."
+      ],
+      "statement": "The finite echo successor retains the lineage value of its input record.",
+      "ceiling": "Equality in the fixture only; no proof that a real system preserves or authenticates lineage.",
+      "residual": "Lineage persistence and storage are unmodeled."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "C4-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "Causal, intervention, reachable-influence, stability, intent, and agency interpretations are excluded by P0699 and P0703-P0705."
+    },
+    {
+      "id": "C4-MANUAL-02",
+      "status": "OPEN_MANUAL",
+      "detail": "P0701's noise, reachability distinction, and forget-to-A4 consequences are not given stochastic, reachability, or A4-transition models in this bounded fixture."
+    }
+  ]
+}

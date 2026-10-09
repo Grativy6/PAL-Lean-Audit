@@ -1,0 +1,101 @@
+@Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies : ∀ {W T Choice Q : Type} (trace : W → T)
+  (q : W → Q) (strategy : T → Choice) (read : T → Choice → Q),
+  (∀ (w : W), read (trace w) (strategy (trace w)) = q w) → Experiments.AbstractLoopsJoint.Certifies q trace
+'Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies : ∀ {W T Q : Type} (trace : W → T)
+  (q : W → Q) (outputs : T → Set Q),
+  (∀ (w : W), (outputs (trace w)).Nonempty) →
+    (∀ (w : W), ∀ o ∈ outputs (trace w), o = q w) → Experiments.AbstractLoopsJoint.Certifies q trace
+'Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies' depends on axioms: [Classical.choice]
+Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification : (∀ (w : Bool), ∃ choice, choice = w) ∧
+  ¬Experiments.AbstractLoopsJoint.Certifies id fun x => ()
+'Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification' depends on axioms: [Classical.choice]
+Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information : ∀ (choice : Bool),
+  ¬Experiments.AbstractLoopsJoint.Certifies id fun x => ((), choice)
+'Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information' depends on axioms: [Classical.choice]
+Experiments.AbstractLoopsDynamics.certification_not_implementation : (Experiments.AbstractLoopsJoint.Certifies
+    (fun x => Bool.true) fun x => ()) ∧
+  ¬∃ output, (∀ (t : Unit), output t = Bool.false) ∧ ∀ (_w : Unit), output () = Bool.true
+'Experiments.AbstractLoopsDynamics.certification_not_implementation' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.surplus : {S : Type} → Set S → Set S → Set S
+'Experiments.AbstractLoopsDynamics.surplus' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.observableSurplus : {S O : Type} → (S → O) → Set S → Set S → Set O
+'Experiments.AbstractLoopsDynamics.observableSurplus' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.one_jump_reachable_support : ∀ {S : Type} (start finish : S),
+  {s | Relation.ReflTransGen (fun x y => x = start ∧ y = finish) start s} = {start, finish}
+'Experiments.AbstractLoopsDynamics.one_jump_reachable_support' depends on axioms: [propext, Quot.sound]
+@Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus : ∀ {S O : Type} (read : S → O)
+  (coupled baseline : Set S),
+  (Experiments.AbstractLoopsDynamics.observableSurplus read coupled baseline).Nonempty →
+    (Experiments.AbstractLoopsDynamics.surplus coupled baseline).Nonempty
+'Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement : (Experiments.AbstractLoopsDynamics.surplus {0, 1}
+      {0, 2}).Nonempty ∧
+  (Experiments.AbstractLoopsDynamics.surplus {0, 2} {0, 1}).Nonempty ∧ ¬{0, 1} ⊆ {0, 2} ∧ ¬{0, 2} ⊆ {0, 1}
+'Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus : (Experiments.AbstractLoopsDynamics.surplus
+      {(Bool.false, Bool.false), (Bool.false, Bool.true)} {(Bool.false, Bool.false)}).Nonempty ∧
+  Experiments.AbstractLoopsDynamics.observableSurplus Prod.fst {(Bool.false, Bool.false), (Bool.false, Bool.true)}
+      {(Bool.false, Bool.false)} =
+    ∅
+'Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.AbstractLoopsDynamics.Run : Type → Type
+'Experiments.AbstractLoopsDynamics.Run' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.Visits : {S : Type} → (S → Prop) → Experiments.AbstractLoopsDynamics.Run S → Prop
+'Experiments.AbstractLoopsDynamics.Visits' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.Complete : {S : Type} →
+  (S → S → Prop) → S → Experiments.AbstractLoopsDynamics.Run S → Prop
+'Experiments.AbstractLoopsDynamics.Complete' depends on axioms: [propext, Quot.sound]
+@Experiments.AbstractLoopsDynamics.Possible : {S : Type} →
+  Set (Experiments.AbstractLoopsDynamics.Run S) → (S → Prop) → Prop
+'Experiments.AbstractLoopsDynamics.Possible' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.Inevitable : {S : Type} →
+  Set (Experiments.AbstractLoopsDynamics.Run S) → (S → Prop) → Prop
+'Experiments.AbstractLoopsDynamics.Inevitable' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible : ∀ {S : Type}
+  (runs : Set (Experiments.AbstractLoopsDynamics.Run S)) (failure : S → Prop),
+  runs.Nonempty →
+    Experiments.AbstractLoopsDynamics.Inevitable runs failure → Experiments.AbstractLoopsDynamics.Possible runs failure
+'Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous : (Experiments.AbstractLoopsDynamics.Inevitable ∅ fun b =>
+    b = Bool.true) ∧
+  ¬Experiments.AbstractLoopsDynamics.Possible ∅ fun b => b = Bool.true
+'Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsDynamics.forkStep : Bool → Bool → Prop
+'Experiments.AbstractLoopsDynamics.forkStep' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.waitingRun : Experiments.AbstractLoopsDynamics.Run Bool
+'Experiments.AbstractLoopsDynamics.waitingRun' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.failingRun : Experiments.AbstractLoopsDynamics.Run Bool
+'Experiments.AbstractLoopsDynamics.failingRun' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.forkRuns : Set (Experiments.AbstractLoopsDynamics.Run Bool)
+'Experiments.AbstractLoopsDynamics.forkRuns' does not depend on any axioms
+Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty : Experiments.AbstractLoopsDynamics.forkRuns.Nonempty ∧
+  ∀ r ∈ Experiments.AbstractLoopsDynamics.forkRuns,
+    Experiments.AbstractLoopsDynamics.Complete Experiments.AbstractLoopsDynamics.forkStep Bool.false r
+'Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsDynamics.possible_not_inevitable : (Experiments.AbstractLoopsDynamics.Possible
+    Experiments.AbstractLoopsDynamics.forkRuns fun b => b = Bool.true) ∧
+  ¬Experiments.AbstractLoopsDynamics.Inevitable Experiments.AbstractLoopsDynamics.forkRuns fun b => b = Bool.true
+'Experiments.AbstractLoopsDynamics.possible_not_inevitable' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability : {Experiments.AbstractLoopsDynamics.failingRun}.Nonempty ∧
+  Experiments.AbstractLoopsDynamics.Inevitable {Experiments.AbstractLoopsDynamics.failingRun} fun b => b = Bool.true
+'Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability' does not depend on any axioms
+@Experiments.AbstractLoopsDynamics.absorbing_failure_persists : ∀ {S : Type} (step : S → S → Prop) (failure : S → Prop),
+  (∀ (a b : S), failure a → step a b → failure b) →
+    ∀ (stateAt : ℕ → S),
+      (∀ (n : ℕ), step (stateAt n) (stateAt (n + 1))) →
+        ∀ (n : ℕ), failure (stateAt n) → ∀ (k : ℕ), failure (stateAt (n + k))
+'Experiments.AbstractLoopsDynamics.absorbing_failure_persists' depends on axioms: [propext]
+Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist : Experiments.AbstractLoopsDynamics.Complete
+    (fun x x_1 => True) Bool.true (Experiments.AbstractLoopsDynamics.Run.infinite fun n => n == 0) ∧
+  Experiments.AbstractLoopsDynamics.Visits (fun b => b = Bool.true)
+      (Experiments.AbstractLoopsDynamics.Run.infinite fun n => n == 0) ∧
+    (fun n => n == 0) 1 = Bool.false
+'Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist' depends on axioms: [propext, Quot.sound]
+Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture : Experiments.AbstractLoopsDynamics.Complete
+    (fun x x_1 => False) Bool.false (Experiments.AbstractLoopsDynamics.Run.finite 0 fun x => Bool.false) ∧
+  ¬Experiments.AbstractLoopsDynamics.Visits (fun b => b = Bool.true)
+      (Experiments.AbstractLoopsDynamics.Run.finite 0 fun x => Bool.false)
+'Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,205 @@
+{
+  "batch": "SCT-A",
+  "module": "Experiments.SingleCutSpan",
+  "declarations": [
+    {
+      "name": "Experiments.SingleCutSpan.hull",
+      "kind": "def",
+      "source_line": 6,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.charge",
+      "kind": "def",
+      "source_line": 9,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.support_subset_hull",
+      "kind": "theorem",
+      "source_line": 11,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.span_identity",
+      "kind": "theorem",
+      "source_line": 17,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.empty_charge",
+      "kind": "theorem",
+      "source_line": 23,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.singleton_charge",
+      "kind": "theorem",
+      "source_line": 25,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.one_defect_criterion",
+      "kind": "theorem",
+      "source_line": 27,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.rankedSupport",
+      "kind": "def",
+      "source_line": 42,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.bijective_order_preserves_support_size",
+      "kind": "theorem",
+      "source_line": 45,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.hull_positions_realized",
+      "kind": "theorem",
+      "source_line": 50,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.single_hole_is_two_blocks",
+      "kind": "theorem",
+      "source_line": 62,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.serial",
+      "kind": "def",
+      "source_line": 68,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.serial_nonempty",
+      "kind": "theorem",
+      "source_line": 71,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.serial_min",
+      "kind": "theorem",
+      "source_line": 74,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.serial_max",
+      "kind": "theorem",
+      "source_line": 79,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.serial_card",
+      "kind": "theorem",
+      "source_line": 91,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.prefix_card_le",
+      "kind": "theorem",
+      "source_line": 107,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.SingleCutSpan.exact_endpoint_decomposition",
+      "kind": "theorem",
+      "source_line": 113,
+      "source_target": "Audit/workshop-rest-20261008/SCT-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

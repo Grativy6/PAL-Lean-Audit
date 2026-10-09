@@ -1,0 +1,72 @@
+@Experiments.CompactificationBoundary.Boundary : {X : Type u_1} → {Y : Type u_2} → (X → Y) → Type u_2
+'Experiments.CompactificationBoundary.Boundary' does not depend on any axioms
+@Experiments.CompactificationBoundary.interior_fiber_unique : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)
+  (r : X → Y) (k : Y → Z),
+  Topology.IsEmbedding j →
+    Topology.IsEmbedding r →
+      DenseRange r → Continuous k → (∀ (x : X), k (r x) = j x) → ∀ (y : Y) (x : X), k y = j x → y = r x
+'Experiments.CompactificationBoundary.interior_fiber_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.CompactificationBoundary.boundary_preserved : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)
+  (r : X → Y) (k : Y → Z),
+  Topology.IsEmbedding j →
+    Topology.IsEmbedding r →
+      DenseRange r → Continuous k → (∀ (x : X), k (r x) = j x) → Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ
+'Experiments.CompactificationBoundary.boundary_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.CompactificationBoundary.boundary_onto : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z] [T2Space Y] (j : X → Z)
+  (r : X → Y) (k : Y → Z),
+  Topology.IsEmbedding j →
+    Topology.IsEmbedding r →
+      DenseRange r →
+        Continuous k → (∀ (x : X), k (r x) = j x) → Function.Surjective k → k '' (Set.range r)ᶜ = (Set.range j)ᶜ
+'Experiments.CompactificationBoundary.boundary_onto' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.CompactificationBoundary.boundaryMap : {X : Type u_1} →
+  {Y : Type u_2} →
+    {Z : Type u_3} →
+      (j : X → Z) →
+        (r : X → Y) →
+          (k : Y → Z) →
+            Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ →
+              Experiments.CompactificationBoundary.Boundary r → Experiments.CompactificationBoundary.Boundary j
+'Experiments.CompactificationBoundary.boundaryMap' does not depend on any axioms
+@Experiments.CompactificationBoundary.boundary_map_continuous : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  [TopologicalSpace X] [inst : TopologicalSpace Y] [inst_1 : TopologicalSpace Z] (j : X → Z) (r : X → Y) (k : Y → Z)
+  (h : Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ),
+  Continuous k → Continuous (Experiments.CompactificationBoundary.boundaryMap j r k h)
+'Experiments.CompactificationBoundary.boundary_map_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.CompactificationBoundary.boundary_map_surjective : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  (j : X → Z) (r : X → Y) (k : Y → Z) (h : Set.MapsTo k (Set.range r)ᶜ (Set.range j)ᶜ),
+  Function.Surjective k →
+    (∀ (x : X), k (r x) = j x) → Function.Surjective (Experiments.CompactificationBoundary.boundaryMap j r k h)
+'Experiments.CompactificationBoundary.boundary_map_surjective' does not depend on any axioms
+@Experiments.CompactificationBoundary.compact_surjection_is_quotient : ∀ {A : Type u_1} {B : Type u_2}
+  [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] [CompactSpace A] [T2Space B] (f : A → B),
+  Continuous f → Function.Surjective f → Topology.IsQuotientMap f
+'Experiments.CompactificationBoundary.compact_surjection_is_quotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.CompactificationBoundary.quotient_continuous_decoder : ∀ {A : Type u_1} {B : Type u_2} {D : Type u_3}
+  [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] [inst_2 : TopologicalSpace D] (f : A → B),
+  Topology.IsQuotientMap f →
+    ∀ (u : A → D),
+      Continuous u → (∀ (a a' : A), f a = f a' → u a = u a') → ∃! d, Continuous d ∧ ∀ (a : A), d (f a) = u a
+'Experiments.CompactificationBoundary.quotient_continuous_decoder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.CompactificationBoundary.strict_boundary_decoder : ∀ {X : Type u_1} {Y : Type u_2} {Z : Type u_3}
+  {D : Type u_4} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] [inst_2 : TopologicalSpace Z]
+  [inst_3 : TopologicalSpace D] [CompactSpace Y] [inst_5 : T2Space Y] [T2Space Z] (j : X → Z) (r : X → Y) (k : Y → Z)
+  (hj : Topology.IsEmbedding j) (hr : Topology.IsOpenEmbedding r) (hd : DenseRange r) (hk : Continuous k)
+  (comm : ∀ (x : X), k (r x) = j x),
+  Function.Surjective k →
+    ∀ (u : Experiments.CompactificationBoundary.Boundary r → D),
+      Continuous u →
+        (∀ (a a' : Experiments.CompactificationBoundary.Boundary r), k ↑a = k ↑a' → u a = u a') →
+          ∃! d, Continuous d ∧ ∀ (a : Experiments.CompactificationBoundary.Boundary r), d ⟨k ↑a, ⋯⟩ = u a
+'Experiments.CompactificationBoundary.strict_boundary_decoder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,370 @@
+{
+  "schema": "pal-v24-batch-receipt-v2",
+  "batch": "C4",
+  "module": "Experiments.Pal24Feedback",
+  "axioms_module": "Experiments.Pal24FeedbackAxioms",
+  "started_utc": "2026-09-22T08:41:41.480874+00:00",
+  "candidate_freeze_sha256": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+  "git_before": {
+    "branch": "agent/pal-v24-candidate-20260922",
+    "head": "6d9ec6a6d37bac52b46e20b241d861f523f33950",
+    "dirty": true,
+    "status_porcelain": "?? Audit/pal-v24-batches/B1/NOTES.md\n?? Audit/pal-v24-batches/B1/claims.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-3.log\n?? Audit/pal-v24-batches/B1/results.json\n?? Audit/pal-v24-batches/B2/NOTES.md\n?? Audit/pal-v24-batches/B2/claims.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-3.log\n?? Audit/pal-v24-batches/B2/results.json\n?? Audit/pal-v24-batches/B3/NOTES.md\n?? Audit/pal-v24-batches/B3/claims.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/build-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/check-axioms.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-1.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-2.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-3.log\n?? Audit/pal-v24-batches/B3/results.json\n?? Audit/pal-v24-batches/C1/NOTES.md\n?? Audit/pal-v24-batches/C1/claims.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/build-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/check-axioms.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-1.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-2.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-3.log\n?? Audit/pal-v24-batches/C1/results.json\n?? Audit/pal-v24-batches/C1/source-excerpts.json\n?? Audit/pal-v24-batches/C2/NOTES.md\n?? Audit/pal-v24-batches/C2/claims.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/build-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/check-axioms.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-1.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-2.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-3.log\n?? Audit/pal-v24-batches/C2/results.json\n?? Audit/pal-v24-batches/C2/source-excerpts.json\n?? Audit/pal-v24-batches/C3/NOTES.md\n?? Audit/pal-v24-batches/C3/claims.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/build-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/check-axioms.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-1.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-2.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-3.log\n?? Audit/pal-v24-batches/C3/results.json\n?? Audit/pal-v24-batches/C3/source-excerpts.json\n?? Audit/pal-v24-batches/C4/NOTES.md\n?? Audit/pal-v24-batches/C4/claims.json\n?? Audit/pal-v24-batches/C4/source-excerpts.json\n?? Audit/pal-v24-batches/C5/NOTES.md\n?? Audit/pal-v24-batches/C5/claims.json\n?? Audit/pal-v24-batches/C5/source-excerpts.json\n?? Audit/pal-v24-batches/EXECUTION-NOTES.md\n?? Audit/pal-v24-batches/README.md\n?? Audit/pal-v24-batches/qa/B1-review.md\n?? Audit/pal-v24-batches/qa/B3-review.md\n?? Audit/pal-v24-batches/qa/C1-review.md\n?? Audit/pal-v24-batches/qa/C2-review.md\n?? Audit/pal-v24-batches/qa/C4-review.md\n?? Audit/pal-v24-batches/qa/C5-review.md\n?? Audit/pal-v24-batches/qa/followup-disposition.md\n?? Audit/pal-v24-batches/qa/runner-review.md\n?? Audit/pal-v24-batches/run.py\n?? Audit/pal-v24-candidate/CORPUS-CANDIDATES.md\n?? Audit/pal-v24-candidate/WORKSTATE.md\n?? Audit/pal-v24-candidate/build-receipt.json\n?? Audit/pal-v24-candidate/build_documents.py\n?? Audit/pal-v24-candidate/content/atlas-edits.json\n?? Audit/pal-v24-candidate/content/author-notes.md\n?? Audit/pal-v24-candidate/content/compatibility-edits.json\n?? Audit/pal-v24-candidate/content/ledger-edits.json\n?? Audit/pal-v24-candidate/content/quick-spine.md\n?? Audit/pal-v24-candidate/content/spine-edits.json\n?? Audit/pal-v24-candidate/content/tests-edits.json\n?? Audit/pal-v24-candidate/freeze_sources.py\n?? Audit/pal-v24-candidate/normalize_metadata.py\n?? Audit/pal-v24-candidate/qa/atlas-visual.json\n?? Audit/pal-v24-candidate/qa/compatibility-visual.json\n?? Audit/pal-v24-candidate/qa/final-visual-acceptance.json\n?? Audit/pal-v24-candidate/qa/ledger-visual.json\n?? Audit/pal-v24-candidate/qa/quick-visual.json\n?? Audit/pal-v24-candidate/qa/spine-visual.json\n?? Audit/pal-v24-candidate/qa/tests-visual.json\n?? Audit/pal-v24-candidate/raster_page.py\n?? Audit/pal-v24-candidate/render_serial.py\n?? Audit/pal-v24-candidate/source-manifest.json\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/PAL_v2.4/CHANGELOG_AND_MIGRATION.md\n?? output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Quick_Spine.docx\n?? output/PAL_v2.4/PAL_v2.4_Quick_Spine.md\n?? output/PAL_v2.4/README.md\n?? output/PAL_v2.4_Workflow_Draft.md\n?? output/pdf/PAL_v2.4_Workflow_Draft.pdf\n?? tmp/pal24-c-page21-top.png\n?? tmp/pal24-c-page6-top.png"
+  },
+  "input_hashes_before": {
+    "Audit.lean": "c10a8348b85ff9a863aa6a6a758711e2bc5862dd3d35523fdfd37ee5b73615f1",
+    "Audit/AttackRun0001.lean": "2063ddb229133a2806964c4c541ba93128fcb2cffb0e2eca52b0201064eefcf2",
+    "Audit/AttackRun0002.lean": "45c73e92ec536b852655dae37ef3976b0bfc76486d0cd51797085deb94ac597d",
+    "Audit/AttackRun0003.lean": "c622cccf48fc6bc6d313a8b82526154b4baa8aaebf73947053a4ecfe89d96d22",
+    "Audit/Bootstrap.lean": "cb9147c5848dbc2019927c61a8aa16f3313130d477c01635130556713476c999",
+    "Audit/BridgeEndpoint.lean": "07b227667404b19cbd0e73863e3c7ddfd4f69d5e450d42fc398d8b1e6a006e90",
+    "Audit/pal-v24-batches/C4/claims.json": "6322158f27e3c71ef6426b8ecd90a70578688088c2bc85bf83cff3987d64a443",
+    "Audit/pal-v24-batches/C4/source-excerpts.json": "c5ce28fae1964dfed612053f695762f6e7bc0505a0a6427de35ad88cdc56b43a",
+    "Audit/pal-v24-batches/README.md": "4b364b108383c3beab3a0e948ab8ab7a097b454c6b7c05541bad4b67808df47e",
+    "Audit/pal-v24-batches/run.py": "9fc425497526742134ebeb39cca9955da739bc2e99fa4cc5b9b6f1e89dacfdab",
+    "Audit/pal-v24-candidate/source-manifest.json": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "Experiments/AbstractLoopsJointAxioms.lean": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Experiments/AbstractLoopsPostprocessingAxioms.lean": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeDimensionAxioms.lean": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeGeneratedRecovery.lean": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+    "Experiments/BridgeGeneratedRecoveryAxioms.lean": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "Experiments/BridgeRecoveryAxioms.lean": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/MindContinuation.lean": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+    "Experiments/MindContinuationAxioms.lean": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Cadence.lean": "5f492008c9c5d1f2621f17b5e520f0b18e372fe9bd8c5b05c2fef637795a151c",
+    "Experiments/Pal23CadenceAxioms.lean": "82c729a8448dd6d654d43eb2c8b1077b1561e5aaf982108c2dc75225928a32d9",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "Experiments/Pal23Interface.lean": "87c0a625a16af28e752e293c282512b104e8b75d79a84875e982a591ecb2a17a",
+    "Experiments/Pal23InterfaceAxioms.lean": "4acfc13caead4ba35bc64bc01009c9bc83c6f3f90a1f1236480607a5d7593eec",
+    "Experiments/Pal23Roundtrip.lean": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+    "Experiments/Pal23RoundtripAxioms.lean": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+    "Experiments/Pal23TraceReplay.lean": "aa34431d3722106f3782953411058fc9bcb5a17e06b7e3442e697c9680d70c5e",
+    "Experiments/Pal23TraceReplayAxioms.lean": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+    "Experiments/Pal24Continuation.lean": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+    "Experiments/Pal24ContinuationAxioms.lean": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+    "Experiments/Pal24Feedback.lean": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+    "Experiments/Pal24FeedbackAxioms.lean": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+    "Experiments/Pal24IntervalSlack.lean": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+    "Experiments/Pal24IntervalSlackAxioms.lean": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+    "Experiments/Pal24NestedAccount.lean": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+    "Experiments/Pal24NestedAccountAxioms.lean": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+    "Experiments/Pal24SourcePath.lean": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+    "Experiments/Pal24SourcePathAxioms.lean": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+    "Experiments/Pal24TypedPaths.lean": "0bac7c553d53c9dc3f0d015f68105e957b8ebe10146dd3ddaade9d60d10d508d",
+    "Experiments/Pal24TypedPathsAxioms.lean": "a3e8368a32d272dc67304aaf820eb8cf572420a2e0ec300d057d6dc2b1c5e9e9",
+    "PAL.lean": "b89fd3f4c5a04abdc9ece86e46ff0637e1043b84263214979870482c65a546ff",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "9d76dfe1190960a5b3df1b3f1f7074e20fa358d962cd94bc3e2e93abce24d1f8",
+    "PAL/AttackRun0003.lean": "5a24a1c63b01c66892efa8b29bf113a185a930191bb0691fd14f7d72d5b77f08",
+    "PAL/Bootstrap.lean": "a012f326a3bb4408baa8acb332e5638117650b30d4bb0e37407fc3200e5a35f4",
+    "PALLeanAudit.lean": "7b3fdf617c1b921fbcfba700e878f01f1632637e3a8c5a6cecb63f15eda84372",
+    "artifacts/pal-v24-workflow-20260922/PAL-v2.3-M.txt": "1fb159f2ad73cbf9c913bf176aa5d0758aaf21bbac07ec4d0efbb1cec8b18bd8",
+    "artifacts/pal-v24-workflow-20260922/source-verification.json": "f802627c7cafae80d4dac2682130ac2f0e8c47e9838985324a8ad0eb3f6ed46b",
+    "external:C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "372c2eae555b344520bf147be0096e009069aeca4e7f78d6aecea6d53158056a",
+    "external:C:\\Users\\cdpan\\.elan\\bin\\lake.exe": "175089915efc623126a1560ed517cd52ec2d4d09f2adc1c10f22f56568fed5ad",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000"
+  },
+  "declared": [
+    {
+      "name": "Experiments.Pal24Feedback.RetainedOutput",
+      "kind": "structure"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.LaterSuccessor",
+      "kind": "structure"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.FeedbackCertificate",
+      "kind": "structure"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.AdmittedVariation",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolRetainedFalse",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolRetainedTrue",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.boolEcho",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.restrictedAdmission",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.allBoolOutputsAdmitted",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.finite_positive_feedback_fixture",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24Feedback.bool_echo_preserves_lineage",
+      "kind": "theorem"
+    }
+  ],
+  "theorem_count": 6,
+  "versions": [
+    {
+      "name": "version-1",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 0.109,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-1.log",
+      "stdout_log_sha256": "555545f0dde6ab75e40d7eaf02cff4724be3f97cf210d3d2c816409dc11bbd27",
+      "stdout_sha256": "b882b8f41a2e07585a3396b73d6e91fed2ce786f91d226471ce39102e6c60a2e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Lake version 5.0.0-src+f054605 (Lean version 4.32.1)"
+    },
+    {
+      "name": "version-2",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 2.563,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-2.log",
+      "stdout_log_sha256": "112e19bba0806bd736529fb85af46e5a533e7e25c0e6e7642e29c927a7b12423",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Lean (version 4.32.1, x86_64-w64-windows-gnu, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+    },
+    {
+      "name": "version-3",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 0.016,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-3.log",
+      "stdout_log_sha256": "9dda6a82cc3331ccce0c42e59b5493012c2b6ed577838a5b9d1f4b9443f05586",
+      "stdout_sha256": "4c3569f5da09975434dd9fd9a91fadbc4367a91d8f3c3fab59e9241ab9ee4bd8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Python 3.12.14"
+    }
+  ],
+  "commands": [
+    {
+      "name": "build-target",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.Pal24Feedback"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 2.593,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/build-target.log",
+      "stdout_log_sha256": "05411090f789b43ef845a34c45241145d7fac7502d31c7c1ff6194516f45b0ad",
+      "stdout_sha256": "6800101a4012cc8783bd28b60142bd57decc84c4c3b4e351a14f116178694ba4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "check-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24FeedbackAxioms.lean"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 5.687,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/check-axioms.log",
+      "stdout_log_sha256": "932b654e86b4d8040dc2bda87acd34e027586e0ae3f7e576bc94305f5698f6eb",
+      "stdout_sha256": "85301abda22c040d919692d62ac99a33df1ee8d81000cf5bc900d865b30020d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "leanchecker-target",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.Pal24Feedback"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 40.656,
+      "stdout_log": "Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/leanchecker-target.log",
+      "stdout_log_sha256": "e703effd94bccfeca4c65f7b0f6250a50910af78159242539bb64edfe62fd709",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "axioms": {
+    "Experiments.Pal24Feedback.RetainedOutput": [],
+    "Experiments.Pal24Feedback.LaterSuccessor": [],
+    "Experiments.Pal24Feedback.FeedbackCertificate": [],
+    "Experiments.Pal24Feedback.AdmittedVariation": [],
+    "Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation": [],
+    "Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate": [],
+    "Experiments.Pal24Feedback.boolRetainedFalse": [],
+    "Experiments.Pal24Feedback.boolRetainedTrue": [],
+    "Experiments.Pal24Feedback.boolEcho": [],
+    "Experiments.Pal24Feedback.restrictedAdmission": [],
+    "Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain": [],
+    "Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation": [],
+    "Experiments.Pal24Feedback.allBoolOutputsAdmitted": [],
+    "Experiments.Pal24Feedback.finite_positive_feedback_fixture": [],
+    "Experiments.Pal24Feedback.bool_echo_preserves_lineage": []
+  },
+  "signatures": {
+    "Experiments.Pal24Feedback.RetainedOutput": "Experiments.Pal24Feedback.RetainedOutput : Type u_1 → Type u_2 → Type (max u_2 u_1)",
+    "Experiments.Pal24Feedback.LaterSuccessor": "Experiments.Pal24Feedback.LaterSuccessor : Type u_2 → Type u_1 → Type (max u_1 u_2)",
+    "Experiments.Pal24Feedback.FeedbackCertificate": "@Experiments.Pal24Feedback.FeedbackCertificate : {X : Type u_1} →\n  {U : Type u_2} →\n    {Y : Type u_3} →\n      {Lineage : Type u_4} →\n        {State : Type u_5} →\n          (X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop) →\n            (X →\n                U →\n                  Experiments.Pal24Feedback.RetainedOutput Y Lineage →\n                    Experiments.Pal24Feedback.LaterSuccessor State Lineage) →\n              Type (max (max (max u_4 u_2) u_1) u_3)",
+    "Experiments.Pal24Feedback.AdmittedVariation": "@Experiments.Pal24Feedback.AdmittedVariation : {X : Type u_1} →\n  {U : Type u_2} →\n    {Y : Type u_3} →\n      {Lineage : Type u_4} →\n        {State : Type u_5} →\n          (X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop) →\n            (X →\n                U →\n                  Experiments.Pal24Feedback.RetainedOutput Y Lineage →\n                    Experiments.Pal24Feedback.LaterSuccessor State Lineage) →\n              Prop",
+    "Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation": "@Experiments.Pal24Feedback.feedback_certificate_iff_admitted_variation : ∀ {X : Type u_1} {U : Type u_2} {Y : Type u_3}\n  {Lineage : Type u_4} {State : Type u_5} (Adm : X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop)\n  (F :\n    X →\n      U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Experiments.Pal24Feedback.LaterSuccessor State Lineage),\n  Nonempty (Experiments.Pal24Feedback.FeedbackCertificate Adm F) ↔ Experiments.Pal24Feedback.AdmittedVariation Adm F",
+    "Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate": "@Experiments.Pal24Feedback.y_independence_forbids_feedback_certificate : ∀ {X : Type u_1} {U : Type u_2} {Y : Type u_3}\n  {Lineage : Type u_4} {State : Type u_5} (Adm : X → U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Prop)\n  (F :\n    X →\n      U → Experiments.Pal24Feedback.RetainedOutput Y Lineage → Experiments.Pal24Feedback.LaterSuccessor State Lineage),\n  (∀ (x : X) (u : U) (first second : Experiments.Pal24Feedback.RetainedOutput Y Lineage), F x u first = F x u second) →\n    ¬Nonempty (Experiments.Pal24Feedback.FeedbackCertificate Adm F)",
+    "Experiments.Pal24Feedback.boolRetainedFalse": "Experiments.Pal24Feedback.boolRetainedFalse : Experiments.Pal24Feedback.RetainedOutput Bool Unit",
+    "Experiments.Pal24Feedback.boolRetainedTrue": "Experiments.Pal24Feedback.boolRetainedTrue : Experiments.Pal24Feedback.RetainedOutput Bool Unit",
+    "Experiments.Pal24Feedback.boolEcho": "Experiments.Pal24Feedback.boolEcho : Unit →\n  Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Experiments.Pal24Feedback.LaterSuccessor Bool Unit",
+    "Experiments.Pal24Feedback.restrictedAdmission": "Experiments.Pal24Feedback.restrictedAdmission : Unit → Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Prop",
+    "Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain": "Experiments.Pal24Feedback.bool_echo_nonconstant_on_full_domain : Experiments.Pal24Feedback.boolEcho () ()\n    Experiments.Pal24Feedback.boolRetainedFalse ≠\n  Experiments.Pal24Feedback.boolEcho () () Experiments.Pal24Feedback.boolRetainedTrue",
+    "Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation": "Experiments.Pal24Feedback.restricted_admitted_domain_has_no_feedback_variation : ¬Experiments.Pal24Feedback.AdmittedVariation\n    Experiments.Pal24Feedback.restrictedAdmission Experiments.Pal24Feedback.boolEcho",
+    "Experiments.Pal24Feedback.allBoolOutputsAdmitted": "Experiments.Pal24Feedback.allBoolOutputsAdmitted : Unit →\n  Unit → Experiments.Pal24Feedback.RetainedOutput Bool Unit → Prop",
+    "Experiments.Pal24Feedback.finite_positive_feedback_fixture": "Experiments.Pal24Feedback.finite_positive_feedback_fixture : Nonempty\n  (Experiments.Pal24Feedback.FeedbackCertificate Experiments.Pal24Feedback.allBoolOutputsAdmitted\n    Experiments.Pal24Feedback.boolEcho)",
+    "Experiments.Pal24Feedback.bool_echo_preserves_lineage": "Experiments.Pal24Feedback.bool_echo_preserves_lineage : ∀ (input action : Unit)\n  (retained : Experiments.Pal24Feedback.RetainedOutput Bool Unit),\n  (Experiments.Pal24Feedback.boolEcho input action retained).lineage = retained.lineage"
+  },
+  "input_hashes_after": {
+    "Audit.lean": "c10a8348b85ff9a863aa6a6a758711e2bc5862dd3d35523fdfd37ee5b73615f1",
+    "Audit/AttackRun0001.lean": "2063ddb229133a2806964c4c541ba93128fcb2cffb0e2eca52b0201064eefcf2",
+    "Audit/AttackRun0002.lean": "45c73e92ec536b852655dae37ef3976b0bfc76486d0cd51797085deb94ac597d",
+    "Audit/AttackRun0003.lean": "c622cccf48fc6bc6d313a8b82526154b4baa8aaebf73947053a4ecfe89d96d22",
+    "Audit/Bootstrap.lean": "cb9147c5848dbc2019927c61a8aa16f3313130d477c01635130556713476c999",
+    "Audit/BridgeEndpoint.lean": "07b227667404b19cbd0e73863e3c7ddfd4f69d5e450d42fc398d8b1e6a006e90",
+    "Audit/pal-v24-batches/C4/claims.json": "6322158f27e3c71ef6426b8ecd90a70578688088c2bc85bf83cff3987d64a443",
+    "Audit/pal-v24-batches/C4/source-excerpts.json": "c5ce28fae1964dfed612053f695762f6e7bc0505a0a6427de35ad88cdc56b43a",
+    "Audit/pal-v24-batches/README.md": "4b364b108383c3beab3a0e948ab8ab7a097b454c6b7c05541bad4b67808df47e",
+    "Audit/pal-v24-batches/run.py": "9fc425497526742134ebeb39cca9955da739bc2e99fa4cc5b9b6f1e89dacfdab",
+    "Audit/pal-v24-candidate/source-manifest.json": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "Experiments/AbstractLoopsJointAxioms.lean": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Experiments/AbstractLoopsPostprocessingAxioms.lean": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeDimensionAxioms.lean": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeGeneratedRecovery.lean": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+    "Experiments/BridgeGeneratedRecoveryAxioms.lean": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "Experiments/BridgeRecoveryAxioms.lean": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/MindContinuation.lean": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+    "Experiments/MindContinuationAxioms.lean": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Cadence.lean": "5f492008c9c5d1f2621f17b5e520f0b18e372fe9bd8c5b05c2fef637795a151c",
+    "Experiments/Pal23CadenceAxioms.lean": "82c729a8448dd6d654d43eb2c8b1077b1561e5aaf982108c2dc75225928a32d9",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "Experiments/Pal23Interface.lean": "87c0a625a16af28e752e293c282512b104e8b75d79a84875e982a591ecb2a17a",
+    "Experiments/Pal23InterfaceAxioms.lean": "4acfc13caead4ba35bc64bc01009c9bc83c6f3f90a1f1236480607a5d7593eec",
+    "Experiments/Pal23Roundtrip.lean": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+    "Experiments/Pal23RoundtripAxioms.lean": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+    "Experiments/Pal23TraceReplay.lean": "aa34431d3722106f3782953411058fc9bcb5a17e06b7e3442e697c9680d70c5e",
+    "Experiments/Pal23TraceReplayAxioms.lean": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+    "Experiments/Pal24Continuation.lean": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+    "Experiments/Pal24ContinuationAxioms.lean": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+    "Experiments/Pal24Feedback.lean": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+    "Experiments/Pal24FeedbackAxioms.lean": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+    "Experiments/Pal24IntervalSlack.lean": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+    "Experiments/Pal24IntervalSlackAxioms.lean": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+    "Experiments/Pal24NestedAccount.lean": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+    "Experiments/Pal24NestedAccountAxioms.lean": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+    "Experiments/Pal24SourcePath.lean": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+    "Experiments/Pal24SourcePathAxioms.lean": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+    "Experiments/Pal24TypedPaths.lean": "0bac7c553d53c9dc3f0d015f68105e957b8ebe10146dd3ddaade9d60d10d508d",
+    "Experiments/Pal24TypedPathsAxioms.lean": "a3e8368a32d272dc67304aaf820eb8cf572420a2e0ec300d057d6dc2b1c5e9e9",
+    "PAL.lean": "b89fd3f4c5a04abdc9ece86e46ff0637e1043b84263214979870482c65a546ff",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "9d76dfe1190960a5b3df1b3f1f7074e20fa358d962cd94bc3e2e93abce24d1f8",
+    "PAL/AttackRun0003.lean": "5a24a1c63b01c66892efa8b29bf113a185a930191bb0691fd14f7d72d5b77f08",
+    "PAL/Bootstrap.lean": "a012f326a3bb4408baa8acb332e5638117650b30d4bb0e37407fc3200e5a35f4",
+    "PALLeanAudit.lean": "7b3fdf617c1b921fbcfba700e878f01f1632637e3a8c5a6cecb63f15eda84372",
+    "artifacts/pal-v24-workflow-20260922/PAL-v2.3-M.txt": "1fb159f2ad73cbf9c913bf176aa5d0758aaf21bbac07ec4d0efbb1cec8b18bd8",
+    "artifacts/pal-v24-workflow-20260922/source-verification.json": "f802627c7cafae80d4dac2682130ac2f0e8c47e9838985324a8ad0eb3f6ed46b",
+    "external:C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "372c2eae555b344520bf147be0096e009069aeca4e7f78d6aecea6d53158056a",
+    "external:C:\\Users\\cdpan\\.elan\\bin\\lake.exe": "175089915efc623126a1560ed517cd52ec2d4d09f2adc1c10f22f56568fed5ad",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000"
+  },
+  "inputs_unchanged": true,
+  "git_after": {
+    "branch": "agent/pal-v24-candidate-20260922",
+    "head": "6d9ec6a6d37bac52b46e20b241d861f523f33950",
+    "dirty": true,
+    "status_porcelain": "?? Audit/pal-v24-batches/B1/NOTES.md\n?? Audit/pal-v24-batches/B1/claims.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-3.log\n?? Audit/pal-v24-batches/B1/results.json\n?? Audit/pal-v24-batches/B2/NOTES.md\n?? Audit/pal-v24-batches/B2/claims.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-3.log\n?? Audit/pal-v24-batches/B2/results.json\n?? Audit/pal-v24-batches/B3/NOTES.md\n?? Audit/pal-v24-batches/B3/claims.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/build-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/check-axioms.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-1.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-2.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-3.log\n?? Audit/pal-v24-batches/B3/results.json\n?? Audit/pal-v24-batches/C1/NOTES.md\n?? Audit/pal-v24-batches/C1/claims.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/build-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/check-axioms.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-1.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-2.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-3.log\n?? Audit/pal-v24-batches/C1/results.json\n?? Audit/pal-v24-batches/C1/source-excerpts.json\n?? Audit/pal-v24-batches/C2/NOTES.md\n?? Audit/pal-v24-batches/C2/claims.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/build-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/check-axioms.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-1.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-2.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-3.log\n?? Audit/pal-v24-batches/C2/results.json\n?? Audit/pal-v24-batches/C2/source-excerpts.json\n?? Audit/pal-v24-batches/C3/NOTES.md\n?? Audit/pal-v24-batches/C3/claims.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/build-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/check-axioms.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-1.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-2.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-3.log\n?? Audit/pal-v24-batches/C3/results.json\n?? Audit/pal-v24-batches/C3/source-excerpts.json\n?? Audit/pal-v24-batches/C4/NOTES.md\n?? Audit/pal-v24-batches/C4/claims.json\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/build-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/check-axioms.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-1.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-2.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-3.log\n?? Audit/pal-v24-batches/C4/source-excerpts.json\n?? Audit/pal-v24-batches/C5/NOTES.md\n?? Audit/pal-v24-batches/C5/claims.json\n?? Audit/pal-v24-batches/C5/source-excerpts.json\n?? Audit/pal-v24-batches/C6/source-excerpts.json\n?? Audit/pal-v24-batches/EXECUTION-NOTES.md\n?? Audit/pal-v24-batches/README.md\n?? Audit/pal-v24-batches/qa/B1-review.md\n?? Audit/pal-v24-batches/qa/B3-review.md\n?? Audit/pal-v24-batches/qa/C1-review.md\n?? Audit/pal-v24-batches/qa/C2-review.md\n?? Audit/pal-v24-batches/qa/C4-review.md\n?? Audit/pal-v24-batches/qa/C5-review.md\n?? Audit/pal-v24-batches/qa/followup-disposition.md\n?? Audit/pal-v24-batches/qa/runner-review.md\n?? Audit/pal-v24-batches/run.py\n?? Audit/pal-v24-candidate/CORPUS-CANDIDATES.md\n?? Audit/pal-v24-candidate/WORKSTATE.md\n?? Audit/pal-v24-candidate/build-receipt.json\n?? Audit/pal-v24-candidate/build_documents.py\n?? Audit/pal-v24-candidate/content/atlas-edits.json\n?? Audit/pal-v24-candidate/content/author-notes.md\n?? Audit/pal-v24-candidate/content/compatibility-edits.json\n?? Audit/pal-v24-candidate/content/ledger-edits.json\n?? Audit/pal-v24-candidate/content/quick-spine.md\n?? Audit/pal-v24-candidate/content/spine-edits.json\n?? Audit/pal-v24-candidate/content/tests-edits.json\n?? Audit/pal-v24-candidate/freeze_sources.py\n?? Audit/pal-v24-candidate/normalize_metadata.py\n?? Audit/pal-v24-candidate/qa/atlas-visual.json\n?? Audit/pal-v24-candidate/qa/compatibility-visual.json\n?? Audit/pal-v24-candidate/qa/final-visual-acceptance.json\n?? Audit/pal-v24-candidate/qa/ledger-visual.json\n?? Audit/pal-v24-candidate/qa/quick-visual.json\n?? Audit/pal-v24-candidate/qa/spine-visual.json\n?? Audit/pal-v24-candidate/qa/tests-visual.json\n?? Audit/pal-v24-candidate/raster_page.py\n?? Audit/pal-v24-candidate/render_serial.py\n?? Audit/pal-v24-candidate/source-manifest.json\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/PAL_v2.4/CHANGELOG_AND_MIGRATION.md\n?? output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Quick_Spine.docx\n?? output/PAL_v2.4/PAL_v2.4_Quick_Spine.md\n?? output/PAL_v2.4/README.md\n?? output/PAL_v2.4_Workflow_Draft.md\n?? output/pdf/PAL_v2.4_Workflow_Draft.pdf\n?? tmp/pal24-c-page21-top.png\n?? tmp/pal24-c-page6-top.png"
+  },
+  "finished_utc": "2026-09-22T08:42:33.511824+00:00"
+}

@@ -1,0 +1,117 @@
+{
+  "batch": "CC-A",
+  "module": "Experiments.CompactificationBoundary",
+  "declarations": [
+    {
+      "name": "Experiments.CompactificationBoundary.Boundary",
+      "kind": "def",
+      "source_line": 9,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.interior_fiber_unique",
+      "kind": "theorem",
+      "source_line": 11,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_preserved",
+      "kind": "theorem",
+      "source_line": 32,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_onto",
+      "kind": "theorem",
+      "source_line": 42,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundaryMap",
+      "kind": "def",
+      "source_line": 57,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_map_continuous",
+      "kind": "theorem",
+      "source_line": 61,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.boundary_map_surjective",
+      "kind": "theorem",
+      "source_line": 68,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.compact_surjection_is_quotient",
+      "kind": "theorem",
+      "source_line": 78,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.quotient_continuous_decoder",
+      "kind": "theorem",
+      "source_line": 83,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.CompactificationBoundary.strict_boundary_decoder",
+      "kind": "theorem",
+      "source_line": 101,
+      "source_target": "Audit/workshop-rest-20261008/CC-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

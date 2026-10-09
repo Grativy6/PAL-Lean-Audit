@@ -1,0 +1,18 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationProfile.lean:44:14: warning: This simp argument is unused:
+  Set.ext_iff
+
+Hint: Omit it from the simp argument list.
+  simp [Lost,̵ ̵S̵e̵t̵.̵e̵x̵t̵_̵i̵f̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationProfile.lean:106:9: error(nested.lean.propRecLargeElim): Tactic `cases` failed with a nested error:
+Tactic `induction` failed: recursor `Exists.casesOn` can only eliminate into `Prop`
+
+t : ↑(range fun x => ())
+x✝ : ↑t ∈ range fun x => ()
+⊢ Bool
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationProfile.lean:115:7: warning: Variable name `e` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

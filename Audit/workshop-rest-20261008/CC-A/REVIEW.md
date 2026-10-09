@@ -1,0 +1,9 @@
+# CC-A self-review
+
+Primary verdict: **proved as written** for the selected boundary-preservation, boundary-surjection and continuous-decoder chain, in the explicit topological realization. Ten declarations include eight theorems and supporting definitions. Exact signatures and axioms are retained in the final receipt.
+
+The proof starts with the dense interior. A filter converging to a proposed boundary preimage would, through the receiving embedding, converge to an interior point; Hausdorff uniqueness rules out that preimage. Surjectivity of the comparison map then gives boundary surjectivity. The boundary of the resolved compactification is closed because its interior image is open. Its continuous surjection onto the Hausdorff receiving boundary is a quotient map, which supplies the continuous decoder. None of these conclusions was put into a structure field.
+
+Used hypotheses: dense embedding and Hausdorff resolved space for interior-fiber uniqueness; comparison-map surjectivity for boundary onto; open resolved interior and compact resolved space for the closed compact boundary; Hausdorff receiving space for the quotient argument. Several source assumptions, including compactness of the receiving space and openness of its interior, are unnecessary for this selected implication. Their omission strengthens the intermediate statements without changing the source claim. The empty boundary case is covered by the same quantified proof.
+
+The set-theoretic lifting part reuses the mathematical mechanism also present in APCI; it is not independent corroboration. The topology is new checked coverage. No smooth, effective or computational decoder is claimed. Source review found no correction needed here. This is self-review, not independent mathematical review. Module build, exact type/axiom inspection, bundled kernel replay and saved receipt check passed; only standard Lean axioms occur.

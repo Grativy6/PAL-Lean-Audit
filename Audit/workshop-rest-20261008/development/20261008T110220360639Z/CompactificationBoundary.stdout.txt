@@ -1,0 +1,28 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:64:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:106:31: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:108:27: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary j)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:110:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:112:12: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:112:31: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationBoundary.lean:114:8: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  TopologicalSpace (Boundary r)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

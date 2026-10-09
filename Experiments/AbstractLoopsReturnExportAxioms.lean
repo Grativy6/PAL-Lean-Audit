@@ -1,0 +1,56 @@
+import Experiments.AbstractLoopsReturnExport
+
+set_option pp.fullNames true
+
+#check @Experiments.AbstractLoopsReturnExport.ReadableIdentity
+#print axioms Experiments.AbstractLoopsReturnExport.ReadableIdentity
+#check @Experiments.AbstractLoopsReturnExport.DirectResidual
+#print axioms Experiments.AbstractLoopsReturnExport.DirectResidual
+#check @Experiments.AbstractLoopsReturnExport.CandidatePresent
+#print axioms Experiments.AbstractLoopsReturnExport.CandidatePresent
+#check @Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity
+#print axioms Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity
+#check @Experiments.AbstractLoopsReturnExport.hiddenReturn
+#print axioms Experiments.AbstractLoopsReturnExport.hiddenReturn
+#check @Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity
+#print axioms Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity
+#check @Experiments.AbstractLoopsReturnExport.RosterState
+#print axioms Experiments.AbstractLoopsReturnExport.RosterState
+#check @Experiments.AbstractLoopsReturnExport.contributors
+#print axioms Experiments.AbstractLoopsReturnExport.contributors
+#check @Experiments.AbstractLoopsReturnExport.candidate
+#print axioms Experiments.AbstractLoopsReturnExport.candidate
+#check @Experiments.AbstractLoopsReturnExport.addresses
+#print axioms Experiments.AbstractLoopsReturnExport.addresses
+#check @Experiments.AbstractLoopsReturnExport.writeCandidate
+#print axioms Experiments.AbstractLoopsReturnExport.writeCandidate
+#check @Experiments.AbstractLoopsReturnExport.declared_cut_witness
+#print axioms Experiments.AbstractLoopsReturnExport.declared_cut_witness
+#check @Experiments.AbstractLoopsReturnExport.closure
+#print axioms Experiments.AbstractLoopsReturnExport.closure
+#check @Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations
+#print axioms Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations
+#check @Experiments.AbstractLoopsReturnExport.coupledStep
+#print axioms Experiments.AbstractLoopsReturnExport.coupledStep
+#check @Experiments.AbstractLoopsReturnExport.baselineStep
+#print axioms Experiments.AbstractLoopsReturnExport.baselineStep
+#check @Experiments.AbstractLoopsReturnExport.coupledHistory
+#print axioms Experiments.AbstractLoopsReturnExport.coupledHistory
+#check @Experiments.AbstractLoopsReturnExport.baselineHistory
+#print axioms Experiments.AbstractLoopsReturnExport.baselineHistory
+#check @Experiments.AbstractLoopsReturnExport.coupled_history_after_entry
+#print axioms Experiments.AbstractLoopsReturnExport.coupled_history_after_entry
+#check @Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster
+#print axioms Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster
+#check @Experiments.AbstractLoopsReturnExport.generated_fixture_receipt
+#print axioms Experiments.AbstractLoopsReturnExport.generated_fixture_receipt
+#check @Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence
+#print axioms Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence
+#check @Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy
+#print axioms Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy
+#check @Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer
+#print axioms Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer
+#check @Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling
+#print axioms Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling
+#check @Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization
+#print axioms Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization

@@ -1,0 +1,14 @@
+✖ [8655/8655] Building Experiments.CompactificationFixtures (13s)
+trace: .> LEAN_PATH=H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Cli\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\batteries\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\Qq\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\aesop\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\proofwidgets\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\importGraph\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\LeanSearchClient\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\plausible\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\packages\mathlib\.lake\build\lib\lean;H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean c:\Users\cdpan\.elan\toolchains\leanprover--lean4---v4.32.1\bin\lean.exe H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\CompactificationFixtures.lean -o H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\CompactificationFixtures.olean -i H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\lib\lean\Experiments\CompactificationFixtures.ilean -c H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\CompactificationFixtures.c --setup H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\.lake\build\ir\Experiments\CompactificationFixtures.setup.json --json
+error: Experiments/CompactificationFixtures.lean:144:26: unsolved goals
+x : Fin 6 → ℝ := fun j => if ↑j = 0 then 1 else if ↑j = 1 then -1 else 0
+⊢ ¬2 = 0
+error: Experiments/CompactificationFixtures.lean:142:95: unsolved goals
+x : Fin 6 → ℝ := fun j => if ↑j = 0 then 1 else if ↑j = 1 then -1 else 0
+hm : mean x = 0
+h : residual x = residual 0
+h0 : (1 - mean fun j => if j = 0 then 1 else if ↑j = 1 then -1 else 0) = 0
+⊢ False
+error: Lean exited with code 1
+Some required targets logged failures:
+- Experiments.CompactificationFixtures

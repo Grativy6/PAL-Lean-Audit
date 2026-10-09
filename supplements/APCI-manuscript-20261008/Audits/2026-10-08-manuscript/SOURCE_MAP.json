@@ -1,0 +1,461 @@
+{
+  "schema": "apci-manuscript-source-map-v1",
+  "date": "2026-10-08",
+  "scope": "APCI only",
+  "review_type": "self-review; no independent reviewer",
+  "primary_verdict": {
+    "target": "Theorems 1-5 and section 4.1 of APCI v1.0.0",
+    "verdict": "proved as written"
+  },
+  "sources": [
+    {
+      "path": "Sources/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+      "bytes": 31813
+    },
+    {
+      "path": "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+      "sha256": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3",
+      "bytes": 442334
+    }
+  ],
+  "locator_convention": "P numbers count direct word/document.xml body/w:p including blank paragraphs. T numbers count direct body/w:tbl. Extracted OMML text is navigation only; equations also inspected in PDF pp4-7.",
+  "original_repository": {
+    "commit": "0f85cc7fac47c3b34ecfd11160f3efae454b900c",
+    "tree": "a4418e2fb2c1fe5ffe6be768a419385da8834c99",
+    "unchanged": true
+  },
+  "original_declarations": [
+    {
+      "name": "APCILeanAudit.exactCertificate_implies_fiberConstant",
+      "published_id": "A01",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T2",
+      "docx_paragraphs": [
+        "P0053",
+        "P0054"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 34,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.exactOnReachable_implies_fiberConstant",
+      "published_id": "A02",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T1",
+      "docx_paragraphs": [
+        "P0048",
+        "P0049"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 43,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.fiberConstant_implies_exactOnReachable",
+      "published_id": "A03",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T1",
+      "docx_paragraphs": [
+        "P0048",
+        "P0049"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 57,
+      "logical_dependencies": [
+        "Classical.choice"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.exactOnReachable_iff_fiberConstant",
+      "published_id": "A04",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T1",
+      "docx_paragraphs": [
+        "P0048",
+        "P0050"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 69,
+      "logical_dependencies": [
+        "Classical.choice"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty",
+      "published_id": "A05",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T2",
+      "docx_paragraphs": [
+        "P0053",
+        "P0054"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 76,
+      "logical_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.exactCertificate_iff_fiberConstant",
+      "published_id": "A06",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T2-inhabited",
+      "docx_paragraphs": [
+        "P0052",
+        "P0055"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 94,
+      "logical_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.leftInverse_implies_injective",
+      "published_id": "A07",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T3",
+      "docx_paragraphs": [
+        "P0059",
+        "P0062"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 103,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.collision_persists_under_postprocessing",
+      "published_id": "A08",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T4",
+      "docx_paragraphs": [
+        "P0064",
+        "P0066"
+      ],
+      "file": "Lean project/APCILeanAudit/Interface.lean",
+      "line": 108,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.fin_succ_not_injective",
+      "published_id": "A09",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T5",
+      "docx_paragraphs": [
+        "P0067",
+        "P0070"
+      ],
+      "file": "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "line": 33,
+      "logical_dependencies": [
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.fin_succ_has_collision",
+      "published_id": "A10",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T5",
+      "docx_paragraphs": [
+        "P0067",
+        "P0070"
+      ],
+      "file": "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "line": 57,
+      "logical_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.no_exact_decoder_one_more",
+      "published_id": "A11",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "T5",
+      "docx_paragraphs": [
+        "P0067",
+        "P0070"
+      ],
+      "file": "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "line": 70,
+      "logical_dependencies": [
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.EmptyBoundaryControl.fiberConstant_is_vacuous",
+      "published_id": "A12",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "empty-boundary",
+      "docx_paragraphs": [
+        "P0056",
+        "P0057"
+      ],
+      "file": "Lean project/APCILeanAudit/Controls.lean",
+      "line": 12,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.EmptyBoundaryControl.total_decoder_does_not_exist",
+      "published_id": "A13",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "empty-boundary",
+      "docx_paragraphs": [
+        "P0056",
+        "P0057"
+      ],
+      "file": "Lean project/APCILeanAudit/Controls.lean",
+      "line": 16,
+      "logical_dependencies": [],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.ConcreteCapacityControl.twoToOne_collision",
+      "published_id": "A14",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "finite-control",
+      "docx_paragraphs": [
+        "P0120",
+        "P0120"
+      ],
+      "file": "Lean project/APCILeanAudit/Controls.lean",
+      "line": 27,
+      "logical_dependencies": [
+        "propext"
+      ],
+      "inventory_match": true
+    },
+    {
+      "name": "APCILeanAudit.ConcreteCapacityControl.twoToOne_no_leftInverse",
+      "published_id": "A15",
+      "docx_table": "T02",
+      "pdf_page": 12,
+      "claim": "finite-control",
+      "docx_paragraphs": [
+        "P0120",
+        "P0120"
+      ],
+      "file": "Lean project/APCILeanAudit/Controls.lean",
+      "line": 29,
+      "logical_dependencies": [
+        "Quot.sound",
+        "propext"
+      ],
+      "inventory_match": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "T1",
+      "source": "§3; PDF p4; P0048-P0050",
+      "verdict": "proved as written",
+      "statement": "For arbitrary W,T,Q, exact decoding on Reachable(trace) iff FiberConstant(trace,answer).",
+      "hypotheses": [
+        "Classical logic in the reverse direction; reachable subtype, not all T"
+      ],
+      "evidence": [
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "new_coverage": false
+    },
+    {
+      "id": "T2",
+      "source": "§3.1; PDF pp4-5; P0052-P0057",
+      "verdict": "proved as written",
+      "statement": "Exact total decoder iff fiber constancy and Nonempty(T -> Q).",
+      "hypotheses": [
+        "Classical logic; all empty-type cases retained"
+      ],
+      "evidence": [
+        "A01",
+        "A05",
+        "A06",
+        "A12",
+        "A13"
+      ],
+      "new_coverage": false
+    },
+    {
+      "id": "T3",
+      "source": "§3.2; PDF p5; P0059-P0062",
+      "verdict": "proved as written",
+      "statement": "A left inverse implies injectivity; this is identity recovery, not arbitrary property certification.",
+      "hypotheses": [
+        "One decoder is a left inverse on every input"
+      ],
+      "evidence": [
+        "A07"
+      ],
+      "new_coverage": false
+    },
+    {
+      "id": "T4",
+      "source": "§4; PDF p5; P0064-P0066",
+      "verdict": "proved as written",
+      "statement": "Equal traces remain equal under any deterministic function of that trace.",
+      "hypotheses": [
+        "Fixed original trace; no fresh side input"
+      ],
+      "evidence": [
+        "A08"
+      ],
+      "new_coverage": false
+    },
+    {
+      "id": "T5",
+      "source": "§4; PDF p5; P0067-P0070",
+      "verdict": "proved as written",
+      "statement": "For all n : Nat, any Fin(n+1) -> Fin n has a collision and no left inverse.",
+      "hypotheses": [
+        "Fixed finite codomain; n=0 retained and its map assumption is impossible"
+      ],
+      "evidence": [
+        "A09",
+        "A10",
+        "A11",
+        "A14",
+        "A15"
+      ],
+      "new_coverage": false
+    },
+    {
+      "id": "finite-answer-corollary",
+      "source": "§4.1; PDF p6; P0072-P0073",
+      "verdict": "proved as written",
+      "statement": "An injective labeling of Reachable(trace) into Fin n plus n+1 witnesses with pairwise-distinct answers rules out an exact decoder even restricted to their reachable traces.",
+      "hypotheses": [
+        "Capacity is on actual reachable traces",
+        "Injective(answer composed with witness)",
+        "No assumption that W or T is finite"
+      ],
+      "evidence": [
+        "APCIManuscript.no_exact_on_witness_of_capacity"
+      ],
+      "new_coverage": true
+    },
+    {
+      "id": "property-control",
+      "source": "§2 and §7.1; PDF pp4,7; P0044,P0097",
+      "verdict": "proved as written",
+      "statement": "A one-point trace on Nat still exactly certifies a constant Boolean property.",
+      "evidence": [
+        "APCIManuscript.infinite_world_constant_property"
+      ],
+      "kind": "boundary control"
+    },
+    {
+      "id": "side-information-control",
+      "source": "§2 and §7.3; PDF pp3,7; P0039,P0101",
+      "verdict": "proved as written",
+      "statement": "A constant trace cannot recover a Boolean identity, but appending that bit as side information can.",
+      "evidence": [
+        "APCIManuscript.side_information_changes_interface"
+      ],
+      "kind": "boundary control"
+    },
+    {
+      "id": "empty-total-control",
+      "source": "§3.1; PDF pp4-5; P0052-P0056",
+      "verdict": "proved as written",
+      "statement": "For W=T=Q=Empty, an exact total decoder exists, so inhabited Q is sufficient rather than necessary.",
+      "evidence": [
+        "APCIManuscript.empty_trace_allows_empty_answer"
+      ],
+      "kind": "boundary control"
+    },
+    {
+      "id": "entropy",
+      "source": "§6; PDF p7; P0091-P0093",
+      "verdict": "conditional on a named input",
+      "statement": "H(X|Y) >= log2(m)-log2(n) for finite uniform X and deterministic Y of support size at most n.",
+      "hypotheses": [
+        "m>=1 and n>=1, implicit in the existence of these distributions",
+        "Finite Shannon entropy chain rule and support-size maximum bound"
+      ],
+      "evidence": [
+        "Written algebra in RECEIPT_BOOK.md; no Lean entropy formalization or new external-source verification"
+      ]
+    },
+    {
+      "id": "physical-application",
+      "source": "§5 and §9; PDF pp6,9-10; P0079-P0084,P0148-P0150",
+      "verdict": "conditional on a named input",
+      "statement": "A concrete complete-access model and a conflicting-answer collision imply failure of exact trace-only certification.",
+      "hypotheses": [
+        "Actual operational interface and distinguishability model",
+        "All retained side information included",
+        "Always conclusive exact decoding",
+        "Separately justified physical capacity if using finite argument"
+      ],
+      "evidence": [
+        "T1 and T4 supply abstract implication only"
+      ]
+    }
+  ],
+  "supplementary_dependencies": {
+    "APCIManuscript.no_exact_on_witness_of_capacity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCIManuscript.infinite_world_constant_property": [],
+    "APCIManuscript.side_information_changes_interface": [],
+    "APCIManuscript.empty_trace_allows_empty_answer": []
+  },
+  "supplement_sha256": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf",
+  "receipts": [
+    "Receipts/2026-10-08-local-replay/receipt.json",
+    "Receipts/2026-10-08-manuscript-check-01/result.json",
+    "Receipts/2026-10-08-manuscript-check-01/manifest.json"
+  ],
+  "out_of_scope": [
+    "thermodynamic literature and empirical bridge validation",
+    "stochastic or quantum extensions",
+    "novelty/priority",
+    "historical CI live status and artifact download",
+    "unavailable predecessor archive bytes",
+    "all other keyring lanes"
+  ],
+  "receipt_byte_note": {
+    "git_blob_matches_paper": true,
+    "sha256": "16ef054d37dd5ec002ce95112f2209558459c5765dd7fb42bb304e47430a1753",
+    "checkout_difference": "Windows CRLF only; original bytes not rewritten"
+  }
+}

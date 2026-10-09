@@ -1,0 +1,5 @@
+# GPPR-B frozen target
+
+GPPR v0.1 §§3-5, Appendix A. Exact finite-support integer coefficients indexed by prime identities, a faithful embedding of those identities into nonnegative integer addresses, nonzero weights in an algebraic coefficient field. Prove coefficient extraction, polynomial injectivity, evaluation injectivity conditional on transcendence, additivity, and scalar extension of transcendence. For the canonical unweighted code choose the source's faithful prime-index registry as the address embedding and weights one; do not substitute prime values for prime indices silently.
+
+Connect coefficients to positive integers using Nat.factorization restricted to prime identities and cast to integers. Check multiplication, unit and prime powers, with zero excluded. Signed differences of numerator/denominator valuations must descend through equality of positive rational fractions and be injective there, not merely distinguish pairs of presentations. Check nonzero algebraic sqrt(j) weights at positive indices (Vogel), repeated-address and zero-weight countercases. No factoring/decoding efficiency or numerical separation theorem.

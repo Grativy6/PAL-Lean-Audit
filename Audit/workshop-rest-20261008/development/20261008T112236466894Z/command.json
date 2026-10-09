@@ -1,0 +1,16 @@
+{
+  "label": "GPPRTranscendence",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPRTranscendence.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 1,
+  "elapsed_seconds": 19.75,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T112236466894Z/GPPRTranscendence.stdout.txt",
+  "stdout_sha256": "c6a8efe9669cebef7af9b441cfdcdd2a4be3226b201ca7f3e191923b59cf67ea",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T112236466894Z/GPPRTranscendence.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

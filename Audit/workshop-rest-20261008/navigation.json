@@ -1,0 +1,893 @@
+{
+  "status": "PASS_LOCAL_LINKS_AND_GIT_INPUT_BYTES",
+  "checked_links": 143,
+  "files": [
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "sha256": "66ff35c3cfb6072c8496605784c1cbeceabeb6bd830dd396de2f8b6b3bc86746",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "sha256": "0fddb2f2f3672e5788533cde7437b22b74a4d744029ac688c472d0c91ae24a73",
+      "content": "# Personal mathematics and Lean workbench\n\nYour PAL-related research stays together here. Open a named paper folder for its sources, checked claims, and proof links. The shared Lean project preserves the original collection; APCI and the newly audited FRONT companion have dedicated projects inside their paper folders.\n\n## Main papers\n\n| Paper | Receipt coverage |\n| --- | --- |\n| [FRONT](<FRONT/README.md>) | v1.0 six-batch local audit complete: 17 general mathematical targets, four bounded formalizations, all 13 module kernel checks passed; two fresh correction replays. [Receipt book](<FRONT/Lean project/Audit/RECEIPT_BOOK.md>). |\n| [PAL](<PAL/README.md>) | Existing bounded Lean receipts across v2.0, v2.1, v2.3, and the v2.4 candidate. |\n| [CHARTER](<CHARTER/README.md>) | 15 original CHARTER targets and 4 follow-up targets in shared execution receipts. |\n| [BRIDGE](<BRIDGE/README.md>) | Endpoint, four-sector, diagram/readout, dimension/recovery, and generated-range receipts retained. |\n| [GOLD](<GOLD/README.md>) | Source collected; no GOLD-specific Lean receipt identified in this collection yet. |\n| [RPL](<RPL/README.md>) | v1.0 manuscript and supporting evidence package collected; not independently replayed in this organization step. |\n| [MIND](<MIND/README.md>) | 35 declarations in the retained reduced MIND-inspired continuation experiment. |\n\n## Other mathematics\n\n- [Abstract Loops](<Other mathematics/Abstract Loops/README.md>) — Three workshop batches completed with local kernel receipts, plus the preserved C1/C5 evidence. Finite-image stabilization now covers arbitrary alternatives.\n- [APCI](<Other mathematics/APCI/README.md>) — Existing audit retrieved; all 15 declarations locally replayed with matching dependencies and a passing bundled kernel check.\n- [Compactification Costs](<Other mathematics/Compactification Costs/README.md>) — Three batches complete: boundary topology, typed profiles, and selected geometric fixtures.\n- [Finite Abstraction](<Other mathematics/Finite Abstraction/README.md>) — Selected coverage and quantifier controls complete; no RH or P-versus-NP result claimed.\n- [GPPR](<Other mathematics/GPPR/README.md>) — Three batches complete with an explicit external transcendence dependency; exact encoding and routing controls checked.\n- [Single Cut Transport](<Other mathematics/Single Cut Transport/README.md>) — Three batches complete: finite span, corridor invariance and the full seven-column OR gadget.\n\n## Shared machinery and preserved history\n\n- [Complete receipt catalog](<Shared Lean project/workbench/CATALOG.md>)\n- [How to replay the checks](<Shared Lean project/workbench/REPLAY.md>)\n- [Original migration record](<Shared Lean project/workbench/migration/2026-10-07/completion.json>)\n- [Folder reorganization record](<Shared Lean project/workbench/layout-20261008/move-receipt.json>)\n\nThe shared project moved intact: proof names, imports, Git history, old result labels, and receipt files retain their original identities. Paper folders link to the actual Lean files. FRONT's separately authorized companion reuses byte-pinned APCI/BRIDGE modules with explicit provenance; the original shared sources remain intact.\n\nThe Math Stack originals remain unchanged. Sources here are hash-checked copies. The old C: checkout remains the recovery copy. FRONT remains unpublished; its new claim map identifies exactly which inherited APCI/BRIDGE statements support its coverage.\n\n## Audit queue\n\nAPCI's existing 15-declaration audit is now recovered and locally replayed.\n\nChris activated the Abstract Loops portion of the [five-paper workshop key](<Shared Lean project/workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md>) on 8 October 2026. **Its three batches are complete**; the [new receipt book](<Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md>) records the results. Chris then activated the remaining ten batches, which are now complete locally. The [combined receipt book](<Shared Lean project/Audit/workshop-rest-20261008/RECEIPT_BOOK.md>) records all four papers, the explicit golden-transcendence dependency and the G06 root qualification. The original key and its source map are retained as preparation history.\n\nFRONT's own later key was activated and completed locally on 8 October; its four remaining formalization bridges and independent-review lane are recorded in its receipt book. GOLD's full audit, RPL, and recovery of CHARTER's earlier chains remain on the broader queue. Reuse a prior receipt only after its source and formal statement match.\n\n[Earlier organization and reading checkpoint](<Shared Lean project/workbench/layout-20261008/audit-queue.md>) · [Current key source map](<Shared Lean project/workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "sha256": "05ff5eda4d5aeb2bcfa994724930b533ff256b602c0023ccf6d9fdbd051804fb",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md",
+      "sha256": "24107291f0deb614922c3ccc6704a7739be21118f22b8bee340c655ed8ed06ff",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md",
+      "sha256": "7e59cafd3f574d001e24ec82b088a13b486b6edf4621072b9cda24f24acda3ef",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\REMAINDER_ACTIVATION.md",
+      "sha256": "e94f533f6bc5b7982f07d4931b63a1013e93dcfd2c325503464ae002037919fc",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "sha256": "a4a28cd37820764d4b386417af345d4b703245fa882e26add10744ea953840b2",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "sha256": "8b55e6ef591c0a42d225c8c8155e46e56dac9573a49ccf917741dbb36d22786f",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "sha256": "25e5f69c443b4faadc3990bbc0357cdbf5144bac1bb1e5fd4c8cee9c4d48e73c",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "sha256": "bdb8da59991afbcf6c90fe7548361a2ab3aa1968aa3a54f93affb0580f983b9e",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "sha256": "3a38a975e13dd9aec7445dc7de83e58f9fdca09daa70b5b6b264ef5ad674bc15",
+      "content": "# Single Cut Transport\n\nPAL Single Cut Transport Lemma\n\n**Current receipt coverage:** Three batches complete: finite span, corridor invariance and the full seven-column OR gadget.\n\nDetermine the exact hypotheses and comparison map before identifying it with another transport or preservation lemma.\n\n## Sources\n\n- [PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx](<Sources/PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx>)\n\n## Lean proofs and receipts\n\n[Open the receipt book](<../../Shared Lean project/Audit/workshop-rest-20261008/SCT/RECEIPT_BOOK.md>) for exact results, assumptions, source comparisons and remaining boundaries. [Cross-paper clarifications](<../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md>) record what may deserve a manuscript qualification.\n\nThe editable proofs remain in the shared project; this folder links to their canonical copy. These are local kernel receipts, with no manuscript adoption, publication or new remote CI implied.\n\n## Working here\n\nUse this paper folder to read its sources and follow its evidence. The editable Lean files and original receipts for the existing PAL-related collection live together in the shared project, so imports and historical paths stay intact. There is one working copy of each proof.\n\n[All personal research](<../../WORKBENCH.md>) · [Complete historical receipt catalog](<../../Shared Lean project/workbench/CATALOG.md>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "sha256": "c5d5c2573af02415d4bb1060753a52a0e0ce7a8e1794de1a18c89245d671b4d1",
+      "content": "# Compactification Costs\n\nCompactification Costs\n\n**Current receipt coverage:** Three batches complete: boundary topology, typed profiles, and selected geometric fixtures.\n\nThe v0.2 paper is 25 PDF pages. Related fiber-factorization results elsewhere are not automatically coverage of this paper's typed geometric fixtures.\n\n## Sources\n\n- [Compactification_Costs_v0.2.docx](<Sources/Compactification_Costs_v0.2.docx>)\n- [Compactification_Costs_v0.2.pdf](<Sources/Compactification_Costs_v0.2.pdf>)\n\n## Lean proofs and receipts\n\n[Open the receipt book](<../../Shared Lean project/Audit/workshop-rest-20261008/CC/RECEIPT_BOOK.md>) for exact results, assumptions, source comparisons and remaining boundaries. [Cross-paper clarifications](<../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md>) record what may deserve a manuscript qualification.\n\nThe editable proofs remain in the shared project; this folder links to their canonical copy. These are local kernel receipts, with no manuscript adoption, publication or new remote CI implied.\n\n## Working here\n\nUse this paper folder to read its sources and follow its evidence. The editable Lean files and original receipts for the existing PAL-related collection live together in the shared project, so imports and historical paths stay intact. There is one working copy of each proof.\n\n[All personal research](<../../WORKBENCH.md>) · [Complete historical receipt catalog](<../../Shared Lean project/workbench/CATALOG.md>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "sha256": "d7cf9041b3e264b36bd0187b944171aec38c1beebacbe7a1c57e5db6bbe41472",
+      "content": "# GPPR\n\nGolden Phase Prime Ribbons\n\n**Current receipt coverage:** Three batches complete with an explicit external transcendence dependency; exact encoding and routing controls checked.\n\nThe v0.1 manuscript is 16 PDF pages. Keep exact prime-valuation encoding, geometric routing, and finite-precision claims distinct.\n\n## Sources\n\n- [GPPR_v0.1.docx](<Sources/GPPR_v0.1.docx>)\n- [GPPR_v0.1.pdf](<Sources/GPPR_v0.1.pdf>)\n\n## Lean proofs and receipts\n\n[Open the receipt book](<../../Shared Lean project/Audit/workshop-rest-20261008/GPPR/RECEIPT_BOOK.md>) for exact results, assumptions, source comparisons and remaining boundaries. [Cross-paper clarifications](<../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md>) record what may deserve a manuscript qualification.\n\nThe editable proofs remain in the shared project; this folder links to their canonical copy. These are local kernel receipts, with no manuscript adoption, publication or new remote CI implied.\n\n## Working here\n\nUse this paper folder to read its sources and follow its evidence. The editable Lean files and original receipts for the existing PAL-related collection live together in the shared project, so imports and historical paths stay intact. There is one working copy of each proof.\n\n[All personal research](<../../WORKBENCH.md>) · [Complete historical receipt catalog](<../../Shared Lean project/workbench/CATALOG.md>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "sha256": "c8aaf04d6ea3373f4020f56934b616bacff21d17f33dd1fb303642de95f2b917",
+      "content": "# Finite Abstraction\n\nFinite Abstraction Between RH and P versus NP\n\n**Current receipt coverage:** Selected coverage and quantifier controls complete; no RH or P-versus-NP result claimed.\n\nThe opening describes a bounded synthesis with no reduction, impossibility theorem, or solution claim. Audit any exact formal implications separately from the analogy.\n\n## Sources\n\n- [Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx](<Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx>)\n- [Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf](<Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf>)\n\n## Lean proofs and receipts\n\n[Open the receipt book](<../../Shared Lean project/Audit/workshop-rest-20261008/FA/RECEIPT_BOOK.md>) for exact results, assumptions, source comparisons and remaining boundaries. [Cross-paper clarifications](<../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md>) record what may deserve a manuscript qualification.\n\nThe editable proofs remain in the shared project; this folder links to their canonical copy. These are local kernel receipts, with no manuscript adoption, publication or new remote CI implied.\n\n## Working here\n\nUse this paper folder to read its sources and follow its evidence. The editable Lean files and original receipts for the existing PAL-related collection live together in the shared project, so imports and historical paths stay intact. There is one working copy of each proof.\n\n[All personal research](<../../WORKBENCH.md>) · [Complete historical receipt catalog](<../../Shared Lean project/workbench/CATALOG.md>)\n"
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-A\\REVIEW.md",
+      "sha256": "d2e361d4d834469b2963922e934fe75fd8d2835e415cfdc7f0c70ffa4a53cd93",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-B\\REVIEW.md",
+      "sha256": "c0820fc33c904485e0033773dcc426d97a32c4ddb980210765ba0ffb4c741ded",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\REVIEW.md",
+      "sha256": "8db97767107baaa64c63bdd76edbd4fdd0b8c2e70ddacff39e24329e455f7908",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\REVIEW.md",
+      "sha256": "68f287094064b1e17afd42452c6c6f0b2f275dd99e1b729f24079861ea205ec2",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\REVIEW.md",
+      "sha256": "3536c6b95d75d00ca8564e25f2816f7722bbb5b28e382f00f7b8d69a6d2560ad",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-C\\REVIEW.md",
+      "sha256": "db7b73d2f0ca577fc0f25701db3be24afa767fc3c79c0b236df038926e8004e3",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\REVIEW.md",
+      "sha256": "efc10b17924bbc0dc90b2dd1989ee81618f899a5681cdd7977b0086513c02fa4",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-B\\REVIEW.md",
+      "sha256": "263bcd8d8b96fc62f581da28577630de948e92d29d3b1acc41c175ddc315681b",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-C\\REVIEW.md",
+      "sha256": "3d1e0364998eaac206df1782b6fd9208a17a7c36218a2dd9cb59c7f96521df67",
+      "content": null
+    },
+    {
+      "path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\REVIEW.md",
+      "sha256": "8ad46f1e1c47ac27689ccd6ba0e559533b922a032c7b87eb470c773569d8f047",
+      "content": null
+    }
+  ],
+  "links": [
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "Audit/workshop-rest-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/SOURCES.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\SOURCES.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/REPLAY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\REPLAY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4/LEAN_RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4\\LEAN_RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4_Zenodo/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4_Zenodo\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "output/PAL_v2.4_Zenodo_Upload/",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\output\\PAL_v2.4_Zenodo_Upload"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/transfer-result.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\transfer-result.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/copied-files.jsonl",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\copied-files.jsonl"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/latest-replay.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\latest-replay.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/migration/2026-10-07/completion.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\completion.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\WORKBENCH.md",
+      "link": "workbench/source-locations.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\source-locations.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "FRONT/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "FRONT/Lean project/Audit/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\FRONT\\Lean project\\Audit\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "PAL/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\PAL\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "CHARTER/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\CHARTER\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "BRIDGE/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\BRIDGE\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "GOLD/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\GOLD\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "RPL/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\RPL\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "MIND/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\MIND\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Abstract Loops/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/APCI/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Compactification Costs/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Finite Abstraction/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/GPPR/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Other mathematics/Single Cut Transport/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/REPLAY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\REPLAY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/migration/2026-10-07/completion.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\migration\\2026-10-07\\completion.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/layout-20261008/move-receipt.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\layout-20261008\\move-receipt.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/keys/20261008-five-paper-audit/WORKFLOW_KEY.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/Audit/abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/Audit/workshop-rest-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/layout-20261008/audit-queue.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\layout-20261008\\audit-queue.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md",
+      "link": "Shared Lean project/workbench/keys/20261008-five-paper-audit/SOURCE_MAP.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "integration-results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\integration-results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "summary.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\summary.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "FA/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "../abstract-loops-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "../../../Other%20mathematics/APCI/README.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\README.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-A/LITERATURE.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\LITERATURE.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "SCT-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "CC-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "GPPR-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "FA-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "FA-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "TARGETS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md",
+      "link": "navigation.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\navigation.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md",
+      "link": "../abstract-loops-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md",
+      "link": "GPPR-A/LITERATURE.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\LITERATURE.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md",
+      "link": "RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md",
+      "link": "CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md",
+      "link": "integration-results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\integration-results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md",
+      "link": "summary.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\summary.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\REMAINDER_ACTIVATION.md",
+      "link": "../../../Audit/workshop-rest-20261008/WORKING.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\WORKING.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\REMAINDER_ACTIVATION.md",
+      "link": "../../../Audit/workshop-rest-20261008/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\REMAINDER_ACTIVATION.md",
+      "link": "../../../Audit/workshop-rest-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../SCT-C/computation-pointer.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT-C\\computation-pointer.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/SingleCutSpan.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\SingleCutSpan.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/SingleCutCorridor.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\SingleCutCorridor.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/SingleCutOR.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\SingleCutOR.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/CompactificationBoundary.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationBoundary.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/CompactificationProfile.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationProfile.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../CC-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/CompactificationFixtures.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\CompactificationFixtures.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md",
+      "link": "../TARGETS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\TARGETS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/GPPRTranscendence.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPRTranscendence.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-B/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-B\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-B/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-B\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/GPPREncoding.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPREncoding.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-C/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-C\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-C/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-C\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/GPPRRouting.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPRRouting.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../GPPR-A/LITERATURE.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR-A\\LITERATURE.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md",
+      "link": "../source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../FA-A/results.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\results.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../FA-A/REVIEW.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\REVIEW.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../FA-A/TARGET.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA-A\\TARGET.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../../../Experiments/FiniteAbstractionControls.lean",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\FiniteAbstractionControls.lean"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../source-manifest.json",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\source-manifest.json"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md",
+      "link": "../CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "link": "Sources/PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\Sources\\PAL_Single_Cut_Transport_Lemma_v0.1_cdpr (1) (1).docx"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/SCT/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\SCT\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "link": "../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Single Cut Transport\\README.md",
+      "link": "../../Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "Sources/Compactification_Costs_v0.2.docx",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.docx"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "Sources/Compactification_Costs_v0.2.pdf",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\Sources\\Compactification_Costs_v0.2.pdf"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/CC/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CC\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Compactification Costs\\README.md",
+      "link": "../../Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "Sources/GPPR_v0.1.docx",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.docx"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "Sources/GPPR_v0.1.pdf",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\Sources\\GPPR_v0.1.pdf"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/GPPR/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\GPPR\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\GPPR\\README.md",
+      "link": "../../Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "Sources/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\Sources\\Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).pdf"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/FA/RECEIPT_BOOK.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\FA\\RECEIPT_BOOK.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "../../Shared Lean project/Audit/workshop-rest-20261008/CLARIFICATIONS.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\workshop-rest-20261008\\CLARIFICATIONS.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "../../WORKBENCH.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\WORKBENCH.md"
+    },
+    {
+      "from": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Finite Abstraction\\README.md",
+      "link": "../../Shared Lean project/workbench/CATALOG.md",
+      "target": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\CATALOG.md"
+    }
+  ],
+  "checked_git_head": "79d128867fcd8bc71cb00a2e64bfa47fba6792a8",
+  "committed_input_hashes": {
+    "Audit/workshop-rest-20261008/verify.py": "061fece3d4a8a5ed39a0b3e532081e7608f430a4e9892b742cb56a489643e063",
+    "Audit/workshop-rest-20261008/source-manifest.json": "ecb57e7a8e07efe1e567dc799b4a5911c2db7f6265de731a0dc68e72a7892cda",
+    "Audit/workshop-rest-20261008/TARGETS.md": "153701aceda7edf6869d32670ffa6650eb39f982a093c9524dd00de1aabf0eeb",
+    "Audit/workshop-rest-20261008/SCT-A/claims.json": "32590310d3196b740199404a3352c1e5cca18ae8087374427e7b0a7c705d1e4c",
+    "Experiments/SingleCutSpan.lean": "23f9b1cdac4d6ae113291dfefe29a1c0cd56da16adc6b8be6fe486571ebd7a39",
+    "Experiments/SingleCutSpanAxioms.lean": "c5c1ddb41cde5aef4728a763634e9ad78bda416e8940d64e128e962b172ac848",
+    "Audit/workshop-rest-20261008/SCT-A/TARGET.md": "dddebdebe9a2278f6da618c1d9fe56485380a9c52a74ff7831bad89892799a05",
+    "Audit/workshop-rest-20261008/SCT-B/claims.json": "875c04d84e65b5d74702df110eb0b53d3549a12ae63d743c70f432a5f826928e",
+    "Experiments/SingleCutCorridor.lean": "f0487d0d8d772fe5b876a4d678f04b8f166a6fee06445fe60e67e478f2c0b625",
+    "Experiments/SingleCutCorridorAxioms.lean": "c5c479e151a8b2168d769797d48efa36b064d76f60d27e29ee783b2dbff99a2a",
+    "Audit/workshop-rest-20261008/SCT-B/TARGET.md": "6eb419524ab2e31fabf192a446c5591c879c85ac80c22878759297d523f7f170",
+    "Audit/workshop-rest-20261008/SCT-C/claims.json": "d526dd571c5d718d6b58fd39a136b487b26a7fd0bcdd0057f931cecb29ee83e9",
+    "Experiments/SingleCutOR.lean": "0312ff98cb0b2cf028ffb2aa871fb04cbcdc38a4deeb8cfe1a939a4ba5341c52",
+    "Experiments/SingleCutORAxioms.lean": "8dc04c642f0814e95129ed710b967e4447fbb1ffea7e4954965e20beb29d2af4",
+    "Audit/workshop-rest-20261008/SCT-C/TARGET.md": "2d19f9cbd637648ec56703db094a5a7eec28ecb903c0fd8806c6db3462f84a08",
+    "Audit/workshop-rest-20261008/CC-A/claims.json": "ec002f576f48d2b17a4fd72b2834e545372a6319aa4025672de6c55451776e78",
+    "Experiments/CompactificationBoundary.lean": "fbe5de893b33451d0234cc4a2cb61acd9c542da1f8d35a503a91324fe5b4ff43",
+    "Experiments/CompactificationBoundaryAxioms.lean": "8cb067baeae82dd8d2011886c7c367038151d4147d4649add2998f358742898b",
+    "Audit/workshop-rest-20261008/CC-A/TARGET.md": "9ce877a3943a643e7ed95c8cab856b65ee570191630dfb4129e7b95d6a66ca41",
+    "Audit/workshop-rest-20261008/CC-B/claims.json": "09265ba5c46b7b3995656c8ab8fc0ca59fb288da1e4c3fd0390a6cc35931d227",
+    "Experiments/CompactificationProfile.lean": "765f12be5e1250f321207f938e2be8f0029675de2479850dc49f57aa67c602e0",
+    "Experiments/CompactificationProfileAxioms.lean": "e539d1c67de734f84849e56de8f1223ae869d1f8766854325ead34552b5b16a8",
+    "Audit/workshop-rest-20261008/CC-B/TARGET.md": "72de37aeffb4a0fde3b835ce37e9a398bd31b12701995a034511f3302eed9049",
+    "Audit/workshop-rest-20261008/CC-C/claims.json": "3dea293390996cb4d7ec9f4cb61436fe144b298e15f01a0c46d1df4336df2354",
+    "Experiments/CompactificationFixtures.lean": "9ee543c9bdfb105ab699827ecb2a77e3c7d6d9bd80043ecdb1f4805d77001c19",
+    "Experiments/CompactificationFixturesAxioms.lean": "af6633d00c64c2707f264c30846f8232407bdb2e34bcb252548faa0798a5a457",
+    "Audit/workshop-rest-20261008/CC-C/TARGET.md": "10dd4d746d6ea9298cc3d10d8d118b98e0801f6d259e8b8637904b3af47aeb09",
+    "Audit/workshop-rest-20261008/GPPR-A/claims.json": "296d94ece4fbb07e1bec0af858fe1087a2b0f800a7c11f5dcd4016ae92702e38",
+    "Experiments/GPPRTranscendence.lean": "a6886617de6ec6ba30255b04ce0b746507e10929963d0690d0b3c3104245ef32",
+    "Experiments/GPPRTranscendenceAxioms.lean": "b3ca79c47abaccc46644206ce6b2a9207043831240cd7b845605689f29ba9f21",
+    "Audit/workshop-rest-20261008/GPPR-A/TARGET.md": "bf988505a16f6abe16219b28633d39fed5b49e70c6bc324e1cb4d28eb8bb7ce2",
+    "Audit/workshop-rest-20261008/GPPR-B/claims.json": "c216e707314f5a1ad3e98bba83b3fb6d4df34c8362ddaade657eef41f9d247df",
+    "Experiments/GPPREncoding.lean": "191321d366c65b652146c87d05953b37ca5ce06f9c2705d0115290a11cea2d56",
+    "Experiments/GPPREncodingAxioms.lean": "05946a738fe9de890963457fe4e80c5a25359e266fc1d8512b0640a0d8250f62",
+    "Audit/workshop-rest-20261008/GPPR-B/TARGET.md": "57a39ff2c5005c9287fde1bc64c550e1838b452296d86f9cf92b854ecf9d69e1",
+    "Audit/workshop-rest-20261008/GPPR-C/claims.json": "aecc9e3812dde01b686965ed7e59645d0a9ffd35eeaab5049e632a6cb505c427",
+    "Experiments/GPPRRouting.lean": "210672bc52cd5d1e91b943166f61259bf995654d653113df3561a1ba6547778a",
+    "Experiments/GPPRRoutingAxioms.lean": "f55a6eaca48376442b0a11b3089b5554dddf96615e54bbba14b209fd9834eca3",
+    "Audit/workshop-rest-20261008/GPPR-C/TARGET.md": "38256414265e15ef8e2b64ce81638e2eaa2e61a001014a3660fa111ae91c597b",
+    "Audit/workshop-rest-20261008/FA-A/claims.json": "c1f91a7635d58d5b8fcf35da92e8ab6f87cbc9473305ae8f64109b95eb488f31",
+    "Experiments/FiniteAbstractionControls.lean": "f9e3d48c65f360769ec76da784b94b67690251ab695c8489df85987c7dabac8c",
+    "Experiments/FiniteAbstractionControlsAxioms.lean": "39fe52af6a944d97bf50348067914efbc37257e13087352bea0d0c7347e2cd85",
+    "Audit/workshop-rest-20261008/FA-A/TARGET.md": "90e9faca9d7631e9c063777b816c0f00f8384b8c52c62596f9b40eefb4be3979",
+    "Experiments/AbstractLoopsFiniteImage.lean": "03965f524f893cca90a5b386701415336ea988879941d18297afe3031ed4d5e9",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7"
+  },
+  "snapshot_note": "Outer guides are outside Git; these dated snapshots preserve the changed navigation, not a second editable copy."
+}

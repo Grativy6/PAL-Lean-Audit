@@ -1,0 +1,92 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24TypedPathsAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 6478, "stderr_bytes": 0}
+Experiments.Pal24TypedPaths.Vertex : Type
+'Experiments.Pal24TypedPaths.Vertex' does not depend on any axioms
+Experiments.Pal24TypedPaths.RelationKind : Type
+'Experiments.Pal24TypedPaths.RelationKind' does not depend on any axioms
+Experiments.Pal24TypedPaths.EvidenceKind : Type
+'Experiments.Pal24TypedPaths.EvidenceKind' does not depend on any axioms
+Experiments.Pal24TypedPaths.Edge : Type
+'Experiments.Pal24TypedPaths.Edge' does not depend on any axioms
+Experiments.Pal24TypedPaths.PathRecord : Type
+'Experiments.Pal24TypedPaths.PathRecord' does not depend on any axioms
+Experiments.Pal24TypedPaths.follow : Experiments.Pal24TypedPaths.Vertex →
+  List Experiments.Pal24TypedPaths.Edge → Option Experiments.Pal24TypedPaths.Vertex
+'Experiments.Pal24TypedPaths.follow' does not depend on any axioms
+Experiments.Pal24TypedPaths.pathValid : Experiments.Pal24TypedPaths.PathRecord → Prop
+'Experiments.Pal24TypedPaths.pathValid' does not depend on any axioms
+Experiments.Pal24TypedPaths.checkedAppend : Experiments.Pal24TypedPaths.PathRecord →
+  Experiments.Pal24TypedPaths.Edge → Option Experiments.Pal24TypedPaths.PathRecord
+'Experiments.Pal24TypedPaths.checkedAppend' does not depend on any axioms
+Experiments.Pal24TypedPaths.deleteLastEdges : Experiments.Pal24TypedPaths.PathRecord →
+  List Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.deleteLastEdges' does not depend on any axioms
+Experiments.Pal24TypedPaths.coOccur : List Experiments.Pal24TypedPaths.Vertex →
+  Experiments.Pal24TypedPaths.Vertex → Experiments.Pal24TypedPaths.Vertex → Prop
+'Experiments.Pal24TypedPaths.coOccur' does not depend on any axioms
+Experiments.Pal24TypedPaths.noEdgeBetween : List Experiments.Pal24TypedPaths.Edge →
+  Experiments.Pal24TypedPaths.Vertex → Experiments.Pal24TypedPaths.Vertex → Prop
+'Experiments.Pal24TypedPaths.noEdgeBetween' does not depend on any axioms
+Experiments.Pal24TypedPaths.follow_append_edge : ∀ (start middle : Experiments.Pal24TypedPaths.Vertex)
+  (edges : List Experiments.Pal24TypedPaths.Edge) (edge : Experiments.Pal24TypedPaths.Edge),
+  Experiments.Pal24TypedPaths.follow start edges = Option.some middle →
+    edge.source = middle →
+      edge.evidence = Experiments.Pal24TypedPaths.EvidenceKind.receipt →
+        Experiments.Pal24TypedPaths.follow start (edges ++ [edge]) = Option.some edge.target
+'Experiments.Pal24TypedPaths.follow_append_edge' depends on axioms: [propext]
+Experiments.Pal24TypedPaths.checkedAppend_valid : ∀ (path : Experiments.Pal24TypedPaths.PathRecord)
+  (edge : Experiments.Pal24TypedPaths.Edge) (result : Experiments.Pal24TypedPaths.PathRecord),
+  Experiments.Pal24TypedPaths.pathValid path →
+    Experiments.Pal24TypedPaths.checkedAppend path edge = Option.some result →
+      Experiments.Pal24TypedPaths.pathValid result
+'Experiments.Pal24TypedPaths.checkedAppend_valid' depends on axioms: [propext]
+Experiments.Pal24TypedPaths.delete_appended_edge_recovers_predecessor : ∀
+  (edges : List Experiments.Pal24TypedPaths.Edge) (edge : Experiments.Pal24TypedPaths.Edge),
+  (edges ++ [edge]).dropLast = edges
+'Experiments.Pal24TypedPaths.delete_appended_edge_recovers_predecessor' depends on axioms: [propext]
+Experiments.Pal24TypedPaths.ab : Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.ab' does not depend on any axioms
+Experiments.Pal24TypedPaths.bc : Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.bc' does not depend on any axioms
+Experiments.Pal24TypedPaths.wrongEndpoint : Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.wrongEndpoint' does not depend on any axioms
+Experiments.Pal24TypedPaths.wrongEvidence : Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.wrongEvidence' does not depend on any axioms
+Experiments.Pal24TypedPaths.emptyAtA : Experiments.Pal24TypedPaths.PathRecord
+'Experiments.Pal24TypedPaths.emptyAtA' does not depend on any axioms
+Experiments.Pal24TypedPaths.pathAB : Experiments.Pal24TypedPaths.PathRecord
+'Experiments.Pal24TypedPaths.pathAB' does not depend on any axioms
+Experiments.Pal24TypedPaths.cooccurringRoster : List Experiments.Pal24TypedPaths.Vertex
+'Experiments.Pal24TypedPaths.cooccurringRoster' does not depend on any axioms
+Experiments.Pal24TypedPaths.noEdges : List Experiments.Pal24TypedPaths.Edge
+'Experiments.Pal24TypedPaths.noEdges' does not depend on any axioms
+Experiments.Pal24TypedPaths.empty_path_valid : Experiments.Pal24TypedPaths.pathValid
+  Experiments.Pal24TypedPaths.emptyAtA
+'Experiments.Pal24TypedPaths.empty_path_valid' does not depend on any axioms
+Experiments.Pal24TypedPaths.append_ab_creates_valid_path : Experiments.Pal24TypedPaths.checkedAppend
+      Experiments.Pal24TypedPaths.emptyAtA Experiments.Pal24TypedPaths.ab =
+    Option.some Experiments.Pal24TypedPaths.pathAB ∧
+  Experiments.Pal24TypedPaths.pathValid Experiments.Pal24TypedPaths.pathAB
+'Experiments.Pal24TypedPaths.append_ab_creates_valid_path' depends on axioms: [propext]
+Experiments.Pal24TypedPaths.append_bc_preserves_ordered_history : ∃ result,
+  Experiments.Pal24TypedPaths.checkedAppend Experiments.Pal24TypedPaths.pathAB Experiments.Pal24TypedPaths.bc =
+      Option.some result ∧
+    Experiments.Pal24TypedPaths.pathValid result ∧
+      result.edges = [Experiments.Pal24TypedPaths.ab, Experiments.Pal24TypedPaths.bc]
+'Experiments.Pal24TypedPaths.append_bc_preserves_ordered_history' depends on axioms: [propext]
+Experiments.Pal24TypedPaths.mismatched_endpoint_rejected : Experiments.Pal24TypedPaths.checkedAppend
+    Experiments.Pal24TypedPaths.pathAB Experiments.Pal24TypedPaths.wrongEndpoint =
+  Option.none
+'Experiments.Pal24TypedPaths.mismatched_endpoint_rejected' does not depend on any axioms
+Experiments.Pal24TypedPaths.unverified_evidence_rejected : Experiments.Pal24TypedPaths.checkedAppend
+    Experiments.Pal24TypedPaths.pathAB Experiments.Pal24TypedPaths.wrongEvidence =
+  Option.none
+'Experiments.Pal24TypedPaths.unverified_evidence_rejected' does not depend on any axioms
+Experiments.Pal24TypedPaths.cooccurrence_without_edge_countermodel : Experiments.Pal24TypedPaths.coOccur
+    Experiments.Pal24TypedPaths.cooccurringRoster Experiments.Pal24TypedPaths.Vertex.a
+    Experiments.Pal24TypedPaths.Vertex.b ∧
+  Experiments.Pal24TypedPaths.noEdgeBetween Experiments.Pal24TypedPaths.noEdges Experiments.Pal24TypedPaths.Vertex.a
+    Experiments.Pal24TypedPaths.Vertex.b
+'Experiments.Pal24TypedPaths.cooccurrence_without_edge_countermodel' depends on axioms: [propext]
+
+PAL-STDERR-1

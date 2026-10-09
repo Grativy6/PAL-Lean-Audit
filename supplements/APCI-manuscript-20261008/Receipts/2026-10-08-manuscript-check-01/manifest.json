@@ -1,0 +1,286 @@
+{
+  "schema_version": 2,
+  "claim_id": "APCI-v1.0.0-manuscript-supplement",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-X",
+    "utf8",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Audits\\2026-10-08-manuscript\\verify.py",
+    "Receipts/2026-10-08-manuscript-check-01"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Lean and bundled leanchecker",
+        "version": "4.32.1, f054605aea4b840552cca2e725580bffd1e1b704"
+      },
+      {
+        "name": "Python checker",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Windows-10-10.0.19045-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Lean checks the general finite reachable-trace answer-class obstruction and three source-specific boundary controls.",
+    "coefficient_domain": "Lean 4 dependent types, exact equality and natural-number finite types; no floating arithmetic",
+    "conventions": "APCI v1.0.0 definitions; arbitrary World, Trace, Answer types; actual reachable subtype; classical logic where printed",
+    "inputs": [
+      "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+      "Audits/2026-10-08-manuscript/verify.py",
+      "Audits/2026-10-08-manuscript/CONTRACT.md",
+      "source-manifest.json",
+      "Receipts/2026-10-08-local-replay/receipt.json",
+      "Sources/APCI_Declared_Interface_v1.0.0.docx",
+      "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+      "Lean project/APCILeanAudit.lean",
+      "Lean project/Audit.lean",
+      "Lean project/lakefile.lean",
+      "Lean project/APCILeanAudit/Controls.lean",
+      "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "Lean project/APCILeanAudit/Interface.lean",
+      "Lean project/lean-toolchain",
+      "Lean project/lake-manifest.json",
+      "Lean project/THEOREM_INVENTORY.json",
+      "Lean project/audit/AXIOM_RECEIPT.txt",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/Controls.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/FiniteCapacity.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit/Interface.olean",
+      "Lean project/.lake/build/lib/lean/APCILeanAudit.olean"
+    ],
+    "bounds": {
+      "source_claim": "DOCX P0072-P0073, PDF section 4.1 page 6",
+      "supplementary_theorems": 4,
+      "new_corollaries": 1,
+      "boundary_controls": 3,
+      "prior_declarations_reused": 15,
+      "timeout_per_formal_command_seconds": 120,
+      "compiler_threads": 1,
+      "compiler_requested_memory_MB": 2048,
+      "proof_repair_attempts_max": 3
+    },
+    "non_claims": [
+      "No other keyring lane executed.",
+      "No physical capacity premise, thermodynamics, quantum extension, or external nanoda verification.",
+      "Source-to-formal matching is self-review; command success alone is not semantic alignment.",
+      "Standard Lean logical dependencies are retained."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-08T06:22:45.150193+00:00",
+    "runtime_seconds": 4.766,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 360.0,
+    "max_output_bytes": 2097152,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+    "Audits/2026-10-08-manuscript/verify.py",
+    "Audits/2026-10-08-manuscript/CONTRACT.md",
+    "source-manifest.json",
+    "Receipts/2026-10-08-local-replay/receipt.json",
+    "Sources/APCI_Declared_Interface_v1.0.0.docx",
+    "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+    "Lean project/APCILeanAudit.lean",
+    "Lean project/Audit.lean",
+    "Lean project/lakefile.lean",
+    "Lean project/APCILeanAudit/Controls.lean",
+    "Lean project/APCILeanAudit/FiniteCapacity.lean",
+    "Lean project/APCILeanAudit/Interface.lean",
+    "Lean project/lean-toolchain",
+    "Lean project/lake-manifest.json",
+    "Lean project/THEOREM_INVENTORY.json",
+    "Lean project/audit/AXIOM_RECEIPT.txt",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/Controls.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/FiniteCapacity.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit/Interface.olean",
+    "Lean project/.lake/build/lib/lean/APCILeanAudit.olean"
+  ],
+  "input_artifacts": [
+    {
+      "path": "Audits/2026-10-08-manuscript/APCIManuscript.lean",
+      "sha256": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf",
+      "sha256_after": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/verify.py",
+      "sha256": "eb92bdaf7ea5cd901261b82660256bd9fac120eca30a0d80eaae41a0f5ac69af",
+      "sha256_after": "eb92bdaf7ea5cd901261b82660256bd9fac120eca30a0d80eaae41a0f5ac69af"
+    },
+    {
+      "path": "Audits/2026-10-08-manuscript/CONTRACT.md",
+      "sha256": "479bf04037e938c48bea60453990f7bb3646cc5afc4cf359bd754579c6f1347b",
+      "sha256_after": "479bf04037e938c48bea60453990f7bb3646cc5afc4cf359bd754579c6f1347b"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "6d749e232b2bb13c80e532c233c96cb4c2cdc75a61038132c5d2bacfeec4b83b",
+      "sha256_after": "6d749e232b2bb13c80e532c233c96cb4c2cdc75a61038132c5d2bacfeec4b83b"
+    },
+    {
+      "path": "Receipts/2026-10-08-local-replay/receipt.json",
+      "sha256": "6e5525f89752421eb145e22f4b871293ac9dd68c1ad9b47da17ca7849bd25749",
+      "sha256_after": "6e5525f89752421eb145e22f4b871293ac9dd68c1ad9b47da17ca7849bd25749"
+    },
+    {
+      "path": "Sources/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+      "sha256_after": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    },
+    {
+      "path": "Sources/APCI_Declared_Interface_v1.0.0.pdf",
+      "sha256": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3",
+      "sha256_after": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3"
+    },
+    {
+      "path": "Lean project/APCILeanAudit.lean",
+      "sha256": "86dba9eb7a3498daae2754e64f4916638ce7186f9332a706007d6f579e78b8e8",
+      "sha256_after": "86dba9eb7a3498daae2754e64f4916638ce7186f9332a706007d6f579e78b8e8"
+    },
+    {
+      "path": "Lean project/Audit.lean",
+      "sha256": "b9f9b590a7c29cf1059606f18d216aa0780d3e52e098b7c799af799dfe467119",
+      "sha256_after": "b9f9b590a7c29cf1059606f18d216aa0780d3e52e098b7c799af799dfe467119"
+    },
+    {
+      "path": "Lean project/lakefile.lean",
+      "sha256": "9302f4b9922cfc4f305cb3cc259463a7d3485f6fc6a2b8fbff7fe0f0137a56e8",
+      "sha256_after": "9302f4b9922cfc4f305cb3cc259463a7d3485f6fc6a2b8fbff7fe0f0137a56e8"
+    },
+    {
+      "path": "Lean project/APCILeanAudit/Controls.lean",
+      "sha256": "00ff107be80a79cd5cd27b75e1d2e82a93c22600791d2a047939e342c5335e8e",
+      "sha256_after": "00ff107be80a79cd5cd27b75e1d2e82a93c22600791d2a047939e342c5335e8e"
+    },
+    {
+      "path": "Lean project/APCILeanAudit/FiniteCapacity.lean",
+      "sha256": "e2f2a87377992382579bb5c69dfe7b659069c33e831d011c4ff91ec7a6105cf3",
+      "sha256_after": "e2f2a87377992382579bb5c69dfe7b659069c33e831d011c4ff91ec7a6105cf3"
+    },
+    {
+      "path": "Lean project/APCILeanAudit/Interface.lean",
+      "sha256": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+      "sha256_after": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f"
+    },
+    {
+      "path": "Lean project/lean-toolchain",
+      "sha256": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+      "sha256_after": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000"
+    },
+    {
+      "path": "Lean project/lake-manifest.json",
+      "sha256": "00006bb2976893a003806eb7264ab54b5f4cc24ba49294c5022e40c4ed38b63c",
+      "sha256_after": "00006bb2976893a003806eb7264ab54b5f4cc24ba49294c5022e40c4ed38b63c"
+    },
+    {
+      "path": "Lean project/THEOREM_INVENTORY.json",
+      "sha256": "20ff1443e1d294e1bcd476e8e0e395c3fe405f342b19a8200c324c87b9482101",
+      "sha256_after": "20ff1443e1d294e1bcd476e8e0e395c3fe405f342b19a8200c324c87b9482101"
+    },
+    {
+      "path": "Lean project/audit/AXIOM_RECEIPT.txt",
+      "sha256": "51117c296383f4dd3583d1572138a97e958c8a994275b451acee1557e3dea768",
+      "sha256_after": "51117c296383f4dd3583d1572138a97e958c8a994275b451acee1557e3dea768"
+    },
+    {
+      "path": "Lean project/.lake/build/lib/lean/APCILeanAudit/Controls.olean",
+      "sha256": "05e230c6d4abe6966e6ab76cc44adf93a7efd4dcd58b10778a5662b9fe5598cb",
+      "sha256_after": "05e230c6d4abe6966e6ab76cc44adf93a7efd4dcd58b10778a5662b9fe5598cb"
+    },
+    {
+      "path": "Lean project/.lake/build/lib/lean/APCILeanAudit/FiniteCapacity.olean",
+      "sha256": "81b77341a1b4af47212b83aa77ef03827100450a4e6e043ceacb19368949dae4",
+      "sha256_after": "81b77341a1b4af47212b83aa77ef03827100450a4e6e043ceacb19368949dae4"
+    },
+    {
+      "path": "Lean project/.lake/build/lib/lean/APCILeanAudit/Interface.olean",
+      "sha256": "cbc78517e4fb3341a02373f6255f7541dbb5a216d17452814e5baf99b7390336",
+      "sha256_after": "cbc78517e4fb3341a02373f6255f7541dbb5a216d17452814e5baf99b7390336"
+    },
+    {
+      "path": "Lean project/.lake/build/lib/lean/APCILeanAudit.olean",
+      "sha256": "4616dd84e88e3b4ab77045f9172535abaac54065d2e60bf5acb2380df89296ee",
+      "sha256_after": "4616dd84e88e3b4ab77045f9172535abaac54065d2e60bf5acb2380df89296ee"
+    }
+  ],
+  "output_directory": "Receipts/2026-10-08-manuscript-check-01",
+  "declared_results": [
+    "Receipts/2026-10-08-manuscript-check-01/result.json",
+    "Receipts/2026-10-08-manuscript-check-01/APCIManuscript.olean",
+    "Receipts/2026-10-08-manuscript-check-01/compile-and-dependencies.log",
+    "Receipts/2026-10-08-manuscript-check-01/bundled-kernel.log"
+  ],
+  "outputs": [
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/stdout.txt",
+      "sha256": "9b8bbd155ed991d18bb124028ed689a601f6258b8414d88be114933bf720ccb0",
+      "kind": "log"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/result.json",
+      "sha256": "85705611929cbf65377bad1c6acabd8bdfddd2290ff88dd132242058d9adf19d",
+      "kind": "result"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/APCIManuscript.olean",
+      "sha256": "5f3bb5a19d15f3c14f320281dedfc14cfe58b9ecd8ad202a6853eaa976a5deeb",
+      "kind": "result"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/compile-and-dependencies.log",
+      "sha256": "79ac41486c9682841d6f977b1df9c1991702ec4d017198ffbf429d302bab3859",
+      "kind": "result"
+    },
+    {
+      "path": "Receipts/2026-10-08-manuscript-check-01/bundled-kernel.log",
+      "sha256": "27ca5666e8317647f1c710b835c233a3fc748d7dd85e31e721d53fae258ea432",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

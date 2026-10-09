@@ -1,0 +1,128 @@
+{
+  "batch": "FA-A",
+  "module": "Experiments.FiniteAbstractionControls",
+  "declarations": [
+    {
+      "name": "Experiments.FiniteAbstractionControls.finite_prefix_does_not_cover",
+      "kind": "theorem",
+      "source_line": 7,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.finite_set_does_not_cover",
+      "kind": "theorem",
+      "source_line": 14,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.induction_has_unbounded_reach",
+      "kind": "theorem",
+      "source_line": 20,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.pointwise_bounds_without_constant_bound",
+      "kind": "theorem",
+      "source_line": 26,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.a_uniform_construction_still_exists",
+      "kind": "theorem",
+      "source_line": 32,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.prefix_interface_loses_identity",
+      "kind": "theorem",
+      "source_line": 35,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.unaryRecord",
+      "kind": "def",
+      "source_line": 44,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.variable_finite_records_recover",
+      "kind": "theorem",
+      "source_line": 46,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.variable_finite_records_injective",
+      "kind": "theorem",
+      "source_line": 49,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.variable_finite_records_unbounded",
+      "kind": "theorem",
+      "source_line": 53,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.FiniteAbstractionControls.variable_record_certifies_identity",
+      "kind": "theorem",
+      "source_line": 59,
+      "source_target": "Audit/workshop-rest-20261008/FA-A/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

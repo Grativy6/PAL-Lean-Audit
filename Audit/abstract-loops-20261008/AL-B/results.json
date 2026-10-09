@@ -1,0 +1,335 @@
+{
+  "schema": "abstract-loops-local-lean-receipt-v1",
+  "batch": "AL-B",
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "started_utc": "20261008T063041051042Z",
+  "branch": "agent/abstract-loops-workshop-20261008",
+  "git_head": "39e786c068d61fb9b523c667b17466c93ab0a0f9",
+  "working_tree": "?? Audit/abstract-loops-20261008/\n?? Audit/pal-v24-batches/\n?? Audit/pal-v24-candidate/\n?? Audit/pal-v24-publication/\n?? Experiments/AbstractLoopsDynamics.lean\n?? Experiments/AbstractLoopsDynamicsAxioms.lean\n?? Experiments/AbstractLoopsFiniteImage.lean\n?? Experiments/AbstractLoopsFiniteImageAxioms.lean\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/AbstractLoopsReturnExport.lean\n?? Experiments/AbstractLoopsReturnExportAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/\n?? tmp/",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_dirty": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.certification_not_implementation",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.surplus",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.observableSurplus",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.one_jump_reachable_support",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Run",
+      "kind": "inductive"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Visits",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Complete",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Possible",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.Inevitable",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.forkStep",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.waitingRun",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.failingRun",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.forkRuns",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.possible_not_inevitable",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.absorbing_failure_persists",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture",
+      "kind": "theorem"
+    }
+  ],
+  "input_hashes_before": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-B\\claims.json": "84b5c0a5af82be235c18881baca2529832dfc5aa180023361c3827df0717331d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamics.lean": "209bea6686ca141e0c2bfa5153d965539ad2b1d735512413858e28afc5552324",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamicsAxioms.lean": "ba54e7050cd33f018e394c53e64ec32ad85ec188cde450f0fcc101cd1d1b3b46",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 1.922000000020489,
+      "stdout": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/lean-version.stdout.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/lean-version.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.AbstractLoopsDynamics"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.827999999979511,
+      "stdout": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/build.stdout.txt",
+      "stdout_sha256": "50c6a9584465f2fd436d045bc6e55aabce97de15e608a271a3542e0f8ea9434f",
+      "stderr": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "inspect",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamicsAxioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.327999999979511,
+      "stdout": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/inspect.stdout.txt",
+      "stdout_sha256": "de6954e9aa06ffb2f387be354e4f471617131a2250fa66dc5355e9e3cc0ebb96",
+      "stderr": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/inspect.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.AbstractLoopsDynamics"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 32.81300000002375,
+      "stdout": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/abstract-loops-20261008/AL-B/evidence/20261008T063041051042Z/kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": {
+    "Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies": "@Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies : ∀ {W T Choice Q : Type} (trace : W → T)\n  (q : W → Q) (strategy : T → Choice) (read : T → Choice → Q),\n  (∀ (w : W), read (trace w) (strategy (trace w)) = q w) → Experiments.AbstractLoopsJoint.Certifies q trace",
+    "Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies": "@Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies : ∀ {W T Q : Type} (trace : W → T)\n  (q : W → Q) (outputs : T → Set Q),\n  (∀ (w : W), (outputs (trace w)).Nonempty) →\n    (∀ (w : W), ∀ o ∈ outputs (trace w), o = q w) → Experiments.AbstractLoopsJoint.Certifies q trace",
+    "Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification": "Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification : (∀ (w : Bool), ∃ choice, choice = w) ∧\n  ¬Experiments.AbstractLoopsJoint.Certifies id fun x => ()",
+    "Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information": "Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information : ∀ (choice : Bool),\n  ¬Experiments.AbstractLoopsJoint.Certifies id fun x => ((), choice)",
+    "Experiments.AbstractLoopsDynamics.certification_not_implementation": "Experiments.AbstractLoopsDynamics.certification_not_implementation : (Experiments.AbstractLoopsJoint.Certifies\n    (fun x => Bool.true) fun x => ()) ∧\n  ¬∃ output, (∀ (t : Unit), output t = Bool.false) ∧ ∀ (_w : Unit), output () = Bool.true",
+    "Experiments.AbstractLoopsDynamics.surplus": "@Experiments.AbstractLoopsDynamics.surplus : {S : Type} → Set S → Set S → Set S",
+    "Experiments.AbstractLoopsDynamics.observableSurplus": "@Experiments.AbstractLoopsDynamics.observableSurplus : {S O : Type} → (S → O) → Set S → Set S → Set O",
+    "Experiments.AbstractLoopsDynamics.one_jump_reachable_support": "@Experiments.AbstractLoopsDynamics.one_jump_reachable_support : ∀ {S : Type} (start finish : S),\n  {s | Relation.ReflTransGen (fun x y => x = start ∧ y = finish) start s} = {start, finish}",
+    "Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus": "@Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus : ∀ {S O : Type} (read : S → O)\n  (coupled baseline : Set S),\n  (Experiments.AbstractLoopsDynamics.observableSurplus read coupled baseline).Nonempty →\n    (Experiments.AbstractLoopsDynamics.surplus coupled baseline).Nonempty",
+    "Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement": "Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement : (Experiments.AbstractLoopsDynamics.surplus {0, 1}\n      {0, 2}).Nonempty ∧\n  (Experiments.AbstractLoopsDynamics.surplus {0, 2} {0, 1}).Nonempty ∧ ¬{0, 1} ⊆ {0, 2} ∧ ¬{0, 2} ⊆ {0, 1}",
+    "Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus": "Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus : (Experiments.AbstractLoopsDynamics.surplus\n      {(Bool.false, Bool.false), (Bool.false, Bool.true)} {(Bool.false, Bool.false)}).Nonempty ∧\n  Experiments.AbstractLoopsDynamics.observableSurplus Prod.fst {(Bool.false, Bool.false), (Bool.false, Bool.true)}\n      {(Bool.false, Bool.false)} =\n    ∅",
+    "Experiments.AbstractLoopsDynamics.Run": "Experiments.AbstractLoopsDynamics.Run : Type → Type",
+    "Experiments.AbstractLoopsDynamics.Visits": "@Experiments.AbstractLoopsDynamics.Visits : {S : Type} → (S → Prop) → Experiments.AbstractLoopsDynamics.Run S → Prop",
+    "Experiments.AbstractLoopsDynamics.Complete": "@Experiments.AbstractLoopsDynamics.Complete : {S : Type} →\n  (S → S → Prop) → S → Experiments.AbstractLoopsDynamics.Run S → Prop",
+    "Experiments.AbstractLoopsDynamics.Possible": "@Experiments.AbstractLoopsDynamics.Possible : {S : Type} →\n  Set (Experiments.AbstractLoopsDynamics.Run S) → (S → Prop) → Prop",
+    "Experiments.AbstractLoopsDynamics.Inevitable": "@Experiments.AbstractLoopsDynamics.Inevitable : {S : Type} →\n  Set (Experiments.AbstractLoopsDynamics.Run S) → (S → Prop) → Prop",
+    "Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible": "@Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible : ∀ {S : Type}\n  (runs : Set (Experiments.AbstractLoopsDynamics.Run S)) (failure : S → Prop),\n  runs.Nonempty →\n    Experiments.AbstractLoopsDynamics.Inevitable runs failure → Experiments.AbstractLoopsDynamics.Possible runs failure",
+    "Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous": "Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous : (Experiments.AbstractLoopsDynamics.Inevitable ∅ fun b =>\n    b = Bool.true) ∧\n  ¬Experiments.AbstractLoopsDynamics.Possible ∅ fun b => b = Bool.true",
+    "Experiments.AbstractLoopsDynamics.forkStep": "Experiments.AbstractLoopsDynamics.forkStep : Bool → Bool → Prop",
+    "Experiments.AbstractLoopsDynamics.waitingRun": "Experiments.AbstractLoopsDynamics.waitingRun : Experiments.AbstractLoopsDynamics.Run Bool",
+    "Experiments.AbstractLoopsDynamics.failingRun": "Experiments.AbstractLoopsDynamics.failingRun : Experiments.AbstractLoopsDynamics.Run Bool",
+    "Experiments.AbstractLoopsDynamics.forkRuns": "Experiments.AbstractLoopsDynamics.forkRuns : Set (Experiments.AbstractLoopsDynamics.Run Bool)",
+    "Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty": "Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty : Experiments.AbstractLoopsDynamics.forkRuns.Nonempty ∧\n  ∀ r ∈ Experiments.AbstractLoopsDynamics.forkRuns,\n    Experiments.AbstractLoopsDynamics.Complete Experiments.AbstractLoopsDynamics.forkStep Bool.false r",
+    "Experiments.AbstractLoopsDynamics.possible_not_inevitable": "Experiments.AbstractLoopsDynamics.possible_not_inevitable : (Experiments.AbstractLoopsDynamics.Possible\n    Experiments.AbstractLoopsDynamics.forkRuns fun b => b = Bool.true) ∧\n  ¬Experiments.AbstractLoopsDynamics.Inevitable Experiments.AbstractLoopsDynamics.forkRuns fun b => b = Bool.true",
+    "Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability": "Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability : {Experiments.AbstractLoopsDynamics.failingRun}.Nonempty ∧\n  Experiments.AbstractLoopsDynamics.Inevitable {Experiments.AbstractLoopsDynamics.failingRun} fun b => b = Bool.true",
+    "Experiments.AbstractLoopsDynamics.absorbing_failure_persists": "@Experiments.AbstractLoopsDynamics.absorbing_failure_persists : ∀ {S : Type} (step : S → S → Prop) (failure : S → Prop),\n  (∀ (a b : S), failure a → step a b → failure b) →\n    ∀ (stateAt : ℕ → S),\n      (∀ (n : ℕ), step (stateAt n) (stateAt (n + 1))) →\n        ∀ (n : ℕ), failure (stateAt n) → ∀ (k : ℕ), failure (stateAt (n + k))",
+    "Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist": "Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist : Experiments.AbstractLoopsDynamics.Complete\n    (fun x x_1 => True) Bool.true (Experiments.AbstractLoopsDynamics.Run.infinite fun n => n == 0) ∧\n  Experiments.AbstractLoopsDynamics.Visits (fun b => b = Bool.true)\n      (Experiments.AbstractLoopsDynamics.Run.infinite fun n => n == 0) ∧\n    (fun n => n == 0) 1 = Bool.false",
+    "Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture": "Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture : Experiments.AbstractLoopsDynamics.Complete\n    (fun x x_1 => False) Bool.false (Experiments.AbstractLoopsDynamics.Run.finite 0 fun x => Bool.false) ∧\n  ¬Experiments.AbstractLoopsDynamics.Visits (fun b => b = Bool.true)\n      (Experiments.AbstractLoopsDynamics.Run.finite 0 fun x => Bool.false)"
+  },
+  "axioms": {
+    "Experiments.AbstractLoopsDynamics.uniform_trace_protocol_certifies": [],
+    "Experiments.AbstractLoopsDynamics.uniform_nondeterministic_protocol_certifies": [
+      "Classical.choice"
+    ],
+    "Experiments.AbstractLoopsDynamics.pointwise_branch_not_certification": [
+      "Classical.choice"
+    ],
+    "Experiments.AbstractLoopsDynamics.independent_branch_label_not_world_information": [
+      "Classical.choice"
+    ],
+    "Experiments.AbstractLoopsDynamics.certification_not_implementation": [],
+    "Experiments.AbstractLoopsDynamics.surplus": [],
+    "Experiments.AbstractLoopsDynamics.observableSurplus": [],
+    "Experiments.AbstractLoopsDynamics.one_jump_reachable_support": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.observable_surplus_requires_raw_surplus": [],
+    "Experiments.AbstractLoopsDynamics.surplus_does_not_mean_enlargement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.hidden_coordinate_surplus": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.Run": [],
+    "Experiments.AbstractLoopsDynamics.Visits": [],
+    "Experiments.AbstractLoopsDynamics.Complete": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.Possible": [],
+    "Experiments.AbstractLoopsDynamics.Inevitable": [],
+    "Experiments.AbstractLoopsDynamics.nonempty_inevitable_implies_possible": [],
+    "Experiments.AbstractLoopsDynamics.empty_run_class_is_vacuous": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.forkStep": [],
+    "Experiments.AbstractLoopsDynamics.waitingRun": [],
+    "Experiments.AbstractLoopsDynamics.failingRun": [],
+    "Experiments.AbstractLoopsDynamics.forkRuns": [],
+    "Experiments.AbstractLoopsDynamics.fork_runs_are_complete_and_nonempty": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.possible_not_inevitable": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.restricted_run_class_changes_inevitability": [],
+    "Experiments.AbstractLoopsDynamics.absorbing_failure_persists": [
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.transient_visit_need_not_persist": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsDynamics.maximal_finite_run_fixture": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "compiled_artifacts": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\.lake\\build\\lib\\lean\\Experiments\\AbstractLoopsDynamics.olean": "c1dc59f629efc95791630860595127c0949cdca2885ad4c8d0b03708f7f286a0"
+  },
+  "review": "self-review; bundled checker is not an independent implementation",
+  "authority": "local bounded proof evidence; no manuscript adoption or publication",
+  "input_hashes_after": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-B\\claims.json": "84b5c0a5af82be235c18881baca2529832dfc5aa180023361c3827df0717331d",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamics.lean": "209bea6686ca141e0c2bfa5153d965539ad2b1d735512413858e28afc5552324",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsDynamicsAxioms.lean": "ba54e7050cd33f018e394c53e64ec32ad85ec188cde450f0fcc101cd1d1b3b46",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  }
+}

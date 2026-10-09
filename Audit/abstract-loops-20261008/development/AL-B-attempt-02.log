@@ -1,0 +1,5 @@
+⚠ [2998/2998] Built Experiments.AbstractLoopsDynamics (7.0s)
+warning: Experiments/AbstractLoopsDynamics.lean:130:4: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (2998 jobs).

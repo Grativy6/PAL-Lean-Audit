@@ -1,0 +1,41 @@
+{
+  "claim_id": "SCT-C-local-OR-counts",
+  "mathematics": {
+    "assertion_tested": "Exact source counts and OR projection over every permutation of seven labels and every three-bit truth triple",
+    "coefficient_domain": "exact integers and finite sets",
+    "conventions": "zero-based column ranks; actual holes in inclusive row hull; prefix slack ends at last selected rank",
+    "inputs": [
+      "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+      "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+      "Audit/workshop-rest-20261008/source-manifest.json"
+    ],
+    "bounds": {
+      "columns": 7,
+      "orders": 5040,
+      "truth_triples": 8,
+      "order_truth_pairs": 40320,
+      "symmetry_filtering": false
+    },
+    "non_claims": [
+      "Global NP reduction",
+      "Gadget minimality",
+      "Kernel proof from Python output"
+    ]
+  },
+  "execution_artifacts": [
+    "Audit/workshop-rest-20261008/SCT-C/enumerate.py",
+    "Audit/math-stack-20261008/source-reading/Single Cut Transport.docx.txt",
+    "Audit/workshop-rest-20261008/source-manifest.json"
+  ],
+  "software": [
+    {
+      "name": "CPython",
+      "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

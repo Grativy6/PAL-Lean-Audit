@@ -1,0 +1,630 @@
+{
+  "schema": "pal-v24-batch-receipt-v2",
+  "batch": "B3",
+  "module": "Experiments.Pal24NestedAccount",
+  "axioms_module": "Experiments.Pal24NestedAccountAxioms",
+  "started_utc": "2026-09-22T09:02:21.585631+00:00",
+  "candidate_freeze_sha256": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+  "git_before": {
+    "branch": "agent/pal-v24-candidate-20260922",
+    "head": "6d9ec6a6d37bac52b46e20b241d861f523f33950",
+    "dirty": true,
+    "status_porcelain": "?? Audit/pal-v24-batches/B1/NOTES.md\n?? Audit/pal-v24-batches/B1/claims.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-3.log\n?? Audit/pal-v24-batches/B1/results.json\n?? Audit/pal-v24-batches/B2/NOTES.md\n?? Audit/pal-v24-batches/B2/claims.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-3.log\n?? Audit/pal-v24-batches/B2/results.json\n?? Audit/pal-v24-batches/B3/NOTES.md\n?? Audit/pal-v24-batches/B3/claims.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/build-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/check-axioms.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-1.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-2.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-3.log\n?? Audit/pal-v24-batches/B3/results.json\n?? Audit/pal-v24-batches/C1/NOTES.md\n?? Audit/pal-v24-batches/C1/claims.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/build-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/check-axioms.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-1.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-2.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-3.log\n?? Audit/pal-v24-batches/C1/results.json\n?? Audit/pal-v24-batches/C1/source-excerpts.json\n?? Audit/pal-v24-batches/C2/NOTES.md\n?? Audit/pal-v24-batches/C2/claims.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/build-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/check-axioms.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-1.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-2.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-3.log\n?? Audit/pal-v24-batches/C2/results.json\n?? Audit/pal-v24-batches/C2/source-excerpts.json\n?? Audit/pal-v24-batches/C3/NOTES.md\n?? Audit/pal-v24-batches/C3/claims.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/build-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/check-axioms.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/receipt-before-prefix-repair.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-1.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-2.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-3.log\n?? Audit/pal-v24-batches/C3/results.json\n?? Audit/pal-v24-batches/C3/source-excerpts.json\n?? Audit/pal-v24-batches/C4/NOTES.md\n?? Audit/pal-v24-batches/C4/claims.json\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/build-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/check-axioms.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-1.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-2.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-3.log\n?? Audit/pal-v24-batches/C4/results.json\n?? Audit/pal-v24-batches/C4/source-excerpts.json\n?? Audit/pal-v24-batches/C5/NOTES.md\n?? Audit/pal-v24-batches/C5/claims.json\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/build-target.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/check-axioms.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-1.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-2.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-3.log\n?? Audit/pal-v24-batches/C5/results.json\n?? Audit/pal-v24-batches/C5/source-excerpts.json\n?? Audit/pal-v24-batches/C6/NOTES.md\n?? Audit/pal-v24-batches/C6/claims.json\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/build-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/check-axioms.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/receipt-before-inventory-order-repair.json\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-1.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-2.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-3.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/build-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/check-axioms.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-1.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-2.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-3.log\n?? Audit/pal-v24-batches/C6/results.json\n?? Audit/pal-v24-batches/C6/source-excerpts.json\n?? Audit/pal-v24-batches/EXECUTION-NOTES.md\n?? Audit/pal-v24-batches/README.md\n?? Audit/pal-v24-batches/qa/B1-review.md\n?? Audit/pal-v24-batches/qa/B2-review.md\n?? Audit/pal-v24-batches/qa/B3-review.md\n?? Audit/pal-v24-batches/qa/C1-review.md\n?? Audit/pal-v24-batches/qa/C2-review.md\n?? Audit/pal-v24-batches/qa/C3-review.md\n?? Audit/pal-v24-batches/qa/C4-review.md\n?? Audit/pal-v24-batches/qa/C5-review.md\n?? Audit/pal-v24-batches/qa/C6-review.md\n?? Audit/pal-v24-batches/qa/followup-disposition.md\n?? Audit/pal-v24-batches/qa/runner-review.md\n?? Audit/pal-v24-batches/run.py\n?? Audit/pal-v24-candidate/CORPUS-CANDIDATES.md\n?? Audit/pal-v24-candidate/WORKSTATE.md\n?? Audit/pal-v24-candidate/build-receipt.json\n?? Audit/pal-v24-candidate/build_documents.py\n?? Audit/pal-v24-candidate/content/atlas-edits.json\n?? Audit/pal-v24-candidate/content/author-notes.md\n?? Audit/pal-v24-candidate/content/compatibility-edits.json\n?? Audit/pal-v24-candidate/content/ledger-edits.json\n?? Audit/pal-v24-candidate/content/quick-spine.md\n?? Audit/pal-v24-candidate/content/spine-edits.json\n?? Audit/pal-v24-candidate/content/tests-edits.json\n?? Audit/pal-v24-candidate/freeze_sources.py\n?? Audit/pal-v24-candidate/normalize_metadata.py\n?? Audit/pal-v24-candidate/qa/atlas-visual.json\n?? Audit/pal-v24-candidate/qa/compatibility-visual.json\n?? Audit/pal-v24-candidate/qa/final-visual-acceptance.json\n?? Audit/pal-v24-candidate/qa/ledger-visual.json\n?? Audit/pal-v24-candidate/qa/quick-visual.json\n?? Audit/pal-v24-candidate/qa/spine-visual.json\n?? Audit/pal-v24-candidate/qa/tests-visual.json\n?? Audit/pal-v24-candidate/raster_page.py\n?? Audit/pal-v24-candidate/render_serial.py\n?? Audit/pal-v24-candidate/source-manifest.json\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/PAL_v2.4/CHANGELOG_AND_MIGRATION.md\n?? output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Quick_Spine.docx\n?? output/PAL_v2.4/LEAN_RECEIPT_BOOK.md\n?? output/PAL_v2.4/PAL_v2.4_Quick_Spine.md\n?? output/PAL_v2.4/README.md\n?? output/PAL_v2.4_Workflow_Draft.md\n?? output/pdf/PAL_v2.4_Workflow_Draft.pdf\n?? tmp/pal24-c-page21-top.png\n?? tmp/pal24-c-page6-top.png"
+  },
+  "input_hashes_before": {
+    "Audit.lean": "c10a8348b85ff9a863aa6a6a758711e2bc5862dd3d35523fdfd37ee5b73615f1",
+    "Audit/AttackRun0001.lean": "2063ddb229133a2806964c4c541ba93128fcb2cffb0e2eca52b0201064eefcf2",
+    "Audit/AttackRun0002.lean": "45c73e92ec536b852655dae37ef3976b0bfc76486d0cd51797085deb94ac597d",
+    "Audit/AttackRun0003.lean": "c622cccf48fc6bc6d313a8b82526154b4baa8aaebf73947053a4ecfe89d96d22",
+    "Audit/Bootstrap.lean": "cb9147c5848dbc2019927c61a8aa16f3313130d477c01635130556713476c999",
+    "Audit/BridgeEndpoint.lean": "07b227667404b19cbd0e73863e3c7ddfd4f69d5e450d42fc398d8b1e6a006e90",
+    "Audit/pal-v24-batches/B3/claims.json": "683625fec6340e0928e1c29a2518172afc04237f1e2c4ac670e953619ddcc80a",
+    "Audit/pal-v24-batches/README.md": "4b364b108383c3beab3a0e948ab8ab7a097b454c6b7c05541bad4b67808df47e",
+    "Audit/pal-v24-batches/run.py": "e5e5bd8e3341d179f11551a3c5c68a7d68d1441231eca575981f73428353f5d8",
+    "Audit/pal-v24-candidate/source-manifest.json": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "Experiments/AbstractLoopsJointAxioms.lean": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Experiments/AbstractLoopsPostprocessingAxioms.lean": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeDimensionAxioms.lean": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeGeneratedRecovery.lean": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+    "Experiments/BridgeGeneratedRecoveryAxioms.lean": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "Experiments/BridgeRecoveryAxioms.lean": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/MindContinuation.lean": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+    "Experiments/MindContinuationAxioms.lean": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Cadence.lean": "5f492008c9c5d1f2621f17b5e520f0b18e372fe9bd8c5b05c2fef637795a151c",
+    "Experiments/Pal23CadenceAxioms.lean": "82c729a8448dd6d654d43eb2c8b1077b1561e5aaf982108c2dc75225928a32d9",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "Experiments/Pal23Interface.lean": "87c0a625a16af28e752e293c282512b104e8b75d79a84875e982a591ecb2a17a",
+    "Experiments/Pal23InterfaceAxioms.lean": "4acfc13caead4ba35bc64bc01009c9bc83c6f3f90a1f1236480607a5d7593eec",
+    "Experiments/Pal23Roundtrip.lean": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+    "Experiments/Pal23RoundtripAxioms.lean": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+    "Experiments/Pal23TraceReplay.lean": "aa34431d3722106f3782953411058fc9bcb5a17e06b7e3442e697c9680d70c5e",
+    "Experiments/Pal23TraceReplayAxioms.lean": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+    "Experiments/Pal24Continuation.lean": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+    "Experiments/Pal24ContinuationAxioms.lean": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+    "Experiments/Pal24Feedback.lean": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+    "Experiments/Pal24FeedbackAxioms.lean": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+    "Experiments/Pal24HistoryQuotient.lean": "e010ae9a982b6ad9964ec2f532f5a14b1ed357ca67a902864bca0553a32c8185",
+    "Experiments/Pal24HistoryQuotientAxioms.lean": "d7b060282ebffff6350a30d227d2dcbf7941848ee5363f9219807689c8041f52",
+    "Experiments/Pal24IntervalSlack.lean": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+    "Experiments/Pal24IntervalSlackAxioms.lean": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+    "Experiments/Pal24NestedAccount.lean": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+    "Experiments/Pal24NestedAccountAxioms.lean": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+    "Experiments/Pal24SourcePath.lean": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+    "Experiments/Pal24SourcePathAxioms.lean": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+    "Experiments/Pal24TypedPaths.lean": "54d7f04dadb07da370bc13565b7f9d51912531b945eabc791bd202647791ebbb",
+    "Experiments/Pal24TypedPathsAxioms.lean": "928fbd3f631fd44603ebb56352044adcfb1392dabfaaaa00dffa4ecbe59ba9c2",
+    "PAL.lean": "b89fd3f4c5a04abdc9ece86e46ff0637e1043b84263214979870482c65a546ff",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "9d76dfe1190960a5b3df1b3f1f7074e20fa358d962cd94bc3e2e93abce24d1f8",
+    "PAL/AttackRun0003.lean": "5a24a1c63b01c66892efa8b29bf113a185a930191bb0691fd14f7d72d5b77f08",
+    "PAL/Bootstrap.lean": "a012f326a3bb4408baa8acb332e5638117650b30d4bb0e37407fc3200e5a35f4",
+    "PALLeanAudit.lean": "7b3fdf617c1b921fbcfba700e878f01f1632637e3a8c5a6cecb63f15eda84372",
+    "external:C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "372c2eae555b344520bf147be0096e009069aeca4e7f78d6aecea6d53158056a",
+    "external:C:\\Users\\cdpan\\.elan\\bin\\lake.exe": "175089915efc623126a1560ed517cd52ec2d4d09f2adc1c10f22f56568fed5ad",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-C_Compatibility_Note.docx": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-L_Obligation_and_Decision_Ledger.docx": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-T_Conformance_Tests.docx": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3_Mechanical_Structural_Spine.docx": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx": "2ed7739b898edf4552316ef4c6e002f702656746cb89f33d3c8531e77d96381e",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx": "bc655015201c87e62d5d79a16bc7376aad5cd517217df5a0c2bc01c4c8e37a9b",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx": "110602faf4f2e7dae3ef46a998561a35497363d7c54deb257f2c6226f6231539",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx": "27d8caece6e7f4162cebcc37bb5a9edadb9eb3fdeb34d064a39ff844edcb763f",
+    "output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx": "61e6894c21a3c6a7fe2cbfec5be82f1f11ed83fb640f7a38a1b0b89638b68786"
+  },
+  "declared": [
+    {
+      "name": "Experiments.Pal24NestedAccount.Unit",
+      "kind": "inductive"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.Charge",
+      "kind": "inductive"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.Account",
+      "kind": "inductive"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.AccountWork",
+      "kind": "structure"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.chargeId",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.chargeValue",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accountUnit",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.flattenEvents",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.structuralAggregate",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.flattenedAggregate",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.eventIds",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.noUnknown",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.uniqueAttribution",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.compatibleUnit",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.completeChildren",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accepted",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.appendOwn",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.linkedEpochAggregate",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.administrationCompletes",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.administrationAttempt",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus_assoc",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents_append",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.aggregateEvents_append_known",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.optionPlus_map_add_left",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.appendOwn_known_monotone",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.twoLevel",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.threeLevel",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.missingPromisedChild",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicateAttribution",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicateParentChildAttribution",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.incompatibleUnit",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknownRequired",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unrecordedReset",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.twoLevel_accepted",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.threeLevel_total",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.missing_promised_child_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.duplicate_attribution_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.incompatible_unit_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unknown_required_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.unrecorded_reset_rejected",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work",
+      "kind": "theorem"
+    }
+  ],
+  "theorem_count": 18,
+  "versions": [
+    {
+      "name": "version-1",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 0.125,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-1.log",
+      "stdout_log_sha256": "555545f0dde6ab75e40d7eaf02cff4724be3f97cf210d3d2c816409dc11bbd27",
+      "stdout_sha256": "b882b8f41a2e07585a3396b73d6e91fed2ce786f91d226471ce39102e6c60a2e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Lake version 5.0.0-src+f054605 (Lean version 4.32.1)"
+    },
+    {
+      "name": "version-2",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 2.329,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-2.log",
+      "stdout_log_sha256": "112e19bba0806bd736529fb85af46e5a533e7e25c0e6e7642e29c927a7b12423",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Lean (version 4.32.1, x86_64-w64-windows-gnu, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+    },
+    {
+      "name": "version-3",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 0.015,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-3.log",
+      "stdout_log_sha256": "9dda6a82cc3331ccce0c42e59b5493012c2b6ed577838a5b9d1f4b9443f05586",
+      "stdout_sha256": "4c3569f5da09975434dd9fd9a91fadbc4367a91d8f3c3fab59e9241ab9ee4bd8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "Python 3.12.14"
+    }
+  ],
+  "commands": [
+    {
+      "name": "build-target",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.Pal24NestedAccount"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 2.656,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/build-target.log",
+      "stdout_log_sha256": "4ead72cb220fda560542cfacfcff6c310b4a16a03db1aad572b6b79a06819b8b",
+      "stdout_sha256": "8f696ca44adbdeec951cd913f2c0f77f3344ce2e36c05282a71ff4ee3fb931aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "check-axioms",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24NestedAccountAxioms.lean"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 7.235,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/check-axioms.log",
+      "stdout_log_sha256": "57af297d2e35cb2fe1c1f3c7f10de508b9cd6fac833face21f57eaf9ac74bfc9",
+      "stdout_sha256": "f2362d348d7f63c9499365ac6340a5ff7420f6b154901ae527967c0f6e7a344f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "leanchecker-target",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.Pal24NestedAccount"
+      ],
+      "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test",
+      "exit_code": 0,
+      "runtime_seconds": 43.985,
+      "stdout_log": "Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/leanchecker-target.log",
+      "stdout_log_sha256": "80b312d207d5c37c76c84239aac8c965793eb9a253c489147da83c8fab9bc4db",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "axioms": {
+    "Experiments.Pal24NestedAccount.Unit": [],
+    "Experiments.Pal24NestedAccount.Charge": [],
+    "Experiments.Pal24NestedAccount.Account": [],
+    "Experiments.Pal24NestedAccount.AccountWork": [],
+    "Experiments.Pal24NestedAccount.chargeId": [],
+    "Experiments.Pal24NestedAccount.chargeValue": [],
+    "Experiments.Pal24NestedAccount.optionPlus": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.aggregateEvents": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.accountUnit": [],
+    "Experiments.Pal24NestedAccount.flattenEvents": [],
+    "Experiments.Pal24NestedAccount.structuralAggregate": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.flattenedAggregate": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.eventIds": [],
+    "Experiments.Pal24NestedAccount.noUnknown": [],
+    "Experiments.Pal24NestedAccount.uniqueAttribution": [],
+    "Experiments.Pal24NestedAccount.compatibleUnit": [],
+    "Experiments.Pal24NestedAccount.completeChildren": [],
+    "Experiments.Pal24NestedAccount.accepted": [],
+    "Experiments.Pal24NestedAccount.appendOwn": [],
+    "Experiments.Pal24NestedAccount.linkedEpochAggregate": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.administrationCompletes": [],
+    "Experiments.Pal24NestedAccount.administrationAttempt": [],
+    "Experiments.Pal24NestedAccount.optionPlus_assoc": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.aggregateEvents_append": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.aggregateEvents_append_known": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.optionPlus_map_add_left": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.appendOwn_known_monotone": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.twoLevel": [],
+    "Experiments.Pal24NestedAccount.threeLevel": [],
+    "Experiments.Pal24NestedAccount.missingPromisedChild": [],
+    "Experiments.Pal24NestedAccount.duplicateAttribution": [],
+    "Experiments.Pal24NestedAccount.duplicateParentChildAttribution": [],
+    "Experiments.Pal24NestedAccount.incompatibleUnit": [],
+    "Experiments.Pal24NestedAccount.unknownRequired": [],
+    "Experiments.Pal24NestedAccount.unrecordedReset": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.twoLevel_accepted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.threeLevel_total": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.missing_promised_child_rejected": [],
+    "Experiments.Pal24NestedAccount.duplicate_attribution_rejected": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.incompatible_unit_rejected": [],
+    "Experiments.Pal24NestedAccount.unknown_required_rejected": [],
+    "Experiments.Pal24NestedAccount.unrecorded_reset_rejected": [
+      "propext"
+    ],
+    "Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work": [
+      "propext"
+    ]
+  },
+  "signatures": {
+    "Experiments.Pal24NestedAccount.Unit": "Experiments.Pal24NestedAccount.Unit : Type",
+    "Experiments.Pal24NestedAccount.Charge": "Experiments.Pal24NestedAccount.Charge : Type",
+    "Experiments.Pal24NestedAccount.Account": "Experiments.Pal24NestedAccount.Account : Type",
+    "Experiments.Pal24NestedAccount.AccountWork": "Experiments.Pal24NestedAccount.AccountWork : Type",
+    "Experiments.Pal24NestedAccount.chargeId": "Experiments.Pal24NestedAccount.chargeId : Experiments.Pal24NestedAccount.Charge → ℕ",
+    "Experiments.Pal24NestedAccount.chargeValue": "Experiments.Pal24NestedAccount.chargeValue : Experiments.Pal24NestedAccount.Charge → Option ℕ",
+    "Experiments.Pal24NestedAccount.optionPlus": "Experiments.Pal24NestedAccount.optionPlus : Option ℕ → Option ℕ → Option ℕ",
+    "Experiments.Pal24NestedAccount.aggregateEvents": "Experiments.Pal24NestedAccount.aggregateEvents : List Experiments.Pal24NestedAccount.Charge → Option ℕ",
+    "Experiments.Pal24NestedAccount.accountUnit": "Experiments.Pal24NestedAccount.accountUnit : Experiments.Pal24NestedAccount.Account →\n  Experiments.Pal24NestedAccount.Unit",
+    "Experiments.Pal24NestedAccount.flattenEvents": "Experiments.Pal24NestedAccount.flattenEvents : Experiments.Pal24NestedAccount.Account →\n  List Experiments.Pal24NestedAccount.Charge",
+    "Experiments.Pal24NestedAccount.structuralAggregate": "Experiments.Pal24NestedAccount.structuralAggregate : Experiments.Pal24NestedAccount.Account → Option ℕ",
+    "Experiments.Pal24NestedAccount.flattenedAggregate": "Experiments.Pal24NestedAccount.flattenedAggregate : Experiments.Pal24NestedAccount.Account → Option ℕ",
+    "Experiments.Pal24NestedAccount.eventIds": "Experiments.Pal24NestedAccount.eventIds : Experiments.Pal24NestedAccount.Account → List ℕ",
+    "Experiments.Pal24NestedAccount.noUnknown": "Experiments.Pal24NestedAccount.noUnknown : Experiments.Pal24NestedAccount.Account → Bool",
+    "Experiments.Pal24NestedAccount.uniqueAttribution": "Experiments.Pal24NestedAccount.uniqueAttribution : Experiments.Pal24NestedAccount.Account → Prop",
+    "Experiments.Pal24NestedAccount.compatibleUnit": "Experiments.Pal24NestedAccount.compatibleUnit : Experiments.Pal24NestedAccount.Account → Bool",
+    "Experiments.Pal24NestedAccount.completeChildren": "Experiments.Pal24NestedAccount.completeChildren : Experiments.Pal24NestedAccount.Account → Bool",
+    "Experiments.Pal24NestedAccount.accepted": "Experiments.Pal24NestedAccount.accepted : Experiments.Pal24NestedAccount.Account → Prop",
+    "Experiments.Pal24NestedAccount.appendOwn": "Experiments.Pal24NestedAccount.appendOwn : Experiments.Pal24NestedAccount.Charge →\n  Experiments.Pal24NestedAccount.Account → Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.linkedEpochAggregate": "Experiments.Pal24NestedAccount.linkedEpochAggregate : ℕ → Bool → Experiments.Pal24NestedAccount.Account → Option ℕ",
+    "Experiments.Pal24NestedAccount.administrationCompletes": "Experiments.Pal24NestedAccount.administrationCompletes : ℕ → ℕ → Bool",
+    "Experiments.Pal24NestedAccount.administrationAttempt": "Experiments.Pal24NestedAccount.administrationAttempt : Experiments.Pal24NestedAccount.AccountWork →\n  ℕ → ℕ → Bool × Experiments.Pal24NestedAccount.AccountWork",
+    "Experiments.Pal24NestedAccount.optionPlus_assoc": "Experiments.Pal24NestedAccount.optionPlus_assoc : ∀ (left middle right : Option ℕ),\n  Experiments.Pal24NestedAccount.optionPlus (Experiments.Pal24NestedAccount.optionPlus left middle) right =\n    Experiments.Pal24NestedAccount.optionPlus left (Experiments.Pal24NestedAccount.optionPlus middle right)",
+    "Experiments.Pal24NestedAccount.aggregateEvents_append": "Experiments.Pal24NestedAccount.aggregateEvents_append : ∀ (left right : List Experiments.Pal24NestedAccount.Charge),\n  Experiments.Pal24NestedAccount.aggregateEvents (left ++ right) =\n    Experiments.Pal24NestedAccount.optionPlus (Experiments.Pal24NestedAccount.aggregateEvents left)\n      (Experiments.Pal24NestedAccount.aggregateEvents right)",
+    "Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate": "Experiments.Pal24NestedAccount.structuralAggregate_eq_flattenedAggregate : ∀\n  (account : Experiments.Pal24NestedAccount.Account),\n  Experiments.Pal24NestedAccount.structuralAggregate account = Experiments.Pal24NestedAccount.flattenedAggregate account",
+    "Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids": "Experiments.Pal24NestedAccount.accepted_aggregate_matches_flattening_with_unique_ids : ∀\n  (account : Experiments.Pal24NestedAccount.Account),\n  Experiments.Pal24NestedAccount.accepted account →\n    Experiments.Pal24NestedAccount.structuralAggregate account =\n        Experiments.Pal24NestedAccount.flattenedAggregate account ∧\n      (Experiments.Pal24NestedAccount.eventIds account).Nodup",
+    "Experiments.Pal24NestedAccount.aggregateEvents_append_known": "Experiments.Pal24NestedAccount.aggregateEvents_append_known : ∀ (events : List Experiments.Pal24NestedAccount.Charge)\n  (eventId amount : ℕ),\n  Experiments.Pal24NestedAccount.aggregateEvents\n      (events ++ [Experiments.Pal24NestedAccount.Charge.known eventId amount]) =\n    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.aggregateEvents events)",
+    "Experiments.Pal24NestedAccount.optionPlus_map_add_left": "Experiments.Pal24NestedAccount.optionPlus_map_add_left : ∀ (amount : ℕ) (left right : Option ℕ),\n  Experiments.Pal24NestedAccount.optionPlus (Option.map (fun total => total + amount) left) right =\n    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.optionPlus left right)",
+    "Experiments.Pal24NestedAccount.appendOwn_known_monotone": "Experiments.Pal24NestedAccount.appendOwn_known_monotone : ∀ (account : Experiments.Pal24NestedAccount.Account)\n  (eventId amount : ℕ),\n  Experiments.Pal24NestedAccount.structuralAggregate\n      (Experiments.Pal24NestedAccount.appendOwn (Experiments.Pal24NestedAccount.Charge.known eventId amount) account) =\n    Option.map (fun total => total + amount) (Experiments.Pal24NestedAccount.structuralAggregate account)",
+    "Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend": "Experiments.Pal24NestedAccount.linked_epoch_preserves_old_spend : ∀ (priorSpent total : ℕ)\n  (account : Experiments.Pal24NestedAccount.Account),\n  Experiments.Pal24NestedAccount.structuralAggregate account = Option.some total →\n    Experiments.Pal24NestedAccount.linkedEpochAggregate priorSpent Bool.true account = Option.some (priorSpent + total)",
+    "Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero": "Experiments.Pal24NestedAccount.unknown_is_not_resolved_zero : ∀ (eventId : ℕ),\n  Experiments.Pal24NestedAccount.chargeValue (Experiments.Pal24NestedAccount.Charge.unknown eventId) ≠ Option.some 0",
+    "Experiments.Pal24NestedAccount.twoLevel": "Experiments.Pal24NestedAccount.twoLevel : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.threeLevel": "Experiments.Pal24NestedAccount.threeLevel : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.missingPromisedChild": "Experiments.Pal24NestedAccount.missingPromisedChild : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.duplicateAttribution": "Experiments.Pal24NestedAccount.duplicateAttribution : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.duplicateParentChildAttribution": "Experiments.Pal24NestedAccount.duplicateParentChildAttribution : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.incompatibleUnit": "Experiments.Pal24NestedAccount.incompatibleUnit : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.unknownRequired": "Experiments.Pal24NestedAccount.unknownRequired : Experiments.Pal24NestedAccount.Account",
+    "Experiments.Pal24NestedAccount.unrecordedReset": "Experiments.Pal24NestedAccount.unrecordedReset : Option ℕ",
+    "Experiments.Pal24NestedAccount.twoLevel_accepted": "Experiments.Pal24NestedAccount.twoLevel_accepted : Experiments.Pal24NestedAccount.accepted\n  Experiments.Pal24NestedAccount.twoLevel",
+    "Experiments.Pal24NestedAccount.threeLevel_total": "Experiments.Pal24NestedAccount.threeLevel_total : Experiments.Pal24NestedAccount.structuralAggregate\n    Experiments.Pal24NestedAccount.threeLevel =\n  Option.some 20",
+    "Experiments.Pal24NestedAccount.missing_promised_child_rejected": "Experiments.Pal24NestedAccount.missing_promised_child_rejected : Experiments.Pal24NestedAccount.completeChildren\n    Experiments.Pal24NestedAccount.missingPromisedChild =\n  Bool.false",
+    "Experiments.Pal24NestedAccount.duplicate_attribution_rejected": "Experiments.Pal24NestedAccount.duplicate_attribution_rejected : ¬Experiments.Pal24NestedAccount.uniqueAttribution\n    Experiments.Pal24NestedAccount.duplicateAttribution",
+    "Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected": "Experiments.Pal24NestedAccount.parent_child_duplicate_attribution_rejected : ¬Experiments.Pal24NestedAccount.uniqueAttribution\n    Experiments.Pal24NestedAccount.duplicateParentChildAttribution",
+    "Experiments.Pal24NestedAccount.incompatible_unit_rejected": "Experiments.Pal24NestedAccount.incompatible_unit_rejected : Experiments.Pal24NestedAccount.compatibleUnit\n    Experiments.Pal24NestedAccount.incompatibleUnit =\n  Bool.false",
+    "Experiments.Pal24NestedAccount.unknown_required_rejected": "Experiments.Pal24NestedAccount.unknown_required_rejected : Experiments.Pal24NestedAccount.noUnknown\n    Experiments.Pal24NestedAccount.unknownRequired =\n  Bool.false",
+    "Experiments.Pal24NestedAccount.unrecorded_reset_rejected": "Experiments.Pal24NestedAccount.unrecorded_reset_rejected : Experiments.Pal24NestedAccount.unrecordedReset = Option.none",
+    "Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work": "Experiments.Pal24NestedAccount.insufficient_administrative_fuel_preserves_account_work : ∀\n  (work : Experiments.Pal24NestedAccount.AccountWork) (fuel requiredFuel : ℕ),\n  requiredFuel > fuel → Experiments.Pal24NestedAccount.administrationAttempt work fuel requiredFuel = (Bool.false, work)"
+  },
+  "input_hashes_after": {
+    "Audit.lean": "c10a8348b85ff9a863aa6a6a758711e2bc5862dd3d35523fdfd37ee5b73615f1",
+    "Audit/AttackRun0001.lean": "2063ddb229133a2806964c4c541ba93128fcb2cffb0e2eca52b0201064eefcf2",
+    "Audit/AttackRun0002.lean": "45c73e92ec536b852655dae37ef3976b0bfc76486d0cd51797085deb94ac597d",
+    "Audit/AttackRun0003.lean": "c622cccf48fc6bc6d313a8b82526154b4baa8aaebf73947053a4ecfe89d96d22",
+    "Audit/Bootstrap.lean": "cb9147c5848dbc2019927c61a8aa16f3313130d477c01635130556713476c999",
+    "Audit/BridgeEndpoint.lean": "07b227667404b19cbd0e73863e3c7ddfd4f69d5e450d42fc398d8b1e6a006e90",
+    "Audit/pal-v24-batches/B3/claims.json": "683625fec6340e0928e1c29a2518172afc04237f1e2c4ac670e953619ddcc80a",
+    "Audit/pal-v24-batches/README.md": "4b364b108383c3beab3a0e948ab8ab7a097b454c6b7c05541bad4b67808df47e",
+    "Audit/pal-v24-batches/run.py": "e5e5bd8e3341d179f11551a3c5c68a7d68d1441231eca575981f73428353f5d8",
+    "Audit/pal-v24-candidate/source-manifest.json": "aa09609a54409a28764fe39b7ed783b795218483497c97ca87d6b04cbdd38d5c",
+    "Experiments.lean": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+    "Experiments/AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "Experiments/AbstractLoopsJointAxioms.lean": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+    "Experiments/AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "Experiments/AbstractLoopsPostprocessingAxioms.lean": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+    "Experiments/Bridge.lean": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+    "Experiments/BridgeAxioms.lean": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+    "Experiments/BridgeDiagram.lean": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+    "Experiments/BridgeDiagramAxioms.lean": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+    "Experiments/BridgeDimension.lean": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+    "Experiments/BridgeDimensionAxioms.lean": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+    "Experiments/BridgeFourSector.lean": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+    "Experiments/BridgeFourSectorAxioms.lean": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+    "Experiments/BridgeGeneratedRecovery.lean": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+    "Experiments/BridgeGeneratedRecoveryAxioms.lean": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+    "Experiments/BridgeReadout.lean": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+    "Experiments/BridgeReadoutAxioms.lean": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+    "Experiments/BridgeRecovery.lean": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+    "Experiments/BridgeRecoveryAxioms.lean": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+    "Experiments/Charter.lean": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+    "Experiments/CharterAxioms.lean": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+    "Experiments/CharterFollowup.lean": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+    "Experiments/CharterFollowupAxioms.lean": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+    "Experiments/MindContinuation.lean": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+    "Experiments/MindContinuationAxioms.lean": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+    "Experiments/Pal23.lean": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+    "Experiments/Pal23Axioms.lean": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+    "Experiments/Pal23Cadence.lean": "5f492008c9c5d1f2621f17b5e520f0b18e372fe9bd8c5b05c2fef637795a151c",
+    "Experiments/Pal23CadenceAxioms.lean": "82c729a8448dd6d654d43eb2c8b1077b1561e5aaf982108c2dc75225928a32d9",
+    "Experiments/Pal23Followup.lean": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+    "Experiments/Pal23FollowupAxioms.lean": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+    "Experiments/Pal23Interface.lean": "87c0a625a16af28e752e293c282512b104e8b75d79a84875e982a591ecb2a17a",
+    "Experiments/Pal23InterfaceAxioms.lean": "4acfc13caead4ba35bc64bc01009c9bc83c6f3f90a1f1236480607a5d7593eec",
+    "Experiments/Pal23Roundtrip.lean": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+    "Experiments/Pal23RoundtripAxioms.lean": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+    "Experiments/Pal23TraceReplay.lean": "aa34431d3722106f3782953411058fc9bcb5a17e06b7e3442e697c9680d70c5e",
+    "Experiments/Pal23TraceReplayAxioms.lean": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+    "Experiments/Pal24Continuation.lean": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+    "Experiments/Pal24ContinuationAxioms.lean": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+    "Experiments/Pal24Feedback.lean": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+    "Experiments/Pal24FeedbackAxioms.lean": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+    "Experiments/Pal24HistoryQuotient.lean": "e010ae9a982b6ad9964ec2f532f5a14b1ed357ca67a902864bca0553a32c8185",
+    "Experiments/Pal24HistoryQuotientAxioms.lean": "d7b060282ebffff6350a30d227d2dcbf7941848ee5363f9219807689c8041f52",
+    "Experiments/Pal24IntervalSlack.lean": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+    "Experiments/Pal24IntervalSlackAxioms.lean": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+    "Experiments/Pal24NestedAccount.lean": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+    "Experiments/Pal24NestedAccountAxioms.lean": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+    "Experiments/Pal24SourcePath.lean": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+    "Experiments/Pal24SourcePathAxioms.lean": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+    "Experiments/Pal24TypedPaths.lean": "54d7f04dadb07da370bc13565b7f9d51912531b945eabc791bd202647791ebbb",
+    "Experiments/Pal24TypedPathsAxioms.lean": "928fbd3f631fd44603ebb56352044adcfb1392dabfaaaa00dffa4ecbe59ba9c2",
+    "PAL.lean": "b89fd3f4c5a04abdc9ece86e46ff0637e1043b84263214979870482c65a546ff",
+    "PAL/AttackRun0001.lean": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+    "PAL/AttackRun0002.lean": "9d76dfe1190960a5b3df1b3f1f7074e20fa358d962cd94bc3e2e93abce24d1f8",
+    "PAL/AttackRun0003.lean": "5a24a1c63b01c66892efa8b29bf113a185a930191bb0691fd14f7d72d5b77f08",
+    "PAL/Bootstrap.lean": "a012f326a3bb4408baa8acb332e5638117650b30d4bb0e37407fc3200e5a35f4",
+    "PALLeanAudit.lean": "7b3fdf617c1b921fbcfba700e878f01f1632637e3a8c5a6cecb63f15eda84372",
+    "external:C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "372c2eae555b344520bf147be0096e009069aeca4e7f78d6aecea6d53158056a",
+    "external:C:\\Users\\cdpan\\.elan\\bin\\lake.exe": "175089915efc623126a1560ed517cd52ec2d4d09f2adc1c10f22f56568fed5ad",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-C_Compatibility_Note.docx": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-L_Obligation_and_Decision_Ledger.docx": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-T_Conformance_Tests.docx": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+    "external:E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3_Mechanical_Structural_Spine.docx": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx": "2ed7739b898edf4552316ef4c6e002f702656746cb89f33d3c8531e77d96381e",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx": "bc655015201c87e62d5d79a16bc7376aad5cd517217df5a0c2bc01c4c8e37a9b",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx": "110602faf4f2e7dae3ef46a998561a35497363d7c54deb257f2c6226f6231539",
+    "output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx": "27d8caece6e7f4162cebcc37bb5a9edadb9eb3fdeb34d064a39ff844edcb763f",
+    "output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx": "61e6894c21a3c6a7fe2cbfec5be82f1f11ed83fb640f7a38a1b0b89638b68786"
+  },
+  "inputs_unchanged": true,
+  "git_after": {
+    "branch": "agent/pal-v24-candidate-20260922",
+    "head": "6d9ec6a6d37bac52b46e20b241d861f523f33950",
+    "dirty": true,
+    "status_porcelain": "?? Audit/pal-v24-batches/B1/NOTES.md\n?? Audit/pal-v24-batches/B1/claims.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T082842897088Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T083522727965Z/version-3.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/build-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/check-axioms.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-1.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-2.log\n?? Audit/pal-v24-batches/B1/evidence/attempt-20260922T090029194236Z/version-3.log\n?? Audit/pal-v24-batches/B1/results.json\n?? Audit/pal-v24-batches/B2/NOTES.md\n?? Audit/pal-v24-batches/B2/claims.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/receipt-before-inspection-format-repair.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T082940695176Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T083618144501Z/version-3.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/build-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/check-axioms.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-1.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-2.log\n?? Audit/pal-v24-batches/B2/evidence/attempt-20260922T090124664050Z/version-3.log\n?? Audit/pal-v24-batches/B2/results.json\n?? Audit/pal-v24-batches/B3/NOTES.md\n?? Audit/pal-v24-batches/B3/claims.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/build-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/check-axioms.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-1.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-2.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T083713697694Z/version-3.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/build-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/check-axioms.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/leanchecker-target.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-1.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-2.log\n?? Audit/pal-v24-batches/B3/evidence/attempt-20260922T090221584634Z/version-3.log\n?? Audit/pal-v24-batches/B3/results.json\n?? Audit/pal-v24-batches/C1/NOTES.md\n?? Audit/pal-v24-batches/C1/claims.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/build-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/check-axioms.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-1.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-2.log\n?? Audit/pal-v24-batches/C1/evidence/attempt-20260922T083808625541Z/version-3.log\n?? Audit/pal-v24-batches/C1/results.json\n?? Audit/pal-v24-batches/C1/source-excerpts.json\n?? Audit/pal-v24-batches/C2/NOTES.md\n?? Audit/pal-v24-batches/C2/claims.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/build-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/check-axioms.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-1.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-2.log\n?? Audit/pal-v24-batches/C2/evidence/attempt-20260922T083902089735Z/version-3.log\n?? Audit/pal-v24-batches/C2/results.json\n?? Audit/pal-v24-batches/C2/source-excerpts.json\n?? Audit/pal-v24-batches/C3/NOTES.md\n?? Audit/pal-v24-batches/C3/claims.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/build-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/check-axioms.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/receipt-before-prefix-repair.json\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-1.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-2.log\n?? Audit/pal-v24-batches/C3/evidence/attempt-20260922T084045023131Z/version-3.log\n?? Audit/pal-v24-batches/C3/results.json\n?? Audit/pal-v24-batches/C3/source-excerpts.json\n?? Audit/pal-v24-batches/C4/NOTES.md\n?? Audit/pal-v24-batches/C4/claims.json\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/build-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/check-axioms.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-1.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-2.log\n?? Audit/pal-v24-batches/C4/evidence/attempt-20260922T084141479873Z/version-3.log\n?? Audit/pal-v24-batches/C4/results.json\n?? Audit/pal-v24-batches/C4/source-excerpts.json\n?? Audit/pal-v24-batches/C5/NOTES.md\n?? Audit/pal-v24-batches/C5/claims.json\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/build-target.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/check-axioms.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/receipt-before-final-nine.json\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-1.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-2.log\n?? Audit/pal-v24-batches/C5/evidence/attempt-20260922T084233974824Z/version-3.log\n?? Audit/pal-v24-batches/C5/results.json\n?? Audit/pal-v24-batches/C5/source-excerpts.json\n?? Audit/pal-v24-batches/C6/NOTES.md\n?? Audit/pal-v24-batches/C6/claims.json\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/build-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/check-axioms.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/receipt-before-inventory-order-repair.json\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-1.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-2.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085639775375Z/version-3.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/build-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/check-axioms.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/leanchecker-target.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-1.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-2.log\n?? Audit/pal-v24-batches/C6/evidence/attempt-20260922T085931599640Z/version-3.log\n?? Audit/pal-v24-batches/C6/results.json\n?? Audit/pal-v24-batches/C6/source-excerpts.json\n?? Audit/pal-v24-batches/EXECUTION-NOTES.md\n?? Audit/pal-v24-batches/README.md\n?? Audit/pal-v24-batches/integration_check.py\n?? Audit/pal-v24-batches/qa/B1-review.md\n?? Audit/pal-v24-batches/qa/B2-review.md\n?? Audit/pal-v24-batches/qa/B3-review.md\n?? Audit/pal-v24-batches/qa/C1-review.md\n?? Audit/pal-v24-batches/qa/C2-review.md\n?? Audit/pal-v24-batches/qa/C3-review.md\n?? Audit/pal-v24-batches/qa/C4-review.md\n?? Audit/pal-v24-batches/qa/C5-review.md\n?? Audit/pal-v24-batches/qa/C6-review.md\n?? Audit/pal-v24-batches/qa/followup-disposition.md\n?? Audit/pal-v24-batches/qa/runner-review.md\n?? Audit/pal-v24-batches/run.py\n?? Audit/pal-v24-candidate/CORPUS-CANDIDATES.md\n?? Audit/pal-v24-candidate/WORKSTATE.md\n?? Audit/pal-v24-candidate/build-receipt.json\n?? Audit/pal-v24-candidate/build_documents.py\n?? Audit/pal-v24-candidate/content/atlas-edits.json\n?? Audit/pal-v24-candidate/content/author-notes.md\n?? Audit/pal-v24-candidate/content/compatibility-edits.json\n?? Audit/pal-v24-candidate/content/ledger-edits.json\n?? Audit/pal-v24-candidate/content/quick-spine.md\n?? Audit/pal-v24-candidate/content/spine-edits.json\n?? Audit/pal-v24-candidate/content/tests-edits.json\n?? Audit/pal-v24-candidate/freeze_sources.py\n?? Audit/pal-v24-candidate/normalize_metadata.py\n?? Audit/pal-v24-candidate/qa/atlas-visual.json\n?? Audit/pal-v24-candidate/qa/compatibility-visual.json\n?? Audit/pal-v24-candidate/qa/final-visual-acceptance.json\n?? Audit/pal-v24-candidate/qa/ledger-visual.json\n?? Audit/pal-v24-candidate/qa/quick-visual.json\n?? Audit/pal-v24-candidate/qa/spine-visual.json\n?? Audit/pal-v24-candidate/qa/tests-visual.json\n?? Audit/pal-v24-candidate/raster_page.py\n?? Audit/pal-v24-candidate/render_serial.py\n?? Audit/pal-v24-candidate/source-manifest.json\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/PAL_v2.4/CHANGELOG_AND_MIGRATION.md\n?? output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx\n?? output/PAL_v2.4/DOCX/PAL_v2.4_Quick_Spine.docx\n?? output/PAL_v2.4/LEAN_RECEIPT_BOOK.md\n?? output/PAL_v2.4/PAL_v2.4_Quick_Spine.md\n?? output/PAL_v2.4/README.md\n?? output/PAL_v2.4_Workflow_Draft.md\n?? output/pdf/PAL_v2.4_Workflow_Draft.pdf\n?? tmp/pal24-c-page21-top.png\n?? tmp/pal24-c-page6-top.png"
+  },
+  "finished_utc": "2026-09-22T09:03:18.346806+00:00"
+}

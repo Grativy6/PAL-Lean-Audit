@@ -1,0 +1,68 @@
+{
+  "source_id": "PAL_v2.3-M Mathematical Realization Atlas",
+  "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+  "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+  "indexing": "One-based paragraphs P0807-P0821 from the repository verified Atlas extraction.",
+  "paragraphs": [
+    {
+      "paragraph": "P0807",
+      "text": "Histories H, continuations Z, task observation Q, concatenation, and decoder/realization maps."
+    },
+    {
+      "paragraph": "P0808",
+      "text": "Formal object"
+    },
+    {
+      "paragraph": "P0809",
+      "text": "h≡_Q h’ iff for every continuation z, Q(hz)=Q(h’z); χ_Q=H/≡_Q."
+    },
+    {
+      "paragraph": "P0810",
+      "text": "Constructor or predicate"
+    },
+    {
+      "paragraph": "P0811",
+      "text": "Quotient histories by future task equivalence and retain the class realization/dependency map."
+    },
+    {
+      "paragraph": "P0812",
+      "text": "Assumptions and cost"
+    },
+    {
+      "paragraph": "P0813",
+      "text": "Deterministic task semantics, continuation closure, equivalence decidability where claimed, and nontrivial usefulness."
+    },
+    {
+      "paragraph": "P0814",
+      "text": "Preservation account"
+    },
+    {
+      "paragraph": "P0815",
+      "text": "Task version, aperture, source histories through dependencies, reachable-image decoder, any separately proved totalization and decoder class, and discarded distinctions. Cross-route: M-INTERFACE-FIBER."
+    },
+    {
+      "paragraph": "P0816",
+      "text": "Predecessor and strictness"
+    },
+    {
+      "paragraph": "P0817",
+      "text": "A8 histories without quotient/sufficiency are a predecessor model; a one-class quotient must still prove nontrivial work if usefulness is claimed."
+    },
+    {
+      "paragraph": "P0818",
+      "text": "Claim class and status"
+    },
+    {
+      "paragraph": "P0819",
+      "text": "Myhill-Nerode realization; minimality only under its theorem assumptions."
+    },
+    {
+      "paragraph": "P0820",
+      "text": "Tests and falsifier"
+    },
+    {
+      "paragraph": "P0821",
+      "text": "Equivalence laws, right congruence, reachable decoder, totalization and decoder-class separation, task mutation, nontrivial work, aperture stability, and forget-to-A8."
+    }
+  ]
+}

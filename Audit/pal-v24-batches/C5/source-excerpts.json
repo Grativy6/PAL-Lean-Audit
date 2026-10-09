@@ -1,0 +1,48 @@
+{
+  "source_id": "Abstract-Loops-v1.0",
+  "path": "E:/New folder/New folder (2)/seeds/Corpus/Math Stack/Abstract_Loops_v1.0.docx",
+  "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+  "indexing": "One-based w:body/w:p paragraphs from word/document.xml.",
+  "paragraphs": [
+    {
+      "paragraph": "P0037",
+      "text": "Call y a closed deterministic postprocessing of τ when y=c∘τ for some map c on R and no new observation enters. Then every equality already forced by τ remains an equality in y:"
+    },
+    {
+      "paragraph": "P0038",
+      "text": "K(τ) ⊆ K(y)"
+    },
+    {
+      "paragraph": "P0039",
+      "text": "In partition language, y can only coarsen the joint partition. With an unrestricted output alphabet, every coarsening in the partition-lattice interval between the joint partition and the one-block partition can be realized by a suitable quotient map; this interval need not be linearly ordered. An injective c preserves all joint distinctions. A noninjective c collapses some. A constant c collapses all at the retained y-interface. With a fixed output alphabet or restricted operations, only part of this interval may be realizable."
+    },
+    {
+      "paragraph": "P0040",
+      "text": "Preservation. All distinctions carried by R remain readable."
+    },
+    {
+      "paragraph": "P0041",
+      "text": "Partial collapse. Some joint states become indistinguishable at the output."
+    },
+    {
+      "paragraph": "P0042",
+      "text": "Total collapse. Assuming y is the retained interface, a constant output makes every starting alternative indistinguishable there."
+    },
+    {
+      "paragraph": "P0043",
+      "text": "The last case is 'annihilation' only in an informational sense. It proves no physical destruction, entropy increase, or ontological disappearance. A physical annihilation claim would require an absorbing state, extinction configuration, deadlock, loss of viability, or another declared dynamics."
+    },
+    {
+      "paragraph": "P0044",
+      "text": "3.1 What iteration can and cannot add"
+    },
+    {
+      "paragraph": "P0045",
+      "text": "For a closed deterministic state-only evolution s(n+1)=F_n(s(n)), with the update schedule fixed, s(0) determined by τ, and no rereading or new input, each later state is a postprocessing of the earlier one. Its partition can stay equally fine or coarsen, never refine. A truly autonomous loop is the fixed-map case F_n=F, or else the clock and schedule must be included in state. If the loop may reread the original joint trace, an intermediate loss can be recovered, but nothing finer than the original joint fibers appears. Only a fresh observation changes the interface and can genuinely refine it. Computation can reorganize distinctions; it cannot manufacture a distinction absent from every input it receives."
+    },
+    {
+      "paragraph": "P0046",
+      "text": "On a finite reachable image, deterministic iteration can strictly merge partition blocks only finitely many times, so the induced kernel partition eventually stabilizes. The state trajectory may still cycle. No corresponding finite stabilization follows merely from an infinite reachable image."
+    }
+  ]
+}

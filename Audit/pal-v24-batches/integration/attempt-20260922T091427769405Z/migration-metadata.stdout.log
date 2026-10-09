@@ -1,0 +1,5 @@
+Candidate input check passed: strict JSON-compatible YAML, five source locks, eight CANDIDATE statements, and OPEN O04/O25.
+Repository impact canonical-LF SHA-256: 42501cc8ee9377999ce42483bd29699e73f41270048c53d7221678126f9f22fe
+Verified docs\generated\summary.md and docs\generated\outcomes.svg
+Verified docs\generated\attack-run-0002-summary.md and docs\generated\attack-run-0002-outcomes.svg
+Release migration check passed: PAL v2.1 published identities and D16-D23 adoption verified; 17 historical AR1/AR2 Git blobs preserved; D-FIRST-OCCURRENCE, O04, and O25 remain OPEN.

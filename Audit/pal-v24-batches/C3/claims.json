@@ -1,0 +1,402 @@
+{
+  "batch": "C3",
+  "module": "Experiments.Pal24TypedPaths",
+  "axioms_module": "Experiments.Pal24TypedPathsAxioms",
+  "source_inputs": [
+    {
+      "path": "E:/New folder/New folder (2)/seeds/Corpus/Compact Corpus/DOCX/PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "corpus_source"
+    },
+    {
+      "path": "Audit/pal-v24-batches/C3/source-excerpts.json",
+      "sha256": "c0ebda00f29a5566373ad0080fe0b613974f2ba06b4fe3e995ab933fb2cb75b2",
+      "role": "source_extraction"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.Pal24TypedPaths.Vertex",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0627-P0641"
+      ],
+      "assumptions": [
+        "Three tags"
+      ],
+      "statement": "Finite vertex tags.",
+      "ceiling": "No receipt identity.",
+      "residual": "No registry."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.RelationKind",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0627-P0641"
+      ],
+      "assumptions": [
+        "Two tags"
+      ],
+      "statement": "Finite relation tags.",
+      "ceiling": "Tag only.",
+      "residual": "No relation semantics."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.EvidenceKind",
+      "kind": "inductive",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0627-P0641"
+      ],
+      "assumptions": [
+        "Receipt tag accepted"
+      ],
+      "statement": "Receipt and unverified evidence tags.",
+      "ceiling": "No witness truth.",
+      "residual": "No provenance."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.Edge",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0627-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Edge has source, target, relation, evidence.",
+      "ceiling": "Schema only.",
+      "residual": "No authenticity."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.PathRecord",
+      "kind": "structure",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0629-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Path record retains start, finish, ordered edges.",
+      "ceiling": "Raw record needs validation.",
+      "residual": "No graph coverage."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.follow",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0629-P0633"
+      ],
+      "assumptions": [
+        "Receipt evidence"
+      ],
+      "statement": "Follow ordered composable receipt edges or return none.",
+      "ceiling": "Finite lists only.",
+      "residual": "No coercions."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.pathValid",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0629-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Path is valid when follow reaches declared finish.",
+      "ceiling": "Modeled endpoints only.",
+      "residual": "No source identity."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.checkedAppend",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0631-P0633"
+      ],
+      "assumptions": [
+        "Valid prefix, endpoint, and receipt checks"
+      ],
+      "statement": "Append only after the existing path is valid and the edge is endpoint-matching with a receipt tag.",
+      "ceiling": "No silent conversion.",
+      "residual": "No provenance validation."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.deleteLastEdges",
+      "kind": "def",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0635-P0637"
+      ],
+      "assumptions": [],
+      "statement": "Delete the final edge from a record's edge history.",
+      "ceiling": "List operation only.",
+      "residual": "Finish recomputation omitted."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.coOccur",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0637"
+      ],
+      "assumptions": [],
+      "statement": "Two vertices occur in a roster.",
+      "ceiling": "Does not construct an edge.",
+      "residual": "No relation inference."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.noEdgeBetween",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0637"
+      ],
+      "assumptions": [],
+      "statement": "No listed directed edge has selected endpoints.",
+      "ceiling": "Listed edges only.",
+      "residual": "No closed world claim."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.follow_append_edge",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0629-P0633"
+      ],
+      "assumptions": [
+        "Valid prefix, matching source, receipt evidence"
+      ],
+      "statement": "Following a valid prefix plus a checked edge reaches its target.",
+      "ceiling": "Finite list theorem.",
+      "residual": "No graph semantics."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.checkedAppend_valid",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0631-P0635"
+      ],
+      "assumptions": [
+        "Successful checked append"
+      ],
+      "statement": "Successful checked append derives path validity from its validated prefix and checked edge.",
+      "ceiling": "No identity/provenance inference.",
+      "residual": "No arbitrary evidence policy."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.delete_appended_edge_recovers_predecessor",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0635-P0637"
+      ],
+      "assumptions": [
+        "Literal edge list"
+      ],
+      "statement": "Deleting a just-appended edge recovers the predecessor list.",
+      "ceiling": "List history only.",
+      "residual": "Record finish not recomputed."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.ab",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0640-P0641"
+      ],
+      "assumptions": [],
+      "statement": "Receipt edge a to b.",
+      "ceiling": "Fixture only.",
+      "residual": "No source fact."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.bc",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0640-P0641"
+      ],
+      "assumptions": [],
+      "statement": "Receipt edge b to c.",
+      "ceiling": "Fixture only.",
+      "residual": "No source fact."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.wrongEndpoint",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0631-P0633"
+      ],
+      "assumptions": [],
+      "statement": "Receipt edge with wrong source for pathAB.",
+      "ceiling": "Fixture only.",
+      "residual": "No alternate endpoint policy."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.wrongEvidence",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0631-P0633"
+      ],
+      "assumptions": [],
+      "statement": "Endpoint-matching unverified edge.",
+      "ceiling": "Fixture only.",
+      "residual": "No evidence registry."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.emptyAtA",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0629"
+      ],
+      "assumptions": [],
+      "statement": "Empty path identity at a.",
+      "ceiling": "Fixture only.",
+      "residual": "No category claim."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.pathAB",
+      "kind": "def",
+      "classification": "CONSISTENT_REALIZATION",
+      "source_routes": [
+        "M-A3:P0629-P0635"
+      ],
+      "assumptions": [],
+      "statement": "One-edge path a to b.",
+      "ceiling": "Fixture only.",
+      "residual": "No source receipt."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.malformedAtB",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0629-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Malformed empty-edge record whose declared finish disagrees with its start.",
+      "ceiling": "Fixture only.",
+      "residual": "No external malformed-record claim."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.cooccurringRoster",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0637"
+      ],
+      "assumptions": [],
+      "statement": "Roster containing a and b.",
+      "ceiling": "Fixture only.",
+      "residual": "No edge implied."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.noEdges",
+      "kind": "def",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0637"
+      ],
+      "assumptions": [],
+      "statement": "Empty edge list.",
+      "ceiling": "Fixture only.",
+      "residual": "No external absence claim."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.empty_path_valid",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0629"
+      ],
+      "assumptions": [],
+      "statement": "Empty fixture is valid.",
+      "ceiling": "Fixture only.",
+      "residual": "No graph claim."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.append_ab_creates_valid_path",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0631-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Appending ab to emptyAtA yields valid pathAB.",
+      "ceiling": "Fixture only.",
+      "residual": "No provenance."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.append_bc_preserves_ordered_history",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "M-A3:P0631-P0635"
+      ],
+      "assumptions": [],
+      "statement": "Appending bc retains ordered history [ab,bc].",
+      "ceiling": "Fixture only.",
+      "residual": "No general history completeness."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.mismatched_endpoint_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0631-P0633"
+      ],
+      "assumptions": [],
+      "statement": "Wrong endpoint append returns none.",
+      "ceiling": "Fixture only.",
+      "residual": "No conversion."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.unverified_evidence_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0631-P0633"
+      ],
+      "assumptions": [],
+      "statement": "Unverified evidence append returns none.",
+      "ceiling": "Fixture only.",
+      "residual": "No evidence truth."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.malformed_prefix_rejected",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0629-P0635"
+      ],
+      "assumptions": [],
+      "statement": "An endpoint-matching receipt edge is rejected when the existing path record is malformed.",
+      "ceiling": "Finite counterfixture only.",
+      "residual": "The receipt tag is not authenticated evidence."
+    },
+    {
+      "name": "Experiments.Pal24TypedPaths.cooccurrence_without_edge_countermodel",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "M-A3:P0637"
+      ],
+      "assumptions": [],
+      "statement": "a and b co-occur while no edge a to b exists.",
+      "ceiling": "Finite counterfixture only.",
+      "residual": "No closed-world inference."
+    }
+  ],
+  "manual_dispositions": [
+    {
+      "id": "C3-MANUAL-01",
+      "status": "OPEN_MANUAL",
+      "detail": "No source authentication, relation/evidence registry, provenance semantics, self-edge policy, fixed-roster coverage, or flat cycle validator is formalized."
+    }
+  ]
+}

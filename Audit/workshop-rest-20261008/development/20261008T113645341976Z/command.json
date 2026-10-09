@@ -1,0 +1,16 @@
+{
+  "label": "GPPRRouting",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPRRouting.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 1,
+  "elapsed_seconds": 20.155999999959022,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T113645341976Z/GPPRRouting.stdout.txt",
+  "stdout_sha256": "af87db29ce888d1f7943a1d8df5da464cb51b380bc56131b7df6ed12832713a6",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T113645341976Z/GPPRRouting.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -5,3 +5,18 @@
 /docs/generated/pal-v23-charter-local-checks.md text eol=lf
 /scripts/run_pal23_charter.py text eol=lf
 /scripts/extract_pal23_charter_sources.py text eol=lf
+
+# Preserve byte-pinned imported proofs and historical receipts.
+/Audit/pal-v24-batches/** -text
+/Audit/pal-v24-candidate/** -text
+/Audit/abstract-loops-20261008/** -text
+/Audit/workshop-rest-20261008/** -text
+/Experiments/Pal24*.lean -text
+/Experiments/AbstractLoops*.lean -text
+/Experiments/Compactification*.lean -text
+/Experiments/GPPR*.lean -text
+/Experiments/FiniteAbstraction*.lean -text
+/Experiments/SingleCut*.lean -text
+/projects/** -text
+/supplements/** -text
+/external-audits/** -text

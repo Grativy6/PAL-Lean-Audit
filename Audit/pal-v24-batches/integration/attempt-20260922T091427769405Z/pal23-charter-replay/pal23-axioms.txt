@@ -1,0 +1,12 @@
+'Experiments.Pal23.reachable_decoder_iff' depends on axioms: [Classical.choice]
+'Experiments.Pal23.collision_prevents_reachable_decoder' depends on axioms: [Classical.choice]
+'Experiments.Pal23.no_total_decoder_empty_source_nonempty_ambient' does not depend on any axioms
+'Experiments.Pal23.freeze_injective' does not depend on any axioms
+'Experiments.Pal23.suffix_preserved' does not depend on any axioms
+'Experiments.Pal23.bool_capsule_roundtrip' does not depend on any axioms
+'Experiments.Pal23.heartbeat_work_stutter' does not depend on any axioms
+'Experiments.Pal23.heartbeat_hidden_motion' does not depend on any axioms
+'Experiments.Pal23.heartbeat_not_progress' does not depend on any axioms
+'Experiments.Pal23.heartbeat_loop_no_progress' does not depend on any axioms
+'Experiments.Pal23.restore_work_not_restore_budget_or_grant' does not depend on any axioms
+'Experiments.Pal23.restore_work_is_not_total_state_recovery' does not depend on any axioms

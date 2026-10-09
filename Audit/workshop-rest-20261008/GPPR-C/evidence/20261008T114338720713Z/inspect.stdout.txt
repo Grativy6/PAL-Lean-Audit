@@ -1,0 +1,115 @@
+Experiments.GPPRRouting.golden_code_conditional : Experiments.GPPRTranscendence.GelfondSchneiderRealExponent →
+  ∀ (address : Nat.Primes ↪ ℕ),
+    Set.InjOn
+      (fun n =>
+        Experiments.GPPREncoding.code (⇑address) (fun x => 1) Experiments.GPPRTranscendence.zeta
+          (Experiments.GPPREncoding.valuation n))
+      {n | n ≠ 0}
+'Experiments.GPPRRouting.golden_code_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.golden_vogel_conditional : Experiments.GPPRTranscendence.GelfondSchneiderRealExponent →
+  Function.Injective
+    (Experiments.GPPREncoding.code (fun j => ↑j) Experiments.GPPREncoding.vogelWeight
+      Experiments.GPPRTranscendence.zeta)
+'Experiments.GPPRRouting.golden_vogel_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.legacy : ℂ → List ℕ → ℂ
+'Experiments.GPPRRouting.legacy' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.endpoint : ℂ → List ℕ → ℂ
+'Experiments.GPPRRouting.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.path : ℂ → List ℕ → List ℂ
+'Experiments.GPPRRouting.path' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.eventVector : List ℕ → ℕ →₀ ℤ
+'Experiments.GPPRRouting.eventVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.complete_event_endpoint : ∀ (z : ℂ) (events : List ℕ),
+  Experiments.GPPREncoding.code id (fun x => 1) z (Experiments.GPPRRouting.eventVector events) =
+    Experiments.GPPRRouting.endpoint z events
+'Experiments.GPPRRouting.complete_event_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.legacy_three_four_collision : ∀ (z : ℂ),
+  Experiments.GPPRRouting.legacy z [2] = Experiments.GPPRRouting.legacy z [1, 1]
+'Experiments.GPPRRouting.legacy_three_four_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.repaired_endpoints_distinct : ∀ (z : ℂ), Transcendental ℚ z → z ^ 2 ≠ 2 * z
+'Experiments.GPPRRouting.repaired_endpoints_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.endpoint_permutation : ∀ (z : ℂ) {a b : List ℕ},
+  a.Perm b → Experiments.GPPRRouting.endpoint z a = Experiments.GPPRRouting.endpoint z b
+'Experiments.GPPRRouting.endpoint_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.consecutive_powers_distinct : ∀ (z : ℂ), Transcendental ℚ z → z ≠ z ^ 2
+'Experiments.GPPRRouting.consecutive_powers_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.shared_endpoint_distinct_paths : ∀ (z : ℂ),
+  Transcendental ℚ z →
+    Experiments.GPPRRouting.endpoint z [1, 2] = Experiments.GPPRRouting.endpoint z [2, 1] ∧
+      Experiments.GPPRRouting.path z [1, 2] ≠ Experiments.GPPRRouting.path z [2, 1]
+'Experiments.GPPRRouting.shared_endpoint_distinct_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.roots_need_a_condition : ∃ root, [1, 2] ≠ [2, 1] ∧ root [1, 2] = root [2, 1]
+'Experiments.GPPRRouting.roots_need_a_condition' does not depend on any axioms
+@Experiments.GPPRRouting.root_pair_condition : ∀ {H : Type u_1} (root : List ℕ → H),
+  Set.InjOn root {[1, 2], [2, 1]} → root [1, 2] ≠ root [2, 1]
+'Experiments.GPPRRouting.root_pair_condition' depends on axioms: [propext]
+@Experiments.GPPRRouting.finite_roots_cannot_encode_all_histories : ∀ {H : Type u_1} [Finite H] (root : List ℕ → H),
+  ∃ a b, a ≠ b ∧ root a = root b
+'Experiments.GPPRRouting.finite_roots_cannot_encode_all_histories' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.GPPRRouting.FactorRecord : Type
+'Experiments.GPPRRouting.FactorRecord' does not depend on any axioms
+Experiments.GPPRRouting.completeRecord : Experiments.GPPRRouting.FactorRecord → Prop
+'Experiments.GPPRRouting.completeRecord' does not depend on any axioms
+Experiments.GPPRRouting.retained_residual_needed : ∀ (r : Experiments.GPPRRouting.FactorRecord),
+  r.knownProduct ≠ 0 → (r.magnitude = r.knownProduct ↔ Experiments.GPPRRouting.completeRecord r)
+'Experiments.GPPRRouting.retained_residual_needed' does not depend on any axioms
+Experiments.GPPRRouting.partial_record_fixture : ∃ r,
+  r.magnitude = 30 ∧ r.knownProduct = 6 ∧ r.residual = 5 ∧ ¬Experiments.GPPRRouting.completeRecord r
+'Experiments.GPPRRouting.partial_record_fixture' depends on axioms: [propext]
+@Experiments.GPPRRouting.EntireCell : {X : Type u_1} → {C : Type u_2} → (X → C) → Set X → C → Prop
+'Experiments.GPPRRouting.EntireCell' does not depend on any axioms
+@Experiments.GPPRRouting.certified_route_sound : ∀ {X : Type u_1} {C : Type u_2} (p : X → C) (B : Set X) (c : C),
+  Experiments.GPPRRouting.EntireCell p B c → ∀ x ∈ B, p x = c
+'Experiments.GPPRRouting.certified_route_sound' does not depend on any axioms
+@Experiments.GPPRRouting.route_unique : ∀ {X : Type u_1} {C : Type u_2} (p : X → C) (B : Set X),
+  B.Nonempty → ∀ (a b : C), Experiments.GPPRRouting.EntireCell p B a → Experiments.GPPRRouting.EntireCell p B b → a = b
+'Experiments.GPPRRouting.route_unique' does not depend on any axioms
+@Experiments.GPPRRouting.crossing_enclosure_unresolved : ∀ {X : Type u_1} {C : Type u_2} (p : X → C) (B : Set X)
+  (x y : X), x ∈ B → y ∈ B → p x ≠ p y → ¬∃ c, Experiments.GPPRRouting.EntireCell p B c
+'Experiments.GPPRRouting.crossing_enclosure_unresolved' does not depend on any axioms
+Experiments.GPPRRouting.interval_crossing_fixture : ¬∃ c,
+    Experiments.GPPRRouting.EntireCell (fun x => Decidable.decide (0 ≤ x)) (Set.Icc (-1) 1) c
+'Experiments.GPPRRouting.interval_crossing_fixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.empty_enclosure_is_not_a_unique_certificate : Experiments.GPPRRouting.EntireCell id ∅
+    Bool.false ∧
+  Experiments.GPPRRouting.EntireCell id ∅ Bool.true
+'Experiments.GPPRRouting.empty_enclosure_is_not_a_unique_certificate' depends on axioms: [propext, Quot.sound]
+@Experiments.GPPRRouting.VersionCompatible : {I : Type u_1} → {V : Type u_2} → (I → V) → (I → V) → ℕ → ℕ → Prop
+'Experiments.GPPRRouting.VersionCompatible' does not depend on any axioms
+@Experiments.GPPRRouting.changed_registry_requires_version : ∀ {I : Type u_1} {V : Type u_2} (old new : I → V)
+  (a b : ℕ), old ≠ new → Experiments.GPPRRouting.VersionCompatible old new a b → a ≠ b
+'Experiments.GPPRRouting.changed_registry_requires_version' does not depend on any axioms
+@Experiments.GPPRRouting.invalidateAfterAddition : {A : Type u_1} → Option A → Option A
+'Experiments.GPPRRouting.invalidateAfterAddition' does not depend on any axioms
+Experiments.GPPRRouting.magnitude_addition_is_not_code_addition : ∀ (z : ℂ), Transcendental ℚ z → z ^ 3 ≠ z + z ^ 2
+'Experiments.GPPRRouting.magnitude_addition_is_not_code_addition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.GPPRRouting.addition_invalidates_endpoint : ∀ {A : Type u_1} (old : Option A),
+  Experiments.GPPRRouting.invalidateAfterAddition old = Option.none
+'Experiments.GPPRRouting.addition_invalidates_endpoint' does not depend on any axioms
+@Experiments.GPPRRouting.exact_fallback_preserves_identity : ∀ {W : Type u_1} {A : Type u_2} {E : Type u_3}
+  (approx : W → A) (exactRecord : W → E),
+  Function.Injective exactRecord → Function.Injective fun w => (approx w, exactRecord w)
+'Experiments.GPPRRouting.exact_fallback_preserves_identity' does not depend on any axioms
+Experiments.GPPRRouting.distinct_axis_powers : ∀ (z : ℂ), Transcendental ℚ z → Function.Injective fun n => z ^ (n + 1)
+'Experiments.GPPRRouting.distinct_axis_powers' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPRRouting.finite_rounding_collision : ∀ {R : Type u_1} [Finite R] (round : ℂ → R) (z : ℂ),
+  Transcendental ℚ z → ∃ a b, z ^ (a + 1) ≠ z ^ (b + 1) ∧ round (z ^ (a + 1)) = round (z ^ (b + 1))
+'Experiments.GPPRRouting.finite_rounding_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPRRouting.finite_reachable_rounding_collision : ∀ {R : Type u_1} (round : ℂ → R) (z : ℂ),
+  Transcendental ℚ z →
+    (Set.range fun n => round (z ^ (n + 1))).Finite →
+      ∃ a b, z ^ (a + 1) ≠ z ^ (b + 1) ∧ round (z ^ (a + 1)) = round (z ^ (b + 1))
+'Experiments.GPPRRouting.finite_reachable_rounding_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPRRouting.Claim : Type
+'Experiments.GPPRRouting.Claim' does not depend on any axioms
+Experiments.GPPRRouting.withinClaimCeiling : Experiments.GPPRRouting.Claim → Bool
+'Experiments.GPPRRouting.withinClaimCeiling' does not depend on any axioms
+Experiments.GPPRRouting.unsupported_promotions_rejected : Experiments.GPPRRouting.withinClaimCeiling
+      Experiments.GPPRRouting.Claim.goldenOptimality =
+    Bool.false ∧
+  Experiments.GPPRRouting.withinClaimCeiling Experiments.GPPRRouting.Claim.factorDiscovery = Bool.false
+'Experiments.GPPRRouting.unsupported_promotions_rejected' does not depend on any axioms

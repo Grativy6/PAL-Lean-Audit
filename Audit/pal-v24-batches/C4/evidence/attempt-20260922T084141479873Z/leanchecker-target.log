@@ -1,0 +1,4 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "leanchecker", "Experiments.Pal24Feedback"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 0, "stderr_bytes": 0}
+
+PAL-STDERR-1

@@ -1,0 +1,179 @@
+{
+  "schema": "remaining-workshop-integration-v1",
+  "status": "PASS_INTEGRATION",
+  "started_utc": "20261008T114636305043Z",
+  "git_head": "0095d10903f970e954c9cc06b0b4c030fffda50f",
+  "commands": [
+    {
+      "label": "default-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 3.625,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/default-build.stdout.txt",
+      "stdout_sha256": "a5fe9c5cf8da0d4202e2b00d37a418c8c1b4165399060f4e27a7363edcd1d73b",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/default-build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "root-kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "PALLeanAudit"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 31.235000000044238,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/root-kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/root-kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "historical-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_policy.py"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1559999999590218,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/historical-policy.stdout.txt",
+      "stdout_sha256": "563adc036b5c9bec1686d23dd6396212745b7fbc734c6590c9ac9cb48d1895ad",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/historical-policy.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_report.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.15600000001722947,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/report-check.stdout.txt",
+      "stdout_sha256": "fa51595ed5d42f457bad9c08d86094966ff90d634d4268a1d04a52e932d8f654",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "migration-report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_migration_report.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.09399999998277053,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/migration-report-check.stdout.txt",
+      "stdout_sha256": "05fdb92ea694e505cadf578909c86954a94ac82b0be245fabb717c90c7864c5f",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/migration-report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "attack-run-0003-report-check",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/render_attack_run_0003.py",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.15600000001722947,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/attack-run-0003-report-check.stdout.txt",
+      "stdout_sha256": "bec85c3c9ab1ad93fad56a593d4fc48e801b4cb47a40c4e84e440b7a41b3fde3",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/attack-run-0003-report-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "preserved-AL-A",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/abstract-loops-20261008/verify.py",
+        "--batch",
+        "AL-A",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.14000000001396984,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-A.stdout.txt",
+      "stdout_sha256": "137bb69715719ac01e26f61ddf264de430c0fa492f4ec24c27dd46bb5dfd771a",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-A.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "preserved-AL-B",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/abstract-loops-20261008/verify.py",
+        "--batch",
+        "AL-B",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.14100000000325963,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-B.stdout.txt",
+      "stdout_sha256": "d331cbe124373ce48b90d48193d08de4d7ddfa74764fdab077f48d84ef7cb056",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-B.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "preserved-AL-C",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "Audit/abstract-loops-20261008/verify.py",
+        "--batch",
+        "AL-C",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.125,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-C.stdout.txt",
+      "stdout_sha256": "1422c86683e3d7311f0097845b417c44a60c736b4b78d3f8bad9562d2f7c7a8d",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/preserved-AL-C.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0470000000204891,
+      "stdout": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/diff-check.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/workshop-rest-20261008/integration/20261008T114636305043Z/diff-check.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "receipt_mutation_controls": 6,
+  "receipts": {
+    "SCT-A": "548610e2e95a7bfe43cfe759660ac29ee07e17c2b292db10f05aa7b7860e13b4",
+    "SCT-B": "519021162f49411b1b607ce4e85d7066aa947211da370ce88de814f2d16a704d",
+    "SCT-C": "818ab774b86ee636c6493f6eff752737f3871363971fc9b1261cde299f5f2b49",
+    "CC-A": "e52e348c3dca54abd4c9cc68fc33d47b135e48553f8c67f24fe7d737a9e4bb2e",
+    "CC-B": "d582d978da39dc9db10352bc8e1439f023b0eec4503cfcad92b5296eedd7c56c",
+    "CC-C": "c7894071d22502949f25005623906d055db1c789bdef851a247fc022f3991d1d",
+    "GPPR-A": "cee6e61b1a90fb1d433e8f5c8e0f9e93e8afea64a41b437f9be91b3fc4c8952c",
+    "GPPR-B": "6b6a4c763f8f6b88913c85770b5773d02e5a476f65e3a0435187b8cd156ebb4f",
+    "GPPR-C": "735bc6ad81505713760321bbfa4d6bcc170e3da3e661999998a4eb8469737943",
+    "FA-A": "af272a95cb02b71b92ec39bdbe367220afedab4bc6d286a03f8ef039bff72e77"
+  },
+  "literature_record_sha256": "07555404ad892dbbcf30c0d895c41acfe80d6645dd305e522d5de2ba8d41c2e5",
+  "runner_sha256": "03c93a18b02e006205bd8ddd0eb104d5ae7f5a588d43294255f0c7dba2ab8e62",
+  "scope": "Local integration only. Historical policy/reports retain their original scope. New source/axiom/signature policy is enforced by verify.py. No CI, publication or manuscript adoption."
+}

@@ -1,0 +1,4 @@
+lean-version: exit 0
+compile-and-dependencies: exit 0
+bundled-kernel: exit 0
+PASS: one corollary, three controls; original APCI repository unchanged.

@@ -1,0 +1,16 @@
+{
+  "label": "GPPREncoding",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\GPPREncoding.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 1,
+  "elapsed_seconds": 21.0,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T113129292528Z/GPPREncoding.stdout.txt",
+  "stdout_sha256": "f7d297e325450d36e6d6c778343e48721d3f12daf9110c4960c8446765d600ff",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T113129292528Z/GPPREncoding.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

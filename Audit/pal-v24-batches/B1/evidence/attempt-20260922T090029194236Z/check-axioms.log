@@ -1,0 +1,62 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\Pal24ContinuationAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 4280, "stderr_bytes": 0}
+Experiments.Pal24Continuation.TransitionProfile : Type 1
+'Experiments.Pal24Continuation.TransitionProfile' does not depend on any axioms
+Experiments.Pal24Continuation.run : (p : Experiments.Pal24Continuation.TransitionProfile) →
+  p.State → List p.Input → p.State
+'Experiments.Pal24Continuation.run' does not depend on any axioms
+Experiments.Pal24Continuation.admissibleSuffix : (p : Experiments.Pal24Continuation.TransitionProfile) →
+  List p.Input → Prop
+'Experiments.Pal24Continuation.admissibleSuffix' does not depend on any axioms
+Experiments.Pal24Continuation.oneSuffixEquivalent : (p : Experiments.Pal24Continuation.TransitionProfile) →
+  p.State → p.State → List p.Input → Prop
+'Experiments.Pal24Continuation.oneSuffixEquivalent' does not depend on any axioms
+Experiments.Pal24Continuation.continuationEquivalent : (p : Experiments.Pal24Continuation.TransitionProfile) →
+  p.State → p.State → Prop
+'Experiments.Pal24Continuation.continuationEquivalent' does not depend on any axioms
+Experiments.Pal24Continuation.run_append : ∀ (p : Experiments.Pal24Continuation.TransitionProfile) (state : p.State)
+  (first second : List p.Input),
+  Experiments.Pal24Continuation.run p state (first ++ second) =
+    Experiments.Pal24Continuation.run p (Experiments.Pal24Continuation.run p state first) second
+'Experiments.Pal24Continuation.run_append' does not depend on any axioms
+Experiments.Pal24Continuation.one_suffix_of_step_simulation : ∀ (p : Experiments.Pal24Continuation.TransitionProfile)
+  (related : p.State → p.State → Prop),
+  (∀ (left right : p.State), related left right → p.observe left = p.observe right) →
+    (∀ (input : p.Input),
+        p.admits input →
+          ∀ (left right : p.State), related left right → related (p.step left input) (p.step right input)) →
+      ∀ {left right : p.State},
+        related left right →
+          ∀ (suffix : List p.Input),
+            Experiments.Pal24Continuation.admissibleSuffix p suffix →
+              Experiments.Pal24Continuation.oneSuffixEquivalent p left right suffix
+'Experiments.Pal24Continuation.one_suffix_of_step_simulation' depends on axioms: [propext]
+Experiments.Pal24Continuation.all_finite_suffixes_of_step_simulation : ∀
+  (p : Experiments.Pal24Continuation.TransitionProfile) (related : p.State → p.State → Prop),
+  (∀ (left right : p.State), related left right → p.observe left = p.observe right) →
+    (∀ (input : p.Input),
+        p.admits input →
+          ∀ (left right : p.State), related left right → related (p.step left input) (p.step right input)) →
+      ∀ {left right : p.State}, related left right → Experiments.Pal24Continuation.continuationEquivalent p left right
+'Experiments.Pal24Continuation.all_finite_suffixes_of_step_simulation' depends on axioms: [propext]
+Experiments.Pal24Continuation.narrowAperture : Bool → Prop
+'Experiments.Pal24Continuation.narrowAperture' does not depend on any axioms
+Experiments.Pal24Continuation.apertureStep : ℕ × Bool → Bool → ℕ × Bool
+'Experiments.Pal24Continuation.apertureStep' does not depend on any axioms
+Experiments.Pal24Continuation.narrowProfile : Experiments.Pal24Continuation.TransitionProfile
+'Experiments.Pal24Continuation.narrowProfile' does not depend on any axioms
+Experiments.Pal24Continuation.wideProfile : Experiments.Pal24Continuation.TransitionProfile
+'Experiments.Pal24Continuation.wideProfile' does not depend on any axioms
+Experiments.Pal24Continuation.aperture_expansion_distinguishes_future : Experiments.Pal24Continuation.narrowProfile.observe
+      (0, Bool.true) =
+    Experiments.Pal24Continuation.narrowProfile.observe (0, Bool.false) ∧
+  (0, Bool.true) ≠ (0, Bool.false) ∧
+    Experiments.Pal24Continuation.continuationEquivalent Experiments.Pal24Continuation.narrowProfile (0, Bool.true)
+        (0, Bool.false) ∧
+      Experiments.Pal24Continuation.oneSuffixEquivalent Experiments.Pal24Continuation.wideProfile (0, Bool.true)
+          (0, Bool.false) [Bool.false] ∧
+        ¬Experiments.Pal24Continuation.continuationEquivalent Experiments.Pal24Continuation.wideProfile (0, Bool.true)
+            (0, Bool.false)
+'Experiments.Pal24Continuation.aperture_expansion_distinguishes_future' depends on axioms: [propext]
+
+PAL-STDERR-1

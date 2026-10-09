@@ -1,0 +1,69 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\AbstractLoopsPostprocessingAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 4942, "stderr_bytes": 0}
+@Experiments.AbstractLoopsPostprocessing.postprocess : {α Trace Output : Type} →
+  (Trace → Output) → (α → Trace) → α → Output
+'Experiments.AbstractLoopsPostprocessing.postprocess' does not depend on any axioms
+@Experiments.AbstractLoopsPostprocessing.postprocess_preserves_kernel : ∀ {α Trace Output : Type} (c : Trace → Output)
+  (trace : α → Trace) (first second : α),
+  trace first = trace second →
+    Experiments.AbstractLoopsPostprocessing.postprocess c trace first =
+      Experiments.AbstractLoopsPostprocessing.postprocess c trace second
+'Experiments.AbstractLoopsPostprocessing.postprocess_preserves_kernel' does not depend on any axioms
+Experiments.AbstractLoopsPostprocessing.fresh_xor_observation_changes_aperture : ¬Experiments.AbstractLoopsJoint.Certifies
+      Experiments.AbstractLoopsJoint.xorAnswer Experiments.AbstractLoopsJoint.xorFirst ∧
+  Experiments.AbstractLoopsJoint.Certifies Experiments.AbstractLoopsJoint.xorAnswer
+    (Experiments.AbstractLoopsJoint.jointTrace Experiments.AbstractLoopsJoint.xorFirst
+      Experiments.AbstractLoopsJoint.xorSecond)
+'Experiments.AbstractLoopsPostprocessing.fresh_xor_observation_changes_aperture' depends on axioms: [propext,
+ Classical.choice]
+Experiments.AbstractLoopsPostprocessing.fresh_xor_pair_not_closed_postprocess : ∀ (c : Bool → Bool × Bool),
+  Experiments.AbstractLoopsPostprocessing.postprocess c Experiments.AbstractLoopsJoint.xorFirst ≠
+    Experiments.AbstractLoopsJoint.jointTrace Experiments.AbstractLoopsJoint.xorFirst
+      Experiments.AbstractLoopsJoint.xorSecond
+'Experiments.AbstractLoopsPostprocessing.fresh_xor_pair_not_closed_postprocess' does not depend on any axioms
+@Experiments.AbstractLoopsPostprocessing.scheduledIteration : {World State : Type} →
+  (ℕ → State → State) → (World → State) → ℕ → World → State
+'Experiments.AbstractLoopsPostprocessing.scheduledIteration' does not depend on any axioms
+@Experiments.AbstractLoopsPostprocessing.scheduled_iteration_preserves_kernel : ∀ {World State : Type}
+  (step : ℕ → State → State) (initial : World → State) (n : ℕ) (first second : World),
+  Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n first =
+      Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n second →
+    Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) first =
+      Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial (n + 1) second
+'Experiments.AbstractLoopsPostprocessing.scheduled_iteration_preserves_kernel' does not depend on any axioms
+@Experiments.AbstractLoopsPostprocessing.kernelPairs : {World State : Type} →
+  [Fintype World] → [DecidableEq World] → [DecidableEq State] → (World → State) → Finset (World × World)
+'Experiments.AbstractLoopsPostprocessing.kernelPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.AbstractLoopsPostprocessing.finite_relation_chain_stabilizes : ∀ {α : Type} [Fintype α] [DecidableEq α]
+  (relations : ℕ → Finset α),
+  (∀ (n : ℕ), relations n ⊆ relations (n + 1)) → ∃ start, ∀ (n : ℕ), start ≤ n → relations start = relations n
+'Experiments.AbstractLoopsPostprocessing.finite_relation_chain_stabilizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.AbstractLoopsPostprocessing.finite_scheduled_partition_stabilizes : ∀ {State World : Type}
+  [inst : Fintype World] [inst_1 : DecidableEq World] [inst_2 : DecidableEq State] (step : ℕ → State → State)
+  (initial : World → State),
+  ∃ start,
+    ∀ (n : ℕ),
+      start ≤ n →
+        Experiments.AbstractLoopsPostprocessing.kernelPairs
+            (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial start) =
+          Experiments.AbstractLoopsPostprocessing.kernelPairs
+            (Experiments.AbstractLoopsPostprocessing.scheduledIteration step initial n)
+'Experiments.AbstractLoopsPostprocessing.finite_scheduled_partition_stabilizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsPostprocessing.booleanSwap : Bool → Bool
+'Experiments.AbstractLoopsPostprocessing.booleanSwap' does not depend on any axioms
+Experiments.AbstractLoopsPostprocessing.boolean_swap_kernel_unchanged : Experiments.AbstractLoopsPostprocessing.kernelPairs
+    Experiments.AbstractLoopsPostprocessing.booleanSwap =
+  Experiments.AbstractLoopsPostprocessing.kernelPairs id
+'Experiments.AbstractLoopsPostprocessing.boolean_swap_kernel_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.AbstractLoopsPostprocessing.boolean_swap_has_two_cycle : ∀ (value : Bool),
+  Experiments.AbstractLoopsPostprocessing.booleanSwap (Experiments.AbstractLoopsPostprocessing.booleanSwap value) =
+    value
+'Experiments.AbstractLoopsPostprocessing.boolean_swap_has_two_cycle' does not depend on any axioms
+
+PAL-STDERR-1

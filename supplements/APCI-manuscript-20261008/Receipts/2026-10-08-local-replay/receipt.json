@@ -1,0 +1,165 @@
+{
+  "schema": "apci-local-retrieval-replay-v1",
+  "status": "PASS_LOCAL_REPLAY",
+  "started_utc": "2026-10-08T04:46:14.903327+00:00",
+  "repository_url": "https://github.com/Grativy6/APCI-Lean-Audit/",
+  "repo_path": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\APCI\\Lean project",
+  "commit": "0f85cc7fac47c3b34ecfd11160f3efae454b900c",
+  "paper_commit_matches_retrieved_head": true,
+  "local_sources": {
+    "APCI_Declared_Interface_v1.0.0.docx": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+    "APCI_Declared_Interface_v1.0.0.pdf": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "tracked_files_before": {
+    ".github/workflows/ci.yml": "b1c0878949c76fbc29d4e1cf3410fe28aa5442d64cc3579ccf68e6539ffdaad6",
+    ".gitignore": "43ed15f6f49d6a20b1316c1d0c2ca697c01d755705417cb44949818b608117d2",
+    "APCILeanAudit.lean": "86dba9eb7a3498daae2754e64f4916638ce7186f9332a706007d6f579e78b8e8",
+    "APCILeanAudit/Controls.lean": "00ff107be80a79cd5cd27b75e1d2e82a93c22600791d2a047939e342c5335e8e",
+    "APCILeanAudit/FiniteCapacity.lean": "e2f2a87377992382579bb5c69dfe7b659069c33e831d011c4ff91ec7a6105cf3",
+    "APCILeanAudit/Interface.lean": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+    "AUDIT_SCOPE.md": "5b15361693c9c9a545e46c9dff4175df8e86dc30dc6904adb5b5bfbac925ee64",
+    "AUTHORITY_CEILING.md": "d6d8d0445a1bfa2e715a1765b1f92a55aa252e35de8ce0cf1c0bbfbfdd2c47d7",
+    "Audit.lean": "b9f9b590a7c29cf1059606f18d216aa0780d3e52e098b7c799af799dfe467119",
+    "README.md": "dad3e71560afeaaf634382893ce1f473a59ca92a263814e7bf22ec93c359abc0",
+    "SOURCE_LOCK.md": "8d9e8e27132608610fd38188cadb9cdf9ebb48a54871de54694db82b9a7adab6",
+    "THEOREM_INVENTORY.json": "20ff1443e1d294e1bcd476e8e0e395c3fe405f342b19a8200c324c87b9482101",
+    "audit/AUDIT_REPORT.md": "63f8b8e018e0420783eb98417bd24a5eaa51697ccb5e1f67d760423caa07c509",
+    "audit/AXIOM_RECEIPT.txt": "51117c296383f4dd3583d1572138a97e958c8a994275b451acee1557e3dea768",
+    "audit/NANODA_COMPATIBILITY.md": "6be7621af4d7410a2746470b2dbcc1a4b17968f239fac658b58f9349f8152b03",
+    "lake-manifest.json": "00006bb2976893a003806eb7264ab54b5f4cc24ba49294c5022e40c4ed38b63c",
+    "lakefile.lean": "9302f4b9922cfc4f305cb3cc259463a7d3485f6fc6a2b8fbff7fe0f0137a56e8",
+    "lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "scripts/check_inventory.py": "91def23a7d081f20ab3a9280a3a0e9dbd628dc4a88c89b176d4ad2717004f5cb",
+    "scripts/policy_scan.sh": "b72d26a1623f2aa069674e92b7583af5e443ee5e2c682270c947d1dca05bcda6",
+    "source/README.md": "4a35fa412b0596d26a525310ee066552b8993045b4b584603b6ad22274451a98",
+    "source/SOURCE_ARCHIVE.sha256": "df4443046655e1773e5db0587cd6cc3823a797a790c52fb337022b4d86a5c52b"
+  },
+  "commands": [
+    {
+      "name": "git-integrity",
+      "argv": [
+        "git",
+        "fsck",
+        "--full",
+        "--no-reflogs"
+      ],
+      "exit_code": 0,
+      "log": "git-integrity.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "source-policy",
+      "argv": [
+        "C:\\Users\\cdpan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\layout-20261008\\apci_replay.py",
+        "--policy"
+      ],
+      "exit_code": 0,
+      "log": "source-policy.log",
+      "sha256": "5ef408ba5ae9ae00217f3a8b4ffdfe9bd1c96a813883ccd416c4e01dea143061"
+    },
+    {
+      "name": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d"
+    },
+    {
+      "name": "fresh-project-build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "fresh-project-build.log",
+      "sha256": "00b99eb2201c89c742a63be6d0d2c800c0c977d458af676699e7583268417a60"
+    },
+    {
+      "name": "logical-dependencies",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "logical-dependencies.log",
+      "sha256": "16ef054d37dd5ec002ce95112f2209558459c5765dd7fb42bb304e47430a1753"
+    },
+    {
+      "name": "bundled-kernel-replay",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "APCILeanAudit"
+      ],
+      "exit_code": 0,
+      "log": "bundled-kernel-replay.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_archive_bytes_checked": false,
+  "scope": "Local replay of the existing 15-declaration APCI audit at the manuscript-cited commit. No new theorems, paper-wide source audit, physical bridge, novelty finding, or fresh CI result.",
+  "declarations_checked": 15,
+  "dependency_receipt_matches_frozen": true,
+  "dependencies": {
+    "APCILeanAudit.exactCertificate_implies_fiberConstant": [],
+    "APCILeanAudit.exactOnReachable_implies_fiberConstant": [],
+    "APCILeanAudit.fiberConstant_implies_exactOnReachable": [
+      "Classical.choice"
+    ],
+    "APCILeanAudit.exactOnReachable_iff_fiberConstant": [
+      "Classical.choice"
+    ],
+    "APCILeanAudit.exactCertificate_iff_fiberConstant_and_decoderSpaceNonempty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.exactCertificate_iff_fiberConstant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.leftInverse_implies_injective": [],
+    "APCILeanAudit.collision_persists_under_postprocessing": [],
+    "APCILeanAudit.fin_succ_not_injective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.fin_succ_has_collision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.no_exact_decoder_one_more": [
+      "Quot.sound",
+      "propext"
+    ],
+    "APCILeanAudit.EmptyBoundaryControl.fiberConstant_is_vacuous": [],
+    "APCILeanAudit.EmptyBoundaryControl.total_decoder_does_not_exist": [],
+    "APCILeanAudit.ConcreteCapacityControl.twoToOne_collision": [
+      "propext"
+    ],
+    "APCILeanAudit.ConcreteCapacityControl.twoToOne_no_leftInverse": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "no_sorryAx": true,
+  "tracked_source_bytes_unchanged": true,
+  "working_tree_clean": true,
+  "third_party_theorem_packages": 0,
+  "finished_utc": "2026-10-08T04:46:36.112441+00:00"
+}

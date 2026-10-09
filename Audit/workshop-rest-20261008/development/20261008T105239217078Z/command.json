@@ -1,0 +1,16 @@
+{
+  "label": "SingleCutOR",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\SingleCutOR.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 0,
+  "elapsed_seconds": 84.64100000000326,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T105239217078Z/SingleCutOR.stdout.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T105239217078Z/SingleCutOR.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

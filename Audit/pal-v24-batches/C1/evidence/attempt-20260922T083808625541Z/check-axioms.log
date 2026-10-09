@@ -1,0 +1,69 @@
+PAL-RUN-LOG-1
+{"argv": ["C:\\Users\\cdpan\\.elan\\bin\\lake.exe", "env", "lean", "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test\\Experiments\\AbstractLoopsJointAxioms.lean"], "cwd": "C:\\Users\\cdpan\\OneDrive\\Documents\\Lean4 PAL test", "exit_code": 0, "stdout_bytes": 5416, "stderr_bytes": 0}
+@Experiments.AbstractLoopsJoint.kernel : {World Trace : Type} → (World → Trace) → World → World → Prop
+'Experiments.AbstractLoopsJoint.kernel' does not depend on any axioms
+@Experiments.AbstractLoopsJoint.jointTrace : {World Left Right : Type} →
+  (World → Left) → (World → Right) → World → Left × Right
+'Experiments.AbstractLoopsJoint.jointTrace' does not depend on any axioms
+@Experiments.AbstractLoopsJoint.Reachable : {World Trace : Type} → (World → Trace) → Type
+'Experiments.AbstractLoopsJoint.Reachable' does not depend on any axioms
+@Experiments.AbstractLoopsJoint.Certifies : {World Trace Answer : Type} → (World → Answer) → (World → Trace) → Prop
+'Experiments.AbstractLoopsJoint.Certifies' does not depend on any axioms
+@Experiments.AbstractLoopsJoint.joint_kernel_eq_intersection : ∀ {World Left Right : Type} (left : World → Left)
+  (right : World → Right),
+  Experiments.AbstractLoopsJoint.kernel (Experiments.AbstractLoopsJoint.jointTrace left right) = fun first second =>
+    Experiments.AbstractLoopsJoint.kernel left first second ∧ Experiments.AbstractLoopsJoint.kernel right first second
+'Experiments.AbstractLoopsJoint.joint_kernel_eq_intersection' depends on axioms: [propext, Quot.sound]
+@Experiments.AbstractLoopsJoint.reachable_certifies_iff_kernel_subset : ∀ {World Trace Answer : Type}
+  (answer : World → Answer) (trace : World → Trace),
+  Experiments.AbstractLoopsJoint.Certifies answer trace ↔
+    ∀ (first second : World), Experiments.AbstractLoopsJoint.kernel trace first second → answer first = answer second
+'Experiments.AbstractLoopsJoint.reachable_certifies_iff_kernel_subset' depends on axioms: [Classical.choice]
+@Experiments.AbstractLoopsJoint.common_collision_blocks_joint_certification : ∀ {World Left Right Answer : Type}
+  (left : World → Left) (right : World → Right) (answer : World → Answer) (first second : World),
+  left first = left second →
+    right first = right second →
+      answer first ≠ answer second →
+        ¬Experiments.AbstractLoopsJoint.Certifies answer (Experiments.AbstractLoopsJoint.jointTrace left right)
+'Experiments.AbstractLoopsJoint.common_collision_blocks_joint_certification' depends on axioms: [propext,
+ Classical.choice]
+Experiments.AbstractLoopsJoint.xorAnswer : Bool × Bool → Bool
+'Experiments.AbstractLoopsJoint.xorAnswer' does not depend on any axioms
+Experiments.AbstractLoopsJoint.xorFirst : Bool × Bool → Bool
+'Experiments.AbstractLoopsJoint.xorFirst' does not depend on any axioms
+Experiments.AbstractLoopsJoint.xorSecond : Bool × Bool → Bool
+'Experiments.AbstractLoopsJoint.xorSecond' does not depend on any axioms
+Experiments.AbstractLoopsJoint.xorPair : Bool × Bool → Bool × Bool
+'Experiments.AbstractLoopsJoint.xorPair' does not depend on any axioms
+Experiments.AbstractLoopsJoint.xor_first_insufficient : ¬Experiments.AbstractLoopsJoint.Certifies
+    Experiments.AbstractLoopsJoint.xorAnswer Experiments.AbstractLoopsJoint.xorFirst
+'Experiments.AbstractLoopsJoint.xor_first_insufficient' depends on axioms: [propext, Classical.choice]
+Experiments.AbstractLoopsJoint.xor_second_insufficient : ¬Experiments.AbstractLoopsJoint.Certifies
+    Experiments.AbstractLoopsJoint.xorAnswer Experiments.AbstractLoopsJoint.xorSecond
+'Experiments.AbstractLoopsJoint.xor_second_insufficient' depends on axioms: [propext, Classical.choice]
+Experiments.AbstractLoopsJoint.xor_pair_certifies : Experiments.AbstractLoopsJoint.Certifies
+  Experiments.AbstractLoopsJoint.xorAnswer Experiments.AbstractLoopsJoint.xorPair
+'Experiments.AbstractLoopsJoint.xor_pair_certifies' does not depend on any axioms
+Experiments.AbstractLoopsJoint.xor_strict_joint_sufficiency : Experiments.AbstractLoopsJoint.Certifies
+    Experiments.AbstractLoopsJoint.xorAnswer Experiments.AbstractLoopsJoint.xorPair ∧
+  ¬Experiments.AbstractLoopsJoint.Certifies Experiments.AbstractLoopsJoint.xorAnswer
+        Experiments.AbstractLoopsJoint.xorFirst ∧
+    ¬Experiments.AbstractLoopsJoint.Certifies Experiments.AbstractLoopsJoint.xorAnswer
+        Experiments.AbstractLoopsJoint.xorSecond
+'Experiments.AbstractLoopsJoint.xor_strict_joint_sufficiency' depends on axioms: [propext, Classical.choice]
+Experiments.AbstractLoopsJoint.collapsedTrace : Bool × Bool → Bool
+'Experiments.AbstractLoopsJoint.collapsedTrace' does not depend on any axioms
+Experiments.AbstractLoopsJoint.firstBitAnswer : Bool × Bool → Bool
+'Experiments.AbstractLoopsJoint.firstBitAnswer' does not depend on any axioms
+Experiments.AbstractLoopsJoint.common_collision_negative_fixture : Experiments.AbstractLoopsJoint.kernel
+    Experiments.AbstractLoopsJoint.collapsedTrace (Bool.false, Bool.false) (Bool.true, Bool.false) ∧
+  Experiments.AbstractLoopsJoint.firstBitAnswer (Bool.false, Bool.false) ≠
+    Experiments.AbstractLoopsJoint.firstBitAnswer (Bool.true, Bool.false)
+'Experiments.AbstractLoopsJoint.common_collision_negative_fixture' depends on axioms: [propext]
+Experiments.AbstractLoopsJoint.common_collision_negative_blocks_joint : ¬Experiments.AbstractLoopsJoint.Certifies
+    Experiments.AbstractLoopsJoint.firstBitAnswer
+    (Experiments.AbstractLoopsJoint.jointTrace Experiments.AbstractLoopsJoint.collapsedTrace
+      Experiments.AbstractLoopsJoint.collapsedTrace)
+'Experiments.AbstractLoopsJoint.common_collision_negative_blocks_joint' depends on axioms: [propext, Classical.choice]
+
+PAL-STDERR-1

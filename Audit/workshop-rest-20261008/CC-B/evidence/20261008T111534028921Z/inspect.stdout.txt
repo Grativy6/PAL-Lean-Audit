@@ -1,0 +1,82 @@
+@Experiments.CompactificationProfile.Lost : {W : Type u_1} →
+  {T : Type u_2} → {Q : Type u_3} → (W → T) → (W → Q) → Set (W × W)
+'Experiments.CompactificationProfile.Lost' does not depend on any axioms
+@Experiments.CompactificationProfile.refinement_exact : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3} {Q : Type u_4}
+  (t : W → T) (s : W → S) (q : W → Q),
+  Experiments.CompactificationProfile.Lost (fun w => (t w, s w)) q =
+    Experiments.CompactificationProfile.Lost t q ∩ {p | s p.1 = s p.2}
+'Experiments.CompactificationProfile.refinement_exact' depends on axioms: [propext, Quot.sound]
+@Experiments.CompactificationProfile.derived_side_changes_no_loss : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}
+  {Q : Type u_4} (t : W → T) (s : T → S) (q : W → Q),
+  Experiments.CompactificationProfile.Lost (fun w => (t w, s (t w))) q = Experiments.CompactificationProfile.Lost t q
+'Experiments.CompactificationProfile.derived_side_changes_no_loss' depends on axioms: [propext, Quot.sound]
+@Experiments.CompactificationProfile.postprocessing_inclusion : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}
+  {Q : Type u_4} (t : W → T) (p : T → S) (q : W → Q),
+  Experiments.CompactificationProfile.Lost t q ⊆ Experiments.CompactificationProfile.Lost (p ∘ t) q
+'Experiments.CompactificationProfile.postprocessing_inclusion' does not depend on any axioms
+@Experiments.CompactificationProfile.postprocessing_equality : ∀ {W : Type u_1} {T : Type u_2} {S : Type u_3}
+  {Q : Type u_4} (t : W → T) (p : T → S) (q : W → Q),
+  Set.InjOn p (Set.range t) →
+    Experiments.CompactificationProfile.Lost (p ∘ t) q = Experiments.CompactificationProfile.Lost t q
+'Experiments.CompactificationProfile.postprocessing_equality' depends on axioms: [propext, Quot.sound]
+@Experiments.CompactificationProfile.question_coarsening : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {Q' : Type u_4} (t : W → T) (q : W → Q) (h : Q → Q'),
+  Experiments.CompactificationProfile.Lost t (h ∘ q) ⊆ Experiments.CompactificationProfile.Lost t q
+'Experiments.CompactificationProfile.question_coarsening' does not depend on any axioms
+@Experiments.CompactificationProfile.question_injective_equality : ∀ {W : Type u_1} {T : Type u_2} {Q : Type u_3}
+  {Q' : Type u_4} (t : W → T) (q : W → Q) (h : Q → Q'),
+  Set.InjOn h (Set.range q) →
+    Experiments.CompactificationProfile.Lost t (h ∘ q) = Experiments.CompactificationProfile.Lost t q
+'Experiments.CompactificationProfile.question_injective_equality' depends on axioms: [propext, Quot.sound]
+Experiments.CompactificationProfile.strict_loss_controls : Experiments.CompactificationProfile.Lost id id = ∅ ∧
+  (Bool.false, Bool.true) ∈ Experiments.CompactificationProfile.Lost (fun x => ()) id ∧
+    (Experiments.CompactificationProfile.Lost (fun x => ()) fun x => ()) = ∅
+'Experiments.CompactificationProfile.strict_loss_controls' depends on axioms: [propext, Quot.sound]
+@Experiments.CompactificationProfile.Extension : {A : Type u_1} → {S : Type u_2} → (A → S) → (A → Prop) → S → Type u_1
+'Experiments.CompactificationProfile.Extension' does not depend on any axioms
+@Experiments.CompactificationProfile.quotient_descent_iff : ∀ {A : Type u_1} {D : Type u_2} (r : Setoid A) (f : A → D),
+  (∀ (a b : A), r a b → f a = f b) ↔ ∃! d, ∀ (a : A), d ⟦a⟧ = f a
+'Experiments.CompactificationProfile.quotient_descent_iff' depends on axioms: [Quot.sound]
+@Experiments.CompactificationProfile.extensionEquiv : {A : Type u_1} →
+  {B : Type u_2} →
+    {S : Type u_3} →
+      (e : A ≃ B) →
+        (rA : A → S) →
+          (rB : B → S) →
+            (aA : A → Prop) →
+              (aB : B → Prop) →
+                (base : S) →
+                  (∀ (a : A), aB (e a) ↔ aA a) →
+                    (∀ (a : A), rB (e a) = rA a) →
+                      Experiments.CompactificationProfile.Extension rA aA base ≃
+                        Experiments.CompactificationProfile.Extension rB aB base
+'Experiments.CompactificationProfile.extensionEquiv' depends on axioms: [Quot.sound]
+@Experiments.CompactificationProfile.extension_existence_preserved : ∀ {A : Type u_1} {B : Type u_2} (e : A ≃ B),
+  Nonempty A ↔ Nonempty B
+'Experiments.CompactificationProfile.extension_existence_preserved' depends on axioms: [Quot.sound]
+@Experiments.CompactificationProfile.detector_image_transport : ∀ {A : Type u_1} {B : Type u_2} {D : Type u_3}
+  (e : A ≃ B) (dA : A → D) (dB : B → D), (∀ (a : A), dB (e a) = dA a) → Set.range dA = Set.range dB
+'Experiments.CompactificationProfile.detector_image_transport' depends on axioms: [propext, Quot.sound]
+@Experiments.CompactificationProfile.loss_transport : ∀ {A : Type u_1} {B : Type u_2} {T : Type u_3} {Q : Type u_4}
+  (e : A ≃ B) (tA : A → T) (tB : B → T) (qA : A → Q) (qB : B → Q),
+  (∀ (a : A), tB (e a) = tA a) →
+    (∀ (a : A), qB (e a) = qA a) →
+      Experiments.CompactificationProfile.Lost tA qA =
+        (fun p => (e p.1, e p.2)) ⁻¹' Experiments.CompactificationProfile.Lost tB qB
+'Experiments.CompactificationProfile.loss_transport' depends on axioms: [propext, Quot.sound]
+Experiments.CompactificationProfile.empty_extensions_vacuous_decoder : (∀ (a b : Empty),
+    (fun x => ()) a = (fun x => ()) b → a = b) ∧
+  ¬Nonempty Empty
+'Experiments.CompactificationProfile.empty_extensions_vacuous_decoder' does not depend on any axioms
+Experiments.CompactificationProfile.undefined_is_not_zero : Option.none ≠ Option.some 0
+'Experiments.CompactificationProfile.undefined_is_not_zero' does not depend on any axioms
+Experiments.CompactificationProfile.empty_reachable_decoder : ∃ d, ∀ (a : Empty), d ⟨(), ⋯⟩ = Bool.false
+'Experiments.CompactificationProfile.empty_reachable_decoder' does not depend on any axioms
+@Experiments.CompactificationProfile.compatible_restriction_telescope : ∀ {A : Type u_1} {B : Type u_2} {C : Type u_3}
+  {G : Type u_4} [inst : AddCommGroup G] (rAB : A → B) (rBC : B → C) (iA : A → G) (iB : B → G) (iC : C → G) (a : A),
+  iA a - iC (rBC (rAB a)) = iA a - iB (rAB a) + (iB (rAB a) - iC (rBC (rAB a)))
+'Experiments.CompactificationProfile.compatible_restriction_telescope' depends on axioms: [propext]
+Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement : ∃ e dA dB,
+  Set.range dA ≠ Set.range dB
+'Experiments.CompactificationProfile.equivalent_carriers_do_not_force_detector_agreement' depends on axioms: [propext,
+ Quot.sound]

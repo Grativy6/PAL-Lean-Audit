@@ -1,0 +1,414 @@
+{
+  "batch": "GPPR-C",
+  "module": "Experiments.GPPRRouting",
+  "declarations": [
+    {
+      "name": "Experiments.GPPRRouting.golden_code_conditional",
+      "kind": "theorem",
+      "source_line": 7,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.golden_vogel_conditional",
+      "kind": "theorem",
+      "source_line": 14,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.legacy",
+      "kind": "def",
+      "source_line": 19,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.endpoint",
+      "kind": "def",
+      "source_line": 20,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.path",
+      "kind": "def",
+      "source_line": 21,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.eventVector",
+      "kind": "def",
+      "source_line": 23,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.complete_event_endpoint",
+      "kind": "theorem",
+      "source_line": 26,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.legacy_three_four_collision",
+      "kind": "theorem",
+      "source_line": 35,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.repaired_endpoints_distinct",
+      "kind": "theorem",
+      "source_line": 38,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.endpoint_permutation",
+      "kind": "theorem",
+      "source_line": 44,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.consecutive_powers_distinct",
+      "kind": "theorem",
+      "source_line": 47,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.shared_endpoint_distinct_paths",
+      "kind": "theorem",
+      "source_line": 53,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.roots_need_a_condition",
+      "kind": "theorem",
+      "source_line": 62,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.root_pair_condition",
+      "kind": "theorem",
+      "source_line": 66,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.finite_roots_cannot_encode_all_histories",
+      "kind": "theorem",
+      "source_line": 72,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.FactorRecord",
+      "kind": "structure",
+      "source_line": 75,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.completeRecord",
+      "kind": "def",
+      "source_line": 81,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.retained_residual_needed",
+      "kind": "theorem",
+      "source_line": 83,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.partial_record_fixture",
+      "kind": "theorem",
+      "source_line": 92,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.EntireCell",
+      "kind": "def",
+      "source_line": 96,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.certified_route_sound",
+      "kind": "theorem",
+      "source_line": 99,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.route_unique",
+      "kind": "theorem",
+      "source_line": 102,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.crossing_enclosure_unresolved",
+      "kind": "theorem",
+      "source_line": 107,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.interval_crossing_fixture",
+      "kind": "theorem",
+      "source_line": 112,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.empty_enclosure_is_not_a_unique_certificate",
+      "kind": "theorem",
+      "source_line": 116,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.VersionCompatible",
+      "kind": "def",
+      "source_line": 119,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.changed_registry_requires_version",
+      "kind": "theorem",
+      "source_line": 122,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.invalidateAfterAddition",
+      "kind": "def",
+      "source_line": 126,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.magnitude_addition_is_not_code_addition",
+      "kind": "theorem",
+      "source_line": 128,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.addition_invalidates_endpoint",
+      "kind": "theorem",
+      "source_line": 134,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.exact_fallback_preserves_identity",
+      "kind": "theorem",
+      "source_line": 136,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.distinct_axis_powers",
+      "kind": "theorem",
+      "source_line": 141,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.finite_rounding_collision",
+      "kind": "theorem",
+      "source_line": 148,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.finite_reachable_rounding_collision",
+      "kind": "theorem",
+      "source_line": 154,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.Claim",
+      "kind": "inductive",
+      "source_line": 164,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.withinClaimCeiling",
+      "kind": "def",
+      "source_line": 168,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPRRouting.unsupported_promotions_rejected",
+      "kind": "theorem",
+      "source_line": 172,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-C/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

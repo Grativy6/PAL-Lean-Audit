@@ -1,0 +1,5 @@
+⚠ [8655/8655] Built Experiments.CompactificationFixtures (13s)
+warning: Experiments/CompactificationFixtures.lean:144:65: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (8655 jobs).

@@ -1,0 +1,5 @@
+⚠ [8655/8655] Built Experiments.GPPREncoding (12s)
+warning: Experiments/GPPREncoding.lean:165:15: Try `simp at h'` instead of `simpa using h'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (8655 jobs).

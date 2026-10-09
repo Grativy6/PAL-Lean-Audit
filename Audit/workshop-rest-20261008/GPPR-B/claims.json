@@ -1,0 +1,315 @@
+{
+  "batch": "GPPR-B",
+  "module": "Experiments.GPPREncoding",
+  "declarations": [
+    {
+      "name": "Experiments.GPPREncoding.weightedPoly",
+      "kind": "def",
+      "source_line": 6,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.weighted_coeff",
+      "kind": "theorem",
+      "source_line": 10,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.weighted_add",
+      "kind": "theorem",
+      "source_line": 22,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.weighted_injective",
+      "kind": "theorem",
+      "source_line": 28,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.code",
+      "kind": "def",
+      "source_line": 37,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.exact_code_injective",
+      "kind": "theorem",
+      "source_line": 41,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.algebraic_weight_code_injective",
+      "kind": "theorem",
+      "source_line": 47,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.code_add",
+      "kind": "theorem",
+      "source_line": 53,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.code_single",
+      "kind": "theorem",
+      "source_line": 58,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.code_zero",
+      "kind": "theorem",
+      "source_line": 64,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation",
+      "kind": "def",
+      "source_line": 68,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation_apply",
+      "kind": "theorem",
+      "source_line": 71,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation_mul",
+      "kind": "theorem",
+      "source_line": 73,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation_injective",
+      "kind": "theorem",
+      "source_line": 78,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation_unit",
+      "kind": "theorem",
+      "source_line": 87,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.valuation_prime_power",
+      "kind": "theorem",
+      "source_line": 89,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.integer_code_injective",
+      "kind": "theorem",
+      "source_line": 98,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.integer_product_to_sum",
+      "kind": "theorem",
+      "source_line": 103,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.rational_valuation_equality",
+      "kind": "theorem",
+      "source_line": 109,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.positive_rational_representation",
+      "kind": "theorem",
+      "source_line": 122,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.rational_code_descends_and_separates",
+      "kind": "theorem",
+      "source_line": 132,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.rational_product_valuations",
+      "kind": "theorem",
+      "source_line": 140,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.sqrt_weight_algebraic",
+      "kind": "theorem",
+      "source_line": 147,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.vogelWeight",
+      "kind": "def",
+      "source_line": 157,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.vogel_weight_nonzero",
+      "kind": "theorem",
+      "source_line": 160,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.vogel_code_injective",
+      "kind": "theorem",
+      "source_line": 167,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.repeated_address_collision",
+      "kind": "theorem",
+      "source_line": 172,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "Experiments.GPPREncoding.zero_weight_collision",
+      "kind": "theorem",
+      "source_line": 180,
+      "source_target": "Audit/workshop-rest-20261008/GPPR-B/TARGET.md",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "scope": "TARGET.md; exact quantified statements and axiom dependencies are recorded by the final receipt. Counts include definitions, helpers and controls, not independent source claims."
+}

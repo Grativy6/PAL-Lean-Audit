@@ -1,0 +1,127 @@
+@Experiments.GPPREncoding.weightedPoly : {I : Type u_1} →
+  {K : Type u_2} → [inst : CommRing K] → (I → ℕ) → (I → K) → (I →₀ ℤ) → Polynomial K
+'Experiments.GPPREncoding.weightedPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.weighted_coeff : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] (address : I ↪ ℕ)
+  (weight : I → K) (v : I →₀ ℤ) (i : I),
+  (Experiments.GPPREncoding.weightedPoly (⇑address) weight v).coeff (address i) = ↑(v i) * weight i
+'Experiments.GPPREncoding.weighted_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.weighted_add : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] (address : I → ℕ)
+  (weight : I → K) (v w : I →₀ ℤ),
+  Experiments.GPPREncoding.weightedPoly address weight (v + w) =
+    Experiments.GPPREncoding.weightedPoly address weight v + Experiments.GPPREncoding.weightedPoly address weight w
+'Experiments.GPPREncoding.weighted_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.weighted_injective : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] [IsDomain K]
+  [CharZero K] (address : I ↪ ℕ) (weight : I → K),
+  (∀ (i : I), weight i ≠ 0) → Function.Injective (Experiments.GPPREncoding.weightedPoly (⇑address) weight)
+'Experiments.GPPREncoding.weighted_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.code : {I : Type u_1} →
+  {K : Type u_2} → [inst : CommRing K] → [Algebra K ℂ] → (I → ℕ) → (I → K) → ℂ → (I →₀ ℤ) → ℂ
+'Experiments.GPPREncoding.code' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.exact_code_injective : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] [IsDomain K]
+  [CharZero K] [inst_3 : Algebra K ℂ] (address : I ↪ ℕ) (weight : I → K),
+  (∀ (i : I), weight i ≠ 0) →
+    ∀ (z : ℂ), Transcendental K z → Function.Injective (Experiments.GPPREncoding.code (⇑address) weight z)
+'Experiments.GPPREncoding.exact_code_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.algebraic_weight_code_injective : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K]
+  [IsDomain K] [CharZero K] [inst_3 : Algebra ℚ K] [inst_4 : Algebra K ℂ] [IsScalarTower ℚ K ℂ]
+  [Algebra.IsAlgebraic ℚ K] (address : I ↪ ℕ) (weight : I → K),
+  (∀ (i : I), weight i ≠ 0) →
+    ∀ (z : ℂ), Transcendental ℚ z → Function.Injective (Experiments.GPPREncoding.code (⇑address) weight z)
+'Experiments.GPPREncoding.algebraic_weight_code_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.code_add : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] [inst_1 : Algebra K ℂ]
+  (address : I → ℕ) (weight : I → K) (z : ℂ) (v w : I →₀ ℤ),
+  Experiments.GPPREncoding.code address weight z (v + w) =
+    Experiments.GPPREncoding.code address weight z v + Experiments.GPPREncoding.code address weight z w
+'Experiments.GPPREncoding.code_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.code_single : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] [inst_1 : Algebra K ℂ]
+  (address : I → ℕ) (weight : I → K) (z : ℂ) (i : I) (e : ℤ),
+  (Experiments.GPPREncoding.code address weight z fun₀ | i => e) =
+    ↑e * (Algebra.algebraMap K ℂ) (weight i) * z ^ address i
+'Experiments.GPPREncoding.code_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.code_zero : ∀ {I : Type u_1} {K : Type u_2} [inst : CommRing K] [inst_1 : Algebra K ℂ]
+  (address : I → ℕ) (weight : I → K) (z : ℂ), Experiments.GPPREncoding.code address weight z 0 = 0
+'Experiments.GPPREncoding.code_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.valuation : ℕ → Nat.Primes →₀ ℤ
+'Experiments.GPPREncoding.valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.valuation_apply : ∀ (n : ℕ) (p : Nat.Primes),
+  (Experiments.GPPREncoding.valuation n) p = ↑(n.factorization ↑p)
+'Experiments.GPPREncoding.valuation_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.valuation_mul : ∀ {m n : ℕ},
+  m ≠ 0 →
+    n ≠ 0 →
+      Experiments.GPPREncoding.valuation (m * n) =
+        Experiments.GPPREncoding.valuation m + Experiments.GPPREncoding.valuation n
+'Experiments.GPPREncoding.valuation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.valuation_injective : Set.InjOn Experiments.GPPREncoding.valuation {n | n ≠ 0}
+'Experiments.GPPREncoding.valuation_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.valuation_unit : Experiments.GPPREncoding.valuation 1 = 0
+'Experiments.GPPREncoding.valuation_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.valuation_prime_power : ∀ (p : Nat.Primes) (k : ℕ),
+  Experiments.GPPREncoding.valuation (↑p ^ k) = fun₀ | p => ↑k
+'Experiments.GPPREncoding.valuation_prime_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.integer_code_injective : ∀ (address : Nat.Primes ↪ ℕ) (z : ℂ),
+  Transcendental ℚ z →
+    Set.InjOn (fun n => Experiments.GPPREncoding.code (⇑address) (fun x => 1) z (Experiments.GPPREncoding.valuation n))
+      {n | n ≠ 0}
+'Experiments.GPPREncoding.integer_code_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.integer_product_to_sum : ∀ (address : Nat.Primes → ℕ) (z : ℂ) {m n : ℕ},
+  m ≠ 0 →
+    n ≠ 0 →
+      Experiments.GPPREncoding.code address (fun x => 1) z (Experiments.GPPREncoding.valuation (m * n)) =
+        Experiments.GPPREncoding.code address (fun x => 1) z (Experiments.GPPREncoding.valuation m) +
+          Experiments.GPPREncoding.code address (fun x => 1) z (Experiments.GPPREncoding.valuation n)
+'Experiments.GPPREncoding.integer_product_to_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Experiments.GPPREncoding.rational_valuation_equality : ∀ {a b c d : ℕ},
+  a ≠ 0 →
+    b ≠ 0 →
+      c ≠ 0 →
+        d ≠ 0 →
+          (Experiments.GPPREncoding.valuation a - Experiments.GPPREncoding.valuation b =
+              Experiments.GPPREncoding.valuation c - Experiments.GPPREncoding.valuation d ↔
+            ↑a / ↑b = ↑c / ↑d)
+'Experiments.GPPREncoding.rational_valuation_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.positive_rational_representation : ∀ (q : ℚ), 0 < q → ∃ a b, a ≠ 0 ∧ b ≠ 0 ∧ q = ↑a / ↑b
+'Experiments.GPPREncoding.positive_rational_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.rational_code_descends_and_separates : ∀ (address : Nat.Primes ↪ ℕ) (z : ℂ),
+  Transcendental ℚ z →
+    ∀ {a b c d : ℕ},
+      a ≠ 0 →
+        b ≠ 0 →
+          c ≠ 0 →
+            d ≠ 0 →
+              (Experiments.GPPREncoding.code (⇑address) (fun x => 1) z
+                    (Experiments.GPPREncoding.valuation a - Experiments.GPPREncoding.valuation b) =
+                  Experiments.GPPREncoding.code (⇑address) (fun x => 1) z
+                    (Experiments.GPPREncoding.valuation c - Experiments.GPPREncoding.valuation d) ↔
+                ↑a / ↑b = ↑c / ↑d)
+'Experiments.GPPREncoding.rational_code_descends_and_separates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@Experiments.GPPREncoding.rational_product_valuations : ∀ {a b c d : ℕ},
+  a ≠ 0 →
+    b ≠ 0 →
+      c ≠ 0 →
+        d ≠ 0 →
+          Experiments.GPPREncoding.valuation (a * c) - Experiments.GPPREncoding.valuation (b * d) =
+            Experiments.GPPREncoding.valuation a - Experiments.GPPREncoding.valuation b +
+              (Experiments.GPPREncoding.valuation c - Experiments.GPPREncoding.valuation d)
+'Experiments.GPPREncoding.rational_product_valuations' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.sqrt_weight_algebraic : ∀ (j : ℕ), IsAlgebraic ℚ ↑√↑j
+'Experiments.GPPREncoding.sqrt_weight_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.vogelWeight : ℕ+ → ↥(Subalgebra.algebraicClosure ℚ ℂ)
+'Experiments.GPPREncoding.vogelWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.vogel_weight_nonzero : ∀ (j : ℕ+), Experiments.GPPREncoding.vogelWeight j ≠ 0
+'Experiments.GPPREncoding.vogel_weight_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.vogel_code_injective : ∀ (z : ℂ),
+  Transcendental ℚ z →
+    Function.Injective (Experiments.GPPREncoding.code (fun j => ↑j) Experiments.GPPREncoding.vogelWeight z)
+'Experiments.GPPREncoding.vogel_code_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.repeated_address_collision : ((Experiments.GPPREncoding.weightedPoly (fun x => 1) (fun x => 1)
+      fun₀ | Bool.false => 1) =
+    Experiments.GPPREncoding.weightedPoly (fun x => 1) (fun x => 1) fun₀ | Bool.true => 1) ∧
+  (fun₀ | Bool.false => 1) ≠ fun₀ | Bool.true => 1
+'Experiments.GPPREncoding.repeated_address_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.GPPREncoding.zero_weight_collision : (Experiments.GPPREncoding.weightedPoly (fun x => 1) (fun x => 0)
+    fun₀ | () => 1) =
+  Experiments.GPPREncoding.weightedPoly (fun x => 1) (fun x => 0) 0
+'Experiments.GPPREncoding.zero_weight_collision' depends on axioms: [propext, Classical.choice, Quot.sound]

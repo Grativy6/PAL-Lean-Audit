@@ -1,0 +1,5 @@
+Attack Run 0003 policy passed for 12 Lean files.
+Expected Gate 5 rejections:
+Audit\fixtures\AR3-explanatory-shorthand-status.fixture:1: selected declaration spelling would promote explanatory shorthand to an object-language primitive or status
+Audit\fixtures\AR3-first-occurrence-closure.fixture:1: selected declaration spelling would purport to close an OPEN first-occurrence burden
+These are bounded naming guards, not semantic completeness checks; differently named surrogates remain OPEN_MANUAL source review.

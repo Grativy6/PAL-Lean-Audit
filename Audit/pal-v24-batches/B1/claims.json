@@ -1,0 +1,271 @@
+{
+  "batch": "B1",
+  "module": "Experiments.Pal24Continuation",
+  "axioms_module": "Experiments.Pal24ContinuationAxioms",
+  "source_inputs": [
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4_Mechanical_Structural_Spine.docx",
+      "sha256": "61e6894c21a3c6a7fe2cbfec5be82f1f11ed83fb640f7a38a1b0b89638b68786",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "110602faf4f2e7dae3ef46a998561a35497363d7c54deb257f2c6226f6231539",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "bc655015201c87e62d5d79a16bc7376aad5cd517217df5a0c2bc01c4c8e37a9b",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-T_Conformance_Tests.docx",
+      "sha256": "27d8caece6e7f4162cebcc37bb5a9edadb9eb3fdeb34d064a39ff844edcb763f",
+      "role": "candidate"
+    },
+    {
+      "path": "output/PAL_v2.4/DOCX/PAL_v2.4-C_Compatibility_Note.docx",
+      "sha256": "2ed7739b898edf4552316ef4c6e002f702656746cb89f33d3c8531e77d96381e",
+      "role": "candidate"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3_Mechanical_Structural_Spine.docx",
+      "sha256": "e9517b17278b72995f22469d825a62ad9a47d3a151089684f3d4c3ef96e4e9a2",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "c053292376363edd6fc743f0f2e31e3bb3850edc78ade3a289bbb07e7e8452c5",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-L_Obligation_and_Decision_Ledger.docx",
+      "sha256": "694449304139c642c5112f9e41f3b41848a652fc7d12b9a60450bf5e776f704b",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-T_Conformance_Tests.docx",
+      "sha256": "bf79d3a76ef71d6946704be551488bdfe2c062231f4a0c1a85bb51b203fe4b89",
+      "role": "predecessor_source"
+    },
+    {
+      "path": "E:\\New folder\\New folder (2)\\seeds\\Corpus\\Compact Corpus\\DOCX\\PAL_v2.3-C_Compatibility_Note.docx",
+      "sha256": "57bd5432c6a0a4474c781f918e60e1fcf3f1b80119bfdc317bf6c17bbbc80f07",
+      "role": "predecessor_source"
+    }
+  ],
+  "claims": [
+    {
+      "name": "Experiments.Pal24Continuation.TransitionProfile",
+      "kind": "structure",
+      "classification": "BOUNDED_MODEL_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate Mechanical Structural Spine SC-22.1-SC-22.2",
+        "PAL v2.4 candidate Mathematical Realization Atlas M-CONTINUATION-PROFILE",
+        "v2.3 anchors P0071-P0073, P0157-P0160, P0206-P0212, P0668-P0693, P1472-P1502"
+      ],
+      "assumptions": [
+        "The model explicitly supplies state, input, answer projection, deterministic transition, and admitted-input predicate."
+      ],
+      "statement": "A transition profile packages state, input, answer, observation, transition, and aperture components.",
+      "ceiling": "Model schema only; it defines no physical or PAL primitive.",
+      "residual": "Source authentication, restore guards, resources, authority, and realization adequacy remain external assumptions."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.run",
+      "kind": "def",
+      "classification": "BOUNDED_MODEL_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate M-CONTINUATION-PROFILE",
+        "v2.3 predecessor Experiments.Pal23Roundtrip.same_suffix_under_work_roundtrip"
+      ],
+      "assumptions": [
+        "Transitions are deterministic function application in the declared profile."
+      ],
+      "statement": "run applies a finite list of inputs from left to right.",
+      "ceiling": "Defines an abstract finite evaluator only.",
+      "residual": "It does not establish execution, persistence, fairness, or runtime resource sufficiency."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.admissibleSuffix",
+      "kind": "def",
+      "classification": "BOUNDED_MODEL_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate M-CONTINUATION-PROFILE"
+      ],
+      "assumptions": [
+        "Membership in the declared input predicate is the full aperture test in this model."
+      ],
+      "statement": "An admissible finite suffix contains only inputs accepted by the profile aperture.",
+      "ceiling": "A named mathematical aperture only.",
+      "residual": "No claim that the aperture matches an external task or actual permitted continuations."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.oneSuffixEquivalent",
+      "kind": "def",
+      "classification": "BOUNDED_MODEL_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Ledger D40",
+        "v2.3 predecessor Experiments.Pal23Roundtrip.natBool_chosen_suffix_vs_other_suffix"
+      ],
+      "assumptions": [
+        "Answer observations and the exact suffix are specified by the profile and caller."
+      ],
+      "statement": "OneSuffixEquivalent states equality of answers after one particular suffix.",
+      "ceiling": "A single-suffix predicate only.",
+      "residual": "Does not imply all-suffix continuation equivalence."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.continuationEquivalent",
+      "kind": "def",
+      "classification": "BOUNDED_MODEL_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Ledger D40/O63",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Universal quantification is over finite suffixes satisfying this profile's declared aperture."
+      ],
+      "statement": "ContinuationEquivalent universally quantifies observation equality over every admitted finite suffix.",
+      "ceiling": "All finite suffixes in the encoded aperture only.",
+      "residual": "Infinite continuations, outside-aperture inputs, scheduler behavior, and source validity remain unclaimed."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.run_append",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate M-CONTINUATION-PROFILE",
+        "v2.3 predecessor Experiments.Pal23Roundtrip.same_suffix_under_work_roundtrip"
+      ],
+      "assumptions": [],
+      "statement": "Executing concatenated finite suffixes is equal to executing the first suffix and then the second.",
+      "ceiling": "Pure deterministic finite-run composition.",
+      "residual": "Does not prove any freeze/restore operation preserves state or that an input suffix is permitted."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.one_suffix_of_step_simulation",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Mathematical Realization Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Initial states satisfy a supplied relation.",
+        "Related states have equal observations.",
+        "The supplied relation is preserved for each admitted input.",
+        "The suffix is finite and every member is admitted."
+      ],
+      "statement": "A step-preserving simulation relation yields equal observations after one specified admitted finite suffix.",
+      "ceiling": "Conditional theorem over arbitrary declared types/functions; no claim that a concrete restore satisfies the relation hypotheses.",
+      "residual": "Model-to-source adequacy and the validity of a selected initial relation are not established."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.all_finite_suffixes_of_step_simulation",
+      "kind": "theorem",
+      "classification": "PROVED_FROM_DECLARED_RULES",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Ledger D40/O63",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Initial states satisfy a supplied relation.",
+        "Related states have equal observations.",
+        "The supplied relation is preserved for each admitted input."
+      ],
+      "statement": "The step-simulation hypotheses establish equal observations for every finite suffix admitted by the declared profile.",
+      "ceiling": "Universal only within the encoded finite suffix domain and supplied aperture.",
+      "residual": "Does not extend to infinite or unmodeled inputs, nor establish that the aperture is externally complete."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.narrowAperture",
+      "kind": "def",
+      "classification": "COUNTERMODEL_FIXTURE_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Only Boolean inputs are modeled; false is the initial aperture."
+      ],
+      "statement": "The narrow profile accepts only false inputs.",
+      "ceiling": "Fixture parameter only.",
+      "residual": "The aperture is illustrative and is not asserted to be an external permission policy."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.apertureStep",
+      "kind": "def",
+      "classification": "COUNTERMODEL_FIXTURE_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "State is Nat × Bool; the Boolean component acts as a retained transition condition."
+      ],
+      "statement": "The state count increases only when both the input and retained condition are true.",
+      "ceiling": "Finite deterministic fixture step only.",
+      "residual": "No account authority or semantic meaning is assigned to fixture coordinates."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.narrowProfile",
+      "kind": "def",
+      "classification": "COUNTERMODEL_FIXTURE_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Observation is the Nat projection; only false is admitted."
+      ],
+      "statement": "A narrow-aperture profile using apertureStep and the Nat observation.",
+      "ceiling": "Fixture profile only.",
+      "residual": "No general profile adequacy is asserted."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.wideProfile",
+      "kind": "def",
+      "classification": "COUNTERMODEL_FIXTURE_DEFINITION",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Atlas M-CONTINUATION-PROFILE",
+        "PAL v2.4 candidate Tests T73"
+      ],
+      "assumptions": [
+        "Observation and transition match narrowProfile; every Boolean input is admitted."
+      ],
+      "statement": "A widened-aperture profile that adds true while retaining the same transition and observation.",
+      "ceiling": "Fixture profile only.",
+      "residual": "No general profile adequacy is asserted."
+    },
+    {
+      "name": "Experiments.Pal24Continuation.aperture_expansion_distinguishes_future",
+      "kind": "theorem",
+      "classification": "COUNTERMODEL_TO_OVERCLAIM",
+      "source_routes": [
+        "PAL v2.4 candidate SC-22.2",
+        "PAL v2.4 candidate Ledger D40/O63",
+        "PAL v2.4 candidate Tests T73",
+        "v2.3 predecessor Experiments.Pal23Roundtrip.natBool_chosen_suffix_vs_other_suffix"
+      ],
+      "assumptions": [
+        "Concrete Nat × Bool states and apertureStep as defined in this module."
+      ],
+      "statement": "The fixture states have equal selected Nat answers and unequal full states; they agree on every narrow-aperture finite suffix and on the selected wide suffix [false], while the newly admitted wide suffix [true] distinguishes their future answers.",
+      "ceiling": "Counterexample to inferring exact state recovery or all-continuation equivalence from current-answer or single-suffix agreement in this finite fixture.",
+      "residual": "The fixture is not evidence about full PAL, full MIND, cognition, physical storage, source authenticity, authority, or any domain outside its encoded profiles."
+    }
+  ],
+  "source_binding": "Bound to exact reviewed candidate DOCX bytes in Audit/pal-v24-candidate/source-manifest.json; no adoption implied."
+}

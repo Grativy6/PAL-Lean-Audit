@@ -1,0 +1,16 @@
+{
+  "label": "SingleCutSpan",
+  "argv": [
+    "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+    "env",
+    "lean",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\SingleCutSpan.lean"
+  ],
+  "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+  "exit_code": 0,
+  "elapsed_seconds": 20.125,
+  "stdout": "Audit/workshop-rest-20261008/development/20261008T103814992354Z/SingleCutSpan.stdout.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "Audit/workshop-rest-20261008/development/20261008T103814992354Z/SingleCutSpan.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

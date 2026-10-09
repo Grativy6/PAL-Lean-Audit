@@ -1,0 +1,12 @@
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPRRouting.lean:11:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Finsupp.instAdd', which is 'noncomputable'
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPRRouting.lean:82:43: error: failed to synthesize
+  Decidable ¬completeRecord { magnitude := 30, knownProduct := 6, residual := 5, exact := ⋯ }
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+H:\Hearthline's Path\Math Workbench\PAL-lean\Shared Lean project\Experiments\GPPRRouting.lean:116:99: error: unsolved goals
+z : ℂ
+hz : Transcendental ℚ z
+h : z ^ 3 = z + z ^ 2
+hp : X ^ 3 = X + X ^ 2
+hc : 1 = X.coeff 3
+⊢ False

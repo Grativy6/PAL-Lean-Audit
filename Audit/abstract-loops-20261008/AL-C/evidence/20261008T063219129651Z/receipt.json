@@ -1,0 +1,310 @@
+{
+  "schema": "abstract-loops-local-lean-receipt-v1",
+  "batch": "AL-C",
+  "status": "PASS_BOUNDED_LEAN_CHECKS",
+  "started_utc": "20261008T063219129651Z",
+  "branch": "agent/abstract-loops-workshop-20261008",
+  "git_head": "39e786c068d61fb9b523c667b17466c93ab0a0f9",
+  "working_tree": "?? Audit/abstract-loops-20261008/\n?? Audit/pal-v24-batches/\n?? Audit/pal-v24-candidate/\n?? Audit/pal-v24-publication/\n?? Experiments/AbstractLoopsDynamics.lean\n?? Experiments/AbstractLoopsDynamicsAxioms.lean\n?? Experiments/AbstractLoopsFiniteImage.lean\n?? Experiments/AbstractLoopsFiniteImageAxioms.lean\n?? Experiments/AbstractLoopsJoint.lean\n?? Experiments/AbstractLoopsJointAxioms.lean\n?? Experiments/AbstractLoopsPostprocessing.lean\n?? Experiments/AbstractLoopsPostprocessingAxioms.lean\n?? Experiments/AbstractLoopsReturnExport.lean\n?? Experiments/AbstractLoopsReturnExportAxioms.lean\n?? Experiments/Pal24Continuation.lean\n?? Experiments/Pal24ContinuationAxioms.lean\n?? Experiments/Pal24Feedback.lean\n?? Experiments/Pal24FeedbackAxioms.lean\n?? Experiments/Pal24HistoryQuotient.lean\n?? Experiments/Pal24HistoryQuotientAxioms.lean\n?? Experiments/Pal24IntervalSlack.lean\n?? Experiments/Pal24IntervalSlackAxioms.lean\n?? Experiments/Pal24NestedAccount.lean\n?? Experiments/Pal24NestedAccountAxioms.lean\n?? Experiments/Pal24SourcePath.lean\n?? Experiments/Pal24SourcePathAxioms.lean\n?? Experiments/Pal24TypedPaths.lean\n?? Experiments/Pal24TypedPathsAxioms.lean\n?? output/\n?? tmp/",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_dirty": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "declarations": [
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.ReadableIdentity",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.DirectResidual",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.CandidatePresent",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.hiddenReturn",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.RosterState",
+      "kind": "inductive"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.contributors",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.candidate",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.addresses",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.writeCandidate",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.declared_cut_witness",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.closure",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupledStep",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baselineStep",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupledHistory",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baselineHistory",
+      "kind": "def"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.coupled_history_after_entry",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling",
+      "kind": "theorem"
+    },
+    {
+      "name": "Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization",
+      "kind": "theorem"
+    }
+  ],
+  "input_hashes_before": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-C\\claims.json": "f35a434df0efbaa08fcd7f1a330c5b3a5fd963baea4dc8f2f3737c75705a23f1",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExport.lean": "733091c6e9319eed4ab68b1a686db8b38d6fb3119492df8358e8d51cc429db50",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExportAxioms.lean": "e10e69f09bdf5ac294ba3897aa8a11cb3ee3914325bf6f2a9432e060e79783c4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  },
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 1.8910000000032596,
+      "stdout": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/lean-version.stdout.txt",
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/lean-version.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "build",
+        "Experiments.AbstractLoopsReturnExport"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 3.625,
+      "stdout": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/build.stdout.txt",
+      "stdout_sha256": "206014b96d2a5bb883a192b651f6eb9b0a6a2bb5832c761b5778c7dba43d3433",
+      "stderr": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/build.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "inspect",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "lean",
+        "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExportAxioms.lean"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 10.26600000000326,
+      "stdout": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/inspect.stdout.txt",
+      "stdout_sha256": "0c307fbcf2bd01a51752a37dfaffc2706757143f27144d8c5e14d6ef3145defd",
+      "stderr": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/inspect.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel",
+      "argv": [
+        "C:\\Users\\cdpan\\.elan\\bin\\lake.exe",
+        "env",
+        "leanchecker",
+        "Experiments.AbstractLoopsReturnExport"
+      ],
+      "cwd": "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project",
+      "exit_code": 0,
+      "elapsed_seconds": 33.25,
+      "stdout": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/kernel.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Audit/abstract-loops-20261008/AL-C/evidence/20261008T063219129651Z/kernel.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": {
+    "Experiments.AbstractLoopsReturnExport.ReadableIdentity": "@Experiments.AbstractLoopsReturnExport.ReadableIdentity : {A O : Type} → (A → O) → (A → O) → Prop",
+    "Experiments.AbstractLoopsReturnExport.DirectResidual": "@Experiments.AbstractLoopsReturnExport.DirectResidual : {A O : Type} → (A → O) → (A → O) → Prop",
+    "Experiments.AbstractLoopsReturnExport.CandidatePresent": "@Experiments.AbstractLoopsReturnExport.CandidatePresent : {A C : Type} → (A → Option C) → Prop",
+    "Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity": "@Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity : ∀ {A O : Type} (before after : A → O),\n  ¬Experiments.AbstractLoopsReturnExport.DirectResidual before after ↔\n    Experiments.AbstractLoopsReturnExport.ReadableIdentity before after",
+    "Experiments.AbstractLoopsReturnExport.hiddenReturn": "Experiments.AbstractLoopsReturnExport.hiddenReturn : Bool × Bool → Bool × Bool",
+    "Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity": "Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity : Experiments.AbstractLoopsReturnExport.ReadableIdentity\n    Prod.fst (Prod.fst ∘ Experiments.AbstractLoopsReturnExport.hiddenReturn) ∧\n  Experiments.AbstractLoopsReturnExport.hiddenReturn (Bool.false, Bool.false) ≠ (Bool.false, Bool.false)",
+    "Experiments.AbstractLoopsReturnExport.RosterState": "Experiments.AbstractLoopsReturnExport.RosterState : Type",
+    "Experiments.AbstractLoopsReturnExport.contributors": "Experiments.AbstractLoopsReturnExport.contributors : Experiments.AbstractLoopsReturnExport.RosterState → Bool × Bool",
+    "Experiments.AbstractLoopsReturnExport.candidate": "Experiments.AbstractLoopsReturnExport.candidate : Experiments.AbstractLoopsReturnExport.RosterState → Option Bool",
+    "Experiments.AbstractLoopsReturnExport.addresses": "Experiments.AbstractLoopsReturnExport.addresses : Experiments.AbstractLoopsReturnExport.RosterState → Finset ℕ",
+    "Experiments.AbstractLoopsReturnExport.writeCandidate": "Experiments.AbstractLoopsReturnExport.writeCandidate : Bool →\n  Experiments.AbstractLoopsReturnExport.RosterState → Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.declared_cut_witness": "Experiments.AbstractLoopsReturnExport.declared_cut_witness : ∀ (a b c value : Bool),\n  Experiments.AbstractLoopsReturnExport.contributors\n        (Experiments.AbstractLoopsReturnExport.writeCandidate value\n          (Experiments.AbstractLoopsReturnExport.RosterState.extended a b c)) =\n      (a, b) ∧\n    Experiments.AbstractLoopsReturnExport.candidate\n        (Experiments.AbstractLoopsReturnExport.writeCandidate value\n          (Experiments.AbstractLoopsReturnExport.RosterState.extended a b c)) =\n      Option.some value",
+    "Experiments.AbstractLoopsReturnExport.closure": "Experiments.AbstractLoopsReturnExport.closure : Bool →\n  Bool → Bool × Bool → Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations": "Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations : ∀ (direct exported : Bool),\n  (Experiments.AbstractLoopsReturnExport.ReadableIdentity id\n        (Experiments.AbstractLoopsReturnExport.contributors ∘\n          Experiments.AbstractLoopsReturnExport.closure direct exported) ↔\n      direct = Bool.false) ∧\n    (Experiments.AbstractLoopsReturnExport.DirectResidual id\n          (Experiments.AbstractLoopsReturnExport.contributors ∘\n            Experiments.AbstractLoopsReturnExport.closure direct exported) ↔\n        direct = Bool.true) ∧\n      (Experiments.AbstractLoopsReturnExport.CandidatePresent\n          (Experiments.AbstractLoopsReturnExport.candidate ∘\n            Experiments.AbstractLoopsReturnExport.closure direct exported) ↔\n        exported = Bool.true)",
+    "Experiments.AbstractLoopsReturnExport.coupledStep": "Experiments.AbstractLoopsReturnExport.coupledStep : Bool →\n  Bool → Experiments.AbstractLoopsReturnExport.RosterState → Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.baselineStep": "Experiments.AbstractLoopsReturnExport.baselineStep : Experiments.AbstractLoopsReturnExport.RosterState →\n  Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.coupledHistory": "Experiments.AbstractLoopsReturnExport.coupledHistory : Bool →\n  Bool × Bool → ℕ → Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.baselineHistory": "Experiments.AbstractLoopsReturnExport.baselineHistory : Bool × Bool →\n  ℕ → Experiments.AbstractLoopsReturnExport.RosterState",
+    "Experiments.AbstractLoopsReturnExport.coupled_history_after_entry": "Experiments.AbstractLoopsReturnExport.coupled_history_after_entry : ∀ (direct : Bool) (input : Bool × Bool) (n : ℕ),\n  Experiments.AbstractLoopsReturnExport.coupledHistory direct input (n + 1) =\n    Experiments.AbstractLoopsReturnExport.closure direct Bool.true input",
+    "Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster": "Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster : ∀ (input : Bool × Bool) (n : ℕ),\n  Experiments.AbstractLoopsReturnExport.baselineHistory input n =\n    Experiments.AbstractLoopsReturnExport.RosterState.original input.1 input.2",
+    "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt": "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt : ∀ (input : Bool × Bool) (n : ℕ),\n  2 ∈\n      Experiments.AbstractLoopsReturnExport.addresses\n        (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) ∧\n    2 ∉\n        Experiments.AbstractLoopsReturnExport.addresses\n          (Experiments.AbstractLoopsReturnExport.baselineHistory input n) ∧\n      Experiments.AbstractLoopsReturnExport.candidate\n            (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) =\n          Option.some input.2 ∧\n        Experiments.AbstractLoopsReturnExport.candidate\n              (Experiments.AbstractLoopsReturnExport.baselineHistory input n) =\n            Option.none ∧\n          Experiments.AbstractLoopsReturnExport.contributors\n              (Experiments.AbstractLoopsReturnExport.coupledHistory Bool.false input (n + 1)) =\n            input",
+    "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence": "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence : 2 ∈\n    Experiments.AbstractLoopsReturnExport.addresses\n      (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ∧\n  2 ∉\n    Experiments.AbstractLoopsReturnExport.addresses\n      ((fun x => Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false)\n        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true))",
+    "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy": "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy : 2 ∈\n    Experiments.AbstractLoopsReturnExport.addresses\n      (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ∧\n  Experiments.AbstractLoopsReturnExport.contributors\n        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) =\n      Experiments.AbstractLoopsReturnExport.contributors\n        (Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false) ∧\n    Experiments.AbstractLoopsReturnExport.candidate\n        (Experiments.AbstractLoopsReturnExport.RosterState.extended Bool.false Bool.false Bool.true) ≠\n      Option.some\n        (Experiments.AbstractLoopsReturnExport.contributors\n            (Experiments.AbstractLoopsReturnExport.RosterState.original Bool.false Bool.false)).2",
+    "Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer": "@Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer : ∀ {W I C : Type} (initializer : W → I)\n  (emit : I → Option C) (u v : W), initializer u = initializer v → emit (initializer u) = emit (initializer v)",
+    "Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling": "Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling : Experiments.AbstractLoopsJoint.Certifies\n    (fun w => Option.some w.2) id ∧\n  ¬Experiments.AbstractLoopsJoint.Certifies (fun w => Option.some w.2) Prod.fst",
+    "Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization": "@Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization : ∀ {W T E C : Type}\n  (trace : W → T) (environment : E) (emit : T × E → Option C),\n  Experiments.AbstractLoopsJoint.Certifies (fun w => emit (trace w, environment)) trace"
+  },
+  "axioms": {
+    "Experiments.AbstractLoopsReturnExport.ReadableIdentity": [],
+    "Experiments.AbstractLoopsReturnExport.DirectResidual": [],
+    "Experiments.AbstractLoopsReturnExport.CandidatePresent": [],
+    "Experiments.AbstractLoopsReturnExport.no_direct_residual_iff_readable_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.hiddenReturn": [],
+    "Experiments.AbstractLoopsReturnExport.hidden_motion_readable_identity": [],
+    "Experiments.AbstractLoopsReturnExport.RosterState": [],
+    "Experiments.AbstractLoopsReturnExport.contributors": [],
+    "Experiments.AbstractLoopsReturnExport.candidate": [],
+    "Experiments.AbstractLoopsReturnExport.addresses": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.writeCandidate": [],
+    "Experiments.AbstractLoopsReturnExport.declared_cut_witness": [],
+    "Experiments.AbstractLoopsReturnExport.closure": [],
+    "Experiments.AbstractLoopsReturnExport.all_four_return_export_combinations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.coupledStep": [],
+    "Experiments.AbstractLoopsReturnExport.baselineStep": [],
+    "Experiments.AbstractLoopsReturnExport.coupledHistory": [],
+    "Experiments.AbstractLoopsReturnExport.baselineHistory": [],
+    "Experiments.AbstractLoopsReturnExport.coupled_history_after_entry": [
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.baseline_keeps_original_roster": [],
+    "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.AbstractLoopsReturnExport.export_respects_complete_initializer": [],
+    "Experiments.AbstractLoopsReturnExport.varying_environment_defeats_narrow_ceiling": [
+      "Classical.choice"
+    ],
+    "Experiments.AbstractLoopsReturnExport.fixed_environment_restores_trace_factorization": []
+  },
+  "compiled_artifacts": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\.lake\\build\\lib\\lean\\Experiments\\AbstractLoopsReturnExport.olean": "eaa4d2dcc0ba7063a2340b524e5b9c534d8834bedddf8e3deb9f1ea248c1e2d5"
+  },
+  "review": "self-review; bundled checker is not an independent implementation",
+  "authority": "local bounded proof evidence; no manuscript adoption or publication",
+  "input_hashes_after": {
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\verify.py": "6d8083d59f78a55ebb7f0fe3c596a059bdc1928ac1a3e63b75e810b282e2328f",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\source-manifest.json": "156946e31ffd907ee15817caf53cd07a38f2e1a5164ae416346de1aae4b55dfb",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\TARGETS.md": "ceca6f0f22604d50da45e44a1261ae36debc0aec176cca3644a6a3f27986ed77",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\abstract-loops-20261008\\AL-C\\claims.json": "f35a434df0efbaa08fcd7f1a330c5b3a5fd963baea4dc8f2f3737c75705a23f1",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\scripts\\check_policy.py": "d4ff9fecc677a6c8babace201e551f2ffae8571f07dbe57e3d7aefb1ad5791ad",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lean-toolchain": "97402b00d0468725baf4a753bf630ad69d0c588df2a7f5a849429b7926dfe000",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExport.lean": "733091c6e9319eed4ab68b1a686db8b38d6fb3119492df8358e8d51cc429db50",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsReturnExportAxioms.lean": "e10e69f09bdf5ac294ba3897aa8a11cb3ee3914325bf6f2a9432e060e79783c4",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsJoint.lean": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Experiments\\AbstractLoopsPostprocessing.lean": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.docx": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Other mathematics\\Abstract Loops\\Sources\\Abstract_Loops_v1.0.pdf": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.json": "f2bde08c97f8dbf63d670284b6f30a488ceaa027b8884a6fcbe1aa34147f3116",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.docx.txt": "21d99cc22edda853f2e0f7c4f51664e78503207d41af6f83bce68dee66f7dcc9",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\Audit\\math-stack-20261008\\source-reading\\Abstract Loops.pdf.txt": "dc544a3484c5c99cb9c34eacb1a01fe551de399e29a19579ff38f98cdae18327",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\SOURCE_MAP.json": "8540ae1b93fd3c7fd1093ec5cd0340e31dd2595c72ff6ed9be47064a0aa6d55a",
+    "H:\\Hearthline's Path\\Math Workbench\\PAL-lean\\Shared Lean project\\workbench\\keys\\20261008-five-paper-audit\\WORKFLOW_KEY.md": "ce534a1aa961abe9e431b035c3655b503586089e00cbe28eaca379e54dfe4b62"
+  }
+}
