@@ -1,0 +1,87 @@
+name: Corpus six-line bridge
+
+on:
+  pull_request:
+    paths:
+      - 'Experiments/CorpusBridgeSixLines*.lean'
+      - 'Audit/corpus-six-lines/**'
+      - '.github/workflows/corpus-six-lines.yml'
+      - 'lean-toolchain'
+      - 'lake-manifest.json'
+      - 'lakefile.lean'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  six-lines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+          use-github-cache: 'false'
+      - name: Record exact checkout and environment
+        shell: bash
+        env:
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          mkdir -p artifacts/corpus-six-lines
+          {
+            printf 'PR_HEAD_SHA=%s\n' "$PR_HEAD_SHA"
+            printf 'TESTED_SHA=%s\n' "$(git rev-parse HEAD)"
+            cat lean-toolchain
+            lake env lean --version
+            sha256sum Experiments/CorpusBridgeSixLines.lean Experiments/CorpusBridgeSixLinesAxioms.lean lake-manifest.json
+          } | tee artifacts/corpus-six-lines/environment.txt
+      - name: Build the actual target module
+        shell: bash
+        run: |
+          set -o pipefail
+          lake build Experiments.CorpusBridgeSixLines 2>&1 | tee artifacts/corpus-six-lines/build.txt
+      - name: Inspect exact declarations and dependencies
+        shell: bash
+        run: |
+          set -o pipefail
+          lake env lean Experiments/CorpusBridgeSixLinesAxioms.lean 2>&1 | tee artifacts/corpus-six-lines/axioms.txt
+          python3 - <<'PY'
+          import pathlib, re
+          source = pathlib.Path('Experiments/CorpusBridgeSixLines.lean').read_text()
+          audit = pathlib.Path('Experiments/CorpusBridgeSixLinesAxioms.lean').read_text()
+          receipt = pathlib.Path('artifacts/corpus-six-lines/axioms.txt').read_text()
+          names = re.findall(r'^theorem (\w+)', source, re.M)
+          assert len(names) == 22, names
+          allowed = {'propext', 'Classical.choice', 'Quot.sound'}
+          for name in names:
+              full = 'Experiments.CorpusBridgeSixLines.' + name
+              assert '#print axioms ' + full in audit, full
+              pattern = r"['\"]?" + re.escape(full) + r"['\"]?\s+(?:depends on axioms:\s*\[([^\]]*)\]|does not depend on any axioms)"
+              matches = list(re.finditer(pattern, receipt))
+              assert len(matches) == 1, (full, 'missing or repeated axiom receipt')
+              used = set(re.findall(r'[A-Za-z_][\w.]*', matches[0].group(1) or ''))
+              assert used <= allowed, (full, used - allowed)
+          assert 'sorryAx' not in receipt
+          print('22 exact theorem dependency reports accepted; standard axioms only.')
+          PY
+      - name: Kernel replay of the new module
+        shell: bash
+        run: |
+          set -o pipefail
+          lake env leanchecker Experiments.CorpusBridgeSixLines 2>&1 | tee artifacts/corpus-six-lines/kernel.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: corpus-six-lines-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/corpus-six-lines/
+          if-no-files-found: error
