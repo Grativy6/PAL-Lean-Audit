@@ -1,0 +1,48 @@
+import Experiments.CorpusBridgeSixLines
+
+set_option pp.fullNames true
+
+#check @Experiments.CorpusBridgeSixLines.cube_coordinates
+#print axioms Experiments.CorpusBridgeSixLines.cube_coordinates
+#check @Experiments.CorpusBridgeSixLines.cube_twice_real
+#print axioms Experiments.CorpusBridgeSixLines.cube_twice_real
+#check @Experiments.CorpusBridgeSixLines.cube_norm_identity
+#print axioms Experiments.CorpusBridgeSixLines.cube_norm_identity
+#check @Experiments.CorpusBridgeSixLines.sixth_eta_factorization
+#print axioms Experiments.CorpusBridgeSixLines.sixth_eta_factorization
+#check @Experiments.CorpusBridgeSixLines.sixth_charter_product
+#print axioms Experiments.CorpusBridgeSixLines.sixth_charter_product
+#check @Experiments.CorpusBridgeSixLines.sixth_real_shift
+#print axioms Experiments.CorpusBridgeSixLines.sixth_real_shift
+#check @Experiments.CorpusBridgeSixLines.norm_mul
+#print axioms Experiments.CorpusBridgeSixLines.norm_mul
+#check @Experiments.CorpusBridgeSixLines.multiplication_determinant
+#print axioms Experiments.CorpusBridgeSixLines.multiplication_determinant
+#check @Experiments.CorpusBridgeSixLines.detector_norm
+#print axioms Experiments.CorpusBridgeSixLines.detector_norm
+#check @Experiments.CorpusBridgeSixLines.cyclic_determinant
+#print axioms Experiments.CorpusBridgeSixLines.cyclic_determinant
+#check @Experiments.CorpusBridgeSixLines.fixed_auxiliary_coordinates
+#print axioms Experiments.CorpusBridgeSixLines.fixed_auxiliary_coordinates
+#check @Experiments.CorpusBridgeSixLines.auxiliary_determinant
+#print axioms Experiments.CorpusBridgeSixLines.auxiliary_determinant
+#check @Experiments.CorpusBridgeSixLines.repaired_determinant
+#print axioms Experiments.CorpusBridgeSixLines.repaired_determinant
+#check @Experiments.CorpusBridgeSixLines.integer_six_lines
+#print axioms Experiments.CorpusBridgeSixLines.integer_six_lines
+#check @Experiments.CorpusBridgeSixLines.rational_norm_nonneg
+#print axioms Experiments.CorpusBridgeSixLines.rational_norm_nonneg
+#check @Experiments.CorpusBridgeSixLines.rational_norm_zero_iff
+#print axioms Experiments.CorpusBridgeSixLines.rational_norm_zero_iff
+#check @Experiments.CorpusBridgeSixLines.detector_nonzero_iff
+#print axioms Experiments.CorpusBridgeSixLines.detector_nonzero_iff
+#check @Experiments.CorpusBridgeSixLines.same_operator_cyclic_iff
+#print axioms Experiments.CorpusBridgeSixLines.same_operator_cyclic_iff
+#check @Experiments.CorpusBridgeSixLines.repaired_pair_nonzero
+#print axioms Experiments.CorpusBridgeSixLines.repaired_pair_nonzero
+#check @Experiments.CorpusBridgeSixLines.reconstruct_from_pair
+#print axioms Experiments.CorpusBridgeSixLines.reconstruct_from_pair
+#check @Experiments.CorpusBridgeSixLines.scalar_detection_counterexample
+#print axioms Experiments.CorpusBridgeSixLines.scalar_detection_counterexample
+#check @Experiments.CorpusBridgeSixLines.eta_sixth_is_identity
+#print axioms Experiments.CorpusBridgeSixLines.eta_sixth_is_identity
