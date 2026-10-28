@@ -176,7 +176,23 @@ def combine (r : ℚ) (x : ℚ × ℚ) (s : ℚ) (y : ℚ × ℚ) : ℚ × ℚ :
 
 theorem reconstruct_from_pair (x y t : ℚ × ℚ) (hd : det2 x y ≠ 0) :
     combine (det2 t y / det2 x y) x (det2 x t / det2 x y) y = t := by
-  apply Prod.ext <;> dsimp [combine, det2] at * <;> field_simp [hd] <;> ring
+  have hx : det2 t y * x.1 + det2 x t * y.1 = t.1 * det2 x y := by
+    dsimp [det2]
+    ring
+  have hy : det2 t y * x.2 + det2 x t * y.2 = t.2 * det2 x y := by
+    dsimp [det2]
+    ring
+  apply Prod.ext
+  · change det2 t y / det2 x y * x.1 + det2 x t / det2 x y * y.1 = t.1
+    calc
+      _ = (det2 t y * x.1 + det2 x t * y.1) / det2 x y := by ring
+      _ = (t.1 * det2 x y) / det2 x y := by rw [hx]
+      _ = t.1 := mul_div_cancel_right₀ _ hd
+  · change det2 t y / det2 x y * x.2 + det2 x t / det2 x y * y.2 = t.2
+    calc
+      _ = (det2 t y * x.2 + det2 x t * y.2) / det2 x y := by ring
+      _ = (t.2 * det2 x y) / det2 x y := by rw [hy]
+      _ = t.2 := mul_div_cancel_right₀ _ hd
 
 /-- Exact counterexample to 'detecting implies cyclic under that same operator'. -/
 theorem scalar_detection_counterexample :
