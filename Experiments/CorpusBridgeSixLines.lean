@@ -158,7 +158,7 @@ theorem same_operator_cyclic_iff (a b : ℚ) (w : ℚ × ℚ) (hw : w ≠ (0, 0)
     det2 w (emul (sixth (a, b)) w) ≠ 0 ↔ bFactor a b ≠ 0 ∧ tFactor a b ≠ 0 := by
   have hn : enorm w ≠ 0 := fun h => hw ((rational_norm_zero_iff w).mp h)
   rw [cyclic_determinant]
-  simp [mul_ne_zero_iff, hn]
+  simp [hn]
 
 /-- Explicit independent pair using the detector plus the fixed norm-seven action. -/
 theorem repaired_pair_nonzero (a b : ℚ) (w : ℚ × ℚ)
@@ -176,7 +176,7 @@ def combine (r : ℚ) (x : ℚ × ℚ) (s : ℚ) (y : ℚ × ℚ) : ℚ × ℚ :
 
 theorem reconstruct_from_pair (x y t : ℚ × ℚ) (hd : det2 x y ≠ 0) :
     combine (det2 t y / det2 x y) x (det2 x t / det2 x y) y = t := by
-  apply Prod.ext <;> dsimp [combine, det2] at * <;> field_simp <;> ring
+  apply Prod.ext <;> dsimp [combine, det2] at * <;> field_simp [hd] <;> ring
 
 /-- Exact counterexample to 'detecting implies cyclic under that same operator'. -/
 theorem scalar_detection_counterexample :
