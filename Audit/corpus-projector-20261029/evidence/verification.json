@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "base": "bd49451caa409fe9091f209048afe814fa9aa30b",
+  "declaration_count": 17,
+  "dependency_reports": {
+    "Experiments.CorpusBridgeProjector.rhoAction_matches_eisenstein": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.muAction_matches_eisenstein": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_idempotent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_pure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_preserves": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.generator_preserves_pure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.generator_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.projector_generator_complete_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.scalarCounterspace_horizontal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.scalarCounterspace_rho": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.scalarCounterspace_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.scalarCounterspace_proper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.scalarCounterspace_not_mu_stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.dropping_generator_stability_fails": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Experiments.CorpusBridgeProjector.mixedProjector_not_idempotent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "rejected_negative_controls": [
+    "missing_critical_receipt",
+    "custom_axiom",
+    "admission",
+    "duplicated_receipt"
+  ],
+  "base_inputs_unchanged": [
+    "Experiments/CorpusBridgeSixLines.lean",
+    "Experiments/CorpusBridgeSixLinesAxioms.lean",
+    "Audit/BridgeEndpoint.lean",
+    "lean-toolchain",
+    "lake-manifest.json",
+    "lakefile.lean"
+  ],
+  "source_sha256": {
+    "Experiments/CorpusBridgeProjector.lean": "c61a93ced5508ab7837fc65647a4521339880630b78fded432be967c8d4b2b0d",
+    "Experiments/CorpusBridgeProjectorAxioms.lean": "664a8e0538228ce1a18463949de703f88e60db96aa706c66dcbfd05087087e64",
+    "Audit/corpus-projector-20261029/declarations.json": "f32589e05d5af46d33e65130d97fb0d4bc070827d126700ccbd3dd08d69e15db",
+    "Audit/corpus-projector-20261029/verify.py": "9202ad8a6ff9ac954b21b19b38663b3d6e61db2345e30bd0820da0f4f8086f97",
+    "Experiments/CorpusBridgeSixLines.lean": "1a42f74aae1efa18a67bddd1f7e0ab6fb41e2addf522b957942a70f33ab06697",
+    "Experiments/CorpusBridgeSixLinesAxioms.lean": "286a8dd5b2b5035e564ec043c4e9334795116d2946b6ba45a8b9e6dcf6e42950",
+    "Audit/BridgeEndpoint.lean": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "87598ec9a0b2f2c6effa7c7ae1c7e78b942a5b7b0ec04d7f512140c2fe9d99c0",
+    "lakefile.lean": "5c7789a49805c433e263e615df08e0c2f724dad70c09f472628c192fe5d131b4"
+  },
+  "axiom_receipt_sha256": "bc04cf4632ae27fd746ad3db267d1ecba033d42914e47cf188e55a99ad731c89",
+  "scope": "Exact captured declarations and permitted dependencies; process/kernel exits are recorded by the runner."
+}

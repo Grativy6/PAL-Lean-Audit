@@ -1,0 +1,3 @@
+# Preserve receipt bytes without changing any frozen root input.
+evidence/** -text
+development/** -text

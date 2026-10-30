@@ -1,0 +1,76 @@
+name: Corpus projector bridge
+
+on:
+  pull_request:
+    paths:
+      - 'Experiments/CorpusBridgeProjector*.lean'
+      - 'Experiments/CorpusBridgeSixLines*.lean'
+      - 'Audit/BridgeEndpoint.lean'
+      - 'Audit/corpus-projector-20261029/**'
+      - 'scripts/check_policy.py'
+      - '.github/workflows/corpus-projector.yml'
+      - 'lean-toolchain'
+      - 'lake-manifest.json'
+      - 'lakefile.lean'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  projector:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+          use-github-cache: 'false'
+      - name: Record exact source and environment
+        shell: bash
+        env:
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          mkdir -p artifacts/corpus-projector
+          {
+            printf 'PR_HEAD_SHA=%s\n' "$PR_HEAD_SHA"
+            printf 'TESTED_SHA=%s\n' "$(git rev-parse HEAD)"
+            cat lean-toolchain
+            lake env lean --version
+            sha256sum Experiments/CorpusBridgeProjector*.lean lake-manifest.json
+          } | tee artifacts/corpus-projector/environment.txt
+      - name: Build the actual extension and its imports
+        shell: bash
+        run: |
+          set -o pipefail
+          lake build Experiments.CorpusBridgeProjector 2>&1 | tee artifacts/corpus-projector/build.txt
+      - name: Inspect exact declarations and permitted dependencies
+        shell: bash
+        run: |
+          set -o pipefail
+          lake env lean Experiments/CorpusBridgeProjectorAxioms.lean 2>&1 | tee artifacts/corpus-projector/axioms.txt
+          python3 Audit/corpus-projector-20261029/verify.py \
+            --axioms artifacts/corpus-projector/axioms.txt \
+            --output artifacts/corpus-projector/verification.json
+      - name: Kernel replay and affected policy
+        shell: bash
+        run: |
+          set -o pipefail
+          lake env leanchecker Experiments.CorpusBridgeProjector 2>&1 | tee artifacts/corpus-projector/kernel.txt
+          python3 scripts/check_policy.py
+          git diff --check
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: corpus-projector-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/corpus-projector/
+          if-no-files-found: error

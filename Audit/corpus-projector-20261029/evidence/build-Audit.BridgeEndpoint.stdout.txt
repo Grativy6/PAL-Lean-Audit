@@ -1,0 +1,13 @@
+Audit/BridgeEndpoint.lean:221:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'Bridge.dualCollisionSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.quotientDualEquivDualCollision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.generativeDefect_iff_dualCollision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.readoutCollision_iff_differenceInKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.appendedTrace_determines_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.deterministicTranslator_unique' depends on axioms: [propext, Quot.sound]
+'Bridge.oneScalarProbe_separatesHiddenLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.zeroProbe_notInjectiveOnHiddenLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.fourSector_quotient_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bridge.conditionalWeilDetector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
