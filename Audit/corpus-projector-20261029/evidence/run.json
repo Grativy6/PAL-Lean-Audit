@@ -1,0 +1,137 @@
+{
+  "started_at": "2026-10-30T00:20:47.367295+00:00",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "commands": [
+    {
+      "name": "lean-version",
+      "command": [
+        "lean.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.047,
+      "stdout_sha256": "2663f5dc5e5250d355b484788e6fc7db0c7420e21bc691f988c0d71c4288f52d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\PAL-Lean-Audit\\.lake\\packages\\mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032,
+      "stdout_sha256": "41f6b7a8688dccfdbb20bd79d8ee996710c8cc3667381e0e090a80424ae4b7e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build-Experiments.CorpusBridgeSixLines",
+      "command": [
+        "lean.exe",
+        "-o",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\W00-projector-work\\.lake\\build\\lib\\lean\\Experiments\\CorpusBridgeSixLines.olean",
+        "Experiments/CorpusBridgeSixLines.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.718,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build-Audit.BridgeEndpoint",
+      "command": [
+        "lean.exe",
+        "-o",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\W00-projector-work\\.lake\\build\\lib\\lean\\Audit\\BridgeEndpoint.olean",
+        "Audit/BridgeEndpoint.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.735,
+      "stdout_sha256": "9ba1826772a0ab06f97c0f33dda63859a7c64d7ff3b769159bd776cbcd024b4c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build-Experiments.CorpusBridgeProjector",
+      "command": [
+        "lean.exe",
+        "-o",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\W00-projector-work\\.lake\\build\\lib\\lean\\Experiments\\CorpusBridgeProjector.olean",
+        "Experiments/CorpusBridgeProjector.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.703,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "axioms",
+      "command": [
+        "lean.exe",
+        "Experiments/CorpusBridgeProjectorAxioms.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.062,
+      "stdout_sha256": "bc04cf4632ae27fd746ad3db267d1ecba033d42914e47cf188e55a99ad731c89",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "verify",
+      "command": [
+        "python.exe",
+        "Audit/corpus-projector-20261029/verify.py",
+        "--axioms",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\W00-projector-work\\.collection-evidence\\w00-projector\\verified-01\\axioms.stdout.txt",
+        "--output",
+        "H:\\Hearthline_Path\\Math_workbench\\PAL-lean\\W00-projector-work\\.collection-evidence\\w00-projector\\verified-01\\verification.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.141,
+      "stdout_sha256": "c7eaa298658621323e8706ef26246a1cc31ae963c9712adbd10e01b61bf70063",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel",
+      "command": [
+        "leanchecker.exe",
+        "Experiments.CorpusBridgeProjector"
+      ],
+      "exit_code": 0,
+      "seconds": 9.187,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "historical-policy",
+      "command": [
+        "python.exe",
+        "scripts/check_policy.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.079,
+      "stdout_sha256": "563adc036b5c9bec1686d23dd6396212745b7fbc734c6590c9ac9cb48d1895ad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.031,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS",
+  "lean_version": "Lean (version 4.32.1, x86_64-w64-windows-gnu, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+  "compiler_sha256": "c3f02a2b739078d1237af9feefd27ec85b943b56870234b42bc0111d6699d54d",
+  "kernel_binary_sha256": "c0d4c83407947c26023f10e611e45eda1edbec358140e4217f1edda9aef35265",
+  "mathlib_head": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "completed_at": "2026-10-30T00:21:27.229410+00:00"
+}

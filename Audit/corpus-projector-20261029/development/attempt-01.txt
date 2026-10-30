@@ -1,0 +1,103 @@
+Experiments\CorpusBridgeProjector.lean:47:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Experiments\CorpusBridgeProjector.lean:49:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Experiments\CorpusBridgeProjector.lean:57:8: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  ENorm (ℚ × ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Experiments\CorpusBridgeProjector.lean:57:8: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm (1, 1) : ℚ
+  
+  ‖(1, 1)‖ₑ : ENNReal
+Experiments\CorpusBridgeProjector.lean:59:31: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.72 × ?m.72 → ?m.72
+  
+  ENorm.enorm : ?m.72 → ENNReal
+Experiments\CorpusBridgeProjector.lean:59:31: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.73 × ?m.73 → ?m.73
+  
+  ENorm.enorm : ?m.73 → ENNReal
+Experiments\CorpusBridgeProjector.lean:59:31: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.73 × ?m.73 → ?m.73
+  
+  ENorm.enorm : ?m.73 → ENNReal
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Experiments\CorpusBridgeProjector.lean:57:73: error: unsolved goals
+case fst
+h u v : ℚ
+⊢ 27 = sorry () ^ 3 ∨ h = 0
+Experiments\CorpusBridgeProjector.lean:63:8: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  ENorm (ℚ × ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Experiments\CorpusBridgeProjector.lean:63:8: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm (2, 1) : ℚ
+  
+  ‖(2, 1)‖ₑ : ENNReal
+Experiments\CorpusBridgeProjector.lean:65:53: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.72 × ?m.72 → ?m.72
+  
+  ENorm.enorm : ?m.72 → ENNReal
+Experiments\CorpusBridgeProjector.lean:65:53: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.73 × ?m.73 → ?m.73
+  
+  ENorm.enorm : ?m.73 → ENNReal
+Experiments\CorpusBridgeProjector.lean:65:53: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm : ?m.73 × ?m.73 → ?m.73
+  
+  ENorm.enorm : ?m.73 → ENNReal
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Experiments\CorpusBridgeProjector.lean:63:73: error: unsolved goals
+case fst
+h u v : ℚ
+⊢ 343 = sorry () ^ 3 ∨ h = 0
+Experiments\CorpusBridgeProjector.lean:99:12: error: Ambiguous term
+  enorm
+Possible interpretations:
+  CorpusBridgeSixLines.enorm seed : ℚ
+  
+  ‖seed‖ₑ : ENNReal
+Experiments\CorpusBridgeProjector.lean:107:2: error: Type mismatch: After simplification, term
+  Eq.symm h
+ has type
+  @Eq (ℚ × ℚ) w
+    (det2 w (generator seed) / det2 seed (generator seed) * seed.1 +
+        det2 seed w / det2 seed (generator seed) * (generator seed).1,
+      det2 w (generator seed) / det2 seed (generator seed) * seed.2 +
+        det2 seed w / det2 seed (generator seed) * (generator seed).2)
+but is expected to have type
+  @Eq Plane w
+    ((det2 w (generator seed) / det2 seed (generator seed)) • seed +
+      (det2 seed w / det2 seed (generator seed)) • generator seed)
+Experiments\CorpusBridgeProjector.lean:147:14: error: unexpected token ':'; expected ')'
+Experiments\CorpusBridgeProjector.lean:155:22: error: unexpected token ':'; expected ')'
+Experiments\CorpusBridgeProjector.lean:173:18: error(lean.unknownIdentifier): Unknown identifier `scalarCounterspace_seed`

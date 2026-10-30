@@ -5,3 +5,7 @@
 /docs/generated/pal-v23-charter-local-checks.md text eol=lf
 /scripts/run_pal23_charter.py text eol=lf
 /scripts/extract_pal23_charter_sources.py text eol=lf
+
+# Preserve the exact bytes bound by the W00 projector run receipts.
+/Audit/corpus-projector-20261029/evidence/** -text
+/Audit/corpus-projector-20261029/development/** -text

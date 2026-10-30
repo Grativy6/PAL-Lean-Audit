@@ -1,0 +1,84 @@
+Experiments.CorpusBridgeProjector.rhoAction_matches_eisenstein : ∀ (x : Experiments.CorpusBridgeProjector.Target),
+  Experiments.CorpusBridgeProjector.rhoAction x =
+    (Experiments.CorpusBridgeSixLines.enorm (1, 1) ^ 3 * x.1,
+      Experiments.CorpusBridgeSixLines.emul (Experiments.CorpusBridgeSixLines.sixth (1, 1)) x.2)
+'Experiments.CorpusBridgeProjector.rhoAction_matches_eisenstein' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.muAction_matches_eisenstein : ∀ (x : Experiments.CorpusBridgeProjector.Target),
+  Experiments.CorpusBridgeProjector.muAction x =
+    (Experiments.CorpusBridgeSixLines.enorm (2, 1) ^ 3 * x.1,
+      Experiments.CorpusBridgeSixLines.emul (Experiments.CorpusBridgeSixLines.sixth (2, 1)) x.2)
+'Experiments.CorpusBridgeProjector.muAction_matches_eisenstein' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.projector_formula : ∀ (x : Experiments.CorpusBridgeProjector.Target),
+  Experiments.CorpusBridgeProjector.projector x = (0, x.2)
+'Experiments.CorpusBridgeProjector.projector_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.projector_idempotent : ∀ (x : Experiments.CorpusBridgeProjector.Target),
+  Experiments.CorpusBridgeProjector.projector (Experiments.CorpusBridgeProjector.projector x) =
+    Experiments.CorpusBridgeProjector.projector x
+'Experiments.CorpusBridgeProjector.projector_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.projector_pure : ∀ (x : Experiments.CorpusBridgeProjector.Target),
+  (Experiments.CorpusBridgeProjector.projector x).1 = 0
+'Experiments.CorpusBridgeProjector.projector_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.projector_nonzero : Experiments.CorpusBridgeProjector.projector ≠ 0
+'Experiments.CorpusBridgeProjector.projector_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.projector_preserves : ∀ (A : Submodule ℚ Experiments.CorpusBridgeProjector.Target),
+  (∀ x ∈ A, Experiments.CorpusBridgeProjector.rhoAction x ∈ A) →
+    ∀ x ∈ A, Experiments.CorpusBridgeProjector.projector x ∈ A
+'Experiments.CorpusBridgeProjector.projector_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.generator_preserves_pure : ∀
+  (A : Submodule ℚ Experiments.CorpusBridgeProjector.Target),
+  (∀ x ∈ A, Experiments.CorpusBridgeProjector.muAction x ∈ A) →
+    ∀ (w : Experiments.CorpusBridgeProjector.Plane), (0, w) ∈ A → (0, Experiments.CorpusBridgeProjector.generator w) ∈ A
+'Experiments.CorpusBridgeProjector.generator_preserves_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.generator_cyclic : ∀ (seed : Experiments.CorpusBridgeProjector.Plane),
+  seed ≠ 0 →
+    ∀ (w : Experiments.CorpusBridgeProjector.Plane),
+      ∃ a b, w = a • seed + b • Experiments.CorpusBridgeProjector.generator seed
+'Experiments.CorpusBridgeProjector.generator_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.projector_generator_complete_iff : ∀
+  (A : Submodule ℚ Experiments.CorpusBridgeProjector.Target),
+  (∀ (h : ℚ), (h, 0) ∈ A) →
+    (∀ x ∈ A, Experiments.CorpusBridgeProjector.rhoAction x ∈ A) →
+      (∀ x ∈ A, Experiments.CorpusBridgeProjector.muAction x ∈ A) →
+        (A = ⊤ ↔ ∃ c ∈ A, Experiments.CorpusBridgeProjector.projector c ≠ 0)
+'Experiments.CorpusBridgeProjector.projector_generator_complete_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.scalarCounterspace_horizontal : ∀ (h : ℚ),
+  (h, 0) ∈ Experiments.CorpusBridgeProjector.scalarCounterspace
+'Experiments.CorpusBridgeProjector.scalarCounterspace_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.scalarCounterspace_rho : ∀ x ∈ Experiments.CorpusBridgeProjector.scalarCounterspace,
+  Experiments.CorpusBridgeProjector.rhoAction x ∈ Experiments.CorpusBridgeProjector.scalarCounterspace
+'Experiments.CorpusBridgeProjector.scalarCounterspace_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.scalarCounterspace_seed : (0, 1, 0) ∈
+    Experiments.CorpusBridgeProjector.scalarCounterspace ∧
+  Experiments.CorpusBridgeProjector.projector (0, 1, 0) ≠ 0
+'Experiments.CorpusBridgeProjector.scalarCounterspace_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.scalarCounterspace_proper : Experiments.CorpusBridgeProjector.scalarCounterspace ≠ ⊤
+'Experiments.CorpusBridgeProjector.scalarCounterspace_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Experiments.CorpusBridgeProjector.scalarCounterspace_not_mu_stable : Experiments.CorpusBridgeProjector.muAction
+    (0, 1, 0) ∉
+  Experiments.CorpusBridgeProjector.scalarCounterspace
+'Experiments.CorpusBridgeProjector.scalarCounterspace_not_mu_stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.dropping_generator_stability_fails : (∀ (h : ℚ),
+    (h, 0) ∈ Experiments.CorpusBridgeProjector.scalarCounterspace) ∧
+  (∀ x ∈ Experiments.CorpusBridgeProjector.scalarCounterspace,
+      Experiments.CorpusBridgeProjector.rhoAction x ∈ Experiments.CorpusBridgeProjector.scalarCounterspace) ∧
+    (∃ c ∈ Experiments.CorpusBridgeProjector.scalarCounterspace, Experiments.CorpusBridgeProjector.projector c ≠ 0) ∧
+      Experiments.CorpusBridgeProjector.scalarCounterspace ≠ ⊤
+'Experiments.CorpusBridgeProjector.dropping_generator_stability_fails' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Experiments.CorpusBridgeProjector.mixedProjector_not_idempotent : Experiments.CorpusBridgeProjector.mixedProjector
+    (Experiments.CorpusBridgeProjector.mixedProjector (1, 0)) ≠
+  Experiments.CorpusBridgeProjector.mixedProjector (1, 0)
+'Experiments.CorpusBridgeProjector.mixedProjector_not_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
