@@ -100,6 +100,12 @@ is retained. A theorem-inventory draft also caught a word in a block comment;
 the final verifier reuses the repository's comment-aware scanner. No failed
 attempt is counted as a mathematical counterexample.
 
+The first CI integration exposed a frozen-input conflict: a root Git attribute
+rule for these new logs changed MIND's preserved inventory. The rule was moved
+into this run's own directory, the root file restored exactly, and all 520
+current MIND input identities checked without mismatch. The proof sources were
+unchanged. [Integration record](development/integration-01.json).
+
 Fresh CI is provided by [the focused workflow](../../.github/workflows/corpus-projector.yml).
 Its current run outcome belongs to the PR checks, separately from the local
 receipt. It builds the actual extension, checks all dependencies and replays
