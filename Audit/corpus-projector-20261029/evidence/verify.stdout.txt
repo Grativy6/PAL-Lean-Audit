@@ -1,0 +1,1 @@
+Accepted 17 exact dependency reports; rejected 4 corrupted receipts.

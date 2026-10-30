@@ -1,0 +1,12 @@
+{
+  "scope": "CI integration, not a mathematical proof failure",
+  "head": "0dafe459f5e5a711da3e09e2f8cf72e6566c9def",
+  "run_id": 40979705854,
+  "job_id": 123816399994,
+  "observed_error": "ValueError: Current proof/input differs: .gitattributes",
+  "cause": "A new exact-byte log rule had been appended to a root file in MIND's frozen input population.",
+  "repair": "Restore the root file exactly and put equivalent evidence/development rules in Audit/corpus-projector-20261029/.gitattributes.",
+  "local_check": {"matching_frozen_inputs": 520, "mismatches": 0},
+  "proof_sources_changed": false,
+  "fresh_ci": "Read the repaired PR head's checks; this record does not presume their result."
+}

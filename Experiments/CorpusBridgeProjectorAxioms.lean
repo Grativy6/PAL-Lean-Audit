@@ -1,0 +1,54 @@
+import Experiments.CorpusBridgeProjector
+
+set_option pp.fullNames true
+
+#check @Experiments.CorpusBridgeProjector.rhoAction_matches_eisenstein
+#print axioms Experiments.CorpusBridgeProjector.rhoAction_matches_eisenstein
+
+#check @Experiments.CorpusBridgeProjector.muAction_matches_eisenstein
+#print axioms Experiments.CorpusBridgeProjector.muAction_matches_eisenstein
+
+#check @Experiments.CorpusBridgeProjector.projector_formula
+#print axioms Experiments.CorpusBridgeProjector.projector_formula
+
+#check @Experiments.CorpusBridgeProjector.projector_idempotent
+#print axioms Experiments.CorpusBridgeProjector.projector_idempotent
+
+#check @Experiments.CorpusBridgeProjector.projector_pure
+#print axioms Experiments.CorpusBridgeProjector.projector_pure
+
+#check @Experiments.CorpusBridgeProjector.projector_nonzero
+#print axioms Experiments.CorpusBridgeProjector.projector_nonzero
+
+#check @Experiments.CorpusBridgeProjector.projector_preserves
+#print axioms Experiments.CorpusBridgeProjector.projector_preserves
+
+#check @Experiments.CorpusBridgeProjector.generator_preserves_pure
+#print axioms Experiments.CorpusBridgeProjector.generator_preserves_pure
+
+#check @Experiments.CorpusBridgeProjector.generator_cyclic
+#print axioms Experiments.CorpusBridgeProjector.generator_cyclic
+
+#check @Experiments.CorpusBridgeProjector.projector_generator_complete_iff
+#print axioms Experiments.CorpusBridgeProjector.projector_generator_complete_iff
+
+#check @Experiments.CorpusBridgeProjector.scalarCounterspace_horizontal
+#print axioms Experiments.CorpusBridgeProjector.scalarCounterspace_horizontal
+
+#check @Experiments.CorpusBridgeProjector.scalarCounterspace_rho
+#print axioms Experiments.CorpusBridgeProjector.scalarCounterspace_rho
+
+#check @Experiments.CorpusBridgeProjector.scalarCounterspace_seed
+#print axioms Experiments.CorpusBridgeProjector.scalarCounterspace_seed
+
+#check @Experiments.CorpusBridgeProjector.scalarCounterspace_proper
+#print axioms Experiments.CorpusBridgeProjector.scalarCounterspace_proper
+
+#check @Experiments.CorpusBridgeProjector.scalarCounterspace_not_mu_stable
+#print axioms Experiments.CorpusBridgeProjector.scalarCounterspace_not_mu_stable
+
+#check @Experiments.CorpusBridgeProjector.dropping_generator_stability_fails
+#print axioms Experiments.CorpusBridgeProjector.dropping_generator_stability_fails
+
+#check @Experiments.CorpusBridgeProjector.mixedProjector_not_idempotent
+#print axioms Experiments.CorpusBridgeProjector.mixedProjector_not_idempotent

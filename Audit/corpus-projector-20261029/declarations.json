@@ -1,0 +1,32 @@
+{
+  "namespace": "Experiments.CorpusBridgeProjector",
+  "required": [
+    "rhoAction_matches_eisenstein",
+    "muAction_matches_eisenstein",
+    "projector_formula",
+    "projector_idempotent",
+    "projector_pure",
+    "projector_nonzero",
+    "projector_preserves",
+    "generator_preserves_pure",
+    "generator_cyclic",
+    "projector_generator_complete_iff",
+    "scalarCounterspace_horizontal",
+    "scalarCounterspace_rho",
+    "scalarCounterspace_seed",
+    "scalarCounterspace_proper",
+    "scalarCounterspace_not_mu_stable",
+    "dropping_generator_stability_fails",
+    "mixedProjector_not_idempotent"
+  ],
+  "critical": [
+    "projector_generator_complete_iff",
+    "dropping_generator_stability_fails",
+    "mixedProjector_not_idempotent"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
